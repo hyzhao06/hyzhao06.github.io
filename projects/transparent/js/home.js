@@ -112,8 +112,11 @@ for (const s of m.scenes) {
     // close-up opens on its own frame; a preview close-up is not in the dataset,
     // so the stage opens on the cover and that is what grows
     const altShown = cell.classList.contains("show-alt") && current === "rgb";
-    if (altShown && s.closeup.source === "dataset") expandInto(alt, `${cell.href}?frame=${s.closeup.frame}`);
-    else expandInto(base, cell.href);
+    if (altShown && s.closeup.source === "dataset") {
+      const target = new URL(cell.href);
+      target.searchParams.set("frame", s.closeup.frame);
+      expandInto(alt, target.href);
+    } else expandInto(base, cell.href);
   });
   grid.append(cell);
   cells.set(s.id, { cell, base, alt, badge, scene: s });
