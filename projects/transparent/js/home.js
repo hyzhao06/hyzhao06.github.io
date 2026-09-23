@@ -29,19 +29,41 @@ const slides = featured.map((item, i) => {
   if (i) track.append(slide);
   return slide;
 });
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides.at(-1).cloneNode(true);
+firstClone.querySelector("[id]")?.removeAttribute("id");
+lastClone.querySelector("[id]")?.removeAttribute("id");
+firstClone.setAttribute("aria-hidden", "true");
+lastClone.setAttribute("aria-hidden", "true");
+track.prepend(lastClone);
+track.append(firstClone);
 const dotsHost = document.getElementById("hero-dots");
 let currentSlide = 0;
 let userPaused = reducedMotion();
 let carouselTimer = null;
+let pendingSnap = null;
 const dots = featured.map((item, i) => el("button", {
   type: "button", "aria-label": `Show ${item.scene.name}`, onclick: () => showSlide(i, true),
 }));
 dotsHost.append(...dots);
 
 function showSlide(index, manual = false) {
-  currentSlide = (index + featured.length) % featured.length;
+  let slot;
+  if (index >= featured.length) {
+    currentSlide = 0;
+    slot = featured.length + 1;
+    pendingSnap = 1;
+  } else if (index < 0) {
+    currentSlide = featured.length - 1;
+    slot = 0;
+    pendingSnap = featured.length;
+  } else {
+    currentSlide = index;
+    slot = currentSlide + 1;
+    pendingSnap = null;
+  }
   const item = featured[currentSlide];
-  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  track.style.transform = `translateX(-${slot * 100}%)`;
   slides.forEach((slide, i) => {
     slide.classList.toggle("is-active", i === currentSlide);
     slide.setAttribute("aria-hidden", String(i !== currentSlide));
@@ -54,6 +76,14 @@ function showSlide(index, manual = false) {
   document.getElementById("inset-badge").textContent = item.inset;
   if (manual) restartCarousel();
 }
+track.addEventListener("transitionend", (event) => {
+  if (event.target !== track || pendingSnap == null) return;
+  track.classList.add("no-transition");
+  track.style.transform = `translateX(-${pendingSnap * 100}%)`;
+  track.getBoundingClientRect();
+  track.classList.remove("no-transition");
+  pendingSnap = null;
+});
 function startCarousel() {
   if (userPaused || reducedMotion()) return;
   clearInterval(carouselTimer);
@@ -79,7 +109,10 @@ hero.addEventListener("pointerup", (e) => {
 hero.addEventListener("mouseenter", () => clearInterval(carouselTimer));
 hero.addEventListener("mouseleave", startCarousel);
 document.addEventListener("visibilitychange", () => document.hidden ? clearInterval(carouselTimer) : startCarousel());
+track.classList.add("no-transition");
 showSlide(0);
+track.getBoundingClientRect();
+track.classList.remove("no-transition");
 if (!reducedMotion()) { hero.classList.add("drift"); startCarousel(); }
 
 /* ── the 3×3 index ────────────────────────────────────────────────────── */
