@@ -1,0 +1,6904 @@
+{
+  "id": "navigation",
+  "frames": [
+    {
+      "frame": "0000",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0000",
+      "score": 0.7864,
+      "tier": "cluster",
+      "glass_share": 0.00941,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 604,
+      "depth_p99_mm": 9437,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.60625,
+          "y": 0.59722,
+          "w": 0.04531,
+          "h": 0.16528,
+          "share": 0.003709,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.46328,
+          "y": 0.78611,
+          "w": 0.03516,
+          "h": 0.1,
+          "share": 0.002925,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.38125,
+          "y": 0.60139,
+          "w": 0.01875,
+          "h": 0.04583,
+          "share": 0.000667,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.81016,
+          "y": 0.31111,
+          "w": 0.02187,
+          "h": 0.05,
+          "share": 0.000617,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.76562,
+          "y": 0.25417,
+          "w": 0.02344,
+          "h": 0.06667,
+          "share": 0.000533,
+          "salience": 0.6294
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0001",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0001",
+      "score": 0.6551,
+      "tier": "bench",
+      "glass_share": 0.00543,
+      "depth_valid": 0.9438,
+      "depth_p1_mm": 1090,
+      "depth_p99_mm": 5889,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.65469,
+          "y": 0.57639,
+          "w": 0.03125,
+          "h": 0.075,
+          "share": 0.001899,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64453,
+          "y": 0.43889,
+          "w": 0.02969,
+          "h": 0.12222,
+          "share": 0.001681,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.48359,
+          "y": 0.575,
+          "w": 0.01562,
+          "h": 0.04722,
+          "share": 0.00066,
+          "salience": 0.9997
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0002",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0002",
+      "score": 0.7267,
+      "tier": "detail",
+      "glass_share": 0.01012,
+      "depth_valid": 0.9797,
+      "depth_p1_mm": 721,
+      "depth_p99_mm": 4708,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.71719,
+          "y": 0.6125,
+          "w": 0.04922,
+          "h": 0.11111,
+          "share": 0.004276,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.69531,
+          "y": 0.42778,
+          "w": 0.03984,
+          "h": 0.16111,
+          "share": 0.003061,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.47734,
+          "y": 0.59722,
+          "w": 0.02109,
+          "h": 0.06389,
+          "share": 0.001186,
+          "salience": 0.6628
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.27187,
+          "y": 0.56806,
+          "w": 0.01641,
+          "h": 0.03889,
+          "share": 0.000535,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0003",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0003",
+      "score": 0.6995,
+      "tier": "detail",
+      "glass_share": 0.02466,
+      "depth_valid": 0.9215,
+      "depth_p1_mm": 332,
+      "depth_p99_mm": 9425,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.42188,
+          "y": 0.76111,
+          "w": 0.06719,
+          "h": 0.20417,
+          "share": 0.011816,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65156,
+          "y": 0.48056,
+          "w": 0.06641,
+          "h": 0.28333,
+          "share": 0.009391,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.30703,
+          "y": 0.59583,
+          "w": 0.02734,
+          "h": 0.06806,
+          "share": 0.001555,
+          "salience": 0.9157
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0004",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0004",
+      "score": 0.7345,
+      "tier": "detail",
+      "glass_share": 0.01102,
+      "depth_valid": 0.9173,
+      "depth_p1_mm": 547,
+      "depth_p99_mm": 9543,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51641,
+          "y": 0.65278,
+          "w": 0.04219,
+          "h": 0.12222,
+          "share": 0.004482,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64531,
+          "y": 0.46528,
+          "w": 0.04609,
+          "h": 0.19444,
+          "share": 0.004342,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.38125,
+          "y": 0.56389,
+          "w": 0.01953,
+          "h": 0.05278,
+          "share": 0.000891,
+          "salience": 0.9632
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0005",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0005",
+      "score": 0.7702,
+      "tier": "bench",
+      "glass_share": 0.00606,
+      "depth_valid": 0.9617,
+      "depth_p1_mm": 872,
+      "depth_p99_mm": 8752,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.60938,
+          "y": 0.51806,
+          "w": 0.03125,
+          "h": 0.13611,
+          "share": 0.002185,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53281,
+          "y": 0.68194,
+          "w": 0.02891,
+          "h": 0.08333,
+          "share": 0.002019,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.40937,
+          "y": 0.60139,
+          "w": 0.01484,
+          "h": 0.04306,
+          "share": 0.000548,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0006",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0006",
+      "score": 0.744,
+      "tier": "cluster",
+      "glass_share": 0.00914,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 861,
+      "depth_p99_mm": 4341,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.69922,
+          "y": 0.72083,
+          "w": 0.04844,
+          "h": 0.09861,
+          "share": 0.003349,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.68828,
+          "y": 0.45694,
+          "w": 0.05078,
+          "h": 0.14722,
+          "share": 0.003013,
+          "salience": 0.9898
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.48438,
+          "y": 0.67361,
+          "w": 0.02031,
+          "h": 0.05972,
+          "share": 0.000995,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0007",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0007",
+      "score": 0.7221,
+      "tier": "detail",
+      "glass_share": 0.01033,
+      "depth_valid": 0.9995,
+      "depth_p1_mm": 700,
+      "depth_p99_mm": 4648,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.68437,
+          "y": 0.65,
+          "w": 0.04922,
+          "h": 0.11389,
+          "share": 0.004273,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.67734,
+          "y": 0.43611,
+          "w": 0.04219,
+          "h": 0.16389,
+          "share": 0.003178,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.44922,
+          "y": 0.61806,
+          "w": 0.02109,
+          "h": 0.06528,
+          "share": 0.001212,
+          "salience": 0.5826
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.25,
+          "y": 0.575,
+          "w": 0.01875,
+          "h": 0.04028,
+          "share": 0.000546,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0008",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0008",
+      "score": 0.6637,
+      "tier": "cluster",
+      "glass_share": 0.00942,
+      "depth_valid": 0.8752,
+      "depth_p1_mm": 527,
+      "depth_p99_mm": 8879,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.5875,
+          "y": 0.61111,
+          "w": 0.03984,
+          "h": 0.10694,
+          "share": 0.003772,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66875,
+          "y": 0.45556,
+          "w": 0.04297,
+          "h": 0.17222,
+          "share": 0.003394,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.41875,
+          "y": 0.56806,
+          "w": 0.01875,
+          "h": 0.05,
+          "share": 0.000827,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0009",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0009",
+      "score": 0.7569,
+      "tier": "detail",
+      "glass_share": 0.0128,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 663,
+      "depth_p99_mm": 7277,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.60234,
+          "y": 0.80694,
+          "w": 0.05078,
+          "h": 0.13056,
+          "share": 0.00512,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.67188,
+          "y": 0.5125,
+          "w": 0.05703,
+          "h": 0.18472,
+          "share": 0.004605,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.39141,
+          "y": 0.65694,
+          "w": 0.02422,
+          "h": 0.06389,
+          "share": 0.001201,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0010",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0010",
+      "score": 0.6622,
+      "tier": "cluster",
+      "glass_share": 0.00641,
+      "depth_valid": 0.9344,
+      "depth_p1_mm": 975,
+      "depth_p99_mm": 5839,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.67422,
+          "y": 0.58056,
+          "w": 0.03516,
+          "h": 0.08194,
+          "share": 0.00236,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65781,
+          "y": 0.43889,
+          "w": 0.03125,
+          "h": 0.13194,
+          "share": 0.001952,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.48438,
+          "y": 0.58056,
+          "w": 0.01719,
+          "h": 0.05139,
+          "share": 0.0008,
+          "salience": 0.9706
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0011",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0011",
+      "score": 0.7161,
+      "tier": "cluster",
+      "glass_share": 0.0081,
+      "depth_valid": 0.8998,
+      "depth_p1_mm": 612,
+      "depth_p99_mm": 9912,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.61328,
+          "y": 0.49167,
+          "w": 0.03906,
+          "h": 0.16389,
+          "share": 0.003061,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.49688,
+          "y": 0.64861,
+          "w": 0.03359,
+          "h": 0.09583,
+          "share": 0.002892,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.38906,
+          "y": 0.57083,
+          "w": 0.01719,
+          "h": 0.04444,
+          "share": 0.00065,
+          "salience": 0.9048
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0012",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0012",
+      "score": 0.6818,
+      "tier": "detail",
+      "glass_share": 0.01414,
+      "depth_valid": 0.9994,
+      "depth_p1_mm": 634,
+      "depth_p99_mm": 4557,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.72188,
+          "y": 0.71944,
+          "w": 0.0625,
+          "h": 0.1375,
+          "share": 0.006312,
+          "salience": 0.9293
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.69297,
+          "y": 0.45417,
+          "w": 0.04922,
+          "h": 0.18194,
+          "share": 0.004059,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.44219,
+          "y": 0.68333,
+          "w": 0.02578,
+          "h": 0.07778,
+          "share": 0.001712,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.20469,
+          "y": 0.63194,
+          "w": 0.02266,
+          "h": 0.04722,
+          "share": 0.000802,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0013",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0013",
+      "score": 0.7975,
+      "tier": "cluster",
+      "glass_share": 0.00703,
+      "depth_valid": 0.9906,
+      "depth_p1_mm": 871,
+      "depth_p99_mm": 7526,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64297,
+          "y": 0.51111,
+          "w": 0.0375,
+          "h": 0.14167,
+          "share": 0.002509,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.58906,
+          "y": 0.70833,
+          "w": 0.03438,
+          "h": 0.09028,
+          "share": 0.002484,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.43047,
+          "y": 0.625,
+          "w": 0.01641,
+          "h": 0.04722,
+          "share": 0.000679,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0014",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0014",
+      "score": 0.7284,
+      "tier": "bench",
+      "glass_share": 0.00569,
+      "depth_valid": 0.9722,
+      "depth_p1_mm": 944,
+      "depth_p99_mm": 5750,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.62109,
+          "y": 0.62361,
+          "w": 0.03125,
+          "h": 0.07917,
+          "share": 0.001985,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64531,
+          "y": 0.46528,
+          "w": 0.03125,
+          "h": 0.12917,
+          "share": 0.001929,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.46094,
+          "y": 0.5875,
+          "w": 0.01484,
+          "h": 0.04583,
+          "share": 0.000602,
+          "salience": 0.5391
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0015",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0015",
+      "score": 0.7269,
+      "tier": "detail",
+      "glass_share": 0.01708,
+      "depth_valid": 0.9993,
+      "depth_p1_mm": 639,
+      "depth_p99_mm": 6787,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.67891,
+          "y": 0.80694,
+          "w": 0.06719,
+          "h": 0.15694,
+          "share": 0.007779,
+          "salience": 0.9893
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.72266,
+          "y": 0.4875,
+          "w": 0.06719,
+          "h": 0.20833,
+          "share": 0.005808,
+          "salience": 0.943
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.41875,
+          "y": 0.65972,
+          "w": 0.02578,
+          "h": 0.07222,
+          "share": 0.001523,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.25703,
+          "y": 0.55139,
+          "w": 0.01797,
+          "h": 0.03889,
+          "share": 0.00053,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0016",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0016",
+      "score": 0.7046,
+      "tier": "cluster",
+      "glass_share": 0.00766,
+      "depth_valid": 0.9185,
+      "depth_p1_mm": 702,
+      "depth_p99_mm": 5682,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.61641,
+          "y": 0.60556,
+          "w": 0.03672,
+          "h": 0.09583,
+          "share": 0.003007,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64844,
+          "y": 0.45417,
+          "w": 0.03594,
+          "h": 0.15,
+          "share": 0.002524,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.42734,
+          "y": 0.58194,
+          "w": 0.01797,
+          "h": 0.05139,
+          "share": 0.000838,
+          "salience": 0.9935
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0017",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0017",
+      "score": 0.7569,
+      "tier": "cluster",
+      "glass_share": 0.00719,
+      "depth_valid": 0.9516,
+      "depth_p1_mm": 776,
+      "depth_p99_mm": 8726,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.62187,
+          "y": 0.51111,
+          "w": 0.03516,
+          "h": 0.15,
+          "share": 0.002619,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53984,
+          "y": 0.6875,
+          "w": 0.03203,
+          "h": 0.09167,
+          "share": 0.002534,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.40391,
+          "y": 0.60278,
+          "w": 0.01719,
+          "h": 0.04583,
+          "share": 0.000647,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0018",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0018",
+      "score": 0.7117,
+      "tier": "cluster",
+      "glass_share": 0.00645,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 1013,
+      "depth_p99_mm": 5109,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.65391,
+          "y": 0.67361,
+          "w": 0.03594,
+          "h": 0.08333,
+          "share": 0.002235,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65078,
+          "y": 0.47083,
+          "w": 0.03594,
+          "h": 0.12917,
+          "share": 0.002099,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.47344,
+          "y": 0.64722,
+          "w": 0.01641,
+          "h": 0.05,
+          "share": 0.000736,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0019",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0019",
+      "score": 0.7293,
+      "tier": "cluster",
+      "glass_share": 0.01004,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 800,
+      "depth_p99_mm": 5427,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.62891,
+          "y": 0.77639,
+          "w": 0.04531,
+          "h": 0.1125,
+          "share": 0.003859,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66875,
+          "y": 0.5125,
+          "w": 0.04922,
+          "h": 0.1625,
+          "share": 0.003502,
+          "salience": 0.9884
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.42422,
+          "y": 0.67083,
+          "w": 0.02109,
+          "h": 0.05833,
+          "share": 0.001006,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0020",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0020",
+      "score": 0.7613,
+      "tier": "cluster",
+      "glass_share": 0.00811,
+      "depth_valid": 0.9695,
+      "depth_p1_mm": 758,
+      "depth_p99_mm": 7852,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.61406,
+          "y": 0.68194,
+          "w": 0.03828,
+          "h": 0.1,
+          "share": 0.003066,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66641,
+          "y": 0.48889,
+          "w": 0.03984,
+          "h": 0.15556,
+          "share": 0.002884,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.44062,
+          "y": 0.60694,
+          "w": 0.01719,
+          "h": 0.05139,
+          "share": 0.000778,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0021",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0021",
+      "score": 0.7399,
+      "tier": "detail",
+      "glass_share": 0.01679,
+      "depth_valid": 0.9974,
+      "depth_p1_mm": 610,
+      "depth_p99_mm": 7443,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.63047,
+          "y": 0.82778,
+          "w": 0.0625,
+          "h": 0.16111,
+          "share": 0.007542,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.69453,
+          "y": 0.50694,
+          "w": 0.0625,
+          "h": 0.20972,
+          "share": 0.005736,
+          "salience": 0.9408
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.38516,
+          "y": 0.67361,
+          "w": 0.02656,
+          "h": 0.07222,
+          "share": 0.001536,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.2375,
+          "y": 0.56111,
+          "w": 0.01875,
+          "h": 0.03889,
+          "share": 0.000523,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0022",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0022",
+      "score": 0.7727,
+      "tier": "detail",
+      "glass_share": 0.01536,
+      "depth_valid": 0.9983,
+      "depth_p1_mm": 536,
+      "depth_p99_mm": 8062,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54609,
+          "y": 0.82639,
+          "w": 0.05156,
+          "h": 0.15,
+          "share": 0.006305,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66016,
+          "y": 0.52361,
+          "w": 0.06094,
+          "h": 0.20694,
+          "share": 0.005676,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.35547,
+          "y": 0.64028,
+          "w": 0.02578,
+          "h": 0.06528,
+          "share": 0.001311,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0023",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0023",
+      "score": 0.7102,
+      "tier": "cluster",
+      "glass_share": 0.00676,
+      "depth_valid": 0.9647,
+      "depth_p1_mm": 846,
+      "depth_p99_mm": 5120,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.63125,
+          "y": 0.62778,
+          "w": 0.03516,
+          "h": 0.08889,
+          "share": 0.002511,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65078,
+          "y": 0.46111,
+          "w": 0.03359,
+          "h": 0.14028,
+          "share": 0.002234,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.45156,
+          "y": 0.59722,
+          "w": 0.01641,
+          "h": 0.05,
+          "share": 0.000748,
+          "salience": 0.6317
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0024",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0024",
+      "score": 0.7531,
+      "tier": "detail",
+      "glass_share": 0.01059,
+      "depth_valid": 0.9994,
+      "depth_p1_mm": 739,
+      "depth_p99_mm": 7036,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.60625,
+          "y": 0.75694,
+          "w": 0.04609,
+          "h": 0.11667,
+          "share": 0.004115,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66797,
+          "y": 0.50278,
+          "w": 0.05,
+          "h": 0.17222,
+          "share": 0.003798,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.41172,
+          "y": 0.63889,
+          "w": 0.02109,
+          "h": 0.05833,
+          "share": 0.001009,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0025",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0025",
+      "score": 0.7766,
+      "tier": "cluster",
+      "glass_share": 0.00942,
+      "depth_valid": 0.9984,
+      "depth_p1_mm": 575,
+      "depth_p99_mm": 9363,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.62813,
+          "y": 0.5625,
+          "w": 0.04609,
+          "h": 0.16667,
+          "share": 0.003711,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.49922,
+          "y": 0.75972,
+          "w": 0.03516,
+          "h": 0.10278,
+          "share": 0.003054,
+          "salience": 0.964
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.39531,
+          "y": 0.59444,
+          "w": 0.01797,
+          "h": 0.04722,
+          "share": 0.000698,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.78672,
+          "y": 0.30694,
+          "w": 0.01953,
+          "h": 0.04861,
+          "share": 0.000548,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0026",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0026",
+      "score": 0.7355,
+      "tier": "cluster",
+      "glass_share": 0.00689,
+      "depth_valid": 0.9857,
+      "depth_p1_mm": 837,
+      "depth_p99_mm": 5117,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.62266,
+          "y": 0.64722,
+          "w": 0.03594,
+          "h": 0.08889,
+          "share": 0.002522,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64687,
+          "y": 0.46528,
+          "w": 0.03516,
+          "h": 0.14028,
+          "share": 0.00232,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.44453,
+          "y": 0.60417,
+          "w": 0.01719,
+          "h": 0.05,
+          "share": 0.000747,
+          "salience": 0.6646
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0027",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0027",
+      "score": 0.7017,
+      "tier": "bench",
+      "glass_share": 0.00635,
+      "depth_valid": 0.9938,
+      "depth_p1_mm": 944,
+      "depth_p99_mm": 5202,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.64219,
+          "y": 0.63194,
+          "w": 0.03438,
+          "h": 0.08472,
+          "share": 0.002254,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65469,
+          "y": 0.45278,
+          "w": 0.03438,
+          "h": 0.13333,
+          "share": 0.002117,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.46719,
+          "y": 0.59722,
+          "w": 0.01562,
+          "h": 0.04861,
+          "share": 0.000699,
+          "salience": 0.9357
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0028",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0028",
+      "score": 0.6339,
+      "tier": "bench",
+      "glass_share": 0.00557,
+      "depth_valid": 0.8787,
+      "depth_p1_mm": 395,
+      "depth_p99_mm": 10685,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.41406,
+          "y": 0.59028,
+          "w": 0.03672,
+          "h": 0.1,
+          "share": 0.003342,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57812,
+          "y": 0.44861,
+          "w": 0.02422,
+          "h": 0.18333,
+          "share": 0.001211,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.35703,
+          "y": 0.53056,
+          "w": 0.01719,
+          "h": 0.04306,
+          "share": 0.000659,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0029",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0029",
+      "score": 0.7612,
+      "tier": "detail",
+      "glass_share": 0.01034,
+      "depth_valid": 0.9277,
+      "depth_p1_mm": 607,
+      "depth_p99_mm": 9198,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54844,
+          "y": 0.66111,
+          "w": 0.03984,
+          "h": 0.11528,
+          "share": 0.00401,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65469,
+          "y": 0.47361,
+          "w": 0.04297,
+          "h": 0.18194,
+          "share": 0.00388,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.39922,
+          "y": 0.57361,
+          "w": 0.01875,
+          "h": 0.05278,
+          "share": 0.000854,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0030",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0030",
+      "score": 0.6518,
+      "tier": "cluster",
+      "glass_share": 0.00726,
+      "depth_valid": 0.8506,
+      "depth_p1_mm": 548,
+      "depth_p99_mm": 9784,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.63125,
+          "y": 0.46806,
+          "w": 0.03828,
+          "h": 0.15972,
+          "share": 0.00282,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52969,
+          "y": 0.60556,
+          "w": 0.03359,
+          "h": 0.09167,
+          "share": 0.002784,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.40547,
+          "y": 0.5625,
+          "w": 0.01641,
+          "h": 0.04306,
+          "share": 0.000639,
+          "salience": 0.8511
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0031",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0031",
+      "score": 0.8002,
+      "tier": "detail",
+      "glass_share": 0.01652,
+      "depth_valid": 0.9595,
+      "depth_p1_mm": 475,
+      "depth_p99_mm": 7827,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.64297,
+          "y": 0.65278,
+          "w": 0.06094,
+          "h": 0.15556,
+          "share": 0.007794,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.70625,
+          "y": 0.42083,
+          "w": 0.05391,
+          "h": 0.21389,
+          "share": 0.005497,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.39609,
+          "y": 0.57639,
+          "w": 0.02422,
+          "h": 0.06806,
+          "share": 0.001464,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0032",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0032",
+      "score": 0.6776,
+      "tier": "detail",
+      "glass_share": 0.01377,
+      "depth_valid": 0.9998,
+      "depth_p1_mm": 655,
+      "depth_p99_mm": 4429,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.75469,
+          "y": 0.71806,
+          "w": 0.06328,
+          "h": 0.13333,
+          "share": 0.006164,
+          "salience": 0.997
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.71094,
+          "y": 0.45972,
+          "w": 0.05,
+          "h": 0.17639,
+          "share": 0.003938,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.47734,
+          "y": 0.68889,
+          "w": 0.025,
+          "h": 0.07639,
+          "share": 0.001656,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.23203,
+          "y": 0.64306,
+          "w": 0.02187,
+          "h": 0.04722,
+          "share": 0.000781,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0033",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0033",
+      "score": 0.7723,
+      "tier": "detail",
+      "glass_share": 0.01267,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 499,
+      "depth_p99_mm": 9273,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.60703,
+          "y": 0.61389,
+          "w": 0.05234,
+          "h": 0.19306,
+          "share": 0.005112,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.43281,
+          "y": 0.83611,
+          "w": 0.04297,
+          "h": 0.12222,
+          "share": 0.004277,
+          "salience": 0.9959
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.35391,
+          "y": 0.61389,
+          "w": 0.02109,
+          "h": 0.05278,
+          "share": 0.000865,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.82734,
+          "y": 0.3125,
+          "w": 0.02422,
+          "h": 0.05417,
+          "share": 0.000719,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.77812,
+          "y": 0.25417,
+          "w": 0.02578,
+          "h": 0.07083,
+          "share": 0.000601,
+          "salience": 0.5854
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0034",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0034",
+      "score": 0.7514,
+      "tier": "cluster",
+      "glass_share": 0.00694,
+      "depth_valid": 0.9674,
+      "depth_p1_mm": 772,
+      "depth_p99_mm": 7793,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.60703,
+          "y": 0.6375,
+          "w": 0.03438,
+          "h": 0.09028,
+          "share": 0.002536,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.65391,
+          "y": 0.46667,
+          "w": 0.03516,
+          "h": 0.14444,
+          "share": 0.002441,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.44297,
+          "y": 0.58194,
+          "w": 0.01641,
+          "h": 0.04722,
+          "share": 0.000684,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0035",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0035",
+      "score": 0.7067,
+      "tier": "detail",
+      "glass_share": 0.01237,
+      "depth_valid": 0.9174,
+      "depth_p1_mm": 409,
+      "depth_p99_mm": 10176,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.63203,
+          "y": 0.46111,
+          "w": 0.05078,
+          "h": 0.21806,
+          "share": 0.005485,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.45391,
+          "y": 0.64861,
+          "w": 0.04531,
+          "h": 0.12917,
+          "share": 0.0052,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.36562,
+          "y": 0.54444,
+          "w": 0.02031,
+          "h": 0.05139,
+          "share": 0.000893,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0036",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0036",
+      "score": 0.7674,
+      "tier": "detail",
+      "glass_share": 0.02554,
+      "depth_valid": 0.9346,
+      "depth_p1_mm": 458,
+      "depth_p99_mm": 8683,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.57891,
+          "y": 0.75556,
+          "w": 0.07344,
+          "h": 0.21111,
+          "share": 0.012921,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.71406,
+          "y": 0.46111,
+          "w": 0.06641,
+          "h": 0.26528,
+          "share": 0.008688,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.34922,
+          "y": 0.6125,
+          "w": 0.02813,
+          "h": 0.075,
+          "share": 0.0018,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0037",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0037",
+      "score": 0.6976,
+      "tier": "cluster",
+      "glass_share": 0.00795,
+      "depth_valid": 0.8661,
+      "depth_p1_mm": 503,
+      "depth_p99_mm": 10504,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.62109,
+          "y": 0.45278,
+          "w": 0.04219,
+          "h": 0.17917,
+          "share": 0.003521,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.48281,
+          "y": 0.59583,
+          "w": 0.03594,
+          "h": 0.1,
+          "share": 0.003261,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.38984,
+          "y": 0.54028,
+          "w": 0.01719,
+          "h": 0.04444,
+          "share": 0.000662,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0038",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0038",
+      "score": 0.7517,
+      "tier": "cluster",
+      "glass_share": 0.00883,
+      "depth_valid": 0.9576,
+      "depth_p1_mm": 503,
+      "depth_p99_mm": 10188,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.60313,
+          "y": 0.5625,
+          "w": 0.03906,
+          "h": 0.16944,
+          "share": 0.003403,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.45937,
+          "y": 0.72778,
+          "w": 0.03438,
+          "h": 0.1,
+          "share": 0.002907,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.38672,
+          "y": 0.59028,
+          "w": 0.01719,
+          "h": 0.04444,
+          "share": 0.000623,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.80625,
+          "y": 0.37222,
+          "w": 0.01875,
+          "h": 0.04861,
+          "share": 0.000573,
+          "salience": 0.994
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0039",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0039",
+      "score": 0.7205,
+      "tier": "detail",
+      "glass_share": 0.0114,
+      "depth_valid": 0.9937,
+      "depth_p1_mm": 668,
+      "depth_p99_mm": 4637,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.70469,
+          "y": 0.67778,
+          "w": 0.05312,
+          "h": 0.12083,
+          "share": 0.004893,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.68984,
+          "y": 0.45278,
+          "w": 0.04375,
+          "h": 0.16944,
+          "share": 0.003438,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.45547,
+          "y": 0.64306,
+          "w": 0.02187,
+          "h": 0.06806,
+          "share": 0.001335,
+          "salience": 0.9459
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_50ml",
+          "x": 0.24766,
+          "y": 0.59861,
+          "w": 0.01875,
+          "h": 0.04167,
+          "share": 0.00059,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0040",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0040",
+      "score": 0.7033,
+      "tier": "cluster",
+      "glass_share": 0.00788,
+      "depth_valid": 0.9936,
+      "depth_p1_mm": 837,
+      "depth_p99_mm": 4820,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.65625,
+          "y": 0.69028,
+          "w": 0.03984,
+          "h": 0.09722,
+          "share": 0.002983,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66172,
+          "y": 0.48194,
+          "w": 0.0375,
+          "h": 0.14583,
+          "share": 0.002548,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.45703,
+          "y": 0.65,
+          "w": 0.01797,
+          "h": 0.05556,
+          "share": 0.000897,
+          "salience": 0.913
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0041",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0041",
+      "score": 0.7763,
+      "tier": "detail",
+      "glass_share": 0.01023,
+      "depth_valid": 0.9962,
+      "depth_p1_mm": 579,
+      "depth_p99_mm": 9121,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.6375,
+          "y": 0.56944,
+          "w": 0.04844,
+          "h": 0.17361,
+          "share": 0.00402,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.5125,
+          "y": 0.7875,
+          "w": 0.0375,
+          "h": 0.10972,
+          "share": 0.003506,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.39062,
+          "y": 0.61528,
+          "w": 0.01953,
+          "h": 0.05139,
+          "share": 0.000782,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.76953,
+          "y": 0.30833,
+          "w": 0.01875,
+          "h": 0.04722,
+          "share": 0.00052,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0042",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0042",
+      "score": 0.7331,
+      "tier": "bench",
+      "glass_share": 0.00539,
+      "depth_valid": 0.9997,
+      "depth_p1_mm": 1028,
+      "depth_p99_mm": 5915,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.63594,
+          "y": 0.48194,
+          "w": 0.03203,
+          "h": 0.12222,
+          "share": 0.001833,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.61328,
+          "y": 0.66111,
+          "w": 0.03047,
+          "h": 0.07639,
+          "share": 0.001787,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.45859,
+          "y": 0.61528,
+          "w": 0.01484,
+          "h": 0.04444,
+          "share": 0.000567,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0043",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0043",
+      "score": 0.7853,
+      "tier": "cluster",
+      "glass_share": 0.00728,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 922,
+      "depth_p99_mm": 5856,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66484,
+          "y": 0.51111,
+          "w": 0.04297,
+          "h": 0.13889,
+          "share": 0.002605,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.62578,
+          "y": 0.73194,
+          "w": 0.0375,
+          "h": 0.09028,
+          "share": 0.002526,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.45469,
+          "y": 0.64167,
+          "w": 0.01719,
+          "h": 0.05,
+          "share": 0.00071,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0044",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0044",
+      "score": 0.7595,
+      "tier": "detail",
+      "glass_share": 0.01463,
+      "depth_valid": 0.9523,
+      "depth_p1_mm": 569,
+      "depth_p99_mm": 8349,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.56484,
+          "y": 0.72083,
+          "w": 0.05156,
+          "h": 0.14861,
+          "share": 0.006436,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.66406,
+          "y": 0.47778,
+          "w": 0.05,
+          "h": 0.20694,
+          "share": 0.005089,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.36562,
+          "y": 0.6125,
+          "w": 0.02344,
+          "h": 0.06528,
+          "share": 0.001285,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0045",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0045",
+      "score": 0.7027,
+      "tier": "cluster",
+      "glass_share": 0.009,
+      "depth_valid": 0.9393,
+      "depth_p1_mm": 386,
+      "depth_p99_mm": 10379,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.41875,
+          "y": 0.68472,
+          "w": 0.03828,
+          "h": 0.10972,
+          "share": 0.00366,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.5875,
+          "y": 0.51667,
+          "w": 0.03594,
+          "h": 0.19167,
+          "share": 0.002575,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.36094,
+          "y": 0.56111,
+          "w": 0.01875,
+          "h": 0.04722,
+          "share": 0.000712,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.82266,
+          "y": 0.38056,
+          "w": 0.01953,
+          "h": 0.05,
+          "share": 0.00064,
+          "salience": 0.9722
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.77578,
+          "y": 0.3375,
+          "w": 0.02031,
+          "h": 0.06528,
+          "share": 0.000514,
+          "salience": 0.3503
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0046",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0046",
+      "score": 0.7602,
+      "tier": "detail",
+      "glass_share": 0.01346,
+      "depth_valid": 0.9769,
+      "depth_p1_mm": 453,
+      "depth_p99_mm": 9505,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64141,
+          "y": 0.53194,
+          "w": 0.05469,
+          "h": 0.20833,
+          "share": 0.005439,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.47969,
+          "y": 0.75556,
+          "w": 0.04453,
+          "h": 0.13194,
+          "share": 0.004947,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.37266,
+          "y": 0.58333,
+          "w": 0.02109,
+          "h": 0.05417,
+          "share": 0.000926,
+          "salience": 1.0
+        },
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.80781,
+          "y": 0.33194,
+          "w": 0.02031,
+          "h": 0.05,
+          "share": 0.000623,
+          "salience": 0.9594
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.75859,
+          "y": 0.2875,
+          "w": 0.02031,
+          "h": 0.06528,
+          "share": 0.00051,
+          "salience": 0.3696
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0047",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0047",
+      "score": 0.7565,
+      "tier": "detail",
+      "glass_share": 0.01117,
+      "depth_valid": 0.9642,
+      "depth_p1_mm": 579,
+      "depth_p99_mm": 5259,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.66563,
+          "y": 0.59444,
+          "w": 0.04922,
+          "h": 0.11944,
+          "share": 0.004876,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.68359,
+          "y": 0.41528,
+          "w": 0.04297,
+          "h": 0.175,
+          "share": 0.003529,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.42812,
+          "y": 0.56667,
+          "w": 0.02187,
+          "h": 0.0625,
+          "share": 0.001208,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0048",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0048",
+      "score": 0.792,
+      "tier": "cluster",
+      "glass_share": 0.01013,
+      "depth_valid": 0.9877,
+      "depth_p1_mm": 726,
+      "depth_p99_mm": 7890,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.60313,
+          "y": 0.72361,
+          "w": 0.04297,
+          "h": 0.11389,
+          "share": 0.003898,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.67188,
+          "y": 0.49583,
+          "w": 0.04766,
+          "h": 0.17222,
+          "share": 0.003665,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.42188,
+          "y": 0.61389,
+          "w": 0.01875,
+          "h": 0.05556,
+          "share": 0.000907,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0049",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0049",
+      "score": 0.7597,
+      "tier": "detail",
+      "glass_share": 0.00994,
+      "depth_valid": 0.9674,
+      "depth_p1_mm": 664,
+      "depth_p99_mm": 5705,
+      "hotspots": [
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.65312,
+          "y": 0.67222,
+          "w": 0.04531,
+          "h": 0.11389,
+          "share": 0.004116,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.68359,
+          "y": 0.47083,
+          "w": 0.04141,
+          "h": 0.16667,
+          "share": 0.00333,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.44219,
+          "y": 0.61528,
+          "w": 0.01953,
+          "h": 0.05833,
+          "share": 0.001016,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0100",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0100",
+      "score": 0.7913,
+      "tier": "cluster",
+      "glass_share": 0.00717,
+      "depth_valid": 0.991,
+      "depth_p1_mm": 851,
+      "depth_p99_mm": 8198,
+      "hotspots": [
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.64453,
+          "y": 0.525,
+          "w": 0.03906,
+          "h": 0.14306,
+          "share": 0.002615,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.57656,
+          "y": 0.72083,
+          "w": 0.03359,
+          "h": 0.09028,
+          "share": 0.002445,
+          "salience": 0.983
+        },
+        {
+          "label": "Beaker",
+          "prim": "beaker_100ml",
+          "x": 0.43047,
+          "y": 0.61806,
+          "w": 0.01641,
+          "h": 0.04722,
+          "share": 0.000649,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0101",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0101",
+      "score": 0.6476,
+      "tier": "bench",
+      "glass_share": 0.00508,
+      "depth_valid": 0.917,
+      "depth_p1_mm": 1359,
+      "depth_p99_mm": 8088,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.6125,
+          "y": 0.85694,
+          "w": 0.02891,
+          "h": 0.09583,
+          "share": 0.001963,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.46406,
+          "y": 0.57917,
+          "w": 0.02109,
+          "h": 0.09306,
+          "share": 0.001017,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.4,
+          "y": 0.71111,
+          "w": 0.02031,
+          "h": 0.05417,
+          "share": 0.000903,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0102",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0102",
+      "score": 0.4667,
+      "tier": "bench",
+      "glass_share": 0.00326,
+      "depth_valid": 0.9986,
+      "depth_p1_mm": 1356,
+      "depth_p99_mm": 4197,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.66328,
+          "y": 0.51944,
+          "w": 0.02344,
+          "h": 0.075,
+          "share": 0.001206,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57812,
+          "y": 0.44028,
+          "w": 0.02031,
+          "h": 0.09306,
+          "share": 0.000856,
+          "salience": 0.8731
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.56797,
+          "y": 0.51944,
+          "w": 0.01797,
+          "h": 0.04722,
+          "share": 0.000725,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0103",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0103",
+      "score": 0.5494,
+      "tier": "space",
+      "glass_share": 0.00316,
+      "depth_valid": 0.9067,
+      "depth_p1_mm": 749,
+      "depth_p99_mm": 10705,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.58203,
+          "y": 0.53611,
+          "w": 0.02422,
+          "h": 0.08056,
+          "share": 0.001301,
+          "salience": 0.9672
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56328,
+          "y": 0.46806,
+          "w": 0.02109,
+          "h": 0.09306,
+          "share": 0.0009,
+          "salience": 0.8173
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52266,
+          "y": 0.53056,
+          "w": 0.01562,
+          "h": 0.04306,
+          "share": 0.000647,
+          "salience": 0.7234
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0104",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0104",
+      "score": 0.462,
+      "tier": "bench",
+      "glass_share": 0.00223,
+      "depth_valid": 0.919,
+      "depth_p1_mm": 754,
+      "depth_p99_mm": 8550,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.60859,
+          "y": 0.51389,
+          "w": 0.01953,
+          "h": 0.06389,
+          "share": 0.000839,
+          "salience": 0.987
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55937,
+          "y": 0.45972,
+          "w": 0.01797,
+          "h": 0.07917,
+          "share": 0.000639,
+          "salience": 0.5706
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0105",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0105",
+      "score": 0.5537,
+      "tier": "bench",
+      "glass_share": 0.00272,
+      "depth_valid": 0.9728,
+      "depth_p1_mm": 1054,
+      "depth_p99_mm": 7869,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.62187,
+          "y": 0.54444,
+          "w": 0.02109,
+          "h": 0.06944,
+          "share": 0.000994,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56484,
+          "y": 0.45694,
+          "w": 0.01953,
+          "h": 0.08472,
+          "share": 0.000794,
+          "salience": 0.8672
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54375,
+          "y": 0.52917,
+          "w": 0.01562,
+          "h": 0.04167,
+          "share": 0.000584,
+          "salience": 0.8171
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0106",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0106",
+      "score": 0.4503,
+      "tier": "bench",
+      "glass_share": 0.00191,
+      "depth_valid": 0.9796,
+      "depth_p1_mm": 894,
+      "depth_p99_mm": 4147,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63359,
+          "y": 0.5,
+          "w": 0.01719,
+          "h": 0.05694,
+          "share": 0.000673,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0107",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0107",
+      "score": 0.4516,
+      "tier": "bench",
+      "glass_share": 0.00246,
+      "depth_valid": 0.9876,
+      "depth_p1_mm": 1513,
+      "depth_p99_mm": 5230,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63281,
+          "y": 0.53611,
+          "w": 0.01875,
+          "h": 0.06389,
+          "share": 0.000853,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56484,
+          "y": 0.45833,
+          "w": 0.01875,
+          "h": 0.08194,
+          "share": 0.000713,
+          "salience": 0.959
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55312,
+          "y": 0.53056,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000536,
+          "salience": 0.9315
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0108",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0108",
+      "score": 0.4812,
+      "tier": "bench",
+      "glass_share": 0.00196,
+      "depth_valid": 0.9562,
+      "depth_p1_mm": 727,
+      "depth_p99_mm": 5175,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63203,
+          "y": 0.49028,
+          "w": 0.01719,
+          "h": 0.05833,
+          "share": 0.000693,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57031,
+          "y": 0.44583,
+          "w": 0.01172,
+          "h": 0.07361,
+          "share": 0.000527,
+          "salience": 0.4945
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0109",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0109",
+      "score": 0.4203,
+      "tier": "bench",
+      "glass_share": 0.00245,
+      "depth_valid": 0.9974,
+      "depth_p1_mm": 1613,
+      "depth_p99_mm": 3588,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.64219,
+          "y": 0.49583,
+          "w": 0.01953,
+          "h": 0.06389,
+          "share": 0.00088,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55781,
+          "y": 0.50833,
+          "w": 0.01562,
+          "h": 0.04028,
+          "share": 0.000567,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56563,
+          "y": 0.44028,
+          "w": 0.01328,
+          "h": 0.08333,
+          "share": 0.000583,
+          "salience": 0.6145
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0110",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0110",
+      "score": 0.4149,
+      "tier": "bench",
+      "glass_share": 0.00235,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 1781,
+      "depth_p99_mm": 3552,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.6375,
+          "y": 0.50972,
+          "w": 0.01875,
+          "h": 0.06111,
+          "share": 0.000781,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55859,
+          "y": 0.44306,
+          "w": 0.01875,
+          "h": 0.08056,
+          "share": 0.000634,
+          "salience": 0.8736
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55781,
+          "y": 0.51667,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000531,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0111",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0111",
+      "score": 0.5631,
+      "tier": "bench",
+      "glass_share": 0.00288,
+      "depth_valid": 0.9582,
+      "depth_p1_mm": 990,
+      "depth_p99_mm": 9303,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.60391,
+          "y": 0.54861,
+          "w": 0.02187,
+          "h": 0.07361,
+          "share": 0.001098,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56563,
+          "y": 0.45694,
+          "w": 0.02031,
+          "h": 0.08889,
+          "share": 0.000847,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53438,
+          "y": 0.52639,
+          "w": 0.01562,
+          "h": 0.04306,
+          "share": 0.000602,
+          "salience": 0.9792
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0112",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0112",
+      "score": 0.521,
+      "tier": "bench",
+      "glass_share": 0.00271,
+      "depth_valid": 0.9441,
+      "depth_p1_mm": 952,
+      "depth_p99_mm": 9298,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.59609,
+          "y": 0.54167,
+          "w": 0.02109,
+          "h": 0.07083,
+          "share": 0.00103,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55703,
+          "y": 0.46111,
+          "w": 0.02031,
+          "h": 0.08611,
+          "share": 0.000795,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52734,
+          "y": 0.52639,
+          "w": 0.01562,
+          "h": 0.04167,
+          "share": 0.000575,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0113",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0113",
+      "score": 0.5332,
+      "tier": "bench",
+      "glass_share": 0.00282,
+      "depth_valid": 0.9483,
+      "depth_p1_mm": 839,
+      "depth_p99_mm": 8224,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.6125,
+          "y": 0.52222,
+          "w": 0.02109,
+          "h": 0.07222,
+          "share": 0.001079,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55703,
+          "y": 0.45278,
+          "w": 0.02031,
+          "h": 0.0875,
+          "share": 0.0008,
+          "salience": 0.7318
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53359,
+          "y": 0.51944,
+          "w": 0.01562,
+          "h": 0.04167,
+          "share": 0.0006,
+          "salience": 0.624
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0114",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0114",
+      "score": 0.437,
+      "tier": "bench",
+      "glass_share": 0.00284,
+      "depth_valid": 0.9905,
+      "depth_p1_mm": 1458,
+      "depth_p99_mm": 3821,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.66172,
+          "y": 0.50556,
+          "w": 0.02187,
+          "h": 0.07083,
+          "share": 0.001074,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.56953,
+          "y": 0.51944,
+          "w": 0.01641,
+          "h": 0.04306,
+          "share": 0.000658,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57891,
+          "y": 0.45139,
+          "w": 0.01406,
+          "h": 0.08889,
+          "share": 0.000654,
+          "salience": 0.479
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0115",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0115",
+      "score": 0.5313,
+      "tier": "space",
+      "glass_share": 0.00449,
+      "depth_valid": 0.9571,
+      "depth_p1_mm": 819,
+      "depth_p99_mm": 10225,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.59531,
+          "y": 0.57361,
+          "w": 0.02891,
+          "h": 0.09722,
+          "share": 0.001887,
+          "salience": 0.9751
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57266,
+          "y": 0.46111,
+          "w": 0.02422,
+          "h": 0.10833,
+          "share": 0.001262,
+          "salience": 0.9777
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.525,
+          "y": 0.53889,
+          "w": 0.01953,
+          "h": 0.05139,
+          "share": 0.000891,
+          "salience": 0.8581
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0116",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0116",
+      "score": 0.5491,
+      "tier": "bench",
+      "glass_share": 0.00316,
+      "depth_valid": 0.9677,
+      "depth_p1_mm": 870,
+      "depth_p99_mm": 7700,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63906,
+          "y": 0.52083,
+          "w": 0.02344,
+          "h": 0.075,
+          "share": 0.001204,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57266,
+          "y": 0.44306,
+          "w": 0.02109,
+          "h": 0.09167,
+          "share": 0.000895,
+          "salience": 0.7806
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55234,
+          "y": 0.51528,
+          "w": 0.01641,
+          "h": 0.04444,
+          "share": 0.000675,
+          "salience": 0.6773
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0117",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0117",
+      "score": 0.5381,
+      "tier": "bench",
+      "glass_share": 0.00279,
+      "depth_valid": 0.9624,
+      "depth_p1_mm": 1087,
+      "depth_p99_mm": 9727,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.59688,
+          "y": 0.575,
+          "w": 0.02109,
+          "h": 0.07222,
+          "share": 0.001058,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56719,
+          "y": 0.47361,
+          "w": 0.01953,
+          "h": 0.0875,
+          "share": 0.000838,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53359,
+          "y": 0.54167,
+          "w": 0.01562,
+          "h": 0.04306,
+          "share": 0.000587,
+          "salience": 0.8629
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0118",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0118",
+      "score": 0.4443,
+      "tier": "bench",
+      "glass_share": 0.00227,
+      "depth_valid": 0.9903,
+      "depth_p1_mm": 1041,
+      "depth_p99_mm": 4808,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.62656,
+          "y": 0.50556,
+          "w": 0.01875,
+          "h": 0.06111,
+          "share": 0.000788,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56094,
+          "y": 0.43889,
+          "w": 0.01562,
+          "h": 0.07917,
+          "share": 0.000636,
+          "salience": 0.7763
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54922,
+          "y": 0.50694,
+          "w": 0.01484,
+          "h": 0.03889,
+          "share": 0.0005,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0119",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0119",
+      "score": 0.5483,
+      "tier": "bench",
+      "glass_share": 0.00249,
+      "depth_valid": 0.961,
+      "depth_p1_mm": 1096,
+      "depth_p99_mm": 8813,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.59844,
+          "y": 0.54861,
+          "w": 0.01953,
+          "h": 0.06667,
+          "share": 0.000914,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55703,
+          "y": 0.45972,
+          "w": 0.01875,
+          "h": 0.08194,
+          "share": 0.000739,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53047,
+          "y": 0.52778,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000534,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0120",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0120",
+      "score": 0.5335,
+      "tier": "bench",
+      "glass_share": 0.00334,
+      "depth_valid": 0.9437,
+      "depth_p1_mm": 929,
+      "depth_p99_mm": 8947,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.625,
+          "y": 0.55556,
+          "w": 0.02422,
+          "h": 0.08056,
+          "share": 0.001326,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57422,
+          "y": 0.46806,
+          "w": 0.02187,
+          "h": 0.09444,
+          "share": 0.000954,
+          "salience": 0.9753
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54453,
+          "y": 0.54028,
+          "w": 0.01641,
+          "h": 0.04583,
+          "share": 0.000698,
+          "salience": 0.9906
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0121",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0121",
+      "score": 0.4342,
+      "tier": "bench",
+      "glass_share": 0.00198,
+      "depth_valid": 0.9914,
+      "depth_p1_mm": 1089,
+      "depth_p99_mm": 4153,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63359,
+          "y": 0.50694,
+          "w": 0.01719,
+          "h": 0.05694,
+          "share": 0.000681,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56484,
+          "y": 0.44722,
+          "w": 0.01484,
+          "h": 0.075,
+          "share": 0.000522,
+          "salience": 0.7875
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0122",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0122",
+      "score": 0.535,
+      "tier": "bench",
+      "glass_share": 0.00375,
+      "depth_valid": 0.9599,
+      "depth_p1_mm": 950,
+      "depth_p99_mm": 8363,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63359,
+          "y": 0.54167,
+          "w": 0.02578,
+          "h": 0.08472,
+          "share": 0.0015,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57266,
+          "y": 0.45139,
+          "w": 0.02187,
+          "h": 0.09861,
+          "share": 0.001042,
+          "salience": 0.837
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54375,
+          "y": 0.52778,
+          "w": 0.01797,
+          "h": 0.04861,
+          "share": 0.000793,
+          "salience": 0.9391
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0123",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0123",
+      "score": 0.6975,
+      "tier": "detail",
+      "glass_share": 0.00713,
+      "depth_valid": 0.8926,
+      "depth_p1_mm": 851,
+      "depth_p99_mm": 11311,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.71016,
+          "y": 0.70556,
+          "w": 0.04375,
+          "h": 0.13611,
+          "share": 0.00409,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58516,
+          "y": 0.46111,
+          "w": 0.02031,
+          "h": 0.10417,
+          "share": 0.000924,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.50625,
+          "y": 0.54583,
+          "w": 0.01875,
+          "h": 0.05139,
+          "share": 0.000887,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0124",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0124",
+      "score": 0.6368,
+      "tier": "bench",
+      "glass_share": 0.00438,
+      "depth_valid": 0.9183,
+      "depth_p1_mm": 1375,
+      "depth_p99_mm": 8779,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.76797,
+          "y": 0.58333,
+          "w": 0.03203,
+          "h": 0.0875,
+          "share": 0.001808,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57812,
+          "y": 0.4375,
+          "w": 0.01953,
+          "h": 0.0875,
+          "share": 0.000824,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54453,
+          "y": 0.52917,
+          "w": 0.01719,
+          "h": 0.04583,
+          "share": 0.000697,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0125",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0125",
+      "score": 0.5449,
+      "tier": "space",
+      "glass_share": 0.0035,
+      "depth_valid": 0.8622,
+      "depth_p1_mm": 1375,
+      "depth_p99_mm": 10451,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.71797,
+          "y": 0.58611,
+          "w": 0.02656,
+          "h": 0.08056,
+          "share": 0.001458,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57969,
+          "y": 0.45139,
+          "w": 0.01797,
+          "h": 0.07917,
+          "share": 0.000671,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53516,
+          "y": 0.525,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.00053,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0126",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0126",
+      "score": 0.4741,
+      "tier": "bench",
+      "glass_share": 0.00337,
+      "depth_valid": 0.8163,
+      "depth_p1_mm": 1533,
+      "depth_p99_mm": 9448,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.7375,
+          "y": 0.52083,
+          "w": 0.02578,
+          "h": 0.07639,
+          "share": 0.001343,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57266,
+          "y": 0.44306,
+          "w": 0.01797,
+          "h": 0.07778,
+          "share": 0.000637,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54141,
+          "y": 0.50833,
+          "w": 0.01484,
+          "h": 0.03889,
+          "share": 0.000539,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0127",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0127",
+      "score": 0.681,
+      "tier": "space",
+      "glass_share": 0.00342,
+      "depth_valid": 0.8961,
+      "depth_p1_mm": 1101,
+      "depth_p99_mm": 12119,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.61328,
+          "y": 0.6875,
+          "w": 0.02813,
+          "h": 0.09306,
+          "share": 0.001778,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.49609,
+          "y": 0.54722,
+          "w": 0.01484,
+          "h": 0.04167,
+          "share": 0.000552,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0128",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0128",
+      "score": 0.6149,
+      "tier": "space",
+      "glass_share": 0.00436,
+      "depth_valid": 0.898,
+      "depth_p1_mm": 1207,
+      "depth_p99_mm": 10039,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.7375,
+          "y": 0.61806,
+          "w": 0.03125,
+          "h": 0.09028,
+          "share": 0.001923,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57969,
+          "y": 0.44861,
+          "w": 0.02031,
+          "h": 0.08611,
+          "share": 0.000807,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53203,
+          "y": 0.53333,
+          "w": 0.01641,
+          "h": 0.04444,
+          "share": 0.000653,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0129",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0129",
+      "score": 0.7132,
+      "tier": "detail",
+      "glass_share": 0.00774,
+      "depth_valid": 0.9141,
+      "depth_p1_mm": 920,
+      "depth_p99_mm": 10745,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.74922,
+          "y": 0.74722,
+          "w": 0.04766,
+          "h": 0.13472,
+          "share": 0.004298,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.59141,
+          "y": 0.46389,
+          "w": 0.02187,
+          "h": 0.10556,
+          "share": 0.001202,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51641,
+          "y": 0.55833,
+          "w": 0.01953,
+          "h": 0.05417,
+          "share": 0.000952,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0130",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0130",
+      "score": 0.6885,
+      "tier": "cluster",
+      "glass_share": 0.0065,
+      "depth_valid": 0.89,
+      "depth_p1_mm": 911,
+      "depth_p99_mm": 10859,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.74375,
+          "y": 0.67917,
+          "w": 0.04063,
+          "h": 0.12361,
+          "share": 0.003474,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.59062,
+          "y": 0.45694,
+          "w": 0.02187,
+          "h": 0.09861,
+          "share": 0.001061,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52187,
+          "y": 0.54306,
+          "w": 0.01875,
+          "h": 0.05,
+          "share": 0.000837,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0132",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0132",
+      "score": 0.6679,
+      "tier": "bench",
+      "glass_share": 0.00477,
+      "depth_valid": 0.9331,
+      "depth_p1_mm": 1255,
+      "depth_p99_mm": 9230,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.77031,
+          "y": 0.61944,
+          "w": 0.03516,
+          "h": 0.09306,
+          "share": 0.002081,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58437,
+          "y": 0.44167,
+          "w": 0.02031,
+          "h": 0.08889,
+          "share": 0.000883,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54219,
+          "y": 0.53611,
+          "w": 0.01797,
+          "h": 0.04722,
+          "share": 0.000732,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0133",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0133",
+      "score": 0.5791,
+      "tier": "space",
+      "glass_share": 0.00458,
+      "depth_valid": 0.8678,
+      "depth_p1_mm": 1129,
+      "depth_p99_mm": 10260,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.74453,
+          "y": 0.6125,
+          "w": 0.03203,
+          "h": 0.09722,
+          "share": 0.00215,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58359,
+          "y": 0.45556,
+          "w": 0.02031,
+          "h": 0.0875,
+          "share": 0.000827,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53281,
+          "y": 0.53611,
+          "w": 0.01641,
+          "h": 0.04444,
+          "share": 0.000679,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0134",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0134",
+      "score": 0.5231,
+      "tier": "bench",
+      "glass_share": 0.00429,
+      "depth_valid": 0.8566,
+      "depth_p1_mm": 1425,
+      "depth_p99_mm": 7721,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.78672,
+          "y": 0.53889,
+          "w": 0.03047,
+          "h": 0.08611,
+          "share": 0.001793,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57734,
+          "y": 0.44306,
+          "w": 0.02031,
+          "h": 0.0875,
+          "share": 0.000804,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55391,
+          "y": 0.52361,
+          "w": 0.01719,
+          "h": 0.04583,
+          "share": 0.00072,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0135",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0135",
+      "score": 0.5737,
+      "tier": "bench",
+      "glass_share": 0.00398,
+      "depth_valid": 0.9041,
+      "depth_p1_mm": 1651,
+      "depth_p99_mm": 6542,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.77578,
+          "y": 0.54444,
+          "w": 0.02734,
+          "h": 0.07778,
+          "share": 0.001446,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56953,
+          "y": 0.44167,
+          "w": 0.01953,
+          "h": 0.08472,
+          "share": 0.000789,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55781,
+          "y": 0.53333,
+          "w": 0.01719,
+          "h": 0.04722,
+          "share": 0.000713,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0136",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0136",
+      "score": 0.6661,
+      "tier": "bench",
+      "glass_share": 0.00549,
+      "depth_valid": 0.9078,
+      "depth_p1_mm": 1070,
+      "depth_p99_mm": 10267,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.75,
+          "y": 0.69028,
+          "w": 0.0375,
+          "h": 0.10556,
+          "share": 0.002655,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58672,
+          "y": 0.46806,
+          "w": 0.02187,
+          "h": 0.09306,
+          "share": 0.000968,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52891,
+          "y": 0.55972,
+          "w": 0.01797,
+          "h": 0.04861,
+          "share": 0.000769,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0137",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0137",
+      "score": 0.5513,
+      "tier": "space",
+      "glass_share": 0.00374,
+      "depth_valid": 0.8237,
+      "depth_p1_mm": 999,
+      "depth_p99_mm": 11386,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.69063,
+          "y": 0.56528,
+          "w": 0.03047,
+          "h": 0.09583,
+          "share": 0.002004,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.575,
+          "y": 0.45278,
+          "w": 0.01875,
+          "h": 0.08472,
+          "share": 0.000741,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51484,
+          "y": 0.51806,
+          "w": 0.01562,
+          "h": 0.04028,
+          "share": 0.000589,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0138",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0138",
+      "score": 0.6718,
+      "tier": "space",
+      "glass_share": 0.00484,
+      "depth_valid": 0.8889,
+      "depth_p1_mm": 1034,
+      "depth_p99_mm": 10889,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.69375,
+          "y": 0.66944,
+          "w": 0.03203,
+          "h": 0.10139,
+          "share": 0.002263,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57188,
+          "y": 0.46667,
+          "w": 0.01797,
+          "h": 0.08889,
+          "share": 0.000857,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.50859,
+          "y": 0.54722,
+          "w": 0.01641,
+          "h": 0.04583,
+          "share": 0.000684,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": true,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0139",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0139",
+      "score": 0.5173,
+      "tier": "bench",
+      "glass_share": 0.00435,
+      "depth_valid": 0.8503,
+      "depth_p1_mm": 1293,
+      "depth_p99_mm": 9356,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.77187,
+          "y": 0.54306,
+          "w": 0.03125,
+          "h": 0.09028,
+          "share": 0.001916,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58359,
+          "y": 0.4375,
+          "w": 0.01953,
+          "h": 0.08611,
+          "share": 0.000785,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54688,
+          "y": 0.5125,
+          "w": 0.01641,
+          "h": 0.04444,
+          "share": 0.000675,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0140",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0140",
+      "score": 0.5354,
+      "tier": "bench",
+      "glass_share": 0.00548,
+      "depth_valid": 0.8409,
+      "depth_p1_mm": 1090,
+      "depth_p99_mm": 9484,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.79766,
+          "y": 0.57361,
+          "w": 0.0375,
+          "h": 0.10694,
+          "share": 0.002818,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58594,
+          "y": 0.44861,
+          "w": 0.02266,
+          "h": 0.09444,
+          "share": 0.000947,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54063,
+          "y": 0.53056,
+          "w": 0.01797,
+          "h": 0.05,
+          "share": 0.000828,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0141",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0141",
+      "score": 0.532,
+      "tier": "bench",
+      "glass_share": 0.00309,
+      "depth_valid": 0.875,
+      "depth_p1_mm": 1753,
+      "depth_p99_mm": 8384,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.74531,
+          "y": 0.54861,
+          "w": 0.02266,
+          "h": 0.06944,
+          "share": 0.00111,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57266,
+          "y": 0.44861,
+          "w": 0.01719,
+          "h": 0.07639,
+          "share": 0.000627,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55469,
+          "y": 0.52917,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000536,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0142",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0142",
+      "score": 0.3986,
+      "tier": "bench",
+      "glass_share": 0.0,
+      "depth_valid": 1.0,
+      "depth_p1_mm": 89,
+      "depth_p99_mm": 184,
+      "hotspots": [],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0143",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0143",
+      "score": 0.5385,
+      "tier": "space",
+      "glass_share": 0.00362,
+      "depth_valid": 0.946,
+      "depth_p1_mm": 874,
+      "depth_p99_mm": 10074,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.58594,
+          "y": 0.56806,
+          "w": 0.025,
+          "h": 0.08611,
+          "share": 0.00147,
+          "salience": 0.9511
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56016,
+          "y": 0.47222,
+          "w": 0.02266,
+          "h": 0.09861,
+          "share": 0.001025,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51875,
+          "y": 0.54306,
+          "w": 0.01719,
+          "h": 0.04722,
+          "share": 0.000742,
+          "salience": 0.8894
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0144",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0144",
+      "score": 0.5295,
+      "tier": "space",
+      "glass_share": 0.00278,
+      "depth_valid": 0.9382,
+      "depth_p1_mm": 922,
+      "depth_p99_mm": 9884,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.58281,
+          "y": 0.54861,
+          "w": 0.02109,
+          "h": 0.07361,
+          "share": 0.001077,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55391,
+          "y": 0.46944,
+          "w": 0.01953,
+          "h": 0.08611,
+          "share": 0.000808,
+          "salience": 0.9839
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51953,
+          "y": 0.53333,
+          "w": 0.01562,
+          "h": 0.04167,
+          "share": 0.000588,
+          "salience": 0.8593
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0145",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0145",
+      "score": 0.5167,
+      "tier": "space",
+      "glass_share": 0.00381,
+      "depth_valid": 0.9741,
+      "depth_p1_mm": 900,
+      "depth_p99_mm": 10103,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.56719,
+          "y": 0.60278,
+          "w": 0.025,
+          "h": 0.08611,
+          "share": 0.001504,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55391,
+          "y": 0.475,
+          "w": 0.02266,
+          "h": 0.1,
+          "share": 0.001126,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.50781,
+          "y": 0.55,
+          "w": 0.01797,
+          "h": 0.04861,
+          "share": 0.000774,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0146",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0146",
+      "score": 0.4462,
+      "tier": "bench",
+      "glass_share": 0.00298,
+      "depth_valid": 0.9979,
+      "depth_p1_mm": 1450,
+      "depth_p99_mm": 3706,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.6625,
+          "y": 0.49722,
+          "w": 0.02266,
+          "h": 0.07222,
+          "share": 0.001119,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.56953,
+          "y": 0.50833,
+          "w": 0.01719,
+          "h": 0.04444,
+          "share": 0.000685,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57969,
+          "y": 0.43472,
+          "w": 0.01406,
+          "h": 0.09167,
+          "share": 0.00071,
+          "salience": 0.6684
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0147",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0147",
+      "score": 0.5512,
+      "tier": "space",
+      "glass_share": 0.00271,
+      "depth_valid": 0.9174,
+      "depth_p1_mm": 885,
+      "depth_p99_mm": 10903,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.56016,
+          "y": 0.55,
+          "w": 0.02109,
+          "h": 0.07361,
+          "share": 0.001083,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55,
+          "y": 0.47222,
+          "w": 0.01875,
+          "h": 0.0875,
+          "share": 0.000795,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51016,
+          "y": 0.53333,
+          "w": 0.01562,
+          "h": 0.04028,
+          "share": 0.000556,
+          "salience": 0.7758
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0148",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0148",
+      "score": 0.5208,
+      "tier": "space",
+      "glass_share": 0.00261,
+      "depth_valid": 0.9197,
+      "depth_p1_mm": 877,
+      "depth_p99_mm": 10448,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.57812,
+          "y": 0.54306,
+          "w": 0.02109,
+          "h": 0.07083,
+          "share": 0.001015,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55625,
+          "y": 0.47083,
+          "w": 0.01953,
+          "h": 0.08472,
+          "share": 0.000764,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52109,
+          "y": 0.53056,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000543,
+          "salience": 0.6946
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0149",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0149",
+      "score": 0.5608,
+      "tier": "space",
+      "glass_share": 0.00287,
+      "depth_valid": 0.9406,
+      "depth_p1_mm": 906,
+      "depth_p99_mm": 10181,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.58984,
+          "y": 0.54722,
+          "w": 0.02187,
+          "h": 0.075,
+          "share": 0.001127,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56406,
+          "y": 0.46389,
+          "w": 0.02031,
+          "h": 0.08889,
+          "share": 0.000846,
+          "salience": 0.9958
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52812,
+          "y": 0.52778,
+          "w": 0.01562,
+          "h": 0.04306,
+          "share": 0.000602,
+          "salience": 0.9038
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0150",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0150",
+      "score": 0.4158,
+      "tier": "bench",
+      "glass_share": 0.00238,
+      "depth_valid": 0.998,
+      "depth_p1_mm": 1641,
+      "depth_p99_mm": 3630,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63594,
+          "y": 0.49444,
+          "w": 0.01953,
+          "h": 0.06389,
+          "share": 0.000843,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55391,
+          "y": 0.50556,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000551,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56172,
+          "y": 0.4375,
+          "w": 0.01328,
+          "h": 0.08194,
+          "share": 0.000581,
+          "salience": 0.6632
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0151",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0151",
+      "score": 0.5309,
+      "tier": "bench",
+      "glass_share": 0.00254,
+      "depth_valid": 0.9537,
+      "depth_p1_mm": 1081,
+      "depth_p99_mm": 9380,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.58594,
+          "y": 0.5625,
+          "w": 0.02031,
+          "h": 0.06806,
+          "share": 0.000945,
+          "salience": 0.9139
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55312,
+          "y": 0.47222,
+          "w": 0.01875,
+          "h": 0.08333,
+          "share": 0.00076,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52266,
+          "y": 0.53889,
+          "w": 0.01484,
+          "h": 0.04028,
+          "share": 0.000538,
+          "salience": 0.9628
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0152",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0152",
+      "score": 0.4336,
+      "tier": "bench",
+      "glass_share": 0.0025,
+      "depth_valid": 0.9914,
+      "depth_p1_mm": 1580,
+      "depth_p99_mm": 3749,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.65078,
+          "y": 0.50556,
+          "w": 0.02109,
+          "h": 0.06528,
+          "share": 0.000921,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.56484,
+          "y": 0.51806,
+          "w": 0.01562,
+          "h": 0.04167,
+          "share": 0.000585,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57344,
+          "y": 0.45278,
+          "w": 0.01328,
+          "h": 0.08333,
+          "share": 0.000579,
+          "salience": 0.4351
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0153",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0153",
+      "score": 0.5557,
+      "tier": "bench",
+      "glass_share": 0.00313,
+      "depth_valid": 0.9479,
+      "depth_p1_mm": 911,
+      "depth_p99_mm": 8792,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.61562,
+          "y": 0.53056,
+          "w": 0.02266,
+          "h": 0.07778,
+          "share": 0.001221,
+          "salience": 0.9741
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56484,
+          "y": 0.45139,
+          "w": 0.02109,
+          "h": 0.09028,
+          "share": 0.000887,
+          "salience": 0.7336
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53672,
+          "y": 0.52083,
+          "w": 0.01641,
+          "h": 0.04444,
+          "share": 0.000659,
+          "salience": 0.9131
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0154",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0154",
+      "score": 0.4589,
+      "tier": "bench",
+      "glass_share": 0.0019,
+      "depth_valid": 0.9818,
+      "depth_p1_mm": 1044,
+      "depth_p99_mm": 4235,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.62109,
+          "y": 0.51111,
+          "w": 0.01641,
+          "h": 0.05556,
+          "share": 0.00065,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0155",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0155",
+      "score": 0.5603,
+      "tier": "bench",
+      "glass_share": 0.00301,
+      "depth_valid": 0.9803,
+      "depth_p1_mm": 1103,
+      "depth_p99_mm": 7953,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.61562,
+          "y": 0.56111,
+          "w": 0.02187,
+          "h": 0.07222,
+          "share": 0.001111,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56094,
+          "y": 0.45833,
+          "w": 0.02031,
+          "h": 0.09028,
+          "share": 0.000882,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53594,
+          "y": 0.53611,
+          "w": 0.01641,
+          "h": 0.04583,
+          "share": 0.000652,
+          "salience": 0.9943
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0156",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0156",
+      "score": 0.4618,
+      "tier": "bench",
+      "glass_share": 0.00328,
+      "depth_valid": 0.999,
+      "depth_p1_mm": 1383,
+      "depth_p99_mm": 3685,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.67109,
+          "y": 0.51111,
+          "w": 0.02344,
+          "h": 0.075,
+          "share": 0.001238,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.57344,
+          "y": 0.51944,
+          "w": 0.01797,
+          "h": 0.04722,
+          "share": 0.000752,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58437,
+          "y": 0.44167,
+          "w": 0.01484,
+          "h": 0.09444,
+          "share": 0.000791,
+          "salience": 0.7357
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0157",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0157",
+      "score": 0.4645,
+      "tier": "bench",
+      "glass_share": 0.00191,
+      "depth_valid": 0.976,
+      "depth_p1_mm": 962,
+      "depth_p99_mm": 4690,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.61953,
+          "y": 0.50139,
+          "w": 0.01719,
+          "h": 0.05694,
+          "share": 0.000659,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55937,
+          "y": 0.44722,
+          "w": 0.01172,
+          "h": 0.07361,
+          "share": 0.000519,
+          "salience": 0.6654
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0158",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0158",
+      "score": 0.4749,
+      "tier": "space",
+      "glass_share": 0.00255,
+      "depth_valid": 0.919,
+      "depth_p1_mm": 785,
+      "depth_p99_mm": 9826,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.59453,
+          "y": 0.52639,
+          "w": 0.02109,
+          "h": 0.06944,
+          "share": 0.000992,
+          "salience": 0.9889
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56016,
+          "y": 0.46528,
+          "w": 0.01875,
+          "h": 0.08333,
+          "share": 0.000736,
+          "salience": 0.7817
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52891,
+          "y": 0.52361,
+          "w": 0.01484,
+          "h": 0.03889,
+          "share": 0.000535,
+          "salience": 0.7308
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0159",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0159",
+      "score": 0.5269,
+      "tier": "space",
+      "glass_share": 0.00266,
+      "depth_valid": 0.9018,
+      "depth_p1_mm": 774,
+      "depth_p99_mm": 10919,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.57031,
+          "y": 0.52639,
+          "w": 0.02109,
+          "h": 0.07222,
+          "share": 0.001054,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55547,
+          "y": 0.46389,
+          "w": 0.02031,
+          "h": 0.08611,
+          "share": 0.000773,
+          "salience": 0.9046
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51719,
+          "y": 0.52222,
+          "w": 0.01484,
+          "h": 0.03889,
+          "share": 0.000562,
+          "salience": 0.6032
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0160",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0160",
+      "score": 0.5793,
+      "tier": "space",
+      "glass_share": 0.00359,
+      "depth_valid": 0.9386,
+      "depth_p1_mm": 831,
+      "depth_p99_mm": 10626,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.575,
+          "y": 0.55139,
+          "w": 0.025,
+          "h": 0.08472,
+          "share": 0.001451,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56172,
+          "y": 0.45833,
+          "w": 0.02187,
+          "h": 0.09861,
+          "share": 0.001021,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.51719,
+          "y": 0.52639,
+          "w": 0.01719,
+          "h": 0.04583,
+          "share": 0.000723,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0161",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0161",
+      "score": 0.4663,
+      "tier": "bench",
+      "glass_share": 0.00236,
+      "depth_valid": 0.9665,
+      "depth_p1_mm": 753,
+      "depth_p99_mm": 5377,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.62109,
+          "y": 0.5,
+          "w": 0.01953,
+          "h": 0.06389,
+          "share": 0.000841,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54219,
+          "y": 0.50833,
+          "w": 0.01484,
+          "h": 0.03889,
+          "share": 0.000507,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.55625,
+          "y": 0.44722,
+          "w": 0.01641,
+          "h": 0.08056,
+          "share": 0.00066,
+          "salience": 0.5597
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0162",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0162",
+      "score": 0.556,
+      "tier": "bench",
+      "glass_share": 0.0031,
+      "depth_valid": 0.9788,
+      "depth_p1_mm": 1109,
+      "depth_p99_mm": 7768,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.63125,
+          "y": 0.55,
+          "w": 0.02266,
+          "h": 0.07361,
+          "share": 0.001152,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57031,
+          "y": 0.45417,
+          "w": 0.02109,
+          "h": 0.09028,
+          "share": 0.0009,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.54766,
+          "y": 0.53056,
+          "w": 0.01719,
+          "h": 0.04583,
+          "share": 0.000665,
+          "salience": 0.9338
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0163",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0163",
+      "score": 0.6418,
+      "tier": "bench",
+      "glass_share": 0.00636,
+      "depth_valid": 0.878,
+      "depth_p1_mm": 946,
+      "depth_p99_mm": 10938,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.75938,
+          "y": 0.68611,
+          "w": 0.04063,
+          "h": 0.11944,
+          "share": 0.003382,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.60078,
+          "y": 0.46806,
+          "w": 0.02266,
+          "h": 0.09722,
+          "share": 0.00105,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53438,
+          "y": 0.55278,
+          "w": 0.01875,
+          "h": 0.05,
+          "share": 0.000819,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0164",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0164",
+      "score": 0.5234,
+      "tier": "bench",
+      "glass_share": 0.00386,
+      "depth_valid": 0.8536,
+      "depth_p1_mm": 1489,
+      "depth_p99_mm": 8535,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.76953,
+          "y": 0.53472,
+          "w": 0.02813,
+          "h": 0.08056,
+          "share": 0.00157,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57656,
+          "y": 0.44028,
+          "w": 0.01953,
+          "h": 0.08333,
+          "share": 0.000735,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55156,
+          "y": 0.51806,
+          "w": 0.01641,
+          "h": 0.04306,
+          "share": 0.000642,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0165",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0165",
+      "score": 0.6268,
+      "tier": "bench",
+      "glass_share": 0.00467,
+      "depth_valid": 0.9006,
+      "depth_p1_mm": 1185,
+      "depth_p99_mm": 9908,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.75469,
+          "y": 0.62639,
+          "w": 0.03281,
+          "h": 0.09444,
+          "share": 0.002102,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58516,
+          "y": 0.45139,
+          "w": 0.02031,
+          "h": 0.0875,
+          "share": 0.000854,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.5375,
+          "y": 0.53889,
+          "w": 0.01719,
+          "h": 0.04583,
+          "share": 0.000694,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0166",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0166",
+      "score": 0.5733,
+      "tier": "bench",
+      "glass_share": 0.00319,
+      "depth_valid": 0.8988,
+      "depth_p1_mm": 1791,
+      "depth_p99_mm": 8440,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.74844,
+          "y": 0.56528,
+          "w": 0.02422,
+          "h": 0.06944,
+          "share": 0.001151,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.57578,
+          "y": 0.44861,
+          "w": 0.01719,
+          "h": 0.07778,
+          "share": 0.000643,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55547,
+          "y": 0.53472,
+          "w": 0.01562,
+          "h": 0.04028,
+          "share": 0.000545,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0167",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0167",
+      "score": 0.7066,
+      "tier": "bench",
+      "glass_share": 0.00532,
+      "depth_valid": 0.9339,
+      "depth_p1_mm": 1091,
+      "depth_p99_mm": 10374,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.7375,
+          "y": 0.69306,
+          "w": 0.0375,
+          "h": 0.10278,
+          "share": 0.002502,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58828,
+          "y": 0.45694,
+          "w": 0.02109,
+          "h": 0.09167,
+          "share": 0.000954,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.52891,
+          "y": 0.54861,
+          "w": 0.01719,
+          "h": 0.04722,
+          "share": 0.000741,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0168",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0168",
+      "score": 0.6548,
+      "tier": "bench",
+      "glass_share": 0.00602,
+      "depth_valid": 0.8985,
+      "depth_p1_mm": 975,
+      "depth_p99_mm": 10518,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.76328,
+          "y": 0.65556,
+          "w": 0.04063,
+          "h": 0.11528,
+          "share": 0.003122,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.59531,
+          "y": 0.44722,
+          "w": 0.02266,
+          "h": 0.09722,
+          "share": 0.001021,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53359,
+          "y": 0.53472,
+          "w": 0.01875,
+          "h": 0.05,
+          "share": 0.000807,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0169",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0169",
+      "score": 0.5982,
+      "tier": "bench",
+      "glass_share": 0.00326,
+      "depth_valid": 0.9144,
+      "depth_p1_mm": 1731,
+      "depth_p99_mm": 9009,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.74687,
+          "y": 0.56389,
+          "w": 0.02578,
+          "h": 0.07083,
+          "share": 0.001175,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.58281,
+          "y": 0.4375,
+          "w": 0.01719,
+          "h": 0.07639,
+          "share": 0.000642,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.55703,
+          "y": 0.51944,
+          "w": 0.01484,
+          "h": 0.04167,
+          "share": 0.000527,
+          "salience": 1.0
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    },
+    {
+      "frame": "0170",
+      "view_label": "Fixed camera",
+      "view_group": "unspecified",
+      "view_name": "frame_0170",
+      "score": 0.5806,
+      "tier": "bench",
+      "glass_share": 0.00354,
+      "depth_valid": 0.8911,
+      "depth_p1_mm": 1497,
+      "depth_p99_mm": 9473,
+      "hotspots": [
+        {
+          "label": "Flask",
+          "prim": "Conical__flask",
+          "x": 0.72422,
+          "y": 0.59306,
+          "w": 0.02578,
+          "h": 0.07778,
+          "share": 0.001385,
+          "salience": 1.0
+        },
+        {
+          "label": "Graduated cylinder",
+          "prim": "graduated_cylinder",
+          "x": 0.56797,
+          "y": 0.45278,
+          "w": 0.01797,
+          "h": 0.07917,
+          "share": 0.000689,
+          "salience": 1.0
+        },
+        {
+          "label": "Beaker",
+          "prim": "_50_mL_Beaker",
+          "x": 0.53203,
+          "y": 0.53611,
+          "w": 0.01484,
+          "h": 0.04167,
+          "share": 0.000558,
+          "salience": 0.9814
+        }
+      ],
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "has_right": false,
+      "primary_target": null,
+      "target_distance_m": null,
+      "downward_pitch_deg": null
+    }
+  ]
+}

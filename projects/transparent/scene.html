@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>document.documentElement.dataset.theme=localStorage.getItem("theme")||((matchMedia("(prefers-color-scheme:light)").matches)?"light":"dark")</script>
+<title>Scene · Transparent Object Perception</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body class="stage-page">
+<div class="stage-bar">
+  <a class="back" href="./#scenes" id="back"><span aria-hidden="true">←</span> Scenes</a>
+  <span class="title"><span class="name" id="scene-name"></span><span class="id mono" id="scene-id"></span></span>
+  <span class="nav-scene">
+    <a id="prev-scene" title="Previous scene ([)" aria-label="Previous scene">‹</a>
+    <a id="next-scene" title="Next scene (])" aria-label="Next scene">›</a>
+  </span>
+  <span class="tools">
+    <button id="btn-compare" aria-pressed="false" title="Compare: drag the divider (C)">◧</button>
+    <button id="btn-ext" aria-pressed="false" title="More modalities and stereo eye">⋯</button>
+    <button id="btn-full" title="Fullscreen (F)">⛶</button>
+    <button id="btn-info" aria-pressed="false" title="Info (I)">ⓘ</button>
+  </span>
+</div>
+
+<div class="viewport" id="viewport">
+  <div class="canvas" id="canvas">
+    <div class="divider" id="divider" hidden><span class="grab"></span><span class="handle"></span></div>
+  </div>
+  <span class="stage-note mono" id="stage-note"></span>
+  <div class="stage-bar-legend" id="legend" hidden></div>
+  <button class="zoom-exit" id="zoom-exit">Overview · Esc</button>
+  <div class="compare-tags" id="compare-tags" hidden><span id="tag-a"></span><span id="tag-b"></span></div>
+</div>
+
+<div class="stage-controls">
+  <div class="row">
+    <div class="modal-switch" id="modality" role="group" aria-label="Modality"></div>
+    <div class="ext hidden" id="ext"></div>
+  </div>
+  <div class="strip-row">
+    <div class="filmstrip" id="filmstrip"></div>
+    <button class="more-views" id="btn-all"></button>
+  </div>
+</div>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <header><h3>Info</h3><button id="drawer-close" aria-label="Close">×</button></header>
+  <div class="body" id="drawer-body"></div>
+</aside>
+
+<div class="allviews" id="allviews" aria-hidden="true">
+  <header>
+    <h3 id="all-title"></h3>
+    <div class="modal-switch" id="all-groups"></div>
+    <button class="chip" id="all-close">Close</button>
+  </header>
+  <div class="grid" id="all-grid"></div>
+</div>
+
+<script type="module" src="js/scene.js"></script>
+</body>
+</html>

@@ -1,0 +1,4062 @@
+{
+  "source": "Equipment workbook database",
+  "updated": "2026-09-18",
+  "categories": [
+    {
+      "key": "all",
+      "label": "All equipment",
+      "count": 231
+    },
+    {
+      "key": "glassware",
+      "label": "Glassware",
+      "count": 130
+    },
+    {
+      "key": "lab-equipment",
+      "label": "Lab equipment",
+      "count": 63
+    },
+    {
+      "key": "glass-resources",
+      "label": "Glass resources",
+      "count": 38
+    }
+  ],
+  "items": [
+    {
+      "name": "Beaker 5mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 2.1,
+        "width": 2.1,
+        "height": 2.82
+      },
+      "mass_kg": 0.0036,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/beaker_5ml/asset.usda",
+      "preview": "/media/equipment/glassware-001.webp",
+      "id": "glassware-001"
+    },
+    {
+      "name": "Beaker 50mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 4,
+        "width": 4,
+        "height": 5.49
+      },
+      "mass_kg": 0.02,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/beaker_50ml/asset.usda",
+      "preview": "/media/equipment/glassware-002.webp",
+      "id": "glassware-002"
+    },
+    {
+      "name": "Beaker 100mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.4,
+        "width": 5.4,
+        "height": 7.51
+      },
+      "mass_kg": 0.04,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/beaker_100ml/asset.usda",
+      "preview": "/media/equipment/glassware-003.webp",
+      "id": "glassware-003"
+    },
+    {
+      "name": "Beaker 150mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.95,
+        "width": 5.95,
+        "height": 7.68
+      },
+      "mass_kg": 0.04,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/beaker_150ml/asset.usda",
+      "preview": "/media/equipment/glassware-004.webp",
+      "id": "glassware-004"
+    },
+    {
+      "name": "Beaker 250mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8.4,
+        "width": 8.4,
+        "height": 10.85
+      },
+      "mass_kg": 0.12,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/beaker_250ml/asset.usda",
+      "preview": "/media/equipment/glassware-005.webp",
+      "id": "glassware-005"
+    },
+    {
+      "name": "Beaker 2000mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.14,
+        "width": 11.9,
+        "height": 18.84
+      },
+      "mass_kg": 0.39,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/beaker_2000ml/asset.usda",
+      "preview": "/media/equipment/glassware-006.webp",
+      "id": "glassware-006"
+    },
+    {
+      "name": "Conical Flask",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 9.75,
+        "width": 9.75,
+        "height": 17.82
+      },
+      "mass_kg": 0.13,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/conical_flask/asset.usda",
+      "preview": "/media/equipment/glassware-007.webp",
+      "id": "glassware-007"
+    },
+    {
+      "name": "Conical Bottle",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.71,
+        "width": 7.71,
+        "height": 9.75
+      },
+      "mass_kg": 0.06,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/conical_bottle/asset.usda",
+      "preview": "/media/equipment/glassware-008.webp",
+      "id": "glassware-008"
+    },
+    {
+      "name": "Three Necked Flask",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 17.68,
+        "width": 13.97,
+        "height": 18.32
+      },
+      "mass_kg": 0.25,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/three_necked_flask/asset.usda",
+      "preview": "/media/equipment/glassware-009.webp",
+      "id": "glassware-009"
+    },
+    {
+      "name": "Bottle Small",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 3.44,
+        "width": 3.44,
+        "height": 6.61
+      },
+      "mass_kg": 0.01,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/bottle_small/asset.usda",
+      "preview": "/media/equipment/glassware-010.webp",
+      "id": "glassware-010"
+    },
+    {
+      "name": "Bottle Large 1",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8.45,
+        "width": 8.45,
+        "height": 17.14
+      },
+      "mass_kg": 0.11,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/bottle_large1/asset.usda",
+      "preview": "/media/equipment/glassware-011.webp",
+      "id": "glassware-011"
+    },
+    {
+      "name": "Bottle Large 3",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.92,
+        "width": 5.92,
+        "height": 18.77
+      },
+      "mass_kg": 0.08,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/bottle_large3/asset.usda",
+      "preview": "/media/equipment/glassware-012.webp",
+      "id": "glassware-012"
+    },
+    {
+      "name": "Test Tube",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 3.37,
+        "width": 3.37,
+        "height": 21.63
+      },
+      "mass_kg": 0.06,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/test_tube/asset.usda",
+      "preview": "/media/equipment/glassware-013.webp",
+      "id": "glassware-013"
+    },
+    {
+      "name": "Test Tube Rack 1",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 19.22,
+        "width": 4.2,
+        "height": 12.36
+      },
+      "mass_kg": 0.28,
+      "material": "Acrylic (PMMA)",
+      "friction": {
+        "static": 0.5,
+        "dynamic": 0.4,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/stoppers_and_supports/test_tube_rack_1/asset.usda",
+      "preview": "/media/equipment/glassware-014.webp",
+      "id": "glassware-014"
+    },
+    {
+      "name": "Test Tube Rack 2",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 28.14,
+        "width": 11.65,
+        "height": 12.74
+      },
+      "mass_kg": 0.65,
+      "material": "Acrylic (PMMA)",
+      "friction": {
+        "static": 0.5,
+        "dynamic": 0.4,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/stoppers_and_supports/test_tube_rack_2/asset.usda",
+      "preview": "/media/equipment/glassware-015.webp",
+      "id": "glassware-015"
+    },
+    {
+      "name": "Graduated Cylinder",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.72,
+        "width": 11.72,
+        "height": 27.23
+      },
+      "mass_kg": 0.5,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/glassware/graduated_cylinder/asset.usda",
+      "preview": "/media/equipment/glassware-016.webp",
+      "id": "glassware-016"
+    },
+    {
+      "name": "3D Scan 1",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 2.87,
+        "width": 2.86,
+        "height": 7.17
+      },
+      "mass_kg": 0.01,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_1/asset.usda",
+      "preview": "/media/equipment/glassware-017.webp",
+      "id": "glassware-017"
+    },
+    {
+      "name": "3D Scan 2",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 2.09,
+        "width": 2.08,
+        "height": 7.17
+      },
+      "mass_kg": 0.0082,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_2/asset.usda",
+      "preview": "/media/equipment/glassware-018.webp",
+      "id": "glassware-018"
+    },
+    {
+      "name": "3D Scan 3",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 10.16,
+        "width": 9.32,
+        "height": 7.13
+      },
+      "mass_kg": 0.07,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_3/asset.usda",
+      "preview": "/media/equipment/glassware-019.webp",
+      "id": "glassware-019"
+    },
+    {
+      "name": "3D Scan 5",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.74,
+        "width": 7.74,
+        "height": 11.89
+      },
+      "mass_kg": 0.07,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_5/asset.usda",
+      "preview": "/media/equipment/glassware-020.webp",
+      "id": "glassware-020"
+    },
+    {
+      "name": "3D Scan 6",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.59,
+        "width": 7.58,
+        "height": 21.16
+      },
+      "mass_kg": 0.15,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_6/asset.usda",
+      "preview": "/media/equipment/glassware-021.webp",
+      "id": "glassware-021"
+    },
+    {
+      "name": "3D Scan 7",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 2.83,
+        "width": 2.8,
+        "height": 11.02
+      },
+      "mass_kg": 0.02,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_7/asset.usda",
+      "preview": "/media/equipment/glassware-022.webp",
+      "id": "glassware-022"
+    },
+    {
+      "name": "3D Scan 8",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 4.77,
+        "width": 4.8,
+        "height": 19.42
+      },
+      "mass_kg": 0.06,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/project_local/scanned_assets/3_d_scan_8/asset.usda",
+      "preview": "/media/equipment/glassware-023.webp",
+      "id": "glassware-023"
+    },
+    {
+      "name": "Balao Volumetrico 100M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.2,
+        "width": 7.2,
+        "height": 19.22
+      },
+      "mass_kg": 0.09,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/balao_volumetrico_100ml/asset.usda",
+      "preview": "/media/equipment/glassware-024.webp",
+      "id": "glassware-024"
+    },
+    {
+      "name": "Balao Volumetrico 250M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 9.79,
+        "width": 9.79,
+        "height": 26.13
+      },
+      "mass_kg": 0.15,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/balao_volumetrico_250ml/asset.usda",
+      "preview": "/media/equipment/glassware-025.webp",
+      "id": "glassware-025"
+    },
+    {
+      "name": "Balao Volumetrico 500M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 15.09,
+        "width": 15.09,
+        "height": 40.3
+      },
+      "mass_kg": 0.25,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/balao_volumetrico_500ml/asset.usda",
+      "preview": "/media/equipment/glassware-026.webp",
+      "id": "glassware-026"
+    },
+    {
+      "name": "Beaker 01",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 6.49,
+        "width": 6.03,
+        "height": 7.23
+      },
+      "mass_kg": 0.03,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/beaker_01/asset.usda",
+      "preview": "/media/equipment/glassware-027.webp",
+      "id": "glassware-027"
+    },
+    {
+      "name": "Crucible",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 4.42,
+        "width": 4.42,
+        "height": 4.82
+      },
+      "mass_kg": 0.03,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/crucible/asset.usda",
+      "preview": "/media/equipment/glassware-028.webp",
+      "id": "glassware-028"
+    },
+    {
+      "name": "Distillation Flask",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 14.29,
+        "width": 7.8,
+        "height": 21.46
+      },
+      "mass_kg": 0.2,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/distillation_flask/asset.usda",
+      "preview": "/media/equipment/glassware-029.webp",
+      "id": "glassware-029"
+    },
+    {
+      "name": "Erlenmeyer Flask 01",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8.01,
+        "width": 8.01,
+        "height": 13.37
+      },
+      "mass_kg": 0.09,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_01/asset.usda",
+      "preview": "/media/equipment/glassware-030.webp",
+      "id": "glassware-030"
+    },
+    {
+      "name": "Erlenmeyer Flask 02",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.11,
+        "width": 11.11,
+        "height": 18.4
+      },
+      "mass_kg": 0.18,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_02/asset.usda",
+      "preview": "/media/equipment/glassware-031.webp",
+      "id": "glassware-031"
+    },
+    {
+      "name": "Erlenmeyer Flask 03",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 9.46,
+        "width": 9.46,
+        "height": 15.67
+      },
+      "mass_kg": 0.13,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_03/asset.usda",
+      "preview": "/media/equipment/glassware-032.webp",
+      "id": "glassware-032"
+    },
+    {
+      "name": "Erlenmeyer Flask 06",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 6.82,
+        "width": 6.82,
+        "height": 9.26
+      },
+      "mass_kg": 0.04,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_06/asset.usda",
+      "preview": "/media/equipment/glassware-033.webp",
+      "id": "glassware-033"
+    },
+    {
+      "name": "Erlenmeyer Flask 07",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.08,
+        "width": 5.08,
+        "height": 8.82
+      },
+      "mass_kg": 0.03,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_07/asset.usda",
+      "preview": "/media/equipment/glassware-034.webp",
+      "id": "glassware-034"
+    },
+    {
+      "name": "Erlenmeyer Flask 08",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 6.07,
+        "width": 6.07,
+        "height": 7.67
+      },
+      "mass_kg": 0.03,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_08/asset.usda",
+      "preview": "/media/equipment/glassware-035.webp",
+      "id": "glassware-035"
+    },
+    {
+      "name": "Erlenmeyer Flask 09",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.44,
+        "width": 5.44,
+        "height": 6.95
+      },
+      "mass_kg": 0.02,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_09/asset.usda",
+      "preview": "/media/equipment/glassware-036.webp",
+      "id": "glassware-036"
+    },
+    {
+      "name": "Erlenmeyer Flask 10",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.17,
+        "width": 5.17,
+        "height": 6.53
+      },
+      "mass_kg": 0.02,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_10/asset.usda",
+      "preview": "/media/equipment/glassware-037.webp",
+      "id": "glassware-037"
+    },
+    {
+      "name": "Erlenmeyer Flask 11",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.81,
+        "width": 5.81,
+        "height": 9.28
+      },
+      "mass_kg": 0.03,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_11/asset.usda",
+      "preview": "/media/equipment/glassware-038.webp",
+      "id": "glassware-038"
+    },
+    {
+      "name": "Erlenmeyer Flask 12",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.01,
+        "width": 7.01,
+        "height": 8.76
+      },
+      "mass_kg": 0.04,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_12/asset.usda",
+      "preview": "/media/equipment/glassware-039.webp",
+      "id": "glassware-039"
+    },
+    {
+      "name": "Erlenmeyer Flask 14",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.97,
+        "width": 11.97,
+        "height": 19.97
+      },
+      "mass_kg": 0.21,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_14/asset.usda",
+      "preview": "/media/equipment/glassware-040.webp",
+      "id": "glassware-040"
+    },
+    {
+      "name": "Flat Bottom Flask 01",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.75,
+        "width": 7.99,
+        "height": 11.94
+      },
+      "mass_kg": 0.11,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_01/asset.usda",
+      "preview": "/media/equipment/glassware-041.webp",
+      "id": "glassware-041"
+    },
+    {
+      "name": "Flat Bottom Flask 02",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 14.74,
+        "width": 13.7,
+        "height": 20.06
+      },
+      "mass_kg": 0.26,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_02/asset.usda",
+      "preview": "/media/equipment/glassware-042.webp",
+      "id": "glassware-042"
+    },
+    {
+      "name": "Flat Bottom Flask 03",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.4,
+        "width": 7.4,
+        "height": 19.03
+      },
+      "mass_kg": 0.11,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_03/asset.usda",
+      "preview": "/media/equipment/glassware-043.webp",
+      "id": "glassware-043"
+    },
+    {
+      "name": "Flat Bottom Flask 04",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 10.61,
+        "width": 10.61,
+        "height": 26.81
+      },
+      "mass_kg": 0.32,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_04/asset.usda",
+      "preview": "/media/equipment/glassware-044.webp",
+      "id": "glassware-044"
+    },
+    {
+      "name": "Graham Condenser",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 28.41,
+        "width": 11.94,
+        "height": 51.98
+      },
+      "mass_kg": 1.13,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/graham_condenser/asset.usda",
+      "preview": "/media/equipment/glassware-045.webp",
+      "id": "glassware-045"
+    },
+    {
+      "name": "Kipp S Apparatus",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 18.66,
+        "width": 17.35,
+        "height": 33.75
+      },
+      "mass_kg": 0.72,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/kipp_s_apparatus/asset.usda",
+      "preview": "/media/equipment/glassware-046.webp",
+      "id": "glassware-046"
+    },
+    {
+      "name": "Rotavapor",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 98.36,
+        "width": 85.76,
+        "height": 94.2
+      },
+      "mass_kg": 45,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/rotavapor/asset.usda",
+      "preview": "/media/equipment/glassware-047.webp",
+      "id": "glassware-047"
+    },
+    {
+      "name": "Round Bottom Flask 01",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 14.81,
+        "width": 11.7,
+        "height": 16.92
+      },
+      "mass_kg": 0.21,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_01/asset.usda",
+      "preview": "/media/equipment/glassware-048.webp",
+      "id": "glassware-048"
+    },
+    {
+      "name": "Round Bottom Flask 02",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 10,
+        "width": 7.5,
+        "height": 12.19
+      },
+      "mass_kg": 0.1,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_02/asset.usda",
+      "preview": "/media/equipment/glassware-049.webp",
+      "id": "glassware-049"
+    },
+    {
+      "name": "Round Bottom Flask 03",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.33,
+        "width": 7.33,
+        "height": 14.05
+      },
+      "mass_kg": 0.09,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_03/asset.usda",
+      "preview": "/media/equipment/glassware-050.webp",
+      "id": "glassware-050"
+    },
+    {
+      "name": "Round Bottom Flask 04",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 18.68,
+        "width": 15.64,
+        "height": 26.7
+      },
+      "mass_kg": 0.56,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_04/asset.usda",
+      "preview": "/media/equipment/glassware-051.webp",
+      "id": "glassware-051"
+    },
+    {
+      "name": "Round Bottom Flask 05",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 9.08,
+        "width": 7.99,
+        "height": 11.89
+      },
+      "mass_kg": 0.09,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_05/asset.usda",
+      "preview": "/media/equipment/glassware-052.webp",
+      "id": "glassware-052"
+    },
+    {
+      "name": "Round Bottom Flask 06",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.99,
+        "width": 7.99,
+        "height": 15.64
+      },
+      "mass_kg": 0.1,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_06/asset.usda",
+      "preview": "/media/equipment/glassware-053.webp",
+      "id": "glassware-053"
+    },
+    {
+      "name": "Round Bottom Flask 08",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 15.61,
+        "width": 10.62,
+        "height": 15.87
+      },
+      "mass_kg": 0.2,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_08/asset.usda",
+      "preview": "/media/equipment/glassware-054.webp",
+      "id": "glassware-054"
+    },
+    {
+      "name": "Round Bottom Flask 09",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 14.74,
+        "width": 13.7,
+        "height": 21.73
+      },
+      "mass_kg": 0.28,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_09/asset.usda",
+      "preview": "/media/equipment/glassware-055.webp",
+      "id": "glassware-055"
+    },
+    {
+      "name": "Round Bottom Flask 10",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.32,
+        "width": 11.32,
+        "height": 26.29
+      },
+      "mass_kg": 0.34,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_10/asset.usda",
+      "preview": "/media/equipment/glassware-056.webp",
+      "id": "glassware-056"
+    },
+    {
+      "name": "Round Bottom Flask 11",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 7.99,
+        "width": 7.99,
+        "height": 18.56
+      },
+      "mass_kg": 0.12,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_11/asset.usda",
+      "preview": "/media/equipment/glassware-057.webp",
+      "id": "glassware-057"
+    },
+    {
+      "name": "Suction Flask",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 6.07,
+        "width": 5.4,
+        "height": 7.91
+      },
+      "mass_kg": 0.03,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/suction_flask/asset.usda",
+      "preview": "/media/equipment/glassware-058.webp",
+      "id": "glassware-058"
+    },
+    {
+      "name": "Test Tube 01",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 16.1,
+        "width": 3.52,
+        "height": 15.95
+      },
+      "mass_kg": 0.12,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/test_tube_01/asset.usda",
+      "preview": "/media/equipment/glassware-059.webp",
+      "id": "glassware-059"
+    },
+    {
+      "name": "Test Tube 02.Usd",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 21.86,
+        "width": 4.78,
+        "height": 21.55
+      },
+      "mass_kg": 0.23,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/test_tube_02_usd/asset.usda",
+      "preview": "/media/equipment/glassware-060.webp",
+      "id": "glassware-060"
+    },
+    {
+      "name": "Test Tube 03",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 16.1,
+        "width": 6.66,
+        "height": 15.67
+      },
+      "mass_kg": 0.15,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/test_tube_03/asset.usda",
+      "preview": "/media/equipment/glassware-061.webp",
+      "id": "glassware-061"
+    },
+    {
+      "name": "Titration Flasks",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 16.17,
+        "width": 5.6,
+        "height": 5.59
+      },
+      "mass_kg": 0.07,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/titration_flasks/asset.usda",
+      "preview": "/media/equipment/glassware-062.webp",
+      "id": "glassware-062"
+    },
+    {
+      "name": "Volumetric Bottle",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8.39,
+        "width": 8.39,
+        "height": 25.05
+      },
+      "mass_kg": 0.23,
+      "material": "Glass",
+      "friction": {
+        "static": 0.35,
+        "dynamic": 0.25,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/transparent_vessels/volumetric_bottle/asset.usda",
+      "preview": "/media/equipment/glassware-063.webp",
+      "id": "glassware-063"
+    },
+    {
+      "name": "Erlenmeyer Flask 25M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.37,
+        "width": 5.37,
+        "height": 6.27
+      },
+      "mass_kg": 0.01,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_25ml/asset.usda",
+      "preview": "/media/equipment/glassware-064.webp",
+      "id": "glassware-064"
+    },
+    {
+      "name": "Erlenmeyer Flask 50M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.87,
+        "width": 5.87,
+        "height": 8.02
+      },
+      "mass_kg": 0.03,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_50ml/asset.usda",
+      "preview": "/media/equipment/glassware-065.webp",
+      "id": "glassware-065"
+    },
+    {
+      "name": "Erlenmeyer Flask 125M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 9.08,
+        "width": 9.08,
+        "height": 11.72
+      },
+      "mass_kg": 0.07,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_125ml/asset.usda",
+      "preview": "/media/equipment/glassware-066.webp",
+      "id": "glassware-066"
+    },
+    {
+      "name": "Erlenmeyer Flask 250M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.16,
+        "width": 11.16,
+        "height": 13.57
+      },
+      "mass_kg": 0.12,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_250ml/asset.usda",
+      "preview": "/media/equipment/glassware-067.webp",
+      "id": "glassware-067"
+    },
+    {
+      "name": "Erlenmeyer Flask 500M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 13.92,
+        "width": 13.92,
+        "height": 18.1
+      },
+      "mass_kg": 0.26,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_500ml/asset.usda",
+      "preview": "/media/equipment/glassware-068.webp",
+      "id": "glassware-068"
+    },
+    {
+      "name": "Erlenmeyer Flask 1000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 17.92,
+        "width": 17.92,
+        "height": 22.21
+      },
+      "mass_kg": 0.52,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_1000ml/asset.usda",
+      "preview": "/media/equipment/glassware-069.webp",
+      "id": "glassware-069"
+    },
+    {
+      "name": "Erlenmeyer Flask 2000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 22.34,
+        "width": 22.34,
+        "height": 27.56
+      },
+      "mass_kg": 1,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_2000ml/asset.usda",
+      "preview": "/media/equipment/glassware-070.webp",
+      "id": "glassware-070"
+    },
+    {
+      "name": "Erlenmeyer Flask 4000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 28.9,
+        "width": 28.9,
+        "height": 37.02
+      },
+      "mass_kg": 2.25,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_4000ml/asset.usda",
+      "preview": "/media/equipment/glassware-071.webp",
+      "id": "glassware-071"
+    },
+    {
+      "name": "Graduated Cylinder 10M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 4.55,
+        "width": 3.94,
+        "height": 14.05
+      },
+      "mass_kg": 0.01,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_10ml/asset.usda",
+      "preview": "/media/equipment/glassware-072.webp",
+      "id": "glassware-072"
+    },
+    {
+      "name": "Graduated Cylinder 25M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 5.99,
+        "width": 5.19,
+        "height": 18.48
+      },
+      "mass_kg": 0.03,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_25ml/asset.usda",
+      "preview": "/media/equipment/glassware-073.webp",
+      "id": "glassware-073"
+    },
+    {
+      "name": "Graduated Cylinder 50M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 6.8,
+        "width": 5.89,
+        "height": 20.99
+      },
+      "mass_kg": 0.04,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_50ml/asset.usda",
+      "preview": "/media/equipment/glassware-074.webp",
+      "id": "glassware-074"
+    },
+    {
+      "name": "Graduated Cylinder 100M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8.26,
+        "width": 7.15,
+        "height": 25.49
+      },
+      "mass_kg": 0.08,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_100ml/asset.usda",
+      "preview": "/media/equipment/glassware-075.webp",
+      "id": "glassware-075"
+    },
+    {
+      "name": "Graduated Cylinder 500M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.64,
+        "width": 10.95,
+        "height": 39.02
+      },
+      "mass_kg": 0.28,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_500ml/asset.usda",
+      "preview": "/media/equipment/glassware-076.webp",
+      "id": "glassware-076"
+    },
+    {
+      "name": "Graduated Cylinder 1000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 15.41,
+        "width": 13.35,
+        "height": 47.56
+      },
+      "mass_kg": 0.51,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_1000ml/asset.usda",
+      "preview": "/media/equipment/glassware-077.webp",
+      "id": "glassware-077"
+    },
+    {
+      "name": "Round Bottom Flask 50M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8,
+        "width": 8,
+        "height": 8.57
+      },
+      "mass_kg": 0.03,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_50ml/asset.usda",
+      "preview": "/media/equipment/glassware-078.webp",
+      "id": "glassware-078"
+    },
+    {
+      "name": "Round Bottom Flask 100M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8,
+        "width": 8,
+        "height": 11.16
+      },
+      "mass_kg": 0.05,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_100ml/asset.usda",
+      "preview": "/media/equipment/glassware-079.webp",
+      "id": "glassware-079"
+    },
+    {
+      "name": "Round Bottom Flask 250M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 8.5,
+        "width": 8.5,
+        "height": 14.78
+      },
+      "mass_kg": 0.1,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_250ml/asset.usda",
+      "preview": "/media/equipment/glassware-080.webp",
+      "id": "glassware-080"
+    },
+    {
+      "name": "Round Bottom Flask 500M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 10.96,
+        "width": 10.96,
+        "height": 16.53
+      },
+      "mass_kg": 0.14,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_500ml/asset.usda",
+      "preview": "/media/equipment/glassware-081.webp",
+      "id": "glassware-081"
+    },
+    {
+      "name": "Round Bottom Flask 1000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 13.3,
+        "width": 13.3,
+        "height": 20.37
+      },
+      "mass_kg": 0.25,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_1000ml/asset.usda",
+      "preview": "/media/equipment/glassware-082.webp",
+      "id": "glassware-082"
+    },
+    {
+      "name": "Round Bottom Flask 2000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 16.6,
+        "width": 16.6,
+        "height": 23.48
+      },
+      "mass_kg": 0.44,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_2000ml/asset.usda",
+      "preview": "/media/equipment/glassware-083.webp",
+      "id": "glassware-083"
+    },
+    {
+      "name": "Round Bottom Flask 5000M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 22.3,
+        "width": 22.3,
+        "height": 30.78
+      },
+      "mass_kg": 0.96,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_5000ml/asset.usda",
+      "preview": "/media/equipment/glassware-084.webp",
+      "id": "glassware-084"
+    },
+    {
+      "name": "Vial 0P 92M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.5,
+        "width": 1.5,
+        "height": 1.63
+      },
+      "mass_kg": 0.002,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_0p92ml/asset.usda",
+      "preview": "/media/equipment/glassware-085.webp",
+      "id": "glassware-085"
+    },
+    {
+      "name": "Vial 1P 9M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.21,
+        "width": 1.21,
+        "height": 3.55
+      },
+      "mass_kg": 0.002,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_1p9ml/asset.usda",
+      "preview": "/media/equipment/glassware-086.webp",
+      "id": "glassware-086"
+    },
+    {
+      "name": "Vial 2P 75M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.5,
+        "width": 1.5,
+        "height": 3.8
+      },
+      "mass_kg": 0.002,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_2p75ml/asset.usda",
+      "preview": "/media/equipment/glassware-087.webp",
+      "id": "glassware-087"
+    },
+    {
+      "name": "Vial 3P 7M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.5,
+        "width": 1.5,
+        "height": 4.5
+      },
+      "mass_kg": 0.002,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_3p7ml/asset.usda",
+      "preview": "/media/equipment/glassware-088.webp",
+      "id": "glassware-088"
+    },
+    {
+      "name": "Vial 5M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.61,
+        "width": 1.61,
+        "height": 4.98
+      },
+      "mass_kg": 0.0025,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_5ml/asset.usda",
+      "preview": "/media/equipment/glassware-089.webp",
+      "id": "glassware-089"
+    },
+    {
+      "name": "Vial 7P 5M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.71,
+        "width": 1.71,
+        "height": 5.99
+      },
+      "mass_kg": 0.0033,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_7p5ml/asset.usda",
+      "preview": "/media/equipment/glassware-090.webp",
+      "id": "glassware-090"
+    },
+    {
+      "name": "Vial 11M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 1.91,
+        "width": 1.91,
+        "height": 6.5
+      },
+      "mass_kg": 0.0045,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_11ml/asset.usda",
+      "preview": "/media/equipment/glassware-091.webp",
+      "id": "glassware-091"
+    },
+    {
+      "name": "Scintillation Vial 20M L",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 2.6,
+        "width": 2.6,
+        "height": 5.8
+      },
+      "mass_kg": 0.0057,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/scintillation_vial_20ml/asset.usda",
+      "preview": "/media/equipment/glassware-092.webp",
+      "id": "glassware-092"
+    },
+    {
+      "name": "Allihn Condenser",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 41.31,
+        "width": 7.46,
+        "height": 3.76
+      },
+      "mass_kg": 0.22,
+      "material": "Borosilicate glass",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/allihn_condenser/asset.usda",
+      "preview": "/media/equipment/glassware-093.webp",
+      "id": "glassware-093"
+    },
+    {
+      "name": "Opentrons 96 Deep Well Adapter Nest Wellplate 2mL Deep",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.76,
+        "width": 8.53,
+        "height": 4.225
+      },
+      "mass_kg": 0.41,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/adapters/opentrons_96_deep_well_adapter_nest_wellplate_2ml_deep/asset.usda",
+      "preview": "/media/equipment/glassware-094.webp",
+      "id": "glassware-094"
+    },
+    {
+      "name": "Opentrons 96 Flat Bottom Adapter Nest Wellplate 200Ul Flat",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 1.55
+      },
+      "mass_kg": 0.11,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/adapters/opentrons_96_flat_bottom_adapter_nest_wellplate_200ul_flat/asset.usda",
+      "preview": "/media/equipment/glassware-095.webp",
+      "id": "glassware-095"
+    },
+    {
+      "name": "Opentrons 96 Pcr Adapter",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 11.1,
+        "width": 7.5,
+        "height": 1.385
+      },
+      "mass_kg": 0.23,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/adapters/opentrons_96_pcr_adapter/asset.usda",
+      "preview": "/media/equipment/glassware-096.webp",
+      "id": "glassware-096"
+    },
+    {
+      "name": "Opentrons 96 Pcr Adapter Nest Wellplate 100Ul Pcr Full Skirt",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 1.935
+      },
+      "mass_kg": 0.12,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/adapters/opentrons_96_pcr_adapter_nest_wellplate_100ul_pcr_full_skirt/asset.usda",
+      "preview": "/media/equipment/glassware-097.webp",
+      "id": "glassware-097"
+    },
+    {
+      "name": "Opentrons Universal Flat Adapter Corning 384 Wellplate 112Ul Flat",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.547,
+        "height": 1.79
+      },
+      "mass_kg": 0.17,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/adapters/opentrons_universal_flat_adapter_corning_384_wellplate_112ul_flat/asset.usda",
+      "preview": "/media/equipment/glassware-098.webp",
+      "id": "glassware-098"
+    },
+    {
+      "name": "Opentrons 24 Aluminumblock Generic 2mL Screwcap",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 4.87
+      },
+      "mass_kg": 0.27,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/aluminum_blocks/opentrons_24_aluminumblock_generic_2ml_screwcap/asset.usda",
+      "preview": "/media/equipment/glassware-099.webp",
+      "id": "glassware-099"
+    },
+    {
+      "name": "Opentrons 96 Aluminumblock Generic Pcr Strip 200Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 2.561
+      },
+      "mass_kg": 0.16,
+      "material": "Aluminium",
+      "friction": {
+        "static": 0.55,
+        "dynamic": 0.42,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/opentrons/aluminum_blocks/opentrons_96_aluminumblock_generic_pcr_strip_200ul/asset.usda",
+      "preview": "/media/equipment/glassware-100.webp",
+      "id": "glassware-100"
+    },
+    {
+      "name": "Agilent 1 Reservoir 290mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.547,
+        "height": 4.404
+      },
+      "mass_kg": 0.08,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/agilent_1_reservoir_290ml/asset.usda",
+      "preview": "/media/equipment/glassware-101.webp",
+      "id": "glassware-101"
+    },
+    {
+      "name": "Axygen 1 Reservoir 90mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 1.915
+      },
+      "mass_kg": 0.03,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/axygen_1_reservoir_90ml/asset.usda",
+      "preview": "/media/equipment/glassware-102.webp",
+      "id": "glassware-102"
+    },
+    {
+      "name": "Nest 1 Reservoir 195mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 3.14
+      },
+      "mass_kg": 0.06,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/nest_1_reservoir_195ml/asset.usda",
+      "preview": "/media/equipment/glassware-103.webp",
+      "id": "glassware-103"
+    },
+    {
+      "name": "Nest 12 Reservoir 15mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 3.14
+      },
+      "mass_kg": 0.07,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/nest_12_reservoir_15ml/asset.usda",
+      "preview": "/media/equipment/glassware-104.webp",
+      "id": "glassware-104"
+    },
+    {
+      "name": "Nest 12 Reservoir 22mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 4.44
+      },
+      "mass_kg": 0.1,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/nest_12_reservoir_22ml/asset.usda",
+      "preview": "/media/equipment/glassware-105.webp",
+      "id": "glassware-105"
+    },
+    {
+      "name": "Nest 8 Reservoir 22mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 3.14
+      },
+      "mass_kg": 0.07,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/nest_8_reservoir_22ml/asset.usda",
+      "preview": "/media/equipment/glassware-106.webp",
+      "id": "glassware-106"
+    },
+    {
+      "name": "Opentrons Tough 4 Reservoir 72mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 4.53
+      },
+      "mass_kg": 0.1,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/reservoirs/opentrons_tough_4_reservoir_72ml/asset.usda",
+      "preview": "/media/equipment/glassware-107.webp",
+      "id": "glassware-107"
+    },
+    {
+      "name": "Eppendorf 96 Tiprack 1000Ul Eptips",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 12.19
+      },
+      "mass_kg": 0.25,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tip_racks/eppendorf_96_tiprack_1000ul_eptips/asset.usda",
+      "preview": "/media/equipment/glassware-108.webp",
+      "id": "glassware-108"
+    },
+    {
+      "name": "Eppendorf 96 Tiprack 10Ul Eptips",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 6.54
+      },
+      "mass_kg": 0.11,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tip_racks/eppendorf_96_tiprack_10ul_eptips/asset.usda",
+      "preview": "/media/equipment/glassware-109.webp",
+      "id": "glassware-109"
+    },
+    {
+      "name": "Geb 96 Tiprack 1000Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 10.025
+      },
+      "mass_kg": 0.2,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tip_racks/geb_96_tiprack_1000ul/asset.usda",
+      "preview": "/media/equipment/glassware-110.webp",
+      "id": "glassware-110"
+    },
+    {
+      "name": "Geb 96 Tiprack 10Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 5.225
+      },
+      "mass_kg": 0.09,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tip_racks/geb_96_tiprack_10ul/asset.usda",
+      "preview": "/media/equipment/glassware-111.webp",
+      "id": "glassware-111"
+    },
+    {
+      "name": "Opentrons 96 Filtertiprack 1000Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 9.747
+      },
+      "mass_kg": 0.2,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tip_racks/opentrons_96_filtertiprack_1000ul/asset.usda",
+      "preview": "/media/equipment/glassware-112.webp",
+      "id": "glassware-112"
+    },
+    {
+      "name": "Opentrons 10 Tuberack Nest 4X 50mL 6X 15mL Conical",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 12.465
+      },
+      "mass_kg": 0.14,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tube_racks/opentrons_10_tuberack_nest_4x50ml_6x15ml_conical/asset.usda",
+      "preview": "/media/equipment/glassware-113.webp",
+      "id": "glassware-113"
+    },
+    {
+      "name": "Opentrons 24 Tuberack Eppendorf 1.5mL Safelock Snapcap",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 7.985
+      },
+      "mass_kg": 0.08,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_eppendorf_1_5ml_safelock_snapcap/asset.usda",
+      "preview": "/media/equipment/glassware-114.webp",
+      "id": "glassware-114"
+    },
+    {
+      "name": "Opentrons 24 Tuberack Eppendorf 2mL Safelock Snapcap Acrylic",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 5.2
+      },
+      "mass_kg": 0.09,
+      "material": "Acrylic (PMMA)",
+      "friction": {
+        "static": 0.5,
+        "dynamic": 0.4,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_eppendorf_2ml_safelock_snapcap_acrylic/asset.usda",
+      "preview": "/media/equipment/glassware-115.webp",
+      "id": "glassware-115"
+    },
+    {
+      "name": "Opentrons 24 Tuberack Generic 2mL Screwcap",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 8.4
+      },
+      "mass_kg": 0.07,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_generic_2ml_screwcap/asset.usda",
+      "preview": "/media/equipment/glassware-116.webp",
+      "id": "glassware-116"
+    },
+    {
+      "name": "Opentrons 24 Tuberack Nest 1.5mL Snapcap",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.775,
+        "width": 8.55,
+        "height": 7.955
+      },
+      "mass_kg": 0.08,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_nest_1_5ml_snapcap/asset.usda",
+      "preview": "/media/equipment/glassware-117.webp",
+      "id": "glassware-117"
+    },
+    {
+      "name": "Opentrons 6 Tuberack Falcon 50mL Conical",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 12.03
+      },
+      "mass_kg": 0.06,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/tube_racks/opentrons_6_tuberack_falcon_50ml_conical/asset.usda",
+      "preview": "/media/equipment/glassware-118.webp",
+      "id": "glassware-118"
+    },
+    {
+      "name": "Appliedbiosystemsmicroamp 384 Wellplate 40Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.78,
+        "width": 8.55,
+        "height": 0.97
+      },
+      "mass_kg": 0.04,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/well_plates/appliedbiosystemsmicroamp_384_wellplate_40ul/asset.usda",
+      "preview": "/media/equipment/glassware-119.webp",
+      "id": "glassware-119"
+    },
+    {
+      "name": "Corning 12 Wellplate 6.9mL Flat",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.789,
+        "width": 8.56,
+        "height": 2.002
+      },
+      "mass_kg": 0.06,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/opentrons/well_plates/corning_12_wellplate_6_9ml_flat/asset.usda",
+      "preview": "/media/equipment/glassware-120.webp",
+      "id": "glassware-120"
+    },
+    {
+      "name": "Corning 24 Wellplate 3.4mL Flat",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.547,
+        "height": 2.027
+      },
+      "mass_kg": 0.07,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/opentrons/well_plates/corning_24_wellplate_3_4ml_flat/asset.usda",
+      "preview": "/media/equipment/glassware-121.webp",
+      "id": "glassware-121"
+    },
+    {
+      "name": "Corning 48 Wellplate 1.6mL Flat",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.789,
+        "width": 8.56,
+        "height": 2.002
+      },
+      "mass_kg": 0.07,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/opentrons/well_plates/corning_48_wellplate_1_6ml_flat/asset.usda",
+      "preview": "/media/equipment/glassware-122.webp",
+      "id": "glassware-122"
+    },
+    {
+      "name": "Corning 6 Wellplate 16.8mL Flat",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.547,
+        "height": 2.027
+      },
+      "mass_kg": 0.05,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/opentrons/well_plates/corning_6_wellplate_16_8ml_flat/asset.usda",
+      "preview": "/media/equipment/glassware-123.webp",
+      "id": "glassware-123"
+    },
+    {
+      "name": "Eppendorf 96 Wellplate 1000Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.78,
+        "width": 8.55,
+        "height": 4.41
+      },
+      "mass_kg": 0.11,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/well_plates/eppendorf_96_wellplate_1000ul/asset.usda",
+      "preview": "/media/equipment/glassware-124.webp",
+      "id": "glassware-124"
+    },
+    {
+      "name": "Ibidi 96 Square Well Plate 300Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.547,
+        "height": 1.5
+      },
+      "mass_kg": 0.05,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/opentrons/well_plates/ibidi_96_square_well_plate_300ul/asset.usda",
+      "preview": "/media/equipment/glassware-125.webp",
+      "id": "glassware-125"
+    },
+    {
+      "name": "Nest 24 Wellplate 10.4mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.72,
+        "width": 8.49,
+        "height": 4.4
+      },
+      "mass_kg": 0.16,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/opentrons/well_plates/nest_24_wellplate_10_4ml/asset.usda",
+      "preview": "/media/equipment/glassware-126.webp",
+      "id": "glassware-126"
+    },
+    {
+      "name": "Thermoscientific 96 Wellplate 800Ul",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 3.1
+      },
+      "mass_kg": 0.08,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/well_plates/thermoscientific_96_wellplate_800ul/asset.usda",
+      "preview": "/media/equipment/glassware-127.webp",
+      "id": "glassware-127"
+    },
+    {
+      "name": "Thermoscientific Abgene 96 Wellplate 1.2mL",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 12.776,
+        "width": 8.548,
+        "height": 2.4
+      },
+      "mass_kg": 0.08,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/opentrons/well_plates/thermoscientific_abgene_96_wellplate_1_2ml/asset.usda",
+      "preview": "/media/equipment/glassware-128.webp",
+      "id": "glassware-128"
+    },
+    {
+      "name": "Petri Dish",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 9,
+        "width": 8.99,
+        "height": 1.62
+      },
+      "mass_kg": 0.04,
+      "material": "Polystyrene (PS)",
+      "friction": {
+        "static": 0.48,
+        "dynamic": 0.38,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/nih_3d/labware/petri_dish/asset.usda",
+      "preview": "/media/equipment/glassware-129.webp",
+      "id": "glassware-129"
+    },
+    {
+      "name": "Syringe Pipette",
+      "category": "glassware",
+      "dimensions_cm": {
+        "length": 13,
+        "width": 4.9,
+        "height": 2.4
+      },
+      "mass_kg": 0.06,
+      "material": "Polypropylene (PP)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/nih_3d/labware/syringe_pipette/asset.usda",
+      "preview": "/media/equipment/glassware-130.webp",
+      "id": "glassware-130"
+    },
+    {
+      "name": "Autoclave",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 92.01,
+        "width": 90.1,
+        "height": 225
+      },
+      "mass_kg": 298.44,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/autoclave/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-001.webp",
+      "id": "lab-equipment-001"
+    },
+    {
+      "name": "Capping Machine",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 61,
+        "width": 56.2,
+        "height": 105.4
+      },
+      "mass_kg": 57.81,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/capping_machine/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-002.webp",
+      "id": "lab-equipment-002"
+    },
+    {
+      "name": "Bottle Washing Machine",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 180,
+        "width": 82.35,
+        "height": 128.07
+      },
+      "mass_kg": 303.74,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/bottle_washing_machine/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-003.webp",
+      "id": "lab-equipment-003"
+    },
+    {
+      "name": "Biological Safety Cabinet 01",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 150.09,
+        "width": 86.52,
+        "height": 220.03
+      },
+      "mass_kg": 457.16,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/biological_safety_cabinet_01/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-004.webp",
+      "id": "lab-equipment-004"
+    },
+    {
+      "name": "Biological Safety Cabinet 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 142.27,
+        "width": 76.81,
+        "height": 209.74
+      },
+      "mass_kg": 366.72,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/biological_safety_cabinet_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-005.webp",
+      "id": "lab-equipment-005"
+    },
+    {
+      "name": "Centrifuge 01 A",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 29.13,
+        "width": 19.88,
+        "height": 13.41
+      },
+      "mass_kg": 1.94,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/centrifuge_01_a/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-006.webp",
+      "id": "lab-equipment-006"
+    },
+    {
+      "name": "Centrifuge 01 B",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 29.13,
+        "width": 19.88,
+        "height": 26.56
+      },
+      "mass_kg": 3.85,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/centrifuge_01_b/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-007.webp",
+      "id": "lab-equipment-007"
+    },
+    {
+      "name": "Centrifuge 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 16.77,
+        "width": 12.82,
+        "height": 20.38
+      },
+      "mass_kg": 1.09,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/centrifuge_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-008.webp",
+      "id": "lab-equipment-008"
+    },
+    {
+      "name": "Centrifuge 03",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 35.84,
+        "width": 30,
+        "height": 16.63
+      },
+      "mass_kg": 4.47,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/centrifuge_03/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-009.webp",
+      "id": "lab-equipment-009"
+    },
+    {
+      "name": "Cryogenic Cabinet",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 75.05,
+        "width": 70.25,
+        "height": 141
+      },
+      "mass_kg": 118.94,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/cryogenic_cabinet/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-010.webp",
+      "id": "lab-equipment-010"
+    },
+    {
+      "name": "Drying Box 01",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 74.09,
+        "width": 57.64,
+        "height": 63
+      },
+      "mass_kg": 43.05,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/drying_box_01/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-011.webp",
+      "id": "lab-equipment-011"
+    },
+    {
+      "name": "Drying Box 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 72.61,
+        "width": 58.12,
+        "height": 70
+      },
+      "mass_kg": 47.27,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/drying_box_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-012.webp",
+      "id": "lab-equipment-012"
+    },
+    {
+      "name": "Drying Box 03",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 55.35,
+        "width": 47.48,
+        "height": 64.13
+      },
+      "mass_kg": 26.97,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/drying_box_03/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-013.webp",
+      "id": "lab-equipment-013"
+    },
+    {
+      "name": "Drying Box 04",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 11.51,
+        "width": 8.8,
+        "height": 8.96
+      },
+      "mass_kg": 0.23,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/drying_box_04/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-014.webp",
+      "id": "lab-equipment-014"
+    },
+    {
+      "name": "Drying Box 05",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 75,
+        "width": 51.61,
+        "height": 62.7
+      },
+      "mass_kg": 38.83,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/drying_box_05/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-015.webp",
+      "id": "lab-equipment-015"
+    },
+    {
+      "name": "Drying Box 06",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 117.65,
+        "width": 58.66,
+        "height": 88.4
+      },
+      "mass_kg": 97.61,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/drying_box_06/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-016.webp",
+      "id": "lab-equipment-016"
+    },
+    {
+      "name": "Electric Soil Penetrometer",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 28.57,
+        "width": 21.49,
+        "height": 32.58
+      },
+      "mass_kg": 5,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/electric_soil_penetrometer/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-017.webp",
+      "id": "lab-equipment-017"
+    },
+    {
+      "name": "Electronic Scale 01",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 36.52,
+        "width": 22.28,
+        "height": 35.97
+      },
+      "mass_kg": 7.32,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_01/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-018.webp",
+      "id": "lab-equipment-018"
+    },
+    {
+      "name": "Electronic Scale 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 19.24,
+        "width": 11.91,
+        "height": 15.48
+      },
+      "mass_kg": 0.89,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-019.webp",
+      "id": "lab-equipment-019"
+    },
+    {
+      "name": "Electronic Scale 03",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 29.69,
+        "width": 21.05,
+        "height": 31.76
+      },
+      "mass_kg": 4.96,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_03/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-020.webp",
+      "id": "lab-equipment-020"
+    },
+    {
+      "name": "Electronic Scale 05",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 26.65,
+        "width": 26.37,
+        "height": 14.61
+      },
+      "mass_kg": 2.57,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_05/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-021.webp",
+      "id": "lab-equipment-021"
+    },
+    {
+      "name": "Fume Hood 01",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 368.15,
+        "width": 104.51,
+        "height": 246
+      },
+      "mass_kg": 800,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/fume_hood_01/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-022.webp",
+      "id": "lab-equipment-022"
+    },
+    {
+      "name": "Fume Hood 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 150.06,
+        "width": 91.06,
+        "height": 237
+      },
+      "mass_kg": 518.16,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/fume_hood_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-023.webp",
+      "id": "lab-equipment-023"
+    },
+    {
+      "name": "Gc-Ms",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 119.4,
+        "width": 39.77,
+        "height": 55.58
+      },
+      "mass_kg": 42.23,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/gc_ms/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-024.webp",
+      "id": "lab-equipment-024"
+    },
+    {
+      "name": "Headspace Sampler",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 55,
+        "width": 35.3,
+        "height": 88.35
+      },
+      "mass_kg": 27.45,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/headspace_sampler/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-025.webp",
+      "id": "lab-equipment-025"
+    },
+    {
+      "name": "Heater",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 2.34,
+        "width": 2.05,
+        "height": 10
+      },
+      "mass_kg": 0.08,
+      "material": "Stainless steel / hard metal",
+      "friction": {
+        "static": 0.4,
+        "dynamic": 0.3,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/heater/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-026.webp",
+      "id": "lab-equipment-026"
+    },
+    {
+      "name": "Heating Plate",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 25.44,
+        "width": 18,
+        "height": 8.94
+      },
+      "mass_kg": 1.02,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/heating_plate/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-027.webp",
+      "id": "lab-equipment-027"
+    },
+    {
+      "name": "Icp-Ms",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 93.04,
+        "width": 90.74,
+        "height": 71.18
+      },
+      "mass_kg": 96.15,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/icp_ms/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-028.webp",
+      "id": "lab-equipment-028"
+    },
+    {
+      "name": "Incubator 01 Benchtop",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 79.66,
+        "width": 77.45,
+        "height": 100.84
+      },
+      "mass_kg": 99.54,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/incubator_01_benchtop/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-029.webp",
+      "id": "lab-equipment-029"
+    },
+    {
+      "name": "Incubator 01 Large",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 154.2,
+        "width": 96,
+        "height": 183.51
+      },
+      "mass_kg": 434.65,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/incubator_01_large/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-030.webp",
+      "id": "lab-equipment-030"
+    },
+    {
+      "name": "Incubator 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 226.86,
+        "width": 166.08,
+        "height": 206.4
+      },
+      "mass_kg": 800,
+      "material": "Locking rubber caster equivalent",
+      "friction": {
+        "static": 0.75,
+        "dynamic": 0.6,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/incubator_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-031.webp",
+      "id": "lab-equipment-031"
+    },
+    {
+      "name": "Infrared Spectrophotometer",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 48.31,
+        "width": 35.74,
+        "height": 17.05
+      },
+      "mass_kg": 7.36,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/infrared_spectrophotometer/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-032.webp",
+      "id": "lab-equipment-032"
+    },
+    {
+      "name": "Liquid Chromatograph 01",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 59.13,
+        "width": 54.27,
+        "height": 99.99
+      },
+      "mass_kg": 51.34,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/liquid_chromatograph_01/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-033.webp",
+      "id": "lab-equipment-033"
+    },
+    {
+      "name": "Liquid Chromatograph 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 58.78,
+        "width": 44,
+        "height": 95.74
+      },
+      "mass_kg": 39.62,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/liquid_chromatograph_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-034.webp",
+      "id": "lab-equipment-034"
+    },
+    {
+      "name": "Measuring Instrument",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 98.32,
+        "width": 76.81,
+        "height": 111.38
+      },
+      "mass_kg": 134.58,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/measuring_instrument/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-035.webp",
+      "id": "lab-equipment-035"
+    },
+    {
+      "name": "Metallographic Analyzer",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 100.45,
+        "width": 88.84,
+        "height": 112.4
+      },
+      "mass_kg": 160.49,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/metallographic_analyzer/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-036.webp",
+      "id": "lab-equipment-036"
+    },
+    {
+      "name": "Meteorological Chromatograph",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 59.82,
+        "width": 55,
+        "height": 56.24
+      },
+      "mass_kg": 29.61,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/meteorological_chromatograph/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-037.webp",
+      "id": "lab-equipment-037"
+    },
+    {
+      "name": "Microscope",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 22.15,
+        "width": 17.53,
+        "height": 33.54
+      },
+      "mass_kg": 3.26,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/microscope/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-038.webp",
+      "id": "lab-equipment-038"
+    },
+    {
+      "name": "Muffle Furnace",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 32.2,
+        "width": 27.73,
+        "height": 42.1
+      },
+      "mass_kg": 9.4,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/muffle_furnace/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-039.webp",
+      "id": "lab-equipment-039"
+    },
+    {
+      "name": "Nucleic Acid Extraction Device",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 50,
+        "width": 48.93,
+        "height": 47.85
+      },
+      "mass_kg": 18.73,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/nucleic_acid_extraction_device/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-040.webp",
+      "id": "lab-equipment-040"
+    },
+    {
+      "name": "Oscillator",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 39.91,
+        "width": 31,
+        "height": 23.57
+      },
+      "mass_kg": 7.29,
+      "material": "Rubber / suction base (shaker equivalent)",
+      "friction": {
+        "static": 0.85,
+        "dynamic": 0.7,
+        "restitution": 0.01
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/oscillator/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-041.webp",
+      "id": "lab-equipment-041"
+    },
+    {
+      "name": "Osmometer",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 31,
+        "width": 24.5,
+        "height": 33
+      },
+      "mass_kg": 6.27,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/osmometer/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-042.webp",
+      "id": "lab-equipment-042"
+    },
+    {
+      "name": "Oxygen Concentrator 01",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 29.3,
+        "width": 17.75,
+        "height": 27.87
+      },
+      "mass_kg": 3.62,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/oxygen_concentrator_01/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-043.webp",
+      "id": "lab-equipment-043"
+    },
+    {
+      "name": "Oxygen Concentrator 02",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 35.41,
+        "width": 13.41,
+        "height": 25.88
+      },
+      "mass_kg": 3.07,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/oxygen_concentrator_02/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-044.webp",
+      "id": "lab-equipment-044"
+    },
+    {
+      "name": "Pipette",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 17.54,
+        "width": 6.07,
+        "height": 9.93
+      },
+      "mass_kg": 0.18,
+      "material": "Pipette + plastic stand",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/pipette/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-045.webp",
+      "id": "lab-equipment-045"
+    },
+    {
+      "name": "Sterilizer",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 55.49,
+        "width": 51.17,
+        "height": 115.51
+      },
+      "mass_kg": 52.48,
+      "material": "Locking rubber caster equivalent",
+      "friction": {
+        "static": 0.75,
+        "dynamic": 0.6,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/sterilizer/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-046.webp",
+      "id": "lab-equipment-046"
+    },
+    {
+      "name": "Thermostatic Water Bath",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 75.24,
+        "width": 33.79,
+        "height": 27.8
+      },
+      "mass_kg": 11.31,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/thermostatic_water_bath/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-047.webp",
+      "id": "lab-equipment-047"
+    },
+    {
+      "name": "Tube Rack",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 15.64,
+        "width": 6.26,
+        "height": 10.42
+      },
+      "mass_kg": 0.28,
+      "material": "Laboratory plastic (PP / acrylic)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/tube_rack/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-048.webp",
+      "id": "lab-equipment-048"
+    },
+    {
+      "name": "Vacuum Sterilizer",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 109.82,
+        "width": 108.5,
+        "height": 130.2
+      },
+      "mass_kg": 248.22,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/vacuum_sterilizer/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-049.webp",
+      "id": "lab-equipment-049"
+    },
+    {
+      "name": "Vortex Oscillator",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 25.05,
+        "width": 24.71,
+        "height": 32.22
+      },
+      "mass_kg": 4.99,
+      "material": "High-friction rubber / suction base (vortexer equivalent)",
+      "friction": {
+        "static": 0.9,
+        "dynamic": 0.75,
+        "restitution": 0.01
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/vortex_oscillator/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-050.webp",
+      "id": "lab-equipment-050"
+    },
+    {
+      "name": "P Hmeter",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 155.2,
+        "width": 117.73,
+        "height": 79.62
+      },
+      "mass_kg": 232.77,
+      "material": "Laboratory equipment (composite material)",
+      "friction": {
+        "static": 0.6,
+        "dynamic": 0.5,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/labutopia/lab_equipment/p_hmeter/asset.usda",
+      "source": "LabUtopia",
+      "preview": "/media/equipment/equipment-051.webp",
+      "id": "lab-equipment-051"
+    },
+    {
+      "name": "Centrifuge Eppendorf 5430",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 48.34,
+        "width": 34,
+        "height": 55.94
+      },
+      "mass_kg": 28.45,
+      "material": "Composite instrument (rubber feet + hard shell)",
+      "friction": {
+        "static": 0.7,
+        "dynamic": 0.55,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/autobio/lab_equipment/centrifuge_eppendorf_5430/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-052.webp",
+      "id": "lab-equipment-052"
+    },
+    {
+      "name": "Centrifuge Eppendorf 5910 Ri",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 91.98,
+        "width": 72,
+        "height": 89.36
+      },
+      "mass_kg": 137.98,
+      "material": "Composite instrument (rubber feet + hard shell)",
+      "friction": {
+        "static": 0.7,
+        "dynamic": 0.55,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/autobio/lab_equipment/centrifuge_eppendorf_5910_ri/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-053.webp",
+      "id": "lab-equipment-053"
+    },
+    {
+      "name": "Centrifuge Tiangen Tgear Mini",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 25.35,
+        "width": 14.56,
+        "height": 25.1
+      },
+      "mass_kg": 1.76,
+      "material": "Composite instrument (rubber feet + hard shell)",
+      "friction": {
+        "static": 0.7,
+        "dynamic": 0.55,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/autobio/lab_equipment/centrifuge_tiangen_tgear_mini/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-054.webp",
+      "id": "lab-equipment-054"
+    },
+    {
+      "name": "Thermal Cycler Biorad C 1000",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 55.69,
+        "width": 33.05,
+        "height": 36
+      },
+      "mass_kg": 27.5,
+      "material": "Composite instrument (rubber feet + hard shell)",
+      "friction": {
+        "static": 0.7,
+        "dynamic": 0.55,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/autobio/lab_equipment/thermal_cycler_biorad_c1000/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-055.webp",
+      "id": "lab-equipment-055"
+    },
+    {
+      "name": "Thermal Mixer Eppendorf C",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 30.61,
+        "width": 20.58,
+        "height": 16.9
+      },
+      "mass_kg": 6.66,
+      "material": "Composite instrument (rubber feet + hard shell)",
+      "friction": {
+        "static": 0.7,
+        "dynamic": 0.55,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/autobio/lab_equipment/thermal_mixer_eppendorf_c/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-056.webp",
+      "id": "lab-equipment-056"
+    },
+    {
+      "name": "Vortex Mixer Genie 2",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 18.36,
+        "width": 12.22,
+        "height": 16.11
+      },
+      "mass_kg": 2.32,
+      "material": "High-friction rubber base (vortexer equivalent)",
+      "friction": {
+        "static": 0.9,
+        "dynamic": 0.75,
+        "restitution": 0.01
+      },
+      "source_path": "assets/library/autobio/lab_equipment/vortex_mixer_genie_2/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-057.webp",
+      "id": "lab-equipment-057"
+    },
+    {
+      "name": "Centrifuge 10Slot Vis",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 20.5,
+        "width": 9.6,
+        "height": 6
+      },
+      "mass_kg": 0.76,
+      "material": "Centrifuge rotor composite (metal / engineering plastic)",
+      "friction": {
+        "static": 0.5,
+        "dynamic": 0.4,
+        "restitution": 0.03
+      },
+      "source_path": "assets/library/autobio/labware/centrifuge_10slot_vis/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-058.webp",
+      "id": "lab-equipment-058"
+    },
+    {
+      "name": "Centrifuge Plate 60Well Vis",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 19.7,
+        "width": 7.2,
+        "height": 2.1
+      },
+      "mass_kg": 0.91,
+      "material": "Centrifuge plate (PP / PC engineering plastic)",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.05
+      },
+      "source_path": "assets/library/autobio/labware/centrifuge_plate_60well_vis/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-059.webp",
+      "id": "lab-equipment-059"
+    },
+    {
+      "name": "Pipette Rack Tri Vis",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 28.5,
+        "width": 17.62,
+        "height": 26.64
+      },
+      "mass_kg": 4.25,
+      "material": "Pipette stand composite (metal / engineering plastic)",
+      "friction": {
+        "static": 0.5,
+        "dynamic": 0.4,
+        "restitution": 0.04
+      },
+      "source_path": "assets/library/autobio/labware/pipette_rack_tri_vis/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-060.webp",
+      "id": "lab-equipment-060"
+    },
+    {
+      "name": "Tip Box 24Slot Vis",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 5.2,
+        "width": 3.6,
+        "height": 4
+      },
+      "mass_kg": 0.18,
+      "material": "Polypropylene (PP) tip-box equivalent",
+      "friction": {
+        "static": 0.45,
+        "dynamic": 0.35,
+        "restitution": 0.06
+      },
+      "source_path": "assets/library/autobio/labware/tip_box_24slot_vis/asset.usda",
+      "source": "AutoBio",
+      "preview": "/media/equipment/equipment-061.webp",
+      "id": "lab-equipment-061"
+    },
+    {
+      "name": "Incubator",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 213.17,
+        "width": 136.4,
+        "height": 179.43
+      },
+      "mass_kg": 300,
+      "material": "Composite equipment (rubber base + hard shell)",
+      "friction": {
+        "static": 0.65,
+        "dynamic": 0.5,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/pippette/lab_equipment/incubator/asset.usda",
+      "source": "Pippette",
+      "preview": "/media/equipment/equipment-062.webp",
+      "id": "lab-equipment-062"
+    },
+    {
+      "name": "Centrifuge",
+      "category": "lab-equipment",
+      "dimensions_cm": {
+        "length": 46.08,
+        "width": 32.68,
+        "height": 30.91
+      },
+      "mass_kg": 20.01,
+      "material": "Composite equipment (rubber base + hard shell)",
+      "friction": {
+        "static": 0.65,
+        "dynamic": 0.5,
+        "restitution": 0.02
+      },
+      "source_path": "assets/library/pippette/lab_equipment/centrifuge/asset.usda",
+      "source": "Pippette",
+      "preview": "/media/equipment/equipment-063.webp",
+      "id": "lab-equipment-063"
+    },
+    {
+      "name": "Beer Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Beer Glass 1.blend",
+      "geometry_path": "Obj/Beer Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-001.webp",
+      "id": "glass-resources-001"
+    },
+    {
+      "name": "Beer Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Beer Glass 2.blend",
+      "geometry_path": "Obj/Beer Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-002.webp",
+      "id": "glass-resources-002"
+    },
+    {
+      "name": "Beer Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Beer Glass 3.blend",
+      "geometry_path": "Obj/Beer Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-003.webp",
+      "id": "glass-resources-003"
+    },
+    {
+      "name": "Beer Glass 4",
+      "category": "glass-resources",
+      "source_path": "blends/Beer Glass 4.blend",
+      "geometry_path": "Obj/Beer Glass 4.obj",
+      "preview": "/media/equipment/glass-resource-004.webp",
+      "id": "glass-resources-004"
+    },
+    {
+      "name": "Carafe 1",
+      "category": "glass-resources",
+      "source_path": "blends/Carafe 1.blend",
+      "geometry_path": "Obj/Caraf 1.obj",
+      "preview": "/media/equipment/glass-resource-005.webp",
+      "id": "glass-resources-005"
+    },
+    {
+      "name": "Carafe 2",
+      "category": "glass-resources",
+      "source_path": "blends/Carafe 2.blend",
+      "geometry_path": "Obj/Caraf 2.obj",
+      "preview": "/media/equipment/glass-resource-006.webp",
+      "id": "glass-resources-006"
+    },
+    {
+      "name": "Carafe 3",
+      "category": "glass-resources",
+      "source_path": "blends/Carafe 3.blend",
+      "geometry_path": "Obj/Caraf 3.obj",
+      "preview": "/media/equipment/glass-resource-007.webp",
+      "id": "glass-resources-007"
+    },
+    {
+      "name": "Carafe 4",
+      "category": "glass-resources",
+      "source_path": "blends/Carafe 4.blend",
+      "geometry_path": "Obj/Caraf 4.obj",
+      "preview": "/media/equipment/glass-resource-008.webp",
+      "id": "glass-resources-008"
+    },
+    {
+      "name": "Champagne Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Champagne Glass 1.blend",
+      "geometry_path": "Obj/Champagne Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-009.webp",
+      "id": "glass-resources-009"
+    },
+    {
+      "name": "Champagne Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Champagne Glass 2.blend",
+      "geometry_path": "Obj/Champagne Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-010.webp",
+      "id": "glass-resources-010"
+    },
+    {
+      "name": "Champagne Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Champagne Glass 3.blend",
+      "geometry_path": "Obj/Champagne Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-011.webp",
+      "id": "glass-resources-011"
+    },
+    {
+      "name": "Cocktail Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Cocktail Glass 1.blend",
+      "geometry_path": "Obj/Cocktail Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-012.webp",
+      "id": "glass-resources-012"
+    },
+    {
+      "name": "Cocktail Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Cocktail Glass 2.blend",
+      "geometry_path": "Obj/Cocktail Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-013.webp",
+      "id": "glass-resources-013"
+    },
+    {
+      "name": "Cocktail Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Cocktail Glass 3.blend",
+      "geometry_path": "Obj/Cocktail Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-014.webp",
+      "id": "glass-resources-014"
+    },
+    {
+      "name": "Cocktail Glass 4",
+      "category": "glass-resources",
+      "source_path": "blends/Cocktail Glass 4.blend",
+      "geometry_path": "Obj/Cocktail Glass 4.obj",
+      "preview": "/media/equipment/glass-resource-015.webp",
+      "id": "glass-resources-015"
+    },
+    {
+      "name": "Cognac Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Cognac Glass 1.blend",
+      "geometry_path": "Obj/Cognac Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-016.webp",
+      "id": "glass-resources-016"
+    },
+    {
+      "name": "Long Drink Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Long Drink Glass 1.blend",
+      "geometry_path": "Obj/Long Drink Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-017.webp",
+      "id": "glass-resources-017"
+    },
+    {
+      "name": "Madeira Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Madeira Glass 1.blend",
+      "geometry_path": "Obj/Madeira Glass.obj",
+      "preview": "/media/equipment/glass-resource-018.webp",
+      "id": "glass-resources-018"
+    },
+    {
+      "name": "Port Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Port Glass 1.blend",
+      "geometry_path": "Obj/Port Glass.obj",
+      "preview": "/media/equipment/glass-resource-019.webp",
+      "id": "glass-resources-019"
+    },
+    {
+      "name": "Shot Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Shot Glass 1.blend",
+      "geometry_path": "Obj/Shot Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-020.webp",
+      "id": "glass-resources-020"
+    },
+    {
+      "name": "Shot Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Shot Glass 2.blend",
+      "geometry_path": "Obj/Shot Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-021.webp",
+      "id": "glass-resources-021"
+    },
+    {
+      "name": "Shot Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Shot Glass 3.blend",
+      "geometry_path": "Obj/Shot Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-022.webp",
+      "id": "glass-resources-022"
+    },
+    {
+      "name": "Water Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 1.blend",
+      "geometry_path": "Obj/Water Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-023.webp",
+      "id": "glass-resources-023"
+    },
+    {
+      "name": "Water Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 2.blend",
+      "geometry_path": "Obj/Water Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-024.webp",
+      "id": "glass-resources-024"
+    },
+    {
+      "name": "Water Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 3.blend",
+      "geometry_path": "Obj/Water Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-025.webp",
+      "id": "glass-resources-025"
+    },
+    {
+      "name": "Water Glass 4",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 4.blend",
+      "geometry_path": "Obj/Water Glass 4.obj",
+      "preview": "/media/equipment/glass-resource-026.webp",
+      "id": "glass-resources-026"
+    },
+    {
+      "name": "Water Glass 5",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 5.blend",
+      "geometry_path": "Obj/Water Glass 5.obj",
+      "preview": "/media/equipment/glass-resource-027.webp",
+      "id": "glass-resources-027"
+    },
+    {
+      "name": "Water Glass 6",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 6.blend",
+      "geometry_path": "Obj/Water Glass 6.obj",
+      "preview": "/media/equipment/glass-resource-028.webp",
+      "id": "glass-resources-028"
+    },
+    {
+      "name": "Water Glass 7",
+      "category": "glass-resources",
+      "source_path": "blends/Water Glass 7.blend",
+      "geometry_path": "Obj/Water Glass 7.obj",
+      "preview": "/media/equipment/glass-resource-029.webp",
+      "id": "glass-resources-029"
+    },
+    {
+      "name": "Whisky Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Whisky Glass 1.blend",
+      "geometry_path": "Obj/Whiskey Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-030.webp",
+      "id": "glass-resources-030"
+    },
+    {
+      "name": "Whisky Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Whisky Glass 2.blend",
+      "geometry_path": "Obj/Whiskey Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-031.webp",
+      "id": "glass-resources-031"
+    },
+    {
+      "name": "Whisky Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Whisky Glass 3.blend",
+      "geometry_path": "Obj/Whiskey Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-032.webp",
+      "id": "glass-resources-032"
+    },
+    {
+      "name": "Whisky Glass 4",
+      "category": "glass-resources",
+      "source_path": "blends/Whisky Glass 4.blend",
+      "geometry_path": "Obj/Whiskey Glass 4.obj",
+      "preview": "/media/equipment/glass-resource-033.webp",
+      "id": "glass-resources-033"
+    },
+    {
+      "name": "Whisky Glass 5",
+      "category": "glass-resources",
+      "source_path": "blends/Whisky Glass 5.blend",
+      "geometry_path": "Obj/Whiskey Glass 5.obj",
+      "preview": "/media/equipment/glass-resource-034.webp",
+      "id": "glass-resources-034"
+    },
+    {
+      "name": "Wine Glass 1",
+      "category": "glass-resources",
+      "source_path": "blends/Wine Glass 1.blend",
+      "geometry_path": "Obj/Wine Glass 1.obj",
+      "preview": "/media/equipment/glass-resource-035.webp",
+      "id": "glass-resources-035"
+    },
+    {
+      "name": "Wine Glass 2",
+      "category": "glass-resources",
+      "source_path": "blends/Wine Glass 2.blend",
+      "geometry_path": "Obj/Wine Glass 2.obj",
+      "preview": "/media/equipment/glass-resource-036.webp",
+      "id": "glass-resources-036"
+    },
+    {
+      "name": "Wine Glass 3",
+      "category": "glass-resources",
+      "source_path": "blends/Wine Glass 3.blend",
+      "geometry_path": "Obj/Wine Glass 3.obj",
+      "preview": "/media/equipment/glass-resource-037.webp",
+      "id": "glass-resources-037"
+    },
+    {
+      "name": "Wine Glass 4",
+      "category": "glass-resources",
+      "source_path": "blends/Wine Glass 4.blend",
+      "geometry_path": "Obj/Wine Glass 4.obj",
+      "preview": "/media/equipment/glass-resource-038.webp",
+      "id": "glass-resources-038"
+    }
+  ]
+}

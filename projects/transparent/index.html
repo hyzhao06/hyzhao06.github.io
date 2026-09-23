@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>document.documentElement.dataset.theme=localStorage.getItem("theme")||((matchMedia("(prefers-color-scheme:light)").matches)?"light":"dark")</script>
+<title>Retrieval-Augmented Transparent Object Perception for Autonomous Laboratories</title>
+<meta name="description" content="Nine laboratory scenes and 1,336 synthetic stereo views. Inspect vessels and compare RGB, depth, instances, normals and masks.">
+<link rel="stylesheet" href="css/app.css">
+<link rel="preload" as="image" href="media/hero/hero.webp">
+</head>
+<body>
+<header class="topbar" id="topbar"></header>
+
+<section class="hero" id="hero">
+  <img class="hero-img" id="hero-img" src="media/hero/hero.webp" alt="Laboratory scene: a volumetric flask on a bench with multilevel shelves behind it">
+  <div class="hero-copy">
+    <p class="hero-kicker">Nine laboratory scenes · Synthetic stereo data</p>
+    <h1>Retrieval-Augmented <b>Transparent Object Perception</b> for Autonomous Laboratories</h1>
+    <p class="hero-stats mono" id="hero-stats"></p>
+    <a class="hero-cta" href="#scenes">Explore nine scenes <span aria-hidden="true">→</span></a>
+  </div>
+  <a class="hero-inset" id="hero-inset" href="#">
+    <img src="media/hero/hero_inset.webp" alt="Close-up of a conical flask in the same scene">
+    <span class="cap"><span id="inset-label"></span><span id="inset-badge" class="mono"></span></span>
+  </a>
+  <a class="scroll-hint" href="#scenes" aria-label="Scroll to scenes"><span></span></a>
+</section>
+
+<section class="section" id="scenes">
+  <div class="section-head">
+    <h2>Scenes</h2>
+    <div class="modal-switch" id="global-modality" role="group" aria-label="Change the modality for all scene covers"></div>
+  </div>
+  <div class="grid9" id="grid"></div>
+  <div class="colorbar" id="colorbar" hidden></div>
+</section>
+
+<footer id="footer"></footer>
+<script type="module" src="js/home.js"></script>
+</body>
+</html>

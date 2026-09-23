@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>document.documentElement.dataset.theme=localStorage.getItem("theme")||((matchMedia("(prefers-color-scheme:light)").matches)?"light":"dark")</script>
+<title>Equipment · Transparent Object Perception</title>
+<meta name="description" content="A searchable catalogue of glassware, laboratory equipment and glass resources from the project database.">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body class="equipment-page">
+<header class="topbar" id="topbar"></header>
+
+<main class="equipment-shell">
+  <header class="equipment-head">
+    <p class="hero-kicker">Equipment database</p>
+    <h1>Glassware and laboratory equipment</h1>
+    <p class="equipment-summary" id="equipment-summary"></p>
+  </header>
+  <div class="equipment-tools">
+    <div class="equipment-categories" id="equipment-categories" role="group" aria-label="Equipment category"></div>
+    <label class="equipment-search">
+      <span class="sr-only">Search equipment</span>
+      <input id="equipment-query" type="search" placeholder="Search equipment" autocomplete="off">
+    </label>
+  </div>
+  <section class="equipment-grid" id="equipment-grid" aria-live="polite"></section>
+</main>
+
+<footer id="footer"></footer>
+<script type="module" src="js/equipment.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>document.documentElement.dataset.theme=localStorage.getItem("personal-theme")||((matchMedia("(prefers-color-scheme:light)").matches)?"light":"dark")</script>
+<title>Hengyu Zhao</title>
+<meta name="description" content="Hengyu Zhao's personal site and project pages.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="name" href="./">Hengyu Zhao</a>
+    <nav><a href="#projects">Projects</a><button id="theme" type="button" aria-label="Switch color theme"></button></nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Personal site</p>
+      <h1>Research, systems<br>and visual work.</h1>
+      <p class="note">The full site is in progress. Project pages are available below.</p>
+    </section>
+
+    <section class="projects" id="projects">
+      <header><p>Selected projects</p><span>01</span></header>
+      <a class="project" href="projects/transparent/">
+        <div class="image"><img src="projects/transparent/media/hero/hero.webp" alt="Synthetic laboratory scene with transparent vessels"></div>
+        <div class="copy">
+          <p class="number">01</p>
+          <h2>Transparent Object Perception</h2>
+          <p>Retrieval-augmented transparent object perception for autonomous laboratories.</p>
+          <span>View project <b aria-hidden="true">↗</b></span>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer><span>Hengyu Zhao</span><span>Personal site in progress</span></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

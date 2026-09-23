@@ -1,0 +1,5141 @@
+{
+  "built": "2026-09-23",
+  "data_version": {
+    "label": "2026-09-23",
+    "title": "Material-repair release",
+    "body": "Nine scenes and 1,336 stereo views from the frozen 2026-09-23 material-repair release. The release removes 56 confirmed duplicates from the earlier 1,392-frame set. RGB, depth, normals, instance IDs and masks shown here all come from the same release."
+  },
+  "release": {
+    "id": "labutopia0922",
+    "revision": "material_repair_20260923",
+    "created_at": "2026-09-23T00:30:19.796746+00:00",
+    "validation": {
+      "user_visual_review": {
+        "status": "PASS",
+        "date": "2026-09-23",
+        "scope": "four rerendered scenes only",
+        "scenes": [
+          "chemistry_lab_lab_003",
+          "lab_056",
+          "lab_060",
+          "navigation_lab_01"
+        ]
+      },
+      "zed_sdk": "NOT_RUN",
+      "first_surface_geometry": "PENDING",
+      "normal_direction": "PENDING"
+    }
+  },
+  "totals": {
+    "scenes": 9,
+    "frames": 1336,
+    "modalities": 7,
+    "gt_depth_scenes": [
+      "lab018",
+      "lab056",
+      "lab060",
+      "lab087",
+      "lab088",
+      "lab092",
+      "lab100",
+      "lab_003",
+      "navigation"
+    ]
+  },
+  "modalities": [
+    {
+      "key": "rgb",
+      "label": "RGB",
+      "note": "Stereo RGB from the frozen material-repair release"
+    },
+    {
+      "key": "depth",
+      "label": "Depth",
+      "note": "Isaac-native axial ground-truth depth; shown as an offline color map"
+    },
+    {
+      "key": "seg",
+      "label": "Instances",
+      "note": "Isaac-native compact instance IDs; each ID keeps one color within the view"
+    },
+    {
+      "key": "normal",
+      "label": "Normals",
+      "note": "Isaac-native world-frame XYZ normals mapped to RGB"
+    },
+    {
+      "key": "transparent",
+      "label": "Transparent",
+      "note": "Confirmed transparent-vessel mask",
+      "extended": true
+    },
+    {
+      "key": "liquid",
+      "label": "Liquid",
+      "note": "Liquid-region mask",
+      "extended": true
+    },
+    {
+      "key": "material",
+      "label": "Unverified",
+      "note": "Vessel regions whose material classification is unverified",
+      "extended": true
+    }
+  ],
+  "primary_modalities": [
+    "rgb",
+    "depth",
+    "seg",
+    "normal"
+  ],
+  "hero": {
+    "scene": "lab060",
+    "scene_name": "Multilevel shelves",
+    "frame": "0058",
+    "inset_frame": "0092",
+    "inset_source": "dataset",
+    "review_note": "The hero pairs a room view with a vessel close-up. The 500 mL volumetric flask in lab060/0058 has a clean silhouette on the black bench, with the multilevel shelves behind it. The inset uses the conical flask in frame 0092."
+  },
+  "curation": {
+    "reviewed_on": "2026-09-23",
+    "method": "pipeline/score.py computes exposure, contrast, sharpness, vessel share, composition and structure for all 1,336 views; pipeline/pick.py ranks candidates with recorded weights, and reviewed changes with reasons are kept in pipeline/curation.json.",
+    "covers_reviewed": [
+      "lab060",
+      "lab087",
+      "navigation"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "lab060",
+      "name": "Multilevel shelves",
+      "group": "simple",
+      "frames": 95,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 95,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "cover": {
+        "frame": "0024",
+        "origin": "reviewed",
+        "review_note": "The multilevel shelves define this scene; the algorithm's first choice, 0058, has a large black bench block in the lower left. Frame 0024 keeps the flasks and beakers legible on both shelves.",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0092",
+        "origin": "reviewed",
+        "review_note": "Frame 0092 is a true close-up: one flask on the black bench with a readable rim and base."
+      },
+      "depth": {
+        "lo_m": 0.18,
+        "hi_m": 3.68,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "west_multilevel_shelves",
+          "label": "West Multilevel shelves",
+          "count": 53
+        },
+        {
+          "key": "east_south_benches",
+          "label": "East South Workbench",
+          "count": 29
+        },
+        {
+          "key": "east_north_bench",
+          "label": "East North Workbench",
+          "count": 9
+        },
+        {
+          "key": "central_bench",
+          "label": "Central Workbench",
+          "count": 4
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0024",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "West Multilevel shelves",
+          "view_group": "west_multilevel_shelves",
+          "glass_share": 0.03713,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_008_ErlenmeyerFlask_500mL",
+              "x": 0.4625,
+              "y": 0.37083,
+              "w": 0.07266,
+              "h": 0.26111,
+              "share": 0.013238,
+              "salience": 0.8569
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "Asset_024_VolumetricBottle",
+              "x": 0.87422,
+              "y": 0.24028,
+              "w": 0.10078,
+              "h": 0.27222,
+              "share": 0.007803,
+              "salience": 0.733
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_012_ErlenmeyerFlask_250mL",
+              "x": 0.24609,
+              "y": 0.36528,
+              "w": 0.05547,
+              "h": 0.15,
+              "share": 0.005361,
+              "salience": 0.9225
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_010_ErlenmeyerFlask_14",
+              "x": 0.28437,
+              "y": 0.69028,
+              "w": 0.05937,
+              "h": 0.10139,
+              "share": 0.005101,
+              "salience": 0.548
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_011_Flat_bottomFlask_01",
+              "x": 0.47734,
+              "y": 0.77917,
+              "w": 0.04453,
+              "h": 0.11806,
+              "share": 0.003626,
+              "salience": 0.2481
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.81406,
+              "y": 0.7,
+              "w": 0.03672,
+              "h": 0.07361,
+              "share": 0.001687,
+              "salience": 0.7188
+            }
+          ],
+          "pick_reason": "cover",
+          "has_right": false
+        },
+        {
+          "frame": "0047",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "West Multilevel shelves",
+          "view_group": "west_multilevel_shelves",
+          "glass_share": 0.01181,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_048_ErlenmeyerFlask_10",
+              "x": 0.56641,
+              "y": 0.49306,
+              "w": 0.04375,
+              "h": 0.10972,
+              "share": 0.003432,
+              "salience": 0.4879
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_010_ErlenmeyerFlask_14",
+              "x": 0.10234,
+              "y": 0.00278,
+              "w": 0.04609,
+              "h": 0.09167,
+              "share": 0.002013,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_039_ErlenmeyerFlask_08",
+              "x": 0.44688,
+              "y": 0.25694,
+              "w": 0.03047,
+              "h": 0.08194,
+              "share": 0.001822,
+              "salience": 0.8738
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_011_Flat_bottomFlask_01",
+              "x": 0.08203,
+              "y": 0.06111,
+              "w": 0.04297,
+              "h": 0.0625,
+              "share": 0.001233,
+              "salience": 0.9532
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vidro_250mL_Glass_MAT_0",
+              "x": 0.125,
+              "y": 0.18333,
+              "w": 0.04063,
+              "h": 0.09583,
+              "share": 0.001165,
+              "salience": 0.8504
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.21484,
+              "y": 0.11389,
+              "w": 0.02344,
+              "h": 0.04861,
+              "share": 0.000688,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0067",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "East South Workbench",
+          "view_group": "east_south_benches",
+          "glass_share": 0.01823,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.4625,
+              "y": 0.39028,
+              "w": 0.09844,
+              "h": 0.17222,
+              "share": 0.010368,
+              "salience": 0.7736
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_015_Round_bottomFlask_02",
+              "x": 0.48203,
+              "y": 0.53056,
+              "w": 0.05937,
+              "h": 0.06528,
+              "share": 0.002121,
+              "salience": 0.8024
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.0,
+              "y": 0.35556,
+              "w": 0.02891,
+              "h": 0.08472,
+              "share": 0.001769,
+              "salience": 0.9054
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_032_Round_bottomFlask_03",
+              "x": 0.0,
+              "y": 0.4125,
+              "w": 0.04297,
+              "h": 0.05694,
+              "share": 0.001304,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_029_Round_bottomFlask_06",
+              "x": 0.49844,
+              "y": 0.68889,
+              "w": 0.04219,
+              "h": 0.04583,
+              "share": 0.000999,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Asset_038_SuctionFlask",
+              "x": 0.10781,
+              "y": 0.58056,
+              "w": 0.03672,
+              "h": 0.03889,
+              "share": 0.001012,
+              "salience": 0.5145
+            }
+          ],
+          "pick_reason": "view_group:east_south_benches",
+          "has_right": true
+        },
+        {
+          "frame": "0027",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "West Multilevel shelves",
+          "view_group": "west_multilevel_shelves",
+          "glass_share": 0.0244,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.47734,
+              "y": 0.39583,
+              "w": 0.07031,
+              "h": 0.25556,
+              "share": 0.012591,
+              "salience": 0.9239
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.26953,
+              "y": 0.36944,
+              "w": 0.06172,
+              "h": 0.12778,
+              "share": 0.005809,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_046_beaker_100ml",
+              "x": 0.95156,
+              "y": 0.46528,
+              "w": 0.04844,
+              "h": 0.10278,
+              "share": 0.003638,
+              "salience": 1.0
+            },
+            {
+              "label": "Vial",
+              "prim": "_2_0_Dram_Vial___7_5_mL",
+              "x": 0.50938,
+              "y": 0.00417,
+              "w": 0.01875,
+              "h": 0.09861,
+              "share": 0.001683,
+              "salience": 0.534
+            },
+            {
+              "label": "Vial",
+              "prim": "_1_5_Dram_Vial___5_mL",
+              "x": 0.24141,
+              "y": 0.04306,
+              "w": 0.01875,
+              "h": 0.05694,
+              "share": 0.000674,
+              "salience": 0.6372
+            }
+          ],
+          "pick_reason": "view_group:west_multilevel_shelves",
+          "has_right": true
+        },
+        {
+          "frame": "0026",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "West Multilevel shelves",
+          "view_group": "west_multilevel_shelves",
+          "glass_share": 0.02382,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.47813,
+              "y": 0.39306,
+              "w": 0.07109,
+              "h": 0.25833,
+              "share": 0.012918,
+              "salience": 0.8391
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.24063,
+              "y": 0.39306,
+              "w": 0.06797,
+              "h": 0.13611,
+              "share": 0.00667,
+              "salience": 0.9316
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_046_beaker_100ml",
+              "x": 0.90938,
+              "y": 0.43333,
+              "w": 0.04922,
+              "h": 0.08889,
+              "share": 0.002339,
+              "salience": 1.0
+            },
+            {
+              "label": "Vial",
+              "prim": "_2_0_Dram_Vial___7_5_mL",
+              "x": 0.51016,
+              "y": 0.0,
+              "w": 0.01875,
+              "h": 0.08611,
+              "share": 0.001427,
+              "salience": 0.3072
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0058",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Central Workbench",
+          "view_group": "central_bench",
+          "glass_share": 0.0414,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vidro_500mL_Glass_MAT_0",
+              "x": 0.45078,
+              "y": 0.30556,
+              "w": 0.09531,
+              "h": 0.4375,
+              "share": 0.020532,
+              "salience": 0.8629
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_025_GraduatedCylinder_100mL",
+              "x": 0.76172,
+              "y": 0.42639,
+              "w": 0.09688,
+              "h": 0.29722,
+              "share": 0.008874,
+              "salience": 0.7306
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "BalaoVolumetrico_500mL",
+              "x": 0.47266,
+              "y": 0.22639,
+              "w": 0.05234,
+              "h": 0.08333,
+              "share": 0.002848,
+              "salience": 0.9876
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_036_GraduatedCylinder_50mL",
+              "x": 0.7,
+              "y": 0.3875,
+              "w": 0.04688,
+              "h": 0.18194,
+              "share": 0.002835,
+              "salience": 0.881
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_008_ErlenmeyerFlask_500mL",
+              "x": 0.66641,
+              "y": 0.0,
+              "w": 0.01719,
+              "h": 0.05417,
+              "share": 0.000603,
+              "salience": 0.746
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_010_ErlenmeyerFlask_14",
+              "x": 0.58906,
+              "y": 0.1125,
+              "w": 0.01797,
+              "h": 0.05417,
+              "share": 0.000648,
+              "salience": 0.5564
+            }
+          ],
+          "pick_reason": "view_group:central_bench",
+          "has_right": true
+        },
+        {
+          "frame": "0059",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Central Workbench",
+          "view_group": "central_bench",
+          "glass_share": 0.04094,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vidro_500mL_Glass_MAT_0",
+              "x": 0.41563,
+              "y": 0.30556,
+              "w": 0.08984,
+              "h": 0.40556,
+              "share": 0.018062,
+              "salience": 0.8706
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_025_GraduatedCylinder_100mL",
+              "x": 0.72813,
+              "y": 0.47778,
+              "w": 0.11094,
+              "h": 0.30556,
+              "share": 0.009984,
+              "salience": 0.7695
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_036_GraduatedCylinder_50mL",
+              "x": 0.70078,
+              "y": 0.4,
+              "w": 0.05781,
+              "h": 0.19028,
+              "share": 0.003313,
+              "salience": 0.8211
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "BalaoVolumetrico_500mL",
+              "x": 0.42109,
+              "y": 0.22639,
+              "w": 0.05156,
+              "h": 0.08611,
+              "share": 0.0029,
+              "salience": 0.9778
+            },
+            {
+              "label": "Petri dish",
+              "prim": "petri_dish_base_mesh",
+              "x": 0.47422,
+              "y": 0.49861,
+              "w": 0.03828,
+              "h": 0.04028,
+              "share": 0.001238,
+              "salience": 1.0
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.82578,
+              "y": 0.27361,
+              "w": 0.02187,
+              "h": 0.05,
+              "share": 0.00064,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0028",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "West Multilevel shelves",
+          "view_group": "west_multilevel_shelves",
+          "glass_share": 0.02425,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.46328,
+              "y": 0.36944,
+              "w": 0.07109,
+              "h": 0.26111,
+              "share": 0.013223,
+              "salience": 0.8644
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.22812,
+              "y": 0.38194,
+              "w": 0.06875,
+              "h": 0.13472,
+              "share": 0.006757,
+              "salience": 0.9203
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_046_beaker_100ml",
+              "x": 0.88906,
+              "y": 0.41944,
+              "w": 0.05859,
+              "h": 0.09028,
+              "share": 0.003426,
+              "salience": 1.0
+            },
+            {
+              "label": "Vial",
+              "prim": "_2_0_Dram_Vial___7_5_mL",
+              "x": 0.48984,
+              "y": 0.0,
+              "w": 0.01797,
+              "h": 0.04167,
+              "share": 0.000749,
+              "salience": 0.1083
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0094",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "East North Workbench",
+          "view_group": "east_north_bench",
+          "glass_share": 0.0424,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_003_ErlenmeyerFlask_4000mL",
+              "x": 0.46406,
+              "y": 0.28611,
+              "w": 0.11953,
+              "h": 0.44028,
+              "share": 0.037453,
+              "salience": 0.7926
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vidro_100mL_Glass_MAT_0",
+              "x": 0.43438,
+              "y": 0.40694,
+              "w": 0.02891,
+              "h": 0.12361,
+              "share": 0.00175,
+              "salience": 0.9646
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_035_ErlenmeyerFlask_06",
+              "x": 0.35,
+              "y": 0.46806,
+              "w": 0.03047,
+              "h": 0.07778,
+              "share": 0.001681,
+              "salience": 0.8365
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_049_ErlenmeyerFlask_07",
+              "x": 0.25938,
+              "y": 0.48611,
+              "w": 0.02813,
+              "h": 0.075,
+              "share": 0.001308,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:east_north_bench",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab056",
+      "name": "Central island",
+      "group": "complex",
+      "frames": 212,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 212,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "cover": {
+        "frame": "0067",
+        "origin": "auto",
+        "review_note": "",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0140",
+        "origin": "auto",
+        "review_note": ""
+      },
+      "depth": {
+        "lo_m": 0.61,
+        "hi_m": 5.17,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "central_multilevel_shelf",
+          "label": "Central Multilevel shelves",
+          "count": 40
+        },
+        {
+          "key": "central_island_tabletop",
+          "label": "Island",
+          "count": 40
+        },
+        {
+          "key": "west_long_workbench",
+          "label": "West Workbench",
+          "count": 32
+        },
+        {
+          "key": "south_long_workbench",
+          "label": "South Workbench",
+          "count": 32
+        },
+        {
+          "key": "east_long_workbench",
+          "label": "East Workbench",
+          "count": 28
+        },
+        {
+          "key": "environment",
+          "label": "Panorama",
+          "count": 24
+        },
+        {
+          "key": "northeast_workbench",
+          "label": "Northeast Workbench",
+          "count": 16
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0067",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Island",
+          "view_group": "central_island_tabletop",
+          "glass_share": 0.04354,
+          "hotspots": [
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_129_RoundBottomFlask_1000mL",
+              "x": 0.42734,
+              "y": 0.56667,
+              "w": 0.05234,
+              "h": 0.14861,
+              "share": 0.005074,
+              "salience": 1.0
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_082_Flat_bottomFlask_01",
+              "x": 0.89766,
+              "y": 0.675,
+              "w": 0.05625,
+              "h": 0.09028,
+              "share": 0.003174,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_128_ErlenmeyerFlask_500mL",
+              "x": 0.45937,
+              "y": 0.51806,
+              "w": 0.03281,
+              "h": 0.11528,
+              "share": 0.002283,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_127_ErlenmeyerFlask_250mL",
+              "x": 0.64219,
+              "y": 0.59444,
+              "w": 0.03203,
+              "h": 0.09583,
+              "share": 0.002128,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_011_RoundBottomFlask_250mL",
+              "x": 0.62578,
+              "y": 0.3875,
+              "w": 0.02969,
+              "h": 0.09028,
+              "share": 0.001749,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.30938,
+              "y": 0.32639,
+              "w": 0.02656,
+              "h": 0.08611,
+              "share": 0.001565,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "cover",
+          "has_right": false
+        },
+        {
+          "frame": "0199",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.00376,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_077_ErlenmeyerFlask_1000mL",
+              "x": 0.59141,
+              "y": 0.51389,
+              "w": 0.02734,
+              "h": 0.08333,
+              "share": 0.001561,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0159",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "South Workbench",
+          "view_group": "south_long_workbench",
+          "glass_share": 0.00731,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_070_ErlenmeyerFlask_03",
+              "x": 0.49062,
+              "y": 0.47222,
+              "w": 0.02734,
+              "h": 0.08333,
+              "share": 0.001563,
+              "salience": 0.8019
+            },
+            {
+              "label": "Conical flask",
+              "prim": "Asset_060_conical_bottle",
+              "x": 0.21172,
+              "y": 0.51944,
+              "w": 0.02891,
+              "h": 0.05556,
+              "share": 0.001071,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_050_RoundBottomFlask_250mL",
+              "x": 0.79531,
+              "y": 0.39306,
+              "w": 0.02734,
+              "h": 0.0625,
+              "share": 0.00102,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.67422,
+              "y": 0.40139,
+              "w": 0.02344,
+              "h": 0.06806,
+              "share": 0.000894,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_080_beaker_100ml",
+              "x": 0.28281,
+              "y": 0.54722,
+              "w": 0.02187,
+              "h": 0.04583,
+              "share": 0.000754,
+              "salience": 0.9221
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_106_GraduatedCylinder_100mL",
+              "x": 0.81016,
+              "y": 0.32639,
+              "w": 0.02813,
+              "h": 0.08611,
+              "share": 0.000588,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:south_long_workbench",
+          "has_right": true
+        },
+        {
+          "frame": "0119",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "East Workbench",
+          "view_group": "east_long_workbench",
+          "glass_share": 0.00265,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_075_ErlenmeyerFlask_02",
+              "x": 0.47813,
+              "y": 0.41806,
+              "w": 0.02422,
+              "h": 0.07778,
+              "share": 0.001311,
+              "salience": 0.7967
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_116_Beaker_01",
+              "x": 0.92891,
+              "y": 0.5625,
+              "w": 0.03203,
+              "h": 0.04167,
+              "share": 0.000918,
+              "salience": 0.9593
+            }
+          ],
+          "pick_reason": "view_group:east_long_workbench",
+          "has_right": true
+        },
+        {
+          "frame": "0175",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Northeast Workbench",
+          "view_group": "northeast_workbench",
+          "glass_share": 0.00581,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vidro_250mL_Glass_MAT_0",
+              "x": 0.49766,
+              "y": 0.47778,
+              "w": 0.02891,
+              "h": 0.11667,
+              "share": 0.001606,
+              "salience": 0.8781
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.35547,
+              "y": 0.47639,
+              "w": 0.02578,
+              "h": 0.05833,
+              "share": 0.001093,
+              "salience": 0.4625
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_081_ErlenmeyerFlask_01",
+              "x": 0.47891,
+              "y": 0.44861,
+              "w": 0.01797,
+              "h": 0.04167,
+              "share": 0.000569,
+              "salience": 0.392
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.46016,
+              "y": 0.45278,
+              "w": 0.01797,
+              "h": 0.06806,
+              "share": 0.000585,
+              "salience": 0.1811
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_092_ErlenmeyerFlask_06",
+              "x": 0.47031,
+              "y": 0.50139,
+              "w": 0.01797,
+              "h": 0.04861,
+              "share": 0.000617,
+              "salience": 0.0787
+            }
+          ],
+          "pick_reason": "view_group:northeast_workbench",
+          "has_right": true
+        },
+        {
+          "frame": "0049",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Island",
+          "view_group": "central_island_tabletop",
+          "glass_share": 0.04427,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.31484,
+              "y": 0.54167,
+              "w": 0.05156,
+              "h": 0.10139,
+              "share": 0.00372,
+              "salience": 1.0
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_064_TestTube_02",
+              "x": 0.16172,
+              "y": 0.51528,
+              "w": 0.09141,
+              "h": 0.15556,
+              "share": 0.002985,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.30938,
+              "y": 0.35278,
+              "w": 0.03047,
+              "h": 0.09861,
+              "share": 0.001952,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_123_ErlenmeyerFlask_14",
+              "x": 0.33203,
+              "y": 0.48194,
+              "w": 0.03828,
+              "h": 0.1125,
+              "share": 0.00175,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.48594,
+              "y": 0.55556,
+              "w": 0.02891,
+              "h": 0.08333,
+              "share": 0.001536,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.59219,
+              "y": 0.24722,
+              "w": 0.02813,
+              "h": 0.06528,
+              "share": 0.001463,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:central_island_tabletop",
+          "has_right": true
+        },
+        {
+          "frame": "0208",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.05299,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.6875,
+              "y": 0.55278,
+              "w": 0.05937,
+              "h": 0.1,
+              "share": 0.003932,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_123_ErlenmeyerFlask_14",
+              "x": 0.64453,
+              "y": 0.48889,
+              "w": 0.04063,
+              "h": 0.12361,
+              "share": 0.003507,
+              "salience": 1.0
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_064_TestTube_02",
+              "x": 0.54297,
+              "y": 0.5375,
+              "w": 0.09062,
+              "h": 0.15278,
+              "share": 0.003447,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.83437,
+              "y": 0.55556,
+              "w": 0.0375,
+              "h": 0.08333,
+              "share": 0.001936,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.76094,
+              "y": 0.49306,
+              "w": 0.05312,
+              "h": 0.11528,
+              "share": 0.001896,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.87813,
+              "y": 0.24444,
+              "w": 0.04453,
+              "h": 0.06667,
+              "share": 0.001879,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:environment",
+          "has_right": true
+        },
+        {
+          "frame": "0022",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Central Multilevel shelves",
+          "view_group": "central_multilevel_shelf",
+          "glass_share": 0.06792,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "Asset_064_TestTube_02",
+              "x": 0.39219,
+              "y": 0.6625,
+              "w": 0.11094,
+              "h": 0.19306,
+              "share": 0.005987,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.57578,
+              "y": 0.66667,
+              "w": 0.06875,
+              "h": 0.12639,
+              "share": 0.00559,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_123_ErlenmeyerFlask_14",
+              "x": 0.54063,
+              "y": 0.59028,
+              "w": 0.04297,
+              "h": 0.15139,
+              "share": 0.00451,
+              "salience": 0.9887
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_011_RoundBottomFlask_250mL",
+              "x": 0.02734,
+              "y": 0.47639,
+              "w": 0.05078,
+              "h": 0.10556,
+              "share": 0.003373,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.75391,
+              "y": 0.65833,
+              "w": 0.03906,
+              "h": 0.09861,
+              "share": 0.002469,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.48438,
+              "y": 0.44028,
+              "w": 0.03359,
+              "h": 0.11528,
+              "share": 0.00242,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:central_multilevel_shelf",
+          "has_right": true
+        },
+        {
+          "frame": "0080",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "West Workbench",
+          "view_group": "west_long_workbench",
+          "glass_share": 0.01577,
+          "hotspots": [
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_066_RoundBottomFlask_500mL",
+              "x": 0.13672,
+              "y": 0.58472,
+              "w": 0.09062,
+              "h": 0.20556,
+              "share": 0.01173,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.48984,
+              "y": 0.39861,
+              "w": 0.03594,
+              "h": 0.15833,
+              "share": 0.002704,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_063_beaker_150ml",
+              "x": 0.72969,
+              "y": 0.48472,
+              "w": 0.02266,
+              "h": 0.04167,
+              "share": 0.000767,
+              "salience": 0.9559
+            }
+          ],
+          "pick_reason": "view_group:west_long_workbench",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab092",
+      "name": "Glass shelving",
+      "group": "simple",
+      "frames": 124,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 124,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid"
+      ],
+      "cover": {
+        "frame": "0047",
+        "origin": "auto",
+        "review_note": "",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0092",
+        "origin": "auto",
+        "review_note": ""
+      },
+      "depth": {
+        "lo_m": 0.5,
+        "hi_m": 5.09,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "west_multilevel_long_shelf",
+          "label": "West Multilevel shelves",
+          "count": 36
+        },
+        {
+          "key": "east_glassware_shelves",
+          "label": "East Glassware rack",
+          "count": 24
+        },
+        {
+          "key": "west_lower_glassware",
+          "label": "West Glassware rack",
+          "count": 20
+        },
+        {
+          "key": "environment",
+          "label": "Panorama",
+          "count": 20
+        },
+        {
+          "key": "central_tabletop_cluster",
+          "label": "Central Tabletop",
+          "count": 16
+        },
+        {
+          "key": "north_tabletop_cluster",
+          "label": "North Tabletop",
+          "count": 8
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0047",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "West Glassware rack",
+          "view_group": "west_lower_glassware",
+          "glass_share": 0.02581,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.55,
+              "y": 0.43056,
+              "w": 0.04375,
+              "h": 0.12639,
+              "share": 0.0045,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.53828,
+              "y": 0.24306,
+              "w": 0.04063,
+              "h": 0.12222,
+              "share": 0.003213,
+              "salience": 0.9185
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_007_GraduatedCylinder_1000mL",
+              "x": 0.0625,
+              "y": 0.0,
+              "w": 0.06875,
+              "h": 0.14167,
+              "share": 0.002639,
+              "salience": 0.8158
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.62031,
+              "y": 0.46389,
+              "w": 0.03516,
+              "h": 0.11111,
+              "share": 0.002606,
+              "salience": 0.7458
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.35859,
+              "y": 0.0,
+              "w": 0.0375,
+              "h": 0.16806,
+              "share": 0.002462,
+              "salience": 0.7092
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.49141,
+              "y": 0.45833,
+              "w": 0.02656,
+              "h": 0.07222,
+              "share": 0.001672,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "cover",
+          "has_right": false
+        },
+        {
+          "frame": "0082",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Central Tabletop",
+          "view_group": "central_tabletop_cluster",
+          "glass_share": 0.01924,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_007_GraduatedCylinder_1000mL",
+              "x": 0.1875,
+              "y": 0.0,
+              "w": 0.07422,
+              "h": 0.27083,
+              "share": 0.006809,
+              "salience": 0.6355
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.54609,
+              "y": 0.09167,
+              "w": 0.02656,
+              "h": 0.175,
+              "share": 0.001854,
+              "salience": 0.7031
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.66875,
+              "y": 0.39167,
+              "w": 0.02734,
+              "h": 0.06806,
+              "share": 0.001488,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.62578,
+              "y": 0.30139,
+              "w": 0.025,
+              "h": 0.06944,
+              "share": 0.00109,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_028_GraduatedCylinder_25mL",
+              "x": 0.23438,
+              "y": 0.35139,
+              "w": 0.02734,
+              "h": 0.11389,
+              "share": 0.001032,
+              "salience": 0.6725
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_032_beaker_100ml",
+              "x": 0.375,
+              "y": 0.55417,
+              "w": 0.01953,
+              "h": 0.05,
+              "share": 0.000815,
+              "salience": 0.9108
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0084",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Central Tabletop",
+          "view_group": "central_tabletop_cluster",
+          "glass_share": 0.02159,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_007_GraduatedCylinder_1000mL",
+              "x": 0.05937,
+              "y": 0.0,
+              "w": 0.06719,
+              "h": 0.14167,
+              "share": 0.004685,
+              "salience": 0.7434
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.66016,
+              "y": 0.36111,
+              "w": 0.02969,
+              "h": 0.07361,
+              "share": 0.001781,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.53203,
+              "y": 0.0,
+              "w": 0.01641,
+              "h": 0.20278,
+              "share": 0.002376,
+              "salience": 0.527
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_028_GraduatedCylinder_25mL",
+              "x": 0.11016,
+              "y": 0.2625,
+              "w": 0.03359,
+              "h": 0.14444,
+              "share": 0.001878,
+              "salience": 0.6174
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_032_beaker_100ml",
+              "x": 0.30859,
+              "y": 0.53194,
+              "w": 0.02656,
+              "h": 0.0625,
+              "share": 0.001367,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.6125,
+              "y": 0.26111,
+              "w": 0.02734,
+              "h": 0.07639,
+              "share": 0.001274,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:central_tabletop_cluster",
+          "has_right": true
+        },
+        {
+          "frame": "0097",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "North Tabletop",
+          "view_group": "north_tabletop_cluster",
+          "glass_share": 0.00164,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vidro_100mL_Glass_MAT_0",
+              "x": 0.97813,
+              "y": 0.53333,
+              "w": 0.02187,
+              "h": 0.04444,
+              "share": 0.000666,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_029_beaker_150ml",
+              "x": 0.45312,
+              "y": 0.49583,
+              "w": 0.01797,
+              "h": 0.05,
+              "share": 0.000811,
+              "salience": 0.1072
+            }
+          ],
+          "pick_reason": "view_group:north_tabletop_cluster",
+          "has_right": true
+        },
+        {
+          "frame": "0067",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "East Glassware rack",
+          "view_group": "east_glassware_shelves",
+          "glass_share": 0.01139,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "test_tube_rack_2",
+              "x": 0.25938,
+              "y": 0.49444,
+              "w": 0.10078,
+              "h": 0.09722,
+              "share": 0.005395,
+              "salience": 1.0
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large3",
+              "x": 0.05547,
+              "y": 0.5125,
+              "w": 0.04531,
+              "h": 0.10417,
+              "share": 0.001924,
+              "salience": 0.8483
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.48984,
+              "y": 0.44306,
+              "w": 0.02266,
+              "h": 0.08472,
+              "share": 0.001558,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_014_RoundBottomFlask_500mL",
+              "x": 0.30703,
+              "y": 0.44583,
+              "w": 0.03047,
+              "h": 0.08056,
+              "share": 0.0011,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "Asset_024_conical_bottle",
+              "x": 0.64062,
+              "y": 0.44444,
+              "w": 0.01953,
+              "h": 0.04722,
+              "share": 0.000665,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:east_glassware_shelves",
+          "has_right": true
+        },
+        {
+          "frame": "0046",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "West Glassware rack",
+          "view_group": "west_lower_glassware",
+          "glass_share": 0.02728,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.55391,
+              "y": 0.425,
+              "w": 0.04375,
+              "h": 0.12917,
+              "share": 0.004745,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_007_GraduatedCylinder_1000mL",
+              "x": 0.0,
+              "y": 0.0,
+              "w": 0.07187,
+              "h": 0.19028,
+              "share": 0.004031,
+              "salience": 0.7051
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.52891,
+              "y": 0.25278,
+              "w": 0.03984,
+              "h": 0.11389,
+              "share": 0.002907,
+              "salience": 0.8898
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.62656,
+              "y": 0.44306,
+              "w": 0.03438,
+              "h": 0.11528,
+              "share": 0.002728,
+              "salience": 0.882
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.34219,
+              "y": 0.0,
+              "w": 0.03828,
+              "h": 0.19028,
+              "share": 0.00286,
+              "salience": 0.6624
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.49141,
+              "y": 0.46667,
+              "w": 0.02734,
+              "h": 0.07361,
+              "share": 0.001811,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:west_lower_glassware",
+          "has_right": true
+        },
+        {
+          "frame": "0106",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.02864,
+          "hotspots": [
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.93359,
+              "y": 0.66111,
+              "w": 0.06641,
+              "h": 0.11528,
+              "share": 0.005048,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.84375,
+              "y": 0.77639,
+              "w": 0.06719,
+              "h": 0.11944,
+              "share": 0.005245,
+              "salience": 0.7257
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.8875,
+              "y": 0.90278,
+              "w": 0.05937,
+              "h": 0.09722,
+              "share": 0.003635,
+              "salience": 0.7538
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.85781,
+              "y": 0.29167,
+              "w": 0.07109,
+              "h": 0.17917,
+              "share": 0.003111,
+              "salience": 0.5307
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.81953,
+              "y": 0.73194,
+              "w": 0.03594,
+              "h": 0.06528,
+              "share": 0.001604,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_007_GraduatedCylinder_1000mL",
+              "x": 0.74922,
+              "y": 0.19306,
+              "w": 0.03906,
+              "h": 0.1375,
+              "share": 0.001466,
+              "salience": 0.7127
+            }
+          ],
+          "pick_reason": "view_group:environment",
+          "has_right": true
+        },
+        {
+          "frame": "0024",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "West Multilevel shelves",
+          "view_group": "west_multilevel_long_shelf",
+          "glass_share": 0.02854,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.5,
+              "y": 0.58472,
+              "w": 0.04688,
+              "h": 0.15139,
+              "share": 0.006351,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.23125,
+              "y": 0.06944,
+              "w": 0.03125,
+              "h": 0.26528,
+              "share": 0.005017,
+              "salience": 0.5102
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.45469,
+              "y": 0.41111,
+              "w": 0.04375,
+              "h": 0.12361,
+              "share": 0.003242,
+              "salience": 0.9394
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.58125,
+              "y": 0.59306,
+              "w": 0.0375,
+              "h": 0.12778,
+              "share": 0.003306,
+              "salience": 0.8261
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.42422,
+              "y": 0.64583,
+              "w": 0.03359,
+              "h": 0.09444,
+              "share": 0.002844,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_018_RoundBottomFlask_250mL",
+              "x": 0.23984,
+              "y": 0.44583,
+              "w": 0.03438,
+              "h": 0.09722,
+              "share": 0.002058,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:west_multilevel_long_shelf",
+          "has_right": true
+        },
+        {
+          "frame": "0040",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "West Glassware rack",
+          "view_group": "west_lower_glassware",
+          "glass_share": 0.0331,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_004_ErlenmeyerFlask_2000mL",
+              "x": 0.02578,
+              "y": 0.0,
+              "w": 0.08203,
+              "h": 0.18889,
+              "share": 0.008975,
+              "salience": 0.7948
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_012_beaker_2000ml",
+              "x": 0.94453,
+              "y": 0.39861,
+              "w": 0.05547,
+              "h": 0.09861,
+              "share": 0.004236,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_007_GraduatedCylinder_1000mL",
+              "x": 0.4125,
+              "y": 0.0,
+              "w": 0.025,
+              "h": 0.2,
+              "share": 0.003427,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_009_RoundBottomFlask_1000mL",
+              "x": 0.87734,
+              "y": 0.27222,
+              "w": 0.04531,
+              "h": 0.09444,
+              "share": 0.00247,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_011_GraduatedCylinder_500mL",
+              "x": 0.76406,
+              "y": 0.00139,
+              "w": 0.03516,
+              "h": 0.20972,
+              "share": 0.003032,
+              "salience": 0.7053
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.90312,
+              "y": 0.44028,
+              "w": 0.03828,
+              "h": 0.05833,
+              "share": 0.001711,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:detail",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab100",
+      "name": "Long workbench",
+      "group": "simple",
+      "frames": 175,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 175,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "cover": {
+        "frame": "0112",
+        "origin": "auto",
+        "review_note": "",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0040",
+        "origin": "auto",
+        "review_note": ""
+      },
+      "depth": {
+        "lo_m": 0.47,
+        "hi_m": 7.05,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "t1_south_wet_chemistry",
+          "label": "South Wet chemistry bench",
+          "count": 30
+        },
+        {
+          "key": "t1_north_wet_chemistry",
+          "label": "North Wet chemistry bench",
+          "count": 30
+        },
+        {
+          "key": "t3_south_sample_preparation",
+          "label": "South Sample bench",
+          "count": 30
+        },
+        {
+          "key": "t3_north_sample_preparation",
+          "label": "North Sample bench",
+          "count": 30
+        },
+        {
+          "key": "t2_window_measurement",
+          "label": "Window bench",
+          "count": 30
+        },
+        {
+          "key": "environment",
+          "label": "Panorama",
+          "count": 25
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0158",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.01399,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.33672,
+              "y": 0.74722,
+              "w": 0.03281,
+              "h": 0.09028,
+              "share": 0.002436,
+              "salience": 0.7777
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.30078,
+              "y": 0.43333,
+              "w": 0.02344,
+              "h": 0.07361,
+              "share": 0.001198,
+              "salience": 1.0
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.32344,
+              "y": 0.30833,
+              "w": 0.02187,
+              "h": 0.06806,
+              "share": 0.000993,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.50625,
+              "y": 0.54722,
+              "w": 0.02031,
+              "h": 0.06944,
+              "share": 0.000967,
+              "salience": 0.9582
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.32656,
+              "y": 0.45,
+              "w": 0.02031,
+              "h": 0.04583,
+              "share": 0.000771,
+              "salience": 1.0
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_small",
+              "x": 0.22344,
+              "y": 0.95833,
+              "w": 0.02266,
+              "h": 0.04167,
+              "share": 0.000671,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0016",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "South Wet chemistry bench",
+          "view_group": "t1_south_wet_chemistry",
+          "glass_share": 0.01959,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "ErlenmeyerFlask_01",
+              "x": 0.39062,
+              "y": 0.49306,
+              "w": 0.04219,
+              "h": 0.13611,
+              "share": 0.003931,
+              "salience": 0.4459
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.96406,
+              "y": 0.19722,
+              "w": 0.03594,
+              "h": 0.10694,
+              "share": 0.002422,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "SuctionFlask",
+              "x": 0.59062,
+              "y": 0.55,
+              "w": 0.03594,
+              "h": 0.08333,
+              "share": 0.001729,
+              "salience": 0.9312
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.48438,
+              "y": 0.19861,
+              "w": 0.02813,
+              "h": 0.06944,
+              "share": 0.001636,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.34687,
+              "y": 0.15833,
+              "w": 0.02891,
+              "h": 0.1,
+              "share": 0.001872,
+              "salience": 0.5109
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "VolumetricBottle",
+              "x": 0.79375,
+              "y": 0.33889,
+              "w": 0.02969,
+              "h": 0.09028,
+              "share": 0.001383,
+              "salience": 0.7091
+            }
+          ],
+          "pick_reason": "view_group:t1_south_wet_chemistry",
+          "has_right": true
+        },
+        {
+          "frame": "0156",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.01734,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.58828,
+              "y": 0.69722,
+              "w": 0.03359,
+              "h": 0.11667,
+              "share": 0.002693,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.00937,
+              "y": 0.575,
+              "w": 0.03516,
+              "h": 0.07917,
+              "share": 0.001822,
+              "salience": 0.6287
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.58125,
+              "y": 0.30972,
+              "w": 0.02266,
+              "h": 0.07917,
+              "share": 0.001279,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.55312,
+              "y": 0.64167,
+              "w": 0.02266,
+              "h": 0.06389,
+              "share": 0.00127,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.60234,
+              "y": 0.45417,
+              "w": 0.025,
+              "h": 0.08611,
+              "share": 0.001407,
+              "salience": 0.6532
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.46563,
+              "y": 0.54306,
+              "w": 0.01953,
+              "h": 0.06944,
+              "share": 0.000935,
+              "salience": 0.9485
+            }
+          ],
+          "pick_reason": "view_group:environment",
+          "has_right": true
+        },
+        {
+          "frame": "0136",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Window bench",
+          "view_group": "t2_window_measurement",
+          "glass_share": 0.01633,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "ErlenmeyerFlask_03_Window",
+              "x": 0.51953,
+              "y": 0.44583,
+              "w": 0.04375,
+              "h": 0.14444,
+              "share": 0.004453,
+              "salience": 0.7189
+            },
+            {
+              "label": "Petri dish",
+              "prim": "petri_dish_base_mesh",
+              "x": 0.61719,
+              "y": 0.69028,
+              "w": 0.06016,
+              "h": 0.07222,
+              "share": 0.003314,
+              "salience": 1.0
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_small",
+              "x": 0.83125,
+              "y": 0.71667,
+              "w": 0.04297,
+              "h": 0.08194,
+              "share": 0.002338,
+              "salience": 1.0
+            },
+            {
+              "label": "Test tube",
+              "prim": "tube_rack",
+              "x": 0.96328,
+              "y": 0.60139,
+              "w": 0.03672,
+              "h": 0.14722,
+              "share": 0.002633,
+              "salience": 0.8191
+            },
+            {
+              "label": "Beaker",
+              "prim": "Beaker_01_Window",
+              "x": 0.34922,
+              "y": 0.53472,
+              "w": 0.03516,
+              "h": 0.07917,
+              "share": 0.002244,
+              "salience": 0.684
+            },
+            {
+              "label": "Petri dish",
+              "prim": "petri_dish_lid_mesh",
+              "x": 0.61484,
+              "y": 0.70417,
+              "w": 0.06328,
+              "h": 0.06944,
+              "share": 0.000789,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:t2_window_measurement",
+          "has_right": true
+        },
+        {
+          "frame": "0088",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "South Sample bench",
+          "view_group": "t3_south_sample_preparation",
+          "glass_share": 0.03542,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.37344,
+              "y": 0.44444,
+              "w": 0.04922,
+              "h": 0.17361,
+              "share": 0.005998,
+              "salience": 0.8581
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.11406,
+              "y": 0.36528,
+              "w": 0.05078,
+              "h": 0.11806,
+              "share": 0.00359,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.34531,
+              "y": 0.14583,
+              "w": 0.03672,
+              "h": 0.12917,
+              "share": 0.0031,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.29141,
+              "y": 0.43889,
+              "w": 0.04219,
+              "h": 0.09167,
+              "share": 0.003014,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.00625,
+              "y": 0.34028,
+              "w": 0.05078,
+              "h": 0.09861,
+              "share": 0.002909,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.05547,
+              "y": 0.38889,
+              "w": 0.04844,
+              "h": 0.07083,
+              "share": 0.002401,
+              "salience": 0.8458
+            }
+          ],
+          "pick_reason": "view_group:t3_south_sample_preparation",
+          "has_right": true
+        },
+        {
+          "frame": "0112",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "North Sample bench",
+          "view_group": "t3_north_sample_preparation",
+          "glass_share": 0.03073,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.51484,
+              "y": 0.43333,
+              "w": 0.04609,
+              "h": 0.16389,
+              "share": 0.005295,
+              "salience": 0.9201
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.72188,
+              "y": 0.38194,
+              "w": 0.04453,
+              "h": 0.12917,
+              "share": 0.003785,
+              "salience": 0.9622
+            },
+            {
+              "label": "Petri dish",
+              "prim": "petri_dish_base_mesh",
+              "x": 0.14453,
+              "y": 0.69306,
+              "w": 0.07109,
+              "h": 0.075,
+              "share": 0.003567,
+              "salience": 0.9782
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.23516,
+              "y": 0.14861,
+              "w": 0.04063,
+              "h": 0.12222,
+              "share": 0.002932,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.15078,
+              "y": 0.33333,
+              "w": 0.03906,
+              "h": 0.09583,
+              "share": 0.002271,
+              "salience": 0.9
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.28906,
+              "y": 0.19861,
+              "w": 0.03438,
+              "h": 0.06944,
+              "share": 0.001705,
+              "salience": 0.9943
+            }
+          ],
+          "pick_reason": "view_group:t3_north_sample_preparation",
+          "has_right": true
+        },
+        {
+          "frame": "0082",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "South Sample bench",
+          "view_group": "t3_south_sample_preparation",
+          "glass_share": 0.05313,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.71797,
+              "y": 0.56806,
+              "w": 0.07266,
+              "h": 0.15139,
+              "share": 0.008079,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.73125,
+              "y": 0.11667,
+              "w": 0.06719,
+              "h": 0.19583,
+              "share": 0.007753,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.3875,
+              "y": 0.44167,
+              "w": 0.04922,
+              "h": 0.17083,
+              "share": 0.005824,
+              "salience": 0.9272
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.18438,
+              "y": 0.39028,
+              "w": 0.05156,
+              "h": 0.13611,
+              "share": 0.004373,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.65859,
+              "y": 0.19722,
+              "w": 0.05234,
+              "h": 0.10833,
+              "share": 0.004138,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.50078,
+              "y": 0.13472,
+              "w": 0.03828,
+              "h": 0.15556,
+              "share": 0.004039,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0058",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "North Wet chemistry bench",
+          "view_group": "t1_north_wet_chemistry",
+          "glass_share": 0.02527,
+          "hotspots": [
+            {
+              "label": "Volumetric flask",
+              "prim": "VolumetricBottle",
+              "x": 0.15156,
+              "y": 0.42639,
+              "w": 0.08203,
+              "h": 0.28056,
+              "share": 0.008228,
+              "salience": 0.8984
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.55625,
+              "y": 0.42778,
+              "w": 0.04609,
+              "h": 0.16111,
+              "share": 0.005165,
+              "salience": 0.8156
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.82734,
+              "y": 0.39583,
+              "w": 0.04531,
+              "h": 0.07361,
+              "share": 0.002383,
+              "salience": 0.8367
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.10625,
+              "y": 0.19722,
+              "w": 0.05859,
+              "h": 0.09028,
+              "share": 0.00336,
+              "salience": 0.4303
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.64453,
+              "y": 0.1625,
+              "w": 0.02656,
+              "h": 0.09028,
+              "share": 0.001545,
+              "salience": 0.3531
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.65859,
+              "y": 0.0,
+              "w": 0.02656,
+              "h": 0.05417,
+              "share": 0.000927,
+              "salience": 0.8517
+            }
+          ],
+          "pick_reason": "view_group:t1_north_wet_chemistry",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab087",
+      "name": "Perforated wall lab",
+      "group": "simple",
+      "frames": 92,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 92,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid"
+      ],
+      "cover": {
+        "frame": "0019",
+        "origin": "reviewed",
+        "review_note": "The perforated wall and a row of flasks share the frame, making the lab identity readable; the algorithm's first choice, 0024, was dominated by an office chair and black monitor.",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0018",
+        "origin": "auto",
+        "review_note": ""
+      },
+      "depth": {
+        "lo_m": 0.27,
+        "hi_m": 6.34,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "south_long_shelf",
+          "label": "South Long shelving",
+          "count": 24
+        },
+        {
+          "key": "north_multilevel_shelves",
+          "label": "North Multilevel shelves",
+          "count": 24
+        },
+        {
+          "key": "environment",
+          "label": "Panorama",
+          "count": 20
+        },
+        {
+          "key": "west_smallware_shelves",
+          "label": "West Smallware rack",
+          "count": 16
+        },
+        {
+          "key": "east_cylinder_shelves",
+          "label": "East Cylinder rack",
+          "count": 8
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0019",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "South Long shelving",
+          "view_group": "south_long_shelf",
+          "glass_share": 0.02168,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_001_ErlenmeyerFlask_2000mL",
+              "x": 0.10781,
+              "y": 0.50278,
+              "w": 0.10391,
+              "h": 0.19167,
+              "share": 0.010893,
+              "salience": 0.7011
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_002_ErlenmeyerFlask_1000mL",
+              "x": 0.33594,
+              "y": 0.47222,
+              "w": 0.04844,
+              "h": 0.13889,
+              "share": 0.004398,
+              "salience": 0.7168
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_007_ErlenmeyerFlask_500mL",
+              "x": 0.49766,
+              "y": 0.44306,
+              "w": 0.03047,
+              "h": 0.10278,
+              "share": 0.002123,
+              "salience": 0.8985
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "Asset_022_VolumetricBottle",
+              "x": 0.82578,
+              "y": 0.30556,
+              "w": 0.04375,
+              "h": 0.10694,
+              "share": 0.001241,
+              "salience": 0.5858
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_013_ErlenmeyerFlask_250mL",
+              "x": 0.62656,
+              "y": 0.42083,
+              "w": 0.025,
+              "h": 0.07222,
+              "share": 0.001148,
+              "salience": 0.6521
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_019_ErlenmeyerFlask_125mL",
+              "x": 0.73516,
+              "y": 0.39167,
+              "w": 0.02422,
+              "h": 0.05694,
+              "share": 0.000764,
+              "salience": 0.4949
+            }
+          ],
+          "pick_reason": "cover",
+          "has_right": false
+        },
+        {
+          "frame": "0086",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.00863,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_001_ErlenmeyerFlask_2000mL",
+              "x": 0.125,
+              "y": 0.45694,
+              "w": 0.03281,
+              "h": 0.08056,
+              "share": 0.001822,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_004_GraduatedCylinder_1000mL",
+              "x": 0.04219,
+              "y": 0.40139,
+              "w": 0.04141,
+              "h": 0.1375,
+              "share": 0.001861,
+              "salience": 0.8431
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_002_ErlenmeyerFlask_1000mL",
+              "x": 0.20469,
+              "y": 0.47083,
+              "w": 0.02422,
+              "h": 0.06528,
+              "share": 0.001074,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_012_graduated_cylinder",
+              "x": 0.88047,
+              "y": 0.45833,
+              "w": 0.02578,
+              "h": 0.07778,
+              "share": 0.000863,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.73359,
+              "y": 0.4625,
+              "w": 0.01875,
+              "h": 0.07222,
+              "share": 0.000645,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_007_ErlenmeyerFlask_500mL",
+              "x": 0.28359,
+              "y": 0.48333,
+              "w": 0.01719,
+              "h": 0.05278,
+              "share": 0.000622,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0071",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "West Smallware rack",
+          "view_group": "west_smallware_shelves",
+          "glass_share": 0.00294,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_012_graduated_cylinder",
+              "x": 0.00703,
+              "y": 0.48333,
+              "w": 0.04688,
+              "h": 0.11944,
+              "share": 0.00209,
+              "salience": 0.8537
+            }
+          ],
+          "pick_reason": "view_group:west_smallware_shelves",
+          "has_right": true
+        },
+        {
+          "frame": "0052",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "East Cylinder rack",
+          "view_group": "east_cylinder_shelves",
+          "glass_share": 0.00989,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_008_GraduatedCylinder_500mL",
+              "x": 0.49297,
+              "y": 0.325,
+              "w": 0.03125,
+              "h": 0.23056,
+              "share": 0.003646,
+              "salience": 0.6544
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_023_GraduatedCylinder_100mL",
+              "x": 0.47187,
+              "y": 0.44444,
+              "w": 0.03125,
+              "h": 0.18889,
+              "share": 0.002626,
+              "salience": 0.6654
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_034_GraduatedCylinder_25mL",
+              "x": 0.80547,
+              "y": 0.525,
+              "w": 0.04063,
+              "h": 0.15,
+              "share": 0.002151,
+              "salience": 0.6535
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_030_GraduatedCylinder_50mL",
+              "x": 0.74844,
+              "y": 0.44583,
+              "w": 0.03125,
+              "h": 0.13194,
+              "share": 0.001469,
+              "salience": 0.7026
+            }
+          ],
+          "pick_reason": "view_group:east_cylinder_shelves",
+          "has_right": true
+        },
+        {
+          "frame": "0032",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "North Multilevel shelves",
+          "view_group": "north_multilevel_shelves",
+          "glass_share": 0.01425,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_009_beaker_2000ml",
+              "x": 0.24688,
+              "y": 0.50694,
+              "w": 0.04453,
+              "h": 0.10556,
+              "share": 0.003604,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.09375,
+              "y": 0.58333,
+              "w": 0.04297,
+              "h": 0.07361,
+              "share": 0.002258,
+              "salience": 0.5314
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.37188,
+              "y": 0.49306,
+              "w": 0.025,
+              "h": 0.08333,
+              "share": 0.001429,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "Asset_025_conical_bottle",
+              "x": 0.43984,
+              "y": 0.51111,
+              "w": 0.01797,
+              "h": 0.04583,
+              "share": 0.000581,
+              "salience": 0.9447
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large3",
+              "x": 0.55078,
+              "y": 0.45278,
+              "w": 0.0125,
+              "h": 0.07083,
+              "share": 0.000569,
+              "salience": 0.9718
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_014_ErlenmeyerFlask_02",
+              "x": 0.85781,
+              "y": 0.51667,
+              "w": 0.01875,
+              "h": 0.04306,
+              "share": 0.000518,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:cluster",
+          "has_right": true
+        },
+        {
+          "frame": "0020",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "South Long shelving",
+          "view_group": "south_long_shelf",
+          "glass_share": 0.02247,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_001_ErlenmeyerFlask_2000mL",
+              "x": 0.49453,
+              "y": 0.40417,
+              "w": 0.05391,
+              "h": 0.17778,
+              "share": 0.006595,
+              "salience": 0.8753
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_004_GraduatedCylinder_1000mL",
+              "x": 0.34453,
+              "y": 0.27778,
+              "w": 0.05078,
+              "h": 0.2875,
+              "share": 0.00611,
+              "salience": 0.7508
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_002_ErlenmeyerFlask_1000mL",
+              "x": 0.66563,
+              "y": 0.44722,
+              "w": 0.05,
+              "h": 0.15139,
+              "share": 0.005215,
+              "salience": 0.8534
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_007_ErlenmeyerFlask_500mL",
+              "x": 0.85547,
+              "y": 0.4875,
+              "w": 0.05547,
+              "h": 0.13056,
+              "share": 0.004553,
+              "salience": 0.8476
+            }
+          ],
+          "pick_reason": "view_group:south_long_shelf",
+          "has_right": true
+        },
+        {
+          "frame": "0017",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "South Long shelving",
+          "view_group": "south_long_shelf",
+          "glass_share": 0.02514,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_001_ErlenmeyerFlask_2000mL",
+              "x": 0.15625,
+              "y": 0.40833,
+              "w": 0.07344,
+              "h": 0.17778,
+              "share": 0.008078,
+              "salience": 0.8113
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_004_GraduatedCylinder_1000mL",
+              "x": 0.0,
+              "y": 0.35972,
+              "w": 0.07734,
+              "h": 0.22778,
+              "share": 0.005801,
+              "salience": 0.7134
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_002_ErlenmeyerFlask_1000mL",
+              "x": 0.33437,
+              "y": 0.44028,
+              "w": 0.04453,
+              "h": 0.14167,
+              "share": 0.004357,
+              "salience": 0.8208
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_007_ErlenmeyerFlask_500mL",
+              "x": 0.49844,
+              "y": 0.46389,
+              "w": 0.03281,
+              "h": 0.11389,
+              "share": 0.00254,
+              "salience": 0.6786
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "Asset_022_VolumetricBottle",
+              "x": 0.96953,
+              "y": 0.50139,
+              "w": 0.03047,
+              "h": 0.07222,
+              "share": 0.001344,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_013_ErlenmeyerFlask_250mL",
+              "x": 0.65859,
+              "y": 0.49028,
+              "w": 0.02813,
+              "h": 0.08472,
+              "share": 0.001653,
+              "salience": 0.4947
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0081",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.0136,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_001_ErlenmeyerFlask_2000mL",
+              "x": 0.08906,
+              "y": 0.64306,
+              "w": 0.07031,
+              "h": 0.18056,
+              "share": 0.008532,
+              "salience": 0.8543
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_002_ErlenmeyerFlask_1000mL",
+              "x": 0.25703,
+              "y": 0.59306,
+              "w": 0.03594,
+              "h": 0.10694,
+              "share": 0.002592,
+              "salience": 0.9348
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_007_ErlenmeyerFlask_500mL",
+              "x": 0.35625,
+              "y": 0.55833,
+              "w": 0.02109,
+              "h": 0.06806,
+              "share": 0.000955,
+              "salience": 0.5951
+            }
+          ],
+          "pick_reason": "view_group:environment",
+          "has_right": true
+        },
+        {
+          "frame": "0029",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "North Multilevel shelves",
+          "view_group": "north_multilevel_shelves",
+          "glass_share": 0.0194,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_009_beaker_2000ml",
+              "x": 0.46016,
+              "y": 0.43889,
+              "w": 0.04219,
+              "h": 0.13194,
+              "share": 0.004999,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.60078,
+              "y": 0.45139,
+              "w": 0.03359,
+              "h": 0.11528,
+              "share": 0.002751,
+              "salience": 0.9455
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large3",
+              "x": 0.87891,
+              "y": 0.44722,
+              "w": 0.03906,
+              "h": 0.11667,
+              "share": 0.002112,
+              "salience": 0.9798
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.30938,
+              "y": 0.48889,
+              "w": 0.03516,
+              "h": 0.07778,
+              "share": 0.002192,
+              "salience": 0.698
+            },
+            {
+              "label": "Conical flask",
+              "prim": "Asset_025_conical_bottle",
+              "x": 0.69453,
+              "y": 0.49861,
+              "w": 0.02891,
+              "h": 0.06667,
+              "share": 0.001386,
+              "salience": 0.9279
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_031_Beaker_01",
+              "x": 0.96953,
+              "y": 0.51111,
+              "w": 0.03047,
+              "h": 0.05278,
+              "share": 0.001302,
+              "salience": 0.9462
+            }
+          ],
+          "pick_reason": "view_group:north_multilevel_shelves",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab088",
+      "name": "Bench rows",
+      "group": "complex",
+      "frames": 210,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 210,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid"
+      ],
+      "cover": {
+        "frame": "0148",
+        "origin": "auto",
+        "review_note": "",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0051",
+        "origin": "reviewed",
+        "review_note": "Frame 0051 has the largest primary vessel in this scene."
+      },
+      "depth": {
+        "lo_m": 0.47,
+        "hi_m": 12.74,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "central_bank",
+          "label": "Central bank",
+          "count": 32
+        },
+        {
+          "key": "environment",
+          "label": "Panorama",
+          "count": 28
+        },
+        {
+          "key": "north_bench_0",
+          "label": "North Workbench 1",
+          "count": 18
+        },
+        {
+          "key": "north_bench_1",
+          "label": "North Workbench 2",
+          "count": 18
+        },
+        {
+          "key": "north_bench_2",
+          "label": "North Workbench 3",
+          "count": 18
+        },
+        {
+          "key": "north_bench_3",
+          "label": "North Workbench 4",
+          "count": 18
+        },
+        {
+          "key": "south_bench_0",
+          "label": "South Workbench 1",
+          "count": 16
+        },
+        {
+          "key": "south_bench_1",
+          "label": "South Workbench 2",
+          "count": 16
+        },
+        {
+          "key": "south_bench_2",
+          "label": "South Workbench 3",
+          "count": 16
+        },
+        {
+          "key": "south_bench_3",
+          "label": "South Workbench 4",
+          "count": 16
+        },
+        {
+          "key": "south_wall_table",
+          "label": "South Wall bench",
+          "count": 14
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0117",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "North Workbench 1",
+          "view_group": "north_bench_0",
+          "glass_share": 0.01062,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_1295_ErlenmeyerFlask_500mL",
+              "x": 0.56641,
+              "y": 0.0,
+              "w": 0.04063,
+              "h": 0.05,
+              "share": 0.00136,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "Asset_1296_conical_bottle",
+              "x": 0.58281,
+              "y": 0.2,
+              "w": 0.02891,
+              "h": 0.07361,
+              "share": 0.001297,
+              "salience": 0.9108
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_1297_opentrons_24_tuberack_eppendorf_2ml_safelock_snapcap_acrylic",
+              "x": 0.20938,
+              "y": 0.21806,
+              "w": 0.04453,
+              "h": 0.04444,
+              "share": 0.001168,
+              "salience": 1.0
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_088_Flat_bottomFlask_01",
+              "x": 0.21563,
+              "y": 0.60694,
+              "w": 0.04141,
+              "h": 0.08472,
+              "share": 0.002305,
+              "salience": 0.1809
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_1264_opentrons_24_tuberack_nest_1_5ml_snapcap",
+              "x": 0.41328,
+              "y": 0.20139,
+              "w": 0.03125,
+              "h": 0.05972,
+              "share": 0.000865,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_1265_beaker_150ml",
+              "x": 0.08047,
+              "y": 0.01528,
+              "w": 0.03047,
+              "h": 0.04583,
+              "share": 0.000807,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:north_bench_0",
+          "has_right": true
+        },
+        {
+          "frame": "0098",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Central bank",
+          "view_group": "central_bank",
+          "glass_share": 0.01734,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_018_ErlenmeyerFlask_2000mL",
+              "x": 0.3875,
+              "y": 0.45417,
+              "w": 0.04844,
+              "h": 0.15417,
+              "share": 0.005047,
+              "salience": 0.9933
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_120_opentrons_10_tuberack_nest_4x50ml_6x15ml_conical",
+              "x": 0.41875,
+              "y": 0.5875,
+              "w": 0.04141,
+              "h": 0.11389,
+              "share": 0.003823,
+              "salience": 0.5459
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_070_opentrons_24_tuberack_eppendorf_1_5ml_safelock_snapcap",
+              "x": 0.20156,
+              "y": 0.53889,
+              "w": 0.05,
+              "h": 0.05417,
+              "share": 0.001437,
+              "salience": 0.9908
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.85313,
+              "y": 0.2,
+              "w": 0.04063,
+              "h": 0.10278,
+              "share": 0.002446,
+              "salience": 0.1964
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_176_ErlenmeyerFlask_4000mL",
+              "x": 0.00781,
+              "y": 0.38889,
+              "w": 0.02813,
+              "h": 0.05972,
+              "share": 0.001083,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_140_graduated_cylinder",
+              "x": 0.94766,
+              "y": 0.42639,
+              "w": 0.025,
+              "h": 0.07639,
+              "share": 0.000868,
+              "salience": 0.5572
+            }
+          ],
+          "pick_reason": "view_group:central_bank",
+          "has_right": true
+        },
+        {
+          "frame": "0209",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Panorama",
+          "view_group": "environment",
+          "glass_share": 0.01402,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_176_ErlenmeyerFlask_4000mL",
+              "x": 0.13125,
+              "y": 0.75833,
+              "w": 0.07422,
+              "h": 0.16944,
+              "share": 0.00786,
+              "salience": 0.7558
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_1251_ErlenmeyerFlask_50mL",
+              "x": 0.97266,
+              "y": 0.60694,
+              "w": 0.02734,
+              "h": 0.04861,
+              "share": 0.000803,
+              "salience": 1.0
+            },
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_1260_RoundBottomFlask_500mL",
+              "x": 0.24141,
+              "y": 0.46667,
+              "w": 0.02266,
+              "h": 0.04583,
+              "share": 0.0007,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_1220_ErlenmeyerFlask_12",
+              "x": 0.97656,
+              "y": 0.77361,
+              "w": 0.02344,
+              "h": 0.04722,
+              "share": 0.000651,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:environment",
+          "has_right": true
+        },
+        {
+          "frame": "0168",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "North Workbench 4",
+          "view_group": "north_bench_3",
+          "glass_share": 0.04129,
+          "hotspots": [
+            {
+              "label": "Round-bottom flask",
+              "prim": "Asset_082_RoundBottomFlask_5000mL",
+              "x": 0.725,
+              "y": 0.38472,
+              "w": 0.11875,
+              "h": 0.26389,
+              "share": 0.019492,
+              "salience": 0.8518
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_099_GraduatedCylinder_100mL",
+              "x": 0.90781,
+              "y": 0.47917,
+              "w": 0.09219,
+              "h": 0.28889,
+              "share": 0.008965,
+              "salience": 0.5325
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_136_beaker_2000ml",
+              "x": 0.0,
+              "y": 0.44583,
+              "w": 0.04688,
+              "h": 0.13611,
+              "share": 0.005041,
+              "salience": 0.7321
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_1212_opentrons_10_tuberack_nest_4x50ml_6x15ml_conical",
+              "x": 0.64922,
+              "y": 0.13056,
+              "w": 0.05859,
+              "h": 0.08056,
+              "share": 0.00298,
+              "salience": 0.7592
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.53516,
+              "y": 0.43333,
+              "w": 0.02656,
+              "h": 0.09722,
+              "share": 0.00179,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_1275_ErlenmeyerFlask_01",
+              "x": 0.225,
+              "y": 0.1375,
+              "w": 0.03203,
+              "h": 0.08472,
+              "share": 0.001549,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:north_bench_3",
+          "has_right": true
+        },
+        {
+          "frame": "0148",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "North Workbench 3",
+          "view_group": "north_bench_2",
+          "glass_share": 0.02939,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_153_ErlenmeyerFlask_500mL",
+              "x": 0.56328,
+              "y": 0.54444,
+              "w": 0.05937,
+              "h": 0.20417,
+              "share": 0.008325,
+              "salience": 0.7354
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.75859,
+              "y": 0.54167,
+              "w": 0.04766,
+              "h": 0.11944,
+              "share": 0.00362,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_176_ErlenmeyerFlask_4000mL",
+              "x": 0.0,
+              "y": 0.38889,
+              "w": 0.04141,
+              "h": 0.14306,
+              "share": 0.003466,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.15859,
+              "y": 0.35833,
+              "w": 0.04141,
+              "h": 0.075,
+              "share": 0.002276,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.84609,
+              "y": 0.61528,
+              "w": 0.03984,
+              "h": 0.08333,
+              "share": 0.00226,
+              "salience": 0.8235
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.45937,
+              "y": 0.48611,
+              "w": 0.02891,
+              "h": 0.075,
+              "share": 0.002005,
+              "salience": 0.9491
+            }
+          ],
+          "pick_reason": "view_group:north_bench_2",
+          "has_right": true
+        },
+        {
+          "frame": "0030",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "South Workbench 2",
+          "view_group": "south_bench_1",
+          "glass_share": 0.0217,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_033_ErlenmeyerFlask_4000mL",
+              "x": 0.61562,
+              "y": 0.31944,
+              "w": 0.05859,
+              "h": 0.15417,
+              "share": 0.005979,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_109_ErlenmeyerFlask_14",
+              "x": 0.45625,
+              "y": 0.50833,
+              "w": 0.06328,
+              "h": 0.21528,
+              "share": 0.009456,
+              "salience": 0.3649
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_098_GraduatedCylinder_500mL",
+              "x": 0.70391,
+              "y": 0.30833,
+              "w": 0.03281,
+              "h": 0.16389,
+              "share": 0.00209,
+              "salience": 1.0
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "Asset_160_VolumetricBottle",
+              "x": 0.79141,
+              "y": 0.36528,
+              "w": 0.02344,
+              "h": 0.1,
+              "share": 0.001002,
+              "salience": 0.9514
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_055_opentrons_24_tuberack_eppendorf_2ml_safelock_snapcap_acrylic",
+              "x": 0.58906,
+              "y": 0.43194,
+              "w": 0.02891,
+              "h": 0.02917,
+              "share": 0.0006,
+              "salience": 0.8606
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_1257_Beaker_01",
+              "x": 0.95391,
+              "y": 0.19306,
+              "w": 0.02891,
+              "h": 0.03194,
+              "share": 0.000531,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:south_bench_1",
+          "has_right": true
+        },
+        {
+          "frame": "0048",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "South Workbench 3",
+          "view_group": "south_bench_2",
+          "glass_share": 0.05527,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vidro_500mL_Glass_MAT_0",
+              "x": 0.14062,
+              "y": 0.36667,
+              "w": 0.10938,
+              "h": 0.40417,
+              "share": 0.021515,
+              "salience": 0.6568
+            },
+            {
+              "label": "Beaker",
+              "prim": "Asset_1236_beaker_2000ml",
+              "x": 0.59141,
+              "y": 0.08056,
+              "w": 0.05,
+              "h": 0.13194,
+              "share": 0.005297,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vidro_100mL_Glass_MAT_0",
+              "x": 0.68828,
+              "y": 0.64028,
+              "w": 0.05859,
+              "h": 0.22639,
+              "share": 0.006567,
+              "salience": 0.608
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_1299_ErlenmeyerFlask_14",
+              "x": 0.47109,
+              "y": 0.08333,
+              "w": 0.04219,
+              "h": 0.13194,
+              "share": 0.003333,
+              "salience": 0.6939
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.36719,
+              "y": 0.46806,
+              "w": 0.04688,
+              "h": 0.10556,
+              "share": 0.003802,
+              "salience": 0.5114
+            },
+            {
+              "label": "Test tube",
+              "prim": "Asset_1266_opentrons_6_tuberack_falcon_50ml_conical",
+              "x": 0.11563,
+              "y": 0.15556,
+              "w": 0.06641,
+              "h": 0.06667,
+              "share": 0.00245,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:south_bench_2",
+          "has_right": true
+        },
+        {
+          "frame": "0128",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "North Workbench 2",
+          "view_group": "north_bench_1",
+          "glass_share": 0.01607,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "test_tube_rack_2",
+              "x": 0.36172,
+              "y": 0.52083,
+              "w": 0.10781,
+              "h": 0.175,
+              "share": 0.00965,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.90547,
+              "y": 0.14444,
+              "w": 0.03672,
+              "h": 0.08056,
+              "share": 0.001518,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.96562,
+              "y": 0.17639,
+              "w": 0.03438,
+              "h": 0.05139,
+              "share": 0.00126,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_031_ErlenmeyerFlask_01",
+              "x": 0.54531,
+              "y": 0.43333,
+              "w": 0.02109,
+              "h": 0.06667,
+              "share": 0.000829,
+              "salience": 0.6946
+            }
+          ],
+          "pick_reason": "view_group:north_bench_1",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab_003",
+      "name": "Fume hood bench",
+      "group": "simple",
+      "frames": 175,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 175,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "cover": {
+        "frame": "0131",
+        "origin": "auto",
+        "review_note": "",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0105",
+        "origin": "reviewed",
+        "review_note": "Frame 0105 has the largest primary vessel in this scene."
+      },
+      "depth": {
+        "lo_m": 0.62,
+        "hi_m": 10.17,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "unspecified",
+          "label": "Fixed camera",
+          "count": 175
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0100",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00545,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.47344,
+              "y": 0.46389,
+              "w": 0.02656,
+              "h": 0.09167,
+              "share": 0.001659,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.36719,
+              "y": 0.57778,
+              "w": 0.02109,
+              "h": 0.05694,
+              "share": 0.001045,
+              "salience": 0.9531
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.38047,
+              "y": 0.4625,
+              "w": 0.02031,
+              "h": 0.04861,
+              "share": 0.000853,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.50859,
+              "y": 0.375,
+              "w": 0.01875,
+              "h": 0.08194,
+              "share": 0.000678,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0027",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00496,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.46953,
+              "y": 0.47361,
+              "w": 0.025,
+              "h": 0.08611,
+              "share": 0.001488,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.38047,
+              "y": 0.57778,
+              "w": 0.02031,
+              "h": 0.05417,
+              "share": 0.000944,
+              "salience": 0.9614
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.37031,
+              "y": 0.47917,
+              "w": 0.01953,
+              "h": 0.04722,
+              "share": 0.00082,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.48672,
+              "y": 0.39722,
+              "w": 0.01797,
+              "h": 0.07778,
+              "share": 0.000605,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0154",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00271,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.65781,
+              "y": 0.51944,
+              "w": 0.02031,
+              "h": 0.06528,
+              "share": 0.000924,
+              "salience": 0.6923
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.55156,
+              "y": 0.52222,
+              "w": 0.01562,
+              "h": 0.04306,
+              "share": 0.000595,
+              "salience": 0.7861
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.55078,
+              "y": 0.43889,
+              "w": 0.01875,
+              "h": 0.08333,
+              "share": 0.000758,
+              "salience": 0.3434
+            }
+          ],
+          "pick_reason": "tier:bench",
+          "has_right": true
+        },
+        {
+          "frame": "0153",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.0028,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.66484,
+              "y": 0.50139,
+              "w": 0.02187,
+              "h": 0.06944,
+              "share": 0.001051,
+              "salience": 0.9036
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.55156,
+              "y": 0.51111,
+              "w": 0.01641,
+              "h": 0.04444,
+              "share": 0.000647,
+              "salience": 0.6807
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.55156,
+              "y": 0.43611,
+              "w": 0.01953,
+              "h": 0.08472,
+              "share": 0.000638,
+              "salience": 0.2686
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0131",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00934,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "test_tube_rack",
+              "x": 0.46719,
+              "y": 0.53472,
+              "w": 0.03828,
+              "h": 0.09444,
+              "share": 0.002148,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "conical_bottle03",
+              "x": 0.55,
+              "y": 0.55417,
+              "w": 0.02891,
+              "h": 0.09444,
+              "share": 0.001889,
+              "salience": 0.7539
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_5",
+              "x": 0.51094,
+              "y": 0.58333,
+              "w": 0.02266,
+              "h": 0.06528,
+              "share": 0.001245,
+              "salience": 0.9177
+            },
+            {
+              "label": "Conical flask",
+              "prim": "conical_bottle04",
+              "x": 0.57109,
+              "y": 0.54861,
+              "w": 0.01484,
+              "h": 0.07222,
+              "share": 0.000668,
+              "salience": 0.7935
+            }
+          ],
+          "pick_reason": "view_group:unspecified",
+          "has_right": true
+        },
+        {
+          "frame": "0105",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00837,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "test_tube_rack",
+              "x": 0.47734,
+              "y": 0.52639,
+              "w": 0.03438,
+              "h": 0.09167,
+              "share": 0.002036,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "conical_bottle03",
+              "x": 0.56641,
+              "y": 0.53333,
+              "w": 0.02734,
+              "h": 0.09583,
+              "share": 0.001925,
+              "salience": 0.9141
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_5",
+              "x": 0.52578,
+              "y": 0.56528,
+              "w": 0.02344,
+              "h": 0.06806,
+              "share": 0.001324,
+              "salience": 0.9841
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0104",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00836,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "test_tube_rack",
+              "x": 0.47656,
+              "y": 0.52222,
+              "w": 0.03516,
+              "h": 0.09306,
+              "share": 0.00204,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "conical_bottle03",
+              "x": 0.56641,
+              "y": 0.53056,
+              "w": 0.02734,
+              "h": 0.09444,
+              "share": 0.001923,
+              "salience": 0.9454
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_5",
+              "x": 0.52578,
+              "y": 0.56111,
+              "w": 0.02344,
+              "h": 0.06806,
+              "share": 0.001322,
+              "salience": 0.7642
+            }
+          ],
+          "pick_reason": "fill",
+          "has_right": true
+        },
+        {
+          "frame": "0128",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00882,
+          "hotspots": [
+            {
+              "label": "Test tube",
+              "prim": "test_tube_rack",
+              "x": 0.45781,
+              "y": 0.52917,
+              "w": 0.03906,
+              "h": 0.0875,
+              "share": 0.002042,
+              "salience": 1.0
+            },
+            {
+              "label": "Conical flask",
+              "prim": "conical_bottle03",
+              "x": 0.53516,
+              "y": 0.54861,
+              "w": 0.02734,
+              "h": 0.08889,
+              "share": 0.001697,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_5",
+              "x": 0.49844,
+              "y": 0.57361,
+              "w": 0.02031,
+              "h": 0.0625,
+              "share": 0.001117,
+              "salience": 0.8803
+            },
+            {
+              "label": "Conical flask",
+              "prim": "conical_bottle04",
+              "x": 0.55625,
+              "y": 0.54444,
+              "w": 0.01562,
+              "h": 0.06806,
+              "share": 0.000753,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "fill",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "lab018",
+      "name": "Long table & corridor",
+      "group": "navigation",
+      "frames": 133,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 133,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid"
+      ],
+      "cover": {
+        "frame": "0089",
+        "origin": "auto",
+        "review_note": "",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0087",
+        "origin": "auto",
+        "review_note": ""
+      },
+      "depth": {
+        "lo_m": 0.69,
+        "hi_m": 8.01,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "northwest_lab",
+          "label": "Northwest Lab area",
+          "count": 34
+        },
+        {
+          "key": "west_central_lab",
+          "label": "West Lab area",
+          "count": 30
+        },
+        {
+          "key": "east_central_lab",
+          "label": "East Lab area",
+          "count": 30
+        },
+        {
+          "key": "navigation_corridors",
+          "label": "Corridor",
+          "count": 24
+        },
+        {
+          "key": "west_central_lab_wide",
+          "label": "West Lab area · wide",
+          "count": 5
+        },
+        {
+          "key": "east_central_lab_wide",
+          "label": "East Lab area · wide",
+          "count": 5
+        },
+        {
+          "key": "northwest_lab_wide",
+          "label": "Northwest Lab area · wide",
+          "count": 5
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0096",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "West Lab area · wide",
+          "view_group": "west_central_lab_wide",
+          "glass_share": 0.00155,
+          "hotspots": [
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.53672,
+              "y": 0.52083,
+              "w": 0.01406,
+              "h": 0.04861,
+              "share": 0.000522,
+              "salience": 0.9563
+            }
+          ],
+          "pick_reason": "view_group:west_central_lab_wide",
+          "has_right": true
+        },
+        {
+          "frame": "0105",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Northwest Lab area · wide",
+          "view_group": "northwest_lab_wide",
+          "glass_share": 0.00464,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_028_beaker_2000ml",
+              "x": 0.48359,
+              "y": 0.525,
+              "w": 0.01719,
+              "h": 0.05417,
+              "share": 0.000864,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.40313,
+              "y": 0.62083,
+              "w": 0.01641,
+              "h": 0.04306,
+              "share": 0.000583,
+              "salience": 0.9103
+            }
+          ],
+          "pick_reason": "view_group:northwest_lab_wide",
+          "has_right": true
+        },
+        {
+          "frame": "0057",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "East Lab area",
+          "view_group": "east_central_lab",
+          "glass_share": 0.00811,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vidro_250mL_Glass_MAT_0",
+              "x": 0.25469,
+              "y": 0.50556,
+              "w": 0.04766,
+              "h": 0.16528,
+              "share": 0.003647,
+              "salience": 0.728
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large3",
+              "x": 0.67812,
+              "y": 0.55417,
+              "w": 0.03516,
+              "h": 0.14028,
+              "share": 0.002555,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:east_central_lab",
+          "has_right": true
+        },
+        {
+          "frame": "0099",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "East Lab area · wide",
+          "view_group": "east_central_lab_wide",
+          "glass_share": 0.00344,
+          "hotspots": [
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_020_ErlenmeyerFlask_02",
+              "x": 0.47891,
+              "y": 0.64028,
+              "w": 0.02266,
+              "h": 0.075,
+              "share": 0.001177,
+              "salience": 1.0
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.64375,
+              "y": 0.75278,
+              "w": 0.02031,
+              "h": 0.075,
+              "share": 0.000778,
+              "salience": 0.9558
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_022_ErlenmeyerFlask_125mL",
+              "x": 0.76016,
+              "y": 0.66806,
+              "w": 0.01719,
+              "h": 0.04722,
+              "share": 0.000534,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:east_central_lab_wide",
+          "has_right": true
+        },
+        {
+          "frame": "0127",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Corridor",
+          "view_group": "navigation_corridors",
+          "glass_share": 0.0,
+          "hotspots": [],
+          "pick_reason": "view_group:navigation_corridors",
+          "has_right": true
+        },
+        {
+          "frame": "0093",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Northwest Lab area",
+          "view_group": "northwest_lab",
+          "glass_share": 0.01261,
+          "hotspots": [
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.58047,
+              "y": 0.5125,
+              "w": 0.04297,
+              "h": 0.17917,
+              "share": 0.003759,
+              "salience": 0.9193
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_102_ErlenmeyerFlask_1000mL",
+              "x": 0.96562,
+              "y": 0.46806,
+              "w": 0.03438,
+              "h": 0.10417,
+              "share": 0.001918,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_029_ErlenmeyerFlask_03",
+              "x": 0.03047,
+              "y": 0.44583,
+              "w": 0.04219,
+              "h": 0.07917,
+              "share": 0.00194,
+              "salience": 0.7205
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_035_ErlenmeyerFlask_250mL",
+              "x": 0.66328,
+              "y": 0.44028,
+              "w": 0.02109,
+              "h": 0.0625,
+              "share": 0.000916,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_101_ErlenmeyerFlask_500mL",
+              "x": 0.82188,
+              "y": 0.40417,
+              "w": 0.025,
+              "h": 0.05972,
+              "share": 0.000914,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Asset_038_SuctionFlask",
+              "x": 0.32422,
+              "y": 0.575,
+              "w": 0.01953,
+              "h": 0.05417,
+              "share": 0.00072,
+              "salience": 0.5448
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0029",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "West Lab area",
+          "view_group": "west_central_lab",
+          "glass_share": 0.0088,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.45,
+              "y": 0.57778,
+              "w": 0.03984,
+              "h": 0.14167,
+              "share": 0.003914,
+              "salience": 1.0
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_016_Flat_bottomFlask_01",
+              "x": 0.1625,
+              "y": 0.53333,
+              "w": 0.04688,
+              "h": 0.07222,
+              "share": 0.001893,
+              "salience": 0.9423
+            },
+            {
+              "label": "Reagent bottle",
+              "prim": "bottle_large1_01",
+              "x": 0.47734,
+              "y": 0.36111,
+              "w": 0.01562,
+              "h": 0.05694,
+              "share": 0.000702,
+              "salience": 1.0
+            },
+            {
+              "label": "Volumetric flask",
+              "prim": "Asset_015_VolumetricBottle",
+              "x": 0.30703,
+              "y": 0.35139,
+              "w": 0.01875,
+              "h": 0.09167,
+              "share": 0.000566,
+              "salience": 0.8699
+            }
+          ],
+          "pick_reason": "view_group:west_central_lab",
+          "has_right": true
+        },
+        {
+          "frame": "0089",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Northwest Lab area",
+          "view_group": "northwest_lab",
+          "glass_share": 0.02112,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "Asset_028_beaker_2000ml",
+              "x": 0.67188,
+              "y": 0.54722,
+              "w": 0.06641,
+              "h": 0.16111,
+              "share": 0.007772,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.36484,
+              "y": 0.67639,
+              "w": 0.04453,
+              "h": 0.11806,
+              "share": 0.004271,
+              "salience": 0.9407
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "Asset_116_GraduatedCylinder_500mL",
+              "x": 0.00313,
+              "y": 0.375,
+              "w": 0.0625,
+              "h": 0.15556,
+              "share": 0.002606,
+              "salience": 0.7094
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_029_ErlenmeyerFlask_03",
+              "x": 0.67891,
+              "y": 0.44583,
+              "w": 0.02656,
+              "h": 0.07917,
+              "share": 0.00147,
+              "salience": 0.7573
+            },
+            {
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.21641,
+              "y": 0.48889,
+              "w": 0.03203,
+              "h": 0.08611,
+              "share": 0.001621,
+              "salience": 0.6042
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_033_Flat_bottomFlask_02",
+              "x": 0.2125,
+              "y": 0.54444,
+              "w": 0.05781,
+              "h": 0.08056,
+              "share": 0.000615,
+              "salience": 0.6887
+            }
+          ],
+          "pick_reason": "view_group:northwest_lab",
+          "has_right": true
+        }
+      ]
+    },
+    {
+      "id": "navigation",
+      "name": "Walkway & sink",
+      "group": "navigation",
+      "frames": 120,
+      "renderer": "RTX Path Tracing, 256 spp",
+      "resolution": [
+        1280,
+        720
+      ],
+      "internal_render_resolution": null,
+      "has_gt_depth": true,
+      "gt_depth_frames": 120,
+      "modalities": [
+        "rgb",
+        "depth",
+        "seg",
+        "normal",
+        "transparent",
+        "liquid",
+        "material"
+      ],
+      "cover": {
+        "frame": "0031",
+        "origin": "reviewed",
+        "review_note": "The blue floor, corridor depth and sink workstation all read together; the algorithm's first choice, 0087, was dominated by a large monitor in the foreground.",
+        "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
+      },
+      "closeup": {
+        "source": "dataset",
+        "frame": "0036",
+        "origin": "auto",
+        "review_note": ""
+      },
+      "depth": {
+        "lo_m": 0.53,
+        "hi_m": 10.53,
+        "colormap": "turbo",
+        "scale": "log",
+        "invalid": "#0a0a0c"
+      },
+      "view_groups": [
+        {
+          "key": "unspecified",
+          "label": "Fixed camera",
+          "count": 120
+        }
+      ],
+      "featured": [
+        {
+          "frame": "0127",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00342,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.61328,
+              "y": 0.6875,
+              "w": 0.02813,
+              "h": 0.09306,
+              "share": 0.001778,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.49609,
+              "y": 0.54722,
+              "w": 0.01484,
+              "h": 0.04167,
+              "share": 0.000552,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:space",
+          "has_right": true
+        },
+        {
+          "frame": "0138",
+          "tier": "space",
+          "tier_label": "Panorama",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00484,
+          "hotspots": [
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.69375,
+              "y": 0.66944,
+              "w": 0.03203,
+              "h": 0.10139,
+              "share": 0.002263,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.57188,
+              "y": 0.46667,
+              "w": 0.01797,
+              "h": 0.08889,
+              "share": 0.000857,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.50859,
+              "y": 0.54722,
+              "w": 0.01641,
+              "h": 0.04583,
+              "share": 0.000684,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0005",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00606,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.60938,
+              "y": 0.51806,
+              "w": 0.03125,
+              "h": 0.13611,
+              "share": 0.002185,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.53281,
+              "y": 0.68194,
+              "w": 0.02891,
+              "h": 0.08333,
+              "share": 0.002019,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.40937,
+              "y": 0.60139,
+              "w": 0.01484,
+              "h": 0.04306,
+              "share": 0.000548,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:bench",
+          "has_right": true
+        },
+        {
+          "frame": "0042",
+          "tier": "bench",
+          "tier_label": "Bench",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00539,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.63594,
+              "y": 0.48194,
+              "w": 0.03203,
+              "h": 0.12222,
+              "share": 0.001833,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.61328,
+              "y": 0.66111,
+              "w": 0.03047,
+              "h": 0.07639,
+              "share": 0.001787,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.45859,
+              "y": 0.61528,
+              "w": 0.01484,
+              "h": 0.04444,
+              "share": 0.000567,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0013",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.00703,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.64297,
+              "y": 0.51111,
+              "w": 0.0375,
+              "h": 0.14167,
+              "share": 0.002509,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.58906,
+              "y": 0.70833,
+              "w": 0.03438,
+              "h": 0.09028,
+              "share": 0.002484,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.43047,
+              "y": 0.625,
+              "w": 0.01641,
+              "h": 0.04722,
+              "share": 0.000679,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "tier:cluster",
+          "has_right": true
+        },
+        {
+          "frame": "0048",
+          "tier": "cluster",
+          "tier_label": "Vessel group",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.01013,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.60313,
+              "y": 0.72361,
+              "w": 0.04297,
+              "h": 0.11389,
+              "share": 0.003898,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.67188,
+              "y": 0.49583,
+              "w": 0.04766,
+              "h": 0.17222,
+              "share": 0.003665,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.42188,
+              "y": 0.61389,
+              "w": 0.01875,
+              "h": 0.05556,
+              "share": 0.000907,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        },
+        {
+          "frame": "0031",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.01652,
+          "hotspots": [
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.64297,
+              "y": 0.65278,
+              "w": 0.06094,
+              "h": 0.15556,
+              "share": 0.007794,
+              "salience": 1.0
+            },
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.70625,
+              "y": 0.42083,
+              "w": 0.05391,
+              "h": 0.21389,
+              "share": 0.005497,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.39609,
+              "y": 0.57639,
+              "w": 0.02422,
+              "h": 0.06806,
+              "share": 0.001464,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "view_group:unspecified",
+          "has_right": true
+        },
+        {
+          "frame": "0041",
+          "tier": "detail",
+          "tier_label": "Detail",
+          "view_label": "Fixed camera",
+          "view_group": "unspecified",
+          "glass_share": 0.01023,
+          "hotspots": [
+            {
+              "label": "Graduated cylinder",
+              "prim": "graduated_cylinder",
+              "x": 0.6375,
+              "y": 0.56944,
+              "w": 0.04844,
+              "h": 0.17361,
+              "share": 0.00402,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "_50_mL_Beaker",
+              "x": 0.5125,
+              "y": 0.7875,
+              "w": 0.0375,
+              "h": 0.10972,
+              "share": 0.003506,
+              "salience": 1.0
+            },
+            {
+              "label": "Beaker",
+              "prim": "beaker_100ml",
+              "x": 0.39062,
+              "y": 0.61528,
+              "w": 0.01953,
+              "h": 0.05139,
+              "share": 0.000782,
+              "salience": 1.0
+            },
+            {
+              "label": "Flask",
+              "prim": "Conical__flask",
+              "x": 0.76953,
+              "y": 0.30833,
+              "w": 0.01875,
+              "h": 0.04722,
+              "share": 0.00052,
+              "salience": 1.0
+            }
+          ],
+          "pick_reason": "top_score",
+          "has_right": true
+        }
+      ]
+    }
+  ]
+}
