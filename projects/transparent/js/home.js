@@ -5,17 +5,17 @@ mountTopbar(document.getElementById("topbar"), m);
 mountFooter(document.getElementById("footer"), m);
 
 /* ── hero ─────────────────────────────────────────────────────────────── */
-const heroScene = m.scenes.find((s) => s.id === m.hero.scene);
+const heroScene = m.scenes.find((s) => s.id === "lab100");
 document.getElementById("hero-stats").textContent =
   `${m.totals.scenes} scenes · ${fmt(m.totals.frames)} views · ${m.totals.modalities} modalities`;
 document.getElementById("inset-label").textContent = `${heroScene.name} · close-up`;
-document.getElementById("inset-badge").textContent = m.hero.inset_source === "preview" ? "preview" : m.hero.inset_frame;
+document.getElementById("inset-badge").textContent = heroScene.closeup.frame;
 const inset = document.getElementById("hero-inset");
 inset.addEventListener("click", (e) => { e.preventDefault(); expandInto(inset.querySelector("img"), inset.href); });
 const hero = document.getElementById("hero");
 const track = document.getElementById("hero-track");
 const featured = [
-  { scene: heroScene, frame: m.hero.frame, inset: m.hero.inset_frame, src: siteUrl("media/hero/hero.webp"), position: "50% 46%" },
+  { scene: heroScene, frame: heroScene.cover.frame, inset: heroScene.closeup.frame, src: img("rgb", heroScene.id, heroScene.cover.frame), position: "50% 50%" },
   ...["lab056", "lab088", "lab018", "navigation"].map((id) => {
     const scene = m.scenes.find((s) => s.id === id);
     return { scene, frame: scene.cover.frame, inset: scene.closeup.frame, src: img("rgb", id, scene.cover.frame), position: "50% 50%" };
