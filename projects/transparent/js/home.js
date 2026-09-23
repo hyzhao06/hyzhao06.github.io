@@ -78,11 +78,11 @@ function showSlide(index, manual = false) {
 }
 track.addEventListener("transitionend", (event) => {
   if (event.target !== track || pendingSnap == null) return;
-  track.classList.add("no-transition");
-  track.style.transform = `translateX(-${pendingSnap * 100}%)`;
-  track.getBoundingClientRect();
-  track.classList.remove("no-transition");
+  const snapSlot = pendingSnap;
   pendingSnap = null;
+  track.classList.add("no-transition");
+  track.style.transform = `translateX(-${snapSlot * 100}%)`;
+  requestAnimationFrame(() => requestAnimationFrame(() => track.classList.remove("no-transition")));
 });
 function startCarousel() {
   if (userPaused || reducedMotion()) return;
@@ -111,8 +111,7 @@ hero.addEventListener("mouseleave", startCarousel);
 document.addEventListener("visibilitychange", () => document.hidden ? clearInterval(carouselTimer) : startCarousel());
 track.classList.add("no-transition");
 showSlide(0);
-track.getBoundingClientRect();
-track.classList.remove("no-transition");
+requestAnimationFrame(() => requestAnimationFrame(() => track.classList.remove("no-transition")));
 if (!reducedMotion()) { hero.classList.add("drift"); startCarousel(); }
 
 /* ── the 3×3 index ────────────────────────────────────────────────────── */
@@ -132,12 +131,8 @@ for (const s of m.scenes) {
       el("span", { class: "name", text: s.name }),
       el("span", { class: "id mono", text: s.id })),
   );
-  // hover trades the wide cover for the close-up and back.  it never cycles
-  // modalities - the first job here is telling the nine labs apart.
-  cell.addEventListener("pointerenter", () => {
-    if (current === "rgb" && matchMedia("(hover:hover)").matches) cell.classList.add("show-alt");
-  });
-  cell.addEventListener("pointerleave", () => cell.classList.remove("show-alt"));
+  // Keep the reviewed scene-wide image as the cover. A close-up is shown only
+  // when the visitor explicitly presses the peek button.
   cell.addEventListener("click", (e) => {
     if (e.metaKey || e.ctrlKey || e.shiftKey) return;
     e.preventDefault();

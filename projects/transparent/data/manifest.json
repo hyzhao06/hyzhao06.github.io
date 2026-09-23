@@ -100,8 +100,14 @@
     "reviewed_on": "2026-09-23",
     "method": "pipeline/score.py computes exposure, contrast, sharpness, vessel share, composition and structure for all 1,336 views; pipeline/pick.py ranks candidates with recorded weights, and reviewed changes with reasons are kept in pipeline/curation.json.",
     "covers_reviewed": [
+      "lab018",
+      "lab056",
       "lab060",
       "lab087",
+      "lab088",
+      "lab092",
+      "lab100",
+      "lab_003",
       "navigation"
     ]
   },
@@ -129,9 +135,9 @@
         "material"
       ],
       "cover": {
-        "frame": "0024",
+        "frame": "0000",
         "origin": "reviewed",
-        "review_note": "The multilevel shelves define this scene; the algorithm's first choice, 0058, has a large black bench block in the lower left. Frame 0024 keeps the flasks and beakers legible on both shelves.",
+        "review_note": "Frame 0000 shows the multilevel shelving as a complete spatial arrangement, with the blue floor and adjacent window providing context. It avoids presenting a single vessel against a mostly white shelf as the scene cover.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {
@@ -171,72 +177,72 @@
       ],
       "featured": [
         {
-          "frame": "0024",
-          "tier": "detail",
-          "tier_label": "Detail",
+          "frame": "0000",
+          "tier": "bench",
+          "tier_label": "Bench",
           "view_label": "West Multilevel shelves",
           "view_group": "west_multilevel_shelves",
-          "glass_share": 0.03713,
+          "glass_share": 0.02162,
           "hotspots": [
             {
-              "label": "Erlenmeyer flask",
-              "prim": "Asset_008_ErlenmeyerFlask_500mL",
-              "x": 0.4625,
-              "y": 0.37083,
-              "w": 0.07266,
-              "h": 0.26111,
-              "share": 0.013238,
-              "salience": 0.8569
-            },
-            {
-              "label": "Volumetric flask",
-              "prim": "Asset_024_VolumetricBottle",
-              "x": 0.87422,
-              "y": 0.24028,
-              "w": 0.10078,
-              "h": 0.27222,
-              "share": 0.007803,
-              "salience": 0.733
-            },
-            {
-              "label": "Erlenmeyer flask",
-              "prim": "Asset_012_ErlenmeyerFlask_250mL",
-              "x": 0.24609,
-              "y": 0.36528,
-              "w": 0.05547,
-              "h": 0.15,
-              "share": 0.005361,
-              "salience": 0.9225
-            },
-            {
-              "label": "Erlenmeyer flask",
-              "prim": "Asset_010_ErlenmeyerFlask_14",
-              "x": 0.28437,
-              "y": 0.69028,
-              "w": 0.05937,
-              "h": 0.10139,
-              "share": 0.005101,
-              "salience": 0.548
-            },
-            {
-              "label": "Flat-bottom flask",
-              "prim": "Asset_011_Flat_bottomFlask_01",
-              "x": 0.47734,
-              "y": 0.77917,
-              "w": 0.04453,
-              "h": 0.11806,
-              "share": 0.003626,
-              "salience": 0.2481
+              "label": "Vessel",
+              "prim": "Vessel",
+              "x": 0.47578,
+              "y": 0.33611,
+              "w": 0.07422,
+              "h": 0.33333,
+              "share": 0.012087,
+              "salience": 0.6496
             },
             {
               "label": "Vessel",
               "prim": "Vessel",
-              "x": 0.81406,
-              "y": 0.7,
-              "w": 0.03672,
-              "h": 0.07361,
-              "share": 0.001687,
-              "salience": 0.7188
+              "x": 0.24453,
+              "y": 0.34028,
+              "w": 0.05547,
+              "h": 0.15139,
+              "share": 0.004631,
+              "salience": 0.8347
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_007_Flat_bottomFlask_02",
+              "x": 0.24141,
+              "y": 0.44306,
+              "w": 0.09141,
+              "h": 0.12917,
+              "share": 0.001691,
+              "salience": 1.0
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_048_ErlenmeyerFlask_10",
+              "x": 0.49609,
+              "y": 0.85972,
+              "w": 0.02734,
+              "h": 0.07222,
+              "share": 0.001445,
+              "salience": 0.4109
+            },
+            {
+              "label": "Erlenmeyer flask",
+              "prim": "Asset_039_ErlenmeyerFlask_08",
+              "x": 0.31484,
+              "y": 0.73889,
+              "w": 0.02891,
+              "h": 0.05278,
+              "share": 0.00123,
+              "salience": 0.3418
+            },
+            {
+              "label": "Flat-bottom flask",
+              "prim": "Asset_014_Flat_bottomFlask_04",
+              "x": 0.50469,
+              "y": 0.31806,
+              "w": 0.02187,
+              "h": 0.02778,
+              "share": 0.000539,
+              "salience": 1.0
             }
           ],
           "pick_reason": "cover",
@@ -774,8 +780,8 @@
       ],
       "cover": {
         "frame": "0067",
-        "origin": "auto",
-        "review_note": "",
+        "origin": "reviewed",
+        "review_note": "Frame 0067 gives the clearest overview of the central island, surrounding benches, instruments and multiple vessels without isolating one glass object.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {
@@ -1371,9 +1377,9 @@
         "liquid"
       ],
       "cover": {
-        "frame": "0047",
-        "origin": "auto",
-        "review_note": "",
+        "frame": "0082",
+        "origin": "reviewed",
+        "review_note": "Frame 0082 opens the view along the full workbench and includes the room edge and outdoor context. It is more spatially descriptive than the tighter black-counter candidate.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {
@@ -1422,78 +1428,6 @@
         }
       ],
       "featured": [
-        {
-          "frame": "0047",
-          "tier": "cluster",
-          "tier_label": "Vessel group",
-          "view_label": "West Glassware rack",
-          "view_group": "west_lower_glassware",
-          "glass_share": 0.02581,
-          "hotspots": [
-            {
-              "label": "Beaker",
-              "prim": "Asset_012_beaker_2000ml",
-              "x": 0.55,
-              "y": 0.43056,
-              "w": 0.04375,
-              "h": 0.12639,
-              "share": 0.0045,
-              "salience": 1.0
-            },
-            {
-              "label": "Round-bottom flask",
-              "prim": "Asset_009_RoundBottomFlask_1000mL",
-              "x": 0.53828,
-              "y": 0.24306,
-              "w": 0.04063,
-              "h": 0.12222,
-              "share": 0.003213,
-              "salience": 0.9185
-            },
-            {
-              "label": "Graduated cylinder",
-              "prim": "Asset_007_GraduatedCylinder_1000mL",
-              "x": 0.0625,
-              "y": 0.0,
-              "w": 0.06875,
-              "h": 0.14167,
-              "share": 0.002639,
-              "salience": 0.8158
-            },
-            {
-              "label": "Flask",
-              "prim": "Conical__flask",
-              "x": 0.62031,
-              "y": 0.46389,
-              "w": 0.03516,
-              "h": 0.11111,
-              "share": 0.002606,
-              "salience": 0.7458
-            },
-            {
-              "label": "Graduated cylinder",
-              "prim": "Asset_011_GraduatedCylinder_500mL",
-              "x": 0.35859,
-              "y": 0.0,
-              "w": 0.0375,
-              "h": 0.16806,
-              "share": 0.002462,
-              "salience": 0.7092
-            },
-            {
-              "label": "Beaker",
-              "prim": "_50_mL_Beaker",
-              "x": 0.49141,
-              "y": 0.45833,
-              "w": 0.02656,
-              "h": 0.07222,
-              "share": 0.001672,
-              "salience": 1.0
-            }
-          ],
-          "pick_reason": "cover",
-          "has_right": false
-        },
         {
           "frame": "0082",
           "tier": "space",
@@ -2046,8 +1980,8 @@
       ],
       "cover": {
         "frame": "0112",
-        "origin": "auto",
-        "review_note": "",
+        "origin": "reviewed",
+        "review_note": "Frame 0112 shows the long workbench, shelving and equipment in a bright balanced composition rather than treating one vessel as the subject.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {
@@ -3295,8 +3229,8 @@
       ],
       "cover": {
         "frame": "0148",
-        "origin": "auto",
-        "review_note": "",
+        "origin": "reviewed",
+        "review_note": "Frame 0148 uses the pale blue bench to lead through the room and keeps both the sink and surrounding laboratory structure visible.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {
@@ -3932,8 +3866,8 @@
       ],
       "cover": {
         "frame": "0131",
-        "origin": "auto",
-        "review_note": "",
+        "origin": "reviewed",
+        "review_note": "Frame 0131 is a broad room view with the central island, rear cabinetry and windows all readable, avoiding an isolated tabletop object.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {
@@ -4358,8 +4292,8 @@
       ],
       "cover": {
         "frame": "0089",
-        "origin": "auto",
-        "review_note": "",
+        "origin": "reviewed",
+        "review_note": "Frame 0089 centers the long table and microscopes while retaining the corridor and workstations, making it the clearest scene-level cover.",
         "rank_reason": "Highest weighted score for exposure, sharpness, vessel share, composition and spatial coverage, with at least two visible vessels"
       },
       "closeup": {

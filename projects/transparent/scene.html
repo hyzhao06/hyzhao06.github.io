@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <script>document.documentElement.dataset.theme=localStorage.getItem("theme")||((matchMedia("(prefers-color-scheme:light)").matches)?"light":"dark")</script>
 <title>Scene · Transparent Object Perception</title>
-<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/app.css?v=20260923-ui-5">
 </head>
 <body class="stage-page">
 <div class="stage-bar">
@@ -27,6 +27,8 @@
   <div class="canvas" id="canvas">
     <div class="divider" id="divider" hidden><span class="grab"></span><span class="handle"></span></div>
   </div>
+  <button class="frame-nav frame-prev" id="frame-prev" type="button" aria-label="Previous image" title="Previous image (Left arrow)">‹</button>
+  <button class="frame-nav frame-next" id="frame-next" type="button" aria-label="Next image" title="Next image (Right arrow)">›</button>
   <span class="stage-note mono" id="stage-note"></span>
   <div class="stage-bar-legend" id="legend" hidden></div>
   <button class="zoom-exit" id="zoom-exit">Overview · Esc</button>
@@ -58,6 +60,6 @@
   <div class="grid" id="all-grid"></div>
 </div>
 
-<script type="module" src="js/scene.js"></script>
+<script type="module" src="js/scene.js?v=20260923-ui-5"></script>
 </body>
 </html>

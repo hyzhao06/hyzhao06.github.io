@@ -41,6 +41,7 @@
       },
       "source_path": "assets/library/project_local/glassware/beaker_5ml/asset.usda",
       "preview": "/media/equipment/glassware-001.webp",
+      "full": "/media/equipment-full/glassware-001.webp",
       "id": "glassware-001"
     },
     {
@@ -60,6 +61,7 @@
       },
       "source_path": "assets/library/project_local/glassware/beaker_50ml/asset.usda",
       "preview": "/media/equipment/glassware-002.webp",
+      "full": "/media/equipment-full/glassware-002.webp",
       "id": "glassware-002"
     },
     {
@@ -79,6 +81,7 @@
       },
       "source_path": "assets/library/project_local/glassware/beaker_100ml/asset.usda",
       "preview": "/media/equipment/glassware-003.webp",
+      "full": "/media/equipment-full/glassware-003.webp",
       "id": "glassware-003"
     },
     {
@@ -98,6 +101,7 @@
       },
       "source_path": "assets/library/project_local/glassware/beaker_150ml/asset.usda",
       "preview": "/media/equipment/glassware-004.webp",
+      "full": "/media/equipment-full/glassware-004.webp",
       "id": "glassware-004"
     },
     {
@@ -117,6 +121,7 @@
       },
       "source_path": "assets/library/project_local/glassware/beaker_250ml/asset.usda",
       "preview": "/media/equipment/glassware-005.webp",
+      "full": "/media/equipment-full/glassware-005.webp",
       "id": "glassware-005"
     },
     {
@@ -136,6 +141,7 @@
       },
       "source_path": "assets/library/project_local/glassware/beaker_2000ml/asset.usda",
       "preview": "/media/equipment/glassware-006.webp",
+      "full": "/media/equipment-full/glassware-006.webp",
       "id": "glassware-006"
     },
     {
@@ -155,6 +161,7 @@
       },
       "source_path": "assets/library/project_local/glassware/conical_flask/asset.usda",
       "preview": "/media/equipment/glassware-007.webp",
+      "full": "/media/equipment-full/glassware-007.webp",
       "id": "glassware-007"
     },
     {
@@ -174,6 +181,7 @@
       },
       "source_path": "assets/library/project_local/glassware/conical_bottle/asset.usda",
       "preview": "/media/equipment/glassware-008.webp",
+      "full": "/media/equipment-full/glassware-008.webp",
       "id": "glassware-008"
     },
     {
@@ -193,6 +201,7 @@
       },
       "source_path": "assets/library/project_local/glassware/three_necked_flask/asset.usda",
       "preview": "/media/equipment/glassware-009.webp",
+      "full": "/media/equipment-full/glassware-009.webp",
       "id": "glassware-009"
     },
     {
@@ -212,6 +221,7 @@
       },
       "source_path": "assets/library/project_local/glassware/bottle_small/asset.usda",
       "preview": "/media/equipment/glassware-010.webp",
+      "full": "/media/equipment-full/glassware-010.webp",
       "id": "glassware-010"
     },
     {
@@ -231,6 +241,7 @@
       },
       "source_path": "assets/library/project_local/glassware/bottle_large1/asset.usda",
       "preview": "/media/equipment/glassware-011.webp",
+      "full": "/media/equipment-full/glassware-011.webp",
       "id": "glassware-011"
     },
     {
@@ -250,6 +261,7 @@
       },
       "source_path": "assets/library/project_local/glassware/bottle_large3/asset.usda",
       "preview": "/media/equipment/glassware-012.webp",
+      "full": "/media/equipment-full/glassware-012.webp",
       "id": "glassware-012"
     },
     {
@@ -269,6 +281,7 @@
       },
       "source_path": "assets/library/project_local/glassware/test_tube/asset.usda",
       "preview": "/media/equipment/glassware-013.webp",
+      "full": "/media/equipment-full/glassware-013.webp",
       "id": "glassware-013"
     },
     {
@@ -288,6 +301,7 @@
       },
       "source_path": "assets/library/project_local/stoppers_and_supports/test_tube_rack_1/asset.usda",
       "preview": "/media/equipment/glassware-014.webp",
+      "full": "/media/equipment-full/glassware-014.webp",
       "id": "glassware-014"
     },
     {
@@ -307,6 +321,7 @@
       },
       "source_path": "assets/library/project_local/stoppers_and_supports/test_tube_rack_2/asset.usda",
       "preview": "/media/equipment/glassware-015.webp",
+      "full": "/media/equipment-full/glassware-015.webp",
       "id": "glassware-015"
     },
     {
@@ -326,6 +341,7 @@
       },
       "source_path": "assets/library/project_local/glassware/graduated_cylinder/asset.usda",
       "preview": "/media/equipment/glassware-016.webp",
+      "full": "/media/equipment-full/glassware-016.webp",
       "id": "glassware-016"
     },
     {
@@ -345,6 +361,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_1/asset.usda",
       "preview": "/media/equipment/glassware-017.webp",
+      "full": "/media/equipment-full/glassware-017.webp",
       "id": "glassware-017"
     },
     {
@@ -364,6 +381,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_2/asset.usda",
       "preview": "/media/equipment/glassware-018.webp",
+      "full": "/media/equipment-full/glassware-018.webp",
       "id": "glassware-018"
     },
     {
@@ -383,6 +401,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_3/asset.usda",
       "preview": "/media/equipment/glassware-019.webp",
+      "full": "/media/equipment-full/glassware-019.webp",
       "id": "glassware-019"
     },
     {
@@ -402,6 +421,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_5/asset.usda",
       "preview": "/media/equipment/glassware-020.webp",
+      "full": "/media/equipment-full/glassware-020.webp",
       "id": "glassware-020"
     },
     {
@@ -421,6 +441,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_6/asset.usda",
       "preview": "/media/equipment/glassware-021.webp",
+      "full": "/media/equipment-full/glassware-021.webp",
       "id": "glassware-021"
     },
     {
@@ -440,6 +461,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_7/asset.usda",
       "preview": "/media/equipment/glassware-022.webp",
+      "full": "/media/equipment-full/glassware-022.webp",
       "id": "glassware-022"
     },
     {
@@ -459,6 +481,7 @@
       },
       "source_path": "assets/library/project_local/scanned_assets/3_d_scan_8/asset.usda",
       "preview": "/media/equipment/glassware-023.webp",
+      "full": "/media/equipment-full/glassware-023.webp",
       "id": "glassware-023"
     },
     {
@@ -478,6 +501,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/balao_volumetrico_100ml/asset.usda",
       "preview": "/media/equipment/glassware-024.webp",
+      "full": "/media/equipment-full/glassware-024.webp",
       "id": "glassware-024"
     },
     {
@@ -497,6 +521,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/balao_volumetrico_250ml/asset.usda",
       "preview": "/media/equipment/glassware-025.webp",
+      "full": "/media/equipment-full/glassware-025.webp",
       "id": "glassware-025"
     },
     {
@@ -516,6 +541,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/balao_volumetrico_500ml/asset.usda",
       "preview": "/media/equipment/glassware-026.webp",
+      "full": "/media/equipment-full/glassware-026.webp",
       "id": "glassware-026"
     },
     {
@@ -535,6 +561,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/beaker_01/asset.usda",
       "preview": "/media/equipment/glassware-027.webp",
+      "full": "/media/equipment-full/glassware-027.webp",
       "id": "glassware-027"
     },
     {
@@ -554,6 +581,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/crucible/asset.usda",
       "preview": "/media/equipment/glassware-028.webp",
+      "full": "/media/equipment-full/glassware-028.webp",
       "id": "glassware-028"
     },
     {
@@ -573,6 +601,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/distillation_flask/asset.usda",
       "preview": "/media/equipment/glassware-029.webp",
+      "full": "/media/equipment-full/glassware-029.webp",
       "id": "glassware-029"
     },
     {
@@ -592,6 +621,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_01/asset.usda",
       "preview": "/media/equipment/glassware-030.webp",
+      "full": "/media/equipment-full/glassware-030.webp",
       "id": "glassware-030"
     },
     {
@@ -611,6 +641,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_02/asset.usda",
       "preview": "/media/equipment/glassware-031.webp",
+      "full": "/media/equipment-full/glassware-031.webp",
       "id": "glassware-031"
     },
     {
@@ -630,6 +661,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_03/asset.usda",
       "preview": "/media/equipment/glassware-032.webp",
+      "full": "/media/equipment-full/glassware-032.webp",
       "id": "glassware-032"
     },
     {
@@ -649,6 +681,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_06/asset.usda",
       "preview": "/media/equipment/glassware-033.webp",
+      "full": "/media/equipment-full/glassware-033.webp",
       "id": "glassware-033"
     },
     {
@@ -668,6 +701,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_07/asset.usda",
       "preview": "/media/equipment/glassware-034.webp",
+      "full": "/media/equipment-full/glassware-034.webp",
       "id": "glassware-034"
     },
     {
@@ -687,6 +721,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_08/asset.usda",
       "preview": "/media/equipment/glassware-035.webp",
+      "full": "/media/equipment-full/glassware-035.webp",
       "id": "glassware-035"
     },
     {
@@ -706,6 +741,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_09/asset.usda",
       "preview": "/media/equipment/glassware-036.webp",
+      "full": "/media/equipment-full/glassware-036.webp",
       "id": "glassware-036"
     },
     {
@@ -725,6 +761,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_10/asset.usda",
       "preview": "/media/equipment/glassware-037.webp",
+      "full": "/media/equipment-full/glassware-037.webp",
       "id": "glassware-037"
     },
     {
@@ -744,6 +781,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_11/asset.usda",
       "preview": "/media/equipment/glassware-038.webp",
+      "full": "/media/equipment-full/glassware-038.webp",
       "id": "glassware-038"
     },
     {
@@ -763,6 +801,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_12/asset.usda",
       "preview": "/media/equipment/glassware-039.webp",
+      "full": "/media/equipment-full/glassware-039.webp",
       "id": "glassware-039"
     },
     {
@@ -782,6 +821,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/erlenmeyer_flask_14/asset.usda",
       "preview": "/media/equipment/glassware-040.webp",
+      "full": "/media/equipment-full/glassware-040.webp",
       "id": "glassware-040"
     },
     {
@@ -801,6 +841,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_01/asset.usda",
       "preview": "/media/equipment/glassware-041.webp",
+      "full": "/media/equipment-full/glassware-041.webp",
       "id": "glassware-041"
     },
     {
@@ -820,6 +861,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_02/asset.usda",
       "preview": "/media/equipment/glassware-042.webp",
+      "full": "/media/equipment-full/glassware-042.webp",
       "id": "glassware-042"
     },
     {
@@ -839,6 +881,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_03/asset.usda",
       "preview": "/media/equipment/glassware-043.webp",
+      "full": "/media/equipment-full/glassware-043.webp",
       "id": "glassware-043"
     },
     {
@@ -858,6 +901,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/flat_bottom_flask_04/asset.usda",
       "preview": "/media/equipment/glassware-044.webp",
+      "full": "/media/equipment-full/glassware-044.webp",
       "id": "glassware-044"
     },
     {
@@ -877,6 +921,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/graham_condenser/asset.usda",
       "preview": "/media/equipment/glassware-045.webp",
+      "full": "/media/equipment-full/glassware-045.webp",
       "id": "glassware-045"
     },
     {
@@ -896,6 +941,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/kipp_s_apparatus/asset.usda",
       "preview": "/media/equipment/glassware-046.webp",
+      "full": "/media/equipment-full/glassware-046.webp",
       "id": "glassware-046"
     },
     {
@@ -915,6 +961,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/rotavapor/asset.usda",
       "preview": "/media/equipment/glassware-047.webp",
+      "full": "/media/equipment-full/glassware-047.webp",
       "id": "glassware-047"
     },
     {
@@ -934,6 +981,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_01/asset.usda",
       "preview": "/media/equipment/glassware-048.webp",
+      "full": "/media/equipment-full/glassware-048.webp",
       "id": "glassware-048"
     },
     {
@@ -953,6 +1001,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_02/asset.usda",
       "preview": "/media/equipment/glassware-049.webp",
+      "full": "/media/equipment-full/glassware-049.webp",
       "id": "glassware-049"
     },
     {
@@ -972,6 +1021,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_03/asset.usda",
       "preview": "/media/equipment/glassware-050.webp",
+      "full": "/media/equipment-full/glassware-050.webp",
       "id": "glassware-050"
     },
     {
@@ -991,6 +1041,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_04/asset.usda",
       "preview": "/media/equipment/glassware-051.webp",
+      "full": "/media/equipment-full/glassware-051.webp",
       "id": "glassware-051"
     },
     {
@@ -1010,6 +1061,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_05/asset.usda",
       "preview": "/media/equipment/glassware-052.webp",
+      "full": "/media/equipment-full/glassware-052.webp",
       "id": "glassware-052"
     },
     {
@@ -1029,6 +1081,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_06/asset.usda",
       "preview": "/media/equipment/glassware-053.webp",
+      "full": "/media/equipment-full/glassware-053.webp",
       "id": "glassware-053"
     },
     {
@@ -1048,6 +1101,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_08/asset.usda",
       "preview": "/media/equipment/glassware-054.webp",
+      "full": "/media/equipment-full/glassware-054.webp",
       "id": "glassware-054"
     },
     {
@@ -1067,6 +1121,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_09/asset.usda",
       "preview": "/media/equipment/glassware-055.webp",
+      "full": "/media/equipment-full/glassware-055.webp",
       "id": "glassware-055"
     },
     {
@@ -1086,6 +1141,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_10/asset.usda",
       "preview": "/media/equipment/glassware-056.webp",
+      "full": "/media/equipment-full/glassware-056.webp",
       "id": "glassware-056"
     },
     {
@@ -1105,6 +1161,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/round_bottom_flask_11/asset.usda",
       "preview": "/media/equipment/glassware-057.webp",
+      "full": "/media/equipment-full/glassware-057.webp",
       "id": "glassware-057"
     },
     {
@@ -1124,6 +1181,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/suction_flask/asset.usda",
       "preview": "/media/equipment/glassware-058.webp",
+      "full": "/media/equipment-full/glassware-058.webp",
       "id": "glassware-058"
     },
     {
@@ -1143,6 +1201,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/test_tube_01/asset.usda",
       "preview": "/media/equipment/glassware-059.webp",
+      "full": "/media/equipment-full/glassware-059.webp",
       "id": "glassware-059"
     },
     {
@@ -1162,6 +1221,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/test_tube_02_usd/asset.usda",
       "preview": "/media/equipment/glassware-060.webp",
+      "full": "/media/equipment-full/glassware-060.webp",
       "id": "glassware-060"
     },
     {
@@ -1181,6 +1241,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/test_tube_03/asset.usda",
       "preview": "/media/equipment/glassware-061.webp",
+      "full": "/media/equipment-full/glassware-061.webp",
       "id": "glassware-061"
     },
     {
@@ -1200,6 +1261,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/titration_flasks/asset.usda",
       "preview": "/media/equipment/glassware-062.webp",
+      "full": "/media/equipment-full/glassware-062.webp",
       "id": "glassware-062"
     },
     {
@@ -1219,6 +1281,7 @@
       },
       "source_path": "assets/library/labutopia/transparent_vessels/volumetric_bottle/asset.usda",
       "preview": "/media/equipment/glassware-063.webp",
+      "full": "/media/equipment-full/glassware-063.webp",
       "id": "glassware-063"
     },
     {
@@ -1238,6 +1301,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_25ml/asset.usda",
       "preview": "/media/equipment/glassware-064.webp",
+      "full": "/media/equipment-full/glassware-064.webp",
       "id": "glassware-064"
     },
     {
@@ -1257,6 +1321,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_50ml/asset.usda",
       "preview": "/media/equipment/glassware-065.webp",
+      "full": "/media/equipment-full/glassware-065.webp",
       "id": "glassware-065"
     },
     {
@@ -1276,6 +1341,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_125ml/asset.usda",
       "preview": "/media/equipment/glassware-066.webp",
+      "full": "/media/equipment-full/glassware-066.webp",
       "id": "glassware-066"
     },
     {
@@ -1295,6 +1361,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_250ml/asset.usda",
       "preview": "/media/equipment/glassware-067.webp",
+      "full": "/media/equipment-full/glassware-067.webp",
       "id": "glassware-067"
     },
     {
@@ -1314,6 +1381,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_500ml/asset.usda",
       "preview": "/media/equipment/glassware-068.webp",
+      "full": "/media/equipment-full/glassware-068.webp",
       "id": "glassware-068"
     },
     {
@@ -1333,6 +1401,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_1000ml/asset.usda",
       "preview": "/media/equipment/glassware-069.webp",
+      "full": "/media/equipment-full/glassware-069.webp",
       "id": "glassware-069"
     },
     {
@@ -1352,6 +1421,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_2000ml/asset.usda",
       "preview": "/media/equipment/glassware-070.webp",
+      "full": "/media/equipment-full/glassware-070.webp",
       "id": "glassware-070"
     },
     {
@@ -1371,6 +1441,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/erlenmeyer_flasks/erlenmeyer_flask_4000ml/asset.usda",
       "preview": "/media/equipment/glassware-071.webp",
+      "full": "/media/equipment-full/glassware-071.webp",
       "id": "glassware-071"
     },
     {
@@ -1390,6 +1461,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_10ml/asset.usda",
       "preview": "/media/equipment/glassware-072.webp",
+      "full": "/media/equipment-full/glassware-072.webp",
       "id": "glassware-072"
     },
     {
@@ -1409,6 +1481,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_25ml/asset.usda",
       "preview": "/media/equipment/glassware-073.webp",
+      "full": "/media/equipment-full/glassware-073.webp",
       "id": "glassware-073"
     },
     {
@@ -1428,6 +1501,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_50ml/asset.usda",
       "preview": "/media/equipment/glassware-074.webp",
+      "full": "/media/equipment-full/glassware-074.webp",
       "id": "glassware-074"
     },
     {
@@ -1447,6 +1521,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_100ml/asset.usda",
       "preview": "/media/equipment/glassware-075.webp",
+      "full": "/media/equipment-full/glassware-075.webp",
       "id": "glassware-075"
     },
     {
@@ -1466,6 +1541,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_500ml/asset.usda",
       "preview": "/media/equipment/glassware-076.webp",
+      "full": "/media/equipment-full/glassware-076.webp",
       "id": "glassware-076"
     },
     {
@@ -1485,6 +1561,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/graduated_cylinder_1000ml/asset.usda",
       "preview": "/media/equipment/glassware-077.webp",
+      "full": "/media/equipment-full/glassware-077.webp",
       "id": "glassware-077"
     },
     {
@@ -1504,6 +1581,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_50ml/asset.usda",
       "preview": "/media/equipment/glassware-078.webp",
+      "full": "/media/equipment-full/glassware-078.webp",
       "id": "glassware-078"
     },
     {
@@ -1523,6 +1601,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_100ml/asset.usda",
       "preview": "/media/equipment/glassware-079.webp",
+      "full": "/media/equipment-full/glassware-079.webp",
       "id": "glassware-079"
     },
     {
@@ -1542,6 +1621,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_250ml/asset.usda",
       "preview": "/media/equipment/glassware-080.webp",
+      "full": "/media/equipment-full/glassware-080.webp",
       "id": "glassware-080"
     },
     {
@@ -1561,6 +1641,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_500ml/asset.usda",
       "preview": "/media/equipment/glassware-081.webp",
+      "full": "/media/equipment-full/glassware-081.webp",
       "id": "glassware-081"
     },
     {
@@ -1580,6 +1661,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_1000ml/asset.usda",
       "preview": "/media/equipment/glassware-082.webp",
+      "full": "/media/equipment-full/glassware-082.webp",
       "id": "glassware-082"
     },
     {
@@ -1599,6 +1681,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_2000ml/asset.usda",
       "preview": "/media/equipment/glassware-083.webp",
+      "full": "/media/equipment-full/glassware-083.webp",
       "id": "glassware-083"
     },
     {
@@ -1618,6 +1701,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/round_bottom_flasks/round_bottom_flask_5000ml/asset.usda",
       "preview": "/media/equipment/glassware-084.webp",
+      "full": "/media/equipment-full/glassware-084.webp",
       "id": "glassware-084"
     },
     {
@@ -1637,6 +1721,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_0p92ml/asset.usda",
       "preview": "/media/equipment/glassware-085.webp",
+      "full": "/media/equipment-full/glassware-085.webp",
       "id": "glassware-085"
     },
     {
@@ -1656,6 +1741,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_1p9ml/asset.usda",
       "preview": "/media/equipment/glassware-086.webp",
+      "full": "/media/equipment-full/glassware-086.webp",
       "id": "glassware-086"
     },
     {
@@ -1675,6 +1761,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_2p75ml/asset.usda",
       "preview": "/media/equipment/glassware-087.webp",
+      "full": "/media/equipment-full/glassware-087.webp",
       "id": "glassware-087"
     },
     {
@@ -1694,6 +1781,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_3p7ml/asset.usda",
       "preview": "/media/equipment/glassware-088.webp",
+      "full": "/media/equipment-full/glassware-088.webp",
       "id": "glassware-088"
     },
     {
@@ -1713,6 +1801,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_5ml/asset.usda",
       "preview": "/media/equipment/glassware-089.webp",
+      "full": "/media/equipment-full/glassware-089.webp",
       "id": "glassware-089"
     },
     {
@@ -1732,6 +1821,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_7p5ml/asset.usda",
       "preview": "/media/equipment/glassware-090.webp",
+      "full": "/media/equipment-full/glassware-090.webp",
       "id": "glassware-090"
     },
     {
@@ -1751,6 +1841,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/vial_11ml/asset.usda",
       "preview": "/media/equipment/glassware-091.webp",
+      "full": "/media/equipment-full/glassware-091.webp",
       "id": "glassware-091"
     },
     {
@@ -1770,6 +1861,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/scintillation_vial_20ml/asset.usda",
       "preview": "/media/equipment/glassware-092.webp",
+      "full": "/media/equipment-full/glassware-092.webp",
       "id": "glassware-092"
     },
     {
@@ -1789,6 +1881,7 @@
       },
       "source_path": "assets/library/blendswap_glassware_bundle_part1/glassware/allihn_condenser/asset.usda",
       "preview": "/media/equipment/glassware-093.webp",
+      "full": "/media/equipment-full/glassware-093.webp",
       "id": "glassware-093"
     },
     {
@@ -1808,6 +1901,7 @@
       },
       "source_path": "assets/library/opentrons/adapters/opentrons_96_deep_well_adapter_nest_wellplate_2ml_deep/asset.usda",
       "preview": "/media/equipment/glassware-094.webp",
+      "full": "/media/equipment-full/glassware-094.webp",
       "id": "glassware-094"
     },
     {
@@ -1827,6 +1921,7 @@
       },
       "source_path": "assets/library/opentrons/adapters/opentrons_96_flat_bottom_adapter_nest_wellplate_200ul_flat/asset.usda",
       "preview": "/media/equipment/glassware-095.webp",
+      "full": "/media/equipment-full/glassware-095.webp",
       "id": "glassware-095"
     },
     {
@@ -1846,6 +1941,7 @@
       },
       "source_path": "assets/library/opentrons/adapters/opentrons_96_pcr_adapter/asset.usda",
       "preview": "/media/equipment/glassware-096.webp",
+      "full": "/media/equipment-full/glassware-096.webp",
       "id": "glassware-096"
     },
     {
@@ -1865,6 +1961,7 @@
       },
       "source_path": "assets/library/opentrons/adapters/opentrons_96_pcr_adapter_nest_wellplate_100ul_pcr_full_skirt/asset.usda",
       "preview": "/media/equipment/glassware-097.webp",
+      "full": "/media/equipment-full/glassware-097.webp",
       "id": "glassware-097"
     },
     {
@@ -1884,6 +1981,7 @@
       },
       "source_path": "assets/library/opentrons/adapters/opentrons_universal_flat_adapter_corning_384_wellplate_112ul_flat/asset.usda",
       "preview": "/media/equipment/glassware-098.webp",
+      "full": "/media/equipment-full/glassware-098.webp",
       "id": "glassware-098"
     },
     {
@@ -1903,6 +2001,7 @@
       },
       "source_path": "assets/library/opentrons/aluminum_blocks/opentrons_24_aluminumblock_generic_2ml_screwcap/asset.usda",
       "preview": "/media/equipment/glassware-099.webp",
+      "full": "/media/equipment-full/glassware-099.webp",
       "id": "glassware-099"
     },
     {
@@ -1922,6 +2021,7 @@
       },
       "source_path": "assets/library/opentrons/aluminum_blocks/opentrons_96_aluminumblock_generic_pcr_strip_200ul/asset.usda",
       "preview": "/media/equipment/glassware-100.webp",
+      "full": "/media/equipment-full/glassware-100.webp",
       "id": "glassware-100"
     },
     {
@@ -1941,6 +2041,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/agilent_1_reservoir_290ml/asset.usda",
       "preview": "/media/equipment/glassware-101.webp",
+      "full": "/media/equipment-full/glassware-101.webp",
       "id": "glassware-101"
     },
     {
@@ -1960,6 +2061,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/axygen_1_reservoir_90ml/asset.usda",
       "preview": "/media/equipment/glassware-102.webp",
+      "full": "/media/equipment-full/glassware-102.webp",
       "id": "glassware-102"
     },
     {
@@ -1979,6 +2081,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/nest_1_reservoir_195ml/asset.usda",
       "preview": "/media/equipment/glassware-103.webp",
+      "full": "/media/equipment-full/glassware-103.webp",
       "id": "glassware-103"
     },
     {
@@ -1998,6 +2101,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/nest_12_reservoir_15ml/asset.usda",
       "preview": "/media/equipment/glassware-104.webp",
+      "full": "/media/equipment-full/glassware-104.webp",
       "id": "glassware-104"
     },
     {
@@ -2017,6 +2121,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/nest_12_reservoir_22ml/asset.usda",
       "preview": "/media/equipment/glassware-105.webp",
+      "full": "/media/equipment-full/glassware-105.webp",
       "id": "glassware-105"
     },
     {
@@ -2036,6 +2141,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/nest_8_reservoir_22ml/asset.usda",
       "preview": "/media/equipment/glassware-106.webp",
+      "full": "/media/equipment-full/glassware-106.webp",
       "id": "glassware-106"
     },
     {
@@ -2055,6 +2161,7 @@
       },
       "source_path": "assets/library/opentrons/reservoirs/opentrons_tough_4_reservoir_72ml/asset.usda",
       "preview": "/media/equipment/glassware-107.webp",
+      "full": "/media/equipment-full/glassware-107.webp",
       "id": "glassware-107"
     },
     {
@@ -2074,6 +2181,7 @@
       },
       "source_path": "assets/library/opentrons/tip_racks/eppendorf_96_tiprack_1000ul_eptips/asset.usda",
       "preview": "/media/equipment/glassware-108.webp",
+      "full": "/media/equipment-full/glassware-108.webp",
       "id": "glassware-108"
     },
     {
@@ -2093,6 +2201,7 @@
       },
       "source_path": "assets/library/opentrons/tip_racks/eppendorf_96_tiprack_10ul_eptips/asset.usda",
       "preview": "/media/equipment/glassware-109.webp",
+      "full": "/media/equipment-full/glassware-109.webp",
       "id": "glassware-109"
     },
     {
@@ -2112,6 +2221,7 @@
       },
       "source_path": "assets/library/opentrons/tip_racks/geb_96_tiprack_1000ul/asset.usda",
       "preview": "/media/equipment/glassware-110.webp",
+      "full": "/media/equipment-full/glassware-110.webp",
       "id": "glassware-110"
     },
     {
@@ -2131,6 +2241,7 @@
       },
       "source_path": "assets/library/opentrons/tip_racks/geb_96_tiprack_10ul/asset.usda",
       "preview": "/media/equipment/glassware-111.webp",
+      "full": "/media/equipment-full/glassware-111.webp",
       "id": "glassware-111"
     },
     {
@@ -2150,6 +2261,7 @@
       },
       "source_path": "assets/library/opentrons/tip_racks/opentrons_96_filtertiprack_1000ul/asset.usda",
       "preview": "/media/equipment/glassware-112.webp",
+      "full": "/media/equipment-full/glassware-112.webp",
       "id": "glassware-112"
     },
     {
@@ -2169,6 +2281,7 @@
       },
       "source_path": "assets/library/opentrons/tube_racks/opentrons_10_tuberack_nest_4x50ml_6x15ml_conical/asset.usda",
       "preview": "/media/equipment/glassware-113.webp",
+      "full": "/media/equipment-full/glassware-113.webp",
       "id": "glassware-113"
     },
     {
@@ -2188,6 +2301,7 @@
       },
       "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_eppendorf_1_5ml_safelock_snapcap/asset.usda",
       "preview": "/media/equipment/glassware-114.webp",
+      "full": "/media/equipment-full/glassware-114.webp",
       "id": "glassware-114"
     },
     {
@@ -2207,6 +2321,7 @@
       },
       "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_eppendorf_2ml_safelock_snapcap_acrylic/asset.usda",
       "preview": "/media/equipment/glassware-115.webp",
+      "full": "/media/equipment-full/glassware-115.webp",
       "id": "glassware-115"
     },
     {
@@ -2226,6 +2341,7 @@
       },
       "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_generic_2ml_screwcap/asset.usda",
       "preview": "/media/equipment/glassware-116.webp",
+      "full": "/media/equipment-full/glassware-116.webp",
       "id": "glassware-116"
     },
     {
@@ -2245,6 +2361,7 @@
       },
       "source_path": "assets/library/opentrons/tube_racks/opentrons_24_tuberack_nest_1_5ml_snapcap/asset.usda",
       "preview": "/media/equipment/glassware-117.webp",
+      "full": "/media/equipment-full/glassware-117.webp",
       "id": "glassware-117"
     },
     {
@@ -2264,6 +2381,7 @@
       },
       "source_path": "assets/library/opentrons/tube_racks/opentrons_6_tuberack_falcon_50ml_conical/asset.usda",
       "preview": "/media/equipment/glassware-118.webp",
+      "full": "/media/equipment-full/glassware-118.webp",
       "id": "glassware-118"
     },
     {
@@ -2283,6 +2401,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/appliedbiosystemsmicroamp_384_wellplate_40ul/asset.usda",
       "preview": "/media/equipment/glassware-119.webp",
+      "full": "/media/equipment-full/glassware-119.webp",
       "id": "glassware-119"
     },
     {
@@ -2302,6 +2421,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/corning_12_wellplate_6_9ml_flat/asset.usda",
       "preview": "/media/equipment/glassware-120.webp",
+      "full": "/media/equipment-full/glassware-120.webp",
       "id": "glassware-120"
     },
     {
@@ -2321,6 +2441,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/corning_24_wellplate_3_4ml_flat/asset.usda",
       "preview": "/media/equipment/glassware-121.webp",
+      "full": "/media/equipment-full/glassware-121.webp",
       "id": "glassware-121"
     },
     {
@@ -2340,6 +2461,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/corning_48_wellplate_1_6ml_flat/asset.usda",
       "preview": "/media/equipment/glassware-122.webp",
+      "full": "/media/equipment-full/glassware-122.webp",
       "id": "glassware-122"
     },
     {
@@ -2359,6 +2481,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/corning_6_wellplate_16_8ml_flat/asset.usda",
       "preview": "/media/equipment/glassware-123.webp",
+      "full": "/media/equipment-full/glassware-123.webp",
       "id": "glassware-123"
     },
     {
@@ -2378,6 +2501,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/eppendorf_96_wellplate_1000ul/asset.usda",
       "preview": "/media/equipment/glassware-124.webp",
+      "full": "/media/equipment-full/glassware-124.webp",
       "id": "glassware-124"
     },
     {
@@ -2397,6 +2521,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/ibidi_96_square_well_plate_300ul/asset.usda",
       "preview": "/media/equipment/glassware-125.webp",
+      "full": "/media/equipment-full/glassware-125.webp",
       "id": "glassware-125"
     },
     {
@@ -2416,6 +2541,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/nest_24_wellplate_10_4ml/asset.usda",
       "preview": "/media/equipment/glassware-126.webp",
+      "full": "/media/equipment-full/glassware-126.webp",
       "id": "glassware-126"
     },
     {
@@ -2435,6 +2561,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/thermoscientific_96_wellplate_800ul/asset.usda",
       "preview": "/media/equipment/glassware-127.webp",
+      "full": "/media/equipment-full/glassware-127.webp",
       "id": "glassware-127"
     },
     {
@@ -2454,6 +2581,7 @@
       },
       "source_path": "assets/library/opentrons/well_plates/thermoscientific_abgene_96_wellplate_1_2ml/asset.usda",
       "preview": "/media/equipment/glassware-128.webp",
+      "full": "/media/equipment-full/glassware-128.webp",
       "id": "glassware-128"
     },
     {
@@ -2473,6 +2601,7 @@
       },
       "source_path": "assets/library/nih_3d/labware/petri_dish/asset.usda",
       "preview": "/media/equipment/glassware-129.webp",
+      "full": "/media/equipment-full/glassware-129.webp",
       "id": "glassware-129"
     },
     {
@@ -2492,6 +2621,7 @@
       },
       "source_path": "assets/library/nih_3d/labware/syringe_pipette/asset.usda",
       "preview": "/media/equipment/glassware-130.webp",
+      "full": "/media/equipment-full/glassware-130.webp",
       "id": "glassware-130"
     },
     {
@@ -2512,6 +2642,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/autoclave/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-001.webp",
+      "full": "/media/equipment-full/equipment-001.webp",
       "id": "lab-equipment-001"
     },
     {
@@ -2532,6 +2663,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/capping_machine/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-002.webp",
+      "full": "/media/equipment-full/equipment-002.webp",
       "id": "lab-equipment-002"
     },
     {
@@ -2552,6 +2684,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/bottle_washing_machine/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-003.webp",
+      "full": "/media/equipment-full/equipment-003.webp",
       "id": "lab-equipment-003"
     },
     {
@@ -2572,6 +2705,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/biological_safety_cabinet_01/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-004.webp",
+      "full": "/media/equipment-full/equipment-004.webp",
       "id": "lab-equipment-004"
     },
     {
@@ -2592,6 +2726,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/biological_safety_cabinet_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-005.webp",
+      "full": "/media/equipment-full/equipment-005.webp",
       "id": "lab-equipment-005"
     },
     {
@@ -2612,6 +2747,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/centrifuge_01_a/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-006.webp",
+      "full": "/media/equipment-full/equipment-006.webp",
       "id": "lab-equipment-006"
     },
     {
@@ -2632,6 +2768,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/centrifuge_01_b/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-007.webp",
+      "full": "/media/equipment-full/equipment-007.webp",
       "id": "lab-equipment-007"
     },
     {
@@ -2652,6 +2789,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/centrifuge_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-008.webp",
+      "full": "/media/equipment-full/equipment-008.webp",
       "id": "lab-equipment-008"
     },
     {
@@ -2672,6 +2810,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/centrifuge_03/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-009.webp",
+      "full": "/media/equipment-full/equipment-009.webp",
       "id": "lab-equipment-009"
     },
     {
@@ -2692,6 +2831,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/cryogenic_cabinet/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-010.webp",
+      "full": "/media/equipment-full/equipment-010.webp",
       "id": "lab-equipment-010"
     },
     {
@@ -2712,6 +2852,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/drying_box_01/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-011.webp",
+      "full": "/media/equipment-full/equipment-011.webp",
       "id": "lab-equipment-011"
     },
     {
@@ -2732,6 +2873,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/drying_box_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-012.webp",
+      "full": "/media/equipment-full/equipment-012.webp",
       "id": "lab-equipment-012"
     },
     {
@@ -2752,6 +2894,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/drying_box_03/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-013.webp",
+      "full": "/media/equipment-full/equipment-013.webp",
       "id": "lab-equipment-013"
     },
     {
@@ -2772,6 +2915,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/drying_box_04/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-014.webp",
+      "full": "/media/equipment-full/equipment-014.webp",
       "id": "lab-equipment-014"
     },
     {
@@ -2792,6 +2936,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/drying_box_05/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-015.webp",
+      "full": "/media/equipment-full/equipment-015.webp",
       "id": "lab-equipment-015"
     },
     {
@@ -2812,6 +2957,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/drying_box_06/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-016.webp",
+      "full": "/media/equipment-full/equipment-016.webp",
       "id": "lab-equipment-016"
     },
     {
@@ -2832,6 +2978,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/electric_soil_penetrometer/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-017.webp",
+      "full": "/media/equipment-full/equipment-017.webp",
       "id": "lab-equipment-017"
     },
     {
@@ -2852,6 +2999,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_01/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-018.webp",
+      "full": "/media/equipment-full/equipment-018.webp",
       "id": "lab-equipment-018"
     },
     {
@@ -2872,6 +3020,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-019.webp",
+      "full": "/media/equipment-full/equipment-019.webp",
       "id": "lab-equipment-019"
     },
     {
@@ -2892,6 +3041,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_03/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-020.webp",
+      "full": "/media/equipment-full/equipment-020.webp",
       "id": "lab-equipment-020"
     },
     {
@@ -2912,6 +3062,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/electronic_scale_05/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-021.webp",
+      "full": "/media/equipment-full/equipment-021.webp",
       "id": "lab-equipment-021"
     },
     {
@@ -2932,6 +3083,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/fume_hood_01/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-022.webp",
+      "full": "/media/equipment-full/equipment-022.webp",
       "id": "lab-equipment-022"
     },
     {
@@ -2952,6 +3104,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/fume_hood_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-023.webp",
+      "full": "/media/equipment-full/equipment-023.webp",
       "id": "lab-equipment-023"
     },
     {
@@ -2972,6 +3125,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/gc_ms/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-024.webp",
+      "full": "/media/equipment-full/equipment-024.webp",
       "id": "lab-equipment-024"
     },
     {
@@ -2992,6 +3146,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/headspace_sampler/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-025.webp",
+      "full": "/media/equipment-full/equipment-025.webp",
       "id": "lab-equipment-025"
     },
     {
@@ -3012,6 +3167,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/heater/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-026.webp",
+      "full": "/media/equipment-full/equipment-026.webp",
       "id": "lab-equipment-026"
     },
     {
@@ -3032,6 +3188,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/heating_plate/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-027.webp",
+      "full": "/media/equipment-full/equipment-027.webp",
       "id": "lab-equipment-027"
     },
     {
@@ -3052,6 +3209,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/icp_ms/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-028.webp",
+      "full": "/media/equipment-full/equipment-028.webp",
       "id": "lab-equipment-028"
     },
     {
@@ -3072,6 +3230,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/incubator_01_benchtop/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-029.webp",
+      "full": "/media/equipment-full/equipment-029.webp",
       "id": "lab-equipment-029"
     },
     {
@@ -3092,6 +3251,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/incubator_01_large/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-030.webp",
+      "full": "/media/equipment-full/equipment-030.webp",
       "id": "lab-equipment-030"
     },
     {
@@ -3112,6 +3272,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/incubator_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-031.webp",
+      "full": "/media/equipment-full/equipment-031.webp",
       "id": "lab-equipment-031"
     },
     {
@@ -3132,6 +3293,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/infrared_spectrophotometer/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-032.webp",
+      "full": "/media/equipment-full/equipment-032.webp",
       "id": "lab-equipment-032"
     },
     {
@@ -3152,6 +3314,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/liquid_chromatograph_01/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-033.webp",
+      "full": "/media/equipment-full/equipment-033.webp",
       "id": "lab-equipment-033"
     },
     {
@@ -3172,6 +3335,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/liquid_chromatograph_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-034.webp",
+      "full": "/media/equipment-full/equipment-034.webp",
       "id": "lab-equipment-034"
     },
     {
@@ -3192,6 +3356,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/measuring_instrument/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-035.webp",
+      "full": "/media/equipment-full/equipment-035.webp",
       "id": "lab-equipment-035"
     },
     {
@@ -3212,6 +3377,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/metallographic_analyzer/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-036.webp",
+      "full": "/media/equipment-full/equipment-036.webp",
       "id": "lab-equipment-036"
     },
     {
@@ -3232,6 +3398,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/meteorological_chromatograph/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-037.webp",
+      "full": "/media/equipment-full/equipment-037.webp",
       "id": "lab-equipment-037"
     },
     {
@@ -3252,6 +3419,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/microscope/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-038.webp",
+      "full": "/media/equipment-full/equipment-038.webp",
       "id": "lab-equipment-038"
     },
     {
@@ -3272,6 +3440,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/muffle_furnace/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-039.webp",
+      "full": "/media/equipment-full/equipment-039.webp",
       "id": "lab-equipment-039"
     },
     {
@@ -3292,6 +3461,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/nucleic_acid_extraction_device/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-040.webp",
+      "full": "/media/equipment-full/equipment-040.webp",
       "id": "lab-equipment-040"
     },
     {
@@ -3312,6 +3482,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/oscillator/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-041.webp",
+      "full": "/media/equipment-full/equipment-041.webp",
       "id": "lab-equipment-041"
     },
     {
@@ -3332,6 +3503,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/osmometer/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-042.webp",
+      "full": "/media/equipment-full/equipment-042.webp",
       "id": "lab-equipment-042"
     },
     {
@@ -3352,6 +3524,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/oxygen_concentrator_01/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-043.webp",
+      "full": "/media/equipment-full/equipment-043.webp",
       "id": "lab-equipment-043"
     },
     {
@@ -3372,6 +3545,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/oxygen_concentrator_02/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-044.webp",
+      "full": "/media/equipment-full/equipment-044.webp",
       "id": "lab-equipment-044"
     },
     {
@@ -3392,6 +3566,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/pipette/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-045.webp",
+      "full": "/media/equipment-full/equipment-045.webp",
       "id": "lab-equipment-045"
     },
     {
@@ -3412,6 +3587,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/sterilizer/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-046.webp",
+      "full": "/media/equipment-full/equipment-046.webp",
       "id": "lab-equipment-046"
     },
     {
@@ -3432,6 +3608,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/thermostatic_water_bath/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-047.webp",
+      "full": "/media/equipment-full/equipment-047.webp",
       "id": "lab-equipment-047"
     },
     {
@@ -3452,6 +3629,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/tube_rack/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-048.webp",
+      "full": "/media/equipment-full/equipment-048.webp",
       "id": "lab-equipment-048"
     },
     {
@@ -3472,6 +3650,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/vacuum_sterilizer/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-049.webp",
+      "full": "/media/equipment-full/equipment-049.webp",
       "id": "lab-equipment-049"
     },
     {
@@ -3492,6 +3671,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/vortex_oscillator/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-050.webp",
+      "full": "/media/equipment-full/equipment-050.webp",
       "id": "lab-equipment-050"
     },
     {
@@ -3512,6 +3692,7 @@
       "source_path": "assets/library/labutopia/lab_equipment/p_hmeter/asset.usda",
       "source": "LabUtopia",
       "preview": "/media/equipment/equipment-051.webp",
+      "full": "/media/equipment-full/equipment-051.webp",
       "id": "lab-equipment-051"
     },
     {
@@ -3532,6 +3713,7 @@
       "source_path": "assets/library/autobio/lab_equipment/centrifuge_eppendorf_5430/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-052.webp",
+      "full": "/media/equipment-full/equipment-052.webp",
       "id": "lab-equipment-052"
     },
     {
@@ -3552,6 +3734,7 @@
       "source_path": "assets/library/autobio/lab_equipment/centrifuge_eppendorf_5910_ri/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-053.webp",
+      "full": "/media/equipment-full/equipment-053.webp",
       "id": "lab-equipment-053"
     },
     {
@@ -3572,6 +3755,7 @@
       "source_path": "assets/library/autobio/lab_equipment/centrifuge_tiangen_tgear_mini/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-054.webp",
+      "full": "/media/equipment-full/equipment-054.webp",
       "id": "lab-equipment-054"
     },
     {
@@ -3592,6 +3776,7 @@
       "source_path": "assets/library/autobio/lab_equipment/thermal_cycler_biorad_c1000/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-055.webp",
+      "full": "/media/equipment-full/equipment-055.webp",
       "id": "lab-equipment-055"
     },
     {
@@ -3612,6 +3797,7 @@
       "source_path": "assets/library/autobio/lab_equipment/thermal_mixer_eppendorf_c/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-056.webp",
+      "full": "/media/equipment-full/equipment-056.webp",
       "id": "lab-equipment-056"
     },
     {
@@ -3632,6 +3818,7 @@
       "source_path": "assets/library/autobio/lab_equipment/vortex_mixer_genie_2/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-057.webp",
+      "full": "/media/equipment-full/equipment-057.webp",
       "id": "lab-equipment-057"
     },
     {
@@ -3652,6 +3839,7 @@
       "source_path": "assets/library/autobio/labware/centrifuge_10slot_vis/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-058.webp",
+      "full": "/media/equipment-full/equipment-058.webp",
       "id": "lab-equipment-058"
     },
     {
@@ -3672,6 +3860,7 @@
       "source_path": "assets/library/autobio/labware/centrifuge_plate_60well_vis/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-059.webp",
+      "full": "/media/equipment-full/equipment-059.webp",
       "id": "lab-equipment-059"
     },
     {
@@ -3692,6 +3881,7 @@
       "source_path": "assets/library/autobio/labware/pipette_rack_tri_vis/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-060.webp",
+      "full": "/media/equipment-full/equipment-060.webp",
       "id": "lab-equipment-060"
     },
     {
@@ -3712,6 +3902,7 @@
       "source_path": "assets/library/autobio/labware/tip_box_24slot_vis/asset.usda",
       "source": "AutoBio",
       "preview": "/media/equipment/equipment-061.webp",
+      "full": "/media/equipment-full/equipment-061.webp",
       "id": "lab-equipment-061"
     },
     {
@@ -3732,6 +3923,7 @@
       "source_path": "assets/library/pippette/lab_equipment/incubator/asset.usda",
       "source": "Pippette",
       "preview": "/media/equipment/equipment-062.webp",
+      "full": "/media/equipment-full/equipment-062.webp",
       "id": "lab-equipment-062"
     },
     {
@@ -3752,6 +3944,7 @@
       "source_path": "assets/library/pippette/lab_equipment/centrifuge/asset.usda",
       "source": "Pippette",
       "preview": "/media/equipment/equipment-063.webp",
+      "full": "/media/equipment-full/equipment-063.webp",
       "id": "lab-equipment-063"
     },
     {
@@ -3760,6 +3953,7 @@
       "source_path": "blends/Beer Glass 1.blend",
       "geometry_path": "Obj/Beer Glass 1.obj",
       "preview": "/media/equipment/glass-resource-001.webp",
+      "full": "/media/equipment-full/glass-resource-001.webp",
       "id": "glass-resources-001"
     },
     {
@@ -3768,6 +3962,7 @@
       "source_path": "blends/Beer Glass 2.blend",
       "geometry_path": "Obj/Beer Glass 2.obj",
       "preview": "/media/equipment/glass-resource-002.webp",
+      "full": "/media/equipment-full/glass-resource-002.webp",
       "id": "glass-resources-002"
     },
     {
@@ -3776,6 +3971,7 @@
       "source_path": "blends/Beer Glass 3.blend",
       "geometry_path": "Obj/Beer Glass 3.obj",
       "preview": "/media/equipment/glass-resource-003.webp",
+      "full": "/media/equipment-full/glass-resource-003.webp",
       "id": "glass-resources-003"
     },
     {
@@ -3784,6 +3980,7 @@
       "source_path": "blends/Beer Glass 4.blend",
       "geometry_path": "Obj/Beer Glass 4.obj",
       "preview": "/media/equipment/glass-resource-004.webp",
+      "full": "/media/equipment-full/glass-resource-004.webp",
       "id": "glass-resources-004"
     },
     {
@@ -3792,6 +3989,7 @@
       "source_path": "blends/Carafe 1.blend",
       "geometry_path": "Obj/Caraf 1.obj",
       "preview": "/media/equipment/glass-resource-005.webp",
+      "full": "/media/equipment-full/glass-resource-005.webp",
       "id": "glass-resources-005"
     },
     {
@@ -3800,6 +3998,7 @@
       "source_path": "blends/Carafe 2.blend",
       "geometry_path": "Obj/Caraf 2.obj",
       "preview": "/media/equipment/glass-resource-006.webp",
+      "full": "/media/equipment-full/glass-resource-006.webp",
       "id": "glass-resources-006"
     },
     {
@@ -3808,6 +4007,7 @@
       "source_path": "blends/Carafe 3.blend",
       "geometry_path": "Obj/Caraf 3.obj",
       "preview": "/media/equipment/glass-resource-007.webp",
+      "full": "/media/equipment-full/glass-resource-007.webp",
       "id": "glass-resources-007"
     },
     {
@@ -3816,6 +4016,7 @@
       "source_path": "blends/Carafe 4.blend",
       "geometry_path": "Obj/Caraf 4.obj",
       "preview": "/media/equipment/glass-resource-008.webp",
+      "full": "/media/equipment-full/glass-resource-008.webp",
       "id": "glass-resources-008"
     },
     {
@@ -3824,6 +4025,7 @@
       "source_path": "blends/Champagne Glass 1.blend",
       "geometry_path": "Obj/Champagne Glass 1.obj",
       "preview": "/media/equipment/glass-resource-009.webp",
+      "full": "/media/equipment-full/glass-resource-009.webp",
       "id": "glass-resources-009"
     },
     {
@@ -3832,6 +4034,7 @@
       "source_path": "blends/Champagne Glass 2.blend",
       "geometry_path": "Obj/Champagne Glass 2.obj",
       "preview": "/media/equipment/glass-resource-010.webp",
+      "full": "/media/equipment-full/glass-resource-010.webp",
       "id": "glass-resources-010"
     },
     {
@@ -3840,6 +4043,7 @@
       "source_path": "blends/Champagne Glass 3.blend",
       "geometry_path": "Obj/Champagne Glass 3.obj",
       "preview": "/media/equipment/glass-resource-011.webp",
+      "full": "/media/equipment-full/glass-resource-011.webp",
       "id": "glass-resources-011"
     },
     {
@@ -3848,6 +4052,7 @@
       "source_path": "blends/Cocktail Glass 1.blend",
       "geometry_path": "Obj/Cocktail Glass 1.obj",
       "preview": "/media/equipment/glass-resource-012.webp",
+      "full": "/media/equipment-full/glass-resource-012.webp",
       "id": "glass-resources-012"
     },
     {
@@ -3856,6 +4061,7 @@
       "source_path": "blends/Cocktail Glass 2.blend",
       "geometry_path": "Obj/Cocktail Glass 2.obj",
       "preview": "/media/equipment/glass-resource-013.webp",
+      "full": "/media/equipment-full/glass-resource-013.webp",
       "id": "glass-resources-013"
     },
     {
@@ -3864,6 +4070,7 @@
       "source_path": "blends/Cocktail Glass 3.blend",
       "geometry_path": "Obj/Cocktail Glass 3.obj",
       "preview": "/media/equipment/glass-resource-014.webp",
+      "full": "/media/equipment-full/glass-resource-014.webp",
       "id": "glass-resources-014"
     },
     {
@@ -3872,6 +4079,7 @@
       "source_path": "blends/Cocktail Glass 4.blend",
       "geometry_path": "Obj/Cocktail Glass 4.obj",
       "preview": "/media/equipment/glass-resource-015.webp",
+      "full": "/media/equipment-full/glass-resource-015.webp",
       "id": "glass-resources-015"
     },
     {
@@ -3880,6 +4088,7 @@
       "source_path": "blends/Cognac Glass 1.blend",
       "geometry_path": "Obj/Cognac Glass 1.obj",
       "preview": "/media/equipment/glass-resource-016.webp",
+      "full": "/media/equipment-full/glass-resource-016.webp",
       "id": "glass-resources-016"
     },
     {
@@ -3888,6 +4097,7 @@
       "source_path": "blends/Long Drink Glass 1.blend",
       "geometry_path": "Obj/Long Drink Glass 1.obj",
       "preview": "/media/equipment/glass-resource-017.webp",
+      "full": "/media/equipment-full/glass-resource-017.webp",
       "id": "glass-resources-017"
     },
     {
@@ -3896,6 +4106,7 @@
       "source_path": "blends/Madeira Glass 1.blend",
       "geometry_path": "Obj/Madeira Glass.obj",
       "preview": "/media/equipment/glass-resource-018.webp",
+      "full": "/media/equipment-full/glass-resource-018.webp",
       "id": "glass-resources-018"
     },
     {
@@ -3904,6 +4115,7 @@
       "source_path": "blends/Port Glass 1.blend",
       "geometry_path": "Obj/Port Glass.obj",
       "preview": "/media/equipment/glass-resource-019.webp",
+      "full": "/media/equipment-full/glass-resource-019.webp",
       "id": "glass-resources-019"
     },
     {
@@ -3912,6 +4124,7 @@
       "source_path": "blends/Shot Glass 1.blend",
       "geometry_path": "Obj/Shot Glass 1.obj",
       "preview": "/media/equipment/glass-resource-020.webp",
+      "full": "/media/equipment-full/glass-resource-020.webp",
       "id": "glass-resources-020"
     },
     {
@@ -3920,6 +4133,7 @@
       "source_path": "blends/Shot Glass 2.blend",
       "geometry_path": "Obj/Shot Glass 2.obj",
       "preview": "/media/equipment/glass-resource-021.webp",
+      "full": "/media/equipment-full/glass-resource-021.webp",
       "id": "glass-resources-021"
     },
     {
@@ -3928,6 +4142,7 @@
       "source_path": "blends/Shot Glass 3.blend",
       "geometry_path": "Obj/Shot Glass 3.obj",
       "preview": "/media/equipment/glass-resource-022.webp",
+      "full": "/media/equipment-full/glass-resource-022.webp",
       "id": "glass-resources-022"
     },
     {
@@ -3936,6 +4151,7 @@
       "source_path": "blends/Water Glass 1.blend",
       "geometry_path": "Obj/Water Glass 1.obj",
       "preview": "/media/equipment/glass-resource-023.webp",
+      "full": "/media/equipment-full/glass-resource-023.webp",
       "id": "glass-resources-023"
     },
     {
@@ -3944,6 +4160,7 @@
       "source_path": "blends/Water Glass 2.blend",
       "geometry_path": "Obj/Water Glass 2.obj",
       "preview": "/media/equipment/glass-resource-024.webp",
+      "full": "/media/equipment-full/glass-resource-024.webp",
       "id": "glass-resources-024"
     },
     {
@@ -3952,6 +4169,7 @@
       "source_path": "blends/Water Glass 3.blend",
       "geometry_path": "Obj/Water Glass 3.obj",
       "preview": "/media/equipment/glass-resource-025.webp",
+      "full": "/media/equipment-full/glass-resource-025.webp",
       "id": "glass-resources-025"
     },
     {
@@ -3960,6 +4178,7 @@
       "source_path": "blends/Water Glass 4.blend",
       "geometry_path": "Obj/Water Glass 4.obj",
       "preview": "/media/equipment/glass-resource-026.webp",
+      "full": "/media/equipment-full/glass-resource-026.webp",
       "id": "glass-resources-026"
     },
     {
@@ -3968,6 +4187,7 @@
       "source_path": "blends/Water Glass 5.blend",
       "geometry_path": "Obj/Water Glass 5.obj",
       "preview": "/media/equipment/glass-resource-027.webp",
+      "full": "/media/equipment-full/glass-resource-027.webp",
       "id": "glass-resources-027"
     },
     {
@@ -3976,6 +4196,7 @@
       "source_path": "blends/Water Glass 6.blend",
       "geometry_path": "Obj/Water Glass 6.obj",
       "preview": "/media/equipment/glass-resource-028.webp",
+      "full": "/media/equipment-full/glass-resource-028.webp",
       "id": "glass-resources-028"
     },
     {
@@ -3984,6 +4205,7 @@
       "source_path": "blends/Water Glass 7.blend",
       "geometry_path": "Obj/Water Glass 7.obj",
       "preview": "/media/equipment/glass-resource-029.webp",
+      "full": "/media/equipment-full/glass-resource-029.webp",
       "id": "glass-resources-029"
     },
     {
@@ -3992,6 +4214,7 @@
       "source_path": "blends/Whisky Glass 1.blend",
       "geometry_path": "Obj/Whiskey Glass 1.obj",
       "preview": "/media/equipment/glass-resource-030.webp",
+      "full": "/media/equipment-full/glass-resource-030.webp",
       "id": "glass-resources-030"
     },
     {
@@ -4000,6 +4223,7 @@
       "source_path": "blends/Whisky Glass 2.blend",
       "geometry_path": "Obj/Whiskey Glass 2.obj",
       "preview": "/media/equipment/glass-resource-031.webp",
+      "full": "/media/equipment-full/glass-resource-031.webp",
       "id": "glass-resources-031"
     },
     {
@@ -4008,6 +4232,7 @@
       "source_path": "blends/Whisky Glass 3.blend",
       "geometry_path": "Obj/Whiskey Glass 3.obj",
       "preview": "/media/equipment/glass-resource-032.webp",
+      "full": "/media/equipment-full/glass-resource-032.webp",
       "id": "glass-resources-032"
     },
     {
@@ -4016,6 +4241,7 @@
       "source_path": "blends/Whisky Glass 4.blend",
       "geometry_path": "Obj/Whiskey Glass 4.obj",
       "preview": "/media/equipment/glass-resource-033.webp",
+      "full": "/media/equipment-full/glass-resource-033.webp",
       "id": "glass-resources-033"
     },
     {
@@ -4024,6 +4250,7 @@
       "source_path": "blends/Whisky Glass 5.blend",
       "geometry_path": "Obj/Whiskey Glass 5.obj",
       "preview": "/media/equipment/glass-resource-034.webp",
+      "full": "/media/equipment-full/glass-resource-034.webp",
       "id": "glass-resources-034"
     },
     {
@@ -4032,6 +4259,7 @@
       "source_path": "blends/Wine Glass 1.blend",
       "geometry_path": "Obj/Wine Glass 1.obj",
       "preview": "/media/equipment/glass-resource-035.webp",
+      "full": "/media/equipment-full/glass-resource-035.webp",
       "id": "glass-resources-035"
     },
     {
@@ -4040,6 +4268,7 @@
       "source_path": "blends/Wine Glass 2.blend",
       "geometry_path": "Obj/Wine Glass 2.obj",
       "preview": "/media/equipment/glass-resource-036.webp",
+      "full": "/media/equipment-full/glass-resource-036.webp",
       "id": "glass-resources-036"
     },
     {
@@ -4048,6 +4277,7 @@
       "source_path": "blends/Wine Glass 3.blend",
       "geometry_path": "Obj/Wine Glass 3.obj",
       "preview": "/media/equipment/glass-resource-037.webp",
+      "full": "/media/equipment-full/glass-resource-037.webp",
       "id": "glass-resources-037"
     },
     {
@@ -4056,6 +4286,7 @@
       "source_path": "blends/Wine Glass 4.blend",
       "geometry_path": "Obj/Wine Glass 4.obj",
       "preview": "/media/equipment/glass-resource-038.webp",
+      "full": "/media/equipment-full/glass-resource-038.webp",
       "id": "glass-resources-038"
     }
   ]

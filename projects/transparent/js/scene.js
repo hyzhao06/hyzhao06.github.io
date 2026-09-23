@@ -286,8 +286,10 @@ document.getElementById("btn-all").append(el("b", { text: String(scene.frames) }
 function step(d) {
   const list = scene.featured.map((f) => f.frame);
   const i = list.indexOf(frame);
-  setFrame(list[i < 0 ? 0 : (i + d + list.length) % list.length]);
+  setFrame(list[i < 0 ? (d > 0 ? 0 : list.length - 1) : (i + d + list.length) % list.length]);
 }
+document.getElementById("frame-prev").addEventListener("click", () => step(-1));
+document.getElementById("frame-next").addEventListener("click", () => step(1));
 
 function setFrame(f) {
   frame = f; zoom = null;
@@ -296,6 +298,14 @@ function setFrame(f) {
   showLayers(); prefetch(); renderHotspots(); renderStrip(); renderExt();
   applyZoom(true); note(); renderDrawer();
   history.replaceState(null, "", siteUrl(`scene.html?id=${id}&frame=${f}`));
+  const list = scene.featured.map((item) => item.frame);
+  const i = list.indexOf(f);
+  if (i >= 0) {
+    for (const adjacent of [list[(i - 1 + list.length) % list.length], list[(i + 1) % list.length]]) {
+      const preload = new Image();
+      preload.src = img(modality, id, adjacent);
+    }
+  }
 }
 
 /* ── all views ────────────────────────────────────────────────────────── */
