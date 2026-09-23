@@ -10,7 +10,7 @@ export const closeupImg = (scene) => `${MEDIA}/closeup/${scene}.webp`;
 
 let _manifest = null;
 export async function manifest() {
-  if (!_manifest) _manifest = await (await fetch(siteUrl("data/manifest.json"))).json();
+  if (!_manifest) _manifest = await (await fetch(siteUrl("data/manifest.json?v=20260923-ui-6"))).json();
   return _manifest;
 }
 export const sceneData = async (id) => (await fetch(siteUrl(`data/scenes/${id}.json`))).json();
@@ -65,7 +65,7 @@ export function mountTopbar(host, m) {
       el("a", { href: `${siteUrl()}#scenes`, text: "Scenes" }),
       el("a", { href: siteUrl("equipment.html"), text: "Equipment" })),
     themeButton(),
-    el("span", { class: "meta mono", text: `${m.totals.scenes} scenes · ${fmt(m.totals.frames)} views` }),
+    el("span", { class: "meta mono", text: `${fmt(m.totals.frames)} displayed views` }),
   );
   const onScroll = () => host.classList.toggle("solid", window.scrollY > 40);
   onScroll();
@@ -76,7 +76,7 @@ export function mountFooter(host, m) {
   host.append(
     el("span", { text: FULL_TITLE }),
     el("span", { class: "spacer" }),
-    el("span", { class: "mono", text: `${m.totals.scenes} scenes · ${fmt(m.totals.frames)} views · ${m.built.slice(0, 4)}` }),
+    el("span", { class: "mono", text: `${fmt(m.totals.frames)} displayed views · ${m.built.slice(0, 4)}` }),
   );
 }
 

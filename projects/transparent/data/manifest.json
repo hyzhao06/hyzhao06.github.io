@@ -3,7 +3,7 @@
   "data_version": {
     "label": "2026-09-23",
     "title": "Material-repair release",
-    "body": "Nine scenes and 1,336 stereo views from the frozen 2026-09-23 material-repair release. The release removes 56 confirmed duplicates from the earlier 1,392-frame set. RGB, depth, normals, instance IDs and masks shown here all come from the same release."
+    "body": "This gallery presents 1,336 stereo views from a curated subset of the frozen 2026-09-23 material-repair release. The release removes 56 confirmed duplicates from the earlier 1,392-frame set. RGB, depth, normals, instance IDs and masks shown here all come from the same release."
   },
   "release": {
     "id": "labutopia0922",

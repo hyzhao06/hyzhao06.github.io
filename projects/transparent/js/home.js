@@ -1,4 +1,4 @@
-import { manifest, mountTopbar, mountFooter, el, img, coverImg, closeupImg, fmt, expandInto, reducedMotion, siteUrl } from "./common.js";
+import { manifest, mountTopbar, mountFooter, el, img, coverImg, closeupImg, fmt, expandInto, reducedMotion, siteUrl } from "./common.js?v=20260923-ui-6";
 
 const m = await manifest();
 mountTopbar(document.getElementById("topbar"), m);
@@ -7,7 +7,7 @@ mountFooter(document.getElementById("footer"), m);
 /* ── hero ─────────────────────────────────────────────────────────────── */
 const heroScene = m.scenes.find((s) => s.id === "lab100");
 document.getElementById("hero-stats").textContent =
-  `${m.totals.scenes} scenes · ${fmt(m.totals.frames)} views · ${m.totals.modalities} modalities`;
+  `${fmt(m.totals.frames)} displayed views · ${m.totals.modalities} modalities`;
 document.getElementById("inset-label").textContent = `${heroScene.name} · close-up`;
 document.getElementById("inset-badge").textContent = heroScene.closeup.frame;
 const inset = document.getElementById("hero-inset");
@@ -42,26 +42,16 @@ let currentSlide = 0;
 let userPaused = reducedMotion();
 let carouselTimer = null;
 let pendingSnap = null;
+let transitionBusy = false;
+let transitionTimer = null;
+const moveQueue = [];
 const dots = featured.map((item, i) => el("button", {
-  type: "button", "aria-label": `Show ${item.scene.name}`, onclick: () => showSlide(i, true),
+  type: "button", "aria-label": `Show ${item.scene.name}`, onclick: () => queueMove({ type: "jump", value: i }, true),
 }));
 dotsHost.append(...dots);
 
-function showSlide(index, manual = false) {
-  let slot;
-  if (index >= featured.length) {
-    currentSlide = 0;
-    slot = featured.length + 1;
-    pendingSnap = 1;
-  } else if (index < 0) {
-    currentSlide = featured.length - 1;
-    slot = 0;
-    pendingSnap = featured.length;
-  } else {
-    currentSlide = index;
-    slot = currentSlide + 1;
-    pendingSnap = null;
-  }
+function paintSlide(index, slot) {
+  currentSlide = index;
   const item = featured[currentSlide];
   track.style.transform = `translateX(-${slot * 100}%)`;
   slides.forEach((slide, i) => {
@@ -74,24 +64,71 @@ function showSlide(index, manual = false) {
   inset.querySelector("img").src = closeupImg(item.scene.id);
   document.getElementById("inset-label").textContent = `${item.scene.name} · close-up`;
   document.getElementById("inset-badge").textContent = item.inset;
-  if (manual) restartCarousel();
 }
+
+function runMove(move) {
+  const index = move.type === "step" ? currentSlide + move.value : move.value;
+  let slot;
+  if (index >= featured.length) {
+    slot = featured.length + 1;
+    pendingSnap = 1;
+    paintSlide(0, slot);
+  } else if (index < 0) {
+    slot = 0;
+    pendingSnap = featured.length;
+    paintSlide(featured.length - 1, slot);
+  } else {
+    slot = index + 1;
+    pendingSnap = null;
+    if (index === currentSlide) return;
+    paintSlide(index, slot);
+  }
+  transitionBusy = true;
+  clearTimeout(transitionTimer);
+  transitionTimer = setTimeout(finishMove, 950);
+  if (reducedMotion()) finishMove();
+}
+
+function queueMove(move, manual = false) {
+  if (manual) restartCarousel();
+  if (transitionBusy) {
+    moveQueue.push(move);
+    return;
+  }
+  runMove(move);
+}
+
+function finishMove() {
+  if (!transitionBusy) return;
+  clearTimeout(transitionTimer);
+  if (pendingSnap != null) {
+    const snapSlot = pendingSnap;
+    pendingSnap = null;
+    track.classList.add("no-transition");
+    void track.offsetWidth;
+    track.style.transform = `translateX(-${snapSlot * 100}%)`;
+    void track.offsetWidth;
+    track.classList.remove("no-transition");
+  }
+  transitionBusy = false;
+  const next = moveQueue.shift();
+  if (next) requestAnimationFrame(() => runMove(next));
+}
+
 track.addEventListener("transitionend", (event) => {
-  if (event.target !== track || pendingSnap == null) return;
-  const snapSlot = pendingSnap;
-  pendingSnap = null;
-  track.classList.add("no-transition");
-  track.style.transform = `translateX(-${snapSlot * 100}%)`;
-  requestAnimationFrame(() => requestAnimationFrame(() => track.classList.remove("no-transition")));
+  if (event.target === track && event.propertyName === "transform") finishMove();
+});
+track.addEventListener("transitioncancel", (event) => {
+  if (event.target === track && event.propertyName === "transform") finishMove();
 });
 function startCarousel() {
   if (userPaused || reducedMotion()) return;
   clearInterval(carouselTimer);
-  carouselTimer = setInterval(() => showSlide(currentSlide + 1), 6500);
+  carouselTimer = setInterval(() => queueMove({ type: "step", value: 1 }), 6500);
 }
 function restartCarousel() { clearInterval(carouselTimer); startCarousel(); }
-document.getElementById("hero-prev").addEventListener("click", () => showSlide(currentSlide - 1, true));
-document.getElementById("hero-next").addEventListener("click", () => showSlide(currentSlide + 1, true));
+document.getElementById("hero-prev").addEventListener("click", () => queueMove({ type: "step", value: -1 }, true));
+document.getElementById("hero-next").addEventListener("click", () => queueMove({ type: "step", value: 1 }, true));
 const pause = document.getElementById("hero-pause");
 pause.addEventListener("click", () => {
   userPaused = !userPaused;
@@ -104,13 +141,13 @@ hero.addEventListener("pointerdown", (e) => { if (!e.target.closest("a,button"))
 hero.addEventListener("pointerup", (e) => {
   if (touchX == null) return;
   const delta = e.clientX - touchX; touchX = null;
-  if (Math.abs(delta) > 45) showSlide(currentSlide + (delta < 0 ? 1 : -1), true);
+  if (Math.abs(delta) > 45) queueMove({ type: "step", value: delta < 0 ? 1 : -1 }, true);
 });
 hero.addEventListener("mouseenter", () => clearInterval(carouselTimer));
 hero.addEventListener("mouseleave", startCarousel);
 document.addEventListener("visibilitychange", () => document.hidden ? clearInterval(carouselTimer) : startCarousel());
 track.classList.add("no-transition");
-showSlide(0);
+paintSlide(0, 1);
 requestAnimationFrame(() => requestAnimationFrame(() => track.classList.remove("no-transition")));
 if (!reducedMotion()) { hero.classList.add("drift"); startCarousel(); }
 

@@ -1,4 +1,4 @@
-import { manifest, sceneData, el, img, reducedMotion, SHORT_TITLE, siteUrl, mountThemeToggle } from "./common.js";
+import { manifest, sceneData, el, img, reducedMotion, SHORT_TITLE, siteUrl, mountThemeToggle } from "./common.js?v=20260923-ui-6";
 
 const params = new URLSearchParams(location.search);
 const id = params.get("id") || "lab060";

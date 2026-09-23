@@ -1,4 +1,4 @@
-import { manifest, mountTopbar, mountFooter, el, fmt, siteUrl } from "./common.js";
+import { manifest, mountTopbar, mountFooter, el, fmt, siteUrl } from "./common.js?v=20260923-ui-6";
 
 const m = await manifest();
 mountTopbar(document.getElementById("topbar"), m);
