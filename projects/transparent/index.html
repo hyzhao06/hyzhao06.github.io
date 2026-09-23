@@ -13,17 +13,29 @@
 <header class="topbar" id="topbar"></header>
 
 <section class="hero" id="hero">
-  <img class="hero-img" id="hero-img" src="media/hero/hero.webp" alt="Laboratory scene: a volumetric flask on a bench with multilevel shelves behind it">
+  <div class="hero-track" id="hero-track">
+    <div class="hero-slide is-active"><img class="hero-img" id="hero-img" src="media/hero/hero.webp" alt="Laboratory scene: a volumetric flask on a bench with multilevel shelves behind it"></div>
+  </div>
   <div class="hero-copy">
     <p class="hero-kicker">Nine laboratory scenes · Synthetic stereo data</p>
     <h1>Retrieval-Augmented <b>Transparent Object Perception</b> for Autonomous Laboratories</h1>
     <p class="hero-stats mono" id="hero-stats"></p>
-    <a class="hero-cta" href="#scenes">Explore nine scenes <span aria-hidden="true">→</span></a>
+    <div class="hero-actions">
+      <a class="hero-cta" href="#scenes">Explore nine scenes <span aria-hidden="true">→</span></a>
+      <a class="hero-cta hero-cta-secondary" href="equipment.html">Explore equipment <span aria-hidden="true">→</span></a>
+    </div>
   </div>
   <a class="hero-inset" id="hero-inset" href="#">
     <img src="media/hero/hero_inset.webp" alt="Close-up of a conical flask in the same scene">
     <span class="cap"><span id="inset-label"></span><span id="inset-badge" class="mono"></span></span>
   </a>
+  <button class="hero-nav hero-prev" id="hero-prev" type="button" aria-label="Previous featured scene">‹</button>
+  <button class="hero-nav hero-next" id="hero-next" type="button" aria-label="Next featured scene">›</button>
+  <div class="hero-pagination" id="hero-pagination" aria-label="Featured scenes">
+    <span class="hero-slide-label mono" id="hero-slide-label"></span>
+    <span class="hero-dots" id="hero-dots"></span>
+    <button class="hero-pause" id="hero-pause" type="button" aria-label="Pause carousel">Ⅱ</button>
+  </div>
   <a class="scroll-hint" href="#scenes" aria-label="Scroll to scenes"><span></span></a>
 </section>
 

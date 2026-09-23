@@ -11,9 +11,76 @@ document.getElementById("hero-stats").textContent =
 document.getElementById("inset-label").textContent = `${heroScene.name} · close-up`;
 document.getElementById("inset-badge").textContent = m.hero.inset_source === "preview" ? "preview" : m.hero.inset_frame;
 const inset = document.getElementById("hero-inset");
-inset.href = siteUrl(`scene.html?id=${m.hero.scene}&frame=${m.hero.inset_frame}`);
 inset.addEventListener("click", (e) => { e.preventDefault(); expandInto(inset.querySelector("img"), inset.href); });
-if (!reducedMotion()) document.getElementById("hero").classList.add("drift");
+const hero = document.getElementById("hero");
+const track = document.getElementById("hero-track");
+const featured = [
+  { scene: heroScene, frame: m.hero.frame, inset: m.hero.inset_frame, src: siteUrl("media/hero/hero.webp"), position: "50% 46%" },
+  ...["lab056", "lab088", "lab018", "navigation"].map((id) => {
+    const scene = m.scenes.find((s) => s.id === id);
+    return { scene, frame: scene.cover.frame, inset: scene.closeup.frame, src: img("rgb", id, scene.cover.frame), position: "50% 50%" };
+  }),
+];
+const slides = featured.map((item, i) => {
+  const slide = i === 0 ? track.firstElementChild : el("div", { class: "hero-slide" },
+    el("img", { class: "hero-img", src: item.src, alt: `${item.scene.name} laboratory scene, frame ${item.frame}`, decoding: "async" }));
+  slide.classList.toggle("is-active", i === 0);
+  slide.querySelector("img").style.objectPosition = item.position;
+  if (i) track.append(slide);
+  return slide;
+});
+const dotsHost = document.getElementById("hero-dots");
+let currentSlide = 0;
+let userPaused = reducedMotion();
+let carouselTimer = null;
+const dots = featured.map((item, i) => el("button", {
+  type: "button", "aria-label": `Show ${item.scene.name}`, onclick: () => showSlide(i, true),
+}));
+dotsHost.append(...dots);
+
+function showSlide(index, manual = false) {
+  currentSlide = (index + featured.length) % featured.length;
+  const item = featured[currentSlide];
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("is-active", i === currentSlide);
+    slide.setAttribute("aria-hidden", String(i !== currentSlide));
+  });
+  dots.forEach((dot, i) => dot.setAttribute("aria-current", String(i === currentSlide)));
+  document.getElementById("hero-slide-label").textContent = `${String(currentSlide + 1).padStart(2, "0")} / ${String(featured.length).padStart(2, "0")} · ${item.scene.name}`;
+  inset.href = siteUrl(`scene.html?id=${item.scene.id}&frame=${item.inset}`);
+  inset.querySelector("img").src = closeupImg(item.scene.id);
+  document.getElementById("inset-label").textContent = `${item.scene.name} · close-up`;
+  document.getElementById("inset-badge").textContent = item.inset;
+  if (manual) restartCarousel();
+}
+function startCarousel() {
+  if (userPaused || reducedMotion()) return;
+  clearInterval(carouselTimer);
+  carouselTimer = setInterval(() => showSlide(currentSlide + 1), 6500);
+}
+function restartCarousel() { clearInterval(carouselTimer); startCarousel(); }
+document.getElementById("hero-prev").addEventListener("click", () => showSlide(currentSlide - 1, true));
+document.getElementById("hero-next").addEventListener("click", () => showSlide(currentSlide + 1, true));
+const pause = document.getElementById("hero-pause");
+pause.addEventListener("click", () => {
+  userPaused = !userPaused;
+  pause.textContent = userPaused ? "▶" : "Ⅱ";
+  pause.setAttribute("aria-label", userPaused ? "Play carousel" : "Pause carousel");
+  restartCarousel();
+});
+let touchX = null;
+hero.addEventListener("pointerdown", (e) => { if (!e.target.closest("a,button")) touchX = e.clientX; });
+hero.addEventListener("pointerup", (e) => {
+  if (touchX == null) return;
+  const delta = e.clientX - touchX; touchX = null;
+  if (Math.abs(delta) > 45) showSlide(currentSlide + (delta < 0 ? 1 : -1), true);
+});
+hero.addEventListener("mouseenter", () => clearInterval(carouselTimer));
+hero.addEventListener("mouseleave", startCarousel);
+document.addEventListener("visibilitychange", () => document.hidden ? clearInterval(carouselTimer) : startCarousel());
+showSlide(0);
+if (!reducedMotion()) { hero.classList.add("drift"); startCarousel(); }
 
 /* ── the 3×3 index ────────────────────────────────────────────────────── */
 const grid = document.getElementById("grid");
