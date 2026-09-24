@@ -3,185 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AudioBench 微调方法与性能数据">
+  <meta name="description" content="AudioBench 病理语音模型微调结果与方法">
   <meta name="theme-color" content="#ffffff">
-  <title>AudioBench · 微调结果</title>
+  <title>AudioBench · 微调实验</title>
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">跳到正文</a>
   <header class="topbar">
-    <a class="brand" href="#data">AudioBench 微调结果</a>
-    <nav class="page-tabs" aria-label="页面">
-      <a href="#data" data-page-link="data">数据结果</a>
-      <a href="#analysis" data-page-link="analysis">方法与分析</a>
+    <a class="brand" href="#results">AudioBench · 病理语音微调</a>
+    <nav class="page-tabs" aria-label="主页面">
+      <a href="#results" data-page-link="results">结果</a>
+      <a href="#methods" data-page-link="methods">方法</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <div class="view-switcher data-switcher" id="data-view-switcher" data-shell="data" role="tablist" aria-label="数据结果视图">
-      <button type="button" data-data-view="overall" class="active">总体对比</button>
-      <button type="button" data-data-view="strata">疾病 / 健康 / 标签</button>
-      <button type="button" data-data-view="single">单独数据集微调</button>
-      <button type="button" data-data-view="layout">数据与划分</button>
-    </div>
-    <div class="view-switcher analysis-switcher" id="analysis-view-switcher" data-shell="analysis" role="tablist" aria-label="方法与分析视图" hidden>
-      <button type="button" data-analysis-view="combined" class="active">组合数据微调方法</button>
-      <button type="button" data-analysis-view="single">单独数据集微调方法</button>
-      <button type="button" data-analysis-view="references">参考文献</button>
-      <button type="button" data-analysis-view="deletion">删除错误增加原因</button>
-    </div>
+    <section class="page" data-page="results" aria-labelledby="results-title">
+      <header class="page-intro">
+        <span>实验结果</span>
+        <h1 id="results-title">微调前后性能比较</h1>
+        <p>所有有前后值的结果都来自同一批样本的交集。表格中的 N 是实际配对样本数；未完成的微调结果保留空位，不按 0 处理。</p>
+      </header>
 
-    <div class="project-map" data-shell="data" aria-label="项目流程位置">
-      <span>原始模型</span><b>→</b><span>组合数据微调</span><b>→</b><strong>结果比较</strong><b>→</b><span>分层分析 / 单数据集实验</span>
-    </div>
-    <div class="project-map" data-shell="analysis" aria-label="项目流程位置" hidden>
-      <span>数据组织</span><b>→</b><strong>微调方法与依据</strong><b>→</b><span>结果解释</span>
-    </div>
+      <div class="primary-switch" id="experiment-tabs" role="tablist" aria-label="实验类型">
+        <button type="button" data-experiment="combined" class="active">联合微调</button>
+        <button type="button" data-experiment="single">单数据集微调</button>
+      </div>
 
-    <section class="page" data-page="data" data-data-view="layout" aria-labelledby="method-title" hidden>
-      <header class="view-intro"><span>项目基础 · 数据定义</span><h1 id="method-title">数据与划分</h1><p>展示四个病理语音数据集如何被组织为训练、验证、疾病测试与健康测试。这是所有微调结果的共同数据基础。</p><dl><div><dt>数据集</dt><dd>CDSD / EasyCall / TORGO / UA-Speech</dd></div><div><dt>单位</dt><dd>说话人与录音</dd></div><div><dt>用途</dt><dd>解释后续结果的样本来源</dd></div><div><dt>当前视图</dt><dd>划分与抽样，不是模型性能</dd></div></dl></header>
-      <table class="data-table headline" id="headline-table">
-        <thead><tr><th>说话人</th><th>清单音频</th><th>训练</th><th>疾病测试</th><th>健康测试</th><th>健康配对</th></tr></thead>
-        <tbody><tr>
-          <td id="heading-speakers"></td><td id="heading-rows"></td><td id="heading-train"></td>
-          <td id="heading-test"></td><td id="heading-control"></td><td id="heading-paired"></td>
-        </tr></tbody>
-      </table>
-
-      <section class="block" aria-labelledby="speaker-title">
-        <div class="section-title">
-          <h2 id="speaker-title">说话人：原始划分 × 本次划分</h2>
-          <div class="text-tabs" id="dataset-filter" role="group" aria-label="数据集"></div>
+      <section class="control-panel" aria-label="结果筛选">
+        <div class="control-row" id="combined-controls">
+          <label>模型<select id="combined-model"></select></label>
+          <p>按模型分组时自动显示全部模型；其他分组使用这里选定的模型。</p>
         </div>
-        <ul class="severity-key" id="severity-key" aria-label="严重程度"></ul>
-        <div class="speaker-layout">
-          <div id="speaker-matrices" class="speaker-matrices" aria-live="polite"></div>
-          <aside class="speaker-detail" id="speaker-detail" aria-live="polite"></aside>
+        <div class="control-row" id="single-controls" hidden>
+          <label>模型<select id="single-model"></select></label>
+          <label>训练数据集<select id="single-train-dataset"></select></label>
+          <button type="button" class="view-button" id="open-single">查看该组合</button>
+          <span class="run-status" id="single-run-status"></span>
         </div>
-      </section>
 
-      <section class="block" aria-labelledby="dataset-title">
-        <h2 id="dataset-title">数据集</h2>
-        <div class="table-scroll"><table class="data-table" id="dataset-table">
-          <thead><tr><th>数据集</th><th>说话人</th><th>音频</th><th>训练</th><th>验证</th><th>疾病测试</th><th>健康测试</th><th>排除</th></tr></thead>
-          <tbody></tbody>
-          <tfoot><tr></tr></tfoot>
-        </table></div>
-      </section>
-
-      <section class="block" aria-labelledby="severity-table-title">
-        <h2 id="severity-table-title">说话人严重程度</h2>
-        <div class="table-scroll"><table class="data-table" id="severity-table">
-          <thead><tr><th>数据集</th></tr></thead>
-          <tbody></tbody>
-        </table></div>
-      </section>
-
-      <section class="block" aria-labelledby="sampling-title">
-        <h2 id="sampling-title">Final 抽样</h2>
-        <div class="table-scroll"><table class="data-table" id="sampling-table">
-          <thead><tr><th>数据集</th><th>Draws</th><th>占比</th></tr></thead>
-          <tbody></tbody>
-          <tfoot><tr><th>合计</th><th id="sampling-total"></th><th>100.0%</th></tr></tfoot>
-        </table></div>
-      </section>
-
-      <section class="block" aria-labelledby="fold-title">
-        <div class="section-title">
-          <h2 id="fold-title">五折验证</h2>
-          <div class="text-tabs" id="fold-model-tabs" role="group" aria-label="模型">
-            <button type="button" data-fold-model="phi4">Phi-4</button>
-            <button type="button" data-fold-model="qwen25">Qwen2.5</button>
-            <button type="button" data-fold-model="whisper">Whisper</button>
+        <div class="control-group">
+          <span class="control-label">分组方式</span>
+          <div class="button-tabs" id="group-tabs" role="tablist" aria-label="分组方式">
+            <button type="button" data-group="cohort" class="active">按疾病 / 健康</button>
+            <button type="button" data-group="label">按标签</button>
+            <button type="button" data-group="model">按模型</button>
+            <button type="button" data-group="dataset">按数据集</button>
+            <button type="button" data-group="severity">按严重程度</button>
           </div>
         </div>
-        <div class="table-scroll"><table class="data-table" id="fold-table">
-          <thead><tr><th>Fold</th><th>训练候选</th><th>Dev</th><th>优化 draws</th><th>总步数</th><th>最佳 checkpoint</th><th>状态</th></tr></thead>
-          <tbody></tbody>
-        </table></div>
-      </section>
 
-      <section class="block" aria-labelledby="recipe-title">
-        <h2 id="recipe-title">Final LoRA 配置</h2>
-        <div class="columns">
-          <div class="table-scroll"><table class="data-table key-value" id="recipe-table"><tbody></tbody></table></div>
-          <div class="table-scroll"><table class="data-table" id="final-table">
-            <thead><tr><th>模型</th><th>总步数</th><th>状态</th></tr></thead>
-            <tbody></tbody>
-          </table></div>
+        <div class="control-group">
+          <span class="control-label">统计指标</span>
+          <div class="button-tabs metrics" id="metric-tabs" role="tablist" aria-label="统计指标">
+            <button type="button" data-metric="wer" class="active">WER</button>
+            <button type="button" data-metric="cer">CER</button>
+            <button type="button" data-metric="ser">SER</button>
+            <button type="button" data-metric="semscore">SemScore</button>
+            <button type="button" data-metric="s_rate">替换 S</button>
+            <button type="button" data-metric="d_rate">删除 D</button>
+            <button type="button" data-metric="i_rate">插入 I</button>
+          </div>
         </div>
       </section>
-    </section>
 
-    <section class="page" data-page="data" data-data-view="overall" aria-labelledby="performance-title">
-      <header class="view-intro"><span>核心结果 · 组合数据微调</span><div class="selector-row">
-        <h1 id="performance-title">组合数据微调前后对比</h1>
-        <button class="download-button" id="download-csv" type="button">下载 CSV</button>
-      </div><p>回答核心问题：把四个训练集组合起来进行 LoRA 微调后，模型在冻结测试集上的识别性能发生了什么变化。</p><dl><div><dt>比较</dt><dd>原始基座 → 组合数据 LoRA</dd></div><div><dt>已完成模型</dt><dd>Qwen2.5 / Phi-4 / Whisper</dd></div><div><dt>测试范围</dt><dd>疾病 52,073；健康配对 13,474</dd></div><div><dt>主要指标</dt><dd>WER / CER / SER / SemScore / S-D-I</dd></div></dl></header>
-
-      <section class="block primary-result" aria-labelledby="all-models-title">
-        <h2 id="all-models-title">主结果：三模型微调前后</h2>
-        <div id="all-models"></div>
-      </section>
-
-      <section class="block" aria-labelledby="detail-title">
-        <div class="section-title">
-          <h2 id="detail-title">单模型详情</h2>
-          <div class="text-tabs" id="model-selector" role="group" aria-label="模型"></div>
+      <section class="result-context" id="result-context" aria-live="polite"></section>
+      <section class="chart-panel" id="result-chart" aria-label="柱状图"></section>
+      <section class="table-panel">
+        <div class="section-heading">
+          <div><span>数值结果</span><h2 id="table-title">微调前后与差值</h2></div>
+          <button type="button" id="download-current">下载当前 CSV</button>
         </div>
-        <div id="cohort-sections"></div>
+        <div class="table-scroll" id="result-table"></div>
       </section>
-      <details class="secondary-results"><summary>查看五模型完整基线覆盖（含 Qwen3 / Step-Audio 占位）</summary><div id="baseline-only-models"></div></details>
+      <div class="scope-note" id="result-note"></div>
     </section>
 
-    <section class="page supplement-page" data-page="data" data-data-view="strata" aria-labelledby="supplement-title" hidden>
-      <header class="view-intro"><span>分层结果 · 组合数据微调</span><h1 id="supplement-title">疾病、健康与标签分层表现</h1><p>回答“改进发生在哪些样本上”。疾病组和健康组使用不同测试队列，必须分开查看；默认先展示论文主任务的疾病组。</p><dl><div><dt>训练方式</dt><dd>组合数据 LoRA</dd></div><div><dt>筛选</dt><dd>疾病 / 健康、模型、标签维度</dd></div><div><dt>比较</dt><dd>微调前 → 微调后</dd></div><div><dt>注意</dt><dd>两类队列不合并计算</dd></div></dl></header>
-      <div class="cohort-switcher view-switcher" id="cohort-switcher" role="tablist" aria-label="疾病健康筛选"><button type="button" data-cohort-view="disease" class="active">疾病组（主任务）</button><button type="button" data-cohort-view="health">健康组（补充）</button></div>
-      <section class="block cohort-block" id="health-block"><div class="section-title"><h2>健康样本</h2><div class="text-tabs" id="health-model-tabs" role="group" aria-label="模型"></div></div>
-        <p class="note">完整健康队列共 21,055 条；“微调前 → 微调后”使用 13,474 条可对齐样本。健康结果不与疾病测试集合并。</p>
-        <div id="health-summary"></div><div id="health-dataset-chart"></div><div id="health-label-section"></div>
-      </section>
-      <section class="block cohort-block" id="disease-block"><div class="section-title"><h2>疾病样本 · 按原生标签</h2><div class="text-tabs" id="disease-model-tabs" role="group" aria-label="模型"></div></div>
-        <p class="note">疾病组使用 52,073 条微调测试样本；CDSD 无可靠原生细标签，按 All samples 展示。WER、CER、SER、SemScore、完全匹配率均同时提供数值和柱状图。</p>
-        <div id="disease-label-section"></div>
-      </section>
-    </section>
+    <section class="page" data-page="methods" aria-labelledby="methods-title" hidden>
+      <header class="page-intro">
+        <span>实验方法</span>
+        <h1 id="methods-title">数据组织与微调配置</h1>
+        <p>联合微调和单数据集微调采用独立的实验入口。下方先说明数据如何组织和训练参数如何固定，页面末尾列出方法依据。</p>
+      </header>
 
-    <section class="page supplement-page" data-page="data" data-data-view="single" aria-labelledby="single-results-title" hidden>
-      <header class="view-intro"><span>补充实验 · 单训练集适配</span><h1 id="single-results-title">单独数据集微调结果</h1><p>回答“只使用某一个数据集进行微调时，模型能否泛化到完整冻结测试集”。每个单元表示一个模型在一个训练数据集上得到的独立 adapter。</p><dl><div><dt>实验规模</dt><dd>4 模型 × 4 训练集</dd></div><div><dt>测试范围</dt><dd>每个 adapter 测试 52,073 条</dd></div><div><dt>已完成</dt><dd>10 / 16 组指标</dd></div><div><dt>未完成</dt><dd>保留“待补”占位</dd></div></dl></header>
-      <div class="selector-strip"><span>模型</span><div class="text-tabs" id="single-model-filter" role="group" aria-label="单数据集模型"></div></div>
-      <div class="view-switcher metric-switcher" id="single-metric-switcher" role="tablist" aria-label="单数据集指标"><button type="button" data-single-metric="wer" class="active">WER</button><button type="button" data-single-metric="cer">CER</button><button type="button" data-single-metric="ser">SER</button><button type="button" data-single-metric="semscore">SemScore</button><button type="button" data-single-metric="s_rate">S</button><button type="button" data-single-metric="d_rate">D</button><button type="button" data-single-metric="i_rate">I</button></div>
-      <section class="block"><h2>4 模型 × 4 训练数据集</h2><p class="note" id="single-dataset-note"></p><div id="single-dataset-chart"></div><div id="single-dataset-section"></div></section>
-    </section>
-
-    <section class="page analysis-page" data-page="analysis" data-analysis-view="combined" aria-labelledby="analysis-title" hidden>
-      <header class="view-intro"><span>方法 · 主实验</span><h1 id="analysis-title">组合数据微调方法</h1><p>说明核心结果采用的训练协议，以及它在“原始模型 → 组合数据适配 → 冻结测试”流程中的位置。</p></header>
-      <div class="analysis-grid">
-        <article class="analysis-card"><span class="eyebrow">研究协议</span><h2>统一组合数据 LoRA</h2><p>从原始基座模型出发，使用 CDSD、EasyCall、TORGO、UA-Speech 的组合训练集进行统一适配；疾病组用于微调，健康组独立评估。</p><dl><dt>模型</dt><dd>Qwen2.5 · Phi-4 · Whisper</dd><dt>适配</dt><dd>LoRA rank 16 / alpha 32 / dropout 0.05</dd><dt>训练</dt><dd>BF16 · 有效 batch 32 · learning rate 1e-4</dd><dt>评测</dt><dd>WER / CER / SER / SemScore / S-D-I</dd></dl></article>
-        <article class="analysis-card"><span class="eyebrow">数据组织</span><h2>固定划分与分层抽样</h2><p>按说话人和录音组隔离训练、验证、疾病测试与健康测试；组合训练使用预先固定的抽样计划，保证跨模型可比较。</p><ul><li>疾病测试：52,073 条</li><li>健康完整队列：21,055 条</li><li>健康前后可配对子集：13,474 条</li><li>所有前后对比均显式记录样本数与覆盖率</li></ul></article>
+      <div class="primary-switch" id="method-tabs" role="tablist" aria-label="方法类型">
+        <button type="button" data-method="combined" class="active">联合微调方法</button>
+        <button type="button" data-method="single">单数据集微调方法</button>
       </div>
-      <div class="analysis-note">该页回答“采用了什么方法、为什么这样组织”；具体指标统一放在“数据结果”页，避免方法说明和数值结果互相挤占。</div>
-    </section>
-    <section class="page analysis-page" data-page="analysis" data-analysis-view="single" aria-labelledby="single-method-title" hidden>
-      <header class="view-intro"><span>方法 · 补充实验</span><h1 id="single-method-title">单独数据集微调方法</h1><p>与组合数据实验并列的泛化实验：每次仅使用一个数据集训练，再统一测试四个数据集。</p></header>
-      <div class="analysis-card"><p>每个模型分别从原始基座权重出发，仅使用一个数据集的训练部分进行 LoRA 微调，再在四个数据集的冻结测试集上评估，形成 4 模型 × 4 训练集 × 4 测试集矩阵。</p><div class="method-flow"><span>原始基座</span><b>→</b><span>单一训练集</span><b>→</b><span>独立 adapter</span><b>→</b><span>四数据集测试</span></div><dl><dt>统一配置</dt><dd>LoRA rank 16 / alpha 32 / dropout 0.05；BF16；有效 batch 32；固定随机种子。</dd><dt>当前状态</dt><dd>已完成的训练集×模型显示真实 WER；尚未完成的单元保留“待补”占位。</dd></dl></div>
-    </section>
-    <section class="page analysis-page" data-page="analysis" data-analysis-view="references" aria-labelledby="references-title" hidden>
-      <header class="view-intro"><span>方法依据</span><h1 id="references-title">微调参考文献</h1><p>这些工作支持 LoRA、病理语音适配与跨数据集测试的实验设计。</p></header>
-      <p class="note">以下是与参数高效微调、病理语音识别和跨数据集泛化直接相关的依据；完整报告保存在项目结果目录。</p>
-      <div class="reference-list"><a href="https://openreview.net/forum?id=nZeVKeeFYf9" target="_blank"><b>Hu et al., LoRA, ICLR 2022</b><span>冻结基座，仅学习低秩更新。</span></a><a href="https://www.isca-archive.org/interspeech_2024/jiang24b_interspeech.html" target="_blank"><b>Jiang et al., Perceiver-Prompt, Interspeech 2024</b><span>中文言语障碍识别中的 Whisper 适配。</span></a><a href="https://www.isca-archive.org/interspeech_2025/tan25b_interspeech.html" target="_blank"><b>Tan et al., CBA-Whisper, Interspeech 2025</b><span>在 UA-Speech / TORGO 等病理语音上的适配。</span></a><a href="https://www.isca-archive.org/interspeech_2025/aboeitta25_interspeech.html" target="_blank"><b>Aboeitta et al., cross-dataset dysarthric ASR, Interspeech 2025</b><span>支持保留跨数据集测试矩阵。</span></a></div>
-    </section>
-    <section class="page analysis-page" data-page="analysis" data-analysis-view="deletion" aria-labelledby="deletion-title" hidden>
-      <header class="view-intro"><span>结果解释 · S/D/I</span><h1 id="deletion-title">为什么微调后删除错误占比增加？</h1><p>结论不是“三个模型都更容易漏词”：输出长度收缩、插入和替换下降更快，会抬高 D 在剩余错误中的占比。</p><dl><div><dt>分析对象</dt><dd>52,073 条疾病测试样本</dd></div><div><dt>模型</dt><dd>Qwen2.5 / Phi-4 / Whisper</dd></div><div><dt>核心区分</dt><dd>D 绝对数 vs. D / 总错误</dd></div><div><dt>主要发现</dt><dd>Whisper 的 D 绝对数实际下降</dd></div></dl></header>
-      <div id="deletion-section"></div>
+      <section id="method-content" aria-live="polite"></section>
+
+      <section class="references-section" aria-labelledby="references-title">
+        <div class="section-heading">
+          <div><span>方法依据</span><h2 id="references-title">参考文献</h2></div>
+          <small id="reference-count"></small>
+        </div>
+        <div class="reference-list" id="reference-list"></div>
+      </section>
     </section>
   </main>
 
-  <footer>AudioBench · 2026-09-24 · 病理语音模型微调结果</footer>
-  <script src="data/site-data.js"></script>
-  <script src="data/supplement-data.js"></script>
+  <footer>AudioBench · 2026-09-24 · 病理语音模型微调实验</footer>
+  <script src="data/result-browser-data.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
