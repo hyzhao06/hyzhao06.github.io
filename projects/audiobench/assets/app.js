@@ -39,7 +39,11 @@
   const RAMP_EDITS = { substitutions: "#2563eb", deletions: "#dc2626", insertions: "#7c3aed" };
 
   const state = {
-    page: "method",
+    page: "data",
+    dataView: "overall",
+    analysisView: "combined",
+    cohortView: "all",
+    singleMetric: "wer",
     dataset: "ALL",
     selectedSpeaker: null,
     foldModel: "phi4",
@@ -70,21 +74,50 @@
   /* ---------- navigation ---------- */
 
   function setPage(page) {
-    const valid = ["method", "performance", "supplements", "progress"].includes(page) ? page : "method";
+    const valid = ["data", "analysis"].includes(page) ? page : "data";
     state.page = valid;
-    $$("[data-page]").forEach((section) => { section.hidden = section.dataset.page !== valid; });
+    $$("[data-page]").forEach((section) => {
+      const pageMatch = section.dataset.page === valid;
+      const viewMatch = valid !== "data" || !section.dataset.dataView || section.dataset.dataView === state.dataView;
+      const analysisMatch = valid !== "analysis" || !section.dataset.analysisView || section.dataset.analysisView === state.analysisView;
+      section.hidden = !(pageMatch && viewMatch && analysisMatch);
+    });
+    $$('[data-shell]').forEach((shell) => { shell.hidden = shell.dataset.shell !== valid; });
     $$("[data-page-link]").forEach((link) => {
       const active = link.dataset.pageLink === valid;
       link.classList.toggle("active", active);
       if (active) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
     });
-    const pageTitles = { method: "数据与划分", performance: "微调前后", supplements: "补充统计", progress: "任务进度" };
+    const pageTitles = { data: "数据结果", analysis: "方法与分析" };
     document.title = `AudioBench · ${pageTitles[valid]}`;
+  }
+
+  function setDataView(view) {
+    state.dataView = ["overall", "strata", "single", "layout"].includes(view) ? view : "overall";
+    $$('[data-data-view]', $("#data-view-switcher")).forEach((button) => button.classList.toggle("active", button.dataset.dataView === state.dataView));
+    setPage("data");
+  }
+
+  function setAnalysisView(view) {
+    state.analysisView = ["combined", "single", "references", "deletion"].includes(view) ? view : "combined";
+    $$('[data-analysis-view]', $("#analysis-view-switcher")).forEach((button) => button.classList.toggle("active", button.dataset.analysisView === state.analysisView));
+    setPage("analysis");
+  }
+
+  function setCohortView(view) {
+    state.cohortView = ["all", "disease", "health"].includes(view) ? view : "all";
+    $$('[data-cohort-view]').forEach((button) => button.classList.toggle("active", button.dataset.cohortView === state.cohortView));
+    $("#health-block").hidden = !["all", "health"].includes(state.cohortView);
+    $("#disease-block").hidden = !["all", "disease"].includes(state.cohortView);
   }
 
   function initNavigation() {
     window.addEventListener("hashchange", () => setPage(location.hash.slice(1)));
-    setPage(location.hash.slice(1) || "method");
+    $$('[data-data-view]', $("#data-view-switcher")).forEach((button) => { button.onclick = () => setDataView(button.dataset.dataView); });
+    $$('[data-analysis-view]', $("#analysis-view-switcher")).forEach((button) => { button.onclick = () => setAnalysisView(button.dataset.analysisView); });
+    $$('[data-cohort-view]').forEach((button) => { button.onclick = () => setCohortView(button.dataset.cohortView); });
+    setPage(location.hash.slice(1) || "data");
+    setCohortView("all");
   }
 
   /* ---------- method page ---------- */
@@ -628,8 +661,25 @@
     renderAllModels();
   }
 
+  function renderBaselineOnlyModels() {
+    const root = $("#baseline-only-models");
+    if (!root || !window.SUPPLEMENT_DATA?.baseline) return;
+    const modelNames = { qwen25: "Qwen2.5", qwen3: "Qwen3", phi4: "Phi-4", whisper: "Whisper", step_audio: "Step-Audio" };
+    const datasets = ["CDSD", "EasyCall", "TORGO", "UASpeech"];
+    const rows = ["qwen25", "qwen3", "phi4", "whisper", "step_audio"].map((model) => {
+      const cells = datasets.map((dataset) => {
+        const item = window.SUPPLEMENT_DATA.baseline.find((row) => row.model === model && row.dataset === dataset);
+        const hasCombined = ["qwen25", "phi4", "whisper"].includes(model);
+        return `<td><b>${metricValue(item?.wer, "percent")}</b><small>基线</small><em>${hasCombined ? "组合微调后见下方" : "组合微调后：待补"}</em></td>`;
+      }).join("");
+      return `<tr><th>${modelNames[model]}</th>${cells}</tr>`;
+    }).join("");
+    root.innerHTML = `<div class="table-scroll"><table class="data-table baseline-matrix"><thead><tr><th>模型 \\ 数据集</th>${datasets.map((dataset) => `<th>${dataset}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
   function initPerformance() {
     $("#download-csv").onclick = downloadCsv;
+    renderBaselineOnlyModels();
     renderPerformance();
   }
 
@@ -642,11 +692,7 @@
   const supInt = (v) => v == null ? "—" : new Intl.NumberFormat("zh-CN").format(v);
   const supBar = (value, max, cls = "after") => value == null ? "<span class=\"empty-bar\">待补</span>" : `<span class="sup-bar ${cls}" style="width:${Math.max(1, Math.min(100, Number(value) / max * 100))}%"></span>`;
   const supCompareChart = (title, rows, key, format = "percent") => {
-    const usable = rows.filter((r) => r.before != null || r.after != null);
-    if (!usable.length) return "";
-    const max = Math.max(...usable.flatMap((r) => [Number(r.before) || 0, Number(r.after) || 0]), 0.0001);
-    return `<figure class="sup-chart"><figcaption>${escapeHtml(title)}</figcaption><div class="sup-legend"><span><i class="before"></i>微调前</span><span><i class="after"></i>微调后</span></div>`
-      + usable.map((r) => `<div class="sup-chart-row"><strong>${escapeHtml(r.label)}</strong><div class="sup-bars"><div>${supBar(r.before, max, "before")}<small>${metricValue(r.before, format)}</small></div><div>${supBar(r.after, max, "after")}<small>${metricValue(r.after, format)}</small></div></div></div>`).join("") + `</figure>`;
+    return groupedColumnChart(title, rows, format);
   };
 
   const supMetricTable = (rows, names = ["WER", "CER", "SER", "SemScore", "完全匹配率"]) => `<div class="table-scroll"><table class="data-table compact"><thead><tr><th>标签 / 范围</th><th>N</th>${names.map((n) => `<th>${n}（前 → 后）</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr><td>${escapeHtml(r.label)}</td><td>${supInt(r.n)}</td><td>${supFmt(r.wer_before)} → ${supFmt(r.wer_after)}</td><td>${supFmt(r.cer_before)} → ${supFmt(r.cer_after)}</td><td>${supFmt(r.ser_before)} → ${supFmt(r.ser_after)}</td><td>${supFmt(r.sem_before, "score")} → ${supFmt(r.sem_after, "score")}</td>${r.exact_before === undefined ? "" : `<td>${supFmt(r.exact_before)} → ${supFmt(r.exact_after)}</td>`}</tr>`).join("")}</tbody></table></div>`;
@@ -692,15 +738,17 @@
 
   function renderSingleDatasetSupplement() {
     const s = supplement.single_dataset; $("#single-dataset-note").textContent = `${s.note} 当前 adapter ${s.adapter_complete}/${s.expected}，完整预测 ${s.prediction_complete}/${s.expected}，指标 ${s.metric_complete}/${s.expected}。`;
-    const byModel = ["qwen25", "whisper", "phi4", "step_audio"].map((model) => `<tr><th>${supModelLabels[model]}</th>${["cdsd", "easycall", "torgo", "uaspeech"].map((ds) => { const c = s.cells.find((x) => x.model === model && x.train_dataset === ds); return `<td class="status-cell ${c.metric_status}"><b>${c.metric_status === "complete" ? `${supFmt(c.wer)}` : "待补"}</b><small>${c.status}</small></td>`; }).join("")}</tr>`).join("");
+    $$('[data-single-metric]').forEach((button) => { button.classList.toggle("active", button.dataset.singleMetric === state.singleMetric); button.onclick = () => { state.singleMetric = button.dataset.singleMetric; renderSingleDatasetSupplement(); }; });
+    const metric = state.singleMetric;
+    const format = metric === "semscore" ? "score" : "percent";
+    const metricLabel = { wer: "WER", cer: "CER", ser: "SER", semscore: "SemScore", s_rate: "S / 参考词", d_rate: "D / 参考词", i_rate: "I / 参考词" }[metric];
+    const chartRows = ["qwen25", "whisper", "phi4", "step_audio"].flatMap((model) => ["cdsd", "easycall", "torgo", "uaspeech"].map((ds) => { const c = s.cells.find((x) => x.model === model && x.train_dataset === ds); return { label: `${supModelLabels[model]} ${supDatasetLabels[ds]}`, before: null, after: c?.[metric] }; }));
+    $("#single-dataset-chart").innerHTML = groupedColumnChart(`单数据集微调 ${metricLabel}（已完成组合）`, chartRows, format);
+    const byModel = ["qwen25", "whisper", "phi4", "step_audio"].map((model) => `<tr><th>${supModelLabels[model]}</th>${["cdsd", "easycall", "torgo", "uaspeech"].map((ds) => { const c = s.cells.find((x) => x.model === model && x.train_dataset === ds); return `<td class="status-cell ${c.metric_status}"><b>${c.metric_status === "complete" ? metricValue(c[metric], format) : "待补"}</b><small>${c.status}</small></td>`; }).join("")}</tr>`).join("");
     $("#single-dataset-section").innerHTML = `<div class="matrix-key"><span class="complete">指标已完成</span><span class="pending">占位</span></div><div class="table-scroll"><table class="data-table single-matrix"><thead><tr><th>模型 \\ 训练集</th><th>CDSD</th><th>EasyCall</th><th>TORGO</th><th>UA-Speech</th></tr></thead><tbody>${byModel}</tbody></table></div>`;
   }
 
-  function renderTaskProgress() {
-    $("#task-progress").innerHTML = `<div class="task-grid">${supplement.tasks.map((t) => `<article class="task-card ${t.status}"><header><span>任务 ${t.id}</span><b>${t.label}</b></header><h2>${escapeHtml(t.title)}</h2><p>${escapeHtml(t.detail)}</p></article>`).join("")}</div>`;
-  }
-
-  function renderSupplements() { renderHealthSupplement(); renderDiseaseSupplement(); renderDeletionSupplement(); renderSingleDatasetSupplement(); renderTaskProgress(); }
+  function renderSupplements() { renderHealthSupplement(); renderDiseaseSupplement(); renderDeletionSupplement(); renderSingleDatasetSupplement(); }
 
   renderSupplements();
 

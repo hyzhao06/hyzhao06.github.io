@@ -3100,6 +3100,9 @@ window.SUPPLEMENT_DATA = {
         "cer": null,
         "ser": null,
         "semscore": null,
+        "s_rate": null,
+        "d_rate": null,
+        "i_rate": null,
         "training_status": "训练完成"
       },
       {
@@ -3112,6 +3115,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 0.6484511803089218,
         "ser": 0.7697271138593897,
         "semscore": 0.8832745532111979,
+        "s_rate": 0.5234159970124894,
+        "d_rate": 0.20316454820818522,
+        "i_rate": 0.08393383217382885,
         "training_status": "训练完成"
       },
       {
@@ -3124,6 +3130,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 0.9583254684791163,
         "ser": 0.7541912315403376,
         "semscore": 0.8709151089194871,
+        "s_rate": 0.5829241642577557,
+        "d_rate": 0.11695550545635607,
+        "i_rate": 0.13387090081741607,
         "training_status": "训练完成"
       },
       {
@@ -3136,6 +3145,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 0.8154367970635297,
         "ser": 0.6762429666045744,
         "semscore": 0.8793651446995698,
+        "s_rate": 0.3833072848231698,
+        "d_rate": 0.31751981300396953,
+        "i_rate": 0.057710128490615624,
         "training_status": "训练完成"
       },
       {
@@ -3148,6 +3160,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 1.193283753292349,
         "ser": 0.874675935705644,
         "semscore": 0.8670624148689315,
+        "s_rate": 0.7185101174257618,
+        "d_rate": 0.04499246206829781,
+        "i_rate": 0.7265874607543464,
         "training_status": "训练状态待确认"
       },
       {
@@ -3160,6 +3175,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 1.9889127335135717,
         "ser": 0.8782670481823593,
         "semscore": 0.8243043628985324,
+        "s_rate": 0.49213012268156736,
+        "d_rate": 0.4260660295154977,
+        "i_rate": 1.5404558719796406,
         "training_status": "训练状态待确认"
       },
       {
@@ -3172,6 +3190,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 2.223583527655731,
         "ser": 0.8218462542968525,
         "semscore": 0.8357932066428889,
+        "s_rate": 0.7356606409316607,
+        "d_rate": 0.13469384932435235,
+        "i_rate": 0.6889738731137882,
         "training_status": "训练状态待确认"
       },
       {
@@ -3184,6 +3205,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 1.6167052407516573,
         "ser": 0.7417663664471031,
         "semscore": 0.8506044154126151,
+        "s_rate": 0.4293716546105863,
+        "d_rate": 0.4185765065490104,
+        "i_rate": 0.06928673185709741,
         "training_status": "训练状态待确认"
       },
       {
@@ -3196,6 +3220,9 @@ window.SUPPLEMENT_DATA = {
         "cer": null,
         "ser": null,
         "semscore": null,
+        "s_rate": null,
+        "d_rate": null,
+        "i_rate": null,
         "training_status": "训练状态待确认"
       },
       {
@@ -3208,6 +3235,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 0.6502632427205329,
         "ser": 0.8188888675513222,
         "semscore": 0.8747163464678139,
+        "s_rate": 0.5554764111146457,
+        "d_rate": 0.157196995892173,
+        "i_rate": 0.09335278903472981,
         "training_status": "训练状态待确认"
       },
       {
@@ -3220,6 +3250,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 1.8246974814074846,
         "ser": 0.8628847963435946,
         "semscore": 0.8255487610600921,
+        "s_rate": 0.7529494751109943,
+        "d_rate": 0.18074438804442539,
+        "i_rate": 0.2199278018284671,
         "training_status": "训练状态待确认"
       },
       {
@@ -3232,6 +3265,9 @@ window.SUPPLEMENT_DATA = {
         "cer": 0.9528370102131787,
         "ser": 0.7575903059166939,
         "semscore": 0.8370917199968506,
+        "s_rate": 0.27559784788592134,
+        "d_rate": 0.6309317990069294,
+        "i_rate": 0.0006984689008450782,
         "training_status": "训练状态待确认"
       },
       {
@@ -3244,6 +3280,9 @@ window.SUPPLEMENT_DATA = {
         "cer": null,
         "ser": null,
         "semscore": null,
+        "s_rate": null,
+        "d_rate": null,
+        "i_rate": null,
         "training_status": "训练状态待确认"
       },
       {
@@ -3256,6 +3295,9 @@ window.SUPPLEMENT_DATA = {
         "cer": null,
         "ser": null,
         "semscore": null,
+        "s_rate": null,
+        "d_rate": null,
+        "i_rate": null,
         "training_status": "训练状态待确认"
       },
       {
@@ -3268,6 +3310,9 @@ window.SUPPLEMENT_DATA = {
         "cer": null,
         "ser": null,
         "semscore": null,
+        "s_rate": null,
+        "d_rate": null,
+        "i_rate": null,
         "training_status": "训练/回收完成"
       },
       {
@@ -3280,11 +3325,276 @@ window.SUPPLEMENT_DATA = {
         "cer": null,
         "ser": null,
         "semscore": null,
+        "s_rate": null,
+        "d_rate": null,
+        "i_rate": null,
         "training_status": "训练/回收完成"
       }
     ],
     "note": "单数据集微调按训练数据集 × 模型展示；未完成单元保留占位，最终 4×4×4 指标矩阵待所有 adapter 和预测收口后生成。"
   },
+  "baseline": [
+    {
+      "model": "phi4",
+      "model_name": "Phi-4-multimodal-instruct",
+      "dataset": "CDSD",
+      "n": 147854,
+      "wer": 0.8187879460763976,
+      "cer": 0.6871204485249919,
+      "ser": 0.8199169450944851,
+      "semscore": 0.8904555150185982,
+      "s": 263433,
+      "d": 26377,
+      "i": 130550
+    },
+    {
+      "model": "phi4",
+      "model_name": "Phi-4-multimodal-instruct",
+      "dataset": "EasyCall",
+      "n": 5213,
+      "wer": 1.154439681567667,
+      "cer": 0.7225553655315741,
+      "ser": 0.6430078649530021,
+      "semscore": 0.898266251316323,
+      "s": 3812,
+      "d": 586,
+      "i": 5028
+    },
+    {
+      "model": "phi4",
+      "model_name": "Phi-4-multimodal-instruct",
+      "dataset": "TORGO",
+      "n": 16552,
+      "wer": 0.3525186745834131,
+      "cer": 0.20173392384924646,
+      "ser": 0.38943934267762204,
+      "semscore": 0.9474083153254574,
+      "s": 8099,
+      "d": 414,
+      "i": 6211
+    },
+    {
+      "model": "phi4",
+      "model_name": "Phi-4-multimodal-instruct",
+      "dataset": "UASpeech",
+      "n": 47908,
+      "wer": 0.8963631844917571,
+      "cer": 0.5829118821864911,
+      "ser": 0.4895424563747182,
+      "semscore": 0.9192860352183817,
+      "s": 23365,
+      "d": 192,
+      "i": 19723
+    },
+    {
+      "model": "qwen25",
+      "model_name": "Qwen2.5-Omni-7B",
+      "dataset": "CDSD",
+      "n": 147854,
+      "wer": 0.7543051814107321,
+      "cer": 0.6249568594108196,
+      "ser": 0.7773749780188565,
+      "semscore": 0.8984908259295342,
+      "s": 250195,
+      "d": 33348,
+      "i": 103712
+    },
+    {
+      "model": "qwen25",
+      "model_name": "Qwen2.5-Omni-7B",
+      "dataset": "EasyCall",
+      "n": 5213,
+      "wer": 1.4638089406001225,
+      "cer": 0.7821314917844695,
+      "ser": 0.6855937080375983,
+      "semscore": 0.8937028105648149,
+      "s": 4392,
+      "d": 539,
+      "i": 7021
+    },
+    {
+      "model": "qwen25",
+      "model_name": "Qwen2.5-Omni-7B",
+      "dataset": "TORGO",
+      "n": 16552,
+      "wer": 0.272648917831833,
+      "cer": 0.17582718809795111,
+      "ser": 0.35760028999516674,
+      "semscore": 0.9513948915545176,
+      "s": 7449,
+      "d": 1211,
+      "i": 2728
+    },
+    {
+      "model": "qwen25",
+      "model_name": "Qwen2.5-Omni-7B",
+      "dataset": "UASpeech",
+      "n": 47908,
+      "wer": 0.7099039019136774,
+      "cer": 0.43568798805606146,
+      "ser": 0.4109334557902647,
+      "semscore": 0.9361780142994629,
+      "s": 19649,
+      "d": 204,
+      "i": 14424
+    },
+    {
+      "model": "qwen3",
+      "model_name": "Qwen3-Omni-30B-A3B-Instruct",
+      "dataset": "CDSD",
+      "n": 147854,
+      "wer": 0.8437804956436882,
+      "cer": 0.6892826205708042,
+      "ser": 0.7911791361748752,
+      "semscore": 0.8917670083364917,
+      "s": 259081,
+      "d": 35778,
+      "i": 138332
+    },
+    {
+      "model": "qwen3",
+      "model_name": "Qwen3-Omni-30B-A3B-Instruct",
+      "dataset": "EasyCall",
+      "n": 5213,
+      "wer": 0.8236374770361298,
+      "cer": 0.48039746281904183,
+      "ser": 0.5486284289276808,
+      "semscore": 0.9178215438839846,
+      "s": 3295,
+      "d": 546,
+      "i": 2884
+    },
+    {
+      "model": "qwen3",
+      "model_name": "Qwen3-Omni-30B-A3B-Instruct",
+      "dataset": "TORGO",
+      "n": 16552,
+      "wer": 0.23606588776096532,
+      "cer": 0.16201384559155504,
+      "ser": 0.31978008699855004,
+      "semscore": 0.9572963247470893,
+      "s": 6902,
+      "d": 542,
+      "i": 2416
+    },
+    {
+      "model": "qwen3",
+      "model_name": "Qwen3-Omni-30B-A3B-Instruct",
+      "dataset": "UASpeech",
+      "n": 47908,
+      "wer": 1.6309336426145307,
+      "cer": 1.1875346866670315,
+      "ser": 0.42544042748601485,
+      "semscore": 0.9159574244671217,
+      "s": 20044,
+      "d": 162,
+      "i": 58542
+    },
+    {
+      "model": "step_audio",
+      "model_name": "Step-Audio-R1.1",
+      "dataset": "CDSD",
+      "n": 147854,
+      "wer": 1.9797601447623945,
+      "cer": 2.9397403107950897,
+      "ser": 0.8429396566883547,
+      "semscore": 0.8720976337853983,
+      "s": 277427,
+      "d": 26909,
+      "i": 712059
+    },
+    {
+      "model": "step_audio",
+      "model_name": "Step-Audio-R1.1",
+      "dataset": "EasyCall",
+      "n": 5213,
+      "wer": 2.18677281077771,
+      "cer": 1.5105318987725413,
+      "ser": 0.8831766737003645,
+      "semscore": 0.8402446914880856,
+      "s": 6172,
+      "d": 456,
+      "i": 11227
+    },
+    {
+      "model": "step_audio",
+      "model_name": "Step-Audio-R1.1",
+      "dataset": "TORGO",
+      "n": 16552,
+      "wer": 1.1191582072399924,
+      "cer": 1.1215896631049385,
+      "ser": 0.49105848235862737,
+      "semscore": 0.9303092347604748,
+      "s": 7721,
+      "d": 320,
+      "i": 38704
+    },
+    {
+      "model": "step_audio",
+      "model_name": "Step-Audio-R1.1",
+      "dataset": "UASpeech",
+      "n": 47908,
+      "wer": 3.0263648413553144,
+      "cer": 2.605173882796195,
+      "ser": 0.5742255990648744,
+      "semscore": 0.907549414328047,
+      "s": 20946,
+      "d": 180,
+      "i": 124999
+    },
+    {
+      "model": "whisper",
+      "model_name": "Whisper-large-v3-turbo",
+      "dataset": "CDSD",
+      "n": 147854,
+      "wer": 1.5839619940279668,
+      "cer": 1.2989271421159574,
+      "ser": 0.9295724160320316,
+      "semscore": 0.8740147492109384,
+      "s": 337097,
+      "d": 31547,
+      "i": 444551
+    },
+    {
+      "model": "whisper",
+      "model_name": "Whisper-large-v3-turbo",
+      "dataset": "EasyCall",
+      "n": 5213,
+      "wer": 1.1538273116962645,
+      "cer": 0.5741779057432944,
+      "ser": 0.7024745827738347,
+      "semscore": 0.8992356738590495,
+      "s": 4663,
+      "d": 506,
+      "i": 4252
+    },
+    {
+      "model": "whisper",
+      "model_name": "Whisper-large-v3-turbo",
+      "dataset": "TORGO",
+      "n": 16552,
+      "wer": 0.33195269105535335,
+      "cer": 0.17593468492679465,
+      "ser": 0.34775253745770907,
+      "semscore": 0.9545865351628601,
+      "s": 7018,
+      "d": 348,
+      "i": 6499
+    },
+    {
+      "model": "whisper",
+      "model_name": "Whisper-large-v3-turbo",
+      "dataset": "UASpeech",
+      "n": 47908,
+      "wer": 0.9203877060724049,
+      "cer": 0.5383996060376297,
+      "ser": 0.4270059280287217,
+      "semscore": 0.9339970713569175,
+      "s": 20289,
+      "d": 238,
+      "i": 23913
+    }
+  ],
   "tasks": [
     {
       "id": 1,
