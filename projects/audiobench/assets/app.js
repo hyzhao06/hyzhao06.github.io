@@ -32,11 +32,11 @@
   const metricOrder = ["wer", "cer", "ser", "semscore", "exact_match_rate", "repetition_rate", "empty_output_rate", "deviation_rate"];
   const editLabels = { substitutions: "替换 S", deletions: "删除 D", insertions: "插入 I" };
 
-  // Two monochrome ordinal ramps, both validated as ordinal ramps against the
-  // page surface: before→after is an ordered pair, S/D/I is one composition.
-  const RAMP_PHASE = { before: "#8f8f8f", after: "#1a1a1a" };
+  // Standard, high-contrast semantic colors: blue = baseline, orange = adapted.
+  // The edit composition uses a color-blind-friendly blue / vermillion / purple set.
+  const RAMP_PHASE = { before: "#2563eb", after: "#f97316" };
   const SHORT_MODEL_LABELS = { phi4: "Phi-4", qwen25: "Qwen2.5", whisper: "Whisper" };
-  const RAMP_EDITS = { substitutions: "#a8a8a8", deletions: "#6b6b6b", insertions: "#1a1a1a" };
+  const RAMP_EDITS = { substitutions: "#2563eb", deletions: "#dc2626", insertions: "#7c3aed" };
 
   const state = {
     page: "method",
@@ -78,7 +78,8 @@
       link.classList.toggle("active", active);
       if (active) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
     });
-    document.title = `AudioBench · ${valid === "method" ? "数据与划分" : "微调前后"}`;
+    const pageTitles = { method: "数据与划分", performance: "微调前后", supplements: "补充统计", progress: "任务进度" };
+    document.title = `AudioBench · ${pageTitles[valid]}`;
   }
 
   function initNavigation() {
