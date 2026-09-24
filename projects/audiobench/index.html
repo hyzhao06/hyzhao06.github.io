@@ -3,61 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AudioBench 病理语音模型微调结果与方法">
-  <meta name="theme-color" content="#ffffff">
-  <title>AudioBench · 微调实验</title>
+  <meta name="description" content="AudioBench 微调结果与方法">
+  <title>AudioBench · 微调结果</title>
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">跳到正文</a>
   <header class="topbar">
-    <a class="brand" href="#results">AudioBench · 病理语音微调</a>
-    <nav class="page-tabs" aria-label="主页面">
+    <a class="brand" href="#results">AudioBench</a>
+    <nav class="page-tabs" aria-label="页面">
       <a href="#results" data-page-link="results">结果</a>
       <a href="#methods" data-page-link="methods">方法</a>
     </nav>
   </header>
-
   <main id="main-content">
-    <section class="page" data-page="results" aria-labelledby="results-title">
-      <header class="page-intro">
-        <span>实验结果</span>
-        <h1 id="results-title">微调前后性能比较</h1>
-        <p>所有有前后值的结果都来自同一批样本的交集。表格中的 N 是实际配对样本数；未完成的微调结果保留空位，不按 0 处理。</p>
-      </header>
-
-      <div class="primary-switch" id="experiment-tabs" role="tablist" aria-label="实验类型">
+    <section class="page" data-page="results">
+      <div class="primary-switch" id="experiment-tabs">
         <button type="button" data-experiment="combined" class="active">联合微调</button>
         <button type="button" data-experiment="single">单数据集微调</button>
       </div>
-
-      <section class="control-panel" aria-label="结果筛选">
+      <section class="control-panel">
         <div class="control-row" id="combined-controls">
           <label>模型<select id="combined-model"></select></label>
-          <p>按模型分组时自动显示全部模型；其他分组使用这里选定的模型。</p>
         </div>
-        <div class="control-row" id="single-controls" hidden>
-          <label>模型<select id="single-model"></select></label>
-          <label>训练数据集<select id="single-train-dataset"></select></label>
-          <button type="button" class="view-button" id="open-single">查看该组合</button>
-          <span class="run-status" id="single-run-status"></span>
+        <div class="single-picker" id="single-controls" hidden>
+          <div class="matrix-title">模型 × 训练数据集 <small>可多选</small></div>
+          <div class="single-matrix" id="single-matrix"></div>
+          <div class="selection-count" id="selection-count"></div>
         </div>
-
         <div class="control-group">
-          <span class="control-label">分组方式</span>
-          <div class="button-tabs" id="group-tabs" role="tablist" aria-label="分组方式">
-            <button type="button" data-group="cohort" class="active">按疾病 / 健康</button>
-            <button type="button" data-group="label">按标签</button>
-            <button type="button" data-group="model">按模型</button>
-            <button type="button" data-group="dataset">按数据集</button>
-            <button type="button" data-group="severity">按严重程度</button>
+          <span class="control-label">分组</span>
+          <div class="button-tabs" id="group-tabs">
+            <button type="button" data-group="cohort" class="active">疾病 / 健康</button>
+            <button type="button" data-group="label">标签</button>
+            <button type="button" data-group="model">模型</button>
+            <button type="button" data-group="dataset">数据集</button>
+            <button type="button" data-group="severity">严重程度</button>
           </div>
         </div>
-
         <div class="control-group">
-          <span class="control-label">统计指标</span>
-          <div class="button-tabs metrics" id="metric-tabs" role="tablist" aria-label="统计指标">
+          <span class="control-label">指标</span>
+          <div class="button-tabs" id="metric-tabs">
             <button type="button" data-metric="wer" class="active">WER</button>
             <button type="button" data-metric="cer">CER</button>
             <button type="button" data-metric="ser">SER</button>
@@ -68,44 +54,29 @@
           </div>
         </div>
       </section>
-
-      <section class="result-context" id="result-context" aria-live="polite"></section>
-      <section class="chart-panel" id="result-chart" aria-label="柱状图"></section>
+      <section class="result-head" id="result-head"></section>
+      <section class="chart-panel" id="result-chart"></section>
       <section class="table-panel">
-        <div class="section-heading">
-          <div><span>数值结果</span><h2 id="table-title">微调前后与差值</h2></div>
-          <button type="button" id="download-current">下载当前 CSV</button>
-        </div>
+        <div class="section-heading"><h2>数据</h2><button type="button" id="download-current">下载 CSV</button></div>
         <div class="table-scroll" id="result-table"></div>
       </section>
-      <div class="scope-note" id="result-note"></div>
     </section>
 
-    <section class="page" data-page="methods" aria-labelledby="methods-title" hidden>
-      <header class="page-intro">
-        <span>实验方法</span>
-        <h1 id="methods-title">数据组织与微调配置</h1>
-        <p>联合微调和单数据集微调采用独立的实验入口。下方先说明数据如何组织和训练参数如何固定，页面末尾列出方法依据。</p>
-      </header>
-
-      <div class="primary-switch" id="method-tabs" role="tablist" aria-label="方法类型">
-        <button type="button" data-method="combined" class="active">联合微调方法</button>
-        <button type="button" data-method="single">单数据集微调方法</button>
+    <section class="page" data-page="methods" hidden>
+      <div class="primary-switch" id="method-tabs">
+        <button type="button" data-method="combined" class="active">联合微调</button>
+        <button type="button" data-method="single">单数据集微调</button>
       </div>
-      <section id="method-content" aria-live="polite"></section>
-
-      <section class="references-section" aria-labelledby="references-title">
-        <div class="section-heading">
-          <div><span>方法依据</span><h2 id="references-title">参考文献</h2></div>
-          <small id="reference-count"></small>
-        </div>
+      <section id="method-content"></section>
+      <section class="references-section">
+        <div class="section-heading"><h2>参考文献</h2><small id="reference-count"></small></div>
         <div class="reference-list" id="reference-list"></div>
       </section>
     </section>
   </main>
-
-  <footer>AudioBench · 2026-09-24 · 病理语音模型微调实验</footer>
+  <footer>AudioBench · 2026</footer>
   <script src="data/result-browser-data.js"></script>
+  <script src="data/site-data.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
