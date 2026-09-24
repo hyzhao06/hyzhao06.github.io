@@ -44,6 +44,7 @@
     analysisView: "combined",
     cohortView: "all",
     singleMetric: "wer",
+    singleModel: "qwen25",
     dataset: "ALL",
     selectedSpeaker: null,
     foldModel: "phi4",
@@ -117,7 +118,7 @@
     $$('[data-analysis-view]', $("#analysis-view-switcher")).forEach((button) => { button.onclick = () => setAnalysisView(button.dataset.analysisView); });
     $$('[data-cohort-view]').forEach((button) => { button.onclick = () => setCohortView(button.dataset.cohortView); });
     setPage(location.hash.slice(1) || "data");
-    setCohortView("all");
+    setCohortView("disease");
   }
 
   /* ---------- method page ---------- */
@@ -738,12 +739,13 @@
 
   function renderSingleDatasetSupplement() {
     const s = supplement.single_dataset; $("#single-dataset-note").textContent = `${s.note} 当前 adapter ${s.adapter_complete}/${s.expected}，完整预测 ${s.prediction_complete}/${s.expected}，指标 ${s.metric_complete}/${s.expected}。`;
+    supTabs("single-model-filter", ["qwen25", "whisper", "phi4", "step_audio"].map((id) => ({ id, label: supModelLabels[id] })), state.singleModel, (id) => { state.singleModel = id; renderSingleDatasetSupplement(); });
     $$('[data-single-metric]').forEach((button) => { button.classList.toggle("active", button.dataset.singleMetric === state.singleMetric); button.onclick = () => { state.singleMetric = button.dataset.singleMetric; renderSingleDatasetSupplement(); }; });
     const metric = state.singleMetric;
     const format = metric === "semscore" ? "score" : "percent";
     const metricLabel = { wer: "WER", cer: "CER", ser: "SER", semscore: "SemScore", s_rate: "S / 参考词", d_rate: "D / 参考词", i_rate: "I / 参考词" }[metric];
-    const chartRows = ["qwen25", "whisper", "phi4", "step_audio"].flatMap((model) => ["cdsd", "easycall", "torgo", "uaspeech"].map((ds) => { const c = s.cells.find((x) => x.model === model && x.train_dataset === ds); return { label: `${supModelLabels[model]} ${supDatasetLabels[ds]}`, before: null, after: c?.[metric] }; }));
-    $("#single-dataset-chart").innerHTML = groupedColumnChart(`单数据集微调 ${metricLabel}（已完成组合）`, chartRows, format);
+    const chartRows = ["cdsd", "easycall", "torgo", "uaspeech"].map((ds) => { const c = s.cells.find((x) => x.model === state.singleModel && x.train_dataset === ds); return { label: supDatasetLabels[ds], before: null, after: c?.[metric] }; });
+    $("#single-dataset-chart").innerHTML = groupedColumnChart(`${supModelLabels[state.singleModel]}：按训练数据集比较 ${metricLabel}`, chartRows, format) || `<div class="empty-state"><b>${supModelLabels[state.singleModel]} 的该指标尚未完成</b><span>矩阵中的待补位置会在结果产出后直接更新。</span></div>`;
     const byModel = ["qwen25", "whisper", "phi4", "step_audio"].map((model) => `<tr><th>${supModelLabels[model]}</th>${["cdsd", "easycall", "torgo", "uaspeech"].map((ds) => { const c = s.cells.find((x) => x.model === model && x.train_dataset === ds); return `<td class="status-cell ${c.metric_status}"><b>${c.metric_status === "complete" ? metricValue(c[metric], format) : "待补"}</b><small>${c.status}</small></td>`; }).join("")}</tr>`).join("");
     $("#single-dataset-section").innerHTML = `<div class="matrix-key"><span class="complete">指标已完成</span><span class="pending">占位</span></div><div class="table-scroll"><table class="data-table single-matrix"><thead><tr><th>模型 \\ 训练集</th><th>CDSD</th><th>EasyCall</th><th>TORGO</th><th>UA-Speech</th></tr></thead><tbody>${byModel}</tbody></table></div>`;
   }
