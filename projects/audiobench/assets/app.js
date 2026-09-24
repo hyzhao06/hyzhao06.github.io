@@ -99,14 +99,14 @@
     var metric = state.metric, all = [];
     rows.forEach(function (r) { if (r.before && r.before[metric] != null) all.push(Number(r.before[metric])); if (r.after && r.after[metric] != null) all.push(Number(r.after[metric])); });
     var max = Math.max.apply(Math, all.length ? all : [1]); if (metric === "semscore") max = Math.max(1, max);
-    var labels = rows.map(function (r) { return "<span class=\"x-label\">" + esc(r.category) + "</span>"; }).join("");
-    var series = function (kind, cls) {
-      return rows.map(function (r) {
+    var groups = rows.map(function (r) {
+      var bars = ["before", "after"].map(function (kind) {
         var x = r[kind] && r[kind][metric], h = x == null ? 0 : Math.max(3, Number(x) / max * 100);
-        return "<div class=\"vbar-wrap\"><div class=\"vbar-value\">" + val(x, metric) + "</div><div class=\"vbar " + cls + "\" style=\"height:" + h.toFixed(2) + "%\">" + (x == null ? "<i></i>" : "") + "</div></div>";
+        return "<div class=\"vbar-wrap\"><div class=\"vbar-value\">" + val(x, metric) + "</div><div class=\"vbar " + kind + "\" style=\"height:" + h.toFixed(2) + "%\">" + (x == null ? "<i></i>" : "") + "</div></div>";
       }).join("");
-    };
-    $("#result-chart").innerHTML = "<div class=\"chart-title\"><h2>" + esc(metricMeta[metric].label) + "</h2><div><i class=\"legend-before\"></i>微调前 <i class=\"legend-after\"></i>微调后</div></div><div class=\"vchart\"><div class=\"vbars\"><div class=\"bar-series\">" + series("before", "before") + "</div><div class=\"bar-series\">" + series("after", "after") + "</div></div><div class=\"x-labels\">" + labels + "</div></div>";
+      return "<div class=\"vbar-group\">" + bars + "<span class=\"x-label\">" + esc(r.category) + "</span></div>";
+    }).join("");
+    $("#result-chart").innerHTML = "<div class=\"chart-title\"><h2>" + esc(metricMeta[metric].label) + "</h2><div><i class=\"legend-before\"></i>微调前 <i class=\"legend-after\"></i>微调后</div></div><div class=\"vchart\"><div class=\"vbars\">" + groups + "</div></div>";
   }
   function renderTable(rows) {
     var metric = state.metric;
