@@ -276,15 +276,15 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "疾病组",
           "label": "疾病组",
-          "n": 180848,
+          "n": 52073,
           "before": {
-            "wer": 0.9321500318046726,
-            "cer": 0.856201933640958,
-            "ser": 0.7693643280544988,
-            "semscore": 0.8874685808345194,
-            "s_rate": 0.508632183453664,
-            "d_rate": 0.06583746913868634,
-            "i_rate": 0.35768037921232226
+            "wer": 0.902421819891841,
+            "cer": 0.6897714303967661,
+            "ser": 0.716743801970311,
+            "semscore": 0.8938426623122728,
+            "s_rate": 0.593816129790736,
+            "d_rate": 0.0708358113995657,
+            "i_rate": 0.2377698787015394
           },
           "after": null,
           "delta": {
@@ -297,33 +297,8 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成；不计算差值"
-        },
-        {
-          "category": "健康组",
-          "label": "健康组",
-          "n": 36679,
-          "before": {
-            "wer": 0.1772073772872495,
-            "cer": 0.08916146511979861,
-            "ser": 0.17383243817988495,
-            "semscore": 0.9778309689651948,
-            "s_rate": 0.11358190531513215,
-            "d_rate": 0.007043276212605286,
-            "i_rate": 0.05658219575951205
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "微调后尚未完成；不计算差值"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
         }
       ],
       "step_audio": [
@@ -1546,16 +1521,16 @@ window.RESULT_BROWSER_DATA = {
       "qwen3": [
         {
           "category": "CDSD · All samples",
-          "label": "All samples",
-          "n": 147854,
+          "label": "CDSD · All samples",
+          "n": 29570,
           "before": {
-            "wer": 0.989878333218,
-            "cer": 0.853713770874,
-            "ser": 0.791179136175,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+            "wer": 0.934183982247327,
+            "cer": 0.7679346722492434,
+            "ser": 0.875583361515049,
+            "semscore": 0.8762315715149444,
+            "s_rate": 0.6220832492771166,
+            "d_rate": 0.08277015668078812,
+            "i_rate": 0.22933057628942236
           },
           "after": null,
           "delta": {
@@ -1568,228 +1543,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Common Words",
-          "label": "Common Words",
-          "n": 9696,
-          "before": {
-            "wer": 2.858807755776,
-            "cer": 3.888787472497,
-            "ser": 0.693378712871,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Computer Commands",
-          "label": "Computer Commands",
-          "n": 1817,
-          "before": {
-            "wer": 2.904788112273,
-            "cer": 2.25607686663,
-            "ser": 0.624656026417,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Digits",
-          "label": "Digits",
-          "n": 970,
-          "before": {
-            "wer": 2.519587628866,
-            "cer": 2.57087628866,
-            "ser": 0.60206185567,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Radio Alphabet",
-          "label": "Radio Alphabet",
-          "n": 2522,
-          "before": {
-            "wer": 2.511697065821,
-            "cer": 1.980004059514,
-            "ser": 0.604282315623,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Uncommon Words",
-          "label": "Uncommon Words",
-          "n": 9698,
-          "before": {
-            "wer": 3.111002268509,
-            "cer": 1.799466864967,
-            "ser": 0.701484842236,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "TORGO · Sentence",
-          "label": "Sentence",
-          "n": 1321,
-          "before": {
-            "wer": 0.462517235057,
-            "cer": 0.314265205474,
-            "ser": 0.566237698713,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "TORGO · Short-word Command",
-          "label": "Short-word Command",
-          "n": 579,
-          "before": {
-            "wer": 0.668393782383,
-            "cer": 1.013434492968,
-            "ser": 0.316062176166,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "TORGO · Short-word Non-command",
-          "label": "Short-word Non-command",
-          "n": 3674,
-          "before": {
-            "wer": 0.756396298312,
-            "cer": 0.600522763996,
-            "ser": 0.631464344039,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
           "category": "EasyCall · Command",
-          "label": "Command",
+          "label": "EasyCall · Command",
           "n": 1531,
           "before": {
-            "wer": 1.317711735249,
-            "cer": 0.852889786504,
-            "ser": 0.7759634226,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+            "wer": 1.2321822189566496,
+            "cer": 0.8273519522404447,
+            "ser": 0.7759634225996082,
+            "semscore": 0.8772665680739554,
+            "s_rate": 0.5797207935341661,
+            "d_rate": 0.11351947097722263,
+            "i_rate": 0.5389419544452608
           },
           "after": null,
           "delta": {
@@ -1802,20 +1570,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
         },
         {
           "category": "EasyCall · Non-command",
-          "label": "Non-command",
+          "label": "EasyCall · Non-command",
           "n": 1186,
           "before": {
-            "wer": 1.566610455312,
-            "cer": 0.9609907606,
-            "ser": 0.801854974705,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+            "wer": 1.4633375474083439,
+            "cer": 0.7981814381270903,
+            "ser": 0.8018549747048904,
+            "semscore": 0.8656920102655787,
+            "s_rate": 0.6618204804045512,
+            "d_rate": 0.025284450063211124,
+            "i_rate": 0.7762326169405815
           },
           "after": null,
           "delta": {
@@ -1828,22 +1597,239 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
+        },
+        {
+          "category": "TORGO · Sentence",
+          "label": "TORGO · Sentence",
+          "n": 230,
+          "before": {
+            "wer": 0.15050732807215333,
+            "cer": 0.12397013388259526,
+            "ser": 0.2608695652173913,
+            "semscore": 0.9742515392925428,
+            "s_rate": 0.09864712514092447,
+            "d_rate": 0.02593010146561443,
+            "i_rate": 0.02593010146561443
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
+        },
+        {
+          "category": "TORGO · Short-word Command",
+          "label": "TORGO · Short-word Command",
+          "n": 112,
+          "before": {
+            "wer": 0.08928571428571429,
+            "cer": 0.06275303643724696,
+            "ser": 0.08928571428571429,
+            "semscore": 0.9881309212318489,
+            "s_rate": 0.08035714285714286,
+            "d_rate": 0.0,
+            "i_rate": 0.008928571428571428
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
+        },
+        {
+          "category": "TORGO · Short-word Non-command",
+          "label": "TORGO · Short-word Non-command",
+          "n": 704,
+          "before": {
+            "wer": 0.37642045454545453,
+            "cer": 0.24595576097722022,
+            "ser": 0.3565340909090909,
+            "semscore": 0.9485468764535405,
+            "s_rate": 0.3508522727272727,
+            "d_rate": 0.0,
+            "i_rate": 0.02556818181818182
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+        },
+        {
+          "category": "UA-Speech · Common Words",
+          "label": "UA-Speech · Common Words",
+          "n": 7464,
+          "before": {
+            "wer": 0.527465166130761,
+            "cer": 0.440036752956216,
+            "ser": 0.48486066452304394,
+            "semscore": 0.9309565742187689,
+            "s_rate": 0.48191318327974275,
+            "d_rate": 0.0,
+            "i_rate": 0.04555198285101822
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
+        },
+        {
+          "category": "UA-Speech · Computer Commands",
+          "label": "UA-Speech · Computer Commands",
+          "n": 1292,
+          "before": {
+            "wer": 0.43808049535603716,
+            "cer": 0.37108301264431004,
+            "ser": 0.3328173374613003,
+            "semscore": 0.9420113104508019,
+            "s_rate": 0.3328173374613003,
+            "d_rate": 0.0,
+            "i_rate": 0.10526315789473684
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
+        },
+        {
+          "category": "UA-Speech · Digits",
+          "label": "UA-Speech · Digits",
+          "n": 750,
+          "before": {
+            "wer": 0.38533333333333336,
+            "cer": 0.31166666666666665,
+            "ser": 0.36666666666666664,
+            "semscore": 0.939951297601064,
+            "s_rate": 0.36666666666666664,
+            "d_rate": 0.0,
+            "i_rate": 0.018666666666666668
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
+        },
+        {
+          "category": "UA-Speech · Radio Alphabet",
+          "label": "UA-Speech · Radio Alphabet",
+          "n": 1950,
+          "before": {
+            "wer": 0.6353846153846154,
+            "cer": 0.7215458937198067,
+            "ser": 0.41743589743589743,
+            "semscore": 0.9245161358821087,
+            "s_rate": 0.41743589743589743,
+            "d_rate": 0.0,
+            "i_rate": 0.21794871794871795
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
+        },
+        {
+          "category": "UA-Speech · Uncommon Words",
+          "label": "UA-Speech · Uncommon Words",
+          "n": 7284,
+          "before": {
+            "wer": 0.9763866007688083,
+            "cer": 0.622716399397537,
+            "ser": 0.5263591433278418,
+            "semscore": 0.904593850290101,
+            "s_rate": 0.5061779242174629,
+            "d_rate": 0.0001372872048325096,
+            "i_rate": 0.4700713893465129
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
         }
       ],
       "step_audio": [
         {
           "category": "CDSD · All samples",
-          "label": "All samples",
-          "n": 147854,
+          "label": "CDSD · All samples",
+          "n": 29570,
           "before": {
-            "wer": 2.47774703975,
-            "cer": 4.264677726248,
-            "ser": 0.842939656688,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+            "wer": 1.2404932418801695,
+            "cer": 1.5027171548198073,
+            "ser": 0.9015218126479541,
+            "semscore": 0.8659470524463776,
+            "s_rate": 0.6425761549324188,
+            "d_rate": 0.06761482079214579,
+            "i_rate": 0.5303022661556048
           },
           "after": null,
           "delta": {
@@ -1856,228 +1842,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Common Words",
-          "label": "Common Words",
-          "n": 9696,
-          "before": {
-            "wer": 3.790841584158,
-            "cer": 5.507542629263,
-            "ser": 0.783931518152,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Computer Commands",
-          "label": "Computer Commands",
-          "n": 1817,
-          "before": {
-            "wer": 3.178866263071,
-            "cer": 2.923111093639,
-            "ser": 0.671986791414,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Digits",
-          "label": "Digits",
-          "n": 970,
-          "before": {
-            "wer": 3.118556701031,
-            "cer": 3.454673539519,
-            "ser": 0.629896907216,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Radio Alphabet",
-          "label": "Radio Alphabet",
-          "n": 2522,
-          "before": {
-            "wer": 3.616970658208,
-            "cer": 3.333372512367,
-            "ser": 0.699841395718,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · Uncommon Words",
-          "label": "Uncommon Words",
-          "n": 9698,
-          "before": {
-            "wer": 3.969787585069,
-            "cer": 2.483679871891,
-            "ser": 0.752423180037,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "TORGO · Sentence",
-          "label": "Sentence",
-          "n": 1321,
-          "before": {
-            "wer": 0.643030323197,
-            "cer": 0.622784082975,
-            "ser": 0.603330809992,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "TORGO · Short-word Command",
-          "label": "Short-word Command",
-          "n": 579,
-          "before": {
-            "wer": 2.820379965458,
-            "cer": 4.273449708035,
-            "ser": 0.566493955095,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
-        },
-        {
-          "category": "TORGO · Short-word Non-command",
-          "label": "Short-word Non-command",
-          "n": 3674,
-          "before": {
-            "wer": 3.836418072945,
-            "cer": 4.342616714623,
-            "ser": 0.730811105063,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
           "category": "EasyCall · Command",
-          "label": "Command",
+          "label": "EasyCall · Command",
           "n": 1531,
           "before": {
-            "wer": 3.237154365339,
-            "cer": 2.628914405911,
-            "ser": 0.968647942521,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+            "wer": 2.730345334313005,
+            "cer": 2.0171550126947095,
+            "ser": 0.968647942521228,
+            "semscore": 0.807896102004235,
+            "s_rate": 0.8842762674504041,
+            "d_rate": 0.05547391623806025,
+            "i_rate": 1.7905951506245408
           },
           "after": null,
           "delta": {
@@ -2090,20 +1869,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
         },
         {
           "category": "EasyCall · Non-command",
-          "label": "Non-command",
+          "label": "EasyCall · Non-command",
           "n": 1186,
           "before": {
-            "wer": 3.694631815627,
-            "cer": 2.848670137398,
-            "ser": 0.971332209106,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+            "wer": 3.3672566371681416,
+            "cer": 2.2012959866220734,
+            "ser": 0.9713322091062394,
+            "semscore": 0.8017178693971586,
+            "s_rate": 0.9184576485461441,
+            "d_rate": 0.020859671302149177,
+            "i_rate": 2.4279393173198485
           },
           "after": null,
           "delta": {
@@ -2116,7 +1896,89 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "该旧标签表仅有 WER/CER/SER；微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
+        },
+        {
+          "category": "TORGO · Sentence",
+          "label": "TORGO · Sentence",
+          "n": 230,
+          "before": {
+            "wer": 0.27846674182638104,
+            "cer": 0.24768280123583933,
+            "ser": 0.3,
+            "semscore": 0.9668866266375002,
+            "s_rate": 0.12570462232243518,
+            "d_rate": 0.021984216459977453,
+            "i_rate": 0.13077790304396844
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
+        },
+        {
+          "category": "TORGO · Short-word Command",
+          "label": "TORGO · Short-word Command",
+          "n": 112,
+          "before": {
+            "wer": 1.75,
+            "cer": 1.917004048582996,
+            "ser": 0.3125,
+            "semscore": 0.960593080414193,
+            "s_rate": 0.10714285714285714,
+            "d_rate": 0.0,
+            "i_rate": 1.6428571428571428
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
+        },
+        {
+          "category": "TORGO · Short-word Non-command",
+          "label": "TORGO · Short-word Non-command",
+          "n": 704,
+          "before": {
+            "wer": 4.056818181818182,
+            "cer": 3.1815780785737866,
+            "ser": 0.5355113636363636,
+            "semscore": 0.9214033010331067,
+            "s_rate": 0.36363636363636365,
+            "d_rate": 0.0,
+            "i_rate": 3.6931818181818183
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
         }
       ]
     },
@@ -2236,15 +2098,15 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "Qwen3",
           "label": "Qwen3",
-          "n": 180848,
+          "n": 52073,
           "before": {
-            "wer": 0.9321500318046726,
-            "cer": 0.856201933640958,
-            "ser": 0.7693643280544988,
-            "semscore": 0.8874685808345194,
-            "s_rate": 0.508632183453664,
-            "d_rate": 0.06583746913868634,
-            "i_rate": 0.35768037921232226
+            "wer": 0.902421819891841,
+            "cer": 0.6897714303967661,
+            "ser": 0.716743801970311,
+            "semscore": 0.8938426623122728,
+            "s_rate": 0.593816129790736,
+            "d_rate": 0.0708358113995657,
+            "i_rate": 0.2377698787015394
           },
           "after": null,
           "delta": {
@@ -2257,7 +2119,8 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
         }
       ],
       "step_audio": [
@@ -2327,15 +2190,15 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "Qwen3",
           "label": "Qwen3",
-          "n": 180848,
+          "n": 52073,
           "before": {
-            "wer": 0.9321500318046726,
-            "cer": 0.856201933640958,
-            "ser": 0.7693643280544988,
-            "semscore": 0.8874685808345194,
-            "s_rate": 0.508632183453664,
-            "d_rate": 0.06583746913868634,
-            "i_rate": 0.35768037921232226
+            "wer": 0.902421819891841,
+            "cer": 0.6897714303967661,
+            "ser": 0.716743801970311,
+            "semscore": 0.8938426623122728,
+            "s_rate": 0.593816129790736,
+            "d_rate": 0.0708358113995657,
+            "i_rate": 0.2377698787015394
           },
           "after": null,
           "delta": {
@@ -2348,7 +2211,8 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
         },
         {
           "category": "Phi-4",
@@ -2879,15 +2743,15 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "CDSD",
           "label": "CDSD",
-          "n": 147854,
+          "n": 29570,
           "before": {
-            "wer": 0.8437804956436882,
-            "cer": 0.6892826205708042,
-            "ser": 0.7911791361748752,
-            "semscore": 0.8917670083364917,
-            "s_rate": 0.5046445900119402,
-            "d_rate": 0.06968930234732457,
-            "i_rate": 0.26944660328442344
+            "wer": 0.934183982247327,
+            "cer": 0.7679346722492434,
+            "ser": 0.875583361515049,
+            "semscore": 0.8762315715149444,
+            "s_rate": 0.6220832492771166,
+            "d_rate": 0.08277015668078812,
+            "i_rate": 0.22933057628942236
           },
           "after": null,
           "delta": {
@@ -2900,20 +2764,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
           "category": "EasyCall",
           "label": "EasyCall",
-          "n": 5213,
+          "n": 2717,
           "before": {
-            "wer": 0.8236374770361298,
-            "cer": 0.48039746281904183,
-            "ser": 0.5486284289276808,
-            "semscore": 0.9178215438839846,
-            "s_rate": 0.4035517452541335,
-            "d_rate": 0.06687078995713411,
-            "i_rate": 0.35321494182486224
+            "wer": 1.317146840148699,
+            "cer": 0.8157905637711776,
+            "ser": 0.7872653662127347,
+            "semscore": 0.8722141479191027,
+            "s_rate": 0.6098977695167286,
+            "d_rate": 0.08108736059479554,
+            "i_rate": 0.6261617100371747
           },
           "after": null,
           "delta": {
@@ -2926,20 +2791,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
         },
         {
           "category": "TORGO",
           "label": "TORGO",
-          "n": 16552,
+          "n": 1046,
           "before": {
-            "wer": 0.23606588776096532,
-            "cer": 0.16201384559155504,
-            "ser": 0.31978008699855004,
-            "semscore": 0.9572963247470893,
-            "s_rate": 0.16524612143267572,
-            "d_rate": 0.012976441294771117,
-            "i_rate": 0.05784332503351848
+            "wer": 0.20926640926640927,
+            "cer": 0.15401647329731644,
+            "ser": 0.3068833652007648,
+            "semscore": 0.958437397933599,
+            "s_rate": 0.1664092664092664,
+            "d_rate": 0.01776061776061776,
+            "i_rate": 0.025096525096525095
           },
           "after": null,
           "delta": {
@@ -2952,20 +2818,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
         },
         {
           "category": "UA-Speech",
           "label": "UA-Speech",
-          "n": 47908,
+          "n": 18740,
           "before": {
-            "wer": 1.6309336426145307,
-            "cer": 1.1875346866670315,
-            "ser": 0.42544042748601485,
-            "semscore": 0.9159574244671217,
-            "s_rate": 0.4151271642780217,
-            "d_rate": 0.0033551487035042666,
-            "i_rate": 1.2124513296330046
+            "wer": 0.701334044823906,
+            "cer": 0.5608709705856425,
+            "ser": 0.47876200640341515,
+            "semscore": 0.92116168766037,
+            "s_rate": 0.46974386339381,
+            "d_rate": 5.336179295624333e-05,
+            "i_rate": 0.23153681963713982
           },
           "after": null,
           "delta": {
@@ -2978,7 +2845,8 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
         }
       ],
       "step_audio": [
@@ -4042,34 +3910,8 @@ window.RESULT_BROWSER_DATA = {
       ],
       "qwen3": [
         {
-          "category": "EasyCall · 1",
-          "label": "1",
-          "n": 1656,
-          "before": {
-            "wer": 0.9992424242424243,
-            "cer": 0.5655826558265583,
-            "ser": 0.6835748792270532,
-            "semscore": 0.9078757419894283,
-            "s_rate": 0.4943181818181818,
-            "d_rate": 0.04772727272727273,
-            "i_rate": 0.4571969696969697
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "微调后尚未完成"
-        },
-        {
-          "category": "EasyCall · 2",
-          "label": "2",
+          "category": "EasyCall · 中度",
+          "label": "EasyCall · 中度",
           "n": 413,
           "before": {
             "wer": 1.4855842185128982,
@@ -4091,11 +3933,39 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
         },
         {
-          "category": "EasyCall · 3",
-          "label": "3",
+          "category": "EasyCall · 轻度",
+          "label": "EasyCall · 轻度",
+          "n": 1656,
+          "before": {
+            "wer": 0.9992424242424243,
+            "cer": 0.5655826558265583,
+            "ser": 0.6835748792270532,
+            "semscore": 0.9078757419894283,
+            "s_rate": 0.4943181818181818,
+            "d_rate": 0.04772727272727273,
+            "i_rate": 0.4571969696969697
+          },
+          "after": null,
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "baseline_only",
+          "note": "微调后待完成",
+          "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
+        },
+        {
+          "category": "EasyCall · 重度",
+          "label": "EasyCall · 重度",
           "n": 414,
           "before": {
             "wer": 2.522727272727273,
@@ -4117,20 +3987,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
         },
         {
-          "category": "TORGO · mild",
-          "label": "mild",
-          "n": 1483,
+          "category": "TORGO · 轻度",
+          "label": "TORGO · 轻度",
+          "n": 810,
           "before": {
-            "wer": 0.08686327077747989,
-            "cer": 0.041381399575886095,
-            "ser": 0.19217801753202968,
-            "semscore": 0.9788984394282484,
-            "s_rate": 0.071313672922252,
-            "d_rate": 0.0008042895442359249,
-            "i_rate": 0.014745308310991957
+            "wer": 0.06910167818361303,
+            "cer": 0.031085765403108576,
+            "ser": 0.1469135802469136,
+            "semscore": 0.9844707749508045,
+            "s_rate": 0.055281342546890426,
+            "d_rate": 0.0014807502467917078,
+            "i_rate": 0.012339585389930898
           },
           "after": null,
           "delta": {
@@ -4143,20 +4014,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
         },
         {
-          "category": "TORGO · moderate",
-          "label": "moderate",
-          "n": 1087,
+          "category": "TORGO · 重度",
+          "label": "TORGO · 重度",
+          "n": 236,
           "before": {
-            "wer": 0.3254310344827586,
-            "cer": 0.21709044093981333,
-            "ser": 0.5335786568537259,
-            "semscore": 0.9303030742344334,
-            "s_rate": 0.23311781609195403,
-            "d_rate": 0.014008620689655173,
-            "i_rate": 0.07830459770114942
+            "wer": 0.7127659574468085,
+            "cer": 0.6222316865417377,
+            "ser": 0.8559322033898306,
+            "semscore": 0.8690855530864101,
+            "s_rate": 0.5656028368794326,
+            "d_rate": 0.07624113475177305,
+            "i_rate": 0.07092198581560284
           },
           "after": null,
           "delta": {
@@ -4169,20 +4041,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
         },
         {
-          "category": "TORGO · moderate-severe",
-          "label": "moderate-severe",
-          "n": 587,
+          "category": "UA-Speech · 中度",
+          "label": "UA-Speech · 中度",
+          "n": 2846,
           "before": {
-            "wer": 0.63382250174703,
-            "cer": 0.4608889596941214,
-            "ser": 0.7223168654173765,
-            "semscore": 0.8996111186034026,
-            "s_rate": 0.4018169112508735,
-            "d_rate": 0.030747728860936407,
-            "i_rate": 0.20125786163522014
+            "wer": 0.926914968376669,
+            "cer": 0.5843562287803604,
+            "ser": 0.6496837666900913,
+            "semscore": 0.8950159366040353,
+            "s_rate": 0.6489810260014055,
+            "d_rate": 0.0,
+            "i_rate": 0.27793394237526353
           },
           "after": null,
           "delta": {
@@ -4195,20 +4068,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
         },
         {
-          "category": "TORGO · severe",
-          "label": "severe",
-          "n": 2417,
+          "category": "UA-Speech · 轻度",
+          "label": "UA-Speech · 轻度",
+          "n": 10710,
           "before": {
-            "wer": 0.9097442754471001,
-            "cer": 0.7283879180650388,
-            "ser": 0.8117501034340091,
-            "semscore": 0.8752226979958404,
-            "s_rate": 0.5654354003008524,
-            "d_rate": 0.05950192211265252,
-            "i_rate": 0.2848069530335952
+            "wer": 0.30793650793650795,
+            "cer": 0.17101434391154016,
+            "ser": 0.19084967320261437,
+            "semscore": 0.9764691405547878,
+            "s_rate": 0.17553688141923435,
+            "d_rate": 0.0,
+            "i_rate": 0.13239962651727358
           },
           "after": null,
           "delta": {
@@ -4221,20 +4095,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
         },
         {
-          "category": "UA-Speech · mild",
-          "label": "mild",
-          "n": 8925,
+          "category": "UA-Speech · 重度",
+          "label": "UA-Speech · 重度",
+          "n": 5184,
           "before": {
-            "wer": 0.8836020011117287,
-            "cer": 0.5732745961820852,
-            "ser": 0.29815126050420165,
-            "semscore": 0.9519671552788977,
-            "s_rate": 0.28449138410227903,
-            "d_rate": 0.0034463590883824346,
-            "i_rate": 0.5956642579210673
+            "wer": 1.3902391975308641,
+            "cer": 1.3514371363075295,
+            "ser": 0.9797453703703703,
+            "semscore": 0.8212519629318037,
+            "s_rate": 0.9791666666666666,
+            "d_rate": 0.00019290123456790122,
+            "i_rate": 0.41087962962962965
           },
           "after": null,
           "delta": {
@@ -4247,20 +4122,21 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
         },
         {
-          "category": "UA-Speech · moderate",
-          "label": "moderate",
-          "n": 5074,
+          "category": "未标注",
+          "label": "未标注",
+          "n": 29804,
           "before": {
-            "wer": 3.1638639030113413,
-            "cer": 2.1451898921235406,
-            "ser": 0.7575877020102483,
-            "semscore": 0.8494204227901793,
-            "s_rate": 0.7332811888932342,
-            "d_rate": 0.003910833007430583,
-            "i_rate": 2.4266718811106767
+            "wer": 0.9347263081139524,
+            "cer": 0.7661606971844475,
+            "ser": 0.8754865118776003,
+            "semscore": 0.8760955762365588,
+            "s_rate": 0.6223965536027088,
+            "d_rate": 0.08261463545464451,
+            "i_rate": 0.22971511905659903
           },
           "after": null,
           "delta": {
@@ -4273,59 +4149,8 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · moderate-severe",
-          "label": "moderate-severe",
-          "n": 5100,
-          "before": {
-            "wer": 4.347276264591439,
-            "cer": 3.0894640234948607,
-            "ser": 0.9203921568627451,
-            "semscore": 0.8019025497459897,
-            "s_rate": 0.9003891050583658,
-            "d_rate": 0.0009727626459143969,
-            "i_rate": 3.4459143968871597
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "微调后尚未完成"
-        },
-        {
-          "category": "UA-Speech · severe",
-          "label": "severe",
-          "n": 5604,
-          "before": {
-            "wer": 4.576664305949008,
-            "cer": 3.928361498897869,
-            "ser": 0.9939329050678087,
-            "semscore": 0.7625611904771902,
-            "s_rate": 0.982471671388102,
-            "d_rate": 0.0026558073654390935,
-            "i_rate": 3.5915368271954673
-          },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
-          },
-          "status": "baseline_only",
-          "note": "微调后尚未完成"
+          "note": "微调后待完成",
+          "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
         }
       ],
       "step_audio": [
@@ -4622,7 +4447,7 @@ window.RESULT_BROWSER_DATA = {
     "qwen25/cdsd": {
       "model": "qwen25",
       "train_dataset": "cdsd",
-      "status": "pending",
+      "status": "complete",
       "groups": {
         "cohort": [
           {
@@ -4638,18 +4463,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0654568842108175,
               "i_rate": 0.2518827931036868
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7918312021521587,
+              "cer": 0.7236571567966916,
+              "ser": 0.7932094023659548,
+              "semscore": 0.8743534926253541,
+              "s_rate": 0.5566013596221274,
+              "d_rate": 0.07909459954771471,
+              "i_rate": 0.15613524298231662
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.11205471683759916,
+              "cer": 0.033817926259786635,
+              "ser": 0.06425718236288214,
+              "semscore": -0.02059200023071872,
+              "s_rate": -0.029944882053126176,
+              "d_rate": 0.013637715336897213,
+              "i_rate": -0.09574755012137015
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -4693,18 +4526,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.07594479187680721,
               "i_rate": 0.22431242014659405
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7277839419003429,
+              "cer": 0.6165910827040042,
+              "ser": 0.7763273588096044,
+              "semscore": 0.8997112468444378,
+              "s_rate": 0.5191816286732567,
+              "d_rate": 0.08582980297222782,
+              "i_rate": 0.12277251025485846
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.17337435276713076,
+              "cer": -0.1252260266687295,
+              "ser": -0.08501859993236383,
+              "semscore": 0.0164812514557805,
+              "s_rate": -0.0817194539708157,
+              "d_rate": 0.009885011095420615,
+              "i_rate": -0.1015399098917356
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -4720,18 +4561,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.10261125413755057,
               "i_rate": 1.481059212945936
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.1673409341669732,
+              "cer": 0.9949168841873883,
+              "ser": 0.9620915032679739,
+              "semscore": 0.8170354186319837,
+              "s_rate": 0.6892239794041927,
+              "d_rate": 0.257815373299007,
+              "i_rate": 0.22030158146377343
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -1.1176903273262229,
+              "cer": -0.3214040390163484,
+              "ser": 0.10261437908496729,
+              "semscore": -0.041449016215754475,
+              "s_rate": -0.012136815005516777,
+              "d_rate": 0.15520411916145643,
+              "i_rate": -1.2607576314821625
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "1f83d4bc7ede7b8f8b6844b75f314ff8b92e463a01334b30206763a93d155e60"
           },
           {
@@ -4747,18 +4596,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.02781289506953224,
               "i_rate": 1.63653603034134
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.424778761061947,
+              "cer": 1.1264632107023411,
+              "ser": 0.9662731871838112,
+              "semscore": 0.8097274882395392,
+              "s_rate": 0.7857142857142857,
+              "d_rate": 0.13843236409608092,
+              "i_rate": 0.5006321112515802
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -1.0493046776232615,
+              "cer": -0.10660535117056869,
+              "ser": 0.06408094435075884,
+              "semscore": -0.03494760379019313,
+              "s_rate": -0.024020227560050622,
+              "d_rate": 0.11061946902654868,
+              "i_rate": -1.1359039190897597
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -4774,18 +4631,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.06031567080045096,
               "i_rate": 0.008455467869222097
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.23844419391206315,
+              "cer": 0.20520082389289393,
+              "ser": 0.3826086956521739,
+              "semscore": 0.9508529243261917,
+              "s_rate": 0.058624577226606536,
+              "d_rate": 0.1713641488162345,
+              "i_rate": 0.008455467869222097
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.07271702367531005,
+              "cer": 0.08444902162718847,
+              "ser": 0.1391304347826087,
+              "semscore": -0.01697266931119179,
+              "s_rate": -0.03833145434047351,
+              "d_rate": 0.11104847801578353,
+              "i_rate": 0.0
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -4801,18 +4666,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.008928571428571428
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.4553571428571428,
+              "cer": 1.1012145748987854,
+              "ser": 0.5982142857142857,
+              "semscore": 0.8927574610071523,
+              "s_rate": 0.5803571428571429,
+              "d_rate": 0.0,
+              "i_rate": 0.875
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 1.3035714285714286,
+              "cer": 0.9878542510121457,
+              "ser": 0.45535714285714285,
+              "semscore": -0.08586104533502037,
+              "s_rate": 0.43750000000000006,
+              "d_rate": 0.0,
+              "i_rate": 0.8660714285714286
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -4828,18 +4701,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.026988636363636364
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 2.2443181818181817,
+              "cer": 1.710465500165071,
+              "ser": 0.8196022727272727,
+              "semscore": 0.8421192051504146,
+              "s_rate": 0.8025568181818182,
+              "d_rate": 0.0,
+              "i_rate": 1.4417613636363635
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 1.8593749999999998,
+              "cer": 1.4430505117200396,
+              "ser": 0.4588068181818182,
+              "semscore": -0.10234818158840586,
+              "s_rate": 0.44460227272727276,
+              "d_rate": 0.0,
+              "i_rate": 1.414772727272727
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
           },
           {
@@ -4855,18 +4736,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.025187566988210074
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.935155412647374,
+              "cer": 0.9576941514860978,
+              "ser": 0.8093515541264737,
+              "semscore": 0.8533441166194816,
+              "s_rate": 0.8069399785637728,
+              "d_rate": 0.0001339764201500536,
+              "i_rate": 0.12808145766345122
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.3889335476956055,
+              "cer": 0.5210131032278684,
+              "ser": 0.28563772775991425,
+              "semscore": -0.0743264485018813,
+              "s_rate": 0.2859056806002144,
+              "d_rate": 0.0001339764201500536,
+              "i_rate": 0.10289389067524114
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
           },
           {
@@ -4882,18 +4771,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.07739938080495357
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.1710526315789473,
+              "cer": 0.8775426058273776,
+              "ser": 0.7469040247678018,
+              "semscore": 0.8506488013931841,
+              "s_rate": 0.7414860681114551,
+              "d_rate": 0.0,
+              "i_rate": 0.4295665634674923
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.7120743034055728,
+              "cer": 0.5196536558548652,
+              "ser": 0.36532507739938075,
+              "semscore": -0.0858070981391813,
+              "s_rate": 0.35990712074303405,
+              "d_rate": 0.0,
+              "i_rate": 0.3521671826625387
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
           },
           {
@@ -4909,18 +4806,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.0013333333333333333
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7546666666666667,
+              "cer": 0.7213333333333334,
+              "ser": 0.692,
+              "semscore": 0.8811104503472647,
+              "s_rate": 0.6906666666666667,
+              "d_rate": 0.0013333333333333333,
+              "i_rate": 0.06266666666666666
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.2773333333333334,
+              "cer": 0.30000000000000004,
+              "ser": 0.21599999999999997,
+              "semscore": -0.056132504860560095,
+              "s_rate": 0.21466666666666667,
+              "d_rate": 0.0013333333333333333,
+              "i_rate": 0.06133333333333333
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
           },
           {
@@ -4936,18 +4841,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.1276923076923077
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9774358974358974,
+              "cer": 0.7842512077294685,
+              "ser": 0.7882051282051282,
+              "semscore": 0.8406447936938359,
+              "s_rate": 0.7882051282051282,
+              "d_rate": 0.0,
+              "i_rate": 0.18923076923076923
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.37743589743589745,
+              "cer": 0.36367149758454104,
+              "ser": 0.3158974358974359,
+              "semscore": -0.07572843190951228,
+              "s_rate": 0.3158974358974359,
+              "d_rate": 0.0,
+              "i_rate": 0.06153846153846154
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
           },
           {
@@ -4963,18 +4876,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.349670510708402
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.2844590884129599,
+              "cer": 0.8582439975192699,
+              "ser": 0.814936847885777,
+              "semscore": 0.8284523140133769,
+              "s_rate": 0.8005216913783635,
+              "d_rate": 0.0,
+              "i_rate": 0.4839373970345964
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.38042284459088405,
+              "cer": 0.2878178435368123,
+              "ser": 0.25247116968698513,
+              "semscore": -0.07053458463975448,
+              "s_rate": 0.24615595826468972,
+              "d_rate": 0.0,
+              "i_rate": 0.13426688632619438
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
           }
         ],
@@ -4992,18 +4913,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0654568842108175,
               "i_rate": 0.2518827931036868
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7918312021521587,
+              "cer": 0.7236571567966916,
+              "ser": 0.7932094023659548,
+              "semscore": 0.8743534926253541,
+              "s_rate": 0.5566013596221274,
+              "d_rate": 0.07909459954771471,
+              "i_rate": 0.15613524298231662
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.11205471683759916,
+              "cer": 0.033817926259786635,
+              "ser": 0.06425718236288214,
+              "semscore": -0.02059200023071872,
+              "s_rate": -0.029944882053126176,
+              "d_rate": 0.013637715336897213,
+              "i_rate": -0.09574755012137015
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           }
         ],
@@ -5021,18 +4950,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.07594479187680721,
               "i_rate": 0.22431242014659405
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7277839419003429,
+              "cer": 0.6165910827040042,
+              "ser": 0.7763273588096044,
+              "semscore": 0.8997112468444378,
+              "s_rate": 0.5191816286732567,
+              "d_rate": 0.08582980297222782,
+              "i_rate": 0.12277251025485846
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.17337435276713076,
+              "cer": -0.1252260266687295,
+              "ser": -0.08501859993236383,
+              "semscore": 0.0164812514557805,
+              "s_rate": -0.0817194539708157,
+              "d_rate": 0.009885011095420615,
+              "i_rate": -0.1015399098917356
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -5048,18 +4985,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.07509881422924901,
               "i_rate": 1.5382469193210881
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.2620320855614973,
+              "cer": 1.047086131144823,
+              "ser": 0.9639175257731959,
+              "semscore": 0.813844253151336,
+              "s_rate": 0.724715182515694,
+              "d_rate": 0.21390374331550802,
+              "i_rate": 0.3234131597302953
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -1.0925366193908392,
+              "cer": -0.23621818784713589,
+              "ser": 0.08578792341678942,
+              "semscore": -0.03861003420665443,
+              "s_rate": -0.016507788886305552,
+              "d_rate": 0.13880492908625902,
+              "i_rate": -1.214833759590793
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "24710d4d4fee0f9d07b01e2b30ca9af897ccc99f339661915e94b550c17897e1"
           },
           {
@@ -5075,18 +5020,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.04131274131274131,
               "i_rate": 0.013513513513513514
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.8362934362934363,
+              "cer": 0.6482153927907183,
+              "ser": 0.6998087954110899,
+              "semscore": 0.8714502185981998,
+              "s_rate": 0.2833976833976834,
+              "d_rate": 0.11737451737451737,
+              "i_rate": 0.4355212355212355
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.6115830115830116,
+              "cer": 0.4884421220441059,
+              "ser": 0.3881453154875717,
+              "semscore": -0.08181001037986058,
+              "s_rate": 0.11351351351351352,
+              "d_rate": 0.07606177606177605,
+              "i_rate": 0.42200772200772196
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           },
           {
@@ -5102,18 +5055,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.16462113127001068
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.0843649946638207,
+              "cer": 0.8724790142321217,
+              "ser": 0.8003201707577374,
+              "semscore": 0.8432729764452866,
+              "s_rate": 0.7933297758804696,
+              "d_rate": 0.00010672358591248666,
+              "i_rate": 0.29092849519743863
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.40224119530416225,
+              "cer": 0.3695650044567208,
+              "ser": 0.2786019210245464,
+              "semscore": -0.07306185260399167,
+              "s_rate": 0.27582710779082176,
+              "d_rate": 0.00010672358591248666,
+              "i_rate": 0.12630736392742795
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
           }
         ],
@@ -5131,18 +5092,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.10015174506828528,
               "i_rate": 0.56752655538695
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.078907435508346,
+              "cer": 0.9704206241519674,
+              "ser": 0.9927360774818402,
+              "semscore": 0.8023345376619704,
+              "s_rate": 0.6980273141122914,
+              "d_rate": 0.2928679817905918,
+              "i_rate": 0.08801213960546282
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.4704097116843704,
+              "cer": -0.07598371777476254,
+              "ser": 0.01210653753026636,
+              "semscore": -0.01875533304260657,
+              "s_rate": -0.1836115326251897,
+              "d_rate": 0.19271623672230653,
+              "i_rate": -0.4795144157814871
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -5158,18 +5127,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.060227272727272727,
               "i_rate": 0.6912878787878788
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.3295454545454546,
+              "cer": 1.0029810298102981,
+              "ser": 0.9432367149758454,
+              "semscore": 0.8298339943091074,
+              "s_rate": 0.75,
+              "d_rate": 0.15265151515151515,
+              "i_rate": 0.4268939393939394
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.07840909090909087,
+              "cer": 0.2091463414634147,
+              "ser": 0.12741545893719808,
+              "semscore": -0.04625721344193401,
+              "s_rate": 0.09356060606060601,
+              "d_rate": 0.09242424242424242,
+              "i_rate": -0.2643939393939394
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -5185,18 +5162,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.1141552511415525,
               "i_rate": 6.213089802130898
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.3074581430745815,
+              "cer": 1.327891156462585,
+              "ser": 0.9975786924939467,
+              "semscore": 0.7807153072253267,
+              "s_rate": 0.6666666666666666,
+              "d_rate": 0.3318112633181126,
+              "i_rate": 0.3089802130898021
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -5.899543378995434,
+              "cer": -2.3213605442176872,
+              "ser": 0.004842615012106477,
+              "semscore": -0.02248133643198824,
+              "s_rate": -0.213089802130898,
+              "d_rate": 0.2176560121765601,
+              "i_rate": -5.904109589041096
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "35664ab9fce3ab643ea5e1ed8f50d72026c874ff35d990ea51396de67b8119f3"
           },
           {
@@ -5212,18 +5197,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0019743336623889436,
               "i_rate": 0.01085883514313919
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7951628825271471,
+              "cer": 0.5627865369562787,
+              "ser": 0.6209876543209877,
+              "semscore": 0.892906790750998,
+              "s_rate": 0.2403751233958539,
+              "d_rate": 0.0029615004935834156,
+              "i_rate": 0.5518262586377097
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.7245804540967423,
+              "cer": 0.5294643855529465,
+              "ser": 0.4703703703703704,
+              "semscore": -0.08962780686072369,
+              "s_rate": 0.18262586377097728,
+              "d_rate": 0.000987166831194472,
+              "i_rate": 0.5409674234945705
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -5239,18 +5232,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.18262411347517732,
               "i_rate": 0.02304964539007092
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9840425531914894,
+              "cer": 0.9735945485519591,
+              "ser": 0.9703389830508474,
+              "semscore": 0.797806898921223,
+              "s_rate": 0.4379432624113475,
+              "d_rate": 0.5283687943262412,
+              "i_rate": 0.01773049645390071
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.2056737588652482,
+              "cer": 0.33219761499148215,
+              "ser": 0.10593220338983045,
+              "semscore": -0.05497774279723733,
+              "s_rate": -0.13475177304964536,
+              "d_rate": 0.34574468085106386,
+              "i_rate": -0.00531914893617021
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
@@ -5266,18 +5267,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.22944483485593817
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.1082220660576247,
+              "cer": 1.11399843301123,
+              "ser": 0.9855938158819396,
+              "semscore": 0.794811905163405,
+              "s_rate": 0.9845397048489107,
+              "d_rate": 0.0,
+              "i_rate": 0.12368236120871398
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.15706254392129304,
+              "cer": 0.49647427526769383,
+              "ser": 0.26387912860154605,
+              "semscore": -0.08975456025679185,
+              "s_rate": 0.26282501756851717,
+              "d_rate": 0.0,
+              "i_rate": -0.10576247364722419
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
           },
           {
@@ -5293,18 +5302,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.11213818860877685
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.1139122315592904,
+              "cer": 0.7393790010612441,
+              "ser": 0.6544351073762839,
+              "semscore": 0.8789561121236711,
+              "s_rate": 0.642577030812325,
+              "d_rate": 9.337068160597572e-05,
+              "i_rate": 0.47124183006535947
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.7619981325863678,
+              "cer": 0.5702817431789395,
+              "ser": 0.4072829131652661,
+              "semscore": -0.08940578892228757,
+              "s_rate": 0.4028011204481793,
+              "d_rate": 9.337068160597572e-05,
+              "i_rate": 0.35910364145658263
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
           },
           {
@@ -5320,18 +5337,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.23746141975308643
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.0102237654320987,
+              "cer": 1.0162581555281256,
+              "ser": 1.0,
+              "semscore": 0.796157587894503,
+              "s_rate": 0.9998070987654321,
+              "d_rate": 0.00019290123456790122,
+              "i_rate": 0.010223765432098766
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.2064043209876545,
+              "cer": -0.11253747134544168,
+              "ser": 0.02083333333333337,
+              "semscore": -0.030131489187938953,
+              "s_rate": 0.020640432098765427,
+              "d_rate": 0.00019290123456790122,
+              "i_rate": -0.22723765432098766
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
           },
           {
@@ -5347,18 +5372,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.07591796367537486,
               "i_rate": 0.22647154962158356
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7285962133212642,
+              "cer": 0.6202547404711741,
+              "ser": 0.7780834787276876,
+              "semscore": 0.8987672084362742,
+              "s_rate": 0.5196835214938859,
+              "d_rate": 0.08647004098463705,
+              "i_rate": 0.12244265084274136
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.17543771424739973,
+              "cer": -0.12390346676881825,
+              "ser": -0.08384780566366934,
+              "semscore": 0.015974984652899038,
+              "s_rate": -0.0819608927778197,
+              "d_rate": 0.010552077309262192,
+              "i_rate": -0.1040288987788422
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           }
         ]
@@ -8226,7 +8259,7 @@ window.RESULT_BROWSER_DATA = {
     "phi4/cdsd": {
       "model": "phi4",
       "train_dataset": "cdsd",
-      "status": "pending",
+      "status": "complete",
       "groups": {
         "cohort": [
           {
@@ -8242,18 +8275,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.05123718897387312,
               "i_rate": 0.3019114535068671
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.8314269512178255,
+              "cer": 0.8112493066828513,
+              "ser": 0.8809939892074587,
+              "semscore": 0.8572040261711874,
+              "s_rate": 0.6122045338238752,
+              "d_rate": 0.07024107550379663,
+              "i_rate": 0.14898134189015366
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.15517074452635504,
+              "cer": 0.038279818445285274,
+              "ser": 0.07689205538378818,
+              "semscore": -0.021965929279840535,
+              "s_rate": -0.02124451943956518,
+              "d_rate": 0.019003886529923512,
+              "i_rate": -0.15293011161671344
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
           },
           {
@@ -8297,18 +8338,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.058889785488534734,
               "i_rate": 0.2648275166431309
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7914649317463519,
+              "cer": 0.6540945879304176,
+              "ser": 0.8332769699019277,
+              "semscore": 0.8915990992538986,
+              "s_rate": 0.5609911909084796,
+              "d_rate": 0.0767265146930267,
+              "i_rate": 0.15374722614484568
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.17218916011028185,
+              "cer": -0.14065385768297278,
+              "ser": -0.0724721001014541,
+              "semscore": 0.018140066169910263,
+              "s_rate": -0.07894559881648844,
+              "d_rate": 0.017836729204491968,
+              "i_rate": -0.11108029049828524
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -8324,18 +8373,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.115356355620867,
               "i_rate": 0.93791329904482
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.396399706098457,
+              "cer": 1.2333081726480477,
+              "ser": 0.9268451992161986,
+              "semscore": 0.8321773354170916,
+              "s_rate": 0.695077149155033,
+              "d_rate": 0.13262307127112416,
+              "i_rate": 0.5686994856722998
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.25753122703894205,
+              "cer": 0.09448980992245937,
+              "ser": 0.09274983670803394,
+              "semscore": -0.030220784368583553,
+              "s_rate": 0.09441587068332102,
+              "d_rate": 0.017266715650257156,
+              "i_rate": -0.36921381337252024
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
@@ -8351,18 +8408,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.025284450063211124,
               "i_rate": 1.484197218710493
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.3268015170670038,
+              "cer": 1.033967391304348,
+              "ser": 0.8946037099494097,
+              "semscore": 0.8278881246585267,
+              "s_rate": 0.7408343868520859,
+              "d_rate": 0.041719342604298354,
+              "i_rate": 0.5442477876106194
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.8817951959544879,
+              "cer": -0.20558110367892968,
+              "ser": 0.062394603709949426,
+              "semscore": -0.0244840881072651,
+              "s_rate": 0.041719342604298326,
+              "d_rate": 0.01643489254108723,
+              "i_rate": -0.9399494310998736
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -8378,18 +8443,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.02762119503945885,
               "i_rate": 0.08850056369785794
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.447576099210823,
+              "cer": 0.41349124613800203,
+              "ser": 0.7391304347826086,
+              "semscore": 0.9157075345516205,
+              "s_rate": 0.08962795941375423,
+              "d_rate": 0.33934611048478014,
+              "i_rate": 0.018602029312288614
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.2158962795941375,
+              "cer": 0.2908084449021627,
+              "ser": 0.42608695652173906,
+              "semscore": -0.05582335254420412,
+              "s_rate": -0.025930101465614433,
+              "d_rate": 0.31172491544532127,
+              "i_rate": -0.06989853438556932
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -8405,18 +8478,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.026785714285714284
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7589285714285714,
+              "cer": 0.7064777327935222,
+              "ser": 0.7589285714285714,
+              "semscore": 0.8732976908130305,
+              "s_rate": 0.7589285714285714,
+              "d_rate": 0.0,
+              "i_rate": 0.0
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.625,
+              "cer": 0.6255060728744939,
+              "ser": 0.6428571428571428,
+              "semscore": -0.10926330355661251,
+              "s_rate": 0.6517857142857143,
+              "d_rate": 0.0,
+              "i_rate": -0.026785714285714284
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -8432,18 +8513,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.04403409090909091
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9090909090909091,
+              "cer": 0.8983162759986795,
+              "ser": 0.9019886363636364,
+              "semscore": 0.8220041671090506,
+              "s_rate": 0.9005681818181818,
+              "d_rate": 0.0,
+              "i_rate": 0.008522727272727272
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.47159090909090906,
+              "cer": 0.6104324859689667,
+              "ser": 0.5014204545454546,
+              "semscore": -0.11846185881983151,
+              "s_rate": 0.5071022727272727,
+              "d_rate": 0.0,
+              "i_rate": -0.03551136363636364
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
           },
           {
@@ -8459,18 +8548,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.12593783494105038
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9918274383708467,
+              "cer": 1.2224352828379674,
+              "ser": 0.9636923901393355,
+              "semscore": 0.8182497791714352,
+              "s_rate": 0.9631564844587353,
+              "d_rate": 0.0,
+              "i_rate": 0.02867095391211147
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.1712218649517685,
+              "cer": 0.5324384787472036,
+              "ser": 0.26312968917470525,
+              "semscore": -0.07140574870193883,
+              "s_rate": 0.2684887459807074,
+              "d_rate": 0.0,
+              "i_rate": -0.0972668810289389
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
           },
           {
@@ -8486,18 +8583,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.10294117647058823
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9318885448916409,
+              "cer": 0.9578064870808136,
+              "ser": 0.9241486068111455,
+              "semscore": 0.8136674548634804,
+              "s_rate": 0.9241486068111455,
+              "d_rate": 0.0,
+              "i_rate": 0.007739938080495356
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.34984520123839014,
+              "cer": 0.5647333699835074,
+              "ser": 0.44427244582043346,
+              "semscore": -0.09754525258814217,
+              "s_rate": 0.445046439628483,
+              "d_rate": 0.0,
+              "i_rate": -0.09520123839009287
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
           },
           {
@@ -8513,18 +8618,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.036
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9493333333333334,
+              "cer": 1.0256666666666667,
+              "ser": 0.948,
+              "semscore": 0.830211801926295,
+              "s_rate": 0.948,
+              "d_rate": 0.0,
+              "i_rate": 0.0013333333333333333
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.41733333333333333,
+              "cer": 0.5920000000000001,
+              "ser": 0.44666666666666666,
+              "semscore": -0.08442945710817973,
+              "s_rate": 0.45199999999999996,
+              "d_rate": 0.0,
+              "i_rate": -0.034666666666666665
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
           },
           {
@@ -8540,18 +8653,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.24
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9615384615384616,
+              "cer": 0.9911111111111112,
+              "ser": 0.9538461538461539,
+              "semscore": 0.7989026084007361,
+              "s_rate": 0.9538461538461539,
+              "d_rate": 0.0,
+              "i_rate": 0.007692307692307693
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.10923076923076924,
+              "cer": 0.4656038647342996,
+              "ser": 0.34153846153846157,
+              "semscore": -0.09595896387711544,
+              "s_rate": 0.34153846153846157,
+              "d_rate": 0.0,
+              "i_rate": -0.2323076923076923
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
           },
           {
@@ -8567,18 +8688,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.7538440417353103
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.0233388248215267,
+              "cer": 1.045804908301586,
+              "ser": 0.9483800109829764,
+              "semscore": 0.7949415739014016,
+              "s_rate": 0.9459088412959912,
+              "d_rate": 0.0,
+              "i_rate": 0.07742998352553541
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.3978583196046128,
+              "cer": 0.2554265969699655,
+              "ser": 0.25658978583196046,
+              "semscore": -0.0805890150920563,
+              "s_rate": 0.2785557386051619,
+              "d_rate": 0.0,
+              "i_rate": -0.6764140582097748
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
           }
         ],
@@ -8596,18 +8725,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.05123718897387312,
               "i_rate": 0.3019114535068671
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.8314269512178255,
+              "cer": 0.8112493066828513,
+              "ser": 0.8809939892074587,
+              "semscore": 0.8572040261711874,
+              "s_rate": 0.6122045338238752,
+              "d_rate": 0.07024107550379663,
+              "i_rate": 0.14898134189015366
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.15517074452635504,
+              "cer": 0.038279818445285274,
+              "ser": 0.07689205538378818,
+              "semscore": -0.021965929279840535,
+              "s_rate": -0.02124451943956518,
+              "d_rate": 0.019003886529923512,
+              "i_rate": -0.15293011161671344
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
           }
         ],
@@ -8625,18 +8762,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.058889785488534734,
               "i_rate": 0.2648275166431309
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7914649317463519,
+              "cer": 0.6540945879304176,
+              "ser": 0.8332769699019277,
+              "semscore": 0.8915990992538986,
+              "s_rate": 0.5609911909084796,
+              "d_rate": 0.0767265146930267,
+              "i_rate": 0.15374722614484568
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.17218916011028185,
+              "cer": -0.14065385768297278,
+              "ser": -0.0724721001014541,
+              "semscore": 0.018140066169910263,
+              "s_rate": -0.07894559881648844,
+              "d_rate": 0.017836729204491968,
+              "i_rate": -0.11108029049828524
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -8652,18 +8797,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.08224907063197026,
               "i_rate": 1.1387081784386617
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.370817843866171,
+              "cer": 1.1543018101984177,
+              "ser": 0.9127714390872286,
+              "semscore": 0.8303050483505999,
+              "s_rate": 0.7118959107806692,
+              "d_rate": 0.09921003717472118,
+              "i_rate": 0.5597118959107806
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.48698884758364325,
+              "cer": -0.024439749803239152,
+              "ser": 0.07949944792050057,
+              "semscore": -0.027716654163974064,
+              "s_rate": 0.07504646840148699,
+              "d_rate": 0.01696096654275092,
+              "i_rate": -0.578996282527881
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
@@ -8679,18 +8832,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.01891891891891892,
               "i_rate": 0.07374517374517374
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.5864864864864865,
+              "cer": 0.5563723319457975,
+              "ser": 0.8508604206500956,
+              "semscore": 0.8481003900217052,
+              "s_rate": 0.338996138996139,
+              "d_rate": 0.23243243243243245,
+              "i_rate": 0.015057915057915058
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.3030888030888031,
+              "cer": 0.39119652820830747,
+              "ser": 0.5,
+              "semscore": -0.10370364215360317,
+              "s_rate": 0.14826254826254828,
+              "d_rate": 0.21351351351351353,
+              "i_rate": -0.05868725868725868
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           },
           {
@@ -8706,18 +8867,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.37668089647812164
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9950907150480256,
+              "cer": 1.076704573281224,
+              "ser": 0.9533617929562433,
+              "semscore": 0.8073398113950466,
+              "s_rate": 0.952187833511206,
+              "d_rate": 0.0,
+              "i_rate": 0.042902881536819634
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.03425827107790813,
+              "cer": 0.37658801289020793,
+              "ser": 0.288580576307364,
+              "semscore": -0.07985343825918889,
+              "s_rate": 0.29951974386339375,
+              "d_rate": 0.0,
+              "i_rate": -0.333778014941302
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
           }
         ],
@@ -8735,18 +8904,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.11532625189681335,
               "i_rate": 1.0591805766312594
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.298937784522003,
+              "cer": 1.0781546811397558,
+              "ser": 0.9927360774818402,
+              "semscore": 0.8043858198219004,
+              "s_rate": 0.8133535660091047,
+              "d_rate": 0.165402124430956,
+              "i_rate": 0.3201820940819423
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.7132018209408195,
+              "cer": -0.192944369063772,
+              "ser": 0.016949152542372947,
+              "semscore": -0.009281421977728965,
+              "s_rate": -0.02427921092564489,
+              "d_rate": 0.050075872534142654,
+              "i_rate": -0.7389984825493171
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -8762,18 +8939,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.048484848484848485,
               "i_rate": 0.6617424242424242
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.0704545454545455,
+              "cer": 0.7999322493224932,
+              "ser": 0.8623188405797102,
+              "semscore": 0.8507565370792352,
+              "s_rate": 0.6530303030303031,
+              "d_rate": 0.06098484848484848,
+              "i_rate": 0.35643939393939394
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.16780303030303023,
+              "cer": 0.08421409214092135,
+              "ser": 0.11956521739130443,
+              "semscore": -0.04049135780564839,
+              "s_rate": 0.125,
+              "d_rate": 0.012499999999999997,
+              "i_rate": -0.3053030303030303
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -8789,18 +8974,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.19393939393939394,
               "i_rate": 3.1818181818181817
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 2.790909090909091,
+              "cer": 2.7959349593495935,
+              "ser": 1.0,
+              "semscore": 0.7859729750144885,
+              "s_rate": 0.8257575757575758,
+              "d_rate": 0.1696969696969697,
+              "i_rate": 1.7954545454545454
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -1.3848484848484848,
+              "cer": -0.12384823848238469,
+              "ser": 0.004830917874396157,
+              "semscore": 0.004930446545282963,
+              "s_rate": 0.025757575757575757,
+              "d_rate": -0.024242424242424232,
+              "i_rate": -1.3863636363636362
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
@@ -8816,18 +9009,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0014807502467917078,
               "i_rate": 0.0192497532082922
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.4837117472852912,
+              "cer": 0.46058369674605837,
+              "ser": 0.808641975308642,
+              "semscore": 0.8631718789353783,
+              "s_rate": 0.3005923000987167,
+              "d_rate": 0.16584402764067127,
+              "i_rate": 0.017275419545903257
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.3904244817374136,
+              "cer": 0.4189869171418987,
+              "ser": 0.617283950617284,
+              "semscore": -0.11748816076620128,
+              "s_rate": 0.228035538005923,
+              "d_rate": 0.16436327739387957,
+              "i_rate": -0.001974333662388944
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -8843,18 +9044,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.08156028368794327,
               "i_rate": 0.2695035460992908
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9556737588652482,
+              "cer": 0.9212095400340715,
+              "ser": 0.9957627118644068,
+              "semscore": 0.7963719746824038,
+              "s_rate": 0.4769503546099291,
+              "d_rate": 0.4716312056737589,
+              "i_rate": 0.0070921985815602835
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.010638297872340496,
+              "cer": 0.2853492333901192,
+              "ser": 0.09745762711864403,
+              "semscore": -0.05639237064426228,
+              "s_rate": -0.13829787234042556,
+              "d_rate": 0.3900709219858156,
+              "i_rate": -0.2624113475177305
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
@@ -8870,18 +9079,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.28074490513000705
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.016163035839775,
+              "cer": 1.1040741708017758,
+              "ser": 0.9985945186226283,
+              "semscore": 0.7917064556502492,
+              "s_rate": 0.9985945186226283,
+              "d_rate": 0.0,
+              "i_rate": 0.017568517217146872
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.12262825017568524,
+              "cer": 0.38260642465395656,
+              "ser": 0.13949402670414623,
+              "semscore": -0.06001627015883204,
+              "s_rate": 0.140548137737175,
+              "d_rate": 0.0,
+              "i_rate": -0.2631763879128602
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
           },
           {
@@ -8897,18 +9114,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.3467787114845938
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.9854341736694678,
+              "cer": 1.0444353154633528,
+              "ser": 0.9187675070028011,
+              "semscore": 0.8203138756707492,
+              "s_rate": 0.9167133520074696,
+              "d_rate": 0.0,
+              "i_rate": 0.06872082166199814
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": 0.20494864612511676,
+              "cer": 0.6282564787237683,
+              "ser": 0.46433239962651723,
+              "semscore": -0.11785723780160962,
+              "s_rate": 0.48300653594771237,
+              "d_rate": 0.0,
+              "i_rate": -0.2780578898225957
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
           },
           {
@@ -8924,18 +9149,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.49112654320987653
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 1.0034722222222223,
+              "cer": 1.128407688238406,
+              "ser": 1.0,
+              "semscore": 0.7891184190449155,
+              "s_rate": 1.0,
+              "d_rate": 0.0,
+              "i_rate": 0.003472222222222222
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.47993827160493807,
+              "cer": -0.1451948509962968,
+              "ser": 0.007330246913580196,
+              "semscore": -0.012229188126914314,
+              "s_rate": 0.007716049382716084,
+              "d_rate": 0.0,
+              "i_rate": -0.4876543209876543
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
           },
           {
@@ -8951,18 +9184,26 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.058903891445190384,
               "i_rate": 0.2670455021665703
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.7923277429953148,
+              "cer": 0.6562823213943689,
+              "ser": 0.8343846463561938,
+              "semscore": 0.8909564890840392,
+              "s_rate": 0.5615398154434136,
+              "d_rate": 0.07688181505787299,
+              "i_rate": 0.1539061124940283
             },
-            "status": "baseline_only",
-            "note": "该 adapter 尚未完成；微调后留空",
+            "delta": {
+              "wer": -0.17394583993362,
+              "cer": -0.14248707144225237,
+              "ser": -0.07160112736545432,
+              "semscore": 0.017780879016707107,
+              "s_rate": -0.07878437387376058,
+              "d_rate": 0.017977923612682606,
+              "i_rate": -0.113139389672542
+            },
+            "status": "paired",
+            "note": "",
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           }
         ]
@@ -15648,15 +15889,15 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 180848,
+            "n": 33333,
             "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
             },
             "after": null,
             "delta": {
@@ -15669,48 +15910,23 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "健康组",
-            "label": "健康组",
-            "n": 36679,
-            "before": {
-              "wer": 1.499364652918966,
-              "cer": 1.4709703853266547,
-              "ser": 0.41718694620900243,
-              "semscore": 0.9425415539677164,
-              "s_rate": 0.18261690386291024,
-              "d_rate": 0.008368428695904734,
-              "i_rate": 1.308379320360151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "label": [
           {
             "category": "CDSD · All samples",
-            "label": "All samples",
-            "n": 147854,
+            "label": "CDSD · All samples",
+            "n": 29570,
             "before": {
-              "wer": 2.47774703975,
-              "cer": 4.264677726248,
-              "ser": 0.842939656688,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -15723,228 +15939,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Common Words",
-            "label": "Common Words",
-            "n": 9696,
-            "before": {
-              "wer": 3.790841584158,
-              "cer": 5.507542629263,
-              "ser": 0.783931518152,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Computer Commands",
-            "label": "Computer Commands",
-            "n": 1817,
-            "before": {
-              "wer": 3.178866263071,
-              "cer": 2.923111093639,
-              "ser": 0.671986791414,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Digits",
-            "label": "Digits",
-            "n": 970,
-            "before": {
-              "wer": 3.118556701031,
-              "cer": 3.454673539519,
-              "ser": 0.629896907216,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Radio Alphabet",
-            "label": "Radio Alphabet",
-            "n": 2522,
-            "before": {
-              "wer": 3.616970658208,
-              "cer": 3.333372512367,
-              "ser": 0.699841395718,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Uncommon Words",
-            "label": "Uncommon Words",
-            "n": 9698,
-            "before": {
-              "wer": 3.969787585069,
-              "cer": 2.483679871891,
-              "ser": 0.752423180037,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Sentence",
-            "label": "Sentence",
-            "n": 1321,
-            "before": {
-              "wer": 0.643030323197,
-              "cer": 0.622784082975,
-              "ser": 0.603330809992,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Command",
-            "label": "Short-word Command",
-            "n": 579,
-            "before": {
-              "wer": 2.820379965458,
-              "cer": 4.273449708035,
-              "ser": 0.566493955095,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Non-command",
-            "label": "Short-word Non-command",
-            "n": 3674,
-            "before": {
-              "wer": 3.836418072945,
-              "cer": 4.342616714623,
-              "ser": 0.730811105063,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall · Command",
-            "label": "Command",
+            "label": "EasyCall · Command",
             "n": 1531,
             "before": {
-              "wer": 3.237154365339,
-              "cer": 2.628914405911,
-              "ser": 0.968647942521,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 2.730345334313005,
+              "cer": 2.0171550126947095,
+              "ser": 0.968647942521228,
+              "semscore": 0.807896102004235,
+              "s_rate": 0.8842762674504041,
+              "d_rate": 0.05547391623806025,
+              "i_rate": 1.7905951506245408
             },
             "after": null,
             "delta": {
@@ -15957,20 +15966,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
             "category": "EasyCall · Non-command",
-            "label": "Non-command",
+            "label": "EasyCall · Non-command",
             "n": 1186,
             "before": {
-              "wer": 3.694631815627,
-              "cer": 2.848670137398,
-              "ser": 0.971332209106,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 3.3672566371681416,
+              "cer": 2.2012959866220734,
+              "ser": 0.9713322091062394,
+              "semscore": 0.8017178693971586,
+              "s_rate": 0.9184576485461441,
+              "d_rate": 0.020859671302149177,
+              "i_rate": 2.4279393173198485
             },
             "after": null,
             "delta": {
@@ -15983,22 +15993,133 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
+          },
+          {
+            "category": "TORGO · Sentence",
+            "label": "TORGO · Sentence",
+            "n": 230,
+            "before": {
+              "wer": 0.27846674182638104,
+              "cer": 0.24768280123583933,
+              "ser": 0.3,
+              "semscore": 0.9668866266375002,
+              "s_rate": 0.12570462232243518,
+              "d_rate": 0.021984216459977453,
+              "i_rate": 0.13077790304396844
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
+          },
+          {
+            "category": "TORGO · Short-word Command",
+            "label": "TORGO · Short-word Command",
+            "n": 112,
+            "before": {
+              "wer": 1.75,
+              "cer": 1.917004048582996,
+              "ser": 0.3125,
+              "semscore": 0.960593080414193,
+              "s_rate": 0.10714285714285714,
+              "d_rate": 0.0,
+              "i_rate": 1.6428571428571428
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
+          },
+          {
+            "category": "TORGO · Short-word Non-command",
+            "label": "TORGO · Short-word Non-command",
+            "n": 704,
+            "before": {
+              "wer": 4.056818181818182,
+              "cer": 3.1815780785737866,
+              "ser": 0.5355113636363636,
+              "semscore": 0.9214033010331067,
+              "s_rate": 0.36363636363636365,
+              "d_rate": 0.0,
+              "i_rate": 3.6931818181818183
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          }
+        ],
+        "model": [
+          {
+            "category": "Step-Audio",
+            "label": "Step-Audio",
+            "n": 33333,
+            "before": {
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "dataset": [
           {
             "category": "CDSD",
             "label": "CDSD",
-            "n": 147854,
+            "n": 29570,
             "before": {
-              "wer": 1.9797601447623945,
-              "cer": 2.9397403107950897,
-              "ser": 0.8429396566883547,
-              "semscore": 0.8720976337853983,
-              "s_rate": 0.5403793974596459,
-              "d_rate": 0.05241403758913737,
-              "i_rate": 1.3869667097136111
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -16011,20 +16132,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall",
             "label": "EasyCall",
-            "n": 5213,
+            "n": 2717,
             "before": {
-              "wer": 2.18677281077771,
-              "cer": 1.5105318987725413,
-              "ser": 0.8831766737003645,
-              "semscore": 0.8402446914880856,
-              "s_rate": 0.7559093692590324,
-              "d_rate": 0.055848132271892226,
-              "i_rate": 1.3750153092467852
+              "wer": 2.9644516728624537,
+              "cer": 2.0901371111387266,
+              "ser": 0.9698196540301803,
+              "semscore": 0.8051992363906934,
+              "s_rate": 0.8968401486988847,
+              "d_rate": 0.04275092936802974,
+              "i_rate": 2.024860594795539
             },
             "after": null,
             "delta": {
@@ -16037,20 +16159,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
             "category": "TORGO",
             "label": "TORGO",
-            "n": 16552,
+            "n": 1046,
             "before": {
-              "wer": 1.1191582072399924,
-              "cer": 1.1215896631049385,
-              "ser": 0.49105848235862737,
-              "semscore": 0.9303092347604748,
-              "s_rate": 0.18485443401647195,
-              "d_rate": 0.007661367554108408,
-              "i_rate": 0.926642405669412
+              "wer": 1.369111969111969,
+              "cer": 1.10778496147374,
+              "ser": 0.4598470363288719,
+              "semscore": 0.9356006434611107,
+              "s_rate": 0.18957528957528957,
+              "d_rate": 0.015057915057915058,
+              "i_rate": 1.1644787644787644
             },
             "after": null,
             "delta": {
@@ -16063,65 +16186,14 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech",
-            "label": "UA-Speech",
-            "n": 47908,
-            "before": {
-              "wer": 3.0263648413553144,
-              "cer": 2.605173882796195,
-              "ser": 0.5742255990648744,
-              "semscore": 0.907549414328047,
-              "s_rate": 0.433808300886422,
-              "d_rate": 0.0037279430038936294,
-              "i_rate": 2.5888285974649987
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           }
         ],
         "severity": [
           {
-            "category": "EasyCall · 1",
-            "label": "1",
-            "n": 1656,
-            "before": {
-              "wer": 2.046590909090909,
-              "cer": 1.2778455284552845,
-              "ser": 0.9541062801932367,
-              "semscore": 0.817702671719922,
-              "s_rate": 0.8704545454545455,
-              "d_rate": 0.03598484848484849,
-              "i_rate": 1.1401515151515151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "EasyCall · 2",
-            "label": "2",
+            "category": "EasyCall · 中度",
+            "label": "EasyCall · 中度",
             "n": 413,
             "before": {
               "wer": 2.417298937784522,
@@ -16143,11 +16215,39 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
-            "category": "EasyCall · 3",
-            "label": "3",
+            "category": "EasyCall · 轻度",
+            "label": "EasyCall · 轻度",
+            "n": 1656,
+            "before": {
+              "wer": 2.046590909090909,
+              "cer": 1.2778455284552845,
+              "ser": 0.9541062801932367,
+              "semscore": 0.817702671719922,
+              "s_rate": 0.8704545454545455,
+              "d_rate": 0.03598484848484849,
+              "i_rate": 1.1401515151515151
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
+          },
+          {
+            "category": "EasyCall · 重度",
+            "label": "EasyCall · 重度",
             "n": 414,
             "before": {
               "wer": 7.356060606060606,
@@ -16169,20 +16269,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
-            "category": "TORGO · mild",
-            "label": "mild",
-            "n": 1483,
+            "category": "TORGO · 轻度",
+            "label": "TORGO · 轻度",
+            "n": 810,
             "before": {
-              "wer": 1.0471849865951743,
-              "cer": 0.8845198424719782,
-              "ser": 0.38435603506405935,
-              "semscore": 0.9527565642377451,
-              "s_rate": 0.07935656836461126,
-              "d_rate": 0.0016085790884718498,
-              "i_rate": 0.9662198391420912
+              "wer": 1.1895360315893386,
+              "cer": 0.859890417085989,
+              "ser": 0.337037037037037,
+              "semscore": 0.9607526959460458,
+              "s_rate": 0.06120434353405726,
+              "d_rate": 0.0019743336623889436,
+              "i_rate": 1.1263573543928924
             },
             "after": null,
             "delta": {
@@ -16195,20 +16296,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
-            "category": "TORGO · moderate",
-            "label": "moderate",
-            "n": 1087,
+            "category": "TORGO · 重度",
+            "label": "TORGO · 重度",
+            "n": 236,
             "before": {
-              "wer": 1.4375,
-              "cer": 1.4548599935629225,
-              "ser": 0.6688132474701012,
-              "semscore": 0.9043135074375963,
-              "s_rate": 0.2535919540229885,
-              "d_rate": 0.010775862068965518,
-              "i_rate": 1.173132183908046
+              "wer": 2.0141843971631204,
+              "cer": 2.0519591141396933,
+              "ser": 0.8813559322033898,
+              "semscore": 0.8492736836611214,
+              "s_rate": 0.650709219858156,
+              "d_rate": 0.06205673758865248,
+              "i_rate": 1.301418439716312
             },
             "after": null,
             "delta": {
@@ -16221,20 +16323,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
-            "category": "TORGO · moderate-severe",
-            "label": "moderate-severe",
-            "n": 587,
+            "category": "未标注",
+            "label": "未标注",
+            "n": 29804,
             "before": {
-              "wer": 1.6918238993710693,
-              "cer": 1.7208857734586587,
-              "ser": 0.7393526405451448,
-              "semscore": 0.8908348688681244,
-              "s_rate": 0.3584905660377358,
-              "d_rate": 0.019566736547868623,
-              "i_rate": 1.3137665967854648
+              "wer": 1.2445165237652225,
+              "cer": 1.5043143076039074,
+              "ser": 0.9022614414172594,
+              "semscore": 0.8653108923747354,
+              "s_rate": 0.643467182955755,
+              "d_rate": 0.06751988467308676,
+              "i_rate": 0.5335294561363808
             },
             "after": null,
             "delta": {
@@ -16247,165 +16350,8 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · severe",
-            "label": "severe",
-            "n": 2417,
-            "before": {
-              "wer": 1.8734748453952867,
-              "cer": 1.7685453072561046,
-              "ser": 0.8601572196938353,
-              "semscore": 0.8589874983179111,
-              "s_rate": 0.5679425037606551,
-              "d_rate": 0.02573959552064182,
-              "i_rate": 1.2797927461139897
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · mild",
-            "label": "mild",
-            "n": 8925,
-            "before": {
-              "wer": 2.1571984435797664,
-              "cer": 1.8513740297881267,
-              "ser": 0.506218487394958,
-              "semscore": 0.9279485688089323,
-              "s_rate": 0.3088382434685937,
-              "d_rate": 0.004002223457476375,
-              "i_rate": 1.8443579766536966
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate",
-            "label": "moderate",
-            "n": 5074,
-            "before": {
-              "wer": 2.7489245209229565,
-              "cer": 2.1621102408748336,
-              "ser": 0.762908947575877,
-              "semscore": 0.8717245760751513,
-              "s_rate": 0.6652326945639421,
-              "d_rate": 0.005084082909659757,
-              "i_rate": 2.078607743449355
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate-severe",
-            "label": "moderate-severe",
-            "n": 5100,
-            "before": {
-              "wer": 3.632490272373541,
-              "cer": 2.843575624082232,
-              "ser": 0.8913725490196078,
-              "semscore": 0.8401736414081911,
-              "s_rate": 0.8383268482490273,
-              "d_rate": 0.002529182879377432,
-              "i_rate": 2.791634241245136
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · severe",
-            "label": "severe",
-            "n": 5604,
-            "before": {
-              "wer": 7.382790368271955,
-              "cer": 6.094649656001603,
-              "ser": 0.9921484653818701,
-              "semscore": 0.8053830698143151,
-              "s_rate": 0.9768059490084986,
-              "d_rate": 0.003186968838526912,
-              "i_rate": 6.402797450424929
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          }
-        ],
-        "model": [
-          {
-            "category": "Step-Audio",
-            "label": "Step-Audio",
-            "n": 180848,
-            "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           }
         ]
       }
@@ -16419,15 +16365,15 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 180848,
+            "n": 33333,
             "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
             },
             "after": null,
             "delta": {
@@ -16440,48 +16386,23 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "健康组",
-            "label": "健康组",
-            "n": 36679,
-            "before": {
-              "wer": 1.499364652918966,
-              "cer": 1.4709703853266547,
-              "ser": 0.41718694620900243,
-              "semscore": 0.9425415539677164,
-              "s_rate": 0.18261690386291024,
-              "d_rate": 0.008368428695904734,
-              "i_rate": 1.308379320360151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "label": [
           {
             "category": "CDSD · All samples",
-            "label": "All samples",
-            "n": 147854,
+            "label": "CDSD · All samples",
+            "n": 29570,
             "before": {
-              "wer": 2.47774703975,
-              "cer": 4.264677726248,
-              "ser": 0.842939656688,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -16494,228 +16415,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Common Words",
-            "label": "Common Words",
-            "n": 9696,
-            "before": {
-              "wer": 3.790841584158,
-              "cer": 5.507542629263,
-              "ser": 0.783931518152,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Computer Commands",
-            "label": "Computer Commands",
-            "n": 1817,
-            "before": {
-              "wer": 3.178866263071,
-              "cer": 2.923111093639,
-              "ser": 0.671986791414,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Digits",
-            "label": "Digits",
-            "n": 970,
-            "before": {
-              "wer": 3.118556701031,
-              "cer": 3.454673539519,
-              "ser": 0.629896907216,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Radio Alphabet",
-            "label": "Radio Alphabet",
-            "n": 2522,
-            "before": {
-              "wer": 3.616970658208,
-              "cer": 3.333372512367,
-              "ser": 0.699841395718,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Uncommon Words",
-            "label": "Uncommon Words",
-            "n": 9698,
-            "before": {
-              "wer": 3.969787585069,
-              "cer": 2.483679871891,
-              "ser": 0.752423180037,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Sentence",
-            "label": "Sentence",
-            "n": 1321,
-            "before": {
-              "wer": 0.643030323197,
-              "cer": 0.622784082975,
-              "ser": 0.603330809992,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Command",
-            "label": "Short-word Command",
-            "n": 579,
-            "before": {
-              "wer": 2.820379965458,
-              "cer": 4.273449708035,
-              "ser": 0.566493955095,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Non-command",
-            "label": "Short-word Non-command",
-            "n": 3674,
-            "before": {
-              "wer": 3.836418072945,
-              "cer": 4.342616714623,
-              "ser": 0.730811105063,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall · Command",
-            "label": "Command",
+            "label": "EasyCall · Command",
             "n": 1531,
             "before": {
-              "wer": 3.237154365339,
-              "cer": 2.628914405911,
-              "ser": 0.968647942521,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 2.730345334313005,
+              "cer": 2.0171550126947095,
+              "ser": 0.968647942521228,
+              "semscore": 0.807896102004235,
+              "s_rate": 0.8842762674504041,
+              "d_rate": 0.05547391623806025,
+              "i_rate": 1.7905951506245408
             },
             "after": null,
             "delta": {
@@ -16728,20 +16442,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
             "category": "EasyCall · Non-command",
-            "label": "Non-command",
+            "label": "EasyCall · Non-command",
             "n": 1186,
             "before": {
-              "wer": 3.694631815627,
-              "cer": 2.848670137398,
-              "ser": 0.971332209106,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 3.3672566371681416,
+              "cer": 2.2012959866220734,
+              "ser": 0.9713322091062394,
+              "semscore": 0.8017178693971586,
+              "s_rate": 0.9184576485461441,
+              "d_rate": 0.020859671302149177,
+              "i_rate": 2.4279393173198485
             },
             "after": null,
             "delta": {
@@ -16754,22 +16469,133 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
+          },
+          {
+            "category": "TORGO · Sentence",
+            "label": "TORGO · Sentence",
+            "n": 230,
+            "before": {
+              "wer": 0.27846674182638104,
+              "cer": 0.24768280123583933,
+              "ser": 0.3,
+              "semscore": 0.9668866266375002,
+              "s_rate": 0.12570462232243518,
+              "d_rate": 0.021984216459977453,
+              "i_rate": 0.13077790304396844
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
+          },
+          {
+            "category": "TORGO · Short-word Command",
+            "label": "TORGO · Short-word Command",
+            "n": 112,
+            "before": {
+              "wer": 1.75,
+              "cer": 1.917004048582996,
+              "ser": 0.3125,
+              "semscore": 0.960593080414193,
+              "s_rate": 0.10714285714285714,
+              "d_rate": 0.0,
+              "i_rate": 1.6428571428571428
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
+          },
+          {
+            "category": "TORGO · Short-word Non-command",
+            "label": "TORGO · Short-word Non-command",
+            "n": 704,
+            "before": {
+              "wer": 4.056818181818182,
+              "cer": 3.1815780785737866,
+              "ser": 0.5355113636363636,
+              "semscore": 0.9214033010331067,
+              "s_rate": 0.36363636363636365,
+              "d_rate": 0.0,
+              "i_rate": 3.6931818181818183
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          }
+        ],
+        "model": [
+          {
+            "category": "Step-Audio",
+            "label": "Step-Audio",
+            "n": 33333,
+            "before": {
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "dataset": [
           {
             "category": "CDSD",
             "label": "CDSD",
-            "n": 147854,
+            "n": 29570,
             "before": {
-              "wer": 1.9797601447623945,
-              "cer": 2.9397403107950897,
-              "ser": 0.8429396566883547,
-              "semscore": 0.8720976337853983,
-              "s_rate": 0.5403793974596459,
-              "d_rate": 0.05241403758913737,
-              "i_rate": 1.3869667097136111
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -16782,20 +16608,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall",
             "label": "EasyCall",
-            "n": 5213,
+            "n": 2717,
             "before": {
-              "wer": 2.18677281077771,
-              "cer": 1.5105318987725413,
-              "ser": 0.8831766737003645,
-              "semscore": 0.8402446914880856,
-              "s_rate": 0.7559093692590324,
-              "d_rate": 0.055848132271892226,
-              "i_rate": 1.3750153092467852
+              "wer": 2.9644516728624537,
+              "cer": 2.0901371111387266,
+              "ser": 0.9698196540301803,
+              "semscore": 0.8051992363906934,
+              "s_rate": 0.8968401486988847,
+              "d_rate": 0.04275092936802974,
+              "i_rate": 2.024860594795539
             },
             "after": null,
             "delta": {
@@ -16808,20 +16635,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
             "category": "TORGO",
             "label": "TORGO",
-            "n": 16552,
+            "n": 1046,
             "before": {
-              "wer": 1.1191582072399924,
-              "cer": 1.1215896631049385,
-              "ser": 0.49105848235862737,
-              "semscore": 0.9303092347604748,
-              "s_rate": 0.18485443401647195,
-              "d_rate": 0.007661367554108408,
-              "i_rate": 0.926642405669412
+              "wer": 1.369111969111969,
+              "cer": 1.10778496147374,
+              "ser": 0.4598470363288719,
+              "semscore": 0.9356006434611107,
+              "s_rate": 0.18957528957528957,
+              "d_rate": 0.015057915057915058,
+              "i_rate": 1.1644787644787644
             },
             "after": null,
             "delta": {
@@ -16834,65 +16662,14 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech",
-            "label": "UA-Speech",
-            "n": 47908,
-            "before": {
-              "wer": 3.0263648413553144,
-              "cer": 2.605173882796195,
-              "ser": 0.5742255990648744,
-              "semscore": 0.907549414328047,
-              "s_rate": 0.433808300886422,
-              "d_rate": 0.0037279430038936294,
-              "i_rate": 2.5888285974649987
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           }
         ],
         "severity": [
           {
-            "category": "EasyCall · 1",
-            "label": "1",
-            "n": 1656,
-            "before": {
-              "wer": 2.046590909090909,
-              "cer": 1.2778455284552845,
-              "ser": 0.9541062801932367,
-              "semscore": 0.817702671719922,
-              "s_rate": 0.8704545454545455,
-              "d_rate": 0.03598484848484849,
-              "i_rate": 1.1401515151515151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "EasyCall · 2",
-            "label": "2",
+            "category": "EasyCall · 中度",
+            "label": "EasyCall · 中度",
             "n": 413,
             "before": {
               "wer": 2.417298937784522,
@@ -16914,11 +16691,39 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
-            "category": "EasyCall · 3",
-            "label": "3",
+            "category": "EasyCall · 轻度",
+            "label": "EasyCall · 轻度",
+            "n": 1656,
+            "before": {
+              "wer": 2.046590909090909,
+              "cer": 1.2778455284552845,
+              "ser": 0.9541062801932367,
+              "semscore": 0.817702671719922,
+              "s_rate": 0.8704545454545455,
+              "d_rate": 0.03598484848484849,
+              "i_rate": 1.1401515151515151
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
+          },
+          {
+            "category": "EasyCall · 重度",
+            "label": "EasyCall · 重度",
             "n": 414,
             "before": {
               "wer": 7.356060606060606,
@@ -16940,20 +16745,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
-            "category": "TORGO · mild",
-            "label": "mild",
-            "n": 1483,
+            "category": "TORGO · 轻度",
+            "label": "TORGO · 轻度",
+            "n": 810,
             "before": {
-              "wer": 1.0471849865951743,
-              "cer": 0.8845198424719782,
-              "ser": 0.38435603506405935,
-              "semscore": 0.9527565642377451,
-              "s_rate": 0.07935656836461126,
-              "d_rate": 0.0016085790884718498,
-              "i_rate": 0.9662198391420912
+              "wer": 1.1895360315893386,
+              "cer": 0.859890417085989,
+              "ser": 0.337037037037037,
+              "semscore": 0.9607526959460458,
+              "s_rate": 0.06120434353405726,
+              "d_rate": 0.0019743336623889436,
+              "i_rate": 1.1263573543928924
             },
             "after": null,
             "delta": {
@@ -16966,20 +16772,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
-            "category": "TORGO · moderate",
-            "label": "moderate",
-            "n": 1087,
+            "category": "TORGO · 重度",
+            "label": "TORGO · 重度",
+            "n": 236,
             "before": {
-              "wer": 1.4375,
-              "cer": 1.4548599935629225,
-              "ser": 0.6688132474701012,
-              "semscore": 0.9043135074375963,
-              "s_rate": 0.2535919540229885,
-              "d_rate": 0.010775862068965518,
-              "i_rate": 1.173132183908046
+              "wer": 2.0141843971631204,
+              "cer": 2.0519591141396933,
+              "ser": 0.8813559322033898,
+              "semscore": 0.8492736836611214,
+              "s_rate": 0.650709219858156,
+              "d_rate": 0.06205673758865248,
+              "i_rate": 1.301418439716312
             },
             "after": null,
             "delta": {
@@ -16992,20 +16799,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
-            "category": "TORGO · moderate-severe",
-            "label": "moderate-severe",
-            "n": 587,
+            "category": "未标注",
+            "label": "未标注",
+            "n": 29804,
             "before": {
-              "wer": 1.6918238993710693,
-              "cer": 1.7208857734586587,
-              "ser": 0.7393526405451448,
-              "semscore": 0.8908348688681244,
-              "s_rate": 0.3584905660377358,
-              "d_rate": 0.019566736547868623,
-              "i_rate": 1.3137665967854648
+              "wer": 1.2445165237652225,
+              "cer": 1.5043143076039074,
+              "ser": 0.9022614414172594,
+              "semscore": 0.8653108923747354,
+              "s_rate": 0.643467182955755,
+              "d_rate": 0.06751988467308676,
+              "i_rate": 0.5335294561363808
             },
             "after": null,
             "delta": {
@@ -17018,165 +16826,8 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · severe",
-            "label": "severe",
-            "n": 2417,
-            "before": {
-              "wer": 1.8734748453952867,
-              "cer": 1.7685453072561046,
-              "ser": 0.8601572196938353,
-              "semscore": 0.8589874983179111,
-              "s_rate": 0.5679425037606551,
-              "d_rate": 0.02573959552064182,
-              "i_rate": 1.2797927461139897
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · mild",
-            "label": "mild",
-            "n": 8925,
-            "before": {
-              "wer": 2.1571984435797664,
-              "cer": 1.8513740297881267,
-              "ser": 0.506218487394958,
-              "semscore": 0.9279485688089323,
-              "s_rate": 0.3088382434685937,
-              "d_rate": 0.004002223457476375,
-              "i_rate": 1.8443579766536966
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate",
-            "label": "moderate",
-            "n": 5074,
-            "before": {
-              "wer": 2.7489245209229565,
-              "cer": 2.1621102408748336,
-              "ser": 0.762908947575877,
-              "semscore": 0.8717245760751513,
-              "s_rate": 0.6652326945639421,
-              "d_rate": 0.005084082909659757,
-              "i_rate": 2.078607743449355
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate-severe",
-            "label": "moderate-severe",
-            "n": 5100,
-            "before": {
-              "wer": 3.632490272373541,
-              "cer": 2.843575624082232,
-              "ser": 0.8913725490196078,
-              "semscore": 0.8401736414081911,
-              "s_rate": 0.8383268482490273,
-              "d_rate": 0.002529182879377432,
-              "i_rate": 2.791634241245136
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · severe",
-            "label": "severe",
-            "n": 5604,
-            "before": {
-              "wer": 7.382790368271955,
-              "cer": 6.094649656001603,
-              "ser": 0.9921484653818701,
-              "semscore": 0.8053830698143151,
-              "s_rate": 0.9768059490084986,
-              "d_rate": 0.003186968838526912,
-              "i_rate": 6.402797450424929
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          }
-        ],
-        "model": [
-          {
-            "category": "Step-Audio",
-            "label": "Step-Audio",
-            "n": 180848,
-            "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           }
         ]
       }
@@ -17190,15 +16841,15 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 180848,
+            "n": 33333,
             "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
             },
             "after": null,
             "delta": {
@@ -17211,48 +16862,23 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "健康组",
-            "label": "健康组",
-            "n": 36679,
-            "before": {
-              "wer": 1.499364652918966,
-              "cer": 1.4709703853266547,
-              "ser": 0.41718694620900243,
-              "semscore": 0.9425415539677164,
-              "s_rate": 0.18261690386291024,
-              "d_rate": 0.008368428695904734,
-              "i_rate": 1.308379320360151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "label": [
           {
             "category": "CDSD · All samples",
-            "label": "All samples",
-            "n": 147854,
+            "label": "CDSD · All samples",
+            "n": 29570,
             "before": {
-              "wer": 2.47774703975,
-              "cer": 4.264677726248,
-              "ser": 0.842939656688,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -17265,228 +16891,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Common Words",
-            "label": "Common Words",
-            "n": 9696,
-            "before": {
-              "wer": 3.790841584158,
-              "cer": 5.507542629263,
-              "ser": 0.783931518152,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Computer Commands",
-            "label": "Computer Commands",
-            "n": 1817,
-            "before": {
-              "wer": 3.178866263071,
-              "cer": 2.923111093639,
-              "ser": 0.671986791414,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Digits",
-            "label": "Digits",
-            "n": 970,
-            "before": {
-              "wer": 3.118556701031,
-              "cer": 3.454673539519,
-              "ser": 0.629896907216,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Radio Alphabet",
-            "label": "Radio Alphabet",
-            "n": 2522,
-            "before": {
-              "wer": 3.616970658208,
-              "cer": 3.333372512367,
-              "ser": 0.699841395718,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Uncommon Words",
-            "label": "Uncommon Words",
-            "n": 9698,
-            "before": {
-              "wer": 3.969787585069,
-              "cer": 2.483679871891,
-              "ser": 0.752423180037,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Sentence",
-            "label": "Sentence",
-            "n": 1321,
-            "before": {
-              "wer": 0.643030323197,
-              "cer": 0.622784082975,
-              "ser": 0.603330809992,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Command",
-            "label": "Short-word Command",
-            "n": 579,
-            "before": {
-              "wer": 2.820379965458,
-              "cer": 4.273449708035,
-              "ser": 0.566493955095,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Non-command",
-            "label": "Short-word Non-command",
-            "n": 3674,
-            "before": {
-              "wer": 3.836418072945,
-              "cer": 4.342616714623,
-              "ser": 0.730811105063,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall · Command",
-            "label": "Command",
+            "label": "EasyCall · Command",
             "n": 1531,
             "before": {
-              "wer": 3.237154365339,
-              "cer": 2.628914405911,
-              "ser": 0.968647942521,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 2.730345334313005,
+              "cer": 2.0171550126947095,
+              "ser": 0.968647942521228,
+              "semscore": 0.807896102004235,
+              "s_rate": 0.8842762674504041,
+              "d_rate": 0.05547391623806025,
+              "i_rate": 1.7905951506245408
             },
             "after": null,
             "delta": {
@@ -17499,20 +16918,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
             "category": "EasyCall · Non-command",
-            "label": "Non-command",
+            "label": "EasyCall · Non-command",
             "n": 1186,
             "before": {
-              "wer": 3.694631815627,
-              "cer": 2.848670137398,
-              "ser": 0.971332209106,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 3.3672566371681416,
+              "cer": 2.2012959866220734,
+              "ser": 0.9713322091062394,
+              "semscore": 0.8017178693971586,
+              "s_rate": 0.9184576485461441,
+              "d_rate": 0.020859671302149177,
+              "i_rate": 2.4279393173198485
             },
             "after": null,
             "delta": {
@@ -17525,22 +16945,133 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
+          },
+          {
+            "category": "TORGO · Sentence",
+            "label": "TORGO · Sentence",
+            "n": 230,
+            "before": {
+              "wer": 0.27846674182638104,
+              "cer": 0.24768280123583933,
+              "ser": 0.3,
+              "semscore": 0.9668866266375002,
+              "s_rate": 0.12570462232243518,
+              "d_rate": 0.021984216459977453,
+              "i_rate": 0.13077790304396844
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
+          },
+          {
+            "category": "TORGO · Short-word Command",
+            "label": "TORGO · Short-word Command",
+            "n": 112,
+            "before": {
+              "wer": 1.75,
+              "cer": 1.917004048582996,
+              "ser": 0.3125,
+              "semscore": 0.960593080414193,
+              "s_rate": 0.10714285714285714,
+              "d_rate": 0.0,
+              "i_rate": 1.6428571428571428
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
+          },
+          {
+            "category": "TORGO · Short-word Non-command",
+            "label": "TORGO · Short-word Non-command",
+            "n": 704,
+            "before": {
+              "wer": 4.056818181818182,
+              "cer": 3.1815780785737866,
+              "ser": 0.5355113636363636,
+              "semscore": 0.9214033010331067,
+              "s_rate": 0.36363636363636365,
+              "d_rate": 0.0,
+              "i_rate": 3.6931818181818183
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          }
+        ],
+        "model": [
+          {
+            "category": "Step-Audio",
+            "label": "Step-Audio",
+            "n": 33333,
+            "before": {
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "dataset": [
           {
             "category": "CDSD",
             "label": "CDSD",
-            "n": 147854,
+            "n": 29570,
             "before": {
-              "wer": 1.9797601447623945,
-              "cer": 2.9397403107950897,
-              "ser": 0.8429396566883547,
-              "semscore": 0.8720976337853983,
-              "s_rate": 0.5403793974596459,
-              "d_rate": 0.05241403758913737,
-              "i_rate": 1.3869667097136111
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -17553,20 +17084,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall",
             "label": "EasyCall",
-            "n": 5213,
+            "n": 2717,
             "before": {
-              "wer": 2.18677281077771,
-              "cer": 1.5105318987725413,
-              "ser": 0.8831766737003645,
-              "semscore": 0.8402446914880856,
-              "s_rate": 0.7559093692590324,
-              "d_rate": 0.055848132271892226,
-              "i_rate": 1.3750153092467852
+              "wer": 2.9644516728624537,
+              "cer": 2.0901371111387266,
+              "ser": 0.9698196540301803,
+              "semscore": 0.8051992363906934,
+              "s_rate": 0.8968401486988847,
+              "d_rate": 0.04275092936802974,
+              "i_rate": 2.024860594795539
             },
             "after": null,
             "delta": {
@@ -17579,20 +17111,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
             "category": "TORGO",
             "label": "TORGO",
-            "n": 16552,
+            "n": 1046,
             "before": {
-              "wer": 1.1191582072399924,
-              "cer": 1.1215896631049385,
-              "ser": 0.49105848235862737,
-              "semscore": 0.9303092347604748,
-              "s_rate": 0.18485443401647195,
-              "d_rate": 0.007661367554108408,
-              "i_rate": 0.926642405669412
+              "wer": 1.369111969111969,
+              "cer": 1.10778496147374,
+              "ser": 0.4598470363288719,
+              "semscore": 0.9356006434611107,
+              "s_rate": 0.18957528957528957,
+              "d_rate": 0.015057915057915058,
+              "i_rate": 1.1644787644787644
             },
             "after": null,
             "delta": {
@@ -17605,65 +17138,14 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech",
-            "label": "UA-Speech",
-            "n": 47908,
-            "before": {
-              "wer": 3.0263648413553144,
-              "cer": 2.605173882796195,
-              "ser": 0.5742255990648744,
-              "semscore": 0.907549414328047,
-              "s_rate": 0.433808300886422,
-              "d_rate": 0.0037279430038936294,
-              "i_rate": 2.5888285974649987
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           }
         ],
         "severity": [
           {
-            "category": "EasyCall · 1",
-            "label": "1",
-            "n": 1656,
-            "before": {
-              "wer": 2.046590909090909,
-              "cer": 1.2778455284552845,
-              "ser": 0.9541062801932367,
-              "semscore": 0.817702671719922,
-              "s_rate": 0.8704545454545455,
-              "d_rate": 0.03598484848484849,
-              "i_rate": 1.1401515151515151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "EasyCall · 2",
-            "label": "2",
+            "category": "EasyCall · 中度",
+            "label": "EasyCall · 中度",
             "n": 413,
             "before": {
               "wer": 2.417298937784522,
@@ -17685,11 +17167,39 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
-            "category": "EasyCall · 3",
-            "label": "3",
+            "category": "EasyCall · 轻度",
+            "label": "EasyCall · 轻度",
+            "n": 1656,
+            "before": {
+              "wer": 2.046590909090909,
+              "cer": 1.2778455284552845,
+              "ser": 0.9541062801932367,
+              "semscore": 0.817702671719922,
+              "s_rate": 0.8704545454545455,
+              "d_rate": 0.03598484848484849,
+              "i_rate": 1.1401515151515151
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
+          },
+          {
+            "category": "EasyCall · 重度",
+            "label": "EasyCall · 重度",
             "n": 414,
             "before": {
               "wer": 7.356060606060606,
@@ -17711,20 +17221,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
-            "category": "TORGO · mild",
-            "label": "mild",
-            "n": 1483,
+            "category": "TORGO · 轻度",
+            "label": "TORGO · 轻度",
+            "n": 810,
             "before": {
-              "wer": 1.0471849865951743,
-              "cer": 0.8845198424719782,
-              "ser": 0.38435603506405935,
-              "semscore": 0.9527565642377451,
-              "s_rate": 0.07935656836461126,
-              "d_rate": 0.0016085790884718498,
-              "i_rate": 0.9662198391420912
+              "wer": 1.1895360315893386,
+              "cer": 0.859890417085989,
+              "ser": 0.337037037037037,
+              "semscore": 0.9607526959460458,
+              "s_rate": 0.06120434353405726,
+              "d_rate": 0.0019743336623889436,
+              "i_rate": 1.1263573543928924
             },
             "after": null,
             "delta": {
@@ -17737,20 +17248,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
-            "category": "TORGO · moderate",
-            "label": "moderate",
-            "n": 1087,
+            "category": "TORGO · 重度",
+            "label": "TORGO · 重度",
+            "n": 236,
             "before": {
-              "wer": 1.4375,
-              "cer": 1.4548599935629225,
-              "ser": 0.6688132474701012,
-              "semscore": 0.9043135074375963,
-              "s_rate": 0.2535919540229885,
-              "d_rate": 0.010775862068965518,
-              "i_rate": 1.173132183908046
+              "wer": 2.0141843971631204,
+              "cer": 2.0519591141396933,
+              "ser": 0.8813559322033898,
+              "semscore": 0.8492736836611214,
+              "s_rate": 0.650709219858156,
+              "d_rate": 0.06205673758865248,
+              "i_rate": 1.301418439716312
             },
             "after": null,
             "delta": {
@@ -17763,20 +17275,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
-            "category": "TORGO · moderate-severe",
-            "label": "moderate-severe",
-            "n": 587,
+            "category": "未标注",
+            "label": "未标注",
+            "n": 29804,
             "before": {
-              "wer": 1.6918238993710693,
-              "cer": 1.7208857734586587,
-              "ser": 0.7393526405451448,
-              "semscore": 0.8908348688681244,
-              "s_rate": 0.3584905660377358,
-              "d_rate": 0.019566736547868623,
-              "i_rate": 1.3137665967854648
+              "wer": 1.2445165237652225,
+              "cer": 1.5043143076039074,
+              "ser": 0.9022614414172594,
+              "semscore": 0.8653108923747354,
+              "s_rate": 0.643467182955755,
+              "d_rate": 0.06751988467308676,
+              "i_rate": 0.5335294561363808
             },
             "after": null,
             "delta": {
@@ -17789,165 +17302,8 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · severe",
-            "label": "severe",
-            "n": 2417,
-            "before": {
-              "wer": 1.8734748453952867,
-              "cer": 1.7685453072561046,
-              "ser": 0.8601572196938353,
-              "semscore": 0.8589874983179111,
-              "s_rate": 0.5679425037606551,
-              "d_rate": 0.02573959552064182,
-              "i_rate": 1.2797927461139897
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · mild",
-            "label": "mild",
-            "n": 8925,
-            "before": {
-              "wer": 2.1571984435797664,
-              "cer": 1.8513740297881267,
-              "ser": 0.506218487394958,
-              "semscore": 0.9279485688089323,
-              "s_rate": 0.3088382434685937,
-              "d_rate": 0.004002223457476375,
-              "i_rate": 1.8443579766536966
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate",
-            "label": "moderate",
-            "n": 5074,
-            "before": {
-              "wer": 2.7489245209229565,
-              "cer": 2.1621102408748336,
-              "ser": 0.762908947575877,
-              "semscore": 0.8717245760751513,
-              "s_rate": 0.6652326945639421,
-              "d_rate": 0.005084082909659757,
-              "i_rate": 2.078607743449355
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate-severe",
-            "label": "moderate-severe",
-            "n": 5100,
-            "before": {
-              "wer": 3.632490272373541,
-              "cer": 2.843575624082232,
-              "ser": 0.8913725490196078,
-              "semscore": 0.8401736414081911,
-              "s_rate": 0.8383268482490273,
-              "d_rate": 0.002529182879377432,
-              "i_rate": 2.791634241245136
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · severe",
-            "label": "severe",
-            "n": 5604,
-            "before": {
-              "wer": 7.382790368271955,
-              "cer": 6.094649656001603,
-              "ser": 0.9921484653818701,
-              "semscore": 0.8053830698143151,
-              "s_rate": 0.9768059490084986,
-              "d_rate": 0.003186968838526912,
-              "i_rate": 6.402797450424929
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          }
-        ],
-        "model": [
-          {
-            "category": "Step-Audio",
-            "label": "Step-Audio",
-            "n": 180848,
-            "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           }
         ]
       }
@@ -17961,15 +17317,15 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 180848,
+            "n": 33333,
             "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
             },
             "after": null,
             "delta": {
@@ -17982,48 +17338,23 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "健康组",
-            "label": "健康组",
-            "n": 36679,
-            "before": {
-              "wer": 1.499364652918966,
-              "cer": 1.4709703853266547,
-              "ser": 0.41718694620900243,
-              "semscore": 0.9425415539677164,
-              "s_rate": 0.18261690386291024,
-              "d_rate": 0.008368428695904734,
-              "i_rate": 1.308379320360151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "label": [
           {
             "category": "CDSD · All samples",
-            "label": "All samples",
-            "n": 147854,
+            "label": "CDSD · All samples",
+            "n": 29570,
             "before": {
-              "wer": 2.47774703975,
-              "cer": 4.264677726248,
-              "ser": 0.842939656688,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -18036,228 +17367,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Common Words",
-            "label": "Common Words",
-            "n": 9696,
-            "before": {
-              "wer": 3.790841584158,
-              "cer": 5.507542629263,
-              "ser": 0.783931518152,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Computer Commands",
-            "label": "Computer Commands",
-            "n": 1817,
-            "before": {
-              "wer": 3.178866263071,
-              "cer": 2.923111093639,
-              "ser": 0.671986791414,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Digits",
-            "label": "Digits",
-            "n": 970,
-            "before": {
-              "wer": 3.118556701031,
-              "cer": 3.454673539519,
-              "ser": 0.629896907216,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Radio Alphabet",
-            "label": "Radio Alphabet",
-            "n": 2522,
-            "before": {
-              "wer": 3.616970658208,
-              "cer": 3.333372512367,
-              "ser": 0.699841395718,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · Uncommon Words",
-            "label": "Uncommon Words",
-            "n": 9698,
-            "before": {
-              "wer": 3.969787585069,
-              "cer": 2.483679871891,
-              "ser": 0.752423180037,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Sentence",
-            "label": "Sentence",
-            "n": 1321,
-            "before": {
-              "wer": 0.643030323197,
-              "cer": 0.622784082975,
-              "ser": 0.603330809992,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Command",
-            "label": "Short-word Command",
-            "n": 579,
-            "before": {
-              "wer": 2.820379965458,
-              "cer": 4.273449708035,
-              "ser": 0.566493955095,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · Short-word Non-command",
-            "label": "Short-word Non-command",
-            "n": 3674,
-            "before": {
-              "wer": 3.836418072945,
-              "cer": 4.342616714623,
-              "ser": 0.730811105063,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall · Command",
-            "label": "Command",
+            "label": "EasyCall · Command",
             "n": 1531,
             "before": {
-              "wer": 3.237154365339,
-              "cer": 2.628914405911,
-              "ser": 0.968647942521,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 2.730345334313005,
+              "cer": 2.0171550126947095,
+              "ser": 0.968647942521228,
+              "semscore": 0.807896102004235,
+              "s_rate": 0.8842762674504041,
+              "d_rate": 0.05547391623806025,
+              "i_rate": 1.7905951506245408
             },
             "after": null,
             "delta": {
@@ -18270,20 +17394,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
             "category": "EasyCall · Non-command",
-            "label": "Non-command",
+            "label": "EasyCall · Non-command",
             "n": 1186,
             "before": {
-              "wer": 3.694631815627,
-              "cer": 2.848670137398,
-              "ser": 0.971332209106,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+              "wer": 3.3672566371681416,
+              "cer": 2.2012959866220734,
+              "ser": 0.9713322091062394,
+              "semscore": 0.8017178693971586,
+              "s_rate": 0.9184576485461441,
+              "d_rate": 0.020859671302149177,
+              "i_rate": 2.4279393173198485
             },
             "after": null,
             "delta": {
@@ -18296,22 +17421,133 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
+          },
+          {
+            "category": "TORGO · Sentence",
+            "label": "TORGO · Sentence",
+            "n": 230,
+            "before": {
+              "wer": 0.27846674182638104,
+              "cer": 0.24768280123583933,
+              "ser": 0.3,
+              "semscore": 0.9668866266375002,
+              "s_rate": 0.12570462232243518,
+              "d_rate": 0.021984216459977453,
+              "i_rate": 0.13077790304396844
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
+          },
+          {
+            "category": "TORGO · Short-word Command",
+            "label": "TORGO · Short-word Command",
+            "n": 112,
+            "before": {
+              "wer": 1.75,
+              "cer": 1.917004048582996,
+              "ser": 0.3125,
+              "semscore": 0.960593080414193,
+              "s_rate": 0.10714285714285714,
+              "d_rate": 0.0,
+              "i_rate": 1.6428571428571428
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
+          },
+          {
+            "category": "TORGO · Short-word Non-command",
+            "label": "TORGO · Short-word Non-command",
+            "n": 704,
+            "before": {
+              "wer": 4.056818181818182,
+              "cer": 3.1815780785737866,
+              "ser": 0.5355113636363636,
+              "semscore": 0.9214033010331067,
+              "s_rate": 0.36363636363636365,
+              "d_rate": 0.0,
+              "i_rate": 3.6931818181818183
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          }
+        ],
+        "model": [
+          {
+            "category": "Step-Audio",
+            "label": "Step-Audio",
+            "n": 33333,
+            "before": {
+              "wer": 1.30209276827001,
+              "cer": 1.5428454673788314,
+              "ser": 0.8932289322893229,
+              "semscore": 0.8631811999871966,
+              "s_rate": 0.6419491188762295,
+              "d_rate": 0.0656830496893423,
+              "i_rate": 0.5944605997044382
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
           }
         ],
         "dataset": [
           {
             "category": "CDSD",
             "label": "CDSD",
-            "n": 147854,
+            "n": 29570,
             "before": {
-              "wer": 1.9797601447623945,
-              "cer": 2.9397403107950897,
-              "ser": 0.8429396566883547,
-              "semscore": 0.8720976337853983,
-              "s_rate": 0.5403793974596459,
-              "d_rate": 0.05241403758913737,
-              "i_rate": 1.3869667097136111
+              "wer": 1.2404932418801695,
+              "cer": 1.5027171548198073,
+              "ser": 0.9015218126479541,
+              "semscore": 0.8659470524463776,
+              "s_rate": 0.6425761549324188,
+              "d_rate": 0.06761482079214579,
+              "i_rate": 0.5303022661556048
             },
             "after": null,
             "delta": {
@@ -18324,20 +17560,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
             "category": "EasyCall",
             "label": "EasyCall",
-            "n": 5213,
+            "n": 2717,
             "before": {
-              "wer": 2.18677281077771,
-              "cer": 1.5105318987725413,
-              "ser": 0.8831766737003645,
-              "semscore": 0.8402446914880856,
-              "s_rate": 0.7559093692590324,
-              "d_rate": 0.055848132271892226,
-              "i_rate": 1.3750153092467852
+              "wer": 2.9644516728624537,
+              "cer": 2.0901371111387266,
+              "ser": 0.9698196540301803,
+              "semscore": 0.8051992363906934,
+              "s_rate": 0.8968401486988847,
+              "d_rate": 0.04275092936802974,
+              "i_rate": 2.024860594795539
             },
             "after": null,
             "delta": {
@@ -18350,20 +17587,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
             "category": "TORGO",
             "label": "TORGO",
-            "n": 16552,
+            "n": 1046,
             "before": {
-              "wer": 1.1191582072399924,
-              "cer": 1.1215896631049385,
-              "ser": 0.49105848235862737,
-              "semscore": 0.9303092347604748,
-              "s_rate": 0.18485443401647195,
-              "d_rate": 0.007661367554108408,
-              "i_rate": 0.926642405669412
+              "wer": 1.369111969111969,
+              "cer": 1.10778496147374,
+              "ser": 0.4598470363288719,
+              "semscore": 0.9356006434611107,
+              "s_rate": 0.18957528957528957,
+              "d_rate": 0.015057915057915058,
+              "i_rate": 1.1644787644787644
             },
             "after": null,
             "delta": {
@@ -18376,65 +17614,14 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech",
-            "label": "UA-Speech",
-            "n": 47908,
-            "before": {
-              "wer": 3.0263648413553144,
-              "cer": 2.605173882796195,
-              "ser": 0.5742255990648744,
-              "semscore": 0.907549414328047,
-              "s_rate": 0.433808300886422,
-              "d_rate": 0.0037279430038936294,
-              "i_rate": 2.5888285974649987
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           }
         ],
         "severity": [
           {
-            "category": "EasyCall · 1",
-            "label": "1",
-            "n": 1656,
-            "before": {
-              "wer": 2.046590909090909,
-              "cer": 1.2778455284552845,
-              "ser": 0.9541062801932367,
-              "semscore": 0.817702671719922,
-              "s_rate": 0.8704545454545455,
-              "d_rate": 0.03598484848484849,
-              "i_rate": 1.1401515151515151
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "EasyCall · 2",
-            "label": "2",
+            "category": "EasyCall · 中度",
+            "label": "EasyCall · 中度",
             "n": 413,
             "before": {
               "wer": 2.417298937784522,
@@ -18456,11 +17643,39 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
-            "category": "EasyCall · 3",
-            "label": "3",
+            "category": "EasyCall · 轻度",
+            "label": "EasyCall · 轻度",
+            "n": 1656,
+            "before": {
+              "wer": 2.046590909090909,
+              "cer": 1.2778455284552845,
+              "ser": 0.9541062801932367,
+              "semscore": 0.817702671719922,
+              "s_rate": 0.8704545454545455,
+              "d_rate": 0.03598484848484849,
+              "i_rate": 1.1401515151515151
+            },
+            "after": null,
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "baseline_only",
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
+          },
+          {
+            "category": "EasyCall · 重度",
+            "label": "EasyCall · 重度",
             "n": 414,
             "before": {
               "wer": 7.356060606060606,
@@ -18482,20 +17697,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
-            "category": "TORGO · mild",
-            "label": "mild",
-            "n": 1483,
+            "category": "TORGO · 轻度",
+            "label": "TORGO · 轻度",
+            "n": 810,
             "before": {
-              "wer": 1.0471849865951743,
-              "cer": 0.8845198424719782,
-              "ser": 0.38435603506405935,
-              "semscore": 0.9527565642377451,
-              "s_rate": 0.07935656836461126,
-              "d_rate": 0.0016085790884718498,
-              "i_rate": 0.9662198391420912
+              "wer": 1.1895360315893386,
+              "cer": 0.859890417085989,
+              "ser": 0.337037037037037,
+              "semscore": 0.9607526959460458,
+              "s_rate": 0.06120434353405726,
+              "d_rate": 0.0019743336623889436,
+              "i_rate": 1.1263573543928924
             },
             "after": null,
             "delta": {
@@ -18508,20 +17724,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
-            "category": "TORGO · moderate",
-            "label": "moderate",
-            "n": 1087,
+            "category": "TORGO · 重度",
+            "label": "TORGO · 重度",
+            "n": 236,
             "before": {
-              "wer": 1.4375,
-              "cer": 1.4548599935629225,
-              "ser": 0.6688132474701012,
-              "semscore": 0.9043135074375963,
-              "s_rate": 0.2535919540229885,
-              "d_rate": 0.010775862068965518,
-              "i_rate": 1.173132183908046
+              "wer": 2.0141843971631204,
+              "cer": 2.0519591141396933,
+              "ser": 0.8813559322033898,
+              "semscore": 0.8492736836611214,
+              "s_rate": 0.650709219858156,
+              "d_rate": 0.06205673758865248,
+              "i_rate": 1.301418439716312
             },
             "after": null,
             "delta": {
@@ -18534,20 +17751,21 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
-            "category": "TORGO · moderate-severe",
-            "label": "moderate-severe",
-            "n": 587,
+            "category": "未标注",
+            "label": "未标注",
+            "n": 29804,
             "before": {
-              "wer": 1.6918238993710693,
-              "cer": 1.7208857734586587,
-              "ser": 0.7393526405451448,
-              "semscore": 0.8908348688681244,
-              "s_rate": 0.3584905660377358,
-              "d_rate": 0.019566736547868623,
-              "i_rate": 1.3137665967854648
+              "wer": 1.2445165237652225,
+              "cer": 1.5043143076039074,
+              "ser": 0.9022614414172594,
+              "semscore": 0.8653108923747354,
+              "s_rate": 0.643467182955755,
+              "d_rate": 0.06751988467308676,
+              "i_rate": 0.5335294561363808
             },
             "after": null,
             "delta": {
@@ -18560,165 +17778,8 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "TORGO · severe",
-            "label": "severe",
-            "n": 2417,
-            "before": {
-              "wer": 1.8734748453952867,
-              "cer": 1.7685453072561046,
-              "ser": 0.8601572196938353,
-              "semscore": 0.8589874983179111,
-              "s_rate": 0.5679425037606551,
-              "d_rate": 0.02573959552064182,
-              "i_rate": 1.2797927461139897
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · mild",
-            "label": "mild",
-            "n": 8925,
-            "before": {
-              "wer": 2.1571984435797664,
-              "cer": 1.8513740297881267,
-              "ser": 0.506218487394958,
-              "semscore": 0.9279485688089323,
-              "s_rate": 0.3088382434685937,
-              "d_rate": 0.004002223457476375,
-              "i_rate": 1.8443579766536966
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate",
-            "label": "moderate",
-            "n": 5074,
-            "before": {
-              "wer": 2.7489245209229565,
-              "cer": 2.1621102408748336,
-              "ser": 0.762908947575877,
-              "semscore": 0.8717245760751513,
-              "s_rate": 0.6652326945639421,
-              "d_rate": 0.005084082909659757,
-              "i_rate": 2.078607743449355
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · moderate-severe",
-            "label": "moderate-severe",
-            "n": 5100,
-            "before": {
-              "wer": 3.632490272373541,
-              "cer": 2.843575624082232,
-              "ser": 0.8913725490196078,
-              "semscore": 0.8401736414081911,
-              "s_rate": 0.8383268482490273,
-              "d_rate": 0.002529182879377432,
-              "i_rate": 2.791634241245136
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          },
-          {
-            "category": "UA-Speech · severe",
-            "label": "severe",
-            "n": 5604,
-            "before": {
-              "wer": 7.382790368271955,
-              "cer": 6.094649656001603,
-              "ser": 0.9921484653818701,
-              "semscore": 0.8053830698143151,
-              "s_rate": 0.9768059490084986,
-              "d_rate": 0.003186968838526912,
-              "i_rate": 6.402797450424929
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
-          }
-        ],
-        "model": [
-          {
-            "category": "Step-Audio",
-            "label": "Step-Audio",
-            "n": 180848,
-            "before": {
-              "wer": 2.056563801610718,
-              "cer": 2.85552442686589,
-              "ser": 0.8270591878262408,
-              "semscore": 0.871611481795957,
-              "s_rate": 0.5430261517064914,
-              "d_rate": 0.0492415394180284,
-              "i_rate": 1.4642961104861982
-            },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
-            },
-            "status": "baseline_only",
-            "note": "原始模型基线；该单数据集 adapter 尚未完成"
+            "note": "该 adapter 尚未完成；微调后留空",
+            "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           }
         ]
       }
