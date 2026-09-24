@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AudioBench 微调方法与性能数据">
+  <meta name="theme-color" content="#ffffff">
+  <title>AudioBench · 微调结果</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <header class="topbar">
+    <a class="brand" href="#method">AudioBench 微调结果</a>
+    <nav class="page-tabs" aria-label="页面">
+      <a href="#method" data-page-link="method">数据与划分</a>
+      <a href="#performance" data-page-link="performance">微调前后</a>
+      <a href="#supplements" data-page-link="supplements">补充统计</a>
+      <a href="#progress" data-page-link="progress">任务进度</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page" data-page="method" aria-labelledby="method-title">
+      <h1 id="method-title">数据与划分</h1>
+      <table class="data-table headline" id="headline-table">
+        <thead><tr><th>说话人</th><th>清单音频</th><th>训练</th><th>疾病测试</th><th>健康测试</th><th>健康配对</th></tr></thead>
+        <tbody><tr>
+          <td id="heading-speakers"></td><td id="heading-rows"></td><td id="heading-train"></td>
+          <td id="heading-test"></td><td id="heading-control"></td><td id="heading-paired"></td>
+        </tr></tbody>
+      </table>
+
+      <section class="block" aria-labelledby="speaker-title">
+        <div class="section-title">
+          <h2 id="speaker-title">说话人：原始划分 × 本次划分</h2>
+          <div class="text-tabs" id="dataset-filter" role="group" aria-label="数据集"></div>
+        </div>
+        <ul class="severity-key" id="severity-key" aria-label="严重程度"></ul>
+        <div class="speaker-layout">
+          <div id="speaker-matrices" class="speaker-matrices" aria-live="polite"></div>
+          <aside class="speaker-detail" id="speaker-detail" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="dataset-title">
+        <h2 id="dataset-title">数据集</h2>
+        <div class="table-scroll"><table class="data-table" id="dataset-table">
+          <thead><tr><th>数据集</th><th>说话人</th><th>音频</th><th>训练</th><th>验证</th><th>疾病测试</th><th>健康测试</th><th>排除</th></tr></thead>
+          <tbody></tbody>
+          <tfoot><tr></tr></tfoot>
+        </table></div>
+      </section>
+
+      <section class="block" aria-labelledby="severity-table-title">
+        <h2 id="severity-table-title">说话人严重程度</h2>
+        <div class="table-scroll"><table class="data-table" id="severity-table">
+          <thead><tr><th>数据集</th></tr></thead>
+          <tbody></tbody>
+        </table></div>
+      </section>
+
+      <section class="block" aria-labelledby="sampling-title">
+        <h2 id="sampling-title">Final 抽样</h2>
+        <div class="table-scroll"><table class="data-table" id="sampling-table">
+          <thead><tr><th>数据集</th><th>Draws</th><th>占比</th></tr></thead>
+          <tbody></tbody>
+          <tfoot><tr><th>合计</th><th id="sampling-total"></th><th>100.0%</th></tr></tfoot>
+        </table></div>
+      </section>
+
+      <section class="block" aria-labelledby="fold-title">
+        <div class="section-title">
+          <h2 id="fold-title">五折验证</h2>
+          <div class="text-tabs" id="fold-model-tabs" role="group" aria-label="模型">
+            <button type="button" data-fold-model="phi4">Phi-4</button>
+            <button type="button" data-fold-model="qwen25">Qwen2.5</button>
+            <button type="button" data-fold-model="whisper">Whisper</button>
+          </div>
+        </div>
+        <div class="table-scroll"><table class="data-table" id="fold-table">
+          <thead><tr><th>Fold</th><th>训练候选</th><th>Dev</th><th>优化 draws</th><th>总步数</th><th>最佳 checkpoint</th><th>状态</th></tr></thead>
+          <tbody></tbody>
+        </table></div>
+      </section>
+
+      <section class="block" aria-labelledby="recipe-title">
+        <h2 id="recipe-title">Final LoRA 配置</h2>
+        <div class="columns">
+          <div class="table-scroll"><table class="data-table key-value" id="recipe-table"><tbody></tbody></table></div>
+          <div class="table-scroll"><table class="data-table" id="final-table">
+            <thead><tr><th>模型</th><th>总步数</th><th>状态</th></tr></thead>
+            <tbody></tbody>
+          </table></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" data-page="performance" aria-labelledby="performance-title" hidden>
+      <div class="selector-row">
+        <h1 id="performance-title">微调前后</h1>
+        <button class="download-button" id="download-csv" type="button">下载 CSV</button>
+      </div>
+
+      <section class="block" aria-labelledby="all-models-title">
+        <h2 id="all-models-title">全部模型</h2>
+        <div id="all-models"></div>
+      </section>
+
+      <section class="block" aria-labelledby="detail-title">
+        <div class="section-title">
+          <h2 id="detail-title">单模型详情</h2>
+          <div class="text-tabs" id="model-selector" role="group" aria-label="模型"></div>
+        </div>
+        <div id="cohort-sections"></div>
+      </section>
+    </section>
+
+    <section class="page supplement-page" data-page="supplements" aria-labelledby="supplement-title" hidden>
+      <div class="selector-row"><h1 id="supplement-title">补充统计</h1><span class="quiet">健康 / 疾病分开统计；前后对比使用可配对子集</span></div>
+      <section class="block"><div class="section-title"><h2>健康样本</h2><div class="text-tabs" id="health-model-tabs" role="group" aria-label="模型"></div></div>
+        <p class="note">完整健康队列共 21,055 条；“微调前 → 微调后”使用 13,474 条可对齐样本。健康结果不与疾病测试集合并。</p>
+        <div id="health-summary"></div><div id="health-dataset-chart"></div><div id="health-label-section"></div>
+      </section>
+      <section class="block"><div class="section-title"><h2>疾病样本 · 按原生标签</h2><div class="text-tabs" id="disease-model-tabs" role="group" aria-label="模型"></div></div>
+        <p class="note">疾病组使用 52,073 条微调测试样本；CDSD 无可靠原生细标签，按 All samples 展示。WER、CER、SER、SemScore、完全匹配率均同时提供数值和柱状图。</p>
+        <div id="disease-label-section"></div>
+      </section>
+      <section class="block"><h2>删除错误 D 的机制</h2><p class="note">同时展示 D 绝对数、D/参考词和 D/总错误，避免只从堆叠图面积推断“更容易漏词”。</p><div id="deletion-section"></div></section>
+      <section class="block"><h2>单数据集微调 · 4 × 4 进度矩阵</h2><p class="note" id="single-dataset-note"></p><div id="single-dataset-section"></div></section>
+    </section>
+
+    <section class="page supplement-page" data-page="progress" aria-labelledby="progress-title" hidden>
+      <div class="selector-row"><h1 id="progress-title">任务进度</h1><span class="quiet">未完成项目保留占位，后续补齐数据后重新生成数据包即可更新</span></div>
+      <div id="task-progress"></div>
+    </section>
+  </main>
+
+  <footer>AudioBench · 2026-09-24 · 结果展示与进度占位</footer>
+  <script src="data/site-data.js"></script>
+  <script src="data/supplement-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
