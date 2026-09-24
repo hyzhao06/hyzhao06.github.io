@@ -661,7 +661,7 @@
     const h = supplement.health;
     supTabs("health-model-tabs", Object.keys(supModelLabels).filter((id) => id !== "step_audio").map((id) => ({ id, label: supModelLabels[id] })), supState.model, (id) => { supState.model = id; renderSupplements(); });
     const full = h.full[supState.model], aligned = h.aligned[supState.model];
-    const summaryRows = [{ label: "健康组 · 完整队列", n: full?.result_count, wer_before: aligned?.baseline_wer, wer_after: full?.wer, cer_before: null, cer_after: full?.cer, ser_before: null, ser_after: full?.ser, sem_before: aligned?.baseline_semscore, sem_after: full?.semscore }];
+    const summaryRows = [{ label: "健康组 · 完整队列", n: full?.result_count, wer_before: aligned?.baseline_wer, wer_after: full?.wer, cer_before: aligned?.baseline_cer, cer_after: full?.cer, ser_before: aligned?.baseline_ser, ser_after: full?.ser, sem_before: aligned?.baseline_semscore, sem_after: full?.semscore, exact_before: aligned?.baseline_exact_match_rate, exact_after: full?.exact_match_rate }];
     $("#health-summary").innerHTML = `<div class="callout"><b>${supModelLabels[supState.model]}</b>：完整健康队列 N=${supInt(full?.result_count)}；前后可对齐子集 N=${supInt(aligned?.result_count)}。完整队列的微调后指标与对齐子集的前后变化分开标注。</div>` + supMetricTable(summaryRows, ["WER", "CER", "SER", "SemScore"]);
     const datasetRows = h.by_dataset.filter((r) => r.model === supState.model).map((r) => ({ label: supDatasetLabels[r.dataset], before: null, after: r.wer }));
     $("#health-dataset-chart").innerHTML = supCompareChart("健康组：按数据集微调后 WER（完整队列）", datasetRows, "wer") + `<div class="table-scroll"><table class="data-table compact"><thead><tr><th>数据集</th><th>N</th><th>WER</th><th>CER</th><th>SER</th><th>SemScore</th></tr></thead><tbody>${h.by_dataset.filter((r) => r.model === supState.model).map((r) => `<tr><td>${supDatasetLabels[r.dataset]}</td><td>${supInt(r.n)}</td><td>${supFmt(r.wer)}</td><td>${supFmt(r.cer)}</td><td>${supFmt(r.ser)}</td><td>${supFmt(r.semscore, "score")}</td></tr>`).join("")}</tbody></table></div>`;
@@ -671,14 +671,17 @@
       + `<p class="note">健康组标签维度：${supState.healthDimension}；前后比较均为 N=13,474 可对齐健康样本，标签缺失不填 0。</p>`
       + supMetricTable(selected.map((r) => ({ ...r, label: r.label })))
       + supCompareChart(`健康组 ${supState.healthDimension}：WER`, selected.map((r) => ({ label: r.label, before: r.wer_before, after: r.wer_after })), "wer")
-      + supCompareChart(`健康组 ${supState.healthDimension}：SemScore`, selected.map((r) => ({ label: r.label, before: r.sem_before, after: r.sem_after })), "sem", "score");
+      + supCompareChart(`健康组 ${supState.healthDimension}：CER`, selected.map((r) => ({ label: r.label, before: r.cer_before, after: r.cer_after })), "cer")
+      + supCompareChart(`健康组 ${supState.healthDimension}：SER`, selected.map((r) => ({ label: r.label, before: r.ser_before, after: r.ser_after })), "ser")
+      + supCompareChart(`健康组 ${supState.healthDimension}：SemScore`, selected.map((r) => ({ label: r.label, before: r.sem_before, after: r.sem_after })), "sem", "score")
+      + supCompareChart(`健康组 ${supState.healthDimension}：完全匹配率`, selected.map((r) => ({ label: r.label, before: r.exact_before, after: r.exact_after })), "exact");
     $$('[data-health-dimension]').forEach((b) => { b.onclick = () => { supState.healthDimension = b.dataset.healthDimension; renderSupplements(); }; });
   }
 
   function renderDiseaseSupplement() {
     supTabs("disease-model-tabs", ["qwen25", "phi4", "whisper"].map((id) => ({ id, label: supModelLabels[id] })), supState.model, (id) => { supState.model = id; renderSupplements(); });
     const rows = supplement.labels.filter((r) => r.model === supState.model).map((r) => ({ ...r, label: `${supDatasetLabels[r.dataset]} · ${r.label}` }));
-    $("#disease-label-section").innerHTML = supMetricTable(rows) + supCompareChart("疾病组按标签 WER", rows.map((r) => ({ label: r.label, before: r.wer_before, after: r.wer_after })), "wer") + supCompareChart("疾病组按标签 CER", rows.map((r) => ({ label: r.label, before: r.cer_before, after: r.cer_after })), "cer") + supCompareChart("疾病组按标签 SemScore", rows.map((r) => ({ label: r.label, before: r.sem_before, after: r.sem_after })), "sem", "score");
+    $("#disease-label-section").innerHTML = supMetricTable(rows) + supCompareChart("疾病组按标签 WER", rows.map((r) => ({ label: r.label, before: r.wer_before, after: r.wer_after })), "wer") + supCompareChart("疾病组按标签 CER", rows.map((r) => ({ label: r.label, before: r.cer_before, after: r.cer_after })), "cer") + supCompareChart("疾病组按标签 SER", rows.map((r) => ({ label: r.label, before: r.ser_before, after: r.ser_after })), "ser") + supCompareChart("疾病组按标签 SemScore", rows.map((r) => ({ label: r.label, before: r.sem_before, after: r.sem_after })), "sem", "score") + supCompareChart("疾病组按标签 完全匹配率", rows.map((r) => ({ label: r.label, before: r.exact_before, after: r.exact_after })), "exact");
   }
 
   function renderDeletionSupplement() {
