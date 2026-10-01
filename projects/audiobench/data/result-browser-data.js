@@ -1,7 +1,7 @@
 window.RESULT_BROWSER_DATA = {
   "schema_version": "audiobench.result_browser.v1",
   "built_on": "2026-10-02",
-  "built_at": "2026-10-02T00:42:26+08:00",
+  "built_at": "2026-10-02T02:10:30+08:00",
   "models": [
     {
       "id": "qwen25",
@@ -47823,6 +47823,30 @@ window.RESULT_BROWSER_DATA = {
     }
   },
   "completion": {
+    "joint_training_complete": 5,
+    "joint_training_total": 5,
+    "joint_training": {
+      "qwen25": {
+        "status": "complete",
+        "global_step": 12709
+      },
+      "qwen3": {
+        "status": "complete",
+        "global_step": 12709
+      },
+      "phi4": {
+        "status": "complete",
+        "global_step": 12709
+      },
+      "whisper": {
+        "status": "complete",
+        "global_step": 12709
+      },
+      "step_audio": {
+        "status": "complete",
+        "global_step": 12709
+      }
+    },
     "single_disease_complete": 20,
     "single_disease_total": 20,
     "healthy_complete": 19,

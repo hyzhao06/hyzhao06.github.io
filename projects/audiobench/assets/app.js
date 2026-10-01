@@ -144,7 +144,15 @@
   function renderResults() {
     pressed($("#experiment-tabs"), "experiment", state.experiment); pressed($("#group-tabs"), "group", state.group); pressed($("#metric-tabs"), "metric", state.metric);
     $("#combined-controls").hidden = state.experiment !== "combined"; $("#single-controls").hidden = state.experiment !== "single";
-    var sections = selectedSections(); $("#result-head").innerHTML = "<h1>" + esc((state.experiment === "combined" ? "联合微调" : "单数据集微调") + " · " + groupLabels[state.group]) + "</h1><span>" + esc(metricMeta[state.metric].label) + "</span>";
+    var completion = data.completion || {};
+    var jointDiseaseComplete = Object.values(data.combined_status || {}).filter(function (item) { return item.disease === "complete"; }).length;
+    var progress = [
+      "联合训练 " + int(completion.joint_training_complete) + "/" + int(completion.joint_training_total),
+      "联合疾病 " + int(jointDiseaseComplete) + "/" + data.models.length,
+      "单数据集 " + int(completion.single_disease_complete) + "/" + int(completion.single_disease_total),
+      "健康 " + int(completion.healthy_complete) + "/" + int(completion.healthy_total)
+    ].join(" · ");
+    var sections = selectedSections(); $("#result-head").innerHTML = "<h1>" + esc((state.experiment === "combined" ? "联合微调" : "单数据集微调") + " · " + groupLabels[state.group]) + "</h1><span>" + esc(metricMeta[state.metric].label + " · " + progress) + "</span>";
     renderChart(sections); renderTable(sections);
   }
   function csvCell(value) { return '"' + String(value == null ? "" : value).replace(/"/g, '""') + '"'; }
