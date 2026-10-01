@@ -1,7 +1,7 @@
 window.RESULT_BROWSER_DATA = {
   "schema_version": "audiobench.result_browser.v1",
   "built_on": "2026-10-01",
-  "built_at": "2026-10-01T18:27:31+08:00",
+  "built_at": "2026-10-01T18:53:28+08:00",
   "models": [
     {
       "id": "qwen25",
@@ -140,7 +140,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.011169306493342588,
             "i_rate": 0.013220167855114533
           },
-          "after": null,
+          "after": {
+            "wer": 0.06386066763425254,
+            "cer": 0.03340887591280617,
+            "ser": 0.12866582522830203,
+            "semscore": 0.9853434409301489,
+            "s_rate": 0.055972739319745064,
+            "d_rate": 0.0050798258345428155,
+            "i_rate": 0.002808102479964662
+          },
+          "delta": {
+            "wer": -0.07689152520981889,
+            "cer": -0.041555224347849765,
+            "ser": -0.14507387333877794,
+            "semscore": 0.018541486688636977,
+            "s_rate": -0.06038997917586925,
+            "d_rate": -0.006089480658799772,
+            "i_rate": -0.010412065375149871
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
+        },
+        {
+          "category": "健康组 · 全量微调后",
+          "label": "健康组",
+          "n": 21055,
+          "before": null,
+          "after": {
+            "wer": 0.0603698081964951,
+            "cer": 0.031227953784123453,
+            "ser": 0.10539064355260033,
+            "semscore": 0.9877707540578441,
+            "s_rate": 0.05186053999356055,
+            "d_rate": 0.00565751345384297,
+            "i_rate": 0.002851754749091578
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -150,11 +187,11 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "f486c9ca07eac660508183b2a985eb71ec6bd06b1a648245f08ac61ec4073d37"
         }
       ],
       "qwen3": [
@@ -211,7 +248,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -268,7 +305,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.009999684552537774,
             "i_rate": 0.009968139806315258
           },
-          "after": null,
+          "after": {
+            "wer": 0.10207879877606385,
+            "cer": 0.05635805703165931,
+            "ser": 0.19474543565385186,
+            "semscore": 0.9779264592082171,
+            "s_rate": 0.08788366297593136,
+            "d_rate": 0.009684237090312608,
+            "i_rate": 0.004510898709819879
+          },
+          "delta": {
+            "wer": -0.04258540740039746,
+            "cer": -0.02495050043886208,
+            "ser": -0.09915392607985749,
+            "semscore": 0.014592534089559073,
+            "s_rate": -0.03681271884167692,
+            "d_rate": -0.0003154474622251661,
+            "i_rate": -0.005457241096495379
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+        },
+        {
+          "category": "健康组 · 全量微调后",
+          "label": "健康组",
+          "n": 21055,
+          "before": null,
+          "after": {
+            "wer": 0.09213007681339405,
+            "cer": 0.04887894262260616,
+            "ser": 0.15359772025647114,
+            "semscore": 0.982468054303645,
+            "s_rate": 0.07731935053585391,
+            "d_rate": 0.009912147555310244,
+            "i_rate": 0.0048985787222298885
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -278,11 +352,11 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "f486c9ca07eac660508183b2a985eb71ec6bd06b1a648245f08ac61ec4073d37"
         }
       ],
       "whisper": [
@@ -355,7 +429,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.025519699694015963
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -481,7 +555,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -1229,20 +1303,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.07698779974758098,
             "i_rate": 0.04880100967606226
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.070677324358435,
+            "cer": 0.04175908221797323,
+            "ser": 0.09031791907514451,
+            "semscore": 0.9893137415537255,
+            "s_rate": 0.04880100967606226,
+            "d_rate": 0.018931426167437947,
+            "i_rate": 0.002944888514934792
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.3209928481278923,
+            "cer": -0.16864244741873805,
+            "ser": -0.36921965317919075,
+            "semscore": 0.045135768980993696,
+            "s_rate": -0.2170803533866218,
+            "d_rate": -0.05805637358014303,
+            "i_rate": -0.04585612116112747
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "27577160b7705f7492f44ea5115d28b00242f576225b71e23ff5f9aea011370a"
         },
         {
@@ -1258,20 +1340,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.02234258632362898,
             "i_rate": 0.1008801624915369
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.052809749492213946,
+            "cer": 0.03857765850385777,
+            "ser": 0.05510388437217705,
+            "semscore": 0.9919456118059891,
+            "s_rate": 0.03926878808395396,
+            "d_rate": 0.008801624915368992,
+            "i_rate": 0.004739336492890996
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.45091401489505756,
+            "cer": -0.1743262887174326,
+            "ser": -0.43902439024390244,
+            "semscore": 0.0594725256689842,
+            "s_rate": -0.3412322274881517,
+            "d_rate": -0.013540961408259987,
+            "i_rate": -0.0961408259986459
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "8edf9fe7b457aacd13b987a655218dc51559c6b11fecfad75a49f90873561241"
         },
         {
@@ -1287,20 +1377,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.00680099477236969,
             "i_rate": 0.005278384002436177
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.026442673704512004,
+            "cer": 0.015384615384615385,
+            "ser": 0.1052446321717705,
+            "semscore": 0.9956014334882745,
+            "s_rate": 0.017916053392884334,
+            "d_rate": 0.00522763031010506,
+            "i_rate": 0.003298990001522611
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.004060295386489367,
+            "cer": 0.000143369175627241,
+            "ser": -0.022175290390707494,
+            "semscore": -0.0002211845495968534,
+            "s_rate": -0.00050753692331117,
+            "d_rate": -0.00157336446226463,
+            "i_rate": -0.001979394000913566
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
         },
         {
@@ -1316,20 +1414,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.018046709129511677
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.06794055201698514,
+            "cer": 0.05964214711729622,
+            "ser": 0.06794055201698514,
+            "semscore": 0.9901413552447236,
+            "s_rate": 0.06794055201698514,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.1167728237791932,
+            "cer": -0.0690854870775348,
+            "ser": -0.09978768577494691,
+            "semscore": 0.0017614957506741913,
+            "s_rate": -0.09872611464968152,
+            "d_rate": 0.0,
+            "i_rate": -0.018046709129511677
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
         },
         {
@@ -1345,7 +1451,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0005559416261292564,
             "i_rate": 0.0045865184155663655
           },
-          "after": null,
+          "after": {
+            "wer": 0.16580958999305073,
+            "cer": 0.07885506287227002,
+            "ser": 0.16455872133425992,
+            "semscore": 0.9788853323318795,
+            "s_rate": 0.1644197359277276,
+            "d_rate": 0.0,
+            "i_rate": 0.001389854065323141
+          },
+          "delta": {
+            "wer": -0.11369006254343295,
+            "cer": -0.0687293183322303,
+            "ser": -0.11118832522585126,
+            "semscore": 0.016733891637562226,
+            "s_rate": -0.10993745656706047,
+            "d_rate": -0.0005559416261292564,
+            "i_rate": -0.0031966643502432243
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
+        },
+        {
+          "category": "EasyCall · Command · 全量微调后",
+          "label": "EasyCall · Command",
+          "n": 5608,
+          "before": null,
+          "after": {
+            "wer": 0.060208613033150886,
+            "cer": 0.029510977103552247,
+            "ser": 0.0822039942938659,
+            "semscore": 0.9909489865224814,
+            "s_rate": 0.04585355778167923,
+            "d_rate": 0.011979758339357638,
+            "i_rate": 0.0023752969121140144
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -1355,10 +1498,126 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 5608,
+          "sample_ids_sha256": "a8a4fbec5a666ed9d55bb4bf824c0360e7c1804db5bc1bb07170cdaa3dcd31a0"
+        },
+        {
+          "category": "EasyCall · Non-command · 全量微调后",
+          "label": "EasyCall · Non-command",
+          "n": 4469,
+          "before": null,
+          "after": {
+            "wer": 0.04430273535828159,
+            "cer": 0.030508944667868534,
+            "ser": 0.0472141418661893,
+            "semscore": 0.9926100950909024,
+            "s_rate": 0.03540862560832354,
+            "d_rate": 0.004530961570733344,
+            "i_rate": 0.004363148179224702
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 4469,
+          "sample_ids_sha256": "9943682d17c881746e745be4c1b89f89d92cff32022ea3447f48fe63dc16b1f4"
+        },
+        {
+          "category": "TORGO · Sentence · 全量微调后",
+          "label": "TORGO · Sentence",
+          "n": 2841,
+          "before": null,
+          "after": {
+            "wer": 0.026442673704512004,
+            "cer": 0.015384615384615385,
+            "ser": 0.1052446321717705,
+            "semscore": 0.9956014334882745,
+            "s_rate": 0.017916053392884334,
+            "d_rate": 0.00522763031010506,
+            "i_rate": 0.003298990001522611
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 2841,
+          "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
+        },
+        {
+          "category": "TORGO · Short-word Command · 全量微调后",
+          "label": "TORGO · Short-word Command",
+          "n": 942,
+          "before": null,
+          "after": {
+            "wer": 0.06794055201698514,
+            "cer": 0.05964214711729622,
+            "ser": 0.06794055201698514,
+            "semscore": 0.9901413552447236,
+            "s_rate": 0.06794055201698514,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 942,
+          "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
+        },
+        {
+          "category": "TORGO · Short-word Non-command · 全量微调后",
+          "label": "TORGO · Short-word Non-command",
+          "n": 7195,
+          "before": null,
+          "after": {
+            "wer": 0.16580958999305073,
+            "cer": 0.07885506287227002,
+            "ser": 0.16455872133425992,
+            "semscore": 0.9788853323318795,
+            "s_rate": 0.1644197359277276,
+            "d_rate": 0.0,
+            "i_rate": 0.001389854065323141
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 7195,
           "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
         }
       ],
@@ -1706,7 +1965,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -1735,7 +1994,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -1764,7 +2023,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -1793,7 +2052,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -1822,7 +2081,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -2249,20 +2508,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.08357832843343133,
             "i_rate": 0.02981940361192776
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.10499790004199916,
+            "cer": 0.06817834783936479,
+            "ser": 0.13131313131313133,
+            "semscore": 0.9837251675851417,
+            "s_rate": 0.05963880722385552,
+            "d_rate": 0.03863922721545569,
+            "i_rate": 0.006719865602687947
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.28853422931541367,
+            "cer": -0.1804855703160788,
+            "ser": -0.3629148629148629,
+            "semscore": 0.04295465160929968,
+            "s_rate": -0.22049559008819825,
+            "d_rate": -0.04493910121797563,
+            "i_rate": -0.023099538009239813
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
         },
         {
@@ -2278,20 +2545,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0222972972972973,
             "i_rate": 0.03783783783783784
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.07702702702702703,
+            "cer": 0.057516193879830244,
+            "ser": 0.08648648648648649,
+            "semscore": 0.9872340924031026,
+            "s_rate": 0.05810810810810811,
+            "d_rate": 0.015540540540540541,
+            "i_rate": 0.0033783783783783786
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.2560810810810811,
+            "cer": -0.1283225374134465,
+            "ser": -0.2765765765765766,
+            "semscore": 0.04353223002708706,
+            "s_rate": -0.21486486486486484,
+            "d_rate": -0.006756756756756757,
+            "i_rate": -0.03445945945945946
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
         },
         {
@@ -2307,20 +2582,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.004314063848144953,
             "i_rate": 0.0063949652337207535
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.05476323402527534,
+            "cer": 0.031662531017369724,
+            "ser": 0.1978176698345653,
+            "semscore": 0.9904362173703135,
+            "s_rate": 0.039334111556615745,
+            "d_rate": 0.00974470892757448,
+            "i_rate": 0.005684413541085114
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "delta": {
+            "wer": 0.02471704816525402,
+            "cer": 0.01846153846153846,
+            "ser": 0.07110172474480819,
+            "semscore": -0.005637173143250629,
+            "s_rate": 0.019996954778460134,
+            "d_rate": 0.005430645079429528,
+            "i_rate": -0.0007105516926356392
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
         },
         {
@@ -2336,20 +2619,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.021231422505307854
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.09235668789808917,
+            "cer": 0.061381709741550695,
+            "ser": 0.09235668789808917,
+            "semscore": 0.9883337227149122,
+            "s_rate": 0.09235668789808917,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.02335456475583865,
+            "cer": 0.0,
+            "ser": -0.006369426751592369,
+            "semscore": -0.0021058485513026914,
+            "s_rate": -0.002123142250530799,
+            "d_rate": 0.0,
+            "i_rate": -0.021231422505307854
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
         },
         {
@@ -2365,7 +2656,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.005976372480889507
           },
-          "after": null,
+          "after": {
+            "wer": 0.23710910354412787,
+            "cer": 0.1243216412971542,
+            "ser": 0.23585823488533703,
+            "semscore": 0.9690713726455259,
+            "s_rate": 0.23571924947880474,
+            "d_rate": 0.0,
+            "i_rate": 0.001389854065323141
+          },
+          "delta": {
+            "wer": -0.10410006949270326,
+            "cer": -0.06048974189278625,
+            "ser": -0.10034746351633078,
+            "semscore": 0.014838471174074441,
+            "s_rate": -0.09951355107713689,
+            "d_rate": 0.0,
+            "i_rate": -0.0045865184155663655
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
+        },
+        {
+          "category": "EasyCall · Command · 全量微调后",
+          "label": "EasyCall · Command",
+          "n": 5608,
+          "before": null,
+          "after": {
+            "wer": 0.0834452132603532,
+            "cer": 0.04179779515688307,
+            "ser": 0.10859486447931527,
+            "semscore": 0.9884417393960898,
+            "s_rate": 0.05473510275740989,
+            "d_rate": 0.020448208199938037,
+            "i_rate": 0.008261902303005266
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -2375,10 +2703,126 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 5608,
+          "sample_ids_sha256": "a8a4fbec5a666ed9d55bb4bf824c0360e7c1804db5bc1bb07170cdaa3dcd31a0"
+        },
+        {
+          "category": "EasyCall · Non-command · 全量微调后",
+          "label": "EasyCall · Non-command",
+          "n": 4469,
+          "before": null,
+          "after": {
+            "wer": 0.05470716563181742,
+            "cer": 0.03796976840937457,
+            "ser": 0.06243007384202282,
+            "semscore": 0.9902384028415547,
+            "s_rate": 0.045980869273368016,
+            "d_rate": 0.006880349051854338,
+            "i_rate": 0.0018459473065950663
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 4469,
+          "sample_ids_sha256": "9943682d17c881746e745be4c1b89f89d92cff32022ea3447f48fe63dc16b1f4"
+        },
+        {
+          "category": "TORGO · Sentence · 全量微调后",
+          "label": "TORGO · Sentence",
+          "n": 2841,
+          "before": null,
+          "after": {
+            "wer": 0.05476323402527534,
+            "cer": 0.031662531017369724,
+            "ser": 0.1978176698345653,
+            "semscore": 0.9904362173703135,
+            "s_rate": 0.039334111556615745,
+            "d_rate": 0.00974470892757448,
+            "i_rate": 0.005684413541085114
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 2841,
+          "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
+        },
+        {
+          "category": "TORGO · Short-word Command · 全量微调后",
+          "label": "TORGO · Short-word Command",
+          "n": 942,
+          "before": null,
+          "after": {
+            "wer": 0.09235668789808917,
+            "cer": 0.061381709741550695,
+            "ser": 0.09235668789808917,
+            "semscore": 0.9883337227149122,
+            "s_rate": 0.09235668789808917,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 942,
+          "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
+        },
+        {
+          "category": "TORGO · Short-word Non-command · 全量微调后",
+          "label": "TORGO · Short-word Non-command",
+          "n": 7195,
+          "before": null,
+          "after": {
+            "wer": 0.23710910354412787,
+            "cer": 0.1243216412971542,
+            "ser": 0.23585823488533703,
+            "semscore": 0.9690713726455259,
+            "s_rate": 0.23571924947880474,
+            "d_rate": 0.0,
+            "i_rate": 0.001389854065323141
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 7195,
           "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
         }
       ],
@@ -2822,7 +3266,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.06089878202435951
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -2859,7 +3303,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.08783783783783784
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -2896,7 +3340,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": 0.0004567832309800542
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -2933,7 +3377,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.028662420382165606
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -2970,7 +3414,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.07171646977067407
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -3872,7 +4316,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -3901,7 +4345,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -3930,7 +4374,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -3959,7 +4403,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -3988,7 +4432,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -4076,7 +4520,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.011169306493342588,
             "i_rate": 0.013220167855114533
           },
-          "after": null,
+          "after": {
+            "wer": 0.06386066763425254,
+            "cer": 0.03340887591280617,
+            "ser": 0.12866582522830203,
+            "semscore": 0.9853434409301489,
+            "s_rate": 0.055972739319745064,
+            "d_rate": 0.0050798258345428155,
+            "i_rate": 0.002808102479964662
+          },
+          "delta": {
+            "wer": -0.07689152520981889,
+            "cer": -0.041555224347849765,
+            "ser": -0.14507387333877794,
+            "semscore": 0.018541486688636977,
+            "s_rate": -0.06038997917586925,
+            "d_rate": -0.006089480658799772,
+            "i_rate": -0.010412065375149871
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
+        },
+        {
+          "category": "Qwen2.5 · 全量微调后",
+          "label": "Qwen2.5",
+          "n": 21055,
+          "before": null,
+          "after": {
+            "wer": 0.0603698081964951,
+            "cer": 0.031227953784123453,
+            "ser": 0.10539064355260033,
+            "semscore": 0.9877707540578441,
+            "s_rate": 0.05186053999356055,
+            "d_rate": 0.00565751345384297,
+            "i_rate": 0.002851754749091578
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -4086,11 +4567,11 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "f486c9ca07eac660508183b2a985eb71ec6bd06b1a648245f08ac61ec4073d37"
         }
       ],
       "qwen3": [
@@ -4147,7 +4628,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -4204,7 +4685,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.009999684552537774,
             "i_rate": 0.009968139806315258
           },
-          "after": null,
+          "after": {
+            "wer": 0.10207879877606385,
+            "cer": 0.05635805703165931,
+            "ser": 0.19474543565385186,
+            "semscore": 0.9779264592082171,
+            "s_rate": 0.08788366297593136,
+            "d_rate": 0.009684237090312608,
+            "i_rate": 0.004510898709819879
+          },
+          "delta": {
+            "wer": -0.04258540740039746,
+            "cer": -0.02495050043886208,
+            "ser": -0.09915392607985749,
+            "semscore": 0.014592534089559073,
+            "s_rate": -0.03681271884167692,
+            "d_rate": -0.0003154474622251661,
+            "i_rate": -0.005457241096495379
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+        },
+        {
+          "category": "Phi-4 · 全量微调后",
+          "label": "Phi-4",
+          "n": 21055,
+          "before": null,
+          "after": {
+            "wer": 0.09213007681339405,
+            "cer": 0.04887894262260616,
+            "ser": 0.15359772025647114,
+            "semscore": 0.982468054303645,
+            "s_rate": 0.07731935053585391,
+            "d_rate": 0.009912147555310244,
+            "i_rate": 0.0048985787222298885
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -4214,11 +4732,11 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "f486c9ca07eac660508183b2a985eb71ec6bd06b1a648245f08ac61ec4073d37"
         }
       ],
       "whisper": [
@@ -4291,7 +4809,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.025519699694015963
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -4417,7 +4935,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -4882,20 +5400,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.05604566683964712,
             "i_rate": 0.068759730150493
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.06382978723404255,
+            "cer": 0.040466890725769825,
+            "ser": 0.07466880770774789,
+            "semscore": 0.9904833442712108,
+            "s_rate": 0.045147898287493514,
+            "d_rate": 0.015049299429164505,
+            "i_rate": 0.0036325895173845357
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.37078360145303585,
+            "cer": -0.17095104005813427,
+            "ser": -0.40024086712163787,
+            "semscore": 0.05150702135096774,
+            "s_rate": -0.26466009340944474,
+            "d_rate": -0.04099636741048261,
+            "i_rate": -0.06512714063310847
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
         },
         {
@@ -4911,7 +5437,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.004956896551724138,
             "i_rate": 0.005531609195402299
           },
-          "after": null,
+          "after": {
+            "wer": 0.06386494252873563,
+            "cer": 0.03216484281814616,
+            "ser": 0.14091820003643651,
+            "semscore": 0.9841771538812707,
+            "s_rate": 0.05747126436781609,
+            "d_rate": 0.003699712643678161,
+            "i_rate": 0.0026939655172413795
+          },
+          "delta": {
+            "wer": -0.03620689655172414,
+            "cer": -0.018748148800422672,
+            "ser": -0.0871743486973948,
+            "semscore": 0.011061331210055592,
+            "s_rate": -0.03211206896551724,
+            "d_rate": -0.0012571839080459772,
+            "i_rate": -0.0028376436781609197
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
+        },
+        {
+          "category": "EasyCall · 全量微调后",
+          "label": "EasyCall",
+          "n": 10077,
+          "before": null,
+          "after": {
+            "wer": 0.05414908579465542,
+            "cer": 0.02991472172351885,
+            "ser": 0.06668651384340578,
+            "semscore": 0.9916856635287604,
+            "s_rate": 0.04187444060861782,
+            "d_rate": 0.009142053445850914,
+            "i_rate": 0.003132591740186677
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -4921,10 +5484,39 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 10077,
+          "sample_ids_sha256": "f4a5a9089eda8cbb15497033e6647e2e408d81df71ff7ac9d1ba2c859fc7a6c8"
+        },
+        {
+          "category": "TORGO · 全量微调后",
+          "label": "TORGO",
+          "n": 10978,
+          "before": null,
+          "after": {
+            "wer": 0.06386494252873563,
+            "cer": 0.03216484281814616,
+            "ser": 0.14091820003643651,
+            "semscore": 0.9841771538812707,
+            "s_rate": 0.05747126436781609,
+            "d_rate": 0.003699712643678161,
+            "i_rate": 0.0026939655172413795
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 10978,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
         }
       ],
@@ -5069,7 +5661,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -5098,7 +5690,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -5266,20 +5858,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.060088060088060086,
             "i_rate": 0.03289303289303289
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.09427609427609428,
+            "cer": 0.06384908398331217,
+            "ser": 0.11137820512820513,
+            "semscore": 0.985285626939283,
+            "s_rate": 0.059052059052059055,
+            "d_rate": 0.029785029785029785,
+            "i_rate": 0.005439005439005439
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.27609427609427606,
+            "cer": -0.15930527843279524,
+            "ser": -0.3245192307692308,
+            "semscore": 0.04321150739605617,
+            "s_rate": -0.2183372183372183,
+            "d_rate": -0.0303030303030303,
+            "i_rate": -0.027454027454027453
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
         },
         {
@@ -5295,7 +5895,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.00305316091954023,
             "i_rate": 0.0067887931034482756
           },
-          "after": null,
+          "after": {
+            "wer": 0.10316091954022988,
+            "cer": 0.055035663109695085,
+            "ser": 0.21370012752778283,
+            "semscore": 0.9762532507315601,
+            "s_rate": 0.09188218390804598,
+            "d_rate": 0.006896551724137931,
+            "i_rate": 0.004382183908045977
+          },
+          "delta": {
+            "wer": -0.010201149425287367,
+            "cer": -0.001232798853657166,
+            "ser": -0.04791400983785754,
+            "semscore": 0.008085615035722693,
+            "s_rate": -0.011637931034482754,
+            "d_rate": 0.003843390804597701,
+            "i_rate": -0.002406609195402298
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
+        },
+        {
+          "category": "EasyCall · 全量微调后",
+          "label": "EasyCall",
+          "n": 10077,
+          "before": null,
+          "after": {
+            "wer": 0.07249712313003452,
+            "cer": 0.04024910233393178,
+            "ser": 0.08812146472164335,
+            "semscore": 0.9892385329792776,
+            "s_rate": 0.05140007671653241,
+            "d_rate": 0.01527937603886971,
+            "i_rate": 0.0058176703746324
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -5305,10 +5942,39 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 10077,
+          "sample_ids_sha256": "f4a5a9089eda8cbb15497033e6647e2e408d81df71ff7ac9d1ba2c859fc7a6c8"
+        },
+        {
+          "category": "TORGO · 全量微调后",
+          "label": "TORGO",
+          "n": 10978,
+          "before": null,
+          "after": {
+            "wer": 0.10316091954022988,
+            "cer": 0.055035663109695085,
+            "ser": 0.21370012752778283,
+            "semscore": 0.9762532507315601,
+            "s_rate": 0.09188218390804598,
+            "d_rate": 0.006896551724137931,
+            "i_rate": 0.004382183908045977
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 10978,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
         }
       ],
@@ -5493,7 +6159,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.07122507122507123
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -5530,7 +6196,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.01918103448275862
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -5883,7 +6549,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -5912,7 +6578,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -6528,20 +7194,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.05604566683964712,
             "i_rate": 0.068759730150493
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.06382978723404255,
+            "cer": 0.040466890725769825,
+            "ser": 0.07466880770774789,
+            "semscore": 0.9904833442712108,
+            "s_rate": 0.045147898287493514,
+            "d_rate": 0.015049299429164505,
+            "i_rate": 0.0036325895173845357
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.37078360145303585,
+            "cer": -0.17095104005813427,
+            "ser": -0.40024086712163787,
+            "semscore": 0.05150702135096774,
+            "s_rate": -0.26466009340944474,
+            "d_rate": -0.04099636741048261,
+            "i_rate": -0.06512714063310847
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
         },
         {
@@ -6557,7 +7231,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.004956896551724138,
             "i_rate": 0.005531609195402299
           },
-          "after": null,
+          "after": {
+            "wer": 0.06386494252873563,
+            "cer": 0.03216484281814616,
+            "ser": 0.14091820003643651,
+            "semscore": 0.9841771538812707,
+            "s_rate": 0.05747126436781609,
+            "d_rate": 0.003699712643678161,
+            "i_rate": 0.0026939655172413795
+          },
+          "delta": {
+            "wer": -0.03620689655172414,
+            "cer": -0.018748148800422672,
+            "ser": -0.0871743486973948,
+            "semscore": 0.011061331210055592,
+            "s_rate": -0.03211206896551724,
+            "d_rate": -0.0012571839080459772,
+            "i_rate": -0.0028376436781609197
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,469 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
+        },
+        {
+          "category": "EasyCall · 不适用 · 全量微调后",
+          "label": "EasyCall · 不适用",
+          "n": 10077,
+          "before": null,
+          "after": {
+            "wer": 0.05414908579465542,
+            "cer": 0.02991472172351885,
+            "ser": 0.06668651384340578,
+            "semscore": 0.9916856635287604,
+            "s_rate": 0.04187444060861782,
+            "d_rate": 0.009142053445850914,
+            "i_rate": 0.003132591740186677
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -6567,10 +7278,39 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 10077,
+          "sample_ids_sha256": "f4a5a9089eda8cbb15497033e6647e2e408d81df71ff7ac9d1ba2c859fc7a6c8"
+        },
+        {
+          "category": "TORGO · 不适用 · 全量微调后",
+          "label": "TORGO · 不适用",
+          "n": 10978,
+          "before": null,
+          "after": {
+            "wer": 0.06386494252873563,
+            "cer": 0.03216484281814616,
+            "ser": 0.14091820003643651,
+            "semscore": 0.9841771538812707,
+            "s_rate": 0.05747126436781609,
+            "d_rate": 0.003699712643678161,
+            "i_rate": 0.0026939655172413795
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 10978,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
         }
       ],
@@ -6860,7 +7600,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -6889,7 +7629,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -7242,20 +7982,28 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.060088060088060086,
             "i_rate": 0.03289303289303289
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.09427609427609428,
+            "cer": 0.06384908398331217,
+            "ser": 0.11137820512820513,
+            "semscore": 0.985285626939283,
+            "s_rate": 0.059052059052059055,
+            "d_rate": 0.029785029785029785,
+            "i_rate": 0.005439005439005439
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "delta": {
+            "wer": -0.27609427609427606,
+            "cer": -0.15930527843279524,
+            "ser": -0.3245192307692308,
+            "semscore": 0.04321150739605617,
+            "s_rate": -0.2183372183372183,
+            "d_rate": -0.0303030303030303,
+            "i_rate": -0.027454027454027453
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 21055,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
         },
         {
@@ -7271,7 +8019,44 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.00305316091954023,
             "i_rate": 0.0067887931034482756
           },
-          "after": null,
+          "after": {
+            "wer": 0.10316091954022988,
+            "cer": 0.055035663109695085,
+            "ser": 0.21370012752778283,
+            "semscore": 0.9762532507315601,
+            "s_rate": 0.09188218390804598,
+            "d_rate": 0.006896551724137931,
+            "i_rate": 0.004382183908045977
+          },
+          "delta": {
+            "wer": -0.010201149425287367,
+            "cer": -0.001232798853657166,
+            "ser": -0.04791400983785754,
+            "semscore": 0.008085615035722693,
+            "s_rate": -0.011637931034482754,
+            "d_rate": 0.003843390804597701,
+            "i_rate": -0.002406609195402298
+          },
+          "status": "paired",
+          "note": "完整健康队列同样本配对：13,474 条",
+          "cohort": "healthy",
+          "after_evaluated_n": 21055,
+          "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
+        },
+        {
+          "category": "EasyCall · 不适用 · 全量微调后",
+          "label": "EasyCall · 不适用",
+          "n": 10077,
+          "before": null,
+          "after": {
+            "wer": 0.07249712313003452,
+            "cer": 0.04024910233393178,
+            "ser": 0.08812146472164335,
+            "semscore": 0.9892385329792776,
+            "s_rate": 0.05140007671653241,
+            "d_rate": 0.01527937603886971,
+            "i_rate": 0.0058176703746324
+          },
           "delta": {
             "wer": null,
             "cer": null,
@@ -7281,10 +8066,39 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": null,
             "i_rate": null
           },
-          "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
           "cohort": "healthy",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 10077,
+          "sample_ids_sha256": "f4a5a9089eda8cbb15497033e6647e2e408d81df71ff7ac9d1ba2c859fc7a6c8"
+        },
+        {
+          "category": "TORGO · 不适用 · 全量微调后",
+          "label": "TORGO · 不适用",
+          "n": 10978,
+          "before": null,
+          "after": {
+            "wer": 0.10316091954022988,
+            "cer": 0.055035663109695085,
+            "ser": 0.21370012752778283,
+            "semscore": 0.9762532507315601,
+            "s_rate": 0.09188218390804598,
+            "d_rate": 0.006896551724137931,
+            "i_rate": 0.004382183908045977
+          },
+          "delta": {
+            "wer": null,
+            "cer": null,
+            "ser": null,
+            "semscore": null,
+            "s_rate": null,
+            "d_rate": null,
+            "i_rate": null
+          },
+          "status": "after_only",
+          "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+          "cohort": "healthy",
+          "after_evaluated_n": 10978,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
         }
       ],
@@ -7654,7 +8468,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.07122507122507123
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -7691,7 +8505,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.01918103448275862
           },
           "status": "paired",
-          "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+          "note": "完整健康队列同样本配对：13,474 条",
           "cohort": "healthy",
           "after_evaluated_n": 21055,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -8374,7 +9188,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -8403,7 +9217,7 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": null
           },
           "status": "baseline_only",
-          "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+          "note": "健康组微调后转写尚未完成",
           "cohort": "healthy",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -8416,7 +9230,7 @@ window.RESULT_BROWSER_DATA = {
       "disease": "complete",
       "disease_paired_n": 52072,
       "disease_after_n": 52073,
-      "healthy": "pending"
+      "healthy": "complete"
     },
     "qwen3": {
       "disease": "pending",
@@ -8427,7 +9241,7 @@ window.RESULT_BROWSER_DATA = {
       "disease": "complete",
       "disease_paired_n": 52073,
       "disease_after_n": 52073,
-      "healthy": "pending"
+      "healthy": "complete"
     },
     "whisper": {
       "disease": "complete",
@@ -8539,7 +9353,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -9296,7 +10110,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "27577160b7705f7492f44ea5115d28b00242f576225b71e23ff5f9aea011370a"
@@ -9325,7 +10139,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8edf9fe7b457aacd13b987a655218dc51559c6b11fecfad75a49f90873561241"
@@ -9354,7 +10168,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -9383,7 +10197,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -9412,7 +10226,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -9509,7 +10323,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -9804,7 +10618,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -9833,7 +10647,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -10458,7 +11272,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -10487,7 +11301,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -10594,7 +11408,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -11351,7 +12165,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "27577160b7705f7492f44ea5115d28b00242f576225b71e23ff5f9aea011370a"
@@ -11380,7 +12194,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8edf9fe7b457aacd13b987a655218dc51559c6b11fecfad75a49f90873561241"
@@ -11409,7 +12223,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -11438,7 +12252,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -11467,7 +12281,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -11564,7 +12378,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -11859,7 +12673,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -11888,7 +12702,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -12513,7 +13327,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -12542,7 +13356,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -12649,7 +13463,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -13406,7 +14220,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "27577160b7705f7492f44ea5115d28b00242f576225b71e23ff5f9aea011370a"
@@ -13435,7 +14249,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8edf9fe7b457aacd13b987a655218dc51559c6b11fecfad75a49f90873561241"
@@ -13464,7 +14278,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -13493,7 +14307,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -13522,7 +14336,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -13619,7 +14433,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -13914,7 +14728,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -13943,7 +14757,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -14568,7 +15382,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -14597,7 +15411,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -14704,7 +15518,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -15461,7 +16275,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "27577160b7705f7492f44ea5115d28b00242f576225b71e23ff5f9aea011370a"
@@ -15490,7 +16304,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8edf9fe7b457aacd13b987a655218dc51559c6b11fecfad75a49f90873561241"
@@ -15519,7 +16333,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -15548,7 +16362,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -15577,7 +16391,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -15674,7 +16488,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "fcbfb07b356edba3b9832fb2a79ea173407e086dfc5a07600c643b676a23278d"
@@ -15969,7 +16783,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -15998,7 +16812,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -16623,7 +17437,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "022133a1326e3a000a1216384dec959f9dc06943d72403395f7a31bd34ca2a77"
@@ -16652,7 +17466,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,469 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -16730,7 +17544,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -17168,7 +17982,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -17197,7 +18011,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -17226,7 +18040,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -17255,7 +18069,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -17284,7 +18098,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -17352,7 +18166,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -17531,7 +18345,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -17560,7 +18374,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -17924,7 +18738,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -17953,7 +18767,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -18031,7 +18845,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -18469,7 +19283,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -18498,7 +19312,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -18527,7 +19341,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -18556,7 +19370,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -18585,7 +19399,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -18653,7 +19467,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -18832,7 +19646,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -18861,7 +19675,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -19225,7 +20039,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -19254,7 +20068,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -19332,7 +20146,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -19770,7 +20584,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -19799,7 +20613,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -19828,7 +20642,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -19857,7 +20671,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -19886,7 +20700,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -19954,7 +20768,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -20133,7 +20947,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -20162,7 +20976,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -20526,7 +21340,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -20555,7 +21369,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -20633,7 +21447,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -21071,7 +21885,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -21100,7 +21914,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -21129,7 +21943,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -21158,7 +21972,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -21187,7 +22001,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -21255,7 +22069,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -21434,7 +22248,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -21463,7 +22277,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -21827,7 +22641,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -21856,7 +22670,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -21934,7 +22748,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -22372,7 +23186,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -22401,7 +23215,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -22430,7 +23244,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -22459,7 +23273,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -22488,7 +23302,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -22556,7 +23370,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -22735,7 +23549,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -22764,7 +23578,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -23128,7 +23942,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -23157,7 +23971,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -23235,7 +24049,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -23673,7 +24487,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -23702,7 +24516,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -23731,7 +24545,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -23760,7 +24574,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -23789,7 +24603,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -23857,7 +24671,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -24036,7 +24850,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -24065,7 +24879,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -24429,7 +25243,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -24458,7 +25272,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -24536,7 +25350,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -24974,7 +25788,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -25003,7 +25817,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -25032,7 +25846,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -25061,7 +25875,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -25090,7 +25904,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -25158,7 +25972,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -25337,7 +26151,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -25366,7 +26180,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -25730,7 +26544,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -25759,7 +26573,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -25837,7 +26651,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -26275,7 +27089,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -26304,7 +27118,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -26333,7 +27147,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -26362,7 +27176,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -26391,7 +27205,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -26459,7 +27273,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -26638,7 +27452,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -26667,7 +27481,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -27031,7 +27845,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -27060,7 +27874,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -27146,7 +27960,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.26680546355004575
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -27621,7 +28435,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.12053758924821503
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -27658,7 +28472,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.3560810810810811
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -27695,7 +28509,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.028371314013094458
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -27732,7 +28546,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.9490445859872612
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -27769,7 +28583,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.8604586518415566
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -27990,7 +28804,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.26680546355004575
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -28206,7 +29020,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.21082621082621084
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -28243,7 +29057,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.27456896551724136
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -28673,7 +29487,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.21082621082621084
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -28710,7 +29524,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.27456896551724136
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -28854,7 +29668,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.04463581590486104
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -29329,7 +30143,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.05627887442251155
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -29366,7 +30180,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.08783783783783784
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -29403,7 +30217,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.11115058620514642
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -29440,7 +30254,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0031847133757961776
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -29477,7 +30291,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07060458651841556
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -29698,7 +30512,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.04463581590486104
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -29914,7 +30728,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.06837606837606838
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -29951,7 +30765,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.06030890804597701
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -30381,7 +31195,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.06837606837606838
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -30418,7 +31232,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.06030890804597701
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -30562,7 +31376,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.020882621999306017
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -31037,7 +31851,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.019319613607727847
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -31074,7 +31888,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.051351351351351354
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -31111,7 +31925,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.00010150738466223417
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -31148,7 +31962,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.027600849256900213
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -31185,7 +31999,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07171646977067407
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -31406,7 +32220,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.020882621999306017
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -31622,7 +32436,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0315980315980316
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -31659,7 +32473,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.01939655172413793
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -32089,7 +32903,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0315980315980316
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -32126,7 +32940,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.01939655172413793
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -32270,7 +33084,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.025866691902463643
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -32745,7 +33559,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.04997900041999161
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -32782,7 +33596,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07567567567567568
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -32819,7 +33633,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0021316550779069176
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -32856,7 +33670,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.028662420382165606
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -32893,7 +33707,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07227241139680333
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -33114,7 +33928,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.025866691902463643
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -33330,7 +34144,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.05982905982905983
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -33367,7 +34181,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0211566091954023
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -33797,7 +34611,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.05982905982905983
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -33834,7 +34648,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0211566091954023
             },
             "status": "paired",
-            "note": "同样本配对：前后差值使用七项指标完整的 13,474 条健康样本",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
             "after_evaluated_n": 21055,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -33999,7 +34813,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -34756,7 +35570,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -34785,7 +35599,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -34814,7 +35628,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -34843,7 +35657,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -34872,7 +35686,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -34969,7 +35783,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -35264,7 +36078,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -35293,7 +36107,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -35918,7 +36732,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -35947,7 +36761,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -36054,7 +36868,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -36811,7 +37625,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -36840,7 +37654,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -36869,7 +37683,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -36898,7 +37712,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -36927,7 +37741,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -37024,7 +37838,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -37319,7 +38133,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -37348,7 +38162,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -37973,7 +38787,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -38002,7 +38816,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -38109,7 +38923,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -38866,7 +39680,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -38895,7 +39709,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -38924,7 +39738,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -38953,7 +39767,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -38982,7 +39796,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -39079,7 +39893,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -39374,7 +40188,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -39403,7 +40217,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -40028,7 +40842,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -40057,7 +40871,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -40164,7 +40978,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -40921,7 +41735,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
@@ -40950,7 +41764,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
@@ -40979,7 +41793,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
@@ -41008,7 +41822,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
@@ -41037,7 +41851,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
@@ -41134,7 +41948,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
@@ -41429,7 +42243,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -41458,7 +42272,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -42083,7 +42897,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
@@ -42112,7 +42926,7 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": null
             },
             "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成；仅显示 13,474 条七项指标完整的原始基线",
+            "note": "健康组微调后转写尚未完成",
             "cohort": "healthy",
             "after_evaluated_n": null,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
@@ -42127,7 +42941,7 @@ window.RESULT_BROWSER_DATA = {
   "completion": {
     "single_disease_complete": 20,
     "single_disease_total": 20,
-    "healthy_complete": 5,
+    "healthy_complete": 7,
     "healthy_total": 25
   },
   "methods": {
