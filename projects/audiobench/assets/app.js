@@ -111,10 +111,11 @@
   function renderChart(sections) {
     var metric = state.metric;
     $("#result-chart").innerHTML = splitSections(sections).map(function (section) {
+      var chartRows = section.rows.filter(function (row) { return row.status !== "after_only"; });
       var all = [];
-      section.rows.forEach(function (r) { if (r.before && r.before[metric] != null) all.push(Number(r.before[metric])); if (r.after && r.after[metric] != null) all.push(Number(r.after[metric])); });
+      chartRows.forEach(function (r) { if (r.before && r.before[metric] != null) all.push(Number(r.before[metric])); if (r.after && r.after[metric] != null) all.push(Number(r.after[metric])); });
       var max = Math.max.apply(Math, all.length ? all : [1]); if (metric === "semscore") max = Math.max(1, max);
-      var groups = section.rows.map(function (row) {
+      var groups = chartRows.map(function (row) {
         var bars = ["before", "after"].map(function (kind) {
           var x = row[kind] && row[kind][metric], height = x == null ? 0 : Math.max(3, Number(x) / max * 100);
           return "<div class='vbar-wrap'><div class='vbar-value'>" + resultValue(row, kind, metric) + "</div><div class='vbar " + kind + "' style='height:" + height.toFixed(2) + "%'>" + (x == null ? "<i></i>" : "") + "</div></div>";
@@ -127,14 +128,17 @@
   function renderTable(sections) {
     var metric = state.metric;
     $("#result-table").innerHTML = splitSections(sections).map(function (section) {
-      var body = section.rows.length ? section.rows.map(function (row) {
+      var comparisonRows = section.rows.filter(function (row) { return row.status !== "after_only"; });
+      var fullRows = section.rows.filter(function (row) { return row.status === "after_only"; });
+      var body = comparisonRows.length ? comparisonRows.map(function (row) {
         var before = row.before && row.before[metric], after = row.after && row.after[metric], change = row.delta && row.delta[metric];
         var count = int(row.n) + (row.after_evaluated_n && row.after_evaluated_n > row.n ? "（配对；全量 " + int(row.after_evaluated_n) + "）" : "");
-        var note = row.note ? "<small class='row-note'>" + esc(row.note) + "</small>" : "";
         var changeText = change == null && row.status !== "paired" ? "不计算" : deltaText(change, metric);
-        return "<tr><td>" + esc(row.category) + note + "</td><td class='numeric'>" + count + "</td><td class='numeric'>" + resultValue(row, "before", metric) + "</td><td class='numeric'>" + resultValue(row, "after", metric) + "</td><td class='numeric delta " + deltaClass(change, metric) + "'>" + changeText + "</td></tr>";
+        return "<tr><td>" + esc(row.category) + "</td><td class='numeric'>" + count + "</td><td class='numeric'>" + resultValue(row, "before", metric) + "</td><td class='numeric'>" + resultValue(row, "after", metric) + "</td><td class='numeric delta " + deltaClass(change, metric) + "'>" + changeText + "</td></tr>";
       }).join("") : "<tr><td colspan='5'>暂无数据</td></tr>";
-      return "<div class='data-table-block'><h3>" + esc(section.title) + "</h3><table class='data-table'><thead><tr><th>分组</th><th>N</th><th>微调前</th><th>微调后</th><th>差值</th></tr></thead><tbody>" + body + "</tbody></table></div>";
+      var comparison = "<div class='data-table-block'><h3>" + esc(section.title) + "</h3><table class='data-table'><thead><tr><th>分组</th><th>N</th><th>微调前</th><th>微调后</th><th>差值</th></tr></thead><tbody>" + body + "</tbody></table></div>";
+      var full = fullRows.length ? "<div class='data-table-block'><h3>" + esc(section.title) + " · 全量微调后</h3><table class='data-table'><thead><tr><th>分组</th><th>N</th><th>微调后</th></tr></thead><tbody>" + fullRows.map(function (row) { return "<tr><td>" + esc(row.label || row.category.replace(" · 全量微调后", "")) + "</td><td class='numeric'>" + int(row.n) + "</td><td class='numeric'>" + resultValue(row, "after", metric) + "</td></tr>"; }).join("") + "</tbody></table></div>" : "";
+      return comparison + full;
     }).join("");
   }
   function renderResults() {
