@@ -28,6 +28,13 @@
     if (value == null || Number.isNaN(Number(value))) return "—";
     return metricMeta[metric].score ? Number(value).toFixed(metricMeta[metric].digits) : (Number(value) * 100).toFixed(metricMeta[metric].digits) + "%";
   }
+  function resultValue(row, kind, metric) {
+    var value = row[kind] && row[kind][metric];
+    if (value != null && !Number.isNaN(Number(value))) return val(value, metric);
+    if (kind === "before" && row.status === "after_only") return "不可直接比较";
+    if (kind === "after" && row.status === "baseline_only") return "待完成";
+    return "—";
+  }
   function deltaText(value, metric) {
     if (value == null || Number.isNaN(Number(value))) return "—";
     var n = Number(value), sign = n > 0 ? "+" : n < 0 ? "−" : "±";
@@ -110,7 +117,7 @@
       var groups = section.rows.map(function (row) {
         var bars = ["before", "after"].map(function (kind) {
           var x = row[kind] && row[kind][metric], height = x == null ? 0 : Math.max(3, Number(x) / max * 100);
-          return "<div class='vbar-wrap'><div class='vbar-value'>" + val(x, metric) + "</div><div class='vbar " + kind + "' style='height:" + height.toFixed(2) + "%'>" + (x == null ? "<i></i>" : "") + "</div></div>";
+          return "<div class='vbar-wrap'><div class='vbar-value'>" + resultValue(row, kind, metric) + "</div><div class='vbar " + kind + "' style='height:" + height.toFixed(2) + "%'>" + (x == null ? "<i></i>" : "") + "</div></div>";
         }).join("");
         return "<div class='vbar-group'>" + bars + "<span class='x-label'>" + esc(row.category) + "</span></div>";
       }).join("");
@@ -124,7 +131,8 @@
         var before = row.before && row.before[metric], after = row.after && row.after[metric], change = row.delta && row.delta[metric];
         var count = int(row.n) + (row.after_evaluated_n && row.after_evaluated_n > row.n ? "（配对；全量 " + int(row.after_evaluated_n) + "）" : "");
         var note = row.note ? "<small class='row-note'>" + esc(row.note) + "</small>" : "";
-        return "<tr><td>" + esc(row.category) + note + "</td><td class='numeric'>" + count + "</td><td class='numeric'>" + val(before, metric) + "</td><td class='numeric'>" + val(after, metric) + "</td><td class='numeric delta " + deltaClass(change, metric) + "'>" + deltaText(change, metric) + "</td></tr>";
+        var changeText = change == null && row.status !== "paired" ? "不计算" : deltaText(change, metric);
+        return "<tr><td>" + esc(row.category) + note + "</td><td class='numeric'>" + count + "</td><td class='numeric'>" + resultValue(row, "before", metric) + "</td><td class='numeric'>" + resultValue(row, "after", metric) + "</td><td class='numeric delta " + deltaClass(change, metric) + "'>" + changeText + "</td></tr>";
       }).join("") : "<tr><td colspan='5'>暂无数据</td></tr>";
       return "<div class='data-table-block'><h3>" + esc(section.title) + "</h3><table class='data-table'><thead><tr><th>分组</th><th>N</th><th>微调前</th><th>微调后</th><th>差值</th></tr></thead><tbody>" + body + "</tbody></table></div>";
     }).join("");
