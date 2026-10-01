@@ -1,7 +1,7 @@
 window.RESULT_BROWSER_DATA = {
   "schema_version": "audiobench.result_browser.v1",
   "built_on": "2026-10-01",
-  "built_at": "2026-10-01T18:53:28+08:00",
+  "built_at": "2026-10-01T19:10:07+08:00",
   "models": [
     {
       "id": "qwen25",
