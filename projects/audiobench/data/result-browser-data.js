@@ -1,7 +1,7 @@
 window.RESULT_BROWSER_DATA = {
   "schema_version": "audiobench.result_browser.v1",
   "built_on": "2026-10-01",
-  "built_at": "2026-10-01T17:09:07+08:00",
+  "built_at": "2026-10-01T18:27:31+08:00",
   "models": [
     {
       "id": "qwen25",
@@ -93,9 +93,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.14881845655917403
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
         },
         {
@@ -394,39 +394,39 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "疾病组",
           "label": "疾病组",
-          "n": 33333,
+          "n": 40002,
           "before": {
-            "wer": 1.30209276827001,
-            "cer": 1.5428454673788314,
-            "ser": 0.8932289322893229,
-            "semscore": 0.8631811999871966,
-            "s_rate": 0.6419491188762295,
-            "d_rate": 0.0656830496893423,
-            "i_rate": 0.5944605997044382
+            "wer": 1.3969906097974885,
+            "cer": 1.6898175164076739,
+            "ser": 0.8585570721463927,
+            "semscore": 0.8668868934417997,
+            "s_rate": 0.6363238677075084,
+            "d_rate": 0.06254101142663197,
+            "i_rate": 0.698125730663348
           },
           "after": {
-            "wer": 1.038224404506523,
-            "cer": 0.9921738915076816,
-            "ser": 0.998679986799868,
-            "semscore": 0.8334907601937758,
-            "s_rate": 0.5981312866472803,
-            "d_rate": 0.39243774928095854,
-            "i_rate": 0.04765536857828415
+            "wer": 1.0363009409119375,
+            "cer": 0.9935521983761626,
+            "ser": 0.9989000549972501,
+            "semscore": 0.8338223597069548,
+            "s_rate": 0.6183534418362496,
+            "d_rate": 0.3726901630561906,
+            "i_rate": 0.04525733601949732
           },
           "delta": {
-            "wer": -0.2638683637634871,
-            "cer": -0.5506715758711498,
-            "ser": 0.10545105451054515,
-            "semscore": -0.029690439793420786,
-            "s_rate": -0.043817832228949194,
-            "d_rate": 0.32675469959161624,
-            "i_rate": -0.5468052311261541
+            "wer": -0.360689668885551,
+            "cer": -0.6962653180315113,
+            "ser": 0.14034298285085745,
+            "semscore": -0.03306453373484486,
+            "s_rate": -0.017970425871258744,
+            "d_rate": 0.31014915162955864,
+            "i_rate": -0.6528683946438507
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
         },
         {
           "category": "疾病组 · 全量微调后",
@@ -522,9 +522,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.10005211485441465
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
@@ -559,9 +559,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.4656123574843691
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "1f83d4bc7ede7b8f8b6844b75f314ff8b92e463a01334b30206763a93d155e60"
         },
         {
@@ -596,9 +596,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.6080910240202275
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
         },
         {
@@ -633,9 +633,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.003945885005636978
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
         },
         {
@@ -670,9 +670,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.008928571428571428
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
         },
         {
@@ -707,9 +707,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.026988636363636364
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
         },
         {
@@ -744,9 +744,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.02505359056806002
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
         },
         {
@@ -781,9 +781,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.07739938080495357
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
         },
         {
@@ -818,9 +818,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.0013333333333333333
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
         },
         {
@@ -855,9 +855,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.1276923076923077
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
         },
         {
@@ -892,9 +892,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.34637561779242176
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
         },
         {
@@ -3154,9 +3154,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.4813563311142492
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
@@ -3191,9 +3191,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.757531227038942
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
         },
         {
@@ -3228,9 +3228,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -2.3742098609355247
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
         },
         {
@@ -3265,9 +3265,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.13077790304396844
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
         },
         {
@@ -3302,9 +3302,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.6428571428571428
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
         },
         {
@@ -3339,10 +3339,195 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -3.6931818181818183
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+        },
+        {
+          "category": "UA-Speech · Common Words",
+          "label": "UA-Speech · Common Words",
+          "n": 2700,
+          "before": {
+            "wer": 2.821111111111111,
+            "cer": 3.750580431177446,
+            "ser": 0.7503703703703704,
+            "semscore": 0.8861044905362305,
+            "s_rate": 0.534074074074074,
+            "d_rate": 0.0007407407407407407,
+            "i_rate": 2.2862962962962965
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 1.2918739635157546,
+            "ser": 1.0,
+            "semscore": 0.8438931929402881,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -1.8211111111111111,
+            "cer": -2.4587064676616914,
+            "ser": 0.24962962962962965,
+            "semscore": -0.04221129759594244,
+            "s_rate": 0.46592592592592597,
+            "d_rate": -0.0007407407407407407,
+            "i_rate": -2.2862962962962965
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "08eb0b286d95a3db9c15a5f4272f9d9c7011df67963a580b44a31224a65905c5"
+        },
+        {
+          "category": "UA-Speech · Computer Commands",
+          "label": "UA-Speech · Computer Commands",
+          "n": 513,
+          "before": {
+            "wer": 2.6335282651072123,
+            "cer": 2.16926272066459,
+            "ser": 0.5925925925925926,
+            "semscore": 0.9046422966971964,
+            "s_rate": 0.4346978557504873,
+            "d_rate": 0.001949317738791423,
+            "i_rate": 2.1968810916179335
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 0.9626168224299065,
+            "ser": 1.0,
+            "semscore": 0.8458405941085742,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -1.6335282651072123,
+            "cer": -1.2066458982346835,
+            "ser": 0.40740740740740744,
+            "semscore": -0.05880170258862227,
+            "s_rate": 0.5653021442495128,
+            "d_rate": -0.001949317738791423,
+            "i_rate": -2.1968810916179335
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "ecee4d84d2361b951cf12ea13747b805f640303b60d2f562d8bdd3d8f871fa7c"
+        },
+        {
+          "category": "UA-Speech · Digits",
+          "label": "UA-Speech · Digits",
+          "n": 270,
+          "before": {
+            "wer": 2.2185185185185183,
+            "cer": 2.435185185185185,
+            "ser": 0.562962962962963,
+            "semscore": 0.9150085729581339,
+            "s_rate": 0.2962962962962963,
+            "d_rate": 0.0,
+            "i_rate": 1.9222222222222223
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 1.05,
+            "ser": 1.0,
+            "semscore": 0.8449423734788541,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -1.2185185185185183,
+            "cer": -1.385185185185185,
+            "ser": 0.437037037037037,
+            "semscore": -0.07006619947927972,
+            "s_rate": 0.7037037037037037,
+            "d_rate": 0.0,
+            "i_rate": -1.9222222222222223
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "e23811939892733f62f5e0845ccc0cce79118cf099a505f0ea588a6479551909"
+        },
+        {
+          "category": "UA-Speech · Radio Alphabet",
+          "label": "UA-Speech · Radio Alphabet",
+          "n": 702,
+          "before": {
+            "wer": 2.3058984910836764,
+            "cer": 2.0378421900161032,
+            "ser": 0.5826210826210826,
+            "semscore": 0.8975160029369202,
+            "s_rate": 0.4609053497942387,
+            "d_rate": 0.010973936899862825,
+            "i_rate": 1.8340192043895747
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 0.9710144927536232,
+            "ser": 1.0,
+            "semscore": 0.8260286719540925,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -1.3058984910836764,
+            "cer": -1.0668276972624802,
+            "ser": 0.4173789173789174,
+            "semscore": -0.07148733098282778,
+            "s_rate": 0.5390946502057613,
+            "d_rate": -0.010973936899862825,
+            "i_rate": -1.8340192043895747
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "dabdeec3a397a17fb60b7e7264e76e3c0042e181649ea0daa2e711a4b8efb749"
+        },
+        {
+          "category": "UA-Speech · Uncommon Words",
+          "label": "UA-Speech · Uncommon Words",
+          "n": 2484,
+          "before": {
+            "wer": 4.017522899243329,
+            "cer": 2.414230438521066,
+            "ser": 0.6759259259259259,
+            "semscore": 0.8740412241834757,
+            "s_rate": 0.5929908403026682,
+            "d_rate": 0.005575467941059339,
+            "i_rate": 3.418956590999602
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 0.8725279449699054,
+            "ser": 1.0,
+            "semscore": 0.8258374030559343,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -3.017522899243329,
+            "cer": -1.5417024935511607,
+            "ser": 0.32407407407407407,
+            "semscore": -0.0482038211275414,
+            "s_rate": 0.40700915969733176,
+            "d_rate": -0.005575467941059339,
+            "i_rate": -3.418956590999602
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "5ad2ff448b977ac5b3d607c5380e1fd52464b6f346e0b00cce0b200a0d75bacc"
         },
         {
           "category": "CDSD · All samples · 全量微调后",
@@ -3844,9 +4029,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.14881845655917403
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
         },
         {
@@ -4145,39 +4330,39 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "Step-Audio",
           "label": "Step-Audio",
-          "n": 33333,
+          "n": 40002,
           "before": {
-            "wer": 1.30209276827001,
-            "cer": 1.5428454673788314,
-            "ser": 0.8932289322893229,
-            "semscore": 0.8631811999871966,
-            "s_rate": 0.6419491188762295,
-            "d_rate": 0.0656830496893423,
-            "i_rate": 0.5944605997044382
+            "wer": 1.3969906097974885,
+            "cer": 1.6898175164076739,
+            "ser": 0.8585570721463927,
+            "semscore": 0.8668868934417997,
+            "s_rate": 0.6363238677075084,
+            "d_rate": 0.06254101142663197,
+            "i_rate": 0.698125730663348
           },
           "after": {
-            "wer": 1.038224404506523,
-            "cer": 0.9921738915076816,
-            "ser": 0.998679986799868,
-            "semscore": 0.8334907601937758,
-            "s_rate": 0.5981312866472803,
-            "d_rate": 0.39243774928095854,
-            "i_rate": 0.04765536857828415
+            "wer": 1.0363009409119375,
+            "cer": 0.9935521983761626,
+            "ser": 0.9989000549972501,
+            "semscore": 0.8338223597069548,
+            "s_rate": 0.6183534418362496,
+            "d_rate": 0.3726901630561906,
+            "i_rate": 0.04525733601949732
           },
           "delta": {
-            "wer": -0.2638683637634871,
-            "cer": -0.5506715758711498,
-            "ser": 0.10545105451054515,
-            "semscore": -0.029690439793420786,
-            "s_rate": -0.043817832228949194,
-            "d_rate": 0.32675469959161624,
-            "i_rate": -0.5468052311261541
+            "wer": -0.360689668885551,
+            "cer": -0.6962653180315113,
+            "ser": 0.14034298285085745,
+            "semscore": -0.03306453373484486,
+            "s_rate": -0.017970425871258744,
+            "d_rate": 0.31014915162955864,
+            "i_rate": -0.6528683946438507
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
         },
         {
           "category": "Step-Audio · 全量微调后",
@@ -4271,9 +4456,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.14881845655917403
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
         },
         {
@@ -4382,39 +4567,39 @@ window.RESULT_BROWSER_DATA = {
         {
           "category": "Step-Audio",
           "label": "Step-Audio",
-          "n": 33333,
+          "n": 40002,
           "before": {
-            "wer": 1.30209276827001,
-            "cer": 1.5428454673788314,
-            "ser": 0.8932289322893229,
-            "semscore": 0.8631811999871966,
-            "s_rate": 0.6419491188762295,
-            "d_rate": 0.0656830496893423,
-            "i_rate": 0.5944605997044382
+            "wer": 1.3969906097974885,
+            "cer": 1.6898175164076739,
+            "ser": 0.8585570721463927,
+            "semscore": 0.8668868934417997,
+            "s_rate": 0.6363238677075084,
+            "d_rate": 0.06254101142663197,
+            "i_rate": 0.698125730663348
           },
           "after": {
-            "wer": 1.038224404506523,
-            "cer": 0.9921738915076816,
-            "ser": 0.998679986799868,
-            "semscore": 0.8334907601937758,
-            "s_rate": 0.5981312866472803,
-            "d_rate": 0.39243774928095854,
-            "i_rate": 0.04765536857828415
+            "wer": 1.0363009409119375,
+            "cer": 0.9935521983761626,
+            "ser": 0.9989000549972501,
+            "semscore": 0.8338223597069548,
+            "s_rate": 0.6183534418362496,
+            "d_rate": 0.3726901630561906,
+            "i_rate": 0.04525733601949732
           },
           "delta": {
-            "wer": -0.2638683637634871,
-            "cer": -0.5506715758711498,
-            "ser": 0.10545105451054515,
-            "semscore": -0.029690439793420786,
-            "s_rate": -0.043817832228949194,
-            "d_rate": 0.32675469959161624,
-            "i_rate": -0.5468052311261541
+            "wer": -0.360689668885551,
+            "cer": -0.6962653180315113,
+            "ser": 0.14034298285085745,
+            "semscore": -0.03306453373484486,
+            "s_rate": -0.017970425871258744,
+            "d_rate": 0.31014915162955864,
+            "i_rate": -0.6528683946438507
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
-          "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
         }
       ]
     },
@@ -4452,9 +4637,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.10005211485441465
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
@@ -4489,9 +4674,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.5180190653336434
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "24710d4d4fee0f9d07b01e2b30ca9af897ccc99f339661915e94b550c17897e1"
         },
         {
@@ -4526,9 +4711,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.010424710424710425
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
         },
         {
@@ -4563,9 +4748,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.1632870864461046
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
         },
         {
@@ -5442,9 +5627,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.4813563311142492
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
         },
         {
@@ -5479,9 +5664,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.9842007434944238
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
         },
         {
@@ -5516,10 +5701,47 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.1644787644787644
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
+        },
+        {
+          "category": "UA-Speech",
+          "label": "UA-Speech",
+          "n": 6669,
+          "before": {
+            "wer": 3.173583221775993,
+            "cer": 2.6971257213986646,
+            "ser": 0.6852601589443694,
+            "semscore": 0.8854086928003677,
+            "s_rate": 0.5310129406514948,
+            "d_rate": 0.003718578015766771,
+            "i_rate": 2.638851703108731
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 1.0029987552336765,
+            "ser": 1.0,
+            "semscore": 0.8354797606025612,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -2.173583221775993,
+            "cer": -1.694126966164988,
+            "ser": 0.3147398410556306,
+            "semscore": -0.049928932197806475,
+            "s_rate": 0.46898705934850515,
+            "d_rate": -0.003718578015766771,
+            "i_rate": -2.638851703108731
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "072fcc98d53c31483448cb7a45605b47733031c889bac13702b8169c93696824"
         },
         {
           "category": "CDSD · 全量微调后",
@@ -5731,9 +5953,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.5447647951441579
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
         },
         {
@@ -5768,9 +5990,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.6863636363636364
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
         },
         {
@@ -5805,9 +6027,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -6.143074581430746
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "35664ab9fce3ab643ea5e1ed8f50d72026c874ff35d990ea51396de67b8119f3"
         },
         {
@@ -5842,9 +6064,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.009871668311944718
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
         },
         {
@@ -5879,9 +6101,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.012411347517730495
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
         },
         {
@@ -5916,9 +6138,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.22944483485593817
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
         },
         {
@@ -5953,9 +6175,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.11204481792717087
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
         },
         {
@@ -5990,9 +6212,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.2328317901234568
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
         },
         {
@@ -6027,9 +6249,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.10246159261773653
           },
           "status": "paired",
-          "note": "",
+          "note": "七项指标完整的同样本配对为 52,072/52,073 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
         },
         {
@@ -7566,9 +7788,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.4233687405159332
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
         },
         {
@@ -7603,9 +7825,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.1113636363636363
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
         },
         {
@@ -7640,9 +7862,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -6.224242424242425
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
         },
         {
@@ -7677,9 +7899,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.1263573543928924
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
         },
         {
@@ -7714,10 +7936,121 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -1.301418439716312
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
+        },
+        {
+          "category": "UA-Speech · 中度",
+          "label": "UA-Speech · 中度",
+          "n": 1316,
+          "before": {
+            "wer": 2.4631024096385543,
+            "cer": 1.985207100591716,
+            "ser": 0.790273556231003,
+            "semscore": 0.867989615783503,
+            "s_rate": 0.704066265060241,
+            "d_rate": 0.002259036144578313,
+            "i_rate": 1.756777108433735
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 1.0159763313609467,
+            "ser": 1.0,
+            "semscore": 0.8356932087781581,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -1.4631024096385543,
+            "cer": -0.9692307692307693,
+            "ser": 0.20972644376899696,
+            "semscore": -0.03229640700534486,
+            "s_rate": 0.29593373493975905,
+            "d_rate": -0.002259036144578313,
+            "i_rate": -1.756777108433735
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "94a3044cff3b4b3ad6fe99d59c74332519e4115ef59ae0c26f55e8e30c9b66e5"
+        },
+        {
+          "category": "UA-Speech · 轻度",
+          "label": "UA-Speech · 轻度",
+          "n": 3570,
+          "before": {
+            "wer": 1.96053362979433,
+            "cer": 1.6775225508705685,
+            "ser": 0.4907563025210084,
+            "semscore": 0.9335923357170169,
+            "s_rate": 0.24207893274041134,
+            "d_rate": 0.0044469149527515284,
+            "i_rate": 1.7140077821011672
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 1.000891546045731,
+            "ser": 1.0,
+            "semscore": 0.8354248060064824,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -0.9605336297943301,
+            "cer": -0.6766310048248374,
+            "ser": 0.5092436974789916,
+            "semscore": -0.09816752971053455,
+            "s_rate": 0.7579210672595886,
+            "d_rate": -0.0044469149527515284,
+            "i_rate": -1.7140077821011672
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "90053ce7463e4ebbb3a39c347d1708ec7e4a4279f7a98d7c48551438392c5c78"
+        },
+        {
+          "category": "UA-Speech · 重度",
+          "label": "UA-Speech · 重度",
+          "n": 1783,
+          "before": {
+            "wer": 6.127434613244296,
+            "cer": 5.244852941176471,
+            "ser": 0.997195737521032,
+            "semscore": 0.8017900164917621,
+            "s_rate": 0.9816360601001669,
+            "d_rate": 0.00333889816360601,
+            "i_rate": 5.142459654980523
+          },
+          "after": {
+            "wer": 1.0,
+            "cer": 0.9980042016806723,
+            "ser": 1.0,
+            "semscore": 0.8354322508487284,
+            "s_rate": 1.0,
+            "d_rate": 0.0,
+            "i_rate": 0.0
+          },
+          "delta": {
+            "wer": -5.127434613244296,
+            "cer": -4.246848739495799,
+            "ser": 0.0028042624789680337,
+            "semscore": 0.03364223435696634,
+            "s_rate": 0.018363939899833093,
+            "d_rate": -0.00333889816360601,
+            "i_rate": -5.142459654980523
+          },
+          "status": "paired",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+          "cohort": "disease",
+          "after_evaluated_n": 52073,
+          "sample_ids_sha256": "ffb9391133072dea878ae0efd2095075802d1f9c88a53500182c347253034802"
         },
         {
           "category": "未标注",
@@ -7751,9 +8084,9 @@ window.RESULT_BROWSER_DATA = {
             "i_rate": -0.4846580003855406
           },
           "status": "paired",
-          "note": "",
+          "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
           "cohort": "disease",
-          "after_evaluated_n": null,
+          "after_evaluated_n": 52073,
           "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
         },
         {
@@ -8104,7 +8437,7 @@ window.RESULT_BROWSER_DATA = {
     },
     "step_audio": {
       "disease": "complete",
-      "disease_paired_n": 33333,
+      "disease_paired_n": 40002,
       "disease_after_n": 52073,
       "healthy": "pending"
     }
@@ -8148,9 +8481,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.09574755012137015
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -8245,9 +8578,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1015399098917356
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -8282,9 +8615,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.2607576314821625
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "1f83d4bc7ede7b8f8b6844b75f314ff8b92e463a01334b30206763a93d155e60"
           },
           {
@@ -8319,9 +8652,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1359039190897597
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -8356,9 +8689,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.0
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -8393,9 +8726,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.8660714285714286
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -8430,9 +8763,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 1.414772727272727
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
           },
           {
@@ -8467,9 +8800,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.10289389067524114
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
           },
           {
@@ -8504,9 +8837,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.3521671826625387
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
           },
           {
@@ -8541,9 +8874,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.06133333333333333
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
           },
           {
@@ -8578,9 +8911,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.06153846153846154
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
           },
           {
@@ -8615,9 +8948,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.13426688632619438
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
           },
           {
@@ -9118,9 +9451,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.09574755012137015
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -9215,9 +9548,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1015399098917356
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -9252,9 +9585,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.214833759590793
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "24710d4d4fee0f9d07b01e2b30ca9af897ccc99f339661915e94b550c17897e1"
           },
           {
@@ -9289,9 +9622,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.42200772200772196
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           },
           {
@@ -9326,9 +9659,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.12630736392742795
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
           },
           {
@@ -9539,9 +9872,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.4795144157814871
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -9576,9 +9909,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.2643939393939394
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -9613,9 +9946,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -5.904109589041096
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "35664ab9fce3ab643ea5e1ed8f50d72026c874ff35d990ea51396de67b8119f3"
           },
           {
@@ -9650,9 +9983,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.5409674234945705
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -9687,9 +10020,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.00531914893617021
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
@@ -9724,9 +10057,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.10576247364722419
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
           },
           {
@@ -9761,9 +10094,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": 0.35910364145658263
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
           },
           {
@@ -9798,9 +10131,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.22723765432098766
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
           },
           {
@@ -9835,9 +10168,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1040288987788422
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -10203,9 +10536,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.16809244877212154
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -10300,9 +10633,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1281605137515971
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -10337,9 +10670,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.4626700993012136
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "1f83d4bc7ede7b8f8b6844b75f314ff8b92e463a01334b30206763a93d155e60"
           },
           {
@@ -10374,9 +10707,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.6024020227560052
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -10411,9 +10744,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0033821871476888386
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -10448,9 +10781,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.008928571428571428
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -10485,9 +10818,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.026988636363636364
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
           },
           {
@@ -10522,9 +10855,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.019694533762057875
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
           },
           {
@@ -10559,9 +10892,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.06346749226006193
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
           },
           {
@@ -10596,9 +10929,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0013333333333333333
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
           },
           {
@@ -10633,9 +10966,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.10461538461538461
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
           },
           {
@@ -10670,9 +11003,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.2865183964854476
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
           },
           {
@@ -11173,9 +11506,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.16809244877212154
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -11270,9 +11603,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1281605137515971
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -11307,9 +11640,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.514066496163683
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "24710d4d4fee0f9d07b01e2b30ca9af897ccc99f339661915e94b550c17897e1"
           },
           {
@@ -11344,9 +11677,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.010038610038610039
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           },
           {
@@ -11381,9 +11714,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.13452508004268945
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
           },
           {
@@ -11594,9 +11927,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.5493171471927163
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -11631,9 +11964,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.6901515151515152
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -11668,9 +12001,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -6.0928462709284625
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "35664ab9fce3ab643ea5e1ed8f50d72026c874ff35d990ea51396de67b8119f3"
           },
           {
@@ -11705,9 +12038,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.006910167818361303
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -11742,9 +12075,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.02127659574468085
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
@@ -11779,9 +12112,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1809557273366128
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
           },
           {
@@ -11816,9 +12149,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.08683473389355742
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
           },
           {
@@ -11853,9 +12186,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.20756172839506173
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
           },
           {
@@ -11890,9 +12223,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.13051385850661704
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -12258,9 +12591,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.11832032033416554
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -12355,9 +12688,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07884473135633113
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -12392,9 +12725,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1669731518940787
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "1f83d4bc7ede7b8f8b6844b75f314ff8b92e463a01334b30206763a93d155e60"
           },
           {
@@ -12429,9 +12762,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.3141592920353982
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -12466,9 +12799,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.005073280721533258
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -12503,9 +12836,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.008928571428571428
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -12540,9 +12873,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.018465909090909092
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
           },
           {
@@ -12577,9 +12910,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.017282958199356914
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
           },
           {
@@ -12614,9 +12947,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07430340557275543
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
           },
           {
@@ -12651,9 +12984,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0013333333333333333
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
           },
           {
@@ -12688,9 +13021,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.09846153846153846
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
           },
           {
@@ -12725,9 +13058,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.2795167490389896
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
           },
           {
@@ -13228,9 +13561,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.11832032033416554
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -13325,9 +13658,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07884473135633113
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -13362,9 +13695,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.2211113694489653
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "24710d4d4fee0f9d07b01e2b30ca9af897ccc99f339661915e94b550c17897e1"
           },
           {
@@ -13399,9 +13732,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.008880308880308881
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           },
           {
@@ -13436,9 +13769,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.13094983991462114
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
           },
           {
@@ -13649,9 +13982,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.3945371775417299
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -13686,9 +14019,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.41893939393939394
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -13723,9 +14056,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -5.6255707762557075
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "35664ab9fce3ab643ea5e1ed8f50d72026c874ff35d990ea51396de67b8119f3"
           },
           {
@@ -13760,9 +14093,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.007897334649555774
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -13797,9 +14130,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.012411347517730495
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
@@ -13834,9 +14167,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1760365425158117
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
           },
           {
@@ -13871,9 +14204,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.09710550887021475
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
           },
           {
@@ -13908,9 +14241,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.17611882716049385
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
           },
           {
@@ -13945,9 +14278,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.08020919765658394
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -14313,9 +14646,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1942890338107456
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -14410,9 +14743,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1544028646358685
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -14447,9 +14780,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.479588083854358
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "1f83d4bc7ede7b8f8b6844b75f314ff8b92e463a01334b30206763a93d155e60"
           },
           {
@@ -14484,9 +14817,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.6340075853350189
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -14521,9 +14854,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.006764374295377677
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -14558,9 +14891,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.008928571428571428
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -14595,9 +14928,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.026988636363636364
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
           },
           {
@@ -14632,9 +14965,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.025187566988210074
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
           },
           {
@@ -14669,9 +15002,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.07739938080495357
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
           },
           {
@@ -14706,9 +15039,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.0013333333333333333
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
           },
           {
@@ -14743,9 +15076,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1276923076923077
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
           },
           {
@@ -14780,9 +15113,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.349670510708402
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
           },
           {
@@ -15283,9 +15616,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1942890338107456
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d70ef78287eef02deb8d3c101c7d06f9f751d17ee33fc88830b9a29c0e10b174"
           },
           {
@@ -15380,9 +15713,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1544028646358685
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -15417,9 +15750,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.5363868867705186
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "24710d4d4fee0f9d07b01e2b30ca9af897ccc99f339661915e94b550c17897e1"
           },
           {
@@ -15454,9 +15787,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.012355212355212357
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
           },
           {
@@ -15491,9 +15824,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.16462113127001068
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
           },
           {
@@ -15704,9 +16037,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.56752655538695
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -15741,9 +16074,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.6901515151515152
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -15778,9 +16111,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -6.205479452054794
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "35664ab9fce3ab643ea5e1ed8f50d72026c874ff35d990ea51396de67b8119f3"
           },
           {
@@ -15815,9 +16148,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.009378084896347482
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -15852,9 +16185,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.02304964539007092
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
           },
           {
@@ -15889,9 +16222,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.22944483485593817
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
           },
           {
@@ -15926,9 +16259,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.11213818860877685
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
           },
           {
@@ -15963,9 +16296,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.23746141975308643
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
           },
           {
@@ -16000,9 +16333,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.1567641413760445
             },
             "status": "paired",
-            "note": "",
+            "note": "七项指标完整的同样本配对为 52,072/52,073 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -33579,39 +33912,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8937566541132351,
-              "cer": 0.7650764036224645,
-              "ser": 0.8012180121801218,
-              "semscore": 0.8874379028614657,
-              "s_rate": 0.5230887797746738,
-              "d_rate": 0.09117128283357963,
-              "i_rate": 0.27949659150498163
+              "wer": 0.9189246289547351,
+              "cer": 0.8468304912576455,
+              "ser": 0.8325083745812709,
+              "semscore": 0.8716080696527603,
+              "s_rate": 0.5463401015611442,
+              "d_rate": 0.0866136979272774,
+              "i_rate": 0.2859708294663135
             },
             "delta": {
-              "wer": -0.40833611415677495,
-              "cer": -0.7777690637563669,
-              "ser": -0.09201092010920109,
-              "semscore": 0.024256702874269176,
-              "s_rate": -0.11886033910155569,
-              "d_rate": 0.02548823314423733,
-              "i_rate": -0.3149640081994566
+              "wer": -0.4780659808427533,
+              "cer": -0.8429870251500283,
+              "ser": -0.026048697565121737,
+              "semscore": 0.004721176210960576,
+              "s_rate": -0.08998376614636416,
+              "d_rate": 0.024072686500645424,
+              "i_rate": -0.4121549011970345
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "疾病组 · 全量微调后",
@@ -33705,9 +34038,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.25868300719521214
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -33742,9 +34075,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.420646583394563
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
@@ -33779,9 +34112,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -2.0
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -33816,9 +34149,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.04284103720405863
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -33853,9 +34186,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.2142857142857142
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -33890,10 +34223,195 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -2.465909090909091
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          },
+          {
+            "category": "UA-Speech · Common Words",
+            "label": "UA-Speech · Common Words",
+            "n": 2700,
+            "before": {
+              "wer": 2.821111111111111,
+              "cer": 3.750580431177446,
+              "ser": 0.7503703703703704,
+              "semscore": 0.8861044905362305,
+              "s_rate": 0.534074074074074,
+              "d_rate": 0.0007407407407407407,
+              "i_rate": 2.2862962962962965
+            },
+            "after": {
+              "wer": 1.1348148148148147,
+              "cer": 1.5088999447208402,
+              "ser": 0.9988888888888889,
+              "semscore": 0.8017323057077549,
+              "s_rate": 0.9974074074074074,
+              "d_rate": 0.00037037037037037035,
+              "i_rate": 0.13703703703703704
+            },
+            "delta": {
+              "wer": -1.6862962962962964,
+              "cer": -2.241680486456606,
+              "ser": 0.24851851851851858,
+              "semscore": -0.08437218482847564,
+              "s_rate": 0.4633333333333334,
+              "d_rate": -0.00037037037037037035,
+              "i_rate": -2.1492592592592596
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "08eb0b286d95a3db9c15a5f4272f9d9c7011df67963a580b44a31224a65905c5"
+          },
+          {
+            "category": "UA-Speech · Computer Commands",
+            "label": "UA-Speech · Computer Commands",
+            "n": 513,
+            "before": {
+              "wer": 2.6335282651072123,
+              "cer": 2.16926272066459,
+              "ser": 0.5925925925925926,
+              "semscore": 0.9046422966971964,
+              "s_rate": 0.4346978557504873,
+              "d_rate": 0.001949317738791423,
+              "i_rate": 2.1968810916179335
+            },
+            "after": {
+              "wer": 1.3625730994152048,
+              "cer": 1.2101073035652474,
+              "ser": 0.9922027290448343,
+              "semscore": 0.7912652745813886,
+              "s_rate": 0.9902534113060428,
+              "d_rate": 0.0,
+              "i_rate": 0.3723196881091618
+            },
+            "delta": {
+              "wer": -1.2709551656920075,
+              "cer": -0.9591554170993426,
+              "ser": 0.39961013645224175,
+              "semscore": -0.1133770221158078,
+              "s_rate": 0.5555555555555556,
+              "d_rate": -0.001949317738791423,
+              "i_rate": -1.8245614035087718
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ecee4d84d2361b951cf12ea13747b805f640303b60d2f562d8bdd3d8f871fa7c"
+          },
+          {
+            "category": "UA-Speech · Digits",
+            "label": "UA-Speech · Digits",
+            "n": 270,
+            "before": {
+              "wer": 2.2185185185185183,
+              "cer": 2.435185185185185,
+              "ser": 0.562962962962963,
+              "semscore": 0.9150085729581339,
+              "s_rate": 0.2962962962962963,
+              "d_rate": 0.0,
+              "i_rate": 1.9222222222222223
+            },
+            "after": {
+              "wer": 1.0444444444444445,
+              "cer": 1.125,
+              "ser": 0.9925925925925926,
+              "semscore": 0.8103155566586389,
+              "s_rate": 0.9888888888888889,
+              "d_rate": 0.003703703703703704,
+              "i_rate": 0.05185185185185185
+            },
+            "delta": {
+              "wer": -1.1740740740740738,
+              "cer": -1.3101851851851851,
+              "ser": 0.4296296296296296,
+              "semscore": -0.10469301629949501,
+              "s_rate": 0.6925925925925926,
+              "d_rate": 0.003703703703703704,
+              "i_rate": -1.8703703703703705
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "e23811939892733f62f5e0845ccc0cce79118cf099a505f0ea588a6479551909"
+          },
+          {
+            "category": "UA-Speech · Radio Alphabet",
+            "label": "UA-Speech · Radio Alphabet",
+            "n": 702,
+            "before": {
+              "wer": 2.3058984910836764,
+              "cer": 2.0378421900161032,
+              "ser": 0.5826210826210826,
+              "semscore": 0.8975160029369202,
+              "s_rate": 0.4609053497942387,
+              "d_rate": 0.010973936899862825,
+              "i_rate": 1.8340192043895747
+            },
+            "after": {
+              "wer": 1.1111111111111112,
+              "cer": 1.1097691894793345,
+              "ser": 0.9914529914529915,
+              "semscore": 0.7857703986840371,
+              "s_rate": 0.9886039886039886,
+              "d_rate": 0.0,
+              "i_rate": 0.1225071225071225
+            },
+            "delta": {
+              "wer": -1.1947873799725652,
+              "cer": -0.9280730005367688,
+              "ser": 0.4088319088319089,
+              "semscore": -0.11174560425288316,
+              "s_rate": 0.5276986388097499,
+              "d_rate": -0.010973936899862825,
+              "i_rate": -1.711512081882452
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "dabdeec3a397a17fb60b7e7264e76e3c0042e181649ea0daa2e711a4b8efb749"
+          },
+          {
+            "category": "UA-Speech · Uncommon Words",
+            "label": "UA-Speech · Uncommon Words",
+            "n": 2484,
+            "before": {
+              "wer": 4.017522899243329,
+              "cer": 2.414230438521066,
+              "ser": 0.6759259259259259,
+              "semscore": 0.8740412241834757,
+              "s_rate": 0.5929908403026682,
+              "d_rate": 0.005575467941059339,
+              "i_rate": 3.418956590999602
+            },
+            "after": {
+              "wer": 1.7999194847020934,
+              "cer": 1.4642089423903697,
+              "ser": 0.9762479871175523,
+              "semscore": 0.7826513907903634,
+              "s_rate": 0.9694041867954911,
+              "d_rate": 0.0008051529790660225,
+              "i_rate": 0.8297101449275363
+            },
+            "delta": {
+              "wer": -2.2176034145412356,
+              "cer": -0.9500214961306963,
+              "ser": 0.3003220611916264,
+              "semscore": -0.09138983339311235,
+              "s_rate": 0.3764133464928229,
+              "d_rate": -0.004770314961993316,
+              "i_rate": -2.5892464460720657
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "5ad2ff448b977ac5b3d607c5380e1fd52464b6f346e0b00cce0b200a0d75bacc"
           },
           {
             "category": "CDSD · All samples · 全量微调后",
@@ -34364,39 +34882,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "Step-Audio",
             "label": "Step-Audio",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8937566541132351,
-              "cer": 0.7650764036224645,
-              "ser": 0.8012180121801218,
-              "semscore": 0.8874379028614657,
-              "s_rate": 0.5230887797746738,
-              "d_rate": 0.09117128283357963,
-              "i_rate": 0.27949659150498163
+              "wer": 0.9189246289547351,
+              "cer": 0.8468304912576455,
+              "ser": 0.8325083745812709,
+              "semscore": 0.8716080696527603,
+              "s_rate": 0.5463401015611442,
+              "d_rate": 0.0866136979272774,
+              "i_rate": 0.2859708294663135
             },
             "delta": {
-              "wer": -0.40833611415677495,
-              "cer": -0.7777690637563669,
-              "ser": -0.09201092010920109,
-              "semscore": 0.024256702874269176,
-              "s_rate": -0.11886033910155569,
-              "d_rate": 0.02548823314423733,
-              "i_rate": -0.3149640081994566
+              "wer": -0.4780659808427533,
+              "cer": -0.8429870251500283,
+              "ser": -0.026048697565121737,
+              "semscore": 0.004721176210960576,
+              "s_rate": -0.08998376614636416,
+              "d_rate": 0.024072686500645424,
+              "i_rate": -0.4121549011970345
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "Step-Audio · 全量微调后",
@@ -34490,9 +35008,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.25868300719521214
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -34527,9 +35045,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.6335966542750928
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
@@ -34564,10 +35082,47 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.7088803088803088
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
+          },
+          {
+            "category": "UA-Speech",
+            "label": "UA-Speech",
+            "n": 6669,
+            "before": {
+              "wer": 3.173583221775993,
+              "cer": 2.6971257213986646,
+              "ser": 0.6852601589443694,
+              "semscore": 0.8854086928003677,
+              "s_rate": 0.5310129406514948,
+              "d_rate": 0.003718578015766771,
+              "i_rate": 2.638851703108731
+            },
+            "after": {
+              "wer": 1.393912130754236,
+              "cer": 1.4071517483308815,
+              "ser": 0.9889038836407258,
+              "semscore": 0.7924873873397031,
+              "s_rate": 0.9851551956815114,
+              "d_rate": 0.000599790073474284,
+              "i_rate": 0.40815714499925027
+            },
+            "delta": {
+              "wer": -1.779671091021757,
+              "cer": -1.289973973067783,
+              "ser": 0.30364372469635637,
+              "semscore": -0.09292130546066457,
+              "s_rate": 0.4541422550300166,
+              "d_rate": -0.0031187879422924867,
+              "i_rate": -2.230694558109481
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "072fcc98d53c31483448cb7a45605b47733031c889bac13702b8169c93696824"
           },
           {
             "category": "CDSD · 全量微调后",
@@ -34777,9 +35332,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.236722306525038
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -34814,9 +35369,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.7443181818181819
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -34851,9 +35406,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -5.612121212121212
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
@@ -34888,9 +35443,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.5468904244817374
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -34925,10 +35480,121 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.2907801418439715
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
+          },
+          {
+            "category": "UA-Speech · 中度",
+            "label": "UA-Speech · 中度",
+            "n": 1316,
+            "before": {
+              "wer": 2.4631024096385543,
+              "cer": 1.985207100591716,
+              "ser": 0.790273556231003,
+              "semscore": 0.867989615783503,
+              "s_rate": 0.704066265060241,
+              "d_rate": 0.002259036144578313,
+              "i_rate": 1.756777108433735
+            },
+            "after": {
+              "wer": 1.0098784194528876,
+              "cer": 1.2949704142011835,
+              "ser": 1.0,
+              "semscore": 0.7859129961863115,
+              "s_rate": 1.0,
+              "d_rate": 0.0,
+              "i_rate": 0.009878419452887538
+            },
+            "delta": {
+              "wer": -1.4532239901856667,
+              "cer": -0.6902366863905325,
+              "ser": 0.20972644376899696,
+              "semscore": -0.08207661959719148,
+              "s_rate": 0.29593373493975905,
+              "d_rate": -0.002259036144578313,
+              "i_rate": -1.7468986889808473
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "94a3044cff3b4b3ad6fe99d59c74332519e4115ef59ae0c26f55e8e30c9b66e5"
+          },
+          {
+            "category": "UA-Speech · 轻度",
+            "label": "UA-Speech · 轻度",
+            "n": 3570,
+            "before": {
+              "wer": 1.96053362979433,
+              "cer": 1.6775225508705685,
+              "ser": 0.4907563025210084,
+              "semscore": 0.9335923357170169,
+              "s_rate": 0.24207893274041134,
+              "d_rate": 0.0044469149527515284,
+              "i_rate": 1.7140077821011672
+            },
+            "after": {
+              "wer": 1.7322128851540617,
+              "cer": 1.568019718900776,
+              "ser": 0.9792717086834734,
+              "semscore": 0.7985270144057874,
+              "s_rate": 0.9722689075630252,
+              "d_rate": 0.0011204481792717086,
+              "i_rate": 0.7588235294117647
+            },
+            "delta": {
+              "wer": -0.2283207446402684,
+              "cer": -0.10950283196979238,
+              "ser": 0.48851540616246497,
+              "semscore": -0.1350653213112295,
+              "s_rate": 0.7301899748226138,
+              "d_rate": -0.00332646677347982,
+              "i_rate": -0.9551842526894025
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "90053ce7463e4ebbb3a39c347d1708ec7e4a4279f7a98d7c48551438392c5c78"
+          },
+          {
+            "category": "UA-Speech · 重度",
+            "label": "UA-Speech · 重度",
+            "n": 1783,
+            "before": {
+              "wer": 6.127434613244296,
+              "cer": 5.244852941176471,
+              "ser": 0.997195737521032,
+              "semscore": 0.8017900164917621,
+              "s_rate": 0.9816360601001669,
+              "d_rate": 0.00333889816360601,
+              "i_rate": 5.142459654980523
+            },
+            "after": {
+              "wer": 1.0,
+              "cer": 1.1646008403361345,
+              "ser": 1.0,
+              "semscore": 0.7852470228595808,
+              "s_rate": 1.0,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -5.127434613244296,
+              "cer": -4.080252100840337,
+              "ser": 0.0028042624789680337,
+              "semscore": -0.016542993632181258,
+              "s_rate": 0.018363939899833093,
+              "d_rate": -0.00333889816360601,
+              "i_rate": -5.142459654980523
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ffb9391133072dea878ae0efd2095075802d1f9c88a53500182c347253034802"
           },
           {
             "category": "未标注",
@@ -34962,9 +35628,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.26251959132701386
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -35289,7 +35955,7 @@ window.RESULT_BROWSER_DATA = {
         ]
       },
       "disease_after_n": 52073,
-      "disease_paired_n": 33333,
+      "disease_paired_n": 40002,
       "health_status": "pending"
     },
     "step_audio/easycall": {
@@ -35301,39 +35967,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8802418521873163,
-              "cer": 0.8305787853021059,
-              "ser": 0.8400084000840008,
-              "semscore": 0.8705598551748581,
-              "s_rate": 0.5394797476601357,
-              "d_rate": 0.19352942111201157,
-              "i_rate": 0.14723268341516899
+              "wer": 0.8724977552421698,
+              "cer": 0.7941962581137839,
+              "ser": 0.816209189540523,
+              "semscore": 0.8731448928938288,
+              "s_rate": 0.5474115489960839,
+              "d_rate": 0.18379096211452414,
+              "i_rate": 0.14129524413156166
             },
             "delta": {
-              "wer": -0.42185091608269376,
-              "cer": -0.7122666820767255,
-              "ser": -0.05322053220532208,
-              "semscore": 0.007378655187661565,
-              "s_rate": -0.10246937121609379,
-              "d_rate": 0.12784637142266927,
-              "i_rate": -0.4472279162892692
+              "wer": -0.5244928545553187,
+              "cer": -0.8956212582938899,
+              "ser": -0.042347882605869636,
+              "semscore": 0.006257999452029095,
+              "s_rate": -0.08891231871142447,
+              "d_rate": 0.12124995068789217,
+              "i_rate": -0.5568304865317864
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "疾病组 · 全量微调后",
@@ -35427,9 +36093,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.37585737341133746
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -35464,9 +36130,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.7641440117560616
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
@@ -35501,9 +36167,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -2.3824273072060684
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -35538,9 +36204,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.12344983089064263
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -35575,9 +36241,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.6428571428571428
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -35612,10 +36278,195 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -3.6931818181818183
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          },
+          {
+            "category": "UA-Speech · Common Words",
+            "label": "UA-Speech · Common Words",
+            "n": 2700,
+            "before": {
+              "wer": 2.821111111111111,
+              "cer": 3.750580431177446,
+              "ser": 0.7503703703703704,
+              "semscore": 0.8861044905362305,
+              "s_rate": 0.534074074074074,
+              "d_rate": 0.0007407407407407407,
+              "i_rate": 2.2862962962962965
+            },
+            "after": {
+              "wer": 0.7448148148148148,
+              "cer": 0.6694306246545052,
+              "ser": 0.7429629629629629,
+              "semscore": 0.8853729617595673,
+              "s_rate": 0.7425925925925926,
+              "d_rate": 0.0,
+              "i_rate": 0.0022222222222222222
+            },
+            "delta": {
+              "wer": -2.076296296296296,
+              "cer": -3.081149806522941,
+              "ser": -0.007407407407407418,
+              "semscore": -0.0007315287766632705,
+              "s_rate": 0.20851851851851855,
+              "d_rate": -0.0007407407407407407,
+              "i_rate": -2.2840740740740744
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "08eb0b286d95a3db9c15a5f4272f9d9c7011df67963a580b44a31224a65905c5"
+          },
+          {
+            "category": "UA-Speech · Computer Commands",
+            "label": "UA-Speech · Computer Commands",
+            "n": 513,
+            "before": {
+              "wer": 2.6335282651072123,
+              "cer": 2.16926272066459,
+              "ser": 0.5925925925925926,
+              "semscore": 0.9046422966971964,
+              "s_rate": 0.4346978557504873,
+              "d_rate": 0.001949317738791423,
+              "i_rate": 2.1968810916179335
+            },
+            "after": {
+              "wer": 0.50682261208577,
+              "cer": 0.38352371062651436,
+              "ser": 0.49707602339181284,
+              "semscore": 0.9173803795383223,
+              "s_rate": 0.49707602339181284,
+              "d_rate": 0.0,
+              "i_rate": 0.009746588693957114
+            },
+            "delta": {
+              "wer": -2.1267056530214425,
+              "cer": -1.7857390100380757,
+              "ser": -0.09551656920077972,
+              "semscore": 0.012738082841125875,
+              "s_rate": 0.06237816764132553,
+              "d_rate": -0.001949317738791423,
+              "i_rate": -2.1871345029239766
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ecee4d84d2361b951cf12ea13747b805f640303b60d2f562d8bdd3d8f871fa7c"
+          },
+          {
+            "category": "UA-Speech · Digits",
+            "label": "UA-Speech · Digits",
+            "n": 270,
+            "before": {
+              "wer": 2.2185185185185183,
+              "cer": 2.435185185185185,
+              "ser": 0.562962962962963,
+              "semscore": 0.9150085729581339,
+              "s_rate": 0.2962962962962963,
+              "d_rate": 0.0,
+              "i_rate": 1.9222222222222223
+            },
+            "after": {
+              "wer": 0.48148148148148145,
+              "cer": 0.4287037037037037,
+              "ser": 0.4740740740740741,
+              "semscore": 0.9192492456347854,
+              "s_rate": 0.4740740740740741,
+              "d_rate": 0.0,
+              "i_rate": 0.007407407407407408
+            },
+            "delta": {
+              "wer": -1.737037037037037,
+              "cer": -2.0064814814814813,
+              "ser": -0.0888888888888889,
+              "semscore": 0.0042406726766515135,
+              "s_rate": 0.1777777777777778,
+              "d_rate": 0.0,
+              "i_rate": -1.914814814814815
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "e23811939892733f62f5e0845ccc0cce79118cf099a505f0ea588a6479551909"
+          },
+          {
+            "category": "UA-Speech · Radio Alphabet",
+            "label": "UA-Speech · Radio Alphabet",
+            "n": 702,
+            "before": {
+              "wer": 2.3058984910836764,
+              "cer": 2.0378421900161032,
+              "ser": 0.5826210826210826,
+              "semscore": 0.8975160029369202,
+              "s_rate": 0.4609053497942387,
+              "d_rate": 0.010973936899862825,
+              "i_rate": 1.8340192043895747
+            },
+            "after": {
+              "wer": 0.7165242165242165,
+              "cer": 0.5214707461084273,
+              "ser": 0.6766381766381766,
+              "semscore": 0.8916754342212296,
+              "s_rate": 0.6766381766381766,
+              "d_rate": 0.0,
+              "i_rate": 0.039886039886039885
+            },
+            "delta": {
+              "wer": -1.58937427455946,
+              "cer": -1.5163714439076759,
+              "ser": 0.09401709401709402,
+              "semscore": -0.005840568715690608,
+              "s_rate": 0.2157328268439379,
+              "d_rate": -0.010973936899862825,
+              "i_rate": -1.7941331645035348
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "dabdeec3a397a17fb60b7e7264e76e3c0042e181649ea0daa2e711a4b8efb749"
+          },
+          {
+            "category": "UA-Speech · Uncommon Words",
+            "label": "UA-Speech · Uncommon Words",
+            "n": 2484,
+            "before": {
+              "wer": 4.017522899243329,
+              "cer": 2.414230438521066,
+              "ser": 0.6759259259259259,
+              "semscore": 0.8740412241834757,
+              "s_rate": 0.5929908403026682,
+              "d_rate": 0.005575467941059339,
+              "i_rate": 3.418956590999602
+            },
+            "after": {
+              "wer": 0.7809983896940419,
+              "cer": 0.520743766122098,
+              "ser": 0.7190016103059581,
+              "semscore": 0.8751585227039893,
+              "s_rate": 0.7190016103059581,
+              "d_rate": 0.0,
+              "i_rate": 0.061996779388083734
+            },
+            "delta": {
+              "wer": -3.2365245095492874,
+              "cer": -1.8934866723989678,
+              "ser": 0.043075684380032175,
+              "semscore": 0.0011172985205135655,
+              "s_rate": 0.12601077000328986,
+              "d_rate": -0.005575467941059339,
+              "i_rate": -3.3569598116115182
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "5ad2ff448b977ac5b3d607c5380e1fd52464b6f346e0b00cce0b200a0d75bacc"
           },
           {
             "category": "CDSD · All samples · 全量微调后",
@@ -36086,39 +36937,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "Step-Audio",
             "label": "Step-Audio",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8802418521873163,
-              "cer": 0.8305787853021059,
-              "ser": 0.8400084000840008,
-              "semscore": 0.8705598551748581,
-              "s_rate": 0.5394797476601357,
-              "d_rate": 0.19352942111201157,
-              "i_rate": 0.14723268341516899
+              "wer": 0.8724977552421698,
+              "cer": 0.7941962581137839,
+              "ser": 0.816209189540523,
+              "semscore": 0.8731448928938288,
+              "s_rate": 0.5474115489960839,
+              "d_rate": 0.18379096211452414,
+              "i_rate": 0.14129524413156166
             },
             "delta": {
-              "wer": -0.42185091608269376,
-              "cer": -0.7122666820767255,
-              "ser": -0.05322053220532208,
-              "semscore": 0.007378655187661565,
-              "s_rate": -0.10246937121609379,
-              "d_rate": 0.12784637142266927,
-              "i_rate": -0.4472279162892692
+              "wer": -0.5244928545553187,
+              "cer": -0.8956212582938899,
+              "ser": -0.042347882605869636,
+              "semscore": 0.006257999452029095,
+              "s_rate": -0.08891231871142447,
+              "d_rate": 0.12124995068789217,
+              "i_rate": -0.5568304865317864
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "Step-Audio · 全量微调后",
@@ -36212,9 +37063,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.37585737341133746
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -36249,9 +37100,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.991403345724907
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
@@ -36286,10 +37137,47 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1594594594594594
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
+          },
+          {
+            "category": "UA-Speech",
+            "label": "UA-Speech",
+            "n": 6669,
+            "before": {
+              "wer": 3.173583221775993,
+              "cer": 2.6971257213986646,
+              "ser": 0.6852601589443694,
+              "semscore": 0.8854086928003677,
+              "s_rate": 0.5310129406514948,
+              "d_rate": 0.003718578015766771,
+              "i_rate": 2.638851703108731
+            },
+            "after": {
+              "wer": 0.726345778977358,
+              "cer": 0.5448398777865792,
+              "ser": 0.6972559604138552,
+              "semscore": 0.8860654300487922,
+              "s_rate": 0.6971060128954866,
+              "d_rate": 0.0,
+              "i_rate": 0.029239766081871343
+            },
+            "delta": {
+              "wer": -2.447237442798635,
+              "cer": -2.1522858436120855,
+              "ser": 0.011995801469485756,
+              "semscore": 0.0006567372484245215,
+              "s_rate": 0.16609307224399172,
+              "d_rate": -0.003718578015766771,
+              "i_rate": -2.60961193702686
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "072fcc98d53c31483448cb7a45605b47733031c889bac13702b8169c93696824"
           },
           {
             "category": "CDSD · 全量微调后",
@@ -36499,9 +37387,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.4006069802731411
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -36536,9 +37424,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.128030303030303
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -36573,9 +37461,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -6.236363636363636
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
@@ -36610,9 +37498,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1219151036525172
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -36647,10 +37535,121 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.2943262411347518
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
+          },
+          {
+            "category": "UA-Speech · 中度",
+            "label": "UA-Speech · 中度",
+            "n": 1316,
+            "before": {
+              "wer": 2.4631024096385543,
+              "cer": 1.985207100591716,
+              "ser": 0.790273556231003,
+              "semscore": 0.867989615783503,
+              "s_rate": 0.704066265060241,
+              "d_rate": 0.002259036144578313,
+              "i_rate": 1.756777108433735
+            },
+            "after": {
+              "wer": 0.8814589665653495,
+              "cer": 0.6872781065088758,
+              "ser": 0.8290273556231003,
+              "semscore": 0.8610315917563656,
+              "s_rate": 0.8290273556231003,
+              "d_rate": 0.0,
+              "i_rate": 0.05243161094224924
+            },
+            "delta": {
+              "wer": -1.581643443073205,
+              "cer": -1.2979289940828402,
+              "ser": 0.03875379939209722,
+              "semscore": -0.0069580240271374105,
+              "s_rate": 0.12496109056285931,
+              "d_rate": -0.002259036144578313,
+              "i_rate": -1.7043454974914858
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "94a3044cff3b4b3ad6fe99d59c74332519e4115ef59ae0c26f55e8e30c9b66e5"
+          },
+          {
+            "category": "UA-Speech · 轻度",
+            "label": "UA-Speech · 轻度",
+            "n": 3570,
+            "before": {
+              "wer": 1.96053362979433,
+              "cer": 1.6775225508705685,
+              "ser": 0.4907563025210084,
+              "semscore": 0.9335923357170169,
+              "s_rate": 0.24207893274041134,
+              "d_rate": 0.0044469149527515284,
+              "i_rate": 1.7140077821011672
+            },
+            "after": {
+              "wer": 0.5207282913165266,
+              "cer": 0.27669393748688903,
+              "ser": 0.49943977591036415,
+              "semscore": 0.929125842694141,
+              "s_rate": 0.4991596638655462,
+              "d_rate": 0.0,
+              "i_rate": 0.021568627450980392
+            },
+            "delta": {
+              "wer": -1.4398053384778033,
+              "cer": -1.4008286133836794,
+              "ser": 0.008683473389355767,
+              "semscore": -0.004466493022875939,
+              "s_rate": 0.25708073112513485,
+              "d_rate": -0.0044469149527515284,
+              "i_rate": -1.692439154650187
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "90053ce7463e4ebbb3a39c347d1708ec7e4a4279f7a98d7c48551438392c5c78"
+          },
+          {
+            "category": "UA-Speech · 重度",
+            "label": "UA-Speech · 重度",
+            "n": 1783,
+            "before": {
+              "wer": 6.127434613244296,
+              "cer": 5.244852941176471,
+              "ser": 0.997195737521032,
+              "semscore": 0.8017900164917621,
+              "s_rate": 0.9816360601001669,
+              "d_rate": 0.00333889816360601,
+              "i_rate": 5.142459654980523
+            },
+            "after": {
+              "wer": 1.0235558048233315,
+              "cer": 0.9807773109243697,
+              "ser": 0.9960740325294447,
+              "semscore": 0.8183250251407377,
+              "s_rate": 0.9960740325294447,
+              "d_rate": 0.0,
+              "i_rate": 0.027481772293886708
+            },
+            "delta": {
+              "wer": -5.103878808420965,
+              "cer": -4.264075630252101,
+              "ser": -0.001121704991587258,
+              "semscore": 0.016535008648975613,
+              "s_rate": 0.014437972429277801,
+              "d_rate": -0.00333889816360601,
+              "i_rate": -5.114977882686636
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ffb9391133072dea878ae0efd2095075802d1f9c88a53500182c347253034802"
           },
           {
             "category": "未标注",
@@ -36684,9 +37683,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.37941381073311375
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -37011,7 +38010,7 @@ window.RESULT_BROWSER_DATA = {
         ]
       },
       "disease_after_n": 52073,
-      "disease_paired_n": 33333,
+      "disease_paired_n": 40002,
       "health_status": "pending"
     },
     "step_audio/torgo": {
@@ -37023,39 +38022,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8828637714322035,
-              "cer": 1.1826958797354974,
-              "ser": 0.8791587915879159,
-              "semscore": 0.8341463594082876,
-              "s_rate": 0.5643720900668987,
-              "d_rate": 0.171115984173142,
-              "i_rate": 0.14737569719216284
+              "wer": 0.8676309693581125,
+              "cer": 1.0868580114835706,
+              "ser": 0.8251087445627718,
+              "semscore": 0.8475514397499686,
+              "s_rate": 0.5638605307437505,
+              "d_rate": 0.16250537610068588,
+              "i_rate": 0.14126506251367604
             },
             "delta": {
-              "wer": -0.41922899683780657,
-              "cer": -0.36014958764333405,
-              "ser": -0.014070140701406997,
-              "semscore": -0.029034840578908927,
-              "s_rate": -0.07757702880933082,
-              "d_rate": 0.1054329344837997,
-              "i_rate": -0.4470849025122754
+              "wer": -0.529359640439376,
+              "cer": -0.6029595049241032,
+              "ser": -0.03344832758362082,
+              "semscore": -0.019335453691831095,
+              "s_rate": -0.07246333696375784,
+              "d_rate": 0.09996436467405391,
+              "i_rate": -0.556860668149672
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "疾病组 · 全量微调后",
@@ -37149,9 +38148,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.3829012843789926
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -37186,9 +38185,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.556576047024247
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
@@ -37223,9 +38222,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -2.2029077117572693
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -37260,9 +38259,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.11950394588500565
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -37297,9 +38296,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.6428571428571428
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -37334,10 +38333,195 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -3.6931818181818183
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          },
+          {
+            "category": "UA-Speech · Common Words",
+            "label": "UA-Speech · Common Words",
+            "n": 2700,
+            "before": {
+              "wer": 2.821111111111111,
+              "cer": 3.750580431177446,
+              "ser": 0.7503703703703704,
+              "semscore": 0.8861044905362305,
+              "s_rate": 0.534074074074074,
+              "d_rate": 0.0007407407407407407,
+              "i_rate": 2.2862962962962965
+            },
+            "after": {
+              "wer": 0.5951851851851852,
+              "cer": 0.5031509121061359,
+              "ser": 0.5925925925925926,
+              "semscore": 0.9155040620874475,
+              "s_rate": 0.5925925925925926,
+              "d_rate": 0.0,
+              "i_rate": 0.0025925925925925925
+            },
+            "delta": {
+              "wer": -2.225925925925926,
+              "cer": -3.24742951907131,
+              "ser": -0.1577777777777778,
+              "semscore": 0.029399571551216974,
+              "s_rate": 0.058518518518518525,
+              "d_rate": -0.0007407407407407407,
+              "i_rate": -2.283703703703704
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "08eb0b286d95a3db9c15a5f4272f9d9c7011df67963a580b44a31224a65905c5"
+          },
+          {
+            "category": "UA-Speech · Computer Commands",
+            "label": "UA-Speech · Computer Commands",
+            "n": 513,
+            "before": {
+              "wer": 2.6335282651072123,
+              "cer": 2.16926272066459,
+              "ser": 0.5925925925925926,
+              "semscore": 0.9046422966971964,
+              "s_rate": 0.4346978557504873,
+              "d_rate": 0.001949317738791423,
+              "i_rate": 2.1968810916179335
+            },
+            "after": {
+              "wer": 0.48148148148148145,
+              "cer": 0.3440636898580824,
+              "ser": 0.4756335282651072,
+              "semscore": 0.9284930295414395,
+              "s_rate": 0.4756335282651072,
+              "d_rate": 0.0,
+              "i_rate": 0.005847953216374269
+            },
+            "delta": {
+              "wer": -2.152046783625731,
+              "cer": -1.8251990308065076,
+              "ser": -0.11695906432748537,
+              "semscore": 0.023850732844243105,
+              "s_rate": 0.04093567251461988,
+              "d_rate": -0.001949317738791423,
+              "i_rate": -2.191033138401559
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ecee4d84d2361b951cf12ea13747b805f640303b60d2f562d8bdd3d8f871fa7c"
+          },
+          {
+            "category": "UA-Speech · Digits",
+            "label": "UA-Speech · Digits",
+            "n": 270,
+            "before": {
+              "wer": 2.2185185185185183,
+              "cer": 2.435185185185185,
+              "ser": 0.562962962962963,
+              "semscore": 0.9150085729581339,
+              "s_rate": 0.2962962962962963,
+              "d_rate": 0.0,
+              "i_rate": 1.9222222222222223
+            },
+            "after": {
+              "wer": 0.42592592592592593,
+              "cer": 0.4064814814814815,
+              "ser": 0.42592592592592593,
+              "semscore": 0.9350981036822001,
+              "s_rate": 0.42592592592592593,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -1.7925925925925923,
+              "cer": -2.0287037037037035,
+              "ser": -0.13703703703703707,
+              "semscore": 0.020089530724066273,
+              "s_rate": 0.12962962962962965,
+              "d_rate": 0.0,
+              "i_rate": -1.9222222222222223
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "e23811939892733f62f5e0845ccc0cce79118cf099a505f0ea588a6479551909"
+          },
+          {
+            "category": "UA-Speech · Radio Alphabet",
+            "label": "UA-Speech · Radio Alphabet",
+            "n": 702,
+            "before": {
+              "wer": 2.3058984910836764,
+              "cer": 2.0378421900161032,
+              "ser": 0.5826210826210826,
+              "semscore": 0.8975160029369202,
+              "s_rate": 0.4609053497942387,
+              "d_rate": 0.010973936899862825,
+              "i_rate": 1.8340192043895747
+            },
+            "after": {
+              "wer": 0.3817663817663818,
+              "cer": 0.3239398819108964,
+              "ser": 0.3803418803418803,
+              "semscore": 0.935350537215203,
+              "s_rate": 0.3803418803418803,
+              "d_rate": 0.0,
+              "i_rate": 0.0014245014245014246
+            },
+            "delta": {
+              "wer": -1.9241321093172945,
+              "cer": -1.7139023081052067,
+              "ser": -0.20227920227920226,
+              "semscore": 0.03783453427828276,
+              "s_rate": -0.08056346945235837,
+              "d_rate": -0.010973936899862825,
+              "i_rate": -1.8325947029650733
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "dabdeec3a397a17fb60b7e7264e76e3c0042e181649ea0daa2e711a4b8efb749"
+          },
+          {
+            "category": "UA-Speech · Uncommon Words",
+            "label": "UA-Speech · Uncommon Words",
+            "n": 2484,
+            "before": {
+              "wer": 4.017522899243329,
+              "cer": 2.414230438521066,
+              "ser": 0.6759259259259259,
+              "semscore": 0.8740412241834757,
+              "s_rate": 0.5929908403026682,
+              "d_rate": 0.005575467941059339,
+              "i_rate": 3.418956590999602
+            },
+            "after": {
+              "wer": 0.6570048309178744,
+              "cer": 0.43040627687016336,
+              "ser": 0.5938003220611916,
+              "semscore": 0.9025288396987362,
+              "s_rate": 0.5917874396135265,
+              "d_rate": 0.0,
+              "i_rate": 0.06521739130434782
+            },
+            "delta": {
+              "wer": -3.3605180683254545,
+              "cer": -1.9838241616509027,
+              "ser": -0.08212560386473433,
+              "semscore": 0.028487615515260467,
+              "s_rate": -0.0012034006891417093,
+              "d_rate": -0.005575467941059339,
+              "i_rate": -3.353739199695254
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "5ad2ff448b977ac5b3d607c5380e1fd52464b6f346e0b00cce0b200a0d75bacc"
           },
           {
             "category": "CDSD · All samples · 全量微调后",
@@ -37808,39 +38992,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "Step-Audio",
             "label": "Step-Audio",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8828637714322035,
-              "cer": 1.1826958797354974,
-              "ser": 0.8791587915879159,
-              "semscore": 0.8341463594082876,
-              "s_rate": 0.5643720900668987,
-              "d_rate": 0.171115984173142,
-              "i_rate": 0.14737569719216284
+              "wer": 0.8676309693581125,
+              "cer": 1.0868580114835706,
+              "ser": 0.8251087445627718,
+              "semscore": 0.8475514397499686,
+              "s_rate": 0.5638605307437505,
+              "d_rate": 0.16250537610068588,
+              "i_rate": 0.14126506251367604
             },
             "delta": {
-              "wer": -0.41922899683780657,
-              "cer": -0.36014958764333405,
-              "ser": -0.014070140701406997,
-              "semscore": -0.029034840578908927,
-              "s_rate": -0.07757702880933082,
-              "d_rate": 0.1054329344837997,
-              "i_rate": -0.4470849025122754
+              "wer": -0.529359640439376,
+              "cer": -0.6029595049241032,
+              "ser": -0.03344832758362082,
+              "semscore": -0.019335453691831095,
+              "s_rate": -0.07246333696375784,
+              "d_rate": 0.09996436467405391,
+              "i_rate": -0.556860668149672
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "Step-Audio · 全量微调后",
@@ -37934,9 +39118,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.3829012843789926
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -37971,9 +39155,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.7941449814126393
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
@@ -38008,10 +39192,47 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1567567567567567
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
+          },
+          {
+            "category": "UA-Speech",
+            "label": "UA-Speech",
+            "n": 6669,
+            "before": {
+              "wer": 3.173583221775993,
+              "cer": 2.6971257213986646,
+              "ser": 0.6852601589443694,
+              "semscore": 0.8854086928003677,
+              "s_rate": 0.5310129406514948,
+              "d_rate": 0.003718578015766771,
+              "i_rate": 2.638851703108731
+            },
+            "after": {
+              "wer": 0.5801469485680012,
+              "cer": 0.430010184451737,
+              "ser": 0.5549557654820813,
+              "semscore": 0.9145527207560045,
+              "s_rate": 0.5542060278902384,
+              "d_rate": 0.0,
+              "i_rate": 0.025940920677762783
+            },
+            "delta": {
+              "wer": -2.593436273207992,
+              "cer": -2.2671155369469274,
+              "ser": -0.13030439346228817,
+              "semscore": 0.029144027955636753,
+              "s_rate": 0.02319308723874358,
+              "d_rate": -0.003718578015766771,
+              "i_rate": -2.6129107824309683
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "072fcc98d53c31483448cb7a45605b47733031c889bac13702b8169c93696824"
           },
           {
             "category": "CDSD · 全量微调后",
@@ -38221,9 +39442,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.3232169954476478
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -38258,9 +39479,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.9026515151515151
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -38295,9 +39516,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -6.006060606060606
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
@@ -38332,9 +39553,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1263573543928924
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -38369,10 +39590,121 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.2659574468085106
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
+          },
+          {
+            "category": "UA-Speech · 中度",
+            "label": "UA-Speech · 中度",
+            "n": 1316,
+            "before": {
+              "wer": 2.4631024096385543,
+              "cer": 1.985207100591716,
+              "ser": 0.790273556231003,
+              "semscore": 0.867989615783503,
+              "s_rate": 0.704066265060241,
+              "d_rate": 0.002259036144578313,
+              "i_rate": 1.756777108433735
+            },
+            "after": {
+              "wer": 0.7036474164133738,
+              "cer": 0.5059171597633136,
+              "ser": 0.6542553191489362,
+              "semscore": 0.8993415229679241,
+              "s_rate": 0.6519756838905775,
+              "d_rate": 0.0,
+              "i_rate": 0.05167173252279635
+            },
+            "delta": {
+              "wer": -1.7594549932251806,
+              "cer": -1.4792899408284024,
+              "ser": -0.13601823708206684,
+              "semscore": 0.03135190718442116,
+              "s_rate": -0.052090581169663475,
+              "d_rate": -0.002259036144578313,
+              "i_rate": -1.7051053759109385
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "94a3044cff3b4b3ad6fe99d59c74332519e4115ef59ae0c26f55e8e30c9b66e5"
+          },
+          {
+            "category": "UA-Speech · 轻度",
+            "label": "UA-Speech · 轻度",
+            "n": 3570,
+            "before": {
+              "wer": 1.96053362979433,
+              "cer": 1.6775225508705685,
+              "ser": 0.4907563025210084,
+              "semscore": 0.9335923357170169,
+              "s_rate": 0.24207893274041134,
+              "d_rate": 0.0044469149527515284,
+              "i_rate": 1.7140077821011672
+            },
+            "after": {
+              "wer": 0.34369747899159664,
+              "cer": 0.18250471994965387,
+              "ser": 0.32212885154061627,
+              "semscore": 0.9563308354853248,
+              "s_rate": 0.3215686274509804,
+              "d_rate": 0.0,
+              "i_rate": 0.022128851540616248
+            },
+            "delta": {
+              "wer": -1.6168361508027336,
+              "cer": -1.4950178309209146,
+              "ser": -0.1686274509803921,
+              "semscore": 0.022738499768307885,
+              "s_rate": 0.07948969471056908,
+              "d_rate": -0.0044469149527515284,
+              "i_rate": -1.691878930560551
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "90053ce7463e4ebbb3a39c347d1708ec7e4a4279f7a98d7c48551438392c5c78"
+          },
+          {
+            "category": "UA-Speech · 重度",
+            "label": "UA-Speech · 重度",
+            "n": 1783,
+            "before": {
+              "wer": 6.127434613244296,
+              "cer": 5.244852941176471,
+              "ser": 0.997195737521032,
+              "semscore": 0.8017900164917621,
+              "s_rate": 0.9816360601001669,
+              "d_rate": 0.00333889816360601,
+              "i_rate": 5.142459654980523
+            },
+            "after": {
+              "wer": 0.9624228827818284,
+              "cer": 0.8718487394957983,
+              "ser": 0.9478407178911946,
+              "semscore": 0.8421298753860889,
+              "s_rate": 0.9478407178911946,
+              "d_rate": 0.0,
+              "i_rate": 0.014582164890633763
+            },
+            "delta": {
+              "wer": -5.165011730462468,
+              "cer": -4.373004201680672,
+              "ser": -0.04935501962983735,
+              "semscore": 0.040339858894326786,
+              "s_rate": -0.03379534220897229,
+              "d_rate": -0.00333889816360601,
+              "i_rate": -5.127877490089889
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ffb9391133072dea878ae0efd2095075802d1f9c88a53500182c347253034802"
           },
           {
             "category": "未标注",
@@ -38406,9 +39738,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.3860099067159488
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -38733,7 +40065,7 @@ window.RESULT_BROWSER_DATA = {
         ]
       },
       "disease_after_n": 52073,
-      "disease_paired_n": 33333,
+      "disease_paired_n": 40002,
       "health_status": "pending"
     },
     "step_audio/uaspeech": {
@@ -38745,39 +40077,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "疾病组",
             "label": "疾病组",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8579555386057746,
-              "cer": 1.136643193844782,
-              "ser": 0.9191191911919119,
-              "semscore": 0.8085856531507715,
-              "s_rate": 0.29781030017002746,
-              "d_rate": 0.5355309783731388,
-              "i_rate": 0.024614260062608254
+              "wer": 0.8313375738506462,
+              "cer": 1.0300669274604306,
+              "ser": 0.820633968301585,
+              "semscore": 0.8319057211429618,
+              "s_rate": 0.2993488315941176,
+              "d_rate": 0.5085828975862251,
+              "i_rate": 0.02340584467030355
             },
             "delta": {
-              "wer": -0.4441372296642355,
-              "cer": -0.40620227353404936,
-              "ser": 0.025890258902589003,
-              "semscore": -0.05459554683642509,
-              "s_rate": -0.34413881870620205,
-              "d_rate": 0.4698479286837965,
-              "i_rate": -0.56984633964183
+              "wer": -0.5656530359468422,
+              "cer": -0.6597505889472433,
+              "ser": -0.03792310384480768,
+              "semscore": -0.034981172298837904,
+              "s_rate": -0.33697503611339075,
+              "d_rate": 0.4460418861595931,
+              "i_rate": -0.6747198859930444
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "疾病组 · 全量微调后",
@@ -38871,9 +40203,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.5043457064084459
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -38908,9 +40240,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.786921381337252
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
           },
           {
@@ -38945,9 +40277,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -2.4279393173198485
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
           },
           {
@@ -38982,9 +40314,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.13077790304396844
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
           },
           {
@@ -39019,9 +40351,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.6428571428571428
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
           },
           {
@@ -39056,10 +40388,195 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -3.6931818181818183
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
+          },
+          {
+            "category": "UA-Speech · Common Words",
+            "label": "UA-Speech · Common Words",
+            "n": 2700,
+            "before": {
+              "wer": 2.821111111111111,
+              "cer": 3.750580431177446,
+              "ser": 0.7503703703703704,
+              "semscore": 0.8861044905362305,
+              "s_rate": 0.534074074074074,
+              "d_rate": 0.0007407407407407407,
+              "i_rate": 2.2862962962962965
+            },
+            "after": {
+              "wer": 0.2877777777777778,
+              "cer": 0.27097844112769487,
+              "ser": 0.2877777777777778,
+              "semscore": 0.9625302276346419,
+              "s_rate": 0.2877777777777778,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -2.533333333333333,
+              "cer": -3.4796019900497512,
+              "ser": -0.46259259259259256,
+              "semscore": 0.07642573709841138,
+              "s_rate": -0.24629629629629624,
+              "d_rate": -0.0007407407407407407,
+              "i_rate": -2.2862962962962965
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "08eb0b286d95a3db9c15a5f4272f9d9c7011df67963a580b44a31224a65905c5"
+          },
+          {
+            "category": "UA-Speech · Computer Commands",
+            "label": "UA-Speech · Computer Commands",
+            "n": 513,
+            "before": {
+              "wer": 2.6335282651072123,
+              "cer": 2.16926272066459,
+              "ser": 0.5925925925925926,
+              "semscore": 0.9046422966971964,
+              "s_rate": 0.4346978557504873,
+              "d_rate": 0.001949317738791423,
+              "i_rate": 2.1968810916179335
+            },
+            "after": {
+              "wer": 0.2787524366471735,
+              "cer": 0.25060574593284873,
+              "ser": 0.2787524366471735,
+              "semscore": 0.9551480448501617,
+              "s_rate": 0.2787524366471735,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -2.354775828460039,
+              "cer": -1.9186569747317412,
+              "ser": -0.3138401559454191,
+              "semscore": 0.05050574815296527,
+              "s_rate": -0.15594541910331383,
+              "d_rate": -0.001949317738791423,
+              "i_rate": -2.1968810916179335
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ecee4d84d2361b951cf12ea13747b805f640303b60d2f562d8bdd3d8f871fa7c"
+          },
+          {
+            "category": "UA-Speech · Digits",
+            "label": "UA-Speech · Digits",
+            "n": 270,
+            "before": {
+              "wer": 2.2185185185185183,
+              "cer": 2.435185185185185,
+              "ser": 0.562962962962963,
+              "semscore": 0.9150085729581339,
+              "s_rate": 0.2962962962962963,
+              "d_rate": 0.0,
+              "i_rate": 1.9222222222222223
+            },
+            "after": {
+              "wer": 0.32592592592592595,
+              "cer": 0.2722222222222222,
+              "ser": 0.32592592592592595,
+              "semscore": 0.9521788049627233,
+              "s_rate": 0.32592592592592595,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -1.8925925925925924,
+              "cer": -2.162962962962963,
+              "ser": -0.23703703703703705,
+              "semscore": 0.037170232004589465,
+              "s_rate": 0.029629629629629672,
+              "d_rate": 0.0,
+              "i_rate": -1.9222222222222223
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "e23811939892733f62f5e0845ccc0cce79118cf099a505f0ea588a6479551909"
+          },
+          {
+            "category": "UA-Speech · Radio Alphabet",
+            "label": "UA-Speech · Radio Alphabet",
+            "n": 702,
+            "before": {
+              "wer": 2.3058984910836764,
+              "cer": 2.0378421900161032,
+              "ser": 0.5826210826210826,
+              "semscore": 0.8975160029369202,
+              "s_rate": 0.4609053497942387,
+              "d_rate": 0.010973936899862825,
+              "i_rate": 1.8340192043895747
+            },
+            "after": {
+              "wer": 0.2606837606837607,
+              "cer": 0.2490606548577563,
+              "ser": 0.2606837606837607,
+              "semscore": 0.9541941064375418,
+              "s_rate": 0.2606837606837607,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -2.0452147303999157,
+              "cer": -1.788781535158347,
+              "ser": -0.3219373219373219,
+              "semscore": 0.056678103500621524,
+              "s_rate": -0.200221589110478,
+              "d_rate": -0.010973936899862825,
+              "i_rate": -1.8340192043895747
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "dabdeec3a397a17fb60b7e7264e76e3c0042e181649ea0daa2e711a4b8efb749"
+          },
+          {
+            "category": "UA-Speech · Uncommon Words",
+            "label": "UA-Speech · Uncommon Words",
+            "n": 2484,
+            "before": {
+              "wer": 4.017522899243329,
+              "cer": 2.414230438521066,
+              "ser": 0.6759259259259259,
+              "semscore": 0.8740412241834757,
+              "s_rate": 0.5929908403026682,
+              "d_rate": 0.005575467941059339,
+              "i_rate": 3.418956590999602
+            },
+            "after": {
+              "wer": 0.4037842190016103,
+              "cer": 0.3328675838349097,
+              "ser": 0.40217391304347827,
+              "semscore": 0.9297713281019874,
+              "s_rate": 0.40217391304347827,
+              "d_rate": 0.0,
+              "i_rate": 0.001610305958132045
+            },
+            "delta": {
+              "wer": -3.6137386802417186,
+              "cer": -2.0813628546861564,
+              "ser": -0.27375201288244766,
+              "semscore": 0.05573010391851163,
+              "s_rate": -0.19081692725918997,
+              "d_rate": -0.005575467941059339,
+              "i_rate": -3.4173462850414698
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "5ad2ff448b977ac5b3d607c5380e1fd52464b6f346e0b00cce0b200a0d75bacc"
           },
           {
             "category": "CDSD · All samples · 全量微调后",
@@ -39530,39 +41047,39 @@ window.RESULT_BROWSER_DATA = {
           {
             "category": "Step-Audio",
             "label": "Step-Audio",
-            "n": 33333,
+            "n": 40002,
             "before": {
-              "wer": 1.30209276827001,
-              "cer": 1.5428454673788314,
-              "ser": 0.8932289322893229,
-              "semscore": 0.8631811999871966,
-              "s_rate": 0.6419491188762295,
-              "d_rate": 0.0656830496893423,
-              "i_rate": 0.5944605997044382
+              "wer": 1.3969906097974885,
+              "cer": 1.6898175164076739,
+              "ser": 0.8585570721463927,
+              "semscore": 0.8668868934417997,
+              "s_rate": 0.6363238677075084,
+              "d_rate": 0.06254101142663197,
+              "i_rate": 0.698125730663348
             },
             "after": {
-              "wer": 0.8579555386057746,
-              "cer": 1.136643193844782,
-              "ser": 0.9191191911919119,
-              "semscore": 0.8085856531507715,
-              "s_rate": 0.29781030017002746,
-              "d_rate": 0.5355309783731388,
-              "i_rate": 0.024614260062608254
+              "wer": 0.8313375738506462,
+              "cer": 1.0300669274604306,
+              "ser": 0.820633968301585,
+              "semscore": 0.8319057211429618,
+              "s_rate": 0.2993488315941176,
+              "d_rate": 0.5085828975862251,
+              "i_rate": 0.02340584467030355
             },
             "delta": {
-              "wer": -0.4441372296642355,
-              "cer": -0.40620227353404936,
-              "ser": 0.025890258902589003,
-              "semscore": -0.05459554683642509,
-              "s_rate": -0.34413881870620205,
-              "d_rate": 0.4698479286837965,
-              "i_rate": -0.56984633964183
+              "wer": -0.5656530359468422,
+              "cer": -0.6597505889472433,
+              "ser": -0.03792310384480768,
+              "semscore": -0.034981172298837904,
+              "s_rate": -0.33697503611339075,
+              "d_rate": 0.4460418861595931,
+              "i_rate": -0.6747198859930444
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "18e0a0ed7781b7957548e1a9b00b750048f8c4f529295535be96b61eed02b2f5"
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "21fb51b5faa67a3589b1bf7e06ce1f8a75551c0709ffbc07be69903e32b70261"
           },
           {
             "category": "Step-Audio · 全量微调后",
@@ -39656,9 +41173,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.5043457064084459
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
           },
           {
@@ -39693,9 +41210,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -2.0225371747211893
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
           },
           {
@@ -39730,10 +41247,47 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1644787644787644
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
+          },
+          {
+            "category": "UA-Speech",
+            "label": "UA-Speech",
+            "n": 6669,
+            "before": {
+              "wer": 3.173583221775993,
+              "cer": 2.6971257213986646,
+              "ser": 0.6852601589443694,
+              "semscore": 0.8854086928003677,
+              "s_rate": 0.5310129406514948,
+              "d_rate": 0.003718578015766771,
+              "i_rate": 2.638851703108731
+            },
+            "after": {
+              "wer": 0.32898485530064475,
+              "cer": 0.29962091207423336,
+              "ser": 0.3283850652271705,
+              "semscore": 0.94846409966803,
+              "s_rate": 0.3283850652271705,
+              "d_rate": 0.0,
+              "i_rate": 0.000599790073474284
+            },
+            "delta": {
+              "wer": -2.8445983664753483,
+              "cer": -2.397504809324431,
+              "ser": -0.35687509371719894,
+              "semscore": 0.06305540686766231,
+              "s_rate": -0.20262787542432437,
+              "d_rate": -0.003718578015766771,
+              "i_rate": -2.6382519130352566
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "072fcc98d53c31483448cb7a45605b47733031c889bac13702b8169c93696824"
           },
           {
             "category": "CDSD · 全量微调后",
@@ -39943,9 +41497,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.4233687405159332
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
           },
           {
@@ -39980,9 +41534,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1363636363636362
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
           },
           {
@@ -40017,9 +41571,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -6.362121212121212
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
           },
           {
@@ -40054,9 +41608,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.1263573543928924
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
           },
           {
@@ -40091,10 +41645,121 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -1.301418439716312
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
+          },
+          {
+            "category": "UA-Speech · 中度",
+            "label": "UA-Speech · 中度",
+            "n": 1316,
+            "before": {
+              "wer": 2.4631024096385543,
+              "cer": 1.985207100591716,
+              "ser": 0.790273556231003,
+              "semscore": 0.867989615783503,
+              "s_rate": 0.704066265060241,
+              "d_rate": 0.002259036144578313,
+              "i_rate": 1.756777108433735
+            },
+            "after": {
+              "wer": 0.2872340425531915,
+              "cer": 0.25769230769230766,
+              "ser": 0.2872340425531915,
+              "semscore": 0.9560394522176325,
+              "s_rate": 0.2872340425531915,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -2.175868367085363,
+              "cer": -1.7275147928994083,
+              "ser": -0.5030395136778115,
+              "semscore": 0.08804983643412956,
+              "s_rate": -0.41683222250704943,
+              "d_rate": -0.002259036144578313,
+              "i_rate": -1.756777108433735
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "94a3044cff3b4b3ad6fe99d59c74332519e4115ef59ae0c26f55e8e30c9b66e5"
+          },
+          {
+            "category": "UA-Speech · 轻度",
+            "label": "UA-Speech · 轻度",
+            "n": 3570,
+            "before": {
+              "wer": 1.96053362979433,
+              "cer": 1.6775225508705685,
+              "ser": 0.4907563025210084,
+              "semscore": 0.9335923357170169,
+              "s_rate": 0.24207893274041134,
+              "d_rate": 0.0044469149527515284,
+              "i_rate": 1.7140077821011672
+            },
+            "after": {
+              "wer": 0.09047619047619047,
+              "cer": 0.05894692678833648,
+              "ser": 0.08935574229691877,
+              "semscore": 0.9876940061899127,
+              "s_rate": 0.08935574229691877,
+              "d_rate": 0.0,
+              "i_rate": 0.0011204481792717086
+            },
+            "delta": {
+              "wer": -1.8700574393181397,
+              "cer": -1.618575624082232,
+              "ser": -0.4014005602240896,
+              "semscore": 0.05410167047289571,
+              "s_rate": -0.15272319044349258,
+              "d_rate": -0.0044469149527515284,
+              "i_rate": -1.7128873339218955
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "90053ce7463e4ebbb3a39c347d1708ec7e4a4279f7a98d7c48551438392c5c78"
+          },
+          {
+            "category": "UA-Speech · 重度",
+            "label": "UA-Speech · 重度",
+            "n": 1783,
+            "before": {
+              "wer": 6.127434613244296,
+              "cer": 5.244852941176471,
+              "ser": 0.997195737521032,
+              "semscore": 0.8017900164917621,
+              "s_rate": 0.9816360601001669,
+              "d_rate": 0.00333889816360601,
+              "i_rate": 5.142459654980523
+            },
+            "after": {
+              "wer": 0.8373527762198542,
+              "cer": 0.8114495798319328,
+              "ser": 0.8373527762198542,
+              "semscore": 0.864325047375042,
+              "s_rate": 0.8373527762198542,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": -5.2900818370244425,
+              "cer": -4.4334033613445385,
+              "ser": -0.1598429613011778,
+              "semscore": 0.06253503088327994,
+              "s_rate": -0.14428328388031275,
+              "d_rate": -0.00333889816360601,
+              "i_rate": -5.142459654980523
+            },
+            "status": "paired",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
+            "cohort": "disease",
+            "after_evaluated_n": 52073,
+            "sample_ids_sha256": "ffb9391133072dea878ae0efd2095075802d1f9c88a53500182c347253034802"
           },
           {
             "category": "未标注",
@@ -40128,9 +41793,9 @@ window.RESULT_BROWSER_DATA = {
               "i_rate": -0.5076479511872135
             },
             "status": "paired",
-            "note": "",
+            "note": "同样本配对覆盖 40,002 条：CDSD、EasyCall、TORGO 及 UA-Speech B2；训练前主口径未包含当前测试集的 UA-Speech B1/B3 12,071 条",
             "cohort": "disease",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 52073,
             "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
           },
           {
@@ -40455,7 +42120,7 @@ window.RESULT_BROWSER_DATA = {
         ]
       },
       "disease_after_n": 52073,
-      "disease_paired_n": 33333,
+      "disease_paired_n": 40002,
       "health_status": "pending"
     }
   },
