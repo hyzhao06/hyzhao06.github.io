@@ -93,8 +93,8 @@
     if (state.group === "cohort") return sections;
     var result = [];
     sections.forEach(function (section) {
-      var disease = section.rows.filter(function (row) { return row.category.indexOf("健康") < 0; });
-      var health = section.rows.filter(function (row) { return row.category.indexOf("健康") >= 0; });
+      var disease = section.rows.filter(function (row) { return row.cohort ? row.cohort === "disease" : row.category.indexOf("健康") < 0; });
+      var health = section.rows.filter(function (row) { return row.cohort ? row.cohort === "healthy" : row.category.indexOf("健康") >= 0; });
       if (disease.length) result.push({ id: section.id + "-disease", title: section.title + " · 疾病组", rows: disease });
       if (health.length) result.push({ id: section.id + "-health", title: section.title + " · 健康组", rows: health });
       if (!health.length && section.health) result.push({ id: section.id + "-health", title: section.title + " · 健康组", rows: [section.health] });
@@ -122,7 +122,9 @@
     $("#result-table").innerHTML = splitSections(sections).map(function (section) {
       var body = section.rows.length ? section.rows.map(function (row) {
         var before = row.before && row.before[metric], after = row.after && row.after[metric], change = row.delta && row.delta[metric];
-        return "<tr><td>" + esc(row.category) + "</td><td class='numeric'>" + int(row.n) + "</td><td class='numeric'>" + val(before, metric) + "</td><td class='numeric'>" + val(after, metric) + "</td><td class='numeric delta " + deltaClass(change, metric) + "'>" + deltaText(change, metric) + "</td></tr>";
+        var count = int(row.n) + (row.after_evaluated_n && row.after_evaluated_n > row.n ? "（配对；全量 " + int(row.after_evaluated_n) + "）" : "");
+        var note = row.note ? "<small class='row-note'>" + esc(row.note) + "</small>" : "";
+        return "<tr><td>" + esc(row.category) + note + "</td><td class='numeric'>" + count + "</td><td class='numeric'>" + val(before, metric) + "</td><td class='numeric'>" + val(after, metric) + "</td><td class='numeric delta " + deltaClass(change, metric) + "'>" + deltaText(change, metric) + "</td></tr>";
       }).join("") : "<tr><td colspan='5'>暂无数据</td></tr>";
       return "<div class='data-table-block'><h3>" + esc(section.title) + "</h3><table class='data-table'><thead><tr><th>分组</th><th>N</th><th>微调前</th><th>微调后</th><th>差值</th></tr></thead><tbody>" + body + "</tbody></table></div>";
     }).join("");
@@ -132,6 +134,24 @@
     $("#combined-controls").hidden = state.experiment !== "combined"; $("#single-controls").hidden = state.experiment !== "single";
     var sections = selectedSections(); $("#result-head").innerHTML = "<h1>" + esc((state.experiment === "combined" ? "联合微调" : "单数据集微调") + " · " + groupLabels[state.group]) + "</h1><span>" + esc(metricMeta[state.metric].label) + "</span>";
     renderChart(sections); renderTable(sections);
+  }
+  function csvCell(value) { return '"' + String(value == null ? "" : value).replace(/"/g, '""') + '"'; }
+  function downloadCurrent() {
+    var metric = state.metric, sections = splitSections(selectedSections());
+    var lines = [["section", "cohort", "category", "n", "after_evaluated_n", "metric", "before", "after", "delta", "status", "note"]];
+    sections.forEach(function (section) {
+      section.rows.forEach(function (row) {
+        lines.push([
+          section.title, row.cohort || "", row.category, row.n, row.after_evaluated_n || "", metric,
+          row.before && row.before[metric], row.after && row.after[metric], row.delta && row.delta[metric],
+          row.status, row.note
+        ]);
+      });
+    });
+    var blob = new Blob(["\ufeff" + lines.map(function (line) { return line.map(csvCell).join(","); }).join("\n")], { type: "text/csv;charset=utf-8" });
+    var url = URL.createObjectURL(blob), link = document.createElement("a");
+    link.href = url; link.download = "audiobench-" + state.experiment + "-" + state.group + "-" + metric + ".csv";
+    document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
   }
   function configRows(config) {
     var labels = { lora_rank: "LoRA rank", lora_alpha: "LoRA alpha", lora_dropout: "LoRA dropout", learning_rate: "学习率", weight_decay: "权重衰减", warmup_ratio: "warmup", lr_scheduler: "调度", effective_batch_size: "有效 batch", precision: "精度", attention: "Attention", max_grad_norm: "梯度裁剪", selection: "保存" };
@@ -188,6 +208,7 @@
     bind($("#metric-tabs"), "metric", function (value) { state.metric = value; renderResults(); });
     bind($("#method-tabs"), "method", function (value) { state.method = value; renderMethods(); });
     window.onhashchange = function () { setPage(location.hash.slice(1)); };
+    $("#download-current").onclick = downloadCurrent;
     setPage(location.hash.slice(1) || "results"); renderCombinedModels(); renderMatrix(); renderResults(); renderMethods(); renderReferences();
   }
   init();
