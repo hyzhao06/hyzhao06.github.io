@@ -1,7 +1,7 @@
 window.RESULT_BROWSER_DATA = {
   "schema_version": "audiobench.result_browser.v1",
   "built_on": "2026-10-02",
-  "built_at": "2026-10-02T08:18:49+08:00",
+  "built_at": "2026-10-02T08:41:31+08:00",
   "models": [
     {
       "id": "qwen25",
@@ -208,18 +208,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0708358113995657,
             "i_rate": 0.2377698787015394
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.536659243993859,
+            "cer": 0.3728754003815785,
+            "ser": 0.4685537610661955,
+            "semscore": 0.9402439309609203,
+            "s_rate": 0.37366011535110166,
+            "d_rate": 0.05321503160398888,
+            "i_rate": 0.10978409703876849
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.365762575897982,
+            "cer": -0.3168960300151876,
+            "ser": -0.24819004090411545,
+            "semscore": 0.046401268648647465,
+            "s_rate": -0.22015601443963428,
+            "d_rate": -0.017620779795576816,
+            "i_rate": -0.12798578166277091
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
@@ -1672,18 +1680,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.08277015668078812,
             "i_rate": 0.22933057628942236
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.603809427745276,
+            "cer": 0.4860612858620923,
+            "ser": 0.642035847142374,
+            "semscore": 0.9237285022542894,
+            "s_rate": 0.40800047071481405,
+            "d_rate": 0.0632775200053796,
+            "i_rate": 0.13253143702508238
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.330374554502051,
+            "cer": -0.2818733863871511,
+            "ser": -0.23354751437267496,
+            "semscore": 0.04749693073934502,
+            "s_rate": -0.2140827785623025,
+            "d_rate": -0.019492636675408515,
+            "i_rate": -0.09679913926433997
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
@@ -1701,18 +1717,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.11351947097722263,
             "i_rate": 0.5389419544452608
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.16972814107274062,
+            "cer": 0.11404652439442806,
+            "ser": 0.1946440235140431,
+            "semscore": 0.9754224404799713,
+            "s_rate": 0.11645848640705364,
+            "d_rate": 0.045187362233651725,
+            "i_rate": 0.008082292432035268
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -1.0624540778839089,
+            "cer": -0.7133054278460166,
+            "ser": -0.5813193990855651,
+            "semscore": 0.09815587240601586,
+            "s_rate": -0.4632623071271124,
+            "d_rate": -0.0683321087435709,
+            "i_rate": -0.5308596620132255
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "7d85793075bbd62fceea71259c59c39b3fc6b2cbc350af39235804073f5fe3c8"
@@ -1730,18 +1754,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.025284450063211124,
             "i_rate": 0.7762326169405815
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.1447534766118837,
+            "cer": 0.10461956521739131,
+            "ser": 0.14080944350758853,
+            "semscore": 0.9770148598524612,
+            "s_rate": 0.11504424778761062,
+            "d_rate": 0.010745891276864728,
+            "i_rate": 0.018963337547408345
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -1.3185840707964602,
+            "cer": -0.693561872909699,
+            "ser": -0.6610455311973019,
+            "semscore": 0.11132284958688243,
+            "s_rate": -0.5467762326169406,
+            "d_rate": -0.014538558786346396,
+            "i_rate": -0.7572692793931732
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "bde8dd2d76dddae0976559da8e1c1e238910c4d07d247c40e2b1e7fdf943d126"
@@ -1759,18 +1791,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.02593010146561443,
             "i_rate": 0.02593010146561443
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.060879368658399095,
+            "cer": 0.04454170957775489,
+            "ser": 0.06086956521739131,
+            "semscore": 0.9919988090577333,
+            "s_rate": 0.03325817361894025,
+            "d_rate": 0.015219842164599774,
+            "i_rate": 0.012401352874859075
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.08962795941375423,
+            "cer": -0.07942842430484037,
+            "ser": -0.19999999999999998,
+            "semscore": 0.017747269765190476,
+            "s_rate": -0.06538895152198422,
+            "d_rate": -0.010710259301014656,
+            "i_rate": -0.013528748590755355
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "37739b09bbcaeb678483234ea9300164a5957d582d8dac75ea3434cdcbb911ce"
@@ -1788,18 +1828,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.008928571428571428
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.09821428571428571,
+            "cer": 0.08704453441295547,
+            "ser": 0.09821428571428571,
+            "semscore": 0.9851078577339649,
+            "s_rate": 0.09821428571428571,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": 0.008928571428571425,
+            "cer": 0.02429149797570851,
+            "ser": 0.008928571428571425,
+            "semscore": -0.003023063497883949,
+            "s_rate": 0.01785714285714285,
+            "d_rate": 0.0,
+            "i_rate": -0.008928571428571428
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "25d852d0d6128e515cdc3556f50cd8912db9b96c6b1f311db6f9714f5c6330af"
@@ -1817,18 +1865,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.02556818181818182
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.19460227272727273,
+            "cer": 0.12677451304060747,
+            "ser": 0.19460227272727273,
+            "semscore": 0.971893085420809,
+            "s_rate": 0.19460227272727273,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.1818181818181818,
+            "cer": -0.11918124793661275,
+            "ser": -0.16193181818181815,
+            "semscore": 0.023346208967268467,
+            "s_rate": -0.15624999999999997,
+            "d_rate": 0.0,
+            "i_rate": -0.02556818181818182
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "4c387573031360b68432a8291407d25541985c5130b71614dfbd93f2ee6b7ab6"
@@ -1846,18 +1902,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.04555198285101822
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.24035369774919615,
+            "cer": 0.22143656120166189,
+            "ser": 0.23914790996784566,
+            "semscore": 0.9681581973326807,
+            "s_rate": 0.23914790996784566,
+            "d_rate": 0.0,
+            "i_rate": 0.0012057877813504824
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.28711146838156487,
+            "cer": -0.21860019175455414,
+            "ser": -0.24571275455519828,
+            "semscore": 0.03720162311391184,
+            "s_rate": -0.2427652733118971,
+            "d_rate": 0.0,
+            "i_rate": -0.044346195069667735
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "25d31a4c468a496bb4ad9e62bd1704905a9dbbfc0277f674ef94305445655c01"
@@ -1875,18 +1939,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.10526315789473684
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.22910216718266255,
+            "cer": 0.20780648708081365,
+            "ser": 0.22910216718266255,
+            "semscore": 0.9624901209084242,
+            "s_rate": 0.22910216718266255,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.2089783281733746,
+            "cer": -0.1632765255634964,
+            "ser": -0.10371517027863777,
+            "semscore": 0.020478810457622343,
+            "s_rate": -0.10371517027863777,
+            "d_rate": 0.0,
+            "i_rate": -0.10526315789473684
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "d78d435fd9214769342583da06789f6349abb6dd5181d36072846932ff721c01"
@@ -1904,18 +1976,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.018666666666666668
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.2866666666666667,
+            "cer": 0.226,
+            "ser": 0.2866666666666667,
+            "semscore": 0.9581119525432586,
+            "s_rate": 0.2866666666666667,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.09866666666666668,
+            "cer": -0.08566666666666664,
+            "ser": -0.07999999999999996,
+            "semscore": 0.018160654942194654,
+            "s_rate": -0.07999999999999996,
+            "d_rate": 0.0,
+            "i_rate": -0.018666666666666668
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "9dba262f42714e7662b0edecd0cf2f41ed713ae7577ba7ed6625575624293ae6"
@@ -1933,18 +2013,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.21794871794871795
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.2153846153846154,
+            "cer": 0.23758454106280194,
+            "ser": 0.2153846153846154,
+            "semscore": 0.9607574625198658,
+            "s_rate": 0.2153846153846154,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.42000000000000004,
+            "cer": -0.4839613526570048,
+            "ser": -0.20205128205128203,
+            "semscore": 0.03624132663775714,
+            "s_rate": -0.20205128205128203,
+            "d_rate": 0.0,
+            "i_rate": -0.21794871794871795
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "c4853825e0565932bc12288e0103644a4bf594c231f0d651ab342b1ac6cee481"
@@ -1962,18 +2050,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0001372872048325096,
             "i_rate": 0.4700713893465129
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.28775398132894014,
+            "cer": 0.25234340391600957,
+            "ser": 0.2843218012081274,
+            "semscore": 0.9486440759743392,
+            "s_rate": 0.2843218012081274,
+            "d_rate": 0.0,
+            "i_rate": 0.0034321801208127404
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.6886326194398682,
+            "cer": -0.3703729954815274,
+            "ser": -0.24203734211971445,
+            "semscore": 0.04405022568423822,
+            "s_rate": -0.2218561230093355,
+            "d_rate": -0.0001372872048325096,
+            "i_rate": -0.4666392092257001
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "a7dd6f8e6e40da20f0b1969fef6f7b8196989f820fafedcd2ae4f0a5fc97d2e7"
@@ -4810,18 +4906,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0708358113995657,
             "i_rate": 0.2377698787015394
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.536659243993859,
+            "cer": 0.3728754003815785,
+            "ser": 0.4685537610661955,
+            "semscore": 0.9402439309609203,
+            "s_rate": 0.37366011535110166,
+            "d_rate": 0.05321503160398888,
+            "i_rate": 0.10978409703876849
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.365762575897982,
+            "cer": -0.3168960300151876,
+            "ser": -0.24819004090411545,
+            "semscore": 0.046401268648647465,
+            "s_rate": -0.22015601443963428,
+            "d_rate": -0.017620779795576816,
+            "i_rate": -0.12798578166277091
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
@@ -5251,18 +5355,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0708358113995657,
             "i_rate": 0.2377698787015394
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.536659243993859,
+            "cer": 0.3728754003815785,
+            "ser": 0.4685537610661955,
+            "semscore": 0.9402439309609203,
+            "s_rate": 0.37366011535110166,
+            "d_rate": 0.05321503160398888,
+            "i_rate": 0.10978409703876849
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.365762575897982,
+            "cer": -0.3168960300151876,
+            "ser": -0.24819004090411545,
+            "semscore": 0.046401268648647465,
+            "s_rate": -0.22015601443963428,
+            "d_rate": -0.017620779795576816,
+            "i_rate": -0.12798578166277091
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "4f042defe93a5082c67d76c0aa9c7f47ae3af0c01bc54ffe49a34beacb739a8b"
@@ -5793,18 +5905,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.08277015668078812,
             "i_rate": 0.22933057628942236
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.603809427745276,
+            "cer": 0.4860612858620923,
+            "ser": 0.642035847142374,
+            "semscore": 0.9237285022542894,
+            "s_rate": 0.40800047071481405,
+            "d_rate": 0.0632775200053796,
+            "i_rate": 0.13253143702508238
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.330374554502051,
+            "cer": -0.2818733863871511,
+            "ser": -0.23354751437267496,
+            "semscore": 0.04749693073934502,
+            "s_rate": -0.2140827785623025,
+            "d_rate": -0.019492636675408515,
+            "i_rate": -0.09679913926433997
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "81bfa1ce1ed8b7e265869dad8d3ad5c00dbb0afc22179e1382ddcf47f6f13210"
@@ -5822,18 +5942,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.08108736059479554,
             "i_rate": 0.6261617100371747
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.16054832713754646,
+            "cer": 0.11031026055258689,
+            "ser": 0.17114464482885536,
+            "semscore": 0.9761175488258576,
+            "s_rate": 0.11593866171003718,
+            "d_rate": 0.032527881040892194,
+            "i_rate": 0.012081784386617101
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -1.1565985130111525,
+            "cer": -0.7054803032185908,
+            "ser": -0.6161207213838793,
+            "semscore": 0.10390340090675487,
+            "s_rate": -0.4939591078066914,
+            "d_rate": -0.04855947955390335,
+            "i_rate": -0.6140799256505576
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "2bb78766b129f526d685aab785ceb6e5b3b3a96dfcc952072f5eba37b3def69e"
@@ -5851,18 +5979,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.01776061776061776,
             "i_rate": 0.025096525096525095
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.09884169884169884,
+            "cer": 0.06846160658931892,
+            "ser": 0.15487571701720843,
+            "semscore": 0.9777290040972584,
+            "s_rate": 0.07992277992277992,
+            "d_rate": 0.010424710424710425,
+            "i_rate": 0.008494208494208495
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.11042471042471043,
+            "cer": -0.08555486670799752,
+            "ser": -0.1520076481835564,
+            "semscore": 0.019291606163659436,
+            "s_rate": -0.08648648648648648,
+            "d_rate": -0.007335907335907334,
+            "i_rate": -0.0166023166023166
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "378ce3b3edb93289bf19694d72e8944d0b8299146c8f87e1ecb56843d97bff3a"
@@ -5880,18 +6016,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 5.336179295624333e-05,
             "i_rate": 0.23153681963713982
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.2572572038420491,
+            "cer": 0.2393210112348545,
+            "ser": 0.2554429028815368,
+            "semscore": 0.959010378165586,
+            "s_rate": 0.2554429028815368,
+            "d_rate": 0.0,
+            "i_rate": 0.0018143009605122733
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.44407684098185696,
+            "cer": -0.321549959350788,
+            "ser": -0.22331910352187834,
+            "semscore": 0.037848690505216,
+            "s_rate": -0.2143009605122732,
+            "d_rate": -5.336179295624333e-05,
+            "i_rate": -0.22972251867662755
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "bde1a19ee3c4d8d4ac7515c90ed007ddbe3b0ce87d728ab3f4d42dbf873d37c7"
@@ -7661,18 +7805,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.1471927162367223,
             "i_rate": 0.5386949924127465
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.251896813353566,
+            "cer": 0.15793758480325645,
+            "ser": 0.22276029055690072,
+            "semscore": 0.9707127590156353,
+            "s_rate": 0.15933232169954475,
+            "d_rate": 0.07587253414264036,
+            "i_rate": 0.01669195751138088
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -1.2336874051593323,
+            "cer": -0.8803256445047489,
+            "ser": -0.728813559322034,
+            "semscore": 0.14763141270122582,
+            "s_rate": -0.6403641881638846,
+            "d_rate": -0.07132018209408195,
+            "i_rate": -0.5220030349013657
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "a43053a8e6d1aabc87be98f3ec2b9a520ac2765b2b7d99fb32c816e5e59a4d03"
@@ -7690,18 +7842,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.04772727272727273,
             "i_rate": 0.4571969696969697
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.0446969696969697,
+            "cer": 0.01524390243902439,
+            "ser": 0.06582125603864734,
+            "semscore": 0.9941518650106762,
+            "s_rate": 0.04090909090909091,
+            "d_rate": 0.0022727272727272726,
+            "i_rate": 0.0015151515151515152
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.9545454545454546,
+            "cer": -0.5503387533875339,
+            "ser": -0.6177536231884059,
+            "semscore": 0.08627612302124787,
+            "s_rate": -0.45340909090909093,
+            "d_rate": -0.045454545454545456,
+            "i_rate": -0.4556818181818182
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "d6c7f2501c1733d966ecca433190a1ad760cd64e6105359cc795359d09403b37"
@@ -7719,18 +7879,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.17575757575757575,
             "i_rate": 1.5272727272727273
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.5590909090909091,
+            "cer": 0.46964769647696475,
+            "ser": 0.5555555555555556,
+            "semscore": 0.9074210445374107,
+            "s_rate": 0.38333333333333336,
+            "d_rate": 0.12575757575757576,
+            "i_rate": 0.05
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -1.9636363636363638,
+            "cer": -1.251219512195122,
+            "ser": -0.43961352657004826,
+            "semscore": 0.12131952116454858,
+            "s_rate": -0.43636363636363634,
+            "d_rate": -0.04999999999999999,
+            "i_rate": -1.4772727272727273
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "6f2198fa4874ebb24d827ada4c049ff2172fbcbec291f3670f72044859606800"
@@ -7748,18 +7916,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0014807502467917078,
             "i_rate": 0.012339585389930898
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.016288252714708785,
+            "cer": 0.009616459800961647,
+            "ser": 0.040740740740740744,
+            "semscore": 0.9948292196532826,
+            "s_rate": 0.01579466929911155,
+            "d_rate": 0.0004935834155972359,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.052813425468904246,
+            "cer": -0.02146930560214693,
+            "ser": -0.10617283950617284,
+            "semscore": 0.010358444702478153,
+            "s_rate": -0.03948667324777888,
+            "d_rate": -0.000987166831194472,
+            "i_rate": -0.012339585389930898
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "b97f4ad1c60ab611618ef4438ef8021a04e4038c1dc99567b3e2ed22a1a91cc7"
@@ -7777,18 +7953,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.07624113475177305,
             "i_rate": 0.07092198581560284
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.3953900709219858,
+            "cer": 0.29258943781942076,
+            "ser": 0.5466101694915254,
+            "semscore": 0.9190375862990395,
+            "s_rate": 0.3102836879432624,
+            "d_rate": 0.04609929078014184,
+            "i_rate": 0.03900709219858156
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.3173758865248227,
+            "cer": -0.3296422487223169,
+            "ser": -0.30932203389830515,
+            "semscore": 0.04995203321262942,
+            "s_rate": -0.2553191489361702,
+            "d_rate": -0.030141843971631208,
+            "i_rate": -0.03191489361702128
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "3bbd6bf7bc43935934f2ff24f246af78da36956649aee8f196d1c46866d40b00"
@@ -7806,18 +7990,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.27793394237526353
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.14371047083626143,
+            "cer": 0.11393314181248368,
+            "ser": 0.14371047083626143,
+            "semscore": 0.9784803330605079,
+            "s_rate": 0.14371047083626143,
+            "d_rate": 0.0,
+            "i_rate": 0.0
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.7832044975404076,
+            "cer": -0.4704230869678767,
+            "ser": -0.5059732958538299,
+            "semscore": 0.08346439645647252,
+            "s_rate": -0.5052705551651441,
+            "d_rate": 0.0,
+            "i_rate": -0.27793394237526353
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "09c6e859ce532d180cb5379b63bade2c4b180ce8df5067ec84970d913a3b3990"
@@ -7835,18 +8027,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.0,
             "i_rate": 0.13239962651727358
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.04164332399626517,
+            "cer": 0.020540207456095305,
+            "ser": 0.04080298786181139,
+            "semscore": 0.9944455477202974,
+            "s_rate": 0.04080298786181139,
+            "d_rate": 0.0,
+            "i_rate": 0.0008403361344537816
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.26629318394024276,
+            "cer": -0.15047413645544486,
+            "ser": -0.15004668534080298,
+            "semscore": 0.017976407165509523,
+            "s_rate": -0.13473389355742296,
+            "d_rate": 0.0,
+            "i_rate": -0.1315592903828198
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "fa107684234717fd760882d30af37c29411ba0a353fb15e1f61d9e5ce539f3eb"
@@ -7864,18 +8064,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.00019290123456790122,
             "i_rate": 0.41087962962962965
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.7650462962962963,
+            "cer": 0.7578204902133663,
+            "ser": 0.7602237654320988,
+            "semscore": 0.875113357030959,
+            "s_rate": 0.7602237654320988,
+            "d_rate": 0.0,
+            "i_rate": 0.004822530864197531
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.6251929012345678,
+            "cer": -0.5936166460941632,
+            "ser": -0.21952160493827155,
+            "semscore": 0.05386139409915536,
+            "s_rate": -0.21894290123456783,
+            "d_rate": -0.00019290123456790122,
+            "i_rate": -0.4060570987654321
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "edc0aa2a8d293c74953972a1da5b97bb4b71893e55a5e99e377c0767228ff097"
@@ -7893,18 +8101,26 @@ window.RESULT_BROWSER_DATA = {
             "d_rate": 0.08261463545464451,
             "i_rate": 0.22971511905659903
           },
-          "after": null,
-          "delta": {
-            "wer": null,
-            "cer": null,
-            "ser": null,
-            "semscore": null,
-            "s_rate": null,
-            "d_rate": null,
-            "i_rate": null
+          "after": {
+            "wer": 0.6023819701122258,
+            "cer": 0.4819814211836813,
+            "ser": 0.6381358206952087,
+            "semscore": 0.9241669246225194,
+            "s_rate": 0.4070972987017341,
+            "d_rate": 0.06310293094633443,
+            "i_rate": 0.1321817404641573
           },
-          "status": "baseline_only",
-          "note": "联合微调结果尚未完成；微调后与差值留空",
+          "delta": {
+            "wer": -0.3323443380017266,
+            "cer": -0.28417927600076615,
+            "ser": -0.2373506911823916,
+            "semscore": 0.04807134838596061,
+            "s_rate": -0.21529925490097473,
+            "d_rate": -0.01951170450831008,
+            "i_rate": -0.09753337859244174
+          },
+          "status": "paired",
+          "note": "",
           "cohort": "disease",
           "after_evaluated_n": null,
           "sample_ids_sha256": "206f1ac3b00b58b8f72b4a7586f47c4589128a9b9ee05cc663915f7c92dc56de"
@@ -9640,8 +9856,9 @@ window.RESULT_BROWSER_DATA = {
       "healthy": "complete"
     },
     "qwen3": {
-      "disease": "pending",
-      "disease_paired_n": 0,
+      "disease": "complete",
+      "disease_paired_n": 52073,
+      "disease_after_n": 52073,
       "healthy": "pending"
     },
     "phi4": {
