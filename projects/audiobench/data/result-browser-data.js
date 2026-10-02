@@ -1,7 +1,7 @@
 window.RESULT_BROWSER_DATA = {
   "schema_version": "audiobench.result_browser.v1",
   "built_on": "2026-10-02",
-  "built_at": "2026-10-02T15:51:11+08:00",
+  "built_at": "2026-10-02T23:33:27+08:00",
   "models": [
     {
       "id": "qwen25",
@@ -24909,7 +24909,44 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.009368789628087442,
               "i_rate": 0.010725213715655657
             },
-            "after": null,
+            "after": {
+              "wer": 0.18718652408441375,
+              "cer": 0.10775595185444747,
+              "ser": 0.312156746326258,
+              "semscore": 0.9592922972353485,
+              "s_rate": 0.12863947509542287,
+              "d_rate": 0.05558184284407432,
+              "i_rate": 0.002965206144916564
+            },
+            "delta": {
+              "wer": 0.08195325068609824,
+              "cer": 0.05683434146872512,
+              "ser": 0.10709514620751079,
+              "semscore": -0.016923809380635313,
+              "s_rate": 0.04350020504085046,
+              "d_rate": 0.04621305321598687,
+              "i_rate": -0.0077600075707390925
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
+            "cohort": "healthy",
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+          },
+          {
+            "category": "健康组 · 全量微调后",
+            "label": "健康组",
+            "n": 21055,
+            "before": null,
+            "after": {
+              "wer": 0.2503564693436364,
+              "cer": 0.1308172809628152,
+              "ser": 0.3597245309902636,
+              "semscore": 0.953315280537457,
+              "s_rate": 0.1735430752955246,
+              "d_rate": 0.07161584103767075,
+              "i_rate": 0.005197553010441102
+            },
             "delta": {
               "wer": null,
               "cer": null,
@@ -24919,11 +24956,11 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": null,
               "i_rate": null
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
             "cohort": "healthy",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "f486c9ca07eac660508183b2a985eb71ec6bd06b1a648245f08ac61ec4073d37"
           }
         ],
         "label": [
@@ -25347,20 +25384,28 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.07013859722805543,
               "i_rate": 0.044099118017639646
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.5254094918101638,
+              "cer": 0.2486639181554436,
+              "ser": 0.538961038961039,
+              "semscore": 0.93130556901468,
+              "s_rate": 0.32003359932801345,
+              "d_rate": 0.19529609407811843,
+              "i_rate": 0.01007979840403192
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "delta": {
+              "wer": 0.26165476690466194,
+              "cer": 0.13368453198961674,
+              "ser": 0.24675324675324678,
+              "semscore": -0.039332100925335456,
+              "s_rate": 0.17051658966820665,
+              "d_rate": 0.125157496850063,
+              "i_rate": -0.034019319613607726
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 21055,
             "sample_ids_sha256": "309e13bafad6e944a02213d0ae03d3b26dc69c1a520653a0443eca9d78d6eeb3"
           },
           {
@@ -25376,20 +25421,28 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.02027027027027027,
               "i_rate": 0.05675675675675676
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.36824324324324326,
+              "cer": 0.18717891445164173,
+              "ser": 0.42162162162162165,
+              "semscore": 0.9354636347508646,
+              "s_rate": 0.3162162162162162,
+              "d_rate": 0.043243243243243246,
+              "i_rate": 0.008783783783783784
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "delta": {
+              "wer": 0.07905405405405408,
+              "cer": 0.07650212195666742,
+              "ser": 0.13693693693693698,
+              "semscore": -0.02804452546007996,
+              "s_rate": 0.10405405405405405,
+              "d_rate": 0.022972972972972974,
+              "i_rate": -0.047972972972972976
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 21055,
             "sample_ids_sha256": "a33fbf7007f07976d147ed5297452fba9f36ae9af45cbae2df217a605384794f"
           },
           {
@@ -25405,20 +25458,28 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0050753692331117085,
               "i_rate": 0.0054306450794295285
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.085824493731919,
+              "cer": 0.05942100909842846,
+              "ser": 0.1939457937346005,
+              "semscore": 0.9844598183326426,
+              "s_rate": 0.02070750647109577,
+              "d_rate": 0.06257930264426736,
+              "i_rate": 0.0025376846165558542
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "delta": {
+              "wer": 0.05892503679642694,
+              "cer": 0.04708023159636063,
+              "ser": 0.07849348820837733,
+              "semscore": -0.012455624558060374,
+              "s_rate": 0.00431406384814495,
+              "d_rate": 0.05750393341115566,
+              "i_rate": -0.0028929604628736743
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 21055,
             "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
           },
           {
@@ -25434,20 +25495,28 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.020169851380042462
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.08386411889596602,
+              "cer": 0.03180914512922465,
+              "ser": 0.08386411889596602,
+              "semscore": 0.9911886601058287,
+              "s_rate": 0.08386411889596602,
+              "d_rate": 0.0,
+              "i_rate": 0.0
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "delta": {
+              "wer": 0.011677282377919318,
+              "cer": 0.0067097415506958205,
+              "ser": 0.02972399150743099,
+              "semscore": -0.003775507717881821,
+              "s_rate": 0.031847133757961776,
+              "d_rate": 0.0,
+              "i_rate": -0.020169851380042462
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 21055,
             "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
           },
           {
@@ -25463,7 +25532,44 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0,
               "i_rate": 0.0034746351633078527
             },
-            "after": null,
+            "after": {
+              "wer": 0.32911744266851983,
+              "cer": 0.1782925215089345,
+              "ser": 0.3281445448227936,
+              "semscore": 0.954246031691251,
+              "s_rate": 0.3281445448227936,
+              "d_rate": 0.0,
+              "i_rate": 0.0009728978457261987
+            },
+            "delta": {
+              "wer": 0.09534398888116752,
+              "cer": 0.05363997352746526,
+              "ser": 0.09701181375955523,
+              "semscore": -0.014377308521443033,
+              "s_rate": 0.09784572619874912,
+              "d_rate": 0.0,
+              "i_rate": -0.002501737317581654
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
+            "cohort": "healthy",
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
+          },
+          {
+            "category": "EasyCall · Command · 全量微调后",
+            "label": "EasyCall · Command",
+            "n": 5608,
+            "before": null,
+            "after": {
+              "wer": 0.49499122172880305,
+              "cer": 0.21181569772920003,
+              "ser": 0.5133737517831669,
+              "semscore": 0.9379573668142018,
+              "s_rate": 0.3099246101414851,
+              "d_rate": 0.17277703191159766,
+              "i_rate": 0.012289579675720334
+            },
             "delta": {
               "wer": null,
               "cer": null,
@@ -25473,10 +25579,126 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": null,
               "i_rate": null
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 5608,
+            "sample_ids_sha256": "a8a4fbec5a666ed9d55bb4bf824c0360e7c1804db5bc1bb07170cdaa3dcd31a0"
+          },
+          {
+            "category": "EasyCall · Non-command · 全量微调后",
+            "label": "EasyCall · Non-command",
+            "n": 4469,
+            "before": null,
+            "after": {
+              "wer": 0.32807518039939587,
+              "cer": 0.16241852725003467,
+              "ser": 0.38129335421794586,
+              "semscore": 0.9433067932201461,
+              "s_rate": 0.28477932539016615,
+              "d_rate": 0.034905185433797614,
+              "i_rate": 0.00839066957543212
+            },
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+            "cohort": "healthy",
+            "after_evaluated_n": 4469,
+            "sample_ids_sha256": "9943682d17c881746e745be4c1b89f89d92cff32022ea3447f48fe63dc16b1f4"
+          },
+          {
+            "category": "TORGO · Sentence · 全量微调后",
+            "label": "TORGO · Sentence",
+            "n": 2841,
+            "before": null,
+            "after": {
+              "wer": 0.085824493731919,
+              "cer": 0.05942100909842846,
+              "ser": 0.1939457937346005,
+              "semscore": 0.9844598183326426,
+              "s_rate": 0.02070750647109577,
+              "d_rate": 0.06257930264426736,
+              "i_rate": 0.0025376846165558542
+            },
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+            "cohort": "healthy",
+            "after_evaluated_n": 2841,
+            "sample_ids_sha256": "8e9346a1e70c32e513a372b95d4d21908e56042ee77d8a80e38cd892328d030f"
+          },
+          {
+            "category": "TORGO · Short-word Command · 全量微调后",
+            "label": "TORGO · Short-word Command",
+            "n": 942,
+            "before": null,
+            "after": {
+              "wer": 0.08386411889596602,
+              "cer": 0.03180914512922465,
+              "ser": 0.08386411889596602,
+              "semscore": 0.9911886601058287,
+              "s_rate": 0.08386411889596602,
+              "d_rate": 0.0,
+              "i_rate": 0.0
+            },
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+            "cohort": "healthy",
+            "after_evaluated_n": 942,
+            "sample_ids_sha256": "d0d847bcbb4cfc364799fe44f61dae333190cab0e242a002dd1765584951a6f7"
+          },
+          {
+            "category": "TORGO · Short-word Non-command · 全量微调后",
+            "label": "TORGO · Short-word Non-command",
+            "n": 7195,
+            "before": null,
+            "after": {
+              "wer": 0.32911744266851983,
+              "cer": 0.1782925215089345,
+              "ser": 0.3281445448227936,
+              "semscore": 0.954246031691251,
+              "s_rate": 0.3281445448227936,
+              "d_rate": 0.0,
+              "i_rate": 0.0009728978457261987
+            },
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+            "cohort": "healthy",
+            "after_evaluated_n": 7195,
             "sample_ids_sha256": "9a8098d43e93e1fdc43bf5ab761415aacbca28e9257ce1867364a3e3ba0d599c"
           }
         ],
@@ -25531,7 +25753,44 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.009368789628087442,
               "i_rate": 0.010725213715655657
             },
-            "after": null,
+            "after": {
+              "wer": 0.18718652408441375,
+              "cer": 0.10775595185444747,
+              "ser": 0.312156746326258,
+              "semscore": 0.9592922972353485,
+              "s_rate": 0.12863947509542287,
+              "d_rate": 0.05558184284407432,
+              "i_rate": 0.002965206144916564
+            },
+            "delta": {
+              "wer": 0.08195325068609824,
+              "cer": 0.05683434146872512,
+              "ser": 0.10709514620751079,
+              "semscore": -0.016923809380635313,
+              "s_rate": 0.04350020504085046,
+              "d_rate": 0.04621305321598687,
+              "i_rate": -0.0077600075707390925
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
+            "cohort": "healthy",
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+          },
+          {
+            "category": "Qwen3 · 全量微调后",
+            "label": "Qwen3",
+            "n": 21055,
+            "before": null,
+            "after": {
+              "wer": 0.2503564693436364,
+              "cer": 0.1308172809628152,
+              "ser": 0.3597245309902636,
+              "semscore": 0.953315280537457,
+              "s_rate": 0.1735430752955246,
+              "d_rate": 0.07161584103767075,
+              "i_rate": 0.005197553010441102
+            },
             "delta": {
               "wer": null,
               "cer": null,
@@ -25541,11 +25800,11 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": null,
               "i_rate": null
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
             "cohort": "healthy",
-            "after_evaluated_n": null,
-            "sample_ids_sha256": "224a2da02c993eae8d84e58cf847a5a450e218a6cfd949fe4aaef947fe3e0c61"
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "f486c9ca07eac660508183b2a985eb71ec6bd06b1a648245f08ac61ec4073d37"
           }
         ],
         "dataset": [
@@ -25710,20 +25969,28 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.051023051023051026,
               "i_rate": 0.04895104895104895
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.4651644651644652,
+              "cer": 0.2236985307455106,
+              "ser": 0.48677884615384615,
+              "semscore": 0.9331547088252429,
+              "s_rate": 0.3185703185703186,
+              "d_rate": 0.137011137011137,
+              "i_rate": 0.009583009583009583
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "delta": {
+              "wer": 0.19166019166019166,
+              "cer": 0.11046617086885542,
+              "ser": 0.19791666666666669,
+              "semscore": -0.034312385874680884,
+              "s_rate": 0.14504014504014506,
+              "d_rate": 0.085988085988086,
+              "i_rate": -0.03936803936803937
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
           },
           {
@@ -25739,7 +26006,44 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0035919540229885057,
               "i_rate": 0.005423850574712644
             },
-            "after": null,
+            "after": {
+              "wer": 0.14863505747126438,
+              "cer": 0.08728856298881675,
+              "ser": 0.2724539989069047,
+              "semscore": 0.9652350391438586,
+              "s_rate": 0.10229885057471265,
+              "d_rate": 0.04428879310344828,
+              "i_rate": 0.0020474137931034485
+            },
+            "delta": {
+              "wer": 0.06673850574712645,
+              "cer": 0.047366693617464116,
+              "ser": 0.08644561850974675,
+              "semscore": -0.012970276229866684,
+              "s_rate": 0.029418103448275862,
+              "d_rate": 0.04069683908045977,
+              "i_rate": -0.0033764367816091954
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
+            "cohort": "healthy",
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
+          },
+          {
+            "category": "EasyCall · 全量微调后",
+            "label": "EasyCall",
+            "n": 10077,
+            "before": null,
+            "after": {
+              "wer": 0.4314026339342795,
+              "cer": 0.19183123877917416,
+              "ser": 0.4547980549766796,
+              "semscore": 0.9403297580624072,
+              "s_rate": 0.3003452243958573,
+              "d_rate": 0.12025316455696203,
+              "i_rate": 0.010804244981460171
+            },
             "delta": {
               "wer": null,
               "cer": null,
@@ -25749,10 +26053,39 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": null,
               "i_rate": null
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 10077,
+            "sample_ids_sha256": "f4a5a9089eda8cbb15497033e6647e2e408d81df71ff7ac9d1ba2c859fc7a6c8"
+          },
+          {
+            "category": "TORGO · 全量微调后",
+            "label": "TORGO",
+            "n": 10978,
+            "before": null,
+            "after": {
+              "wer": 0.14863505747126438,
+              "cer": 0.08728856298881675,
+              "ser": 0.2724539989069047,
+              "semscore": 0.9652350391438586,
+              "s_rate": 0.10229885057471265,
+              "d_rate": 0.04428879310344828,
+              "i_rate": 0.0020474137931034485
+            },
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+            "cohort": "healthy",
+            "after_evaluated_n": 10978,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
           }
         ],
@@ -26103,20 +26436,28 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.051023051023051026,
               "i_rate": 0.04895104895104895
             },
-            "after": null,
-            "delta": {
-              "wer": null,
-              "cer": null,
-              "ser": null,
-              "semscore": null,
-              "s_rate": null,
-              "d_rate": null,
-              "i_rate": null
+            "after": {
+              "wer": 0.4651644651644652,
+              "cer": 0.2236985307455106,
+              "ser": 0.48677884615384615,
+              "semscore": 0.9331547088252429,
+              "s_rate": 0.3185703185703186,
+              "d_rate": 0.137011137011137,
+              "i_rate": 0.009583009583009583
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "delta": {
+              "wer": 0.19166019166019166,
+              "cer": 0.11046617086885542,
+              "ser": 0.19791666666666669,
+              "semscore": -0.034312385874680884,
+              "s_rate": 0.14504014504014506,
+              "d_rate": 0.085988085988086,
+              "i_rate": -0.03936803936803937
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 21055,
             "sample_ids_sha256": "8b9852c3718d926aff54829944aac9dc76db0e167a9be27d78ed1c5f22bc8fbc"
           },
           {
@@ -26132,7 +26473,44 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": 0.0035919540229885057,
               "i_rate": 0.005423850574712644
             },
-            "after": null,
+            "after": {
+              "wer": 0.14863505747126438,
+              "cer": 0.08728856298881675,
+              "ser": 0.2724539989069047,
+              "semscore": 0.9652350391438586,
+              "s_rate": 0.10229885057471265,
+              "d_rate": 0.04428879310344828,
+              "i_rate": 0.0020474137931034485
+            },
+            "delta": {
+              "wer": 0.06673850574712645,
+              "cer": 0.047366693617464116,
+              "ser": 0.08644561850974675,
+              "semscore": -0.012970276229866684,
+              "s_rate": 0.029418103448275862,
+              "d_rate": 0.04069683908045977,
+              "i_rate": -0.0033764367816091954
+            },
+            "status": "paired",
+            "note": "完整健康队列同样本配对：13,474 条",
+            "cohort": "healthy",
+            "after_evaluated_n": 21055,
+            "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
+          },
+          {
+            "category": "EasyCall · 不适用 · 全量微调后",
+            "label": "EasyCall · 不适用",
+            "n": 10077,
+            "before": null,
+            "after": {
+              "wer": 0.4314026339342795,
+              "cer": 0.19183123877917416,
+              "ser": 0.4547980549766796,
+              "semscore": 0.9403297580624072,
+              "s_rate": 0.3003452243958573,
+              "d_rate": 0.12025316455696203,
+              "i_rate": 0.010804244981460171
+            },
             "delta": {
               "wer": null,
               "cer": null,
@@ -26142,17 +26520,46 @@ window.RESULT_BROWSER_DATA = {
               "d_rate": null,
               "i_rate": null
             },
-            "status": "baseline_only",
-            "note": "健康组微调后转写尚未完成",
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
             "cohort": "healthy",
-            "after_evaluated_n": null,
+            "after_evaluated_n": 10077,
+            "sample_ids_sha256": "f4a5a9089eda8cbb15497033e6647e2e408d81df71ff7ac9d1ba2c859fc7a6c8"
+          },
+          {
+            "category": "TORGO · 不适用 · 全量微调后",
+            "label": "TORGO · 不适用",
+            "n": 10978,
+            "before": null,
+            "after": {
+              "wer": 0.14863505747126438,
+              "cer": 0.08728856298881675,
+              "ser": 0.2724539989069047,
+              "semscore": 0.9652350391438586,
+              "s_rate": 0.10229885057471265,
+              "d_rate": 0.04428879310344828,
+              "i_rate": 0.0020474137931034485
+            },
+            "delta": {
+              "wer": null,
+              "cer": null,
+              "ser": null,
+              "semscore": null,
+              "s_rate": null,
+              "d_rate": null,
+              "i_rate": null
+            },
+            "status": "after_only",
+            "note": "全量微调后：健康组 21,055 条均已完成；无对应全量原始基线，因此不计算差值",
+            "cohort": "healthy",
+            "after_evaluated_n": 10978,
             "sample_ids_sha256": "9c1d8a13070ff49305029d81317505d38fb94ede398f4816a934eb5382581a08"
           }
         ]
       },
       "disease_after_n": 52073,
       "disease_paired_n": 52073,
-      "health_status": "pending"
+      "health_status": "complete"
     },
     "phi4/cdsd": {
       "model": "phi4",
@@ -49694,7 +50101,7 @@ window.RESULT_BROWSER_DATA = {
     },
     "single_disease_complete": 20,
     "single_disease_total": 20,
-    "healthy_complete": 23,
+    "healthy_complete": 24,
     "healthy_total": 25
   },
   "methods": {
