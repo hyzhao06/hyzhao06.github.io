@@ -13,6 +13,7 @@
     <a class="brand" href="#results">AudioBench</a>
     <nav class="page-tabs" aria-label="页面">
       <a href="#results" data-page-link="results">结果</a>
+      <a href="#comparison" data-page-link="comparison">统一对照</a>
       <a href="#methods" data-page-link="methods">方法</a>
     </nav>
   </header>
@@ -61,6 +62,45 @@
       <section class="table-panel">
         <div class="section-heading"><h2>数据</h2><button type="button" id="download-current">下载 CSV</button></div>
         <div class="table-scroll" id="result-table"></div>
+      </section>
+    </section>
+
+    <section class="page" data-page="comparison" hidden>
+      <section class="control-panel comparison-controls">
+        <div class="control-group">
+          <span class="control-label">语音组</span>
+          <div class="button-tabs" id="comparison-cohort-tabs">
+            <button type="button" data-comparison-cohort="disease" class="active">疾病组</button>
+            <button type="button" data-comparison-cohort="healthy">健康组</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">分组</span>
+          <div class="button-tabs" id="comparison-group-tabs">
+            <button type="button" data-comparison-group="overall">整体</button>
+            <button type="button" data-comparison-group="dataset" class="active">数据集</button>
+            <button type="button" data-comparison-group="label">标签</button>
+            <button type="button" data-comparison-group="severity">严重程度</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">指标</span>
+          <div class="button-tabs" id="comparison-metric-tabs">
+            <button type="button" data-comparison-metric="wer" class="active">WER</button>
+            <button type="button" data-comparison-metric="cer">CER</button>
+            <button type="button" data-comparison-metric="ser">SER</button>
+            <button type="button" data-comparison-metric="semscore">SemScore</button>
+            <button type="button" data-comparison-metric="s_rate">替换 S</button>
+            <button type="button" data-comparison-metric="d_rate">删除 D</button>
+            <button type="button" data-comparison-metric="i_rate">插入 I</button>
+          </div>
+        </div>
+      </section>
+      <section class="result-head" id="comparison-head"></section>
+      <section class="table-panel">
+        <div class="section-heading"><h2>统一对照表</h2><button type="button" id="download-comparison">下载 CSV</button></div>
+        <p class="comparison-guide">单元格为指标值（配对 N）。健康结果只使用微调前后均有有效指标的同样本交集。</p>
+        <div id="comparison-tables"></div>
       </section>
     </section>
 

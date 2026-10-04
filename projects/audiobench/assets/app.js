@@ -18,7 +18,7 @@
   var modelLabels = Object.fromEntries(data.models.map(function (x) { return [x.id, x.label]; }));
   var datasetLabels = Object.fromEntries(data.datasets.map(function (x) { return [x.id, x.label]; }));
   var groupLabels = { cohort: "疾病 / 健康", label: "标签", model: "模型", dataset: "数据集", severity: "严重程度" };
-  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined" };
+  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer" };
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
@@ -45,10 +45,10 @@
     return (metricMeta[metric].direction === "lower" ? Number(value) < 0 : Number(value) > 0) ? "good" : "bad";
   }
   function pressed(root, key, value) {
-    $$("[data-" + key + "]", root).forEach(function (button) { button.classList.toggle("active", button.dataset[key] === value); });
+    $$("[data-" + key + "]", root).forEach(function (button) { button.classList.toggle("active", button.getAttribute("data-" + key) === value); });
   }
   function setPage(page) {
-    state.page = page === "methods" ? "methods" : "results";
+    state.page = page === "methods" || page === "comparison" ? page : "results";
     $$("[data-page]").forEach(function (p) { p.hidden = p.dataset.page !== state.page; });
     $$("[data-page-link]").forEach(function (a) { a.classList.toggle("active", a.dataset.pageLink === state.page); });
   }
@@ -173,6 +173,83 @@
     link.href = url; link.download = "audiobench-" + state.experiment + "-" + state.group + "-" + metric + ".csv";
     document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
   }
+  var comparisonMethods = [
+    { id: "before", label: "微调前" },
+    { id: "joint", label: "联合微调后" },
+    { id: "cdsd", label: "仅 CDSD 微调后" },
+    { id: "easycall", label: "仅 EasyCall 微调后" },
+    { id: "torgo", label: "仅 TORGO 微调后" },
+    { id: "uaspeech", label: "仅 UA-Speech 微调后" }
+  ];
+  function comparisonSource(model, method, category) {
+    var grouping = state.comparisonGroup === "overall" ? "cohort" : state.comparisonGroup;
+    var rows;
+    if (method.id === "before" || method.id === "joint") rows = ((data.combined[grouping] || {})[model] || []);
+    else {
+      var item = data.single[model + "/" + method.id];
+      rows = item && item.groups[grouping] ? item.groups[grouping] : [];
+    }
+    return rows.find(function (row) {
+      if (row.status !== "paired" || row.cohort !== state.comparisonCohort) return false;
+      return state.comparisonGroup === "overall" ? true : row.category === category;
+    }) || null;
+  }
+  function comparisonCategories(model) {
+    if (state.comparisonGroup === "overall") return [{ id: "overall", label: "整体" }];
+    var rows = ((data.combined[state.comparisonGroup] || {})[model] || []).filter(function (row) {
+      return row.status === "paired" && row.cohort === state.comparisonCohort;
+    });
+    return [{ id: "overall", label: "整体" }].concat(rows.map(function (row) {
+      return { id: row.category, label: row.category };
+    }));
+  }
+  function comparisonCell(model, method, category) {
+    var overall = category.id === "overall";
+    var savedGroup = state.comparisonGroup;
+    if (overall) state.comparisonGroup = "overall";
+    var row = comparisonSource(model, method, category.id);
+    state.comparisonGroup = savedGroup;
+    if (!row) return "—";
+    var kind = method.id === "before" ? "before" : "after";
+    return resultValue(row, kind, state.comparisonMetric) + "（" + int(row.n) + "）";
+  }
+  function renderComparison() {
+    pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
+    pressed($("#comparison-group-tabs"), "comparison-group", state.comparisonGroup);
+    pressed($("#comparison-metric-tabs"), "comparison-metric", state.comparisonMetric);
+    var cohortLabel = state.comparisonCohort === "disease" ? "疾病组" : "健康组";
+    var groupingLabel = state.comparisonGroup === "overall" ? "整体" : groupLabels[state.comparisonGroup];
+    $("#comparison-head").innerHTML = "<h1>统一对照 · " + esc(cohortLabel) + " · " + esc(groupingLabel) + "</h1><span>" + esc(metricMeta[state.comparisonMetric].label + " · 5 个模型 × 6 个训练口径") + "</span>";
+    $("#comparison-tables").innerHTML = data.models.map(function (model) {
+      var categories = comparisonCategories(model.id);
+      var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
+      var body = comparisonMethods.map(function (method) {
+        return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category) {
+          return "<td class='numeric'>" + comparisonCell(model.id, method, category) + "</td>";
+        }).join("") + "</tr>";
+      }).join("");
+      return "<section class='comparison-table-block' data-comparison-model='" + esc(model.id) + "' data-comparison-cohort='" + esc(state.comparisonCohort) + "'><h3>" + esc(model.label) + "</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div></section>";
+    }).join("");
+  }
+  function downloadComparison() {
+    var lines = [["cohort", "grouping", "model", "category", "method", "metric", "n", "value"]];
+    data.models.forEach(function (model) {
+      comparisonCategories(model.id).forEach(function (category) {
+        comparisonMethods.forEach(function (method) {
+          var savedGroup = state.comparisonGroup;
+          if (category.id === "overall") state.comparisonGroup = "overall";
+          var row = comparisonSource(model.id, method, category.id);
+          state.comparisonGroup = savedGroup;
+          var kind = method.id === "before" ? "before" : "after";
+          lines.push([state.comparisonCohort, savedGroup, model.id, category.label, method.id, state.comparisonMetric, row ? row.n : "", row && row[kind] ? row[kind][state.comparisonMetric] : ""]);
+        });
+      });
+    });
+    var blob = new Blob(["\ufeff" + lines.map(function (line) { return line.map(csvCell).join(","); }).join("\n")], { type: "text/csv;charset=utf-8" });
+    var url = URL.createObjectURL(blob), link = document.createElement("a");
+    link.href = url; link.download = "audiobench-comparison-" + state.comparisonCohort + "-" + state.comparisonGroup + "-" + state.comparisonMetric + ".csv";
+    document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
+  }
   function configRows(config) {
     var labels = { lora_rank: "LoRA rank", lora_alpha: "LoRA alpha", lora_dropout: "LoRA dropout", learning_rate: "学习率", weight_decay: "权重衰减", warmup_ratio: "warmup", lr_scheduler: "调度", effective_batch_size: "有效 batch", precision: "精度", attention: "Attention", max_grad_norm: "梯度裁剪", selection: "保存" };
     return Object.entries(config).map(function (entry) { return "<tr><td>" + esc(labels[entry[0]] || entry[0]) + "</td><td class='numeric'>" + esc(entry[1]) + "</td></tr>"; }).join("");
@@ -221,15 +298,19 @@
     $("#reference-count").textContent = data.methods.references.length + " 篇";
     $("#reference-list").innerHTML = data.methods.references.map(function (reference) { return "<article class='reference-item'><h3>" + esc(reference.title) + "</h3><p>" + esc(reference.authors) + " · " + esc(reference.venue) + " · " + reference.year + "</p><p>" + esc(note(reference)) + "</p><a href='" + esc(reference.stable_url) + "' target='_blank' rel='noopener'>原文</a></article>"; }).join("");
   }
-  function bind(root, key, callback) { $$("[data-" + key + "]", root).forEach(function (button) { button.onclick = function () { callback(button.dataset[key]); }; }); }
+  function bind(root, key, callback) { $$("[data-" + key + "]", root).forEach(function (button) { button.onclick = function () { callback(button.getAttribute("data-" + key)); }; }); }
   function init() {
     bind($("#experiment-tabs"), "experiment", function (value) { state.experiment = value; renderMatrix(); renderResults(); });
     bind($("#group-tabs"), "group", function (value) { state.group = value; renderResults(); });
     bind($("#metric-tabs"), "metric", function (value) { state.metric = value; renderResults(); });
     bind($("#method-tabs"), "method", function (value) { state.method = value; renderMethods(); });
+    bind($("#comparison-cohort-tabs"), "comparison-cohort", function (value) { state.comparisonCohort = value; renderComparison(); });
+    bind($("#comparison-group-tabs"), "comparison-group", function (value) { state.comparisonGroup = value; renderComparison(); });
+    bind($("#comparison-metric-tabs"), "comparison-metric", function (value) { state.comparisonMetric = value; renderComparison(); });
     window.onhashchange = function () { setPage(location.hash.slice(1)); };
     $("#download-current").onclick = downloadCurrent;
-    setPage(location.hash.slice(1) || "results"); renderCombinedModels(); renderMatrix(); renderResults(); renderMethods(); renderReferences();
+    $("#download-comparison").onclick = downloadComparison;
+    setPage(location.hash.slice(1) || "results"); renderCombinedModels(); renderMatrix(); renderResults(); renderComparison(); renderMethods(); renderReferences();
   }
   init();
 }());
