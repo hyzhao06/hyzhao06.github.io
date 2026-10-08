@@ -229,6 +229,22 @@
       change: Number.isFinite(change) ? change : null
     };
   }
+  function comparisonCellDataForGroup(model, method, category, grouping) {
+    var selectedGroup = category.id === "overall" ? "overall" : grouping;
+    var row = comparisonSource(model, method, category.id, selectedGroup);
+    var baseline = comparisonSource(model, comparisonMethods[0], category.id, selectedGroup);
+    var comparable = !!(row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256);
+    var kind = method.id === "before" ? "before" : "after";
+    var value = comparable && row[kind] ? Number(row[kind][state.comparisonMetric]) : null;
+    var change = comparable ? (method.id === "before" ? 0 : row.delta && Number(row.delta[state.comparisonMetric])) : null;
+    var text = !row ? "—" : !comparable ? "口径不一致" : resultValue(row, kind, state.comparisonMetric) + "（" + deltaText(change, state.comparisonMetric) + "）";
+    return {
+      text: text,
+      comparable: comparable,
+      value: Number.isFinite(value) ? value : null,
+      change: Number.isFinite(change) ? change : null
+    };
+  }
   function comparisonHeat(item, maximumChange) {
     if (!item.comparable) return { className: "heat-unavailable", style: "", opacity: "" };
     if (!item.change) return { className: "heat-neutral", style: "", opacity: "" };
@@ -252,10 +268,16 @@
     var legend = comparisonMethods.map(function (method, index) { return "<span><i class='series-" + index + "'></i>" + esc(method.label) + "</span>"; }).join("");
     return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4><div class='comparison-chart-legend'>" + legend + "</div></div><div class='comparison-vbar-groups' style='--category-count:" + categories.length + "'>" + groups + "</div></section>";
   }
-  function renderModelComparison() {
+  function modelComparisonCategories() {
+    var rows = ((data.combined.dataset || {})[data.models[0].id] || []).filter(function (row) {
+      return row.status === "paired" && row.cohort === state.comparisonCohort;
+    });
+    return [{ id: "overall", label: "整体" }].concat(rows.map(function (row) { return { id: row.category, label: row.category }; }));
+  }
+  function renderModelComparisonTable(datasetCategory) {
     var categories = data.models.map(function (model) { return { id: model.id, label: model.label }; });
     var matrix = comparisonMethods.map(function (method) {
-      return data.models.map(function (model) { return comparisonCellData(model.id, method, { id: "overall", label: "整体" }); });
+      return data.models.map(function (model) { return comparisonCellDataForGroup(model.id, method, datasetCategory, "dataset"); });
     });
     var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
     var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
@@ -265,7 +287,10 @@
         return "<td class='numeric comparison-heat " + heat.className + "'" + heat.style + ">" + item.text + "</td>";
       }).join("") + "</tr>";
     }).join("");
-    return "<section class='comparison-table-block' data-comparison-model='all-models' data-comparison-cohort='" + esc(state.comparisonCohort) + "'><h3>模型对照</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div>" + comparisonChart({ label: "模型对照" }, categories, matrix) + "</section>";
+    return "<section class='comparison-table-block' data-comparison-model='all-models' data-comparison-category='" + esc(datasetCategory.id) + "' data-comparison-cohort='" + esc(state.comparisonCohort) + "'><h3>模型对照 · " + esc(datasetCategory.label) + "</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div>" + comparisonChart({ label: "模型对照 · " + datasetCategory.label }, categories, matrix) + "</section>";
+  }
+  function renderModelComparison() {
+    return modelComparisonCategories().map(renderModelComparisonTable).join("");
   }
   function renderComparison() {
     pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
@@ -296,13 +321,16 @@
   function downloadComparison() {
     var lines = [["cohort", "grouping", "model", "category", "method", "metric", "n", "sample_ids_sha256", "before", "value", "delta"]];
     if (state.comparisonGroup === "model") {
-      data.models.forEach(function (model) {
-        comparisonMethods.forEach(function (method) {
-          var row = comparisonSource(model.id, method, "overall", "overall");
-          var baseline = comparisonSource(model.id, comparisonMethods[0], "overall", "overall");
-          var kind = method.id === "before" ? "before" : "after";
-          var comparable = row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256;
-          lines.push([state.comparisonCohort, state.comparisonGroup, model.id, "整体", method.id, state.comparisonMetric, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? (method.id === "before" ? 0 : row.delta[state.comparisonMetric]) : ""]);
+      modelComparisonCategories().forEach(function (category) {
+        data.models.forEach(function (model) {
+          comparisonMethods.forEach(function (method) {
+            var selectedGroup = category.id === "overall" ? "overall" : "dataset";
+            var row = comparisonSource(model.id, method, category.id, selectedGroup);
+            var baseline = comparisonSource(model.id, comparisonMethods[0], category.id, selectedGroup);
+            var kind = method.id === "before" ? "before" : "after";
+            var comparable = row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256;
+            lines.push([state.comparisonCohort, state.comparisonGroup, model.id, category.label, method.id, state.comparisonMetric, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? (method.id === "before" ? 0 : row.delta[state.comparisonMetric]) : ""]);
+          });
         });
       });
     } else {
