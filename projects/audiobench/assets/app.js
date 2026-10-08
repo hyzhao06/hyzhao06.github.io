@@ -47,8 +47,8 @@
   function pressed(root, key, value) {
     $$("[data-" + key + "]", root).forEach(function (button) { button.classList.toggle("active", button.getAttribute("data-" + key) === value); });
   }
-  function setPage(page) {
-    state.page = page === "methods" || page === "comparison" ? page : "results";
+  function setPage() {
+    state.page = "comparison";
     $$("[data-page]").forEach(function (p) { p.hidden = p.dataset.page !== state.page; });
     $$("[data-page-link]").forEach(function (a) { a.classList.toggle("active", a.dataset.pageLink === state.page); });
   }
@@ -214,6 +214,44 @@
     var change = method.id === "before" ? 0 : row.delta && row.delta[state.comparisonMetric];
     return resultValue(row, kind, state.comparisonMetric) + "（" + deltaText(change, state.comparisonMetric) + "）";
   }
+  function comparisonCellData(model, method, category) {
+    var selectedGroup = category.id === "overall" ? "overall" : state.comparisonGroup;
+    var row = comparisonSource(model, method, category.id, selectedGroup);
+    var baseline = comparisonSource(model, comparisonMethods[0], category.id, selectedGroup);
+    var comparable = !!(row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256);
+    var kind = method.id === "before" ? "before" : "after";
+    var value = comparable && row[kind] ? Number(row[kind][state.comparisonMetric]) : null;
+    var change = comparable ? (method.id === "before" ? 0 : row.delta && Number(row.delta[state.comparisonMetric])) : null;
+    return {
+      text: comparisonCell(model, method, category),
+      comparable: comparable,
+      value: Number.isFinite(value) ? value : null,
+      change: Number.isFinite(change) ? change : null
+    };
+  }
+  function comparisonHeat(item, maximumChange) {
+    if (!item.comparable) return { className: "heat-unavailable", style: "", opacity: "" };
+    if (!item.change) return { className: "heat-neutral", style: "", opacity: "" };
+    var magnitude = maximumChange ? Math.min(1, Math.abs(item.change) / maximumChange) : 0;
+    var opacity = (0.14 + 0.50 * Math.sqrt(magnitude)).toFixed(3);
+    return { className: "heat-" + deltaClass(item.change, state.comparisonMetric), style: " style='--heat-opacity:" + opacity + "'", opacity: opacity };
+  }
+  function comparisonChart(model, categories, matrix) {
+    var values = matrix.flat().map(function (item) { return item.value; }).filter(function (value) { return value != null; });
+    var maximumValue = Math.max.apply(Math, values.length ? values : [1]);
+    if (metricMeta[state.comparisonMetric].score) maximumValue = Math.max(1, maximumValue);
+    var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
+    var groups = categories.map(function (category, categoryIndex) {
+      var bars = comparisonMethods.map(function (method, methodIndex) {
+        var item = matrix[methodIndex][categoryIndex], heat = comparisonHeat(item, maximumChange);
+        var width = item.value == null ? 0 : Math.max(2, item.value / maximumValue * 100);
+        var chartStyle = " style='width:" + width.toFixed(2) + "%" + (heat.opacity ? ";--heat-opacity:" + heat.opacity : "") + "'";
+        return "<div class='comparison-bar-row'><span class='comparison-bar-label'>" + esc(method.label) + "</span><div class='comparison-bar-track'><i class='comparison-bar " + heat.className + "'" + chartStyle + "></i></div><span class='comparison-bar-value'>" + esc(item.text) + "</span></div>";
+      }).join("");
+      return "<article class='comparison-chart-category'><h4>" + esc(category.label) + "</h4>" + bars + "</article>";
+    }).join("");
+    return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4><span>横向长度为指标值，颜色与表格热力图一致</span></div><div class='comparison-chart-grid'>" + groups + "</div></section>";
+  }
   function renderComparison() {
     pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
     pressed($("#comparison-group-tabs"), "comparison-group", state.comparisonGroup);
@@ -224,12 +262,16 @@
     $("#comparison-tables").innerHTML = data.models.map(function (model) {
       var categories = comparisonCategories(model.id);
       var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
+      var matrix = comparisonMethods.map(function (method) { return categories.map(function (category) { return comparisonCellData(model.id, method, category); }); });
+      var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
       var body = comparisonMethods.map(function (method) {
-        return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category) {
-          return "<td class='numeric'>" + comparisonCell(model.id, method, category) + "</td>";
+        var methodIndex = comparisonMethods.indexOf(method);
+        return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category, categoryIndex) {
+          var item = matrix[methodIndex][categoryIndex], heat = comparisonHeat(item, maximumChange);
+          return "<td class='numeric comparison-heat " + heat.className + "'" + heat.style + ">" + item.text + "</td>";
         }).join("") + "</tr>";
       }).join("");
-      return "<section class='comparison-table-block' data-comparison-model='" + esc(model.id) + "' data-comparison-cohort='" + esc(state.comparisonCohort) + "'><h3>" + esc(model.label) + "</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div></section>";
+      return "<section class='comparison-table-block' data-comparison-model='" + esc(model.id) + "' data-comparison-cohort='" + esc(state.comparisonCohort) + "'><h3>" + esc(model.label) + "</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div>" + comparisonChart(model, categories, matrix) + "</section>";
     }).join("");
   }
   function downloadComparison() {
@@ -301,17 +343,12 @@
   }
   function bind(root, key, callback) { $$("[data-" + key + "]", root).forEach(function (button) { button.onclick = function () { callback(button.getAttribute("data-" + key)); }; }); }
   function init() {
-    bind($("#experiment-tabs"), "experiment", function (value) { state.experiment = value; renderMatrix(); renderResults(); });
-    bind($("#group-tabs"), "group", function (value) { state.group = value; renderResults(); });
-    bind($("#metric-tabs"), "metric", function (value) { state.metric = value; renderResults(); });
-    bind($("#method-tabs"), "method", function (value) { state.method = value; renderMethods(); });
     bind($("#comparison-cohort-tabs"), "comparison-cohort", function (value) { state.comparisonCohort = value; renderComparison(); });
     bind($("#comparison-group-tabs"), "comparison-group", function (value) { state.comparisonGroup = value; renderComparison(); });
     bind($("#comparison-metric-tabs"), "comparison-metric", function (value) { state.comparisonMetric = value; renderComparison(); });
-    window.onhashchange = function () { setPage(location.hash.slice(1)); };
-    $("#download-current").onclick = downloadCurrent;
+    window.onhashchange = setPage;
     $("#download-comparison").onclick = downloadComparison;
-    setPage(location.hash.slice(1) || "results"); renderCombinedModels(); renderMatrix(); renderResults(); renderComparison(); renderMethods(); renderReferences();
+    setPage(); renderComparison();
   }
   init();
 }());
