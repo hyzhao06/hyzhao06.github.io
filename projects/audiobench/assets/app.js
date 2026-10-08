@@ -252,13 +252,32 @@
     var legend = comparisonMethods.map(function (method, index) { return "<span><i class='series-" + index + "'></i>" + esc(method.label) + "</span>"; }).join("");
     return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4><div class='comparison-chart-legend'>" + legend + "</div></div><div class='comparison-vbar-groups' style='--category-count:" + categories.length + "'>" + groups + "</div></section>";
   }
+  function renderModelComparison() {
+    var categories = data.models.map(function (model) { return { id: model.id, label: model.label }; });
+    var matrix = comparisonMethods.map(function (method) {
+      return data.models.map(function (model) { return comparisonCellData(model.id, method, { id: "overall", label: "整体" }); });
+    });
+    var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
+    var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
+    var body = comparisonMethods.map(function (method, methodIndex) {
+      return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category, categoryIndex) {
+        var item = matrix[methodIndex][categoryIndex], heat = comparisonHeat(item, maximumChange);
+        return "<td class='numeric comparison-heat " + heat.className + "'" + heat.style + ">" + item.text + "</td>";
+      }).join("") + "</tr>";
+    }).join("");
+    return "<section class='comparison-table-block' data-comparison-model='all-models' data-comparison-cohort='" + esc(state.comparisonCohort) + "'><h3>模型对照</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div>" + comparisonChart({ label: "模型对照" }, categories, matrix) + "</section>";
+  }
   function renderComparison() {
     pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
     pressed($("#comparison-group-tabs"), "comparison-group", state.comparisonGroup);
     pressed($("#comparison-metric-tabs"), "comparison-metric", state.comparisonMetric);
     var cohortLabel = state.comparisonCohort === "disease" ? "疾病组" : "健康组";
-    var groupingLabel = state.comparisonGroup === "overall" ? "整体" : groupLabels[state.comparisonGroup];
+    var groupingLabel = state.comparisonGroup === "overall" ? "整体" : state.comparisonGroup === "model" ? "模型" : groupLabels[state.comparisonGroup];
     $("#comparison-head").innerHTML = "<h1>统一对照 · " + esc(cohortLabel) + " · " + esc(groupingLabel) + "</h1>";
+    if (state.comparisonGroup === "model") {
+      $("#comparison-tables").innerHTML = renderModelComparison();
+      return;
+    }
     $("#comparison-tables").innerHTML = data.models.map(function (model) {
       var categories = comparisonCategories(model.id);
       var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
@@ -276,6 +295,17 @@
   }
   function downloadComparison() {
     var lines = [["cohort", "grouping", "model", "category", "method", "metric", "n", "sample_ids_sha256", "before", "value", "delta"]];
+    if (state.comparisonGroup === "model") {
+      data.models.forEach(function (model) {
+        comparisonMethods.forEach(function (method) {
+          var row = comparisonSource(model.id, method, "overall", "overall");
+          var baseline = comparisonSource(model.id, comparisonMethods[0], "overall", "overall");
+          var kind = method.id === "before" ? "before" : "after";
+          var comparable = row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256;
+          lines.push([state.comparisonCohort, state.comparisonGroup, model.id, "整体", method.id, state.comparisonMetric, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? (method.id === "before" ? 0 : row.delta[state.comparisonMetric]) : ""]);
+        });
+      });
+    } else {
     data.models.forEach(function (model) {
       comparisonCategories(model.id).forEach(function (category) {
         comparisonMethods.forEach(function (method) {
@@ -288,6 +318,7 @@
         });
       });
     });
+    }
     var blob = new Blob(["\ufeff" + lines.map(function (line) { return line.map(csvCell).join(","); }).join("\n")], { type: "text/csv;charset=utf-8" });
     var url = URL.createObjectURL(blob), link = document.createElement("a");
     link.href = url; link.download = "audiobench-comparison-" + state.comparisonCohort + "-" + state.comparisonGroup + "-" + state.comparisonMetric + ".csv";
