@@ -18,7 +18,7 @@
   var modelLabels = Object.fromEntries(data.models.map(function (x) { return [x.id, x.label]; }));
   var datasetLabels = Object.fromEntries(data.datasets.map(function (x) { return [x.id, x.label]; }));
   var groupLabels = { cohort: "疾病 / 健康", label: "标签", model: "模型", dataset: "数据集", severity: "严重程度" };
-  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer" };
+  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer", comparisonDelta: "absolute", comparisonHeat: "table" };
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
@@ -204,6 +204,23 @@
       return { id: row.category, label: row.category };
     }));
   }
+  function comparisonChange(row, baseline, method) {
+    if (method.id === "before") return 0;
+    var absolute = row.delta && Number(row.delta[state.comparisonMetric]);
+    if (!Number.isFinite(absolute)) return null;
+    if (state.comparisonDelta === "absolute") return absolute;
+    var before = baseline.before && Number(baseline.before[state.comparisonMetric]);
+    var after = row.after && Number(row.after[state.comparisonMetric]);
+    if (!Number.isFinite(before) || !Number.isFinite(after) || before === 0) return null;
+    var relative = (after - before) / Math.abs(before);
+    return metricMeta[state.comparisonMetric].direction === "lower" ? -relative : relative;
+  }
+  function comparisonDeltaText(value) {
+    if (value == null || Number.isNaN(Number(value))) return state.comparisonDelta === "relative" ? "不可计算" : "—";
+    if (state.comparisonDelta === "absolute") return deltaText(value, state.comparisonMetric);
+    var n = Number(value), sign = n > 0 ? "+" : n < 0 ? "−" : "±";
+    return sign + (Math.abs(n) * 100).toFixed(2) + "%";
+  }
   function comparisonCell(model, method, category) {
     var selectedGroup = category.id === "overall" ? "overall" : state.comparisonGroup;
     var row = comparisonSource(model, method, category.id, selectedGroup);
@@ -211,8 +228,8 @@
     var baseline = comparisonSource(model, comparisonMethods[0], category.id, selectedGroup);
     if (!baseline || row.n !== baseline.n || row.sample_ids_sha256 !== baseline.sample_ids_sha256) return "口径不一致";
     var kind = method.id === "before" ? "before" : "after";
-    var change = method.id === "before" ? 0 : row.delta && row.delta[state.comparisonMetric];
-    return resultValue(row, kind, state.comparisonMetric) + "（" + deltaText(change, state.comparisonMetric) + "）";
+    var change = comparisonChange(row, baseline, method);
+    return resultValue(row, kind, state.comparisonMetric) + "（" + comparisonDeltaText(change) + "）";
   }
   function comparisonCellData(model, method, category) {
     var selectedGroup = category.id === "overall" ? "overall" : state.comparisonGroup;
@@ -221,7 +238,7 @@
     var comparable = !!(row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256);
     var kind = method.id === "before" ? "before" : "after";
     var value = comparable && row[kind] ? Number(row[kind][state.comparisonMetric]) : null;
-    var change = comparable ? (method.id === "before" ? 0 : row.delta && Number(row.delta[state.comparisonMetric])) : null;
+    var change = comparable ? comparisonChange(row, baseline, method) : null;
     return {
       text: comparisonCell(model, method, category),
       comparable: comparable,
@@ -236,8 +253,8 @@
     var comparable = !!(row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256);
     var kind = method.id === "before" ? "before" : "after";
     var value = comparable && row[kind] ? Number(row[kind][state.comparisonMetric]) : null;
-    var change = comparable ? (method.id === "before" ? 0 : row.delta && Number(row.delta[state.comparisonMetric])) : null;
-    var text = !row ? "—" : !comparable ? "口径不一致" : resultValue(row, kind, state.comparisonMetric) + "（" + deltaText(change, state.comparisonMetric) + "）";
+    var change = comparable ? comparisonChange(row, baseline, method) : null;
+    var text = !row ? "—" : !comparable ? "口径不一致" : resultValue(row, kind, state.comparisonMetric) + "（" + comparisonDeltaText(change) + "）";
     return {
       text: text,
       comparable: comparable,
@@ -247,10 +264,32 @@
   }
   function comparisonHeat(item, maximumChange) {
     if (!item.comparable) return { className: "heat-unavailable", style: "", opacity: "" };
+    if (item.change == null) return { className: "heat-unavailable", style: "", opacity: "" };
     if (!item.change) return { className: "heat-neutral", style: "", opacity: "" };
     var magnitude = maximumChange ? Math.min(1, Math.abs(item.change) / maximumChange) : 0;
     var opacity = (0.14 + 0.50 * Math.sqrt(magnitude)).toFixed(3);
-    return { className: "heat-" + deltaClass(item.change, state.comparisonMetric), style: " style='--heat-opacity:" + opacity + "'", opacity: opacity };
+    var className = state.comparisonDelta === "relative" ? (item.change > 0 ? "good" : "bad") : deltaClass(item.change, state.comparisonMetric);
+    return { className: "heat-" + className, style: " style='--heat-opacity:" + opacity + "'", opacity: opacity };
+  }
+  function comparisonMaximumChange(matrix) {
+    return Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
+  }
+  function comparisonPageMaximumChange() {
+    var all = [];
+    if (state.comparisonGroup === "model") {
+      modelComparisonCategories().forEach(function (datasetCategory) {
+        comparisonMethods.forEach(function (method) {
+          data.models.forEach(function (model) { all.push(comparisonCellDataForGroup(model.id, method, datasetCategory, "dataset")); });
+        });
+      });
+    } else {
+      data.models.forEach(function (model) {
+        comparisonCategories(model.id).forEach(function (category) {
+          comparisonMethods.forEach(function (method) { all.push(comparisonCellData(model.id, method, category)); });
+        });
+      });
+    }
+    return Math.max.apply(Math, all.map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
   }
   function comparisonChart(model, categories, matrix) {
     var values = matrix.flat().map(function (item) { return item.value; }).filter(function (value) { return value != null; });
@@ -279,7 +318,7 @@
     var matrix = comparisonMethods.map(function (method) {
       return data.models.map(function (model) { return comparisonCellDataForGroup(model.id, method, datasetCategory, "dataset"); });
     });
-    var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
+    var maximumChange = state.comparisonHeat === "page" ? comparisonPageMaximumChange() : comparisonMaximumChange(matrix);
     var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
     var body = comparisonMethods.map(function (method, methodIndex) {
       return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category, categoryIndex) {
@@ -296,6 +335,8 @@
     pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
     pressed($("#comparison-group-tabs"), "comparison-group", state.comparisonGroup);
     pressed($("#comparison-metric-tabs"), "comparison-metric", state.comparisonMetric);
+    pressed($("#comparison-delta-tabs"), "comparison-delta", state.comparisonDelta);
+    pressed($("#comparison-heat-tabs"), "comparison-heat", state.comparisonHeat);
     var cohortLabel = state.comparisonCohort === "disease" ? "疾病组" : "健康组";
     var groupingLabel = state.comparisonGroup === "overall" ? "整体" : state.comparisonGroup === "model" ? "模型" : groupLabels[state.comparisonGroup];
     $("#comparison-head").innerHTML = "<h1>统一对照 · " + esc(cohortLabel) + " · " + esc(groupingLabel) + "</h1>";
@@ -307,7 +348,7 @@
       var categories = comparisonCategories(model.id);
       var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
       var matrix = comparisonMethods.map(function (method) { return categories.map(function (category) { return comparisonCellData(model.id, method, category); }); });
-      var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
+      var maximumChange = state.comparisonHeat === "page" ? comparisonPageMaximumChange() : comparisonMaximumChange(matrix);
       var body = comparisonMethods.map(function (method) {
         var methodIndex = comparisonMethods.indexOf(method);
         return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category, categoryIndex) {
@@ -319,7 +360,7 @@
     }).join("");
   }
   function downloadComparison() {
-    var lines = [["cohort", "grouping", "model", "category", "method", "metric", "n", "sample_ids_sha256", "before", "value", "delta"]];
+    var lines = [["cohort", "grouping", "model", "category", "method", "metric", "delta_mode", "n", "sample_ids_sha256", "before", "value", "delta"]];
     if (state.comparisonGroup === "model") {
       modelComparisonCategories().forEach(function (category) {
         data.models.forEach(function (model) {
@@ -329,7 +370,7 @@
             var baseline = comparisonSource(model.id, comparisonMethods[0], category.id, selectedGroup);
             var kind = method.id === "before" ? "before" : "after";
             var comparable = row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256;
-            lines.push([state.comparisonCohort, state.comparisonGroup, model.id, category.label, method.id, state.comparisonMetric, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? (method.id === "before" ? 0 : row.delta[state.comparisonMetric]) : ""]);
+            lines.push([state.comparisonCohort, state.comparisonGroup, model.id, category.label, method.id, state.comparisonMetric, state.comparisonDelta, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? comparisonChange(row, baseline, method) : ""]);
           });
         });
       });
@@ -342,7 +383,7 @@
           var baseline = comparisonSource(model.id, comparisonMethods[0], category.id, selectedGroup);
           var kind = method.id === "before" ? "before" : "after";
           var comparable = row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256;
-          lines.push([state.comparisonCohort, state.comparisonGroup, model.id, category.label, method.id, state.comparisonMetric, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? (method.id === "before" ? 0 : row.delta[state.comparisonMetric]) : ""]);
+          lines.push([state.comparisonCohort, state.comparisonGroup, model.id, category.label, method.id, state.comparisonMetric, state.comparisonDelta, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? baseline.before[state.comparisonMetric] : "", comparable ? row[kind][state.comparisonMetric] : "", comparable ? comparisonChange(row, baseline, method) : ""]);
         });
       });
     });
@@ -405,6 +446,8 @@
     bind($("#comparison-cohort-tabs"), "comparison-cohort", function (value) { state.comparisonCohort = value; renderComparison(); });
     bind($("#comparison-group-tabs"), "comparison-group", function (value) { state.comparisonGroup = value; renderComparison(); });
     bind($("#comparison-metric-tabs"), "comparison-metric", function (value) { state.comparisonMetric = value; renderComparison(); });
+    bind($("#comparison-delta-tabs"), "comparison-delta", function (value) { state.comparisonDelta = value; renderComparison(); });
+    bind($("#comparison-heat-tabs"), "comparison-heat", function (value) { state.comparisonHeat = value; renderComparison(); });
     window.onhashchange = setPage;
     $("#download-comparison").onclick = downloadComparison;
     setPage(); renderComparison();
