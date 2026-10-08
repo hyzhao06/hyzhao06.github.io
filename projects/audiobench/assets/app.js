@@ -258,7 +258,7 @@
     pressed($("#comparison-metric-tabs"), "comparison-metric", state.comparisonMetric);
     var cohortLabel = state.comparisonCohort === "disease" ? "疾病组" : "健康组";
     var groupingLabel = state.comparisonGroup === "overall" ? "整体" : groupLabels[state.comparisonGroup];
-    $("#comparison-head").innerHTML = "<h1>统一对照 · " + esc(cohortLabel) + " · " + esc(groupingLabel) + "</h1><span>" + esc(metricMeta[state.comparisonMetric].label + " · 5 个模型 × 6 个训练口径") + "</span>";
+    $("#comparison-head").innerHTML = "<h1>统一对照 · " + esc(cohortLabel) + " · " + esc(groupingLabel) + "</h1>";
     $("#comparison-tables").innerHTML = data.models.map(function (model) {
       var categories = comparisonCategories(model.id);
       var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
