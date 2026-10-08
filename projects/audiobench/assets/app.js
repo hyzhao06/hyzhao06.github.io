@@ -18,7 +18,7 @@
   var modelLabels = Object.fromEntries(data.models.map(function (x) { return [x.id, x.label]; }));
   var datasetLabels = Object.fromEntries(data.datasets.map(function (x) { return [x.id, x.label]; }));
   var groupLabels = { cohort: "疾病 / 健康", label: "标签", model: "模型", dataset: "数据集", severity: "严重程度" };
-  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer", comparisonDelta: "absolute", comparisonHeat: "table" };
+  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer", comparisonDelta: "absolute" };
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
@@ -274,23 +274,6 @@
   function comparisonMaximumChange(matrix) {
     return Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
   }
-  function comparisonPageMaximumChange() {
-    var all = [];
-    if (state.comparisonGroup === "model") {
-      modelComparisonCategories().forEach(function (datasetCategory) {
-        comparisonMethods.forEach(function (method) {
-          data.models.forEach(function (model) { all.push(comparisonCellDataForGroup(model.id, method, datasetCategory, "dataset")); });
-        });
-      });
-    } else {
-      data.models.forEach(function (model) {
-        comparisonCategories(model.id).forEach(function (category) {
-          comparisonMethods.forEach(function (method) { all.push(comparisonCellData(model.id, method, category)); });
-        });
-      });
-    }
-    return Math.max.apply(Math, all.map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
-  }
   function comparisonChart(model, categories, matrix) {
     var values = matrix.flat().map(function (item) { return item.value; }).filter(function (value) { return value != null; });
     var maximumValue = Math.max.apply(Math, values.length ? values : [1]);
@@ -318,7 +301,7 @@
     var matrix = comparisonMethods.map(function (method) {
       return data.models.map(function (model) { return comparisonCellDataForGroup(model.id, method, datasetCategory, "dataset"); });
     });
-    var maximumChange = state.comparisonHeat === "page" ? comparisonPageMaximumChange() : comparisonMaximumChange(matrix);
+    var maximumChange = comparisonMaximumChange(matrix);
     var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
     var body = comparisonMethods.map(function (method, methodIndex) {
       return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category, categoryIndex) {
@@ -336,7 +319,6 @@
     pressed($("#comparison-group-tabs"), "comparison-group", state.comparisonGroup);
     pressed($("#comparison-metric-tabs"), "comparison-metric", state.comparisonMetric);
     pressed($("#comparison-delta-tabs"), "comparison-delta", state.comparisonDelta);
-    pressed($("#comparison-heat-tabs"), "comparison-heat", state.comparisonHeat);
     var cohortLabel = state.comparisonCohort === "disease" ? "疾病组" : "健康组";
     var groupingLabel = state.comparisonGroup === "overall" ? "整体" : state.comparisonGroup === "model" ? "模型" : groupLabels[state.comparisonGroup];
     $("#comparison-head").innerHTML = "<h1>统一对照 · " + esc(cohortLabel) + " · " + esc(groupingLabel) + "</h1>";
@@ -348,7 +330,7 @@
       var categories = comparisonCategories(model.id);
       var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
       var matrix = comparisonMethods.map(function (method) { return categories.map(function (category) { return comparisonCellData(model.id, method, category); }); });
-      var maximumChange = state.comparisonHeat === "page" ? comparisonPageMaximumChange() : comparisonMaximumChange(matrix);
+      var maximumChange = comparisonMaximumChange(matrix);
       var body = comparisonMethods.map(function (method) {
         var methodIndex = comparisonMethods.indexOf(method);
         return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category, categoryIndex) {
@@ -447,7 +429,6 @@
     bind($("#comparison-group-tabs"), "comparison-group", function (value) { state.comparisonGroup = value; renderComparison(); });
     bind($("#comparison-metric-tabs"), "comparison-metric", function (value) { state.comparisonMetric = value; renderComparison(); });
     bind($("#comparison-delta-tabs"), "comparison-delta", function (value) { state.comparisonDelta = value; renderComparison(); });
-    bind($("#comparison-heat-tabs"), "comparison-heat", function (value) { state.comparisonHeat = value; renderComparison(); });
     window.onhashchange = setPage;
     $("#download-comparison").onclick = downloadComparison;
     setPage(); renderComparison();
