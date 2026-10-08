@@ -240,18 +240,17 @@
     var values = matrix.flat().map(function (item) { return item.value; }).filter(function (value) { return value != null; });
     var maximumValue = Math.max.apply(Math, values.length ? values : [1]);
     if (metricMeta[state.comparisonMetric].score) maximumValue = Math.max(1, maximumValue);
-    var maximumChange = Math.max.apply(Math, matrix.flat().map(function (item) { return Math.abs(item.change || 0); }).concat([0]));
-    var groups = comparisonMethods.map(function (method, methodIndex) {
-      var bars = categories.map(function (category, categoryIndex) {
-        var item = matrix[methodIndex][categoryIndex], heat = comparisonHeat(item, maximumChange);
+    var groups = categories.map(function (category, categoryIndex) {
+      var bars = comparisonMethods.map(function (method, methodIndex) {
+        var item = matrix[methodIndex][categoryIndex];
         var height = item.value == null ? 0 : Math.max(2, item.value / maximumValue * 100);
-        var chartStyle = " style='height:" + height.toFixed(2) + "%" + (heat.opacity ? ";--heat-opacity:" + heat.opacity : "") + "'";
-        var value = item.value == null ? "—" : val(item.value, state.comparisonMetric);
-        return "<div class='comparison-vbar-group' data-comparison-cell='" + esc(item.text) + "'><span class='comparison-vbar-value'>" + esc(value) + "</span><div class='comparison-vbar-area'><i class='comparison-vbar " + heat.className + "'" + chartStyle + "></i></div><span class='comparison-vbar-label'>" + esc(category.label) + "</span></div>";
+        var chartStyle = " style='height:" + height.toFixed(2) + "%'";
+        return "<i class='comparison-vbar series-" + methodIndex + "'" + chartStyle + " title='" + esc(method.label + " · " + category.label + "：" + item.text) + "' data-comparison-cell='" + esc(item.text) + "'></i>";
       }).join("");
-      return "<article class='comparison-chart-method'><h4>" + esc(method.label) + "</h4><div class='comparison-chart-scroll'><div class='comparison-vbar-grid' style='--bar-count:" + categories.length + "'>" + bars + "</div></div></article>";
+      return "<div class='comparison-vbar-category'><div class='comparison-vbar-area'>" + bars + "</div><span class='comparison-vbar-label'>" + esc(category.label) + "</span></div>";
     }).join("");
-    return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4></div><div class='comparison-chart-list'>" + groups + "</div></section>";
+    var legend = comparisonMethods.map(function (method, index) { return "<span><i class='series-" + index + "'></i>" + esc(method.label) + "</span>"; }).join("");
+    return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4><div class='comparison-chart-legend'>" + legend + "</div></div><div class='comparison-vbar-groups' style='--category-count:" + categories.length + "'>" + groups + "</div></section>";
   }
   function renderComparison() {
     pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
