@@ -244,13 +244,14 @@
     var groups = categories.map(function (category, categoryIndex) {
       var bars = comparisonMethods.map(function (method, methodIndex) {
         var item = matrix[methodIndex][categoryIndex], heat = comparisonHeat(item, maximumChange);
-        var width = item.value == null ? 0 : Math.max(2, item.value / maximumValue * 100);
-        var chartStyle = " style='width:" + width.toFixed(2) + "%" + (heat.opacity ? ";--heat-opacity:" + heat.opacity : "") + "'";
-        return "<div class='comparison-bar-row'><span class='comparison-bar-label'>" + esc(method.label) + "</span><div class='comparison-bar-track'><i class='comparison-bar " + heat.className + "'" + chartStyle + "></i></div><span class='comparison-bar-value'>" + esc(item.text) + "</span></div>";
+        var height = item.value == null ? 0 : Math.max(2, item.value / maximumValue * 100);
+        var chartStyle = " style='height:" + height.toFixed(2) + "%" + (heat.opacity ? ";--heat-opacity:" + heat.opacity : "") + "'";
+        var value = item.value == null ? "—" : val(item.value, state.comparisonMetric);
+        return "<div class='comparison-vbar-group' data-comparison-cell='" + esc(item.text) + "'><span class='comparison-vbar-value'>" + esc(value) + "</span><div class='comparison-vbar-area'><i class='comparison-vbar " + heat.className + "'" + chartStyle + "></i></div><span class='comparison-vbar-label'>" + esc(method.label) + "</span></div>";
       }).join("");
       return "<article class='comparison-chart-category'><h4>" + esc(category.label) + "</h4>" + bars + "</article>";
     }).join("");
-    return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4><span>横向长度为指标值，颜色与表格热力图一致</span></div><div class='comparison-chart-grid'>" + groups + "</div></section>";
+    return "<section class='comparison-chart' aria-label='" + esc(model.label + " " + metricMeta[state.comparisonMetric].label + " 柱状图") + "'><div class='comparison-chart-heading'><h4>" + esc(metricMeta[state.comparisonMetric].label) + " 柱状图</h4></div><div class='comparison-chart-grid'>" + groups + "</div></section>";
   }
   function renderComparison() {
     pressed($("#comparison-cohort-tabs"), "comparison-cohort", state.comparisonCohort);
