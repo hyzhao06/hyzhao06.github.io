@@ -20,45 +20,31 @@
   <main>
     <header class="page-intro reveal">
       <div>
-        <div class="eyebrow">Agent / Route · Act · Verify</div>
-        <h1>把模型变成可信工具</h1>
-        <p>MAS4Health Agent 不再训练一个分割网络。它负责发现、选择和执行已有模型，并把每次调用变成可验证、可追溯的结构化记录。</p>
+        <h1>Agent 实现</h1>
+        <p>统一路由三个分割模型，并检查每次调用的输出和记录。</p>
       </div>
     </header>
 
-    <div class="kpi-grid reveal" style="animation-delay:.06s" aria-label="Agent 实现概览">
-      <div class="kpi primary"><strong>4</strong><span>3 个分割模型 + 1 个数据库工具</span></div>
-      <div class="kpi"><strong>2</strong><span>CLI / MCP 两种入口，共用同一逻辑</span></div>
-      <div class="kpi"><strong>12/12</strong><span>CPU、协议与子进程测试通过</span></div>
-      <div class="kpi"><strong>3/3</strong><span>真实 GPU 端到端 smoke 通过</span></div>
-    </div>
-
     <section class="section" aria-labelledby="reference-title">
       <div class="section-head">
-        <div class="section-index">01 / 参考</div>
-        <div>
-          <h2 id="reference-title">ScienceBuddy 如何组织科学 Agent</h2>
-          <p>它把“怎样做事”放在 host-owned harness 中：主机控制工具、预算、执行与验证，Agent 在观察结果后继续决策。研究版本还交替优化 harness 与任务模型，形成双重递归。</p>
-        </div>
+        <h2 id="reference-title">ScienceBuddy</h2>
       </div>
 
       <div class="loop-grid">
-        <article class="panel copy-card">
-          <h3>参考执行骨架</h3>
-          <p>ScienceBuddy 的工作区把对话、科学工具、执行记录和分析产物放在同一任务上下文中。公开仓库中的 Simple-SciBuddy 进一步把 harness、execution broker、verifier 与训练适配层分开。</p>
-          <p>我们沿用三点：host 掌握执行权；原始 observation 和最终回答分开保存；trajectory 与 artifact 随时可以检查。</p>
-          <p>公开代码是简化研究实现，不包含完整产品后端，因此这里不声称复刻其产品。</p>
+        <article class="copy-card">
+          <p>ScienceBuddy 把对话、工具调用、执行记录和分析结果放在同一个任务中。主机负责控制工具权限、调用预算和验证流程，Agent 根据每次调用返回的内容决定下一步。</p>
+          <p>公开仓库中的 Simple-SciBuddy 将 harness、execution broker、verifier 和训练接口分开。原始返回值、整理后的回答、执行轨迹和产物也分别保存，因此一次任务可以回看和复查。</p>
+          <p>仓库提供的是研究实现，不包含 ScienceBuddy 完整产品的后端代码。</p>
           <a class="source-link" href="https://github.com/Gen-Verse/ScienceBuddy" target="_blank" rel="noreferrer">查看 ScienceBuddy 源码 <span aria-hidden="true">↗</span></a>
         </article>
 
         <div class="loop-visual" role="img" aria-label="ScienceBuddy 的闭环示意">
-          <div class="loop-label">HOST-OWNED SCIENTIFIC LOOP</div>
           <div class="loop-track">
-            <div class="loop-node accent"><b>01 · Request</b><span>问题、论文、数据或科学图像</span></div>
-            <div class="loop-node"><b>02 · Harness</b><span>组织步骤，约束预算与调用</span></div>
-            <div class="loop-arrow" aria-hidden="true">↓ feedback / trajectory ↓</div>
-            <div class="loop-node"><b>04 · Verify</b><span>检查结果、证据与 artifacts</span></div>
-            <div class="loop-node"><b>03 · Tools</b><span>检索、计算、分析与执行</span></div>
+            <div class="loop-node accent"><b>请求</b><span>问题、论文、数据或科学图像</span></div>
+            <div class="loop-node"><b>执行框架</b><span>安排步骤，限制预算和调用</span></div>
+            <div class="loop-arrow" aria-hidden="true">返回结果并记录轨迹</div>
+            <div class="loop-node"><b>校验</b><span>检查结果、证据和产物</span></div>
+            <div class="loop-node"><b>工具</b><span>完成检索、计算和分析</span></div>
           </div>
         </div>
       </div>
@@ -66,32 +52,13 @@
 
     <section class="section" aria-labelledby="implementation-title">
       <div class="section-head">
-        <div class="section-index">02 / 实现</div>
-        <div>
-          <h2 id="implementation-title">面向医学影像的改造</h2>
-          <p>我们保留可控执行与可检查轨迹，同时收紧工具边界：请求必须结构化，路由必须可解释，输出必须通过 NIfTI 与哈希校验。</p>
-        </div>
+        <h2 id="implementation-title">MAS4Health Agent</h2>
       </div>
 
-      <div class="compare-grid">
-        <article class="panel compare-card">
-          <h3>沿用 <span>FROM SCIENCEBUDDY</span></h3>
-          <ul class="compare-list">
-            <li><i>✓</i><span>Host-owned loop：route → act → observe → stop</span></li>
-            <li><i>✓</i><span>工具执行与上层决策分离</span></li>
-            <li><i>✓</i><span>保留原始 observation、trajectory 与 artifacts</span></li>
-            <li><i>✓</i><span>预算、失败和停止原因由 host 明确控制</span></li>
-          </ul>
-        </article>
-        <article class="panel compare-card">
-          <h3>改造 <span>FOR MEDICAL IMAGING</span></h3>
-          <ul class="compare-list">
-            <li><i>→</i><span>确定性 capability router，不让 LLM 凭模型名猜路由</span></li>
-            <li><i>→</i><span>只执行注册表 argv，禁止任意 shell / Python</span></li>
-            <li><i>→</i><span>推理阶段隔离 ground truth，并强制记录 false</span></li>
-            <li><i>→</i><span>复用冻结 baseline，校验几何、字节数与 SHA-256</span></li>
-          </ul>
-        </article>
+      <div class="prose-wide">
+        <p>MAS4Health 沿用了 host-owned loop：主机负责执行、预算、失败状态和停止条件，模型工具与上层决策彼此分开，原始 observation、trajectory 和 artifacts 都会留在 trace 中。</p>
+        <p><code>AgentRequest</code> 用数据集、病例、模态、目标和提示词描述一次请求。Router 按这些字段排除不兼容的模型，再使用已经完成的基准结果排序。模型候选完全由结构化规则产生；Runtime 也只执行注册表中预先定义的 argv。</p>
+        <p>选定工具后，Runtime 通过 JSON 子进程调用原有 baseline。推理过程不能读取 ground truth；返回的 NIfTI 需要通过几何、文件大小和 SHA-256 校验，成功或失败都会写入 trace。CLI 和 MCP 共用同一套 AgentLoop。</p>
       </div>
 
       <div class="architecture" aria-label="MAS4Health Agent 架构">
@@ -107,49 +74,21 @@
 
     <section class="section" aria-labelledby="tests-title">
       <div class="section-head">
-        <div class="section-index">03 / 实测</div>
-        <div>
-          <h2 id="tests-title">三个模型的端到端测试</h2>
-          <p>每个 smoke 都从已安装 Agent CLI 进入，经过 capability router、JSON 子进程、模型专用环境和 artifact validator。结果只说明工具能够执行，模型精度仍以完整基准为准。</p>
-        </div>
+        <h2 id="tests-title">测试结果</h2>
       </div>
 
-      <div class="smoke-grid">
-        <article class="panel smoke-card">
-          <div class="smoke-card-head"><h3>VoxTell</h3><span class="ok-badge">● PASS</span></div>
-          <div class="model-bar"><span style="width:79%"></span></div>
-          <div class="smoke-metrics">
-            <div><strong>16.70 s</strong><span>模型时间</span></div>
-            <div><strong>21.31 GB</strong><span>峰值显存</span></div>
-            <div><strong>83,788</strong><span>前景体素</span></div>
-            <div><strong>3</strong><span>产物通过哈希</span></div>
-          </div>
-        </article>
-        <article class="panel smoke-card">
-          <div class="smoke-card-head"><h3>SegVol</h3><span class="ok-badge">● PASS</span></div>
-          <div class="model-bar coral"><span style="width:57%"></span></div>
-          <div class="smoke-metrics">
-            <div><strong>12.77 s</strong><span>模型时间</span></div>
-            <div><strong>1.20 GB</strong><span>峰值显存</span></div>
-            <div><strong>5,344</strong><span>前景体素</span></div>
-            <div><strong>4</strong><span>产物通过哈希</span></div>
-          </div>
-        </article>
-        <article class="panel smoke-card">
-          <div class="smoke-card-head"><h3>BiomedParse v2</h3><span class="ok-badge">● PASS</span></div>
-          <div class="model-bar blue"><span style="width:89%"></span></div>
-          <div class="smoke-metrics">
-            <div><strong>18.77 s</strong><span>模型时间</span></div>
-            <div><strong>2.98 GB</strong><span>峰值显存</span></div>
-            <div><strong>30,043</strong><span>前景体素</span></div>
-            <div><strong>4</strong><span>产物通过哈希</span></div>
-          </div>
-        </article>
+      <p class="section-copy">三个模型都从已安装的 Agent CLI 启动，实际经过 Router、JSON 子进程、模型环境和产物校验。表中记录的是单病例运行情况，用来确认整条工具链可以工作，不代表模型在完整数据集上的精度。</p>
+      <div class="results-scroll">
+        <table class="results-table">
+          <thead><tr><th>模型</th><th>病例</th><th>模型时间</th><th>Agent 总时间</th><th>峰值显存</th><th>前景体素</th><th>校验产物</th></tr></thead>
+          <tbody>
+            <tr><th>VoxTell</th><td>KiTS23</td><td>16.70 s</td><td>165.04 s</td><td>21.31 GB</td><td>83,788</td><td>3 / 3</td></tr>
+            <tr><th>SegVol</th><td>KiTS23</td><td>12.77 s</td><td>139.78 s</td><td>1.20 GB</td><td>5,344</td><td>4 / 4</td></tr>
+            <tr><th>BiomedParse v2</th><td>BraTS 2021</td><td>18.77 s</td><td>48.64 s</td><td>2.98 GB</td><td>30,043</td><td>4 / 4</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="test-ribbon">
-        <strong>12 passed</strong>
-        <span>覆盖真实子进程协议、路由拒绝与排序、artifact 校验、结构化失败、现代与 legacy MCP，以及单独启动的 MCP stdio 进程。</span>
-      </div>
+      <p class="test-note">另外 12 项 CPU 与协议测试全部通过，覆盖真实子进程、路由拒绝与排序、产物校验、结构化失败以及两代 MCP 协议。</p>
     </section>
   </main>
 </body>

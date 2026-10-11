@@ -47,7 +47,7 @@ const METRICS = {
 };
 
 function mixColor(t) {
-  const stops = [[245,160,140], [245,223,156], [120,196,166]];
+  const stops = [[247,229,224], [246,242,225], [220,238,230]];
   const p = Math.max(0, Math.min(1, t));
   const segment = p < .5 ? 0 : 1;
   const local = segment === 0 ? p * 2 : (p - .5) * 2;

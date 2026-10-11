@@ -19,16 +19,7 @@
 
   <main>
     <header class="page-intro reveal">
-      <div>
-        <div class="eyebrow">Benchmark / 2026.10.11</div>
-        <h1>模型 × 数据集</h1>
-        <p>三个冻结模型在四个完整标注队列上的同口径结果。选择指标，颜色会按当前指标重新映射；每个数字都来自已完成的逐病例评估。</p>
-      </div>
-      <div class="intro-stats" aria-label="基准状态">
-        <div class="stat-chip"><strong>8</strong><span>组合已完成</span></div>
-        <div class="stat-chip"><strong>1</strong><span>模态不支持</span></div>
-        <div class="stat-chip"><strong>3</strong><span>等待申请</span></div>
-      </div>
+      <h1>模型 × 数据集</h1>
     </header>
 
     <section class="panel reveal" aria-labelledby="matrix-title" style="animation-delay:.08s">
@@ -57,12 +48,10 @@
         </table>
       </div>
       <div class="benchmark-note">
-        <span><strong id="metric-description">重叠质量；越高越好</strong> · 热力颜色在当前已完成组合内归一化。“申请”表示影像访问尚未获批，不是零分。</span>
-        <span class="method-pill">FULL COHORT · NO CHERRY-PICKING</span>
+        <span><strong id="metric-description">重叠质量；越高越好</strong>。颜色按当前已完成结果映射；“申请”表示影像访问尚未获批。</span>
       </div>
     </section>
   </main>
   <script src="benchmark.js"></script>
 </body>
 </html>
-
