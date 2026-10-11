@@ -11,7 +11,8 @@
   <main>
     <header><h1>MAS4Health<span>模型评估</span></h1></header>
     <div id="metric-buttons" class="metrics" role="group" aria-label="选择评估指标"></div>
-    <section aria-label="模型与数据集评估结果">
+    <section class="data-group" aria-label="主基准评估结果">
+      <div class="group-heading"><h2>主基准</h2><span>3 个模型 · 3 个数据集</span></div>
       <div class="table-scroll" tabindex="0" aria-label="结果表，可横向滚动">
         <table class="heatmap">
           <thead><tr>
@@ -19,12 +20,21 @@
             <th scope="col">KiTS23<span>CT · 肾肿瘤 · 489 例</span></th>
             <th scope="col">LiTS17<span>CT · 肝肿瘤 · 131 例</span></th>
             <th scope="col">BraTS 2021<span>FLAIR · 全肿瘤 · 1,251 例</span></th>
-            <th scope="col">MerlinPlus<span>CT · 腹部肿瘤 · 1,174 例</span></th>
           </tr></thead>
           <tbody id="heatmap-body"></tbody>
         </table>
       </div>
-      <div class="table-note"><span>申请：MerlinPlus CT 访问待批准。SegVol 仅支持 CT。</span><span class="scale">较差 <i></i> 较好</span></div>
+      <div class="table-note"><span>未运行：当前 SegVol checkpoint 仅配置 CT，未在 BraTS 2021 的 FLAIR MRI 上执行。</span><span class="scale">较差 <i></i> 较好</span></div>
+    </section>
+    <section class="data-group extension" aria-label="TumorSegmentation 扩展评估结果">
+      <div class="group-heading"><h2>TumorSegmentation</h2><span>11 个肿瘤任务 · 22 组完整结果</span></div>
+      <div class="table-scroll" tabindex="0" aria-label="TumorSegmentation 结果表，可横向滚动">
+        <table class="extension-table">
+          <thead><tr><th scope="col">任务</th><th scope="col">模态与目标</th><th scope="col">病例数</th><th scope="col">VoxTell</th><th scope="col">BiomedParse v2</th><th scope="col">SegVol</th></tr></thead>
+          <tbody id="extension-body"></tbody>
+        </table>
+      </div>
+      <div class="table-note"><span>VoxTell 和 BiomedParse v2 均为完整队列结果；本次扩展实验未测试 SegVol。</span></div>
     </section>
     <section class="method" aria-label="当前指标计算方法" aria-live="polite" aria-atomic="true">
       <div class="method-heading"><h2 id="method-name"></h2><span id="metric-description"></span></div>
