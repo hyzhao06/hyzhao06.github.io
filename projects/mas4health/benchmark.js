@@ -47,7 +47,7 @@ const METRICS = {
 };
 
 function mixColor(t) {
-  const stops = [[247,229,224], [246,242,225], [220,238,230]];
+  const stops = [[248,250,251], [223,237,241], [192,220,227]];
   const p = Math.max(0, Math.min(1, t));
   const segment = p < .5 ? 0 : 1;
   const local = segment === 0 ? p * 2 : (p - .5) * 2;
@@ -68,35 +68,50 @@ function renderTable(metricKey) {
     const cells = BENCHMARK.datasets.map(dataset => {
       const item = BENCHMARK.values[dataset.id][model.id];
       if (item.state === "pending") {
-        return `<td class="metric-cell pending"><a class="state-link" href="resources.html#merlinplus" aria-label="查看 MerlinPlus 申请信息">申请 <span aria-hidden="true">→</span></a></td>`;
+        return `<td class="metric-cell pending">申请</td>`;
       }
       if (item.state === "unsupported") {
-        return `<td class="metric-cell unsupported"><span class="state-label">不支持</span><div class="cell-meta">checkpoint 仅支持 CT</div></td>`;
+        return `<td class="metric-cell unsupported"><span class="state-label">不支持</span></td>`;
       }
       const value = item[metricKey];
       let score = (value - min) / Math.max(max - min, Number.EPSILON);
       if (!metric.higher) score = 1 - score;
-      const datasetValues = BENCHMARK.models
-        .map(m => ({ id: m.id, v: BENCHMARK.values[dataset.id][m.id][metricKey] }))
-        .filter(d => d.v !== undefined)
-        .sort((a, b) => metric.higher ? b.v - a.v : a.v - b.v);
-      const rank = datasetValues.findIndex(d => d.id === model.id) + 1;
       return `<td class="metric-cell" style="background:${mixColor(score)}">
-        <span class="rank">#${rank}</span>
         <span class="metric-value">${value.toFixed(metric.decimals)}</span>${metric.unit ? `<span class="metric-unit">${metric.unit}</span>` : ""}
-        <div class="cell-meta">${item.cases.toLocaleString("en-US")} / ${item.cases.toLocaleString("en-US")} cases</div>
       </td>`;
     }).join("");
-    return `<tr><th class="row-label" scope="row"><strong>${model.name}</strong><span>${model.subtitle}</span></th>${cells}</tr>`;
+    return `<tr><th class="row-label" scope="row">${model.name}</th>${cells}</tr>`;
   }).join("");
 
   document.querySelector("#metric-description").textContent = metric.note;
-  document.querySelector("#scale").classList.toggle("reverse", !metric.higher);
-  document.querySelector("#scale-low").textContent = metric.higher ? "低" : "优";
-  document.querySelector("#scale-high").textContent = metric.higher ? "高" : "高耗";
+  const method = METHODS[metricKey];
+  document.querySelector("#method-name").textContent = metric.label.replace(/[↑↓]/g, "").trim();
+  document.querySelector("#method-formula").textContent = method.formula;
+  document.querySelector("#method-explanation").textContent = method.explanation;
+  document.querySelector("#method-aggregation").textContent = method.aggregation;
+  document.querySelectorAll(".metrics button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.metric === metricKey)));
 }
 
-const metricSelect = document.querySelector("#metric-select");
-Object.entries(METRICS).forEach(([key, item]) => metricSelect.add(new Option(item.label, key)));
-metricSelect.addEventListener("change", event => renderTable(event.target.value));
+const mean = "逐病例计算后取算术平均，每个病例权重相同。颜色在当前指标的已完成组合内归一化，越深表示越优。";
+const METHODS = {
+  dice: { formula: "Dice = 2|P ∩ G| / (|P| + |G|)", explanation: "P 为预测肿瘤区域，G 为真实标注区域，|·| 表示体素数。衡量两个区域的重叠程度；预测和标注均为空时记为 1。", aggregation: mean },
+  iou: { formula: "IoU = |P ∩ G| / |P ∪ G|", explanation: "P 为预测区域，G 为真实标注区域。用交集体素数除以并集体素数；两者均为空时记为 1。", aggregation: mean },
+  recall: { formula: "Recall = TP / (TP + FN)", explanation: "TP 是正确预测的肿瘤体素数，FN 是漏检的肿瘤体素数。该值表示真实肿瘤中被识别出的比例；真实标注为空时记为 1。", aggregation: mean },
+  precision: { formula: "Precision = TP / (TP + FP)", explanation: "TP 是正确预测的肿瘤体素数，FP 是误报的体素数。该值表示预测区域中真正属于肿瘤的比例；预测为空且标注非空时记为 0，两者均为空时记为 1。", aggregation: mean },
+  hd95: { formula: "HD95 = Q₀.₉₅(d(∂P → ∂G) ∪ d(∂G → ∂P))", explanation: "分别计算预测表面到标注表面、标注表面到预测表面的最近点距离，合并后取第 95 百分位。距离按体素间距换算为毫米；两者均为空时为 0，仅一方为空时为 ∞。", aggregation: "表格取各病例 HD95 的中位数，保留无穷值。颜色越深表示距离越小。" },
+  lesionRecall: { formula: "Lesion recall = 检出的真实病灶数 / 真实病灶总数", explanation: "以三维 26 邻域连通分量划分病灶。真实病灶只要与预测区域有体素重叠，就计为检出；不要求一对一匹配。没有真实病灶时记为 1。", aggregation: mean },
+  lesionPrecision: { formula: "Lesion precision = 命中的预测病灶数 / 预测病灶总数", explanation: "以三维 26 邻域连通分量划分病灶。预测病灶只要与真实区域有体素重叠，就计为命中；不要求一对一匹配。预测为空且标注非空时记为 0，两者均为空时记为 1。", aggregation: mean },
+  runtime: { formula: "Runtime = median(t₁, t₂, …, tₙ)", explanation: "tᵢ 为 baseline 记录的第 i 个病例运行时间，单位为秒。对完整队列取中位数。", aggregation: "运行时间受影像大小、模型环境和硬件影响。颜色越深表示时间越短。" },
+  vram: { formula: "Peak VRAM = max(v₁, v₂, …, vₙ)", explanation: "vᵢ 为 baseline 记录的第 i 个病例峰值显存，单位沿用结果文件中的 GB。表格取整个队列的最大值。", aggregation: "该指标不是病例平均显存。颜色越深表示显存占用越小。" }
+};
+const metricButtons = document.querySelector("#metric-buttons");
+Object.entries(METRICS).forEach(([key, item]) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = item.label;
+  button.dataset.metric = key;
+  button.setAttribute("aria-controls", "heatmap-body");
+  button.addEventListener("click", () => renderTable(key));
+  metricButtons.append(button);
+});
 renderTable("dice");
