@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAS4Health 模型与数据集路径、状态和结构">
+  <title>资源 · MAS4Health</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>MAS4Health</span></a>
+    <div class="nav-links">
+      <a href="index.html">基准矩阵</a>
+      <a href="agent.html">Agent</a>
+      <a class="active" href="resources.html" aria-current="page">资源</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-intro reveal">
+      <div>
+        <div class="eyebrow">Resources / Local Registry</div>
+        <h1>模型与数据</h1>
+        <p>这里列出当前基准使用的冻结版本、本地路径、下载状态和病例结构。路径对应本地计算环境，版本号用于复现实验。</p>
+      </div>
+      <div class="intro-stats" aria-label="资源状态">
+        <div class="stat-chip"><strong>3/3</strong><span>模型已就绪</span></div>
+        <div class="stat-chip"><strong>3/4</strong><span>数据影像就绪</span></div>
+      </div>
+    </header>
+
+    <section class="resource-section reveal" style="animation-delay:.06s" aria-labelledby="models-title">
+      <div class="resource-title">
+        <h2 id="models-title">模型</h2>
+        <p>代码仓库与 checkpoint 均固定到具体 revision</p>
+      </div>
+      <div class="resource-grid">
+        <article class="panel resource-card">
+          <div class="resource-card-top"><h3>VoxTell</h3><span class="ready-badge">● 已就绪 · 9.3 GB</span></div>
+          <dl class="resource-meta">
+            <div class="resource-row"><dt>Checkpoint</dt><dd>/mnt/nas-ke/dataset/MAS4Health/external/checkpoints/voxtell</dd></div>
+            <div class="resource-row"><dt>Repository</dt><dd>/mnt/nas-ke/dataset/MAS4Health/external/repos/VoxTell</dd></div>
+            <div class="resource-row"><dt>Revision</dt><dd>repo 14f459e · ckpt 4e3afba</dd></div>
+          </dl>
+          <div class="status-line"><div class="status-track"><span style="width:100%"></span></div><small>verified</small></div>
+        </article>
+
+        <article class="panel resource-card">
+          <div class="resource-card-top"><h3>BiomedParse v2</h3><span class="ready-badge">● 已就绪 · 4.2 GB</span></div>
+          <dl class="resource-meta">
+            <div class="resource-row"><dt>Checkpoint</dt><dd>/mnt/nas-ke/dataset/MAS4Health/external/checkpoints/biomedparse/biomedparse_v2.ckpt</dd></div>
+            <div class="resource-row"><dt>Repository</dt><dd>/mnt/nas-ke/dataset/MAS4Health/external/repos/BiomedParse</dd></div>
+            <div class="resource-row"><dt>Revision</dt><dd>repo f571d5c · ckpt e473e5b</dd></div>
+          </dl>
+          <div class="status-line"><div class="status-track"><span style="width:100%"></span></div><small>verified</small></div>
+        </article>
+
+        <article class="panel resource-card">
+          <div class="resource-card-top"><h3>SegVol</h3><span class="ready-badge">● 已就绪 · 1.1 GB</span></div>
+          <dl class="resource-meta">
+            <div class="resource-row"><dt>Checkpoint</dt><dd>/mnt/nas-ke/dataset/MAS4Health/external/checkpoints/segvol</dd></div>
+            <div class="resource-row"><dt>Repository</dt><dd>/mnt/nas-ke/dataset/MAS4Health/external/repos/SegVol</dd></div>
+            <div class="resource-row"><dt>Revision</dt><dd>repo 5768c97 · ckpt 516701d · CT only</dd></div>
+          </dl>
+          <div class="status-line"><div class="status-track"><span style="width:100%"></span></div><small>verified</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resource-section" aria-labelledby="datasets-title">
+      <div class="resource-title">
+        <h2 id="datasets-title">数据集</h2>
+        <p>完整标注队列；case 数来自已校验 manifest</p>
+      </div>
+      <div class="dataset-grid">
+        <article class="panel dataset-card">
+          <div class="dataset-head">
+            <div><h3>KiTS23</h3><p>Kidney Tumor Segmentation 2023</p></div>
+            <div class="dataset-count"><strong>489</strong><span>cases · 40 GB</span></div>
+          </div>
+          <div class="dataset-facts">
+            <div class="dataset-fact"><b>CT</b><span>模态</span></div>
+            <div class="dataset-fact"><b>Kidney tumor</b><span>目标</span></div>
+            <div class="dataset-fact"><b>Label 2</b><span>二值 GT</span></div>
+          </div>
+          <div class="path-box">/mnt/nas-ke/dataset/MAS4Health/data/raw/kits23/case_XXXXX/{imaging,segmentation}.nii.gz</div>
+        </article>
+
+        <article class="panel dataset-card">
+          <div class="dataset-head">
+            <div><h3>LiTS17</h3><p>Liver Tumor Segmentation Challenge</p></div>
+            <div class="dataset-count"><strong>131</strong><span>cases · 54 GB</span></div>
+          </div>
+          <div class="dataset-facts">
+            <div class="dataset-fact"><b>CT</b><span>模态</span></div>
+            <div class="dataset-fact"><b>Liver tumor</b><span>目标</span></div>
+            <div class="dataset-fact"><b>Label 2</b><span>二值 GT</span></div>
+          </div>
+          <div class="path-box">/mnt/nas-ke/dataset/MAS4Health/data/raw/lits17/**/{volume,segmentation}-N.nii[.gz]</div>
+        </article>
+
+        <article class="panel dataset-card">
+          <div class="dataset-head">
+            <div><h3>BraTS 2021</h3><p>Brain Tumor Segmentation</p></div>
+            <div class="dataset-count"><strong>1,251</strong><span>cases · 13 GB</span></div>
+          </div>
+          <div class="dataset-facts">
+            <div class="dataset-fact"><b>FLAIR MRI</b><span>输入模态</span></div>
+            <div class="dataset-fact"><b>Whole Tumor</b><span>目标</span></div>
+            <div class="dataset-fact"><b>1 ∪ 2 ∪ 4</b><span>二值 GT</span></div>
+          </div>
+          <div class="path-box">/mnt/nas-ke/dataset/MAS4Health/data/raw/brats21/**/&lt;case&gt;_{flair,seg}.nii.gz</div>
+        </article>
+
+        <article id="merlinplus" class="panel dataset-card">
+          <div class="dataset-head">
+            <div><h3>MerlinPlus</h3><p>Abdominal CT lesion benchmark</p></div>
+            <div class="dataset-count"><span class="apply-badge">需申请</span><span>1,174 cases</span></div>
+          </div>
+          <div class="dataset-facts">
+            <div class="dataset-fact"><b>CT</b><span>模态</span></div>
+            <div class="dataset-fact"><b>Abdominal tumor</b><span>目标</span></div>
+            <div class="dataset-fact"><b>*_lesion</b><span>标注并集</span></div>
+          </div>
+          <div class="path-box">images: /mnt/nas-ke/dataset/MAS4Health/data/raw/merlinplus/images<br>masks: /mnt/nas-ke/dataset/MAS4Health/data/raw/merlinplus/masks</div>
+          <div class="warning">标注已下载并校验（45 GB），CT 影像目录仍为 0 B。需要通过 Stanford AIMI Open Use of Data Agreement 获取访问地址，因此基准矩阵显示“申请”。</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resource-section" aria-labelledby="structure-title">
+      <div class="resource-title">
+        <h2 id="structure-title">一个病例如何进入评估</h2>
+        <p>结构示意，不展示或发布患者影像</p>
+      </div>
+      <div class="structure-grid">
+        <article class="file-tree">
+          <h3>Case bundle</h3>
+          <pre><span class="folder">case_id/</span>
+├── image.nii.gz       # CT / FLAIR volume
+├── segmentation.nii.gz
+│   └── target labels  # 仅评估阶段读取
+└── manifest row
+    ├── shape + spacing
+    ├── byte count
+    └── SHA-256
+
+<span class="folder">prediction/</span>
+├── mask.nii.gz        # 原始空间二值结果
+├── probability.nii.gz # 可选
+└── metadata.json      # provenance + runtime</pre>
+        </article>
+
+        <article class="panel scan-visual">
+          <h3>从体数据到可比较的二值掩膜</h3>
+          <div class="scan-panels" aria-label="医学分割流程结构示意">
+            <div class="scan-panel">
+              <svg viewBox="0 0 160 160" role="img" aria-label="影像切片示意">
+                <rect width="160" height="160" fill="#112220"/>
+                <ellipse cx="80" cy="82" rx="58" ry="65" fill="#8c9a94" opacity=".72"/>
+                <ellipse cx="80" cy="82" rx="42" ry="51" fill="#31443f"/>
+                <ellipse cx="54" cy="87" rx="13" ry="24" fill="#b7c2bd"/>
+                <ellipse cx="107" cy="87" rx="13" ry="24" fill="#b7c2bd"/>
+                <circle cx="104" cy="81" r="6" fill="#d9dedb"/>
+                <path d="M19 80h20M121 80h20M80 19v20M80 121v20" stroke="#56c7a0" stroke-width="1" opacity=".65"/>
+              </svg>
+            </div>
+            <div class="scan-panel">
+              <svg viewBox="0 0 160 160" role="img" aria-label="目标掩膜示意">
+                <rect width="160" height="160" fill="#112220"/>
+                <ellipse cx="80" cy="82" rx="58" ry="65" fill="#65736e" opacity=".4"/>
+                <path d="M96 65c10-4 21 4 22 14 1 10-8 20-18 19-8-1-15-7-14-15 0-8 4-15 10-18z" fill="#ef765c" opacity=".92"/>
+                <circle cx="102" cy="81" r="18" fill="none" stroke="#f7c1b5" stroke-width="1.5" stroke-dasharray="3 3"/>
+              </svg>
+            </div>
+            <div class="scan-panel">
+              <svg viewBox="0 0 160 160" role="img" aria-label="预测与真值对照示意">
+                <rect width="160" height="160" fill="#112220"/>
+                <path d="M96 65c10-4 21 4 22 14 1 10-8 20-18 19-8-1-15-7-14-15 0-8 4-15 10-18z" fill="#ef765c" opacity=".7"/>
+                <path d="M99 69c9-3 18 3 18 12 1 9-7 16-15 16-9 0-14-6-14-14 0-6 4-12 11-14z" fill="#56c7a0" opacity=".85"/>
+                <path d="M22 125h116" stroke="#4d625c"/>
+                <rect x="29" y="116" width="7" height="9" rx="2" fill="#ef765c"/>
+                <rect x="41" y="111" width="7" height="14" rx="2" fill="#56c7a0"/>
+              </svg>
+            </div>
+          </div>
+          <div class="scan-caption"><span>image → target → overlap</span><span class="legend-dots"><span><i></i>GT</span><span><i></i>prediction</span></span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

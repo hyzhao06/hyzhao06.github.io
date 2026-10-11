@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAS4Health 医学分割模型基准矩阵">
+  <title>基准矩阵 · MAS4Health</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>MAS4Health</span></a>
+    <div class="nav-links">
+      <a class="active" href="index.html" aria-current="page">基准矩阵</a>
+      <a href="agent.html">Agent</a>
+      <a href="resources.html">资源</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-intro reveal">
+      <div>
+        <div class="eyebrow">Benchmark / 2026.10.11</div>
+        <h1>模型 × 数据集</h1>
+        <p>三个冻结模型在四个完整标注队列上的同口径结果。选择指标，颜色会按当前指标重新映射；每个数字都来自已完成的逐病例评估。</p>
+      </div>
+      <div class="intro-stats" aria-label="基准状态">
+        <div class="stat-chip"><strong>8</strong><span>组合已完成</span></div>
+        <div class="stat-chip"><strong>1</strong><span>模态不支持</span></div>
+        <div class="stat-chip"><strong>3</strong><span>等待申请</span></div>
+      </div>
+    </header>
+
+    <section class="panel reveal" aria-labelledby="matrix-title" style="animation-delay:.08s">
+      <h2 id="matrix-title" hidden>模型与数据集评估矩阵</h2>
+      <div class="metric-toolbar">
+        <div class="metric-control">
+          <label for="metric-select">评估指标</label>
+          <div class="select-wrap"><select id="metric-select" aria-describedby="metric-description"></select></div>
+        </div>
+        <div id="scale" class="scale" aria-label="颜色刻度">
+          <span id="scale-low">低</span><span class="scale-bar" aria-hidden="true"></span><span id="scale-high">高</span>
+        </div>
+      </div>
+      <div class="table-scroll">
+        <table class="heatmap">
+          <thead>
+            <tr>
+              <th scope="col"><strong>Model</strong><span>frozen checkpoint</span></th>
+              <th scope="col"><strong>KiTS23</strong><span>CT · kidney tumor</span></th>
+              <th scope="col"><strong>LiTS17</strong><span>CT · liver tumor</span></th>
+              <th scope="col"><strong>BraTS 2021</strong><span>FLAIR · whole tumor</span></th>
+              <th scope="col"><strong>MerlinPlus</strong><span>CT · abdominal tumor</span></th>
+            </tr>
+          </thead>
+          <tbody id="heatmap-body"></tbody>
+        </table>
+      </div>
+      <div class="benchmark-note">
+        <span><strong id="metric-description">重叠质量；越高越好</strong> · 热力颜色在当前已完成组合内归一化。“申请”表示影像访问尚未获批，不是零分。</span>
+        <span class="method-pill">FULL COHORT · NO CHERRY-PICKING</span>
+      </div>
+    </section>
+  </main>
+  <script src="benchmark.js"></script>
+</body>
+</html>
+
