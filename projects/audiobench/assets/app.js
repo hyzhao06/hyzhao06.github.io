@@ -2,6 +2,7 @@
   "use strict";
   var data = window.RESULT_BROWSER_DATA;
   var site = window.SITE_DATA;
+  var assistive = window.ASSISTIVE_DATA;
   if (!data) return;
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
@@ -18,7 +19,7 @@
   var modelLabels = Object.fromEntries(data.models.map(function (x) { return [x.id, x.label]; }));
   var datasetLabels = Object.fromEntries(data.datasets.map(function (x) { return [x.id, x.label]; }));
   var groupLabels = { cohort: "疾病 / 健康", label: "标签", model: "模型", dataset: "数据集", severity: "严重程度" };
-  var state = { page: "results", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer", comparisonDelta: "absolute" };
+  var state = { page: "comparison", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer", comparisonDelta: "absolute", assistiveCohort: "all", assistiveGroup: "overall", assistiveMetric: "wer", assistiveDelta: "absolute" };
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
@@ -48,9 +49,10 @@
     $$("[data-" + key + "]", root).forEach(function (button) { button.classList.toggle("active", button.getAttribute("data-" + key) === value); });
   }
   function setPage() {
-    state.page = "comparison";
+    state.page = location.hash === "#assistive" ? "assistive" : "comparison";
     $$("[data-page]").forEach(function (p) { p.hidden = p.dataset.page !== state.page; });
     $$("[data-page-link]").forEach(function (a) { a.classList.toggle("active", a.dataset.pageLink === state.page); });
+    if (state.page === "assistive") renderAssistive();
   }
   function renderCombinedModels() {
     $("#combined-models").innerHTML = data.models.map(function (m) {
@@ -423,15 +425,136 @@
     $("#reference-count").textContent = data.methods.references.length + " 篇";
     $("#reference-list").innerHTML = data.methods.references.map(function (reference) { return "<article class='reference-item'><h3>" + esc(reference.title) + "</h3><p>" + esc(reference.authors) + " · " + esc(reference.venue) + " · " + reference.year + "</p><p>" + esc(note(reference)) + "</p><a href='" + esc(reference.stable_url) + "' target='_blank' rel='noopener'>原文</a></article>"; }).join("");
   }
+  function durationText(seconds) {
+    var total = Math.round(Number(seconds) || 0), hours = Math.floor(total / 3600), minutes = Math.floor((total % 3600) / 60), secs = total % 60;
+    return String(hours).padStart(2, "0") + ":" + String(minutes).padStart(2, "0") + ":" + String(secs).padStart(2, "0");
+  }
+  function renderAssistiveOverview() {
+    if (!assistive) return;
+    var dataset = assistive.dataset;
+    $("#assistive-overview-head").innerHTML = "<h1>辅助性场景数据集</h1><span>重组评测集 · 7 项指标 · 30 个模型运行</span>";
+    $("#assistive-summary").innerHTML = [
+      ["候选全集", int(dataset.candidate_samples) + " 条", durationText(dataset.candidate_duration_seconds)],
+      ["正式评测集", int(dataset.strict_samples) + " 条", durationText(dataset.strict_duration_seconds)],
+      ["疾病 / 健康", int(dataset.cohort_counts.disease) + " / " + int(dataset.cohort_counts.healthy), "同一固定样本集"],
+      ["模型结果", int(assistive.verification.transcription_runs) + " 个运行", int(assistive.verification.transcription_rows) + " 行转写"]
+    ].map(function (item) {
+      return "<article class='assistive-stat'><span>" + esc(item[0]) + "</span><strong>" + esc(item[1]) + "</strong><small>" + esc(item[2]) + "</small></article>";
+    }).join("");
+    $("#dataset-inventory-table").innerHTML = "<thead><tr><th>数据集</th><th>类型</th><th>音频</th><th>说话人</th><th>总时长</th><th>说明</th></tr></thead><tbody>" + assistive.dataset_inventory.map(function (row) {
+      var type = row.dataset_type === "derived_evaluation_dataset" ? "重组评测集" : "原始数据集";
+      return "<tr><td>" + esc(row.dataset_label) + "</td><td>" + esc(type) + "</td><td class='numeric'>" + int(row.audio_count) + "</td><td class='numeric'>" + int(row.speaker_count) + "</td><td class='numeric'>" + durationText(row.duration_seconds) + "</td><td>" + esc(row.note) + "</td></tr>";
+    }).join("") + "</tbody>";
+    $("#assistive-scenes").innerHTML = assistive.taxonomy.scenes.map(function (scene) {
+      var count = dataset.scene_counts[scene.id], examples = assistive.examples_by_scene[scene.id] || [];
+      return "<article class='assistive-scene-card'><h3>" + esc(scene.label) + "</h3><strong>" + int(count) + " 条</strong><p>" + esc(examples.join("、")) + "</p></article>";
+    }).join("");
+    $("#assistive-source-table").innerHTML = "<thead><tr><th>组别</th><th>场景</th><th>来源</th><th>原生标签</th><th>音频</th><th>说话人</th><th>时长</th></tr></thead><tbody>" + assistive.source_composition.map(function (row) {
+      return "<tr><td>" + (row.cohort === "disease" ? "疾病" : "健康") + "</td><td>" + esc(row.scene_label) + "</td><td>" + esc(row.dataset) + "</td><td>" + esc(row.source_native_label) + "</td><td class='numeric'>" + int(row.samples) + "</td><td class='numeric'>" + int(row.speakers) + "</td><td class='numeric'>" + durationText(row.duration_seconds) + "</td></tr>";
+    }).join("") + "</tbody>";
+  }
+  function assistiveRunId(model, method) {
+    if (method.id === "before") return "baseline/" + model;
+    if (method.id === "joint") return "joint/" + model;
+    return "single/" + model + "/" + method.id;
+  }
+  function assistiveMetricRow(model, method, category) {
+    var runId = assistiveRunId(model, method);
+    return assistive.metric_rows.find(function (row) {
+      return row.cohort === state.assistiveCohort && row.group_dimension === state.assistiveGroup && row.group_value === category.id && row.run_id === runId;
+    }) || null;
+  }
+  function assistiveCategories() {
+    var runId = "baseline/" + assistive.models[0].id;
+    var rows = assistive.metric_rows.filter(function (row) {
+      return row.cohort === state.assistiveCohort && row.group_dimension === state.assistiveGroup && row.run_id === runId;
+    });
+    var order = { all_assistive: 0, device_command: 1, digit_entry: 2, spelling_entry: 3, easycall: 1, torgo: 2, uaspeech: 3 };
+    rows.sort(function (a, b) { return (order[a.group_value] || 99) - (order[b.group_value] || 99) || a.group_value.localeCompare(b.group_value); });
+    return rows.map(function (row) {
+      var label = row.group_dimension === "overall" ? "整体" : row.group_dimension === "scene" ? assistive.scene_labels[row.group_value] : datasetLabels[row.group_value];
+      return { id: row.group_value, label: label + "（N=" + int(row.n) + "）", n: row.n, sample_ids_sha256: row.sample_ids_sha256 };
+    });
+  }
+  function assistiveChange(row, baseline, method) {
+    if (method.id === "before") return 0;
+    var metric = state.assistiveMetric, absolute = Number(row[metric]) - Number(baseline[metric]);
+    if (state.assistiveDelta === "absolute") return absolute;
+    var before = Number(baseline[metric]);
+    if (!Number.isFinite(before) || before === 0) return null;
+    var relative = absolute / Math.abs(before);
+    return metricMeta[metric].direction === "lower" ? -relative : relative;
+  }
+  function assistiveChangeText(value) {
+    if (value == null || Number.isNaN(Number(value))) return "不可计算";
+    if (state.assistiveDelta === "absolute") return deltaText(value, state.assistiveMetric);
+    var n = Number(value), sign = n > 0 ? "+" : n < 0 ? "−" : "±";
+    return sign + (Math.abs(n) * 100).toFixed(2) + "%";
+  }
+  function assistiveCell(model, method, category) {
+    var row = assistiveMetricRow(model, method, category), baseline = assistiveMetricRow(model, assistive.methods[0], category);
+    if (!row || !baseline) return { text: "—", className: "heat-unavailable" };
+    if (row.n !== baseline.n || row.sample_ids_sha256 !== baseline.sample_ids_sha256 || row.n !== category.n || row.sample_ids_sha256 !== category.sample_ids_sha256) return { text: "口径不一致", className: "heat-unavailable" };
+    var change = assistiveChange(row, baseline, method), className = "heat-neutral";
+    if (change) {
+      var good = state.assistiveDelta === "relative" ? change > 0 : deltaClass(change, state.assistiveMetric) === "good";
+      className = good ? "heat-good" : "heat-bad";
+    }
+    return { text: val(row[state.assistiveMetric], state.assistiveMetric) + "（" + assistiveChangeText(change) + "）", className: className };
+  }
+  function renderAssistive() {
+    if (!assistive) return;
+    pressed($("#assistive-cohort-tabs"), "assistive-cohort", state.assistiveCohort);
+    pressed($("#assistive-group-tabs"), "assistive-group", state.assistiveGroup);
+    pressed($("#assistive-metric-tabs"), "assistive-metric", state.assistiveMetric);
+    pressed($("#assistive-delta-tabs"), "assistive-delta", state.assistiveDelta);
+    var cohort = assistive.cohorts.find(function (item) { return item.id === state.assistiveCohort; });
+    var grouping = assistive.groupings.find(function (item) { return item.id === state.assistiveGroup; });
+    var categories = assistiveCategories();
+    $("#assistive-result-head").innerHTML = "<h1>" + esc(cohort.label + " · " + grouping.label) + "</h1><span>" + esc(metricMeta[state.assistiveMetric].label + " · 5 个模型 × 6 个训练口径") + "</span>";
+    $("#assistive-tables").innerHTML = assistive.models.map(function (model) {
+      var head = "<tr><th>训练口径</th>" + categories.map(function (category) { return "<th>" + esc(category.label) + "</th>"; }).join("") + "</tr>";
+      var body = assistive.methods.map(function (method) {
+        return "<tr><td>" + esc(method.label) + "</td>" + categories.map(function (category) {
+          var cell = assistiveCell(model.id, method, category);
+          return "<td class='numeric comparison-heat " + cell.className + "'>" + cell.text + "</td>";
+        }).join("") + "</tr>";
+      }).join("");
+      return "<section class='comparison-table-block assistive-table-block' data-assistive-model='" + esc(model.id) + "'><h3>" + esc(model.label) + "</h3><div class='table-scroll'><table class='data-table comparison-table'><thead>" + head + "</thead><tbody>" + body + "</tbody></table></div></section>";
+    }).join("");
+  }
+  function downloadAssistive() {
+    var categories = assistiveCategories();
+    var lines = [["cohort", "grouping", "model", "category", "method", "metric", "delta_mode", "n", "sample_ids_sha256", "value", "delta"]];
+    assistive.models.forEach(function (model) {
+      categories.forEach(function (category) {
+        assistive.methods.forEach(function (method) {
+          var row = assistiveMetricRow(model.id, method, category), baseline = assistiveMetricRow(model.id, assistive.methods[0], category);
+          var comparable = row && baseline && row.n === baseline.n && row.sample_ids_sha256 === baseline.sample_ids_sha256;
+          lines.push([state.assistiveCohort, state.assistiveGroup, model.id, category.label, method.id, state.assistiveMetric, state.assistiveDelta, comparable ? row.n : "", comparable ? row.sample_ids_sha256 : "", comparable ? row[state.assistiveMetric] : "", comparable ? assistiveChange(row, baseline, method) : ""]);
+        });
+      });
+    });
+    var blob = new Blob(["\ufeff" + lines.map(function (line) { return line.map(csvCell).join(","); }).join("\n")], { type: "text/csv;charset=utf-8" });
+    var url = URL.createObjectURL(blob), link = document.createElement("a");
+    link.href = url; link.download = "audiobench-assistive-" + state.assistiveCohort + "-" + state.assistiveGroup + "-" + state.assistiveMetric + ".csv";
+    document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
+  }
   function bind(root, key, callback) { $$("[data-" + key + "]", root).forEach(function (button) { button.onclick = function () { callback(button.getAttribute("data-" + key)); }; }); }
   function init() {
     bind($("#comparison-cohort-tabs"), "comparison-cohort", function (value) { state.comparisonCohort = value; renderComparison(); });
     bind($("#comparison-group-tabs"), "comparison-group", function (value) { state.comparisonGroup = value; renderComparison(); });
     bind($("#comparison-metric-tabs"), "comparison-metric", function (value) { state.comparisonMetric = value; renderComparison(); });
     bind($("#comparison-delta-tabs"), "comparison-delta", function (value) { state.comparisonDelta = value; renderComparison(); });
+    bind($("#assistive-cohort-tabs"), "assistive-cohort", function (value) { state.assistiveCohort = value; renderAssistive(); });
+    bind($("#assistive-group-tabs"), "assistive-group", function (value) { state.assistiveGroup = value; renderAssistive(); });
+    bind($("#assistive-metric-tabs"), "assistive-metric", function (value) { state.assistiveMetric = value; renderAssistive(); });
+    bind($("#assistive-delta-tabs"), "assistive-delta", function (value) { state.assistiveDelta = value; renderAssistive(); });
     window.onhashchange = setPage;
     $("#download-comparison").onclick = downloadComparison;
-    setPage(); renderComparison();
+    $("#download-assistive").onclick = downloadAssistive;
+    renderAssistiveOverview();
+    setPage(); renderComparison(); renderAssistive();
   }
   init();
 }());

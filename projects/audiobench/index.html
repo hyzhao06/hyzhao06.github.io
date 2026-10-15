@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AudioBench 统一微调对照">
-  <title>AudioBench · 统一对照</title>
+  <meta name="description" content="AudioBench 统一微调对照与辅助性场景数据集">
+  <title>AudioBench · 微调对照与辅助性场景</title>
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -13,6 +13,7 @@
     <a class="brand" href="#comparison">AudioBench</a>
     <nav class="page-tabs" aria-label="页面">
       <a href="#comparison" data-page-link="comparison">统一对照</a>
+      <a href="#assistive" data-page-link="assistive">辅助性场景</a>
     </nav>
   </header>
   <main id="main-content">
@@ -61,10 +62,66 @@
         <div id="comparison-tables"></div>
       </section>
     </section>
+    <section class="page" data-page="assistive" hidden>
+      <section class="result-head" id="assistive-overview-head"></section>
+      <section class="assistive-summary" id="assistive-summary"></section>
+      <section class="table-panel">
+        <div class="section-heading"><h2>数据集音频数量与时长</h2></div>
+        <div class="table-scroll"><table class="data-table" id="dataset-inventory-table"></table></div>
+      </section>
+      <section class="table-panel">
+        <div class="section-heading"><h2>新数据集组织</h2></div>
+        <div class="assistive-scenes" id="assistive-scenes"></div>
+        <div class="table-scroll"><table class="data-table" id="assistive-source-table"></table></div>
+      </section>
+      <section class="control-panel comparison-controls">
+        <div class="control-group">
+          <span class="control-label">范围</span>
+          <div class="button-tabs" id="assistive-cohort-tabs">
+            <button type="button" data-assistive-cohort="all" class="active">新数据集整体</button>
+            <button type="button" data-assistive-cohort="disease">疾病组</button>
+            <button type="button" data-assistive-cohort="healthy">健康组</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">分组</span>
+          <div class="button-tabs" id="assistive-group-tabs">
+            <button type="button" data-assistive-group="overall" class="active">整体</button>
+            <button type="button" data-assistive-group="scene">场景</button>
+            <button type="button" data-assistive-group="dataset">来源数据集</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">指标</span>
+          <div class="button-tabs" id="assistive-metric-tabs">
+            <button type="button" data-assistive-metric="wer" class="active">WER</button>
+            <button type="button" data-assistive-metric="cer">CER</button>
+            <button type="button" data-assistive-metric="ser">SER</button>
+            <button type="button" data-assistive-metric="semscore">SemScore</button>
+            <button type="button" data-assistive-metric="s_rate">替换 S</button>
+            <button type="button" data-assistive-metric="d_rate">删除 D</button>
+            <button type="button" data-assistive-metric="i_rate">插入 I</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">变化量</span>
+          <div class="button-tabs" id="assistive-delta-tabs">
+            <button type="button" data-assistive-delta="absolute" class="active">绝对变化</button>
+            <button type="button" data-assistive-delta="relative">相对改善</button>
+          </div>
+        </div>
+      </section>
+      <section class="result-head" id="assistive-result-head"></section>
+      <section class="table-panel">
+        <div class="section-heading"><h2>新数据集微调前后对照</h2><button type="button" id="download-assistive">下载 CSV</button></div>
+        <div id="assistive-tables"></div>
+      </section>
+    </section>
   </main>
   <footer>AudioBench · 2026</footer>
   <script src="data/result-browser-data.js"></script>
   <script src="data/site-data.js"></script>
+  <script src="data/assistive-data.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
