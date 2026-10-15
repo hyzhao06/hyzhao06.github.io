@@ -18,6 +18,7 @@
   };
   var modelLabels = Object.fromEntries(data.models.map(function (x) { return [x.id, x.label]; }));
   var datasetLabels = Object.fromEntries(data.datasets.map(function (x) { return [x.id, x.label]; }));
+  datasetLabels.assistive_scene = "辅助性场景";
   var groupLabels = { cohort: "疾病 / 健康", label: "标签", model: "模型", dataset: "数据集", severity: "严重程度" };
   var state = { page: "comparison", experiment: "combined", combinedSelected: ["qwen25"], selected: ["qwen25/easycall"], group: "cohort", metric: "wer", method: "combined", comparisonCohort: "disease", comparisonGroup: "dataset", comparisonMetric: "wer", comparisonDelta: "absolute", assistiveCohort: "all", assistiveGroup: "overall", assistiveMetric: "wer", assistiveDelta: "absolute" };
 
@@ -183,8 +184,38 @@
     { id: "torgo", label: "仅 TORGO 微调后" },
     { id: "uaspeech", label: "仅 UA-Speech 微调后" }
   ];
+  function assistiveDatasetSource(model, method) {
+    if (!assistive) return null;
+    var runId = assistiveRunId(model, method);
+    var baselineRunId = "baseline/" + model;
+    var row = assistive.metric_rows.find(function (item) {
+      return item.cohort === state.comparisonCohort && item.group_dimension === "overall" && item.group_value === "all_assistive" && item.run_id === runId;
+    });
+    var baseline = assistive.metric_rows.find(function (item) {
+      return item.cohort === state.comparisonCohort && item.group_dimension === "overall" && item.group_value === "all_assistive" && item.run_id === baselineRunId;
+    });
+    if (!row || !baseline) return null;
+    var before = {}, after = {}, changes = {};
+    assistive.metrics.forEach(function (metric) {
+      before[metric] = Number(baseline[metric]);
+      after[metric] = Number(row[metric]);
+      changes[metric] = Number(row[metric]) - Number(baseline[metric]);
+    });
+    return {
+      category: "辅助性场景",
+      label: "辅助性场景",
+      n: Number(row.n),
+      before: before,
+      after: method.id === "before" ? before : after,
+      delta: method.id === "before" ? Object.fromEntries(assistive.metrics.map(function (metric) { return [metric, 0]; })) : changes,
+      status: "paired",
+      cohort: state.comparisonCohort,
+      sample_ids_sha256: row.sample_ids_sha256
+    };
+  }
   function comparisonSource(model, method, category, requestedGroup) {
     var selectedGroup = requestedGroup || state.comparisonGroup;
+    if (selectedGroup === "dataset" && category === "assistive_scene") return assistiveDatasetSource(model, method);
     var grouping = selectedGroup === "overall" ? "cohort" : selectedGroup;
     var rows;
     if (method.id === "before" || method.id === "joint") rows = ((data.combined[grouping] || {})[model] || []);
@@ -202,9 +233,11 @@
     var rows = ((data.combined[state.comparisonGroup] || {})[model] || []).filter(function (row) {
       return row.status === "paired" && row.cohort === state.comparisonCohort;
     });
-    return [{ id: "overall", label: "整体" }].concat(rows.map(function (row) {
+    var categories = [{ id: "overall", label: "整体" }].concat(rows.map(function (row) {
       return { id: row.category, label: row.category };
     }));
+    if (state.comparisonGroup === "dataset" && assistive) categories.push({ id: "assistive_scene", label: "辅助性场景" });
+    return categories;
   }
   function comparisonChange(row, baseline, method) {
     if (method.id === "before") return 0;
@@ -296,7 +329,9 @@
     var rows = ((data.combined.dataset || {})[data.models[0].id] || []).filter(function (row) {
       return row.status === "paired" && row.cohort === state.comparisonCohort;
     });
-    return [{ id: "overall", label: "整体" }].concat(rows.map(function (row) { return { id: row.category, label: row.category }; }));
+    var categories = [{ id: "overall", label: "整体" }].concat(rows.map(function (row) { return { id: row.category, label: row.category }; }));
+    if (assistive) categories.push({ id: "assistive_scene", label: "辅助性场景" });
+    return categories;
   }
   function renderModelComparisonTable(datasetCategory) {
     var categories = data.models.map(function (model) { return { id: model.id, label: model.label }; });

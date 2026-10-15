@@ -1,6 +1,6 @@
 window.ASSISTIVE_DATA = {
   "schema_version": "audiobench.assistive_scene_web.v1",
-  "built_at": "2026-10-15T15:41:23+08:00",
+  "built_at": "2026-10-15T17:27:49+08:00",
   "dataset": {
     "id": "assistive_scene",
     "label": "辅助性场景",
