@@ -7,28 +7,23 @@ window.MAS4HEALTH_RESULTS = {
   "models": [
     {
       "id": "voxtell",
-      "name": "VoxTell",
-      "subtitle": "3D open-vocabulary"
+      "name": "VoxTell"
     },
     {
       "id": "biomedparse",
-      "name": "BiomedParse v2",
-      "subtitle": "2D biomedical parser"
+      "name": "BiomedParse v2"
     },
     {
       "id": "segvol",
-      "name": "SegVol",
-      "subtitle": "3D CT foundation model"
+      "name": "SegVol"
     },
     {
       "id": "medsam3",
-      "name": "MedSAM3",
-      "subtitle": "SAM3 medical adaptation"
+      "name": "MedSAM3"
     },
     {
       "id": "merlin",
-      "name": "Merlin",
-      "subtitle": "forced anatomy proxy"
+      "name": "Merlin"
     }
   ],
   "datasets": [

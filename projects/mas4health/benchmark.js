@@ -1,77 +1,28 @@
 const DATA = window.MAS4HEALTH_RESULTS;
 
-if (!DATA) {
-  throw new Error("MAS4Health benchmark data is unavailable");
-}
+if (!DATA) throw new Error("MAS4Health benchmark data is unavailable");
 
 const METRICS = {
-  dice: {
-    label: "Dice ↑", name: "Dice", unit: "", decimals: 3, higher: true,
-    description: "体素重叠质量；越高越好",
-    formula: "Dice = 2|P ∩ G| / (|P| + |G|)",
-    explanation: "P 为预测区域，G 为真实标注区域。预测与标注均为空时记为 1。",
-    aggregation: "数据集行取全部病例的算术平均；总计行直接在 7,251 个病例上重新计算平均值。"
-  },
-  iou: {
-    label: "IoU ↑", name: "IoU", unit: "", decimals: 3, higher: true,
-    description: "交并比；越高越好",
-    formula: "IoU = |P ∩ G| / |P ∪ G|",
-    explanation: "用预测区域与真实区域的交集体素数除以并集体素数；两者均为空时记为 1。",
-    aggregation: "数据集行取全部病例的算术平均；总计行直接在 7,251 个病例上重新计算平均值。"
-  },
-  recall: {
-    label: "Recall ↑", name: "Recall", unit: "", decimals: 3, higher: true,
-    description: "体素召回率；越高越好",
-    formula: "Recall = TP / (TP + FN)",
-    explanation: "表示真实肿瘤体素中被模型识别出的比例；真实标注为空时记为 1。",
-    aggregation: "数据集行取全部病例的算术平均；总计行直接在 7,251 个病例上重新计算平均值。"
-  },
-  precision: {
-    label: "Precision ↑", name: "Precision", unit: "", decimals: 3, higher: true,
-    description: "体素精确率；越高越好",
-    formula: "Precision = TP / (TP + FP)",
-    explanation: "表示预测区域中真正属于目标的比例；预测为空且标注非空时记为 0。",
-    aggregation: "数据集行取全部病例的算术平均；总计行直接在 7,251 个病例上重新计算平均值。"
-  },
-  hd95: {
-    label: "HD95 ↓", name: "HD95", unit: "mm", decimals: 1, higher: false,
-    description: "95% Hausdorff 表面距离；越低越好",
-    formula: "HD95 = Q₀.₉₅(d(∂P → ∂G) ∪ d(∂G → ∂P))",
-    explanation: "合并两个方向的最近表面距离并取第 95 百分位，距离按体素间距换算为毫米。",
-    aggregation: "数据集行取病例中位数；总计行在 7,251 个病例上重新取中位数。"
-  },
-  lesionRecall: {
-    label: "Lesion recall ↑", name: "Lesion recall", unit: "", decimals: 3, higher: true,
-    description: "病灶级召回率；越高越好",
-    formula: "Lesion recall = 检出的真实病灶数 / 真实病灶总数",
-    explanation: "以三维 26 邻域连通分量定义病灶；与预测区域有任意体素重叠即视为检出。",
-    aggregation: "数据集行取全部病例的算术平均；总计行直接在 7,251 个病例上重新计算平均值。"
-  },
-  lesionPrecision: {
-    label: "Lesion precision ↑", name: "Lesion precision", unit: "", decimals: 3, higher: true,
-    description: "病灶级精确率；越高越好",
-    formula: "Lesion precision = 命中的预测病灶数 / 预测病灶总数",
-    explanation: "以三维 26 邻域连通分量定义病灶；与真实区域有任意体素重叠即视为命中。",
-    aggregation: "数据集行取全部病例的算术平均；总计行直接在 7,251 个病例上重新计算平均值。"
-  },
-  runtime: {
-    label: "Runtime ↓", name: "Runtime", unit: "s", decimals: 1, higher: false,
-    description: "单病例运行时间；越低越好",
-    formula: "Runtime = median(t₁, t₂, …, tₙ)",
-    explanation: "tᵢ 为实验记录的单病例端到端推理时间，受影像大小、模型环境与硬件影响。",
-    aggregation: "数据集行取病例中位数；总计行在 7,251 个病例上重新取中位数。"
-  },
-  vram: {
-    label: "Peak VRAM ↓", name: "Peak VRAM", unit: "GB", decimals: 1, higher: false,
-    description: "实验记录的峰值显存；越低越好",
-    formula: "Peak VRAM = max(v₁, v₂, …, vₙ)",
-    explanation: "vᵢ 为每个病例记录的峰值显存；该指标展示队列峰值，而不是病例平均显存。",
-    aggregation: "数据集行取该队列最大值；总计行取全部 7,251 个病例中的最大值。"
-  }
+  dice: { label: "Dice ↑", unit: "", decimals: 3, higher: true },
+  iou: { label: "IoU ↑", unit: "", decimals: 3, higher: true },
+  recall: { label: "Recall ↑", unit: "", decimals: 3, higher: true },
+  precision: { label: "Precision ↑", unit: "", decimals: 3, higher: true },
+  hd95: { label: "HD95 ↓", unit: "mm", decimals: 1, higher: false },
+  lesionRecall: { label: "Lesion recall ↑", unit: "", decimals: 3, higher: true },
+  lesionPrecision: { label: "Lesion precision ↑", unit: "", decimals: 3, higher: true },
+  runtime: { label: "Runtime ↓", unit: "s", decimals: 1, higher: false },
+  vram: { label: "Peak VRAM ↓", unit: "GB", decimals: 1, higher: false }
 };
 
-const ORACLE = { id: "oracle", name: "逐样本最优", subtitle: "按最高 Dice 选择" };
+const ORACLE = { id: "oracle", name: "逐样本最优" };
 const COLUMNS = [...DATA.models, ORACLE];
+const CHART_COLORS = {
+  voxtell: "#17676c",
+  biomedparse: "#cf7040",
+  segvol: "#8064a2",
+  medsam3: "#3979b8",
+  merlin: "#6d777b"
+};
 
 function mixColor(score) {
   const stops = [[249, 251, 251], [219, 237, 237], [143, 204, 201]];
@@ -104,10 +55,8 @@ function rowScores(values, metric) {
 
 function renderHead() {
   const modelHeaders = COLUMNS.map(column => `
-    <th scope="col" class="${column.id === "oracle" ? "oracle-column" : ""}">
-      ${column.name}<span>${column.subtitle}</span>
-    </th>`).join("");
-  document.querySelector("#benchmark-head").innerHTML = `<tr><th scope="col" class="dataset-column">数据集 / 任务</th>${modelHeaders}</tr>`;
+    <th scope="col" class="${column.id === "oracle" ? "oracle-column" : ""}">${column.name}</th>`).join("");
+  document.querySelector("#benchmark-head").innerHTML = `<tr><th scope="col" class="dataset-column">数据集</th>${modelHeaders}</tr>`;
 }
 
 function resultCell(value, score, metric, column) {
@@ -119,35 +68,105 @@ function resultCell(value, score, metric, column) {
   </td>`;
 }
 
-function render(metricKey) {
+function renderTable(metricKey) {
   const metric = METRICS[metricKey];
   document.querySelector("#benchmark-body").innerHTML = DATA.datasets.map(dataset => {
     const values = COLUMNS.map(column => DATA.values[dataset.id][column.id][metricKey]);
     const scores = rowScores(values, metric);
     const cells = COLUMNS.map((column, index) => resultCell(values[index], scores[index], metric, column)).join("");
-    return `<tr>
-      <th scope="row" class="dataset-label"><strong>${dataset.name}</strong><span>${dataset.modality} · ${dataset.target} · ${dataset.cases.toLocaleString("en-US")} 例</span></th>
-      ${cells}
-    </tr>`;
+    return `<tr><th scope="row" class="dataset-label">${dataset.name}</th>${cells}</tr>`;
   }).join("");
 
   const totalValues = COLUMNS.map(column => DATA.totals[column.id][metricKey]);
   const totalScores = rowScores(totalValues, metric);
   const totalCells = COLUMNS.map((column, index) => resultCell(totalValues[index], totalScores[index], metric, column)).join("");
-  document.querySelector("#benchmark-foot").innerHTML = `<tr>
-    <th scope="row" class="dataset-label total-label"><strong>总计</strong><span>全部 ${DATA.totalCases.toLocaleString("en-US")} 个病例</span></th>
-    ${totalCells}
-  </tr>`;
+  document.querySelector("#benchmark-foot").innerHTML = `<tr><th scope="row" class="dataset-label total-label">总计</th>${totalCells}</tr>`;
 
-  document.querySelector("#metric-description").textContent = metric.description;
-  document.querySelector("#method-name").textContent = metric.name;
-  document.querySelector("#method-direction").textContent = metric.higher ? "越高越好" : "越低越好";
-  document.querySelector("#method-formula").textContent = metric.formula;
-  document.querySelector("#method-explanation").textContent = metric.explanation;
-  document.querySelector("#method-aggregation").textContent = metric.aggregation;
   document.querySelectorAll(".metrics button").forEach(button => {
     button.setAttribute("aria-pressed", String(button.dataset.metric === metricKey));
   });
+}
+
+function renderChart(metricKey) {
+  const metric = METRICS[metricKey];
+  const canvas = document.querySelector("#performance-chart");
+  const context = canvas.getContext("2d");
+  if (!context) return;
+
+  const ratio = Math.max(1, window.devicePixelRatio || 1);
+  const cssWidth = Math.max(1050, canvas.getBoundingClientRect().width || 1050);
+  const cssHeight = 250;
+  canvas.width = Math.round(cssWidth * ratio);
+  canvas.height = Math.round(cssHeight * ratio);
+  context.setTransform(ratio, 0, 0, ratio, 0, 0);
+  context.clearRect(0, 0, cssWidth, cssHeight);
+
+  const margin = { top: 10, right: 16, bottom: 62, left: 42 };
+  const width = cssWidth - margin.left - margin.right;
+  const height = cssHeight - margin.top - margin.bottom;
+  const x = index => margin.left + (width * index) / (DATA.datasets.length - 1);
+  const allValues = DATA.models.flatMap(model => DATA.datasets.map(dataset => DATA.values[dataset.id][model.id][metricKey]));
+  const finiteValues = allValues.filter(Number.isFinite);
+  const boundedRatio = ["dice", "iou", "recall", "precision", "lesionRecall", "lesionPrecision"].includes(metricKey);
+  const minimum = boundedRatio ? 0 : Math.min(...finiteValues);
+  const maximum = boundedRatio ? 1 : Math.max(...finiteValues);
+  const distance = Math.max(maximum - minimum, Number.EPSILON);
+  const normalize = value => Number.isFinite(value) ? (value - minimum) / distance : 1;
+  const y = value => margin.top + height * (metric.higher ? 1 - normalize(value) : normalize(value));
+  const axisValue = tick => metric.higher
+    ? maximum - (distance * tick) / 5
+    : minimum + (distance * tick) / 5;
+  const axisDecimals = boundedRatio ? 1 : 0;
+  canvas.setAttribute("aria-label", `横轴为数据集，纵轴为${metric.label.replace(/[↑↓]/g, "").trim()}，每条折线表示一个模型`);
+
+  context.font = "10px Inter, sans-serif";
+  context.lineWidth = 1;
+  for (let tick = 0; tick <= 5; tick += 1) {
+    const py = margin.top + (height * tick) / 5;
+    context.beginPath();
+    context.strokeStyle = tick === 5 ? "#aebabc" : "#e5e9e9";
+    context.moveTo(margin.left, py);
+    context.lineTo(cssWidth - margin.right, py);
+    context.stroke();
+    context.fillStyle = "#718084";
+    context.textAlign = "right";
+    context.textBaseline = "middle";
+    context.fillText(axisValue(tick).toFixed(axisDecimals), margin.left - 7, py);
+  }
+
+  context.fillStyle = "#647377";
+  context.textAlign = "right";
+  context.textBaseline = "middle";
+  DATA.datasets.forEach((dataset, index) => {
+    context.save();
+    context.translate(x(index) + 2, margin.top + height + 10);
+    context.rotate(-Math.PI / 4);
+    context.fillText(dataset.name, 0, 0);
+    context.restore();
+  });
+
+  DATA.models.forEach(model => {
+    const values = DATA.datasets.map(dataset => DATA.values[dataset.id][model.id][metricKey]);
+    context.beginPath();
+    context.strokeStyle = CHART_COLORS[model.id];
+    context.lineWidth = 2;
+    context.lineJoin = "round";
+    context.lineCap = "round";
+    values.forEach((value, index) => {
+      if (index === 0) context.moveTo(x(index), y(value));
+      else context.lineTo(x(index), y(value));
+    });
+    context.stroke();
+    values.forEach((value, index) => {
+      context.beginPath();
+      context.fillStyle = CHART_COLORS[model.id];
+      context.arc(x(index), y(value), 2.6, 0, Math.PI * 2);
+      context.fill();
+    });
+  });
+
+  document.querySelector("#chart-legend").innerHTML = DATA.models.map(model => `
+    <span><i style="--series-color:${CHART_COLORS[model.id]}"></i>${model.name}</span>`).join("");
 }
 
 const metricButtons = document.querySelector("#metric-buttons");
@@ -157,9 +176,20 @@ Object.entries(METRICS).forEach(([key, metric]) => {
   button.textContent = metric.label;
   button.dataset.metric = key;
   button.setAttribute("aria-controls", "benchmark-table");
-  button.addEventListener("click", () => render(key));
+  button.addEventListener("click", () => {
+    renderChart(key);
+    renderTable(key);
+  });
   metricButtons.append(button);
 });
 
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  const active = document.querySelector(".metrics button[aria-pressed='true']");
+  resizeTimer = setTimeout(() => renderChart(active ? active.dataset.metric : "dice"), 120);
+});
+
 renderHead();
-render("dice");
+renderChart("dice");
+renderTable("dice");

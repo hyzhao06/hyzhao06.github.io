@@ -5,26 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MAS4Health · 模型评估</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <main>
-    <header class="page-heading">
-      <h1>MAS4Health</h1>
-      <p>5 个模型 × 15 个数据集 · 75 组完整结果 · 7,251 个病例</p>
-    </header>
+    <header class="page-heading"><h1>MAS4Health</h1></header>
 
     <div id="metric-buttons" class="metrics" role="group" aria-label="选择评估指标"></div>
 
-    <section class="results" aria-labelledby="results-title">
-      <div class="section-heading">
-        <div>
-          <h2 id="results-title">模型 × 数据集</h2>
-          <p id="metric-description"></p>
-        </div>
-        <div class="scale" aria-label="热力图色阶"><span>较差</span><i></i><span>较好</span></div>
+    <section class="chart-panel" aria-label="各模型在不同数据集上的 Dice 折线图">
+      <div class="chart-scroll">
+        <canvas id="performance-chart" role="img" aria-label="横轴为数据集，纵轴为 Dice，每条折线表示一个模型"></canvas>
       </div>
+      <div id="chart-legend" class="chart-legend"></div>
+    </section>
 
+    <section class="results" aria-label="模型与数据集结果">
       <div class="table-scroll" tabindex="0" aria-label="完整基准结果表，可横向滚动">
         <table id="benchmark-table" class="benchmark-table">
           <thead id="benchmark-head"></thead>
@@ -32,20 +28,11 @@
           <tfoot id="benchmark-foot"></tfoot>
         </table>
       </div>
-
-      <p class="table-note">最后一列按每个病例的最高 Dice 选择模型，并携带同一模型在该病例上的其他指标；它是使用真实标注回顾性选择的上界，不是可部署模型。</p>
-    </section>
-
-    <section class="method" aria-live="polite" aria-atomic="true">
-      <div class="method-heading"><h2 id="method-name"></h2><span id="method-direction"></span></div>
-      <p id="method-formula" class="formula"></p>
-      <p id="method-explanation"></p>
-      <p id="method-aggregation"></p>
     </section>
 
     <noscript>请启用 JavaScript 查看完整评估表。</noscript>
   </main>
-  <script src="benchmark-data.js?v=6"></script>
-  <script src="benchmark.js?v=6"></script>
+  <script src="benchmark-data.js?v=7"></script>
+  <script src="benchmark.js?v=7"></script>
 </body>
 </html>
