@@ -1,9 +1,114 @@
-:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#222c35;background:#fff;font-synthesis:none;-webkit-font-smoothing:antialiased}
-*{box-sizing:border-box}body{margin:0}main{max-width:1240px;margin:0 auto;padding:64px 40px 80px}header{margin-bottom:32px}h1{margin:0;font-size:26px;font-weight:650;letter-spacing:-.7px;display:flex;align-items:baseline;gap:20px}h1 span{font-size:16px;font-weight:400;color:#76818b;letter-spacing:0}
-.metrics{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}.metrics button{appearance:none;border:1px solid #dfe5e9;border-radius:6px;background:white;padding:10px 15px;font-family:inherit;font-size:14px;font-weight:500;color:#4a5863;cursor:pointer;transition:background .12s,border-color .12s}.metrics button:hover{border-color:#809daa;background:#f6f9fa}.metrics button[aria-pressed=true]{color:#fff;border-color:#244f61;background:#244f61}.metrics button:focus-visible,.table-scroll:focus-visible{outline:2px solid #457e98;outline-offset:3px}
-.data-group+.data-group{margin-top:48px}.group-heading{display:flex;align-items:baseline;gap:14px;margin:0 0 12px}.group-heading h2{margin:0;font-size:17px;font-weight:650}.group-heading span{font-size:12px;color:#849099}
-.table-scroll{overflow-x:auto}.heatmap{width:100%;min-width:760px;border-collapse:separate;border-spacing:0;table-layout:fixed;font-variant-numeric:tabular-nums}.heatmap th,.heatmap td{border-bottom:1px solid #e4e9ec}.heatmap thead th{padding:18px 18px 20px;text-align:left;font-size:14px;font-weight:600;border-top:1px solid #bcc9d0;background:#fafbfc}.heatmap thead th:first-child{width:190px}.heatmap thead span{display:block;margin-top:6px;color:#7a858e;font-size:11px;font-weight:400}.row-label{padding:25px 18px;text-align:left;font-size:14px;font-weight:600;background:white}.metric-cell{height:104px;padding:24px 20px;vertical-align:middle;border-left:5px solid white;border-top:5px solid white;text-align:left}.metric-value{font-size:29px;font-weight:550;letter-spacing:-1px}.metric-unit{margin-left:5px;font-size:12px;color:#64727c}.metric-cell.pending,.metric-cell.unsupported{background:#fafbfc;color:#8c959c;font-size:14px}.metric-cell.pending{color:#8b795a}.state-label{font-size:13px}.table-note{display:flex;justify-content:space-between;gap:20px;padding:15px 0;color:#7c8790;font-size:12px;line-height:1.6}.scale{display:flex;align-items:center;gap:9px;white-space:nowrap}.scale i{display:block;width:86px;height:6px;background:linear-gradient(90deg,#f8fafb,#c0dce3);border-radius:3px}
-.method{margin-top:34px;border-top:1px solid #e4e9ec;padding-top:24px;max-width:850px}.method-heading{display:flex;align-items:baseline;gap:14px}.method h2{margin:0;font-size:17px;font-weight:600}.method-heading span{color:#7c8790;font-size:12px}.method p{font-size:14px;color:#66747e;line-height:1.85;margin:10px 0}.method .formula{font-family:"Cambria Math",Cambria,Georgia,serif;font-size:25px;line-height:1.5;color:#294857;letter-spacing:.1px;margin:15px 0}.method #method-aggregation{font-size:13px;color:#839099}
-.extension-table{width:100%;min-width:820px;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums}.extension-table th,.extension-table td{padding:14px 16px;border-bottom:1px solid #e4e9ec;text-align:left;font-size:13px}.extension-table thead th{border-top:1px solid #bcc9d0;background:#fafbfc;color:#63717c;font-size:11px;font-weight:600}.extension-table thead th:first-child{width:190px}.extension-table tbody th{font-weight:600}.extension-table tbody td:nth-child(2){color:#66747e}.extension-table tbody td:nth-child(3){color:#66747e}.extension-value{border-left:5px solid white}.extension-value strong{font-size:19px;font-weight:600;letter-spacing:-.4px}.extension-value span{margin-left:4px;color:#64727c;font-size:10px}.modality{display:inline-block;min-width:29px;margin-right:8px;color:#365d6e;font-size:10px;font-weight:650}.untested{color:#98a1a7;background:#fafbfc}
-.extension-table code{font:12px/1.4 "SFMono-Regular",Consolas,"Liberation Mono",monospace;color:#52636e;background:transparent}
-@media(max-width:700px){main{padding:30px 18px 48px}header{margin-bottom:24px}h1{font-size:23px;gap:14px}h1 span{font-size:14px}.metrics{gap:7px;margin-bottom:22px}.metrics button{padding:9px 11px;font-size:13px}.table-note{flex-direction:column;gap:8px}.method{margin-top:20px}.method .formula{font-size:21px;overflow-wrap:anywhere}.heatmap thead th:first-child{width:150px}.row-label{position:sticky;left:0;z-index:1}.method-heading{flex-wrap:wrap;gap:8px}}
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1f2b31;
+  background: #fff;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1500px; margin: 0 auto; padding: 56px 36px 72px; }
+
+.page-heading { display: flex; align-items: baseline; gap: 22px; margin-bottom: 30px; }
+.page-heading h1 { margin: 0; font-size: 27px; line-height: 1.2; font-weight: 680; letter-spacing: -.7px; }
+.page-heading p { margin: 0; color: #758187; font-size: 14px; }
+
+.metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.metrics button {
+  appearance: none;
+  border: 1px solid #dce4e5;
+  border-radius: 7px;
+  background: #fff;
+  padding: 9px 14px;
+  color: #4d5e65;
+  font: 500 13px/1.3 inherit;
+  cursor: pointer;
+  transition: border-color .12s, background .12s, color .12s;
+}
+.metrics button:hover { border-color: #77a6a8; background: #f5f9f9; }
+.metrics button[aria-pressed="true"] { border-color: #17676c; background: #17676c; color: #fff; }
+.metrics button:focus-visible, .table-scroll:focus-visible { outline: 2px solid #34868a; outline-offset: 3px; }
+
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 13px; }
+.section-heading h2 { margin: 0; font-size: 18px; font-weight: 650; }
+.section-heading p { margin: 6px 0 0; color: #7b878c; font-size: 12px; }
+.scale { display: flex; align-items: center; gap: 8px; color: #7b878c; font-size: 11px; white-space: nowrap; }
+.scale i { display: block; width: 88px; height: 7px; border-radius: 4px; background: linear-gradient(90deg, #f9fbfb, #8fccc9); }
+
+.table-scroll { overflow: auto; border-top: 1px solid #aebdc1; border-bottom: 1px solid #cbd5d7; }
+.benchmark-table { width: 100%; min-width: 1180px; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-variant-numeric: tabular-nums; }
+.benchmark-table th, .benchmark-table td { border-bottom: 1px solid #e1e7e8; }
+.benchmark-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 74px;
+  padding: 14px 13px;
+  background: #f8faf9;
+  color: #34464c;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 650;
+  vertical-align: bottom;
+}
+.benchmark-table thead th span { display: block; margin-top: 5px; color: #879397; font-size: 10px; font-weight: 400; line-height: 1.35; }
+.benchmark-table .dataset-column { left: 0; z-index: 4; width: 250px; }
+.benchmark-table thead th:not(.dataset-column) { width: 145px; }
+
+.dataset-label {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  height: 76px;
+  padding: 13px 15px;
+  background: #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+.dataset-label strong { display: block; font-size: 13px; font-weight: 650; }
+.dataset-label span { display: block; margin-top: 5px; color: #849095; font-size: 10px; font-weight: 400; line-height: 1.35; }
+
+.result-cell {
+  height: 76px;
+  padding: 16px 13px;
+  background: var(--cell-color);
+  border-left: 4px solid #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+.result-cell strong { font-size: 20px; font-weight: 540; letter-spacing: -.35px; }
+.result-cell span { margin-left: 4px; color: #607176; font-size: 10px; }
+.result-cell.row-best strong { font-weight: 720; color: #153f42; }
+.oracle-column { border-left: 2px solid #7eaeb0 !important; }
+.benchmark-table thead .oracle-column { background: #edf6f5; color: #155f64; }
+
+.benchmark-table tfoot th, .benchmark-table tfoot td { border-top: 2px solid #738e92; border-bottom: 0; }
+.benchmark-table tfoot .dataset-label { background: #f5f8f8; }
+.benchmark-table tfoot .result-cell { height: 82px; }
+.benchmark-table tfoot .result-cell strong { font-size: 21px; }
+
+.table-note { margin: 13px 0 0; max-width: 980px; color: #78858a; font-size: 11px; line-height: 1.75; }
+
+.method { max-width: 900px; margin-top: 34px; padding-top: 24px; border-top: 1px solid #e0e6e7; }
+.method-heading { display: flex; align-items: baseline; gap: 13px; }
+.method-heading h2 { margin: 0; font-size: 17px; font-weight: 650; }
+.method-heading span { color: #6e7c81; font-size: 11px; }
+.method p { margin: 9px 0; color: #64747a; font-size: 13px; line-height: 1.75; }
+.method .formula { margin: 14px 0; color: #225a5e; font: 23px/1.5 "Cambria Math", Cambria, Georgia, serif; letter-spacing: .1px; }
+.method #method-aggregation { color: #829095; font-size: 12px; }
+
+@media (max-width: 760px) {
+  main { padding: 30px 16px 48px; }
+  .page-heading { display: block; margin-bottom: 24px; }
+  .page-heading h1 { font-size: 24px; }
+  .page-heading p { margin-top: 8px; font-size: 12px; }
+  .metrics { gap: 6px; margin-bottom: 22px; }
+  .metrics button { padding: 8px 10px; font-size: 12px; }
+  .section-heading { align-items: flex-start; }
+  .scale { display: none; }
+  .benchmark-table .dataset-column { width: 210px; }
+  .dataset-label { padding-left: 11px; }
+  .method { margin-top: 26px; }
+  .method .formula { font-size: 20px; overflow-wrap: anywhere; }
+}

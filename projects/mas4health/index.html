@@ -5,45 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MAS4Health · 模型评估</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <main>
-    <header><h1>MAS4Health<span>模型评估</span></h1></header>
+    <header class="page-heading">
+      <h1>MAS4Health</h1>
+      <p>5 个模型 × 15 个数据集 · 75 组完整结果 · 7,251 个病例</p>
+    </header>
+
     <div id="metric-buttons" class="metrics" role="group" aria-label="选择评估指标"></div>
-    <section class="data-group" aria-label="主基准评估结果">
-      <div class="group-heading"><h2>主基准</h2><span>3 个模型 · 3 个数据集</span></div>
-      <div class="table-scroll" tabindex="0" aria-label="结果表，可横向滚动">
-        <table class="heatmap">
-          <thead><tr>
-            <th scope="col">模型</th>
-            <th scope="col">KiTS23<span>CT · prompt: kidney tumor<br>GT: label 2 · 489 例</span></th>
-            <th scope="col">LiTS17<span>CT · prompt: liver tumor<br>GT: label 2 · 131 例</span></th>
-            <th scope="col">BraTS 2021<span>FLAIR · prompt: brain tumor<br>GT: Whole Tumor (1∪2∪4) · 1,251 例</span></th>
-          </tr></thead>
-          <tbody id="heatmap-body"></tbody>
+
+    <section class="results" aria-labelledby="results-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="results-title">模型 × 数据集</h2>
+          <p id="metric-description"></p>
+        </div>
+        <div class="scale" aria-label="热力图色阶"><span>较差</span><i></i><span>较好</span></div>
+      </div>
+
+      <div class="table-scroll" tabindex="0" aria-label="完整基准结果表，可横向滚动">
+        <table id="benchmark-table" class="benchmark-table">
+          <thead id="benchmark-head"></thead>
+          <tbody id="benchmark-body"></tbody>
+          <tfoot id="benchmark-foot"></tfoot>
         </table>
       </div>
-      <div class="table-note"><span>BraTS 本轮只测试 brain tumor；GT 合并 labels 1、2、4。SegVol 因当前 checkpoint 仅配置 CT 而未运行。</span><span class="scale">较差 <i></i> 较好</span></div>
+
+      <p class="table-note">最后一列按每个病例的最高 Dice 选择模型，并携带同一模型在该病例上的其他指标；它是使用真实标注回顾性选择的上界，不是可部署模型。</p>
     </section>
-    <section class="data-group extension" aria-label="TumorSegmentation 扩展评估结果">
-      <div class="group-heading"><h2>TumorSegmentation</h2><span>11 个肿瘤任务 · 22 组完整结果</span></div>
-      <div class="table-scroll" tabindex="0" aria-label="TumorSegmentation 结果表，可横向滚动">
-        <table class="extension-table">
-          <thead><tr><th scope="col">任务</th><th scope="col">模态与实际 prompt</th><th scope="col">病例数</th><th scope="col">VoxTell</th><th scope="col">BiomedParse v2</th><th scope="col">SegVol</th></tr></thead>
-          <tbody id="extension-body"></tbody>
-        </table>
-      </div>
-      <div class="table-note"><span>VoxTell 和 BiomedParse v2 均为完整队列结果；本次扩展实验未测试 SegVol。</span></div>
-    </section>
-    <section class="method" aria-label="当前指标计算方法" aria-live="polite" aria-atomic="true">
-      <div class="method-heading"><h2 id="method-name"></h2><span id="metric-description"></span></div>
+
+    <section class="method" aria-live="polite" aria-atomic="true">
+      <div class="method-heading"><h2 id="method-name"></h2><span id="method-direction"></span></div>
       <p id="method-formula" class="formula"></p>
       <p id="method-explanation"></p>
       <p id="method-aggregation"></p>
     </section>
-    <noscript>请启用 JavaScript 查看评估数据和切换指标。</noscript>
+
+    <noscript>请启用 JavaScript 查看完整评估表。</noscript>
   </main>
-  <script src="benchmark.js?v=5"></script>
+  <script src="benchmark-data.js?v=6"></script>
+  <script src="benchmark.js?v=6"></script>
 </body>
 </html>
