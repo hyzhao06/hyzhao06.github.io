@@ -31,6 +31,11 @@ main { width:min(1480px,100%); padding:22px 22px 56px; }
 .metric-cell small { margin-top:1px; color:#657786; font-size:10px; }
 .metric-cell.pending { color:#8795a0; background:#f5f7f8; font-size:11px; font-weight:650; }
 .metric-cell.not-applicable { color:#9aa6ae; background:#f7f8f9; font-size:11px; }
+.metric-cell.not-evaluated { color:#738391; background:#f7f9fb; font-size:11px; }
+.experiment-note { margin:18px 0; padding:14px 18px; border:1px solid #cbdce7; border-left:4px solid #0891b2; border-radius:6px; color:#425466; background:#f5fafc; font-size:13px; line-height:1.7; overflow-wrap:anywhere; }
+.experiment-note strong { color:#213d50; }
+.experiment-note p { margin:6px 0; }
+.experiment-note a { display:inline-block; margin:4px 18px 0 0; color:#086e94; }
 .column-model,.column-variant { display:block; line-height:1.25; }
 .column-model { color:#263847; font-weight:750; }
 .column-variant { margin-top:2px; color:#7a8892; font-size:9px; font-weight:550; }

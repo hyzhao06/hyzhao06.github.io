@@ -14,7 +14,7 @@
   var currentTables = [];
   var variantColors = {
     original: "#94a3b8", cdsd: "#2563eb", easycall: "#10b981", torgo: "#f59e0b",
-    uaspeech: "#8b5cf6", germanpd: "#0891b2", pc_gita: "#e11d48"
+    uaspeech: "#8b5cf6", germanpd: "#0891b2", germanpd_full: "#115e59", pc_gita: "#e11d48", pc_gita_full: "#be185d"
   };
 
   function $(selector, root) { return (root || document).querySelector(selector); }
@@ -37,13 +37,13 @@
   }));
 
   function overallRecord(cohort, model, variant, dataset) {
-    return overallIndex.get(key([cohort, model, variant, dataset])) || { status: "running" };
+    return overallIndex.get(key([cohort, model, variant, dataset])) || { status: "not_evaluated" };
   }
   function datasetRecord(dataset, cohort, group, model, variant) {
-    return datasetIndex.get(key([dataset, cohort, group, model, variant])) || { status: "running" };
+    return datasetIndex.get(key([dataset, cohort, group, model, variant])) || { status: "not_evaluated" };
   }
   function assistiveRecord(cohort, dimension, group, model, variant) {
-    return assistiveIndex.get(key([cohort, dimension, group, model, variant])) || { status: "running" };
+    return assistiveIndex.get(key([cohort, dimension, group, model, variant])) || { status: "not_evaluated" };
   }
 
   function metricValue(record) {
@@ -78,7 +78,11 @@
   function cellHtml(record) {
     if (!record || record.status === "running") return "<td class='metric-cell pending'>进行中</td>";
     if (record.status === "not_applicable") return "<td class='metric-cell not-applicable'>不适用</td>";
+    if (record.status === "not_evaluated") return "<td class='metric-cell not-evaluated'>未评测</td>";
     var title = "N=" + (record.n == null ? "—" : record.n) + "；相对原始权重改善=" + (relativeValue(record) == null ? "—" : (relativeValue(record) * 100).toFixed(2) + "%");
+    if (record.comparison_protocol === "261117_matched") {
+      title += "；基准为本轮同口径原始权重 " + valueText(record.comparison_baseline[state.metric]) + "；同口径旧切段微调 " + valueText(record.comparison_segmented[state.metric]);
+    }
     return "<td class='metric-cell' style='" + heatStyle(record) + "' title='" + esc(title) + "'><strong>" + valueText(metricValue(record)) + "</strong><small>" + relativeText(record) + "</small></td>";
   }
 

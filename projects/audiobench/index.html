@@ -6,8 +6,8 @@
   <meta name="description" content="AudioBench 模型、微调权重与数据集统一对照">
   <title>AudioBench · 模型 × 权重 × 数据集</title>
   <link rel="icon" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/styles.css?v=matrix-20261105-1">
-  <link rel="stylesheet" href="assets/matrix-v3.css?v=matrix-20261105-1">
+  <link rel="stylesheet" href="assets/styles.css?v=full-recording-20261119-1">
+  <link rel="stylesheet" href="assets/matrix-v3.css?v=full-recording-20261119-1">
 </head>
 <body>
   <header class="topbar">
@@ -39,12 +39,19 @@
       </div>
     </section>
 
+    <aside class="experiment-note" aria-label="新微调结果说明">
+      <strong>完整录音微调结果已更新</strong>
+      <p>“GermanPD 微调（新）”和“PC-GITA 微调（新）”使用完整录音与完整参考文本训练，覆盖全部五个模型。旧微调方法与历史结果保留；跨数据集及辅助性组合尚未评测。</p>
+      <p>新条目括号中的改善比例以本轮同口径原始权重为基准。Step-Audio 已修复首次生成漏传音频的问题，并复评三种权重；历史条目与新条目的差值不能直接作为微调改善。完整对照、退化结果与局限见报告。</p>
+      <a href="reports/261117-report.md" download>下载本轮报告（Markdown）</a>
+      <a href="data/261117-summary.csv" download>下载完整指标（CSV）</a>
+    </aside>
     <section class="result-head" id="result-head"></section>
 
     <section id="result-content" aria-live="polite"></section>
   </main>
   <footer>AudioBench</footer>
-  <script src="data/matrix-site-data.js?v=matrix-20261105-1"></script>
-  <script src="assets/app.js?v=matrix-20261105-1"></script>
+  <script src="data/matrix-site-data.js?v=full-recording-20261119-1"></script>
+  <script src="assets/app.js?v=full-recording-20261119-1"></script>
 </body>
 </html>
