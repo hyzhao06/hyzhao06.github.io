@@ -32,7 +32,7 @@ button:focus-visible, select:focus-visible { outline: 3px solid #7899b7; outline
 
 .filters { display: grid; align-items: end; gap: 12px; margin: 0 0 14px; }
 .inventory-filters { grid-template-columns: repeat(3, minmax(170px, 1fr)); }
-.results-filters { grid-template-columns: repeat(6, minmax(135px, 1fr)); }
+.results-filters { grid-template-columns: repeat(5, minmax(135px, 1fr)); }
 .filters label { display: grid; gap: 5px; color: var(--muted); font-weight: 550; }
 select { width: 100%; min-height: 42px; padding: 7px 32px 7px 10px; border: 1px solid #aeb9c5; border-radius: 3px; background: var(--paper); }
 .download { min-height: 42px; padding: 7px 15px; border: 1px solid var(--accent); border-radius: 3px; background: var(--accent); color: #fff; font-weight: 600; }
@@ -63,6 +63,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 
 .result-frame { min-height: 120px; }
 #result-table { min-width: 1020px; }
+#result-table tbody th, #result-table tbody td { padding-top: 6px; padding-bottom: 6px; }
 #result-table tbody th { font-weight: 600; }
 #result-table .number { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 #result-table td:last-child, #result-table th:last-child { text-align: right; }

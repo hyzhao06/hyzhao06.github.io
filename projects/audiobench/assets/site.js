@@ -12,7 +12,7 @@
   const datasetIds = new Map(data.datasets.map(row => [row.label, row.id]));
   const cohortNames = { disease: '疾病组', healthy: '健康组' };
   const scopeNames = { overall: '整体', severity: '严重度分组', assistive: '辅助性场景' };
-  const pageSize = 8;
+  const pageSize = 12;
   let filteredRows = [];
   let page = 0;
 

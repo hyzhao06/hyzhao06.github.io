@@ -6,34 +6,18 @@
   <meta name="theme-color" content="#f6f7f8">
   <title>AudioBench</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=261126-6">
-  <script src="data/matrix-site-data.js?v=261126-6"></script>
-  <script defer src="assets/site.js?v=261126-6"></script>
+  <link rel="stylesheet" href="assets/site.css?v=261126-8">
+  <script src="data/matrix-site-data.js?v=261126-8"></script>
+  <script defer src="assets/site.js?v=261126-8"></script>
 </head>
 <body>
   <main class="page">
     <nav class="view-tabs" role="tablist" aria-label="数据页面">
-      <button class="tab active" type="button" role="tab" aria-selected="true" aria-controls="inventory-view" id="inventory-tab">有哪些数据</button>
-      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="results-view" id="results-tab">筛选数据</button>
+      <button class="tab active" type="button" role="tab" aria-selected="true" aria-controls="results-view" id="results-tab">筛选数据</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="inventory-view" id="inventory-tab">有哪些数据</button>
     </nav>
 
-    <section class="view" id="inventory-view" role="tabpanel" aria-labelledby="inventory-tab">
-      <form class="filters inventory-filters" id="inventory-filters">
-        <label>模型<select name="model"></select></label>
-        <label>权重<select name="variant"></select></label>
-        <label>数据集<select name="dataset"></select></label>
-      </form>
-      <div class="legend" aria-label="数据状态">
-        <span><i class="status-mark complete">✓</i>已评测</span>
-        <span><i class="status-mark not_evaluated">…</i>待评测</span>
-        <span><i class="status-mark not_applicable">—</i>不适用</span>
-      </div>
-      <div class="table-frame matrix-frame">
-        <table id="coverage-table"></table>
-      </div>
-    </section>
-
-    <section class="view" id="results-view" role="tabpanel" aria-labelledby="results-tab" hidden>
+    <section class="view" id="results-view" role="tabpanel" aria-labelledby="results-tab">
       <form class="filters results-filters" id="filters">
         <label>范围<select name="scope"><option value="overall">整体</option><option value="severity">严重度分组</option><option value="assistive">辅助性场景</option></select></label>
         <label>模型<select name="model"></select></label>
@@ -55,6 +39,22 @@
         <button id="previous" type="button">上一页</button>
         <span id="page-indicator"></span>
         <button id="next" type="button">下一页</button>
+      </div>
+    </section>
+
+    <section class="view" id="inventory-view" role="tabpanel" aria-labelledby="inventory-tab" hidden>
+      <form class="filters inventory-filters" id="inventory-filters">
+        <label>模型<select name="model"></select></label>
+        <label>权重<select name="variant"></select></label>
+        <label>数据集<select name="dataset"></select></label>
+      </form>
+      <div class="legend" aria-label="数据状态">
+        <span><i class="status-mark complete">✓</i>已评测</span>
+        <span><i class="status-mark not_evaluated">…</i>待评测</span>
+        <span><i class="status-mark not_applicable">—</i>不适用</span>
+      </div>
+      <div class="table-frame matrix-frame">
+        <table id="coverage-table"></table>
       </div>
     </section>
   </main>
