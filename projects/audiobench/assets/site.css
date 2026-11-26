@@ -47,6 +47,8 @@ select { width: 100%; min-height: 42px; padding: 7px 32px 7px 10px; border: 1px 
 
 .table-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 0 0 9px; }
 .table-heading p { margin: 0; color: var(--muted); }
+.heatmap-legend { display: inline-flex; align-items: center; gap: 9px; margin-left: auto; color: var(--muted); white-space: nowrap; }
+.heatmap-legend i { width: 112px; height: 14px; border: 1px solid #d1d7dc; background: linear-gradient(90deg, #f9e8e6 0%, #fffef8 50%, #e6f3e9 100%); }
 .table-frame { overflow: auto; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); background: var(--paper); }
 table { width: 100%; border-collapse: collapse; text-align: left; }
 th, td { padding: 7px 10px; border-bottom: 1px solid #dce2e8; vertical-align: middle; }
@@ -72,6 +74,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 #result-table .model-row { position: sticky; left: 0; z-index: 5; }
 #result-table .weight-row { position: sticky; left: 145px; z-index: 4; }
 #result-table .number { text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
+#result-table .metric-value { background-color: var(--heat-color, transparent); }
 #result-table thead tr:nth-child(1) th { top: 0; z-index: 8; }
 #result-table thead tr:nth-child(2) th { top: 39px; z-index: 8; }
 #result-table thead tr:nth-child(3) th { top: 78px; z-index: 8; }

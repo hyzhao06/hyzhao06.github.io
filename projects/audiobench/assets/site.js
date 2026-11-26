@@ -25,6 +25,28 @@
     if (!Number.isFinite(value)) return '—';
     return metric === 'semscore' ? value.toFixed(4) : `${(value * 100).toFixed(2)}%`;
   };
+  const heatColor = quality => {
+    const bad = [249, 232, 230], middle = [255, 254, 248], good = [230, 243, 233];
+    const from = quality < .5 ? bad : middle;
+    const to = quality < .5 ? middle : good;
+    const amount = quality < .5 ? quality * 2 : (quality - .5) * 2;
+    return `rgb(${from.map((value, index) => Math.round(value + (to[index] - value) * amount)).join(',')})`;
+  };
+  function columnHeat(values, metric) {
+    const sorted = values.slice().sort((a, b) => a - b);
+    if (new Set(sorted).size < 2) return new Map();
+    const colors = new Map();
+    for (const value of sorted) {
+      if (colors.has(value)) continue;
+      const first = sorted.findIndex(item => item === value);
+      let after = first + 1;
+      while (after < sorted.length && sorted[after] === value) after++;
+      const rank = ((first + after - 1) / 2) / (sorted.length - 1);
+      const quality = metric === 'semscore' ? rank : 1 - rank;
+      colors.set(value, heatColor(quality));
+    }
+    return colors;
+  }
   const csvCell = value => `"${String(value ?? '').replaceAll('"', '""')}"`;
 
   function setOptions(select, entries, allLabel = '') {
@@ -253,6 +275,10 @@
     const leaves = makeLeaves(current);
     const rows = matchingRows(current);
     const rowIndex = new Map(rows.map(row => [`${row.model}/${row.variant}/${leafKeyFor(row, current)}`, row]));
+    const heatMaps = new Map(leaves.map(leaf => [leaf.key, columnHeat(
+      rows.filter(row => leafKeyFor(row, current) === leaf.key).map(row => row[current.metric]).filter(Number.isFinite),
+      current.metric,
+    )]));
     const modelsSelected = current.models;
     const variantsSelected = variants.filter(row => current.variant === 'all' || row.id === current.variant);
     const depth = Math.max(1, ...leaves.map(row => row.path.length));
@@ -260,6 +286,7 @@
     $('#result-table').hidden = leaves.length === 0 || modelsSelected.length === 0;
     $('#export').disabled = leaves.length === 0 || modelsSelected.length === 0;
     $('#result-count').textContent = `${integer(rows.filter(row => Number.isFinite(row[current.metric])).length)} 个数值`;
+    $('#heatmap-legend').hidden = ![...heatMaps.values()].some(colors => colors.size > 1);
     if (!leaves.length || !modelsSelected.length) {
       $('#result-table').innerHTML = '';
       return;
@@ -274,7 +301,9 @@
       selectedVariants.forEach((variant, index) => {
         const cells = leaves.map(leaf => {
           const row = rowIndex.get(`${model.id}/${variant.id}/${leaf.key}`);
-          return `<td class="number">${formatValue(current.metric, row?.[current.metric])}</td>`;
+          const value = row?.[current.metric];
+          const color = Number.isFinite(value) ? heatMaps.get(leaf.key).get(value) : null;
+          return `<td class="number metric-value"${color ? ` style="--heat-color:${color}"` : ''}>${formatValue(current.metric, value)}</td>`;
         }).join('');
         const modelHeader = index === 0 ? `<th class="model-row" scope="rowgroup" rowspan="${selectedVariants.length}">${esc(model.label)}</th>` : '';
         body.push(`<tr>${modelHeader}<th class="weight-row" scope="row">${esc(variant.label)}</th>${cells}</tr>`);
