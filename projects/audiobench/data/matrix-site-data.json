@@ -5177,35 +5177,80 @@
         "model": "qwen25",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 2.5394981412639406,
+        "semscore": 0.8526833027348959,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "qwen25",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 0.6648126838000256,
+        "semscore": 0.93164195947684,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "qwen25",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.255984555984556,
+        "semscore": 0.950085879283927,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "qwen25",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.12061781609195402,
+        "semscore": 0.9697049297168403,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "qwen25",
         "variant": "germanpd_full",
         "dataset": "uaspeech",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18740,
+        "wer": 0.8466915688367129,
+        "semscore": 0.9116870872016396,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -5403,21 +5448,48 @@
         "model": "qwen3",
         "variant": "germanpd_full",
         "dataset": "pc_gita",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 14,
+        "wer": 0.16468253968253968,
+        "semscore": 0.9885559380054474,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "qwen3",
         "variant": "germanpd_full",
         "dataset": "pc_gita",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 70,
+        "wer": 0.06111111111111111,
+        "semscore": 0.9964685184614999,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "phi4",
         "variant": "germanpd_full",
         "dataset": "cdsd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 29570,
+        "wer": 1.2750823750924618,
+        "semscore": 0.8689579427464007,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -5431,35 +5503,80 @@
         "model": "phi4",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 2.629879182156134,
+        "semscore": 0.8709932848246255,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "phi4",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 0.4587009333844777,
+        "semscore": 0.9503367714753188,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "phi4",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.3961389961389961,
+        "semscore": 0.9443867414562925,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "phi4",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.15653735632183907,
+        "semscore": 0.9631036090099392,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "phi4",
         "variant": "germanpd_full",
         "dataset": "uaspeech",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18740,
+        "wer": 1.9310565635005337,
+        "semscore": 0.8879042200115982,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -5553,7 +5670,16 @@
         "model": "whisper",
         "variant": "germanpd_full",
         "dataset": "cdsd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 29570,
+        "wer": 1.7382489408916684,
+        "semscore": 0.8580120551150757,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -5567,35 +5693,80 @@
         "model": "whisper",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 2.011617100371747,
+        "semscore": 0.8597554009891758,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "whisper",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 0.5404040404040404,
+        "semscore": 0.93841381695011,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "whisper",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.2166023166023166,
+        "semscore": 0.9553987114310949,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "whisper",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.09403735632183909,
+        "semscore": 0.9751234129654903,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "whisper",
         "variant": "germanpd_full",
         "dataset": "uaspeech",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18740,
+        "wer": 1.5056563500533617,
+        "semscore": 0.9156521981623791,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -5703,35 +5874,80 @@
         "model": "step_audio",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 5.619888475836431,
+        "semscore": 0.8211439582719757,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "step_audio",
         "variant": "germanpd_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 7.356731875719217,
+        "semscore": 0.8517956750561134,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "step_audio",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 1.2833976833976835,
+        "semscore": 0.9076618429123785,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "step_audio",
         "variant": "germanpd_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 1.0065373563218392,
+        "semscore": 0.9210084739887209,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "step_audio",
         "variant": "germanpd_full",
         "dataset": "uaspeech",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18740,
+        "wer": 5.568143009605123,
+        "semscore": 0.8740193613088245,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -5853,14 +6069,32 @@
         "model": "qwen25",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.2749034749034749,
+        "semscore": 0.9508111800563951,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "qwen25",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.1165948275862069,
+        "semscore": 0.9702838116774556,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
@@ -5881,14 +6115,32 @@
         "model": "qwen25",
         "variant": "pc_gita_full",
         "dataset": "germanpd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18,
+        "wer": 0.2935528120713306,
+        "semscore": 0.9705673721101549,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "qwen25",
         "variant": "pc_gita_full",
         "dataset": "germanpd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 88,
+        "wer": 0.2769360269360269,
+        "semscore": 0.9772623113610528,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
@@ -5999,14 +6251,32 @@
         "model": "qwen3",
         "variant": "pc_gita_full",
         "dataset": "germanpd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18,
+        "wer": 0.05486968449931413,
+        "semscore": 0.9966675738493601,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "qwen3",
         "variant": "pc_gita_full",
         "dataset": "germanpd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 88,
+        "wer": 0.0653759820426487,
+        "semscore": 0.995774157345295,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
@@ -6061,7 +6331,16 @@
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "cdsd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 29570,
+        "wer": 1.060251496200659,
+        "semscore": 0.8714699635462944,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -6075,35 +6354,80 @@
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 1.8861524163568772,
+        "semscore": 0.8655435517073818,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 0.5264032732387163,
+        "semscore": 0.9472249672326988,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.30154440154440154,
+        "semscore": 0.9487013878945411,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.13706896551724138,
+        "semscore": 0.9648954635989929,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "uaspeech",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18740,
+        "wer": 1.4332977588046958,
+        "semscore": 0.881724167973789,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -6117,14 +6441,32 @@
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "germanpd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18,
+        "wer": 0.13580246913580246,
+        "semscore": 0.9878876606623331,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "phi4",
         "variant": "pc_gita_full",
         "dataset": "germanpd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 88,
+        "wer": 0.17003367003367004,
+        "semscore": 0.9849020466208458,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
@@ -6179,7 +6521,16 @@
         "model": "whisper",
         "variant": "pc_gita_full",
         "dataset": "cdsd",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 29570,
+        "wer": 1.7568001479389415,
+        "semscore": 0.8580801760964915,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -6193,35 +6544,80 @@
         "model": "whisper",
         "variant": "pc_gita_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 1.5659851301115242,
+        "semscore": 0.8583269068367305,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "whisper",
         "variant": "pc_gita_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 0.5447513105740954,
+        "semscore": 0.9371758969137448,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "whisper",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.22239382239382238,
+        "semscore": 0.9556062458578077,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "whisper",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.11131465517241379,
+        "semscore": 0.9749418573858178,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "whisper",
         "variant": "pc_gita_full",
         "dataset": "uaspeech",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 18740,
+        "wer": 1.2051227321237994,
+        "semscore": 0.9137973074056804,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
@@ -6329,28 +6725,64 @@
         "model": "step_audio",
         "variant": "pc_gita_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 2717,
+        "wer": 2.4570167286245352,
+        "semscore": 0.8218231545812644,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "step_audio",
         "variant": "pc_gita_full",
         "dataset": "easycall",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10077,
+        "wer": 1.8040531901291395,
+        "semscore": 0.8628067018801913,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
         "model": "step_audio",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 1046,
+        "wer": 0.5895752895752896,
+        "semscore": 0.8981035127238607,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "healthy",
         "model": "step_audio",
         "variant": "pc_gita_full",
         "dataset": "torgo",
-        "status": "not_evaluated"
+        "status": "complete",
+        "n": 10978,
+        "wer": 0.576867816091954,
+        "semscore": 0.9065752694799636,
+        "relative": {
+          "wer": null,
+          "semscore": null
+        },
+        "source": "261125结果/ASR/summary.csv",
+        "comparison_protocol": "261125_ood"
       },
       {
         "cohort": "disease",
@@ -27859,8 +28291,8 @@
     "note": "（新）使用完整录音与完整文本微调，仅评测对应训练数据集。旧条目保留历史数值；新条目的相对改善使用本轮同口径原始权重。Step-Audio 三种权重均已在修复音频输入的流程下复评，不能直接用历史行计算新旧差值。"
   },
   "ood_update": {
-    "date": "2026-11-25",
-    "complete_cells": 6,
+    "date": "2026-11-26",
+    "complete_cells": 35,
     "expected_cells": 50,
     "summary": "data/261125-ood-summary.csv"
   }
