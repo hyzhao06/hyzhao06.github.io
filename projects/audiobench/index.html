@@ -6,26 +6,57 @@
   <meta name="theme-color" content="#f6f7f8">
   <title>AudioBench</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=261126-5">
-  <script src="data/matrix-site-data.js?v=261126-5"></script>
-  <script defer src="assets/site.js?v=261126-5"></script>
+  <link rel="stylesheet" href="assets/site.css?v=261126-6">
+  <script src="data/matrix-site-data.js?v=261126-6"></script>
+  <script defer src="assets/site.js?v=261126-6"></script>
 </head>
 <body>
   <main class="page">
-    <form class="filters" id="filters">
-      <label>模型<select name="model"></select></label>
-      <label>权重<select name="variant"></select></label>
-      <label>数据集<select name="dataset"></select></label>
-      <button class="download" id="export" type="button">下载 CSV</button>
-    </form>
-    <div class="legend" aria-label="数据状态">
-      <span><i class="status-mark complete">✓</i>已评测</span>
-      <span><i class="status-mark not_evaluated">…</i>待评测</span>
-      <span><i class="status-mark not_applicable">—</i>不适用</span>
-    </div>
-    <div class="table-frame">
-      <table id="coverage-table"></table>
-    </div>
+    <nav class="view-tabs" role="tablist" aria-label="数据页面">
+      <button class="tab active" type="button" role="tab" aria-selected="true" aria-controls="inventory-view" id="inventory-tab">有哪些数据</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="results-view" id="results-tab">筛选数据</button>
+    </nav>
+
+    <section class="view" id="inventory-view" role="tabpanel" aria-labelledby="inventory-tab">
+      <form class="filters inventory-filters" id="inventory-filters">
+        <label>模型<select name="model"></select></label>
+        <label>权重<select name="variant"></select></label>
+        <label>数据集<select name="dataset"></select></label>
+      </form>
+      <div class="legend" aria-label="数据状态">
+        <span><i class="status-mark complete">✓</i>已评测</span>
+        <span><i class="status-mark not_evaluated">…</i>待评测</span>
+        <span><i class="status-mark not_applicable">—</i>不适用</span>
+      </div>
+      <div class="table-frame matrix-frame">
+        <table id="coverage-table"></table>
+      </div>
+    </section>
+
+    <section class="view" id="results-view" role="tabpanel" aria-labelledby="results-tab" hidden>
+      <form class="filters results-filters" id="filters">
+        <label>范围<select name="scope"><option value="overall">整体</option><option value="severity">严重度分组</option><option value="assistive">辅助性场景</option></select></label>
+        <label>模型<select name="model"></select></label>
+        <label id="dataset-wrap">评测集<select name="dataset"></select></label>
+        <label>权重<select name="variant"></select></label>
+        <label>人群<select name="cohort"><option value="all">全部</option><option value="disease">疾病组</option><option value="healthy">健康组</option></select></label>
+        <label id="dimension-wrap" hidden>场景数据<select name="dimension"><option value="overall">场景汇总</option><option value="scene">按场景</option><option value="dataset">按来源数据集</option></select></label>
+        <label id="group-wrap" hidden>分组<select name="group"></select></label>
+      </form>
+      <div class="table-heading">
+        <p id="result-count" aria-live="polite"></p>
+        <button class="download" id="export" type="button">下载筛选 CSV</button>
+      </div>
+      <div class="table-frame result-frame">
+        <table id="result-table"></table>
+        <p id="empty" hidden>没有匹配数据</p>
+      </div>
+      <div class="pagination" id="pagination" hidden>
+        <button id="previous" type="button">上一页</button>
+        <span id="page-indicator"></span>
+        <button id="next" type="button">下一页</button>
+      </div>
+    </section>
   </main>
 </body>
 </html>
