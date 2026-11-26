@@ -90,8 +90,8 @@ th, td { padding: 7px 12px; border-bottom: 1px solid #e0e5ea; vertical-align: mi
 thead th { background: #edf1f5; color: #283a4d; font-size: 16px; font-weight: 650; white-space: nowrap; }
 tbody th { font-weight: 600; }
 tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
-#result-table { min-width: 820px; }
-#result-table td:nth-last-child(-n+3), #result-table th:nth-last-child(-n+3) { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+#result-table { min-width: 980px; }
+#result-table .number { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 #empty { margin: 0; padding: 28px 16px; color: var(--muted); text-align: center; }
 .pagination { display: flex; align-items: center; justify-content: center; gap: 18px; padding-top: 14px; color: var(--muted); }
 .pagination button { min-height: 40px; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); }

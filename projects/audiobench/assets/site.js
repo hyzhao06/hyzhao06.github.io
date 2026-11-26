@@ -22,7 +22,7 @@
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
   })[char]);
   const integer = value => Number(value || 0).toLocaleString('en-US');
-  const formatWer = value => Number.isFinite(value) ? `${(100 * value).toFixed(2)}%` : '—';
+  const formatPercent = value => Number.isFinite(value) ? `${(100 * value).toFixed(2)}%` : '—';
   const formatScore = value => Number.isFinite(value) ? value.toFixed(4) : '—';
   const formatDataset = row => {
     if (row.dimension === 'dataset') {
@@ -98,6 +98,7 @@
     const shown = rows.slice(page * pageSize, (page + 1) * pageSize);
     const state = stateFromForm();
     const showGroup = state.scope === 'severity' || (state.scope === 'assistive' && state.dimension !== 'overall');
+    const showExtendedMetrics = rows.length > 0 && rows.every(row => Number.isFinite(row.cer) && Number.isFinite(row.ser));
     $('#result-count').textContent = `${integer(rows.length)} 条结果`;
     $('#export').disabled = rows.length === 0;
     $('#empty').hidden = rows.length !== 0;
@@ -109,16 +110,22 @@
 
     const headers = ['模型', '权重', '评测集', '人群'];
     if (showGroup) headers.push('分组');
-    headers.push('样本数', 'WER', 'SemScore');
+    headers.push('样本数', 'WER');
+    if (showExtendedMetrics) headers.push('CER', 'SER');
+    headers.push('SemScore');
     const body = shown.map(row => {
       const cells = [
         modelNames.get(row.model), variantNames.get(row.variant), formatDataset(row), cohortNames[row.cohort],
       ];
       if (showGroup) cells.push(formatGroup(row));
-      cells.push(integer(row.n), formatWer(row.wer), formatScore(row.semscore));
-      return `<tr>${cells.map((value, index) => index === 0 ? `<th scope="row">${escapeHtml(value)}</th>` : `<td>${escapeHtml(value)}</td>`).join('')}</tr>`;
+      cells.push(integer(row.n), formatPercent(row.wer));
+      if (showExtendedMetrics) cells.push(formatPercent(row.cer), formatPercent(row.ser));
+      cells.push(formatScore(row.semscore));
+      const numericColumns = showExtendedMetrics ? 5 : 3;
+      return `<tr>${cells.map((value, index) => index === 0 ? `<th scope="row">${escapeHtml(value)}</th>` : `<td${index >= cells.length - numericColumns ? ' class="number"' : ''}>${escapeHtml(value)}</td>`).join('')}</tr>`;
     }).join('');
-    $('#result-table').innerHTML = `<thead><tr>${headers.map(header => `<th scope="col">${header}</th>`).join('')}</tr></thead><tbody>${body}</tbody>`;
+    const numericHeaders = showExtendedMetrics ? 5 : 3;
+    $('#result-table').innerHTML = `<thead><tr>${headers.map((header, index) => `<th scope="col"${index >= headers.length - numericHeaders ? ' class="number"' : ''}>${header}</th>`).join('')}</tr></thead><tbody>${body}</tbody>`;
   }
 
   function statusCell(status, cohort) {
@@ -150,14 +157,14 @@
 
   function downloadCsv() {
     const state = stateFromForm();
-    const header = ['模型', '权重', '训练数据集', '评测数据集', '人群', '分组', '样本数', 'WER', 'SemScore', '范围'];
+    const header = ['模型', '权重', '训练数据集', '评测数据集', '人群', '分组', '样本数', 'WER', 'CER', 'SER', 'SemScore', '范围'];
     const content = [header, ...rows.map(row => {
       const variant = data.variants.find(item => item.id === row.variant);
       const trainingSet = variant?.train_dataset ? datasetNames.get(variant.train_dataset) : '原始权重';
       return [
         modelNames.get(row.model), variantNames.get(row.variant), trainingSet,
         formatDataset(row), cohortNames[row.cohort], row.group ? formatGroup(row) : '',
-        row.n, row.wer, row.semscore, scopeNames[state.scope],
+        row.n, row.wer, row.cer, row.ser, row.semscore, scopeNames[state.scope],
       ];
     })].map(line => line.map(csvCell).join(',')).join('\r\n');
     const blob = new Blob([`\ufeff${content}\r\n`], { type: 'text/csv;charset=utf-8' });
