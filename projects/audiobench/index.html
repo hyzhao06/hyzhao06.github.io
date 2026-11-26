@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#f6f7f8">
   <title>AudioBench</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=261126-14">
-  <script src="data/matrix-site-data.js?v=261126-14"></script>
-  <script defer src="assets/site.js?v=261126-14"></script>
+  <link rel="stylesheet" href="assets/site.css?v=261126-15">
+  <script src="data/matrix-site-data.js?v=261126-15"></script>
+  <script defer src="assets/site.js?v=261126-15"></script>
 </head>
 <body>
   <main class="page">
@@ -36,6 +36,9 @@
       <div class="table-frame result-frame">
         <table id="result-table"></table>
         <p id="empty" hidden>没有匹配数据</p>
+      </div>
+      <div class="horizontal-pan" id="result-pan-wrap" hidden>
+        <input id="result-pan" type="range" min="0" max="0" value="0" step="1" aria-label="横向拖动结果表格">
       </div>
     </section>
 

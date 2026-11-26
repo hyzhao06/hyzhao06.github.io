@@ -5,6 +5,9 @@
   const $ = selector => document.querySelector(selector);
   const inventoryForm = $('#inventory-filters');
   const resultsForm = $('#filters');
+  const resultFrame = $('.result-frame');
+  const resultPan = $('#result-pan');
+  const resultPanWrap = $('#result-pan-wrap');
   const models = data.models;
   const variants = data.variants;
   const datasets = data.datasets;
@@ -270,6 +273,13 @@
     return rows;
   }
 
+  function syncResultPan() {
+    const max = Math.max(0, resultFrame.scrollWidth - resultFrame.clientWidth);
+    resultPan.max = String(max);
+    resultPan.value = String(Math.min(resultFrame.scrollLeft, max));
+    resultPanWrap.hidden = max < 2;
+  }
+
   function renderResultMatrix() {
     const current = state();
     const leaves = makeLeaves(current);
@@ -289,6 +299,8 @@
     $('#heatmap-legend').hidden = ![...heatMaps.values()].some(colors => colors.size > 1);
     if (!leaves.length || !modelsSelected.length) {
       $('#result-table').innerHTML = '';
+      resultFrame.scrollLeft = 0;
+      requestAnimationFrame(syncResultPan);
       return;
     }
 
@@ -310,6 +322,8 @@
       });
     }
     $('#result-table').innerHTML = `${cols}<thead>${headers.map(row => `<tr>${row.join('')}</tr>`).join('')}</thead><tbody>${body.join('')}</tbody>`;
+    resultFrame.scrollLeft = 0;
+    requestAnimationFrame(syncResultPan);
   }
 
   function renderCoverage() {
@@ -370,11 +384,15 @@
     $('#results-tab').classList.toggle('active', !inventory);
     $('#inventory-tab').setAttribute('aria-selected', String(inventory));
     $('#results-tab').setAttribute('aria-selected', String(!inventory));
+    requestAnimationFrame(syncResultPan);
   }
 
   inventoryForm.addEventListener('change', renderCoverage);
   resultsForm.addEventListener('change', () => { refreshConditionalFilters(); renderResultMatrix(); });
   $('#export').addEventListener('click', downloadCsv);
+  resultFrame.addEventListener('scroll', syncResultPan, { passive: true });
+  resultPan.addEventListener('input', () => { resultFrame.scrollLeft = Number(resultPan.value); });
+  window.addEventListener('resize', syncResultPan);
   $('#inventory-tab').addEventListener('click', event => activateTab(event.currentTarget));
   $('#results-tab').addEventListener('click', event => activateTab(event.currentTarget));
 
