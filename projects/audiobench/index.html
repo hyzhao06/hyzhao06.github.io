@@ -3,48 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AudioBench 模型、微调权重与数据集统一对照">
-  <title>AudioBench · 模型 × 权重 × 数据集</title>
+  <meta name="description" content="浏览 AudioBench 的病理语音识别结果、微调对照和数据覆盖。">
+  <title>AudioBench · 病理语音识别评测</title>
   <link rel="icon" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/styles.css?v=full-recording-20261119-1">
-  <link rel="stylesheet" href="assets/matrix-v3.css?v=full-recording-20261119-1">
+  <link rel="stylesheet" href="assets/site.css?v=261125-1">
+  <script defer src="data/matrix-site-data.js?v=261125-1"></script>
+  <script defer src="assets/site.js?v=261125-1"></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#">AudioBench</a>
+  <a class="skip" href="#main">跳到内容</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>AudioBench</a>
+      <nav aria-label="页面导航">
+        <a href="#focus">重点结果</a><a href="#results">结果筛选</a><a href="#coverage">数据覆盖</a>
+      </nav>
+    </div>
   </header>
-  <main id="main-content">
-    <section class="control-panel matrix-controls" aria-label="结果筛选">
-      <div class="control-group">
-        <span class="control-label">范围</span>
-        <div class="button-tabs" id="scope-tabs">
-          <button type="button" data-scope="overall" class="active">整体</button>
-          <button type="button" data-scope="assistive">辅助性</button>
-        </div>
+  <main id="main" class="shell">
+    <section class="intro" id="top" aria-labelledby="site-title">
+      <div>
+        <h1 id="site-title">病理语音识别评测</h1>
+        <p>比较原始与微调权重，查看 WER 与 SemScore 在不同数据集、人群和辅助性场景中的表现。</p>
       </div>
-      <div class="control-group">
-        <span class="control-label">分组</span>
-        <div class="button-tabs" id="group-tabs">
-          <button type="button" data-group="none" class="active">不分组</button>
-          <button type="button" data-group="model">按模型</button>
-          <button type="button" data-group="dataset">按数据集</button>
-        </div>
-      </div>
-      <div class="control-group">
-        <span class="control-label">指标</span>
-        <div class="button-tabs" id="metric-tabs">
-          <button type="button" data-metric="wer" class="active">WER</button>
-          <button type="button" data-metric="semscore">SemScore</button>
-        </div>
-      </div>
+      <a href="#results" class="button button-primary">筛选结果 <span aria-hidden="true">↓</span></a>
     </section>
-
-    <section class="result-head" id="result-head"></section>
-
-    <section id="result-content" aria-live="polite"></section>
+    <noscript><p class="panel error">启用 JavaScript 后可查看和筛选结果。</p></noscript>
+    <p id="error" class="panel error" role="alert" hidden>结果数据载入失败。请确认页面与 data 目录位于同一个网站目录。</p>
+    <div id="dashboard" hidden>
+      <div class="stats" id="stats" aria-label="评测规模"></div>
+      <section class="section" id="focus" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <div><h2 id="focus-title">整段录音微调对照</h2><p>原始权重、切段微调与整段微调均在 261117 的同一评测样本上比较。</p></div>
+          <a class="link" href="reports/261117-report.md">实验报告 <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="focus-layout">
+          <div class="panel chart-panel">
+            <form id="focus-form" class="focus-controls">
+              <label>数据集<select name="dataset"></select></label>
+              <label>人群<select name="cohort"><option value="disease">疾病组</option><option value="healthy">健康组</option></select></label>
+              <label>指标<select name="metric"><option value="wer">WER ↓</option><option value="semscore">SemScore ↑</option></select></label>
+            </form>
+            <div class="chart-legend" aria-label="图例"><span><i class="baseline"></i>原始</span><span><i class="segmented"></i>切段</span><span><i class="full"></i>整段</span></div>
+            <div id="chart" class="chart" aria-live="polite"></div>
+          </div>
+          <aside class="focus-side" aria-label="当前对照摘要">
+            <p class="overline" id="focus-cohort"></p>
+            <h3>整段 vs. 切段</h3>
+            <div id="focus-summary" aria-live="polite"></div>
+            <button class="button button-light" type="button" id="view-focus">查看这组结果 <span aria-hidden="true">→</span></button>
+          </aside>
+        </div>
+      </section>
+      <section class="section" id="results" aria-labelledby="results-title">
+        <div class="section-heading">
+          <div><h2 id="results-title">结果筛选</h2><p>同时查看两项指标，点击数值可查样本量、基准和来源。</p></div>
+          <button class="button button-outline" type="button" id="export">下载筛选结果 CSV <span aria-hidden="true">↓</span></button>
+        </div>
+        <div class="panel explorer">
+          <form id="filters" class="filters">
+            <label>范围<select name="scope"><option value="overall">整体</option><option value="severity">原生严重度</option><option value="assistive">辅助性场景</option></select></label>
+            <label>模型<select name="model"></select></label>
+            <label>评测数据集<select name="dataset"></select></label>
+            <label>权重<select name="variant"></select></label>
+            <label>人群<select name="cohort"><option value="all">全部人群</option><option value="disease">疾病组</option><option value="healthy">健康组</option></select></label>
+            <label id="dimension-filter" hidden>辅助性分组<select name="dimension"><option value="overall">全部场景汇总</option><option value="scene">按场景</option><option value="dataset">按来源数据集</option></select></label>
+            <label id="group-filter" hidden><span id="group-label">分组</span><select name="group"></select></label>
+            <label id="domain-filter">训练与评测域<select name="domain"><option value="all">全部</option><option value="in">同数据集</option><option value="out">跨数据集</option><option value="base">原始权重</option></select></label>
+            <label>相对基准<select name="change"><option value="all">全部</option><option value="both">WER 降、SemScore 升</option><option value="conflict">WER 降、SemScore 降</option><option value="reverse">WER 升、SemScore 升</option><option value="worse">WER 升、SemScore 降</option></select></label>
+            <label id="status-filter">数据状态<select name="status"><option value="complete">已评测</option><option value="all">全部状态</option><option value="not_evaluated">未评测</option><option value="not_applicable">不适用</option><option value="running">进行中</option></select></label>
+          </form>
+          <div class="result-toolbar">
+            <p id="result-count" aria-live="polite"></p>
+            <div class="toolbar-actions"><button class="text-button" id="reset" type="button">重置筛选</button><button class="text-button" id="share" type="button" hidden>复制筛选链接</button></div>
+          </div>
+          <p id="scope-note" class="scope-note" hidden></p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的结果表">
+            <table id="result-table"></table>
+          </div>
+          <div id="empty" class="empty" hidden><strong>没有符合条件的记录</strong><p>可以扩大筛选范围，或去数据覆盖表检查该组合的状态。</p><a href="#coverage" class="link">查看覆盖表</a></div>
+          <div class="pagination" id="pagination" hidden>
+            <button class="button button-outline" id="previous" type="button">上一页</button><span id="page-indicator"></span><button class="button button-outline" id="next" type="button">下一页</button>
+          </div>
+          <span class="visually-hidden" id="feedback" role="status"></span>
+        </div>
+      </section>
+      <section class="section" id="coverage" aria-labelledby="coverage-title">
+        <div class="section-heading">
+          <div><h2 id="coverage-title">数据覆盖</h2><p>每行对应一个模型与权重组合。点击单元格，查看该数据集的疾病组与健康组结果。</p></div>
+          <label class="coverage-select">查看模型<select id="coverage-model"></select></label>
+        </div>
+        <div class="panel inventory">
+          <div class="inventory-toolbar" id="inventory-summary"></div>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的数据覆盖表"><table id="coverage-table"></table></div>
+        </div>
+      </section>
+      <section class="section methods" aria-labelledby="methods-title">
+        <div><h2 id="methods-title">指标与数据来源</h2><p>WER 为词错误率，越低越好，插入错误多时可超过 100%。SemScore 为语义相似度，越高越好。结果以对应数据集和样本口径为单位。</p><p id="snapshot"></p></div>
+        <div class="downloads"><a class="link" href="data/261117-summary.csv" download>261117 对照 CSV ↓</a><a class="link" href="data/matrix-site-data.json" download>完整数据快照 JSON ↓</a></div>
+      </section>
+    </div>
   </main>
-  <footer>AudioBench</footer>
-  <script src="data/matrix-site-data.js?v=full-recording-20261119-1"></script>
-  <script src="assets/app.js?v=full-recording-20261119-1"></script>
+  <footer class="shell footer"><a class="brand" href="#top">AudioBench</a><a class="link" href="#main">返回顶部 ↑</a></footer>
+  <dialog id="details" aria-labelledby="detail-title">
+    <div class="dialog-head"><h2 id="detail-title"></h2><form method="dialog"><button class="button button-outline">关闭</button></form></div>
+    <div id="detail-content"></div>
+  </dialog>
 </body>
 </html>
