@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#f6f7f8">
   <title>AudioBench</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=261126-10">
-  <script src="data/matrix-site-data.js?v=261126-10"></script>
-  <script defer src="assets/site.js?v=261126-10"></script>
+  <link rel="stylesheet" href="assets/site.css?v=261126-11">
+  <script src="data/matrix-site-data.js?v=261126-11"></script>
+  <script defer src="assets/site.js?v=261126-11"></script>
 </head>
 <body>
   <main class="page">
@@ -20,7 +20,7 @@
     <section class="view" id="results-view" role="tabpanel" aria-labelledby="results-tab">
       <form class="filters results-filters" id="filters">
         <label>范围<select name="scope"><option value="overall">整体</option><option value="severity">严重度分组</option><option value="assistive">辅助性场景</option></select></label>
-        <fieldset class="model-picker"><legend>模型</legend><label class="select-all"><input id="all-models" type="checkbox" checked>全选</label><div id="model-options"></div></fieldset>
+        <label>模型<select name="model"></select></label>
         <label id="dataset-wrap">评测集<select name="dataset"></select></label>
         <label>权重<select name="variant"></select></label>
         <label>人群<select name="cohort"><option value="all">全部</option><option value="disease">疾病组</option><option value="healthy">健康组</option></select></label>

@@ -38,10 +38,9 @@
   setOptions(inventoryForm.elements.model, modelOptions);
   setOptions(inventoryForm.elements.variant, variantOptions, '全部权重');
   setOptions(inventoryForm.elements.dataset, datasetOptions, '全部数据集');
+  setOptions(resultsForm.elements.model, modelOptions, '全部模型');
   setOptions(resultsForm.elements.variant, variantOptions, '全部权重');
   setOptions(resultsForm.elements.dataset, datasetOptions, '全部数据集');
-  $('#model-options').innerHTML = models.map(row => `<label><input class="model-option" type="checkbox" value="${esc(row.id)}" checked>${esc(row.label)}</label>`).join('');
-  $('#all-models').checked = true;
 
   const matrixStatus = new Map(data.overall.records.map(row => [
     `${row.model}/${row.variant}/${row.dataset}/${row.cohort}`, row.status,
@@ -49,10 +48,6 @@
   const assistiveStatus = new Map(data.assistive.records.filter(row => row.dimension === 'overall').map(row => [
     `${row.model}/${row.variant}/${row.cohort}`, row.status,
   ]));
-
-  function selectedModels() {
-    return [...document.querySelectorAll('.model-option:checked')].map(input => input.value);
-  }
 
   function coverageStatus(model, variant, dataset, cohort) {
     if (dataset.id === 'assistive') return assistiveStatus.get(`${model}/${variant}/${cohort}`) || 'not_evaluated';
@@ -86,7 +81,8 @@
   }
 
   function state() {
-    return { ...Object.fromEntries(new FormData(resultsForm)), models: selectedModels() };
+    const current = Object.fromEntries(new FormData(resultsForm));
+    return { ...current, models: current.model === 'all' ? models.map(row => row.id) : [current.model] };
   }
 
   function assistiveDatasetId(row) {
@@ -337,16 +333,6 @@
     URL.revokeObjectURL(url);
   }
 
-  function syncModelSelection() {
-    const options = [...document.querySelectorAll('.model-option')];
-    const selectedCount = options.filter(input => input.checked).length;
-    const all = $('#all-models');
-    all.checked = selectedCount === options.length;
-    all.indeterminate = selectedCount > 0 && selectedCount < options.length;
-    refreshConditionalFilters();
-    renderResultMatrix();
-  }
-
   function activateTab(tab) {
     const inventory = tab.id === 'inventory-tab';
     $('#inventory-view').hidden = !inventory;
@@ -357,12 +343,6 @@
     $('#results-tab').setAttribute('aria-selected', String(!inventory));
   }
 
-  $('#all-models').addEventListener('change', event => {
-    document.querySelectorAll('.model-option').forEach(input => { input.checked = event.currentTarget.checked; });
-    refreshConditionalFilters();
-    renderResultMatrix();
-  });
-  $('#model-options').addEventListener('change', syncModelSelection);
   inventoryForm.addEventListener('change', renderCoverage);
   resultsForm.addEventListener('change', () => { refreshConditionalFilters(); renderResultMatrix(); });
   $('#export').addEventListener('click', downloadCsv);
