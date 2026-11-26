@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#f6f7f8">
   <title>AudioBench</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=261126-8">
-  <script src="data/matrix-site-data.js?v=261126-8"></script>
-  <script defer src="assets/site.js?v=261126-8"></script>
+  <link rel="stylesheet" href="assets/site.css?v=261126-10">
+  <script src="data/matrix-site-data.js?v=261126-10"></script>
+  <script defer src="assets/site.js?v=261126-10"></script>
 </head>
 <body>
   <main class="page">
@@ -20,10 +20,11 @@
     <section class="view" id="results-view" role="tabpanel" aria-labelledby="results-tab">
       <form class="filters results-filters" id="filters">
         <label>范围<select name="scope"><option value="overall">整体</option><option value="severity">严重度分组</option><option value="assistive">辅助性场景</option></select></label>
-        <label>模型<select name="model"></select></label>
+        <fieldset class="model-picker"><legend>模型</legend><label class="select-all"><input id="all-models" type="checkbox" checked>全选</label><div id="model-options"></div></fieldset>
         <label id="dataset-wrap">评测集<select name="dataset"></select></label>
         <label>权重<select name="variant"></select></label>
         <label>人群<select name="cohort"><option value="all">全部</option><option value="disease">疾病组</option><option value="healthy">健康组</option></select></label>
+        <label>指标<select name="metric"><option value="wer">WER</option><option value="cer">CER</option><option value="ser">SER</option><option value="semscore">SemScore</option></select></label>
         <label id="dimension-wrap" hidden>场景数据<select name="dimension"><option value="overall">场景汇总</option><option value="scene">按场景</option><option value="dataset">按来源数据集</option></select></label>
         <label id="group-wrap" hidden>分组<select name="group"></select></label>
       </form>
@@ -34,11 +35,6 @@
       <div class="table-frame result-frame">
         <table id="result-table"></table>
         <p id="empty" hidden>没有匹配数据</p>
-      </div>
-      <div class="pagination" id="pagination" hidden>
-        <button id="previous" type="button">上一页</button>
-        <span id="page-indicator"></span>
-        <button id="next" type="button">下一页</button>
       </div>
     </section>
 
